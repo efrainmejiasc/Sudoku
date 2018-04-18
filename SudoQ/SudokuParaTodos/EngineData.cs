@@ -18,6 +18,7 @@ namespace SudokuParaTodos
             return valor;
         }
 
+       public const string Titulo = "Sudoku Para Todos";
        public const string ClaveRegWin = "SudokuParaTodos";
        public const string FechaDeCreacion = "FechaDeCreacion";
        public const string Clave = "Clave";
@@ -26,6 +27,8 @@ namespace SudokuParaTodos
        public const string ProgramaId = "SudokuParaTodos";
        public const string Comando = "open";
        public const string DescripcionPrograma = "SudokuParaTodos File";
+       public const bool Falso = false;
+       public const bool Verdadero = true;
 
     }
 }

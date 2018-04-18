@@ -18,7 +18,8 @@ namespace SudokuParaTodos
         static extern bool HideCaret(IntPtr hWnd);
         //***********************************************************************************************************
         private EngineSudoku Funcion = new EngineSudoku();
-        private TextBox[,] txtSudoku = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
+        private TextBox[,] txtSudoku = new TextBox[9,9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
+        private Button[] btnPincel = new Button[7];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES
 
         public Form1()
         {
@@ -27,12 +28,25 @@ namespace SudokuParaTodos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Text = EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()){Funcion.AgregarClaveRegWin();}
             Funcion.AsociarExtension();
             txtSudoku = AsociarTxtMatriz(txtSudoku);
+            btnPincel = AsociarBtnPincel(btnPincel);
+            ComportamientoObjInicio();
         }
 
-        // ASOCIA LOS TEXTBOX DEL GRAFICO SUDOKU A UN ARRAY
+        private void ComportamientoObjInicio()
+        {
+            mArchivo.Visible = EngineData.Falso;
+            mTablero.Visible = EngineData.Falso;
+            mColores.Visible = EngineData.Falso;
+            mContadores.Visible = EngineData.Falso;
+            panel11.Visible = EngineData.Falso;
+            txtNota.Visible = EngineData.Falso;
+            foreach (Button btn in btnPincel) { btn.Visible = EngineData.Falso; }
+        }
+
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
         {
             /////////////////////////////////////////////////////////////////////////////
@@ -75,6 +89,15 @@ namespace SudokuParaTodos
             foreach (TextBox item in txtSudoku)
                 item.GotFocus += delegate { HideCaret(item.Handle); };
             return txtSudoku;
+        }
+
+        private Button[] AsociarBtnPincel(Button [] btnPincel)
+        {
+            btnPincel[0] = pincelA; btnPincel[1] = pincelB;
+            btnPincel[2] = pincelC; btnPincel[3] = pincelD;
+            btnPincel[4] = pincelE; btnPincel[5] = pincelF;
+            btnPincel[6] = pincelG;
+            return btnPincel;
         }
     }
 }
