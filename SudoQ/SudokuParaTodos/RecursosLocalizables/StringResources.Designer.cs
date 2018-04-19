@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SudokuParaTodos {
+namespace SudokuParaTodos.RecursosLocalizables {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace SudokuParaTodos {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Traductor {
+    internal class StringResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Traductor() {
+        internal StringResources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SudokuParaTodos {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SudokuParaTodos.Traductor", typeof(Traductor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SudokuParaTodos.RecursosLocalizables.StringResources", typeof(StringResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,78 @@ namespace SudokuParaTodos {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ARCHIVO.
+        /// </summary>
+        internal static string mArchivo {
+            get {
+                return ResourceManager.GetString("mArchivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a COLORES.
+        /// </summary>
+        internal static string mColores {
+            get {
+                return ResourceManager.GetString("mColores", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CONTADORES.
+        /// </summary>
+        internal static string mContadores {
+            get {
+                return ResourceManager.GetString("mContadores", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a IDIOMAS.
+        /// </summary>
+        internal static string mIdiomas {
+            get {
+                return ResourceManager.GetString("mIdiomas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Español.
+        /// </summary>
+        internal static string mIEspañol {
+            get {
+                return ResourceManager.GetString("mIEspañol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingles.
+        /// </summary>
+        internal static string mIIngles {
+            get {
+                return ResourceManager.GetString("mIIngles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Portugues.
+        /// </summary>
+        internal static string mIPortugues {
+            get {
+                return ResourceManager.GetString("mIPortugues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a TABLERO.
+        /// </summary>
+        internal static string mTablero {
+            get {
+                return ResourceManager.GetString("mTablero", resourceCulture);
             }
         }
     }

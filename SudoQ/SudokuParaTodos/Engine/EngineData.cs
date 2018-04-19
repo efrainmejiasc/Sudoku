@@ -29,6 +29,19 @@ namespace SudokuParaTodos
        public const string DescripcionPrograma = "SudokuParaTodos File";
        public const bool Falso = false;
        public const bool Verdadero = true;
+       public const string Español = "mIEspañol";
+       public const string CulturaEspañol = "ES-VE";
+       public const string Ingles = "mIIngles";
+       public const string CulturaIngles = "EN-US";
+       public const string Portugues = "mIPortugues";
+       public const string CulturaPortugues= "PT-PT";
+       public const string LenguajeEspañol = "Español";
+       public const string LenguajeIngles = "Ingles";
+       public const string LenguajePortugues = "Portugues";
+
+        private string idioma = string.Empty;
+       public void SetIdioma (string v) { idioma = v; }
+       public string GetIdioma(string v) { return idioma; }
 
     }
 }

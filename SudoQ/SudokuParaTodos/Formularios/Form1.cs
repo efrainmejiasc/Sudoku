@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SudoQ;
+using System.Threading;
+using System.Globalization;
 
 namespace SudokuParaTodos
 {
@@ -19,7 +21,7 @@ namespace SudokuParaTodos
         //***********************************************************************************************************
         private EngineSudoku Funcion = new EngineSudoku();
         private TextBox[,] txtSudoku = new TextBox[9,9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
-        private Button[] btnPincel = new Button[7];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES
+        private Button[] btnPincel = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES
 
         public Form1()
         {
@@ -95,9 +97,43 @@ namespace SudokuParaTodos
         {
             btnPincel[0] = pincelA; btnPincel[1] = pincelB;
             btnPincel[2] = pincelC; btnPincel[3] = pincelD;
-            btnPincel[4] = pincelE; btnPincel[5] = pincelF;
-            btnPincel[6] = pincelG;
+            btnPincel[4] = pincelE; 
+           
             return btnPincel;
+        }
+
+        private void Lenguaje_Click(object sender, EventArgs e)
+        {
+            EngineData Valor = EngineData.Instance();
+            ToolStripMenuItem toolStrip = sender as ToolStripMenuItem;
+            switch (toolStrip.Name)
+            {
+                case (EngineData.Español):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
+                    Valor.SetIdioma (EngineData.LenguajeEspañol);
+                    break;
+                case (EngineData.Ingles):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
+                    Valor.SetIdioma(EngineData.LenguajeIngles);
+                    break;
+                case (EngineData.Portugues):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
+                    Valor.SetIdioma(EngineData.LenguajePortugues);
+                    break;
+            }
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
+            mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mColores.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mTablero.Text = RecursosLocalizables.StringResources.mTablero;
+            mContadores.Text = RecursosLocalizables.StringResources.mContadores;
+            mIEspañol.Text = RecursosLocalizables.StringResources.mIEspañol;
+            mIIngles.Text = RecursosLocalizables.StringResources.mIIngles;
+            mIPortugues.Text = RecursosLocalizables.StringResources.mIPortugues;
         }
     }
 }

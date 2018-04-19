@@ -91,22 +91,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EngineData.cs" />
-    <Compile Include="EngineSudoku.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Engine\EngineData.cs" />
+    <Compile Include="Engine\EngineSudoku.cs" />
+    <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Formularios\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Traductor.Designer.cs">
+    <Compile Include="RecursosLocalizables\StringResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Traductor.resx</DependentUpon>
+      <DependentUpon>StringResources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Formularios\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -118,9 +118,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Traductor.resx">
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.EN-US.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.ES-VE.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.PT-PT.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Traductor.Designer.cs</LastGenOutput>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -138,6 +141,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Engine\SudokuEnCasa.ico" />
     <Content Include="SudokuEnCasa.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -160,5 +164,6 @@
       <DefaultIcon>SudokuEnCasa.ico</DefaultIcon>
     </FileAssociation>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
