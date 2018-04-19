@@ -1,5 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace SudokuParaTodos
 {
@@ -84,6 +86,64 @@ namespace SudokuParaTodos
             }
         }
 
+        // METODOS DEL JUEGO////////////////////////////////////////////////////////////////////
+        public Button[] ColoresPincel(Button [] v)
+        {
+            v[0].BackColor = Color.Silver;
+            v[1].BackColor = Color.SkyBlue;
+            v[2].BackColor = Color.CornflowerBlue;
+            v[3].BackColor = Color.LightCoral;
+            v[4].BackColor = Color.Crimson;
+            return v;
+        }
+        public Button[] ColoresPincel2(Button[] v)
+        {
+            v[0].BackColor = Color.Silver;
+            v[1].BackColor = Color.PaleGreen;
+            v[2].BackColor = Color.Green;
+            v[3].BackColor = Color.LightSalmon;
+            v[4].BackColor = Color.Orange;
+            return v;
+        }
+
+        public string[,] CandidatosJuego(string[,] vIngresado , string [,] valorCandidato) 
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] == string.Empty || vIngresado[f, c] == null)
+                        valorCandidato[f, c] = "1 2 3" + Environment.NewLine + "4 5 6" + Environment.NewLine + "7 8 9";
+                    else
+                        valorCandidato[f, c] = vIngresado[f, c];
+                }
+            }
+
+            return valorCandidato;
+        }
+
+        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vArray ,float fontBig = 0, float fontSmall = 0 )
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].Text = vArray[f,c];
+                    if (vArray[f, c].Length == 1)
+                    {
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontBig);
+                        cajaTexto[f, c].ForeColor = Color.Green;
+                    }
+                    else
+                    {
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontSmall);
+                        cajaTexto[f, c].ForeColor = Color.Blue;
+                    }
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                }
+            }
+            return cajaTexto;
+        }
 
     }
 }

@@ -121,4 +121,19 @@
   <data name="mTablero" xml:space="preserve">
     <value>BOARD</value>
   </data>
+  <data name="Form1" xml:space="preserve">
+    <value>Sudoku For All</value>
+  </data>
+  <data name="btnGuardar" xml:space="preserve">
+    <value>Save Game</value>
+  </data>
+  <data name="btnAbrir" xml:space="preserve">
+    <value>Open Game</value>
+  </data>
+  <data name="btnOtro" xml:space="preserve">
+    <value>Create Another Game</value>
+  </data>
+  <data name="btnSolucion" xml:space="preserve">
+    <value>Save Solution</value>
+  </data>
 </root>

@@ -61,6 +61,51 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Abrir Juego.
+        /// </summary>
+        internal static string btnAbrir {
+            get {
+                return ResourceManager.GetString("btnAbrir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar Juego.
+        /// </summary>
+        internal static string btnGuardar {
+            get {
+                return ResourceManager.GetString("btnGuardar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear Otro Juego.
+        /// </summary>
+        internal static string btnOtro {
+            get {
+                return ResourceManager.GetString("btnOtro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar Solucion.
+        /// </summary>
+        internal static string btnSolucion {
+            get {
+                return ResourceManager.GetString("btnSolucion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sudoku Para Todos.
+        /// </summary>
+        internal static string Form1 {
+            get {
+                return ResourceManager.GetString("Form1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ARCHIVO.
         /// </summary>
         internal static string mArchivo {

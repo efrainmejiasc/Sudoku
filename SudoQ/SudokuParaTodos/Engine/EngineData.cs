@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,13 @@ namespace SudokuParaTodos
        public const string LenguajeEspañol = "Español";
        public const string LenguajeIngles = "Ingles";
        public const string LenguajePortugues = "Portugues";
+       public const string BtnAbrirJuego = "btnAbrir";
+       public const string BtnGuardarJuego = "btnGuardar";
+       public const string BtnOtroJuego = "btnOtro";
+       public const string BtnSolucion = "btnSolucion";
+       public const string Zero = "0";
+        public const string TipoLetra = "Microsoft Sans Serif";
+
 
         private string idioma = string.Empty;
        public void SetIdioma (string v) { idioma = v; }

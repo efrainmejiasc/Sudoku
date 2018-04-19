@@ -119,6 +119,21 @@
     <value>Portugues</value>
   </data>
   <data name="mTablero" xml:space="preserve">
-    <value>Diretoria</value>
+    <value>DIRECTORIA</value>
+  </data>
+  <data name="Form1" xml:space="preserve">
+    <value>Sudoku Para Todos</value>
+  </data>
+  <data name="btnGuardar" xml:space="preserve">
+    <value>Salvar Jogo</value>
+  </data>
+  <data name="btnAbrir" xml:space="preserve">
+    <value>Jogo Aberto</value>
+  </data>
+  <data name="btnOtro" xml:space="preserve">
+    <value>Criar Outro Jogo</value>
+  </data>
+  <data name="btnSolucion" xml:space="preserve">
+    <value>Salvar Solução</value>
   </data>
 </root>
