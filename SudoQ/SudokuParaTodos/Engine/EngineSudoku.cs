@@ -7,6 +7,8 @@ namespace SudokuParaTodos
 {
     public class EngineSudoku
     {
+        private EngineData Valor = EngineData.Instance();
+
         private RegistryKey key = Registry.CurrentUser;
 
         public bool ExisteClaveRegWin()
@@ -49,6 +51,7 @@ namespace SudokuParaTodos
             }
             return strProgramID;
         }
+
         public void LinkExtension(string extension, string executableFileName, string programId, string command, string description)
         {
             string linkedProgramID;
@@ -96,6 +99,7 @@ namespace SudokuParaTodos
             v[4].BackColor = Color.Crimson;
             return v;
         }
+
         public Button[] ColoresPincel2(Button[] v)
         {
             v[0].BackColor = Color.Silver;
@@ -143,6 +147,13 @@ namespace SudokuParaTodos
                 }
             }
             return cajaTexto;
+        }
+
+        public string[,] NumerosCandidatos(string[,] vIngresado , string[,] vCandidatos, string[,] vEliminados, int recuadro)
+        {
+            int [] f = Valor.IndiceFila(recuadro);
+            int [] c = Valor.IndiceColumna(recuadro);
+            return vCandidatos;
         }
 
     }

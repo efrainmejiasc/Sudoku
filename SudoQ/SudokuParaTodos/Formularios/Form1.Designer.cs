@@ -236,6 +236,10 @@
             this.btnOtro = new System.Windows.Forms.Button();
             this.btnSolucion = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnEspañol = new System.Windows.Forms.Button();
+            this.btnIngles = new System.Windows.Forms.Button();
+            this.btnPortugues = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -272,7 +276,7 @@
             this.panel1.Controls.Add(this.txt02);
             this.panel1.Controls.Add(this.txt01);
             this.panel1.Controls.Add(this.txt00);
-            this.panel1.Location = new System.Drawing.Point(12, 125);
+            this.panel1.Location = new System.Drawing.Point(12, 148);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 148);
             this.panel1.TabIndex = 1;
@@ -416,7 +420,7 @@
             this.panel2.Controls.Add(this.txt05);
             this.panel2.Controls.Add(this.txt04);
             this.panel2.Controls.Add(this.txt03);
-            this.panel2.Location = new System.Drawing.Point(198, 125);
+            this.panel2.Location = new System.Drawing.Point(198, 148);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(186, 148);
             this.panel2.TabIndex = 2;
@@ -560,7 +564,7 @@
             this.panel3.Controls.Add(this.txt08);
             this.panel3.Controls.Add(this.txt07);
             this.panel3.Controls.Add(this.txt06);
-            this.panel3.Location = new System.Drawing.Point(384, 125);
+            this.panel3.Location = new System.Drawing.Point(384, 148);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 148);
             this.panel3.TabIndex = 3;
@@ -704,7 +708,7 @@
             this.panel4.Controls.Add(this.txt32);
             this.panel4.Controls.Add(this.txt31);
             this.panel4.Controls.Add(this.txt30);
-            this.panel4.Location = new System.Drawing.Point(12, 273);
+            this.panel4.Location = new System.Drawing.Point(12, 296);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(186, 148);
             this.panel4.TabIndex = 4;
@@ -848,7 +852,7 @@
             this.panel5.Controls.Add(this.txt35);
             this.panel5.Controls.Add(this.txt34);
             this.panel5.Controls.Add(this.txt33);
-            this.panel5.Location = new System.Drawing.Point(198, 273);
+            this.panel5.Location = new System.Drawing.Point(198, 296);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(186, 148);
             this.panel5.TabIndex = 5;
@@ -992,7 +996,7 @@
             this.panel6.Controls.Add(this.txt38);
             this.panel6.Controls.Add(this.txt37);
             this.panel6.Controls.Add(this.txt36);
-            this.panel6.Location = new System.Drawing.Point(384, 273);
+            this.panel6.Location = new System.Drawing.Point(384, 296);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(186, 148);
             this.panel6.TabIndex = 6;
@@ -1136,7 +1140,7 @@
             this.panel7.Controls.Add(this.txt62);
             this.panel7.Controls.Add(this.txt61);
             this.panel7.Controls.Add(this.txt60);
-            this.panel7.Location = new System.Drawing.Point(12, 421);
+            this.panel7.Location = new System.Drawing.Point(12, 444);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(186, 148);
             this.panel7.TabIndex = 7;
@@ -1280,7 +1284,7 @@
             this.panel8.Controls.Add(this.txt65);
             this.panel8.Controls.Add(this.txt64);
             this.panel8.Controls.Add(this.txt63);
-            this.panel8.Location = new System.Drawing.Point(198, 421);
+            this.panel8.Location = new System.Drawing.Point(198, 444);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(186, 148);
             this.panel8.TabIndex = 8;
@@ -1424,7 +1428,7 @@
             this.panel9.Controls.Add(this.txt68);
             this.panel9.Controls.Add(this.txt67);
             this.panel9.Controls.Add(this.txt66);
-            this.panel9.Location = new System.Drawing.Point(384, 421);
+            this.panel9.Location = new System.Drawing.Point(384, 444);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(186, 148);
             this.panel9.TabIndex = 9;
@@ -1559,7 +1563,7 @@
             // 
             this.txtNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNota.Location = new System.Drawing.Point(261, 50);
+            this.txtNota.Location = new System.Drawing.Point(248, 68);
             this.txtNota.Margin = new System.Windows.Forms.Padding(2);
             this.txtNota.MaxLength = 7;
             this.txtNota.Name = "txtNota";
@@ -1568,16 +1572,21 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.btnPortugues);
+            this.panel10.Controls.Add(this.btnIngles);
+            this.panel10.Controls.Add(this.btnEspañol);
+            this.panel10.Controls.Add(this.menuStrip1);
+            this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.pincelE);
             this.panel10.Controls.Add(this.pincelD);
             this.panel10.Controls.Add(this.pincelC);
             this.panel10.Controls.Add(this.pincelB);
             this.panel10.Controls.Add(this.pincelA);
             this.panel10.Controls.Add(this.txtNota);
-            this.panel10.Controls.Add(this.menuStrip1);
-            this.panel10.Location = new System.Drawing.Point(12, 1);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(558, 123);
+            this.panel10.Size = new System.Drawing.Size(1160, 145);
             this.panel10.TabIndex = 10;
             // 
             // pincelE
@@ -1587,7 +1596,7 @@
             this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(113, 17);
+            this.pincelE.Location = new System.Drawing.Point(119, 38);
             this.pincelE.Name = "pincelE";
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 55;
@@ -1600,7 +1609,7 @@
             this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(85, 17);
+            this.pincelD.Location = new System.Drawing.Point(91, 38);
             this.pincelD.Name = "pincelD";
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 54;
@@ -1613,7 +1622,7 @@
             this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(57, 17);
+            this.pincelC.Location = new System.Drawing.Point(63, 38);
             this.pincelC.Name = "pincelC";
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 53;
@@ -1626,7 +1635,7 @@
             this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(29, 17);
+            this.pincelB.Location = new System.Drawing.Point(35, 38);
             this.pincelB.Name = "pincelB";
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 52;
@@ -1639,7 +1648,7 @@
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelA.ForeColor = System.Drawing.Color.Silver;
-            this.pincelA.Location = new System.Drawing.Point(1, 17);
+            this.pincelA.Location = new System.Drawing.Point(7, 38);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 51;
@@ -1647,7 +1656,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
+            this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mArchivo,
@@ -1672,7 +1681,7 @@
             // holaToolStripMenuItem
             // 
             this.holaToolStripMenuItem.Name = "holaToolStripMenuItem";
-            this.holaToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.holaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.holaToolStripMenuItem.Text = "hola";
             // 
             // mTablero
@@ -1706,21 +1715,21 @@
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "Ingles";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Portugues";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -1737,7 +1746,7 @@
             this.panel12.Controls.Add(this.t02);
             this.panel12.Controls.Add(this.t01);
             this.panel12.Controls.Add(this.t00);
-            this.panel12.Location = new System.Drawing.Point(589, 125);
+            this.panel12.Location = new System.Drawing.Point(589, 148);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(186, 148);
             this.panel12.TabIndex = 60;
@@ -1836,7 +1845,7 @@
             this.panel13.Controls.Add(this.t05);
             this.panel13.Controls.Add(this.t04);
             this.panel13.Controls.Add(this.t03);
-            this.panel13.Location = new System.Drawing.Point(775, 125);
+            this.panel13.Location = new System.Drawing.Point(775, 148);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(186, 148);
             this.panel13.TabIndex = 61;
@@ -1935,7 +1944,7 @@
             this.panel14.Controls.Add(this.t08);
             this.panel14.Controls.Add(this.t07);
             this.panel14.Controls.Add(this.t06);
-            this.panel14.Location = new System.Drawing.Point(961, 125);
+            this.panel14.Location = new System.Drawing.Point(961, 148);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(186, 148);
             this.panel14.TabIndex = 62;
@@ -2034,7 +2043,7 @@
             this.panel15.Controls.Add(this.t32);
             this.panel15.Controls.Add(this.t31);
             this.panel15.Controls.Add(this.t30);
-            this.panel15.Location = new System.Drawing.Point(589, 273);
+            this.panel15.Location = new System.Drawing.Point(589, 296);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(186, 148);
             this.panel15.TabIndex = 63;
@@ -2133,7 +2142,7 @@
             this.panel16.Controls.Add(this.t35);
             this.panel16.Controls.Add(this.t34);
             this.panel16.Controls.Add(this.t33);
-            this.panel16.Location = new System.Drawing.Point(775, 273);
+            this.panel16.Location = new System.Drawing.Point(775, 296);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(186, 148);
             this.panel16.TabIndex = 64;
@@ -2232,7 +2241,7 @@
             this.panel17.Controls.Add(this.t38);
             this.panel17.Controls.Add(this.t37);
             this.panel17.Controls.Add(this.t36);
-            this.panel17.Location = new System.Drawing.Point(961, 273);
+            this.panel17.Location = new System.Drawing.Point(961, 296);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(186, 148);
             this.panel17.TabIndex = 65;
@@ -2331,7 +2340,7 @@
             this.panel18.Controls.Add(this.t62);
             this.panel18.Controls.Add(this.t61);
             this.panel18.Controls.Add(this.t60);
-            this.panel18.Location = new System.Drawing.Point(589, 421);
+            this.panel18.Location = new System.Drawing.Point(589, 444);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(186, 148);
             this.panel18.TabIndex = 66;
@@ -2430,7 +2439,7 @@
             this.panel19.Controls.Add(this.t65);
             this.panel19.Controls.Add(this.t64);
             this.panel19.Controls.Add(this.t63);
-            this.panel19.Location = new System.Drawing.Point(775, 421);
+            this.panel19.Location = new System.Drawing.Point(775, 444);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(186, 148);
             this.panel19.TabIndex = 67;
@@ -2529,7 +2538,7 @@
             this.panel20.Controls.Add(this.t68);
             this.panel20.Controls.Add(this.t67);
             this.panel20.Controls.Add(this.t66);
-            this.panel20.Location = new System.Drawing.Point(961, 421);
+            this.panel20.Location = new System.Drawing.Point(961, 444);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(186, 148);
             this.panel20.TabIndex = 68;
@@ -2622,7 +2631,7 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(707, 18);
+            this.pincelJ.Location = new System.Drawing.Point(711, 39);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 73;
@@ -2635,7 +2644,7 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(679, 18);
+            this.pincelI.Location = new System.Drawing.Point(683, 39);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 72;
@@ -2648,7 +2657,7 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(651, 18);
+            this.pincelH.Location = new System.Drawing.Point(655, 39);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 71;
@@ -2661,7 +2670,7 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(623, 18);
+            this.pincelG.Location = new System.Drawing.Point(627, 39);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 70;
@@ -2674,7 +2683,7 @@
             this.pincelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelF.ForeColor = System.Drawing.Color.Silver;
-            this.pincelF.Location = new System.Drawing.Point(595, 18);
+            this.pincelF.Location = new System.Drawing.Point(599, 39);
             this.pincelF.Name = "pincelF";
             this.pincelF.Size = new System.Drawing.Size(25, 24);
             this.pincelF.TabIndex = 69;
@@ -2682,12 +2691,11 @@
             // 
             // pnlJuego
             // 
-            this.pnlJuego.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlJuego.Controls.Add(this.btnAbrir);
             this.pnlJuego.Controls.Add(this.btnOtro);
             this.pnlJuego.Controls.Add(this.btnSolucion);
             this.pnlJuego.Controls.Add(this.btnGuardar);
-            this.pnlJuego.Location = new System.Drawing.Point(12, 46);
+            this.pnlJuego.Location = new System.Drawing.Point(12, 69);
             this.pnlJuego.Name = "pnlJuego";
             this.pnlJuego.Size = new System.Drawing.Size(218, 73);
             this.pnlJuego.TabIndex = 59;
@@ -2732,12 +2740,51 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.BotonesJuego_Click);
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Gray;
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1160, 24);
+            this.panel11.TabIndex = 59;
+            // 
+            // btnEspañol
+            // 
+            this.btnEspañol.Location = new System.Drawing.Point(150, 40);
+            this.btnEspañol.Name = "btnEspañol";
+            this.btnEspañol.Size = new System.Drawing.Size(100, 23);
+            this.btnEspañol.TabIndex = 62;
+            this.btnEspañol.Text = "Español";
+            this.btnEspañol.UseVisualStyleBackColor = true;
+            this.btnEspañol.Click += new System.EventHandler(this.LenguajeBtn_Click);
+            // 
+            // btnIngles
+            // 
+            this.btnIngles.Location = new System.Drawing.Point(248, 40);
+            this.btnIngles.Name = "btnIngles";
+            this.btnIngles.Size = new System.Drawing.Size(100, 23);
+            this.btnIngles.TabIndex = 63;
+            this.btnIngles.Text = "English";
+            this.btnIngles.UseVisualStyleBackColor = true;
+            this.btnIngles.Click += new System.EventHandler(this.LenguajeBtn_Click);
+            // 
+            // btnPortugues
+            // 
+            this.btnPortugues.Location = new System.Drawing.Point(346, 40);
+            this.btnPortugues.Name = "btnPortugues";
+            this.btnPortugues.Size = new System.Drawing.Size(100, 23);
+            this.btnPortugues.TabIndex = 64;
+            this.btnPortugues.Text = "Portugues";
+            this.btnPortugues.UseVisualStyleBackColor = true;
+            this.btnPortugues.Click += new System.EventHandler(this.LenguajeBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1160, 583);
+            this.ClientSize = new System.Drawing.Size(1160, 604);
             this.Controls.Add(this.pnlJuego);
             this.Controls.Add(this.pincelJ);
             this.Controls.Add(this.pincelI);
@@ -3023,6 +3070,10 @@
         private System.Windows.Forms.Button btnOtro;
         private System.Windows.Forms.Button btnSolucion;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button btnPortugues;
+        private System.Windows.Forms.Button btnIngles;
+        private System.Windows.Forms.Button btnEspañol;
     }
 }
 
