@@ -28,6 +28,7 @@ namespace SudokuParaTodos
         private String[,] valorIngresado = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
         private String[,] valorCandidato = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
         private String[,] valorEliminado = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
+        private String[,] valorCandidatoSinEliminados = new String[9, 9];
         int row = -1;
         int col = -1;
         int contadorIngresado = -1;
@@ -339,6 +340,7 @@ namespace SudokuParaTodos
                     valorIngresado[row, col] = txt.Text;
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                //valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorEliminado, valorCandidato);
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, 20, 8);
                 ContadorIngresado();
             }
