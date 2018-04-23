@@ -2878,9 +2878,9 @@
             this.lbl9.Location = new System.Drawing.Point(538, 96);
             this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(19, 13);
+            this.lbl9.Size = new System.Drawing.Size(13, 13);
             this.lbl9.TabIndex = 78;
-            this.lbl9.Text = "81";
+            this.lbl9.Text = "0";
             // 
             // lbl8
             // 
@@ -2889,9 +2889,9 @@
             this.lbl8.Location = new System.Drawing.Point(506, 96);
             this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl8.Name = "lbl8";
-            this.lbl8.Size = new System.Drawing.Size(19, 13);
+            this.lbl8.Size = new System.Drawing.Size(13, 13);
             this.lbl8.TabIndex = 77;
-            this.lbl8.Text = "81";
+            this.lbl8.Text = "0";
             // 
             // lbl7
             // 
@@ -2900,9 +2900,9 @@
             this.lbl7.Location = new System.Drawing.Point(472, 96);
             this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(19, 13);
+            this.lbl7.Size = new System.Drawing.Size(13, 13);
             this.lbl7.TabIndex = 76;
-            this.lbl7.Text = "81";
+            this.lbl7.Text = "0";
             // 
             // lbl6
             // 
@@ -2911,9 +2911,9 @@
             this.lbl6.Location = new System.Drawing.Point(440, 96);
             this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(19, 13);
+            this.lbl6.Size = new System.Drawing.Size(13, 13);
             this.lbl6.TabIndex = 75;
-            this.lbl6.Text = "81";
+            this.lbl6.Text = "0";
             // 
             // lbl5
             // 
@@ -2922,9 +2922,9 @@
             this.lbl5.Location = new System.Drawing.Point(406, 96);
             this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(19, 13);
+            this.lbl5.Size = new System.Drawing.Size(13, 13);
             this.lbl5.TabIndex = 74;
-            this.lbl5.Text = "81";
+            this.lbl5.Text = "0";
             // 
             // lbl4
             // 
@@ -2933,9 +2933,9 @@
             this.lbl4.Location = new System.Drawing.Point(374, 96);
             this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(19, 13);
+            this.lbl4.Size = new System.Drawing.Size(13, 13);
             this.lbl4.TabIndex = 73;
-            this.lbl4.Text = "81";
+            this.lbl4.Text = "0";
             // 
             // lbl3
             // 
@@ -2944,9 +2944,9 @@
             this.lbl3.Location = new System.Drawing.Point(340, 96);
             this.lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(19, 13);
+            this.lbl3.Size = new System.Drawing.Size(13, 13);
             this.lbl3.TabIndex = 72;
-            this.lbl3.Text = "81";
+            this.lbl3.Text = "0";
             // 
             // lbl2
             // 
@@ -2955,9 +2955,9 @@
             this.lbl2.Location = new System.Drawing.Point(308, 96);
             this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(19, 13);
+            this.lbl2.Size = new System.Drawing.Size(13, 13);
             this.lbl2.TabIndex = 71;
-            this.lbl2.Text = "81";
+            this.lbl2.Text = "0";
             // 
             // lbl1
             // 
@@ -2966,9 +2966,9 @@
             this.lbl1.Location = new System.Drawing.Point(274, 96);
             this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(19, 13);
+            this.lbl1.Size = new System.Drawing.Size(13, 13);
             this.lbl1.TabIndex = 70;
-            this.lbl1.Text = "81";
+            this.lbl1.Text = "0";
             // 
             // btn9
             // 
