@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SudoQ;
 using System.Threading;
 using System.Globalization;
 
@@ -30,8 +29,9 @@ namespace SudokuParaTodos
         private String[,] valorEliminado = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
         int row = -1;
         int col = -1;
-        int recuadro = -1;
-
+        int contadorIngresado = -1;
+        bool juegoGuardado;
+        bool crearOtro;
 
         public Form1()
         {
@@ -48,6 +48,7 @@ namespace SudokuParaTodos
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel2 = AsociarBtnPincel2(btnPincel2);
             ComportamientoObjInicio();
+            //btnC.BackgroundImage = "";
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -159,14 +160,25 @@ namespace SudokuParaTodos
         private void ComportamientoObjInicio()
         {
             this.Size = new Size(598, 643);
-            menuStrip1.Visible = EngineData.Falso;
+            mArchivo.Visible = EngineData.Falso;
+            mTablero.Visible = EngineData.Falso;
+            mColores.Visible = EngineData.Falso;
+            mContadores.Visible = EngineData.Falso;
             txtNota.Visible = EngineData.Falso;
             foreach (Button btn in btnPincel) { btn.Visible = EngineData.Falso; }
             pnlJuego.Visible = EngineData.Falso;
-            btnGuardar.Visible = EngineData.Falso;
-            btnAbrir.Visible = EngineData.Falso;
-            btnOtro.Visible = EngineData.Falso;
-            btnSolucion.Visible = EngineData.Falso;
+            mArchivo.Visible = EngineData.Falso;
+            mTablero.Visible = EngineData.Falso;
+            mColores.Visible = EngineData.Falso;
+            mContadores.Visible = EngineData.Falso;
+            juegoGuardado = EngineData.Falso;
+            crearOtro = EngineData.Falso;
+            valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, fontBig: 20, fontSmall: 8);
+            string idioma = CultureInfo.InstalledUICulture.NativeName;
+            if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
+            else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
+            else mIdiomas.Text = EngineData.IDIOMAS;
         }
 
         private void ComportamientoObjExpandido()
@@ -177,29 +189,43 @@ namespace SudokuParaTodos
             btnPincel2 = Funcion.ColoresPincel2(btnPincel2);
             pnlJuego.Visible = EngineData.Verdadero;
             btnAbrir.Visible = EngineData.Verdadero;
-            btnEspañol.Visible = EngineData.Falso;
-            btnIngles.Visible = EngineData.Falso;
-            btnPortugues.Visible = EngineData.Falso;
-            valorCandidato = Funcion.CandidatosJuego(valorIngresado,valorCandidato);
-            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato,fontBig:20,fontSmall:8);
         }
 
         private void AplicarIdioma()
         {
             this.Text = RecursosLocalizables.StringResources.Form1;
-            mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
             mColores.Text = RecursosLocalizables.StringResources.mIdiomas;
             mTablero.Text = RecursosLocalizables.StringResources.mTablero;
             mContadores.Text = RecursosLocalizables.StringResources.mContadores;
-            mIEspañol.Text = RecursosLocalizables.StringResources.mIEspañol;
-            mIIngles.Text = RecursosLocalizables.StringResources.mIIngles;
-            mIPortugues.Text = RecursosLocalizables.StringResources.mIPortugues;
             btnAbrir.Text = RecursosLocalizables.StringResources.btnAbrir;
             btnGuardar.Text = RecursosLocalizables.StringResources.btnGuardar;
             btnOtro.Text =  RecursosLocalizables.StringResources.btnOtro;
             btnSolucion.Text = RecursosLocalizables.StringResources.btnSolucion;
             this.Text = Valor.TituloForm(Valor.GetIdioma()); 
+        }
+
+        private void ContadorIngresado()
+        {
+            contadorIngresado = Funcion.ContadorIngresado(valorIngresado);
+            if (contadorIngresado >= 17 && juegoGuardado == EngineData.Falso)
+            {
+                btnGuardar.Visible = EngineData.Verdadero;
+            }
+            else if (contadorIngresado < 17)
+            {
+                btnGuardar.Visible = EngineData.Falso;
+            }
+            if (contadorIngresado == 81)
+            {
+                btnSolucion.Visible = EngineData.Verdadero;
+            }
+            else if (contadorIngresado < 81)
+            {
+                btnSolucion.Visible = EngineData.Falso;
+            }
+
         }
 
         ////////////EVENTOS////////////////////////////////////////////////////////////////////////
@@ -227,45 +253,54 @@ namespace SudokuParaTodos
             AplicarIdioma();
         }
 
-        private void LenguajeBtn_Click(object sender, EventArgs e)
-        {
-            EngineData Valor = EngineData.Instance();
-            Button btn = sender  as Button;
-            switch (btn.Name)
-            {
-                case (EngineData.BtnEspañol):
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
-                    Valor.SetIdioma(EngineData.LenguajeEspañol);
-                    break;
-                case (EngineData.BtnIngles):
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
-                    Valor.SetIdioma(EngineData.LenguajeIngles);
-                    break;
-                case (EngineData.BtnPortugues):
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
-                    Valor.SetIdioma(EngineData.LenguajePortugues);
-                    break;
-            }
-            ComportamientoObjExpandido();
-            AplicarIdioma();
-        }
-
         private void BotonesJuego_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
             switch (btn.Name)
             {
                 case (EngineData.BtnGuardarJuego):
-                    MessageBox.Show("Guardar");
+                    this.saveFileDialog1.FileName = string.Empty;
+                    this.saveFileDialog1.Filter = EngineData.DataFileSave;
+                    this.saveFileDialog1.Title = EngineData.DataFileSaveHow;
+                    this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+                    this.saveFileDialog1.ShowDialog();
+                    juegoGuardado = EngineData.Verdadero;
                     break;
                 case (EngineData.BtnAbrirJuego):
                     MessageBox.Show("Abrir");
                     break;
                 case (EngineData.BtnOtroJuego):
+                    crearOtro = EngineData.Verdadero;
                     MessageBox.Show("Crear");
                     break;
                 case (EngineData.BtnSolucion):
                     MessageBox.Show("Solucion");
+                    break;
+            }
+        }
+
+        private void BotonesContadores_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            switch (btn.Name)
+            {
+                case (EngineData.Btn1):
+                    break;
+                case (EngineData.Btn2):
+                    break;
+                case (EngineData.Btn3):
+                    break;
+                case (EngineData.Btn4):
+                    break;
+                case (EngineData.Btn5):
+                    break;
+                case (EngineData.Btn6):
+                    break;
+                case (EngineData.Btn7):
+                    break;
+                case (EngineData.Btn8):
+                    break;
+                case (EngineData.Btn9):
                     break;
             }
         }
@@ -275,7 +310,6 @@ namespace SudokuParaTodos
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
-            recuadro = Valor.ObtenerRecuadro(row, col);
             if (!char.IsNumber(e.KeyChar))
             {
                 e.Handled = true;
@@ -289,6 +323,7 @@ namespace SudokuParaTodos
 
         private void txt00_KeyUp(object sender, KeyEventArgs e)
         {
+            try { 
             TextBox txt = (TextBox)sender;
             if(txt.Text == EngineData.Zero)
             {
@@ -299,7 +334,13 @@ namespace SudokuParaTodos
             {
                 valorIngresado[row, col] = txt.Text;
             }
-            valorCandidato = Funcion.NumerosCandidatos(valorIngresado, valorCandidato, valorEliminado, recuadro);
+            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, 20, 8);
+            ContadorIngresado();
+            }
+            catch { }
         }
+
+     
     }
 }

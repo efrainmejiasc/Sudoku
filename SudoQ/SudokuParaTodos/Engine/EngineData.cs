@@ -48,10 +48,26 @@ namespace SudokuParaTodos
        public const string BtnEspañol = "btnEspañol";
        public const string BtnIngles = "btnIngles";
        public const string BtnPortugues = "btnPortugues";
-      
+       public const string DataFileSave = "Sudoku Para Todos | *.jll";
+       public const string DataFileSaveHow = "Guardar Sudoku Como";
+       public const string ExtensionFile = "jll";
 
+       public const string portu = "portu";
+       public const string english = "english";
+       public const string IDIOMAS= "IDIOMAS";
+       public const string LANGUAGES = "LANGUAGES";
 
-       private string idioma = string.Empty;
+        public const string Btn1 = "btn1";
+        public const string Btn2 = "btn2";
+        public const string Btn3 = "btn3";
+        public const string Btn4 = "btn4";
+        public const string Btn5 = "btn5";
+        public const string Btn6 = "btn6";
+        public const string Btn7 = "btn7";
+        public const string Btn8 = "btn8";
+        public const string Btn9 = "btn9";
+
+        private string idioma = string.Empty;
 
        public void SetIdioma (string v) { idioma = v; }
 
@@ -75,109 +91,6 @@ namespace SudokuParaTodos
             return titulo;
         }
 
-        private int [] FilaA = { 0, 1, 2 };
-        private int [] FilaB = { 3, 4, 5 };
-        private int [] FilaC = { 6, 7, 8 };
-
-        private int [] ColumnaA = { 0, 1, 2 };
-        private int [] ColumnaB = { 3, 4, 5 };
-        private int [] ColumnaC = { 6, 7, 8 };
-
-        public int ObtenerRecuadro (int f , int c)
-        {
-            int recuadro = -1;
-            if (FilaA.Contains(f))
-            {
-                if (ColumnaA.Contains(c)) recuadro = 1;
-                else if (ColumnaB.Contains(c)) recuadro = 2;
-                else if (ColumnaC.Contains(c)) recuadro = 3;
-            }
-            else if (FilaB.Contains(f))
-            {
-                if (ColumnaA.Contains(c)) recuadro = 4;
-                else if (ColumnaB.Contains(c)) recuadro = 5;
-                else if (ColumnaC.Contains(c)) recuadro = 6;
-            }
-            else if (FilaC.Contains(f))
-            {
-                if (ColumnaA.Contains(c)) recuadro = 7;
-                else if (ColumnaB.Contains(c)) recuadro = 8;
-                else if (ColumnaC.Contains(c)) recuadro = 9;
-            }
-            return recuadro;
-        }
-
-        public int [] IndiceFila (int recuadro)
-        {
-            int[] v = new int [3];
-            switch (recuadro)  
-            {
-                case (1):
-                    v = FilaA;
-                    break;
-                case (2):
-                    v = FilaA;
-                    break;
-                case (3):
-                    v = FilaA;
-                    break;
-                case (4):
-                    v = FilaB;
-                    break;
-                case (5):
-                    v = FilaB;
-                    break;
-                case (6):
-                    v = FilaB;
-                    break;
-                case (7):
-                    v = FilaC;
-                    break;
-                case (8):
-                    v =  FilaC;
-                    break;
-                case (9):
-                    v = FilaC;
-                    break;
-            }
-            return v;
-        }
-
-        public int[] IndiceColumna(int recuadro)
-        {
-            int[] v = new int[3];
-            switch (recuadro)
-            {
-                case (1):
-                    v = ColumnaA;
-                    break;
-                case (2):
-                    v = ColumnaA;
-                    break;
-                case (3):
-                    v = ColumnaA;
-                    break;
-                case (4):
-                    v = ColumnaB;
-                    break;
-                case (5):
-                    v = ColumnaB;
-                    break;
-                case (6):
-                    v = ColumnaB;
-                    break;
-                case (7):
-                    v = ColumnaC;
-                    break;
-                case (8):
-                    v = ColumnaC;
-                    break;
-                case (9):
-                    v = ColumnaC;
-                    break;
-            }
-            return v;
-        }
 
     }
 }
