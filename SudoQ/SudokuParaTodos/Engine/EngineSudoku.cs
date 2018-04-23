@@ -329,5 +329,112 @@ namespace SudokuParaTodos
             return listaDefinitiva;
         }
 
+        ///
+        public string[,] CandidatosSinEliminados(string[,] valorEliminado, string[,] valorCandidato)
+        {
+            ListBox candidatosOrganizados = new ListBox();
+            ListBox eliminarOrganizados = new ListBox();
+            string[,] valorCandidatoSinEliminados = new string[9,9];
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (valorEliminado[f, c] != null && valorEliminado[f, c] != string.Empty)
+                    {
+                        candidatosOrganizados.Items.Clear();
+                        eliminarOrganizados.Items.Clear();
+                        candidatosOrganizados = OrganizarCandidatos(candidatosOrganizados, f, c, valorCandidato);
+                        eliminarOrganizados = OrganizarLista(eliminarOrganizados, valorEliminado[f, c]);
+                        candidatosOrganizados = QuitarEliminados(candidatosOrganizados, eliminarOrganizados);
+                        valorCandidatoSinEliminados = EscribirCandidatosSinEliminados(candidatosOrganizados, f, c,valorCandidatoSinEliminados); 
+                       
+                    }
+                }
+            }
+            return valorCandidatoSinEliminados;
+        }
+
+        private ListBox OrganizarCandidatos(ListBox lista, int f, int c, string[,] valorCandidato)
+        {
+            ListBox listaAux = new ListBox();
+            string k = valorCandidato[f, c];
+            k = k.Trim();
+            string[] item = k.Split(' ');
+            for (int i = 0; i <= item.Length - 1; i++) { listaAux.Items.Add(item[i].Trim()); }
+            foreach (String n in listaAux.Items)
+            {
+                if (n.Trim().Length == 1) { lista.Items.Add(n.Trim()); }
+                if (n.Trim().Length > 1)
+                {
+                    lista.Items.Add(n.Substring(0, 1));
+                    lista.Items.Add(n.Substring(2, 2));
+                }
+            }
+            return lista;
+        }
+
+        private ListBox OrganizarLista(ListBox lista, string cadena)
+        {
+            ListBox listaAux = new ListBox();
+            cadena = cadena.Trim();
+            string[] item = cadena.Split(' ');
+            for (int i = 0; i <= item.Length - 1; i++) { listaAux.Items.Add(item[i].Trim()); }
+            foreach (string n in listaAux.Items)
+            {
+                if (n.Trim().Length == 1) { lista.Items.Add(n.Trim()); }
+                if (n.Trim().Length > 1)
+                {
+                    lista.Items.Add(n.Substring(0, 1));
+                    lista.Items.Add(n.Substring(2, 2));
+                }
+            }
+            return lista;
+        }
+
+        private ListBox QuitarEliminados(ListBox candidatosOrganizados, ListBox cadenaEliminado)
+        {
+            int index = -1;
+            ListBox eliminados = new ListBox();
+            eliminados.Items.Clear();
+            foreach (string valor in cadenaEliminado.Items)
+            {
+                index = candidatosOrganizados.FindString(valor.Trim());
+                if (index > -1)
+                {
+                    eliminados.Items.Add(valor.Trim());
+                    candidatosOrganizados.Items.RemoveAt(index);
+                }
+            }
+            return candidatosOrganizados;
+        }
+
+        private string[,] EscribirCandidatosSinEliminados(ListBox candidatosFinal, int f, int c,string[,] valorCandidatoSinEliminados)
+        {
+            if (candidatosFinal.Items.Count > 0)
+            {
+                string valor = string.Empty;
+                int indic = 1;
+                foreach (string v in candidatosFinal.Items)
+                {
+                    String I = v.Trim();
+                    if (indic == 3 || indic == 6 || indic == 9)
+                    {
+                        valor = valor + " " + I + Environment.NewLine;
+                    }
+                    else
+                    {
+                        valor = valor + " " + I;
+                    }
+                    indic++;
+                }
+                valorCandidatoSinEliminados[f, c] = valor;
+            }
+            else
+            {
+                valorCandidatoSinEliminados[f, c] = string.Empty;
+            }
+            return valorCandidatoSinEliminados;
+        }
+
     }
 }

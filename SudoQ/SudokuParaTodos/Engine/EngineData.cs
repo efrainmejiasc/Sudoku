@@ -9,8 +9,9 @@ namespace SudokuParaTodos
 {
     public class EngineData
     {
-        private static EngineData valor;
-        public static EngineData Instance()
+       private static EngineData valor;
+
+       public static EngineData Instance()
         {
             if ((valor == null))
             {
@@ -67,7 +68,7 @@ namespace SudokuParaTodos
         public const string Btn8 = "btn8";
         public const string Btn9 = "btn9";
 
-        private string idioma = string.Empty;
+       private string idioma = string.Empty;
 
        public void SetIdioma (string v) { idioma = v; }
 

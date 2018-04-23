@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Globalization;
+using System.IO;
 
 namespace SudokuParaTodos
 {
@@ -159,7 +160,8 @@ namespace SudokuParaTodos
 
         private void ComportamientoObjInicio()
         {
-            this.Size = new Size(598, 643);
+            this.Size = new Size(592 , 682);
+            btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
             mColores.Visible = EngineData.Falso;
@@ -183,12 +185,13 @@ namespace SudokuParaTodos
 
         private void ComportamientoObjExpandido()
         {
-            this.Size = new Size(1176 , 643);
+            this.Size = new Size(1168 , 682);
             foreach (Button btn in btnPincel) { btn.Visible = EngineData.Verdadero; }
             btnPincel = Funcion.ColoresPincel(btnPincel);
             btnPincel2 = Funcion.ColoresPincel2(btnPincel2);
             pnlJuego.Visible = EngineData.Verdadero;
             btnAbrir.Visible = EngineData.Verdadero;
+            txtNota.Visible = EngineData.Verdadero;
         }
 
         private void AplicarIdioma()
@@ -323,20 +326,21 @@ namespace SudokuParaTodos
 
         private void txt00_KeyUp(object sender, KeyEventArgs e)
         {
-            try { 
-            TextBox txt = (TextBox)sender;
-            if(txt.Text == EngineData.Zero)
+            try
             {
-                txt.Text = string.Empty;
-                valorIngresado[row, col] = string.Empty; 
-            }
-            else
-            {
-                valorIngresado[row, col] = txt.Text;
-            }
-            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, 20, 8);
-            ContadorIngresado();
+                TextBox txt = (TextBox)sender;
+                if (txt.Text == EngineData.Zero)
+                {
+                    txt.Text = string.Empty;
+                    valorIngresado[row, col] = string.Empty;
+                }
+                else
+                {
+                    valorIngresado[row, col] = txt.Text;
+                }
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, 20, 8);
+                ContadorIngresado();
             }
             catch { }
         }

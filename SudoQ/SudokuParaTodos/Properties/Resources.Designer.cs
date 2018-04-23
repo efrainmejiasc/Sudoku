@@ -63,6 +63,16 @@ namespace SudokuParaTodos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Look {
+            get {
+                object obj = ResourceManager.GetObject("Look", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap port {
             get {
                 object obj = ResourceManager.GetObject("port", resourceCulture);
@@ -76,6 +86,16 @@ namespace SudokuParaTodos.Properties {
         internal static System.Drawing.Bitmap spain {
             get {
                 object obj = ResourceManager.GetObject("spain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UnLook {
+            get {
+                object obj = ResourceManager.GetObject("UnLook", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
