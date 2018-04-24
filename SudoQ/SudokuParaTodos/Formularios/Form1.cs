@@ -25,10 +25,10 @@ namespace SudokuParaTodos
         private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
         private Button[] btnPincel = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private Button[] btnPincel2 = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES DERECHO
-        private String[,] valorIngresado = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
-        private String[,] valorCandidato = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
-        private String[,] valorEliminado = new String[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
-        private String[,] valorCandidatoSinEliminados = new String[9, 9];
+        private string[,] valorIngresado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
+        private string[,] valorCandidato = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
+        private string[,] valorEliminado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
+        private string[,] valorCandidatoSinEliminados = new string[9, 9];
         int row = -1;
         int col = -1;
         int contadorIngresado = -1;
@@ -50,7 +50,7 @@ namespace SudokuParaTodos
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel2 = AsociarBtnPincel2(btnPincel2);
             ComportamientoObjInicio();
-            //btnC.BackgroundImage = "";
+            valorEliminado[8, 8] = "3";
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -333,15 +333,16 @@ namespace SudokuParaTodos
                 if (txt.Text == EngineData.Zero)
                 {
                     txt.Text = string.Empty;
-                    valorIngresado[row, col] = string.Empty;
+                    valorIngresado[row, col] = string.Empty; 
                 }
                 else
                 {
                     valorIngresado[row, col] = txt.Text;
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                //valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorEliminado, valorCandidato);
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, 20, 8);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorIngresado, valorCandidatoSinEliminados, 20, 8);
                 ContadorIngresado();
             }
             catch { }
