@@ -9,6 +9,7 @@ namespace SudokuParaTodos
     {
         private EngineData Valor = EngineData.Instance();
         private int recuadro = -1;
+        private int[] pos = new int[2];
 
         private RegistryKey key = Registry.CurrentUser;
 
@@ -148,6 +149,29 @@ namespace SudokuParaTodos
                 }
             }
             return cajaTexto;
+        }
+        public TextBox[,] SetearTextBoxLimpio(TextBox[,] cajaTexto, string[,] vArray)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].Text = vArray[f, c];
+                }           
+            }
+            return cajaTexto;
+        }
+
+        public string[,] LimpiarArreglo(string[,] arreglo)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    arreglo[f, c] = null;
+                }
+            }
+            return arreglo;
         }
 
         public int ContadorIngresado(string[,] valorIngresado)
@@ -340,15 +364,26 @@ namespace SudokuParaTodos
             {
                 for (int c = 0; c <= 8; c++)
                 {
-                    if ((valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty) && (valorEliminado != null && valorEliminado[f, c] != string.Empty))
+                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty) 
                     {
-                        candidatosOrganizados.Items.Clear();
-                        eliminarOrganizados.Items.Clear();
-                        candidatosFC = valorCandidato[f, c];
-                        candidatosOrganizados = OrganizarCandidatos(candidatosOrganizados, candidatosFC);
-                        eliminarOrganizados = OrganizarLista(eliminarOrganizados, valorEliminado[f, c]);
-                        candidatosOrganizados = QuitarEliminados(candidatosOrganizados, eliminarOrganizados);
-                        valorCandidatoSinEliminados = EstablecerCandidatosSinEliminados(candidatosOrganizados, f, c, valorCandidatoSinEliminados);
+                        if (valorEliminado[f,c] != null && valorEliminado[f,c] != string.Empty)
+                        {
+                            candidatosOrganizados.Items.Clear();
+                            eliminarOrganizados.Items.Clear();
+                            candidatosFC = valorCandidato[f, c];
+                            candidatosOrganizados = OrganizarCandidatos(candidatosOrganizados, candidatosFC);
+                            eliminarOrganizados = OrganizarLista(eliminarOrganizados, valorEliminado[f, c]);
+                            candidatosOrganizados = QuitarEliminados(candidatosOrganizados, eliminarOrganizados);
+                            valorCandidatoSinEliminados = EstablecerCandidatosSinEliminados(candidatosOrganizados, f, c, valorCandidatoSinEliminados);
+                        }
+                        else
+                        {
+                          valorCandidatoSinEliminados[f, c] = string.Empty;
+                        }
+                    }
+                    else
+                    {
+                      valorCandidatoSinEliminados[f, c] = string.Empty;
                     }
                 }
             }
@@ -421,7 +456,7 @@ namespace SudokuParaTodos
         {
             if (candidatosFinal.Items.Count > 0)
             {
-                string valor = ""; int indic = 1;
+                string valor = string.Empty; int indic = 1;
                 foreach (String v in candidatosFinal.Items)
                 {
                     String I = v.Trim();
@@ -445,16 +480,15 @@ namespace SudokuParaTodos
             return valorCandidatoSinEliminados;
         }
 
-        public TextBox[,] SetearTextBoxJuegoSinEliminados(TextBox[,] cajaTexto, string[,] valorIngresado, string[,] valorCandidatoSinEliminados, float fontBig = 0, float fontSmall = 0)
+        public TextBox[,] SetearTextBoxJuegoSinEliminados(TextBox[,] cajaTexto,  string[,] valorCandidatoSinEliminados, float fontBig = 0, float fontSmall = 0)
         {
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
                 {
-                    if ((valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty) && (valorCandidatoSinEliminados != null && valorCandidatoSinEliminados[f, c] != string.Empty))
+                    if (valorCandidatoSinEliminados != null && valorCandidatoSinEliminados[f, c] != string.Empty)
                     {
                         cajaTexto[f, c].Text = valorCandidatoSinEliminados[f, c];
-
                         cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
                     }
                 }
@@ -462,6 +496,25 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public int[] Position(String sentido, int f, int c)
+        {
+            switch (sentido)
+            {
+                case "Up":
+                    pos[0] = f - 1; pos[1] = c;
+                    break;
+                case "Down":
+                    pos[0] = f + 1; pos[1] = c;
+                    break;
+                case "Right":
+                    pos[0] = f; pos[1] = c + 1;
+                    break;
+                case "Left":
+                    pos[0] = f; pos[1] = c - 1;
+                    break;
+            }
+            return pos;
+        }
 
 
     }

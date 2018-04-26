@@ -151,6 +151,11 @@
     <None Include="Resources\spain.JPG" />
     <None Include="Resources\usa.JPG" />
     <None Include="Resources\port.JPG" />
+    <None Include="Resources\D3.JPG" />
+    <None Include="Resources\D2.JPG" />
+    <None Include="Resources\D31.JPG" />
+    <None Include="Resources\Izq.JPG" />
+    <None Include="Resources\Der.JPG" />
     <Content Include="Resources\Look.JPG" />
     <Content Include="Resources\UnLook.JPG" />
     <Content Include="SudokuEnCasa.ico" />

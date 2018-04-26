@@ -68,7 +68,12 @@ namespace SudokuParaTodos
         public const string Btn8 = "btn8";
         public const string Btn9 = "btn9";
 
-       private string idioma = string.Empty;
+        public const string Up = "Up";
+        public const string Down = "Down";
+        public const string Right = "Right";
+        public const string Left = "Left";
+
+        private string idioma = string.Empty;
 
        public void SetIdioma (string v) { idioma = v; }
 
