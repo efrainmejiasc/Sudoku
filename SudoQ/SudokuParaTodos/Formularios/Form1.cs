@@ -258,14 +258,14 @@ namespace SudokuParaTodos
         private void ContadorIngresado()
         {
             contadorIngresado = Funcion.ContadorIngresado(valorIngresado);
-            if (contadorIngresado >= 17 && juegoGuardado == EngineData.Falso)
+            if (contadorIngresado >= 1 && juegoGuardado == EngineData.Falso)
             {
                 btnGuardar.Visible = EngineData.Verdadero;
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
             }
-            else if (contadorIngresado < 17)
+            else if (contadorIngresado < 1)
             {
                 btnGuardar.Visible = EngineData.Falso;
             }
@@ -309,24 +309,37 @@ namespace SudokuParaTodos
         private void BotonesJuego_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
+            string pathArchivo = string.Empty;
+            string idioma = Valor.GetIdioma();
             switch (btn.Name)
             {
                 case (EngineData.BtnGuardarJuego):
-                    /*this.saveFileDialog1.FileName = string.Empty;
-                    this.saveFileDialog1.Filter = EngineData.DataFileSave;
-                    this.saveFileDialog1.Title = EngineData.DataFileSaveHow;
+                    this.saveFileDialog1.FileName = string.Empty;
+                    this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
+                    this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
                     this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
                     this.saveFileDialog1.ShowDialog();
-                    juegoGuardado = EngineData.Verdadero;*/
+                    pathArchivo = saveFileDialog1.FileName;
+               
+                    Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+                    Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
                     valorIngresado = Funcion.LimpiarArreglo(valorIngresado);
                     valorEliminado = Funcion.LimpiarArreglo(valorEliminado);
+
+                    juegoGuardado = EngineData.Verdadero;
+
                     valorCandidatoSinEliminados = Funcion.LimpiarArreglo(valorCandidatoSinEliminados);
                     valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
                     txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku, valorIngresado);
                     txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, fontBig: 20, fontSmall: 8);
                     break;
                 case (EngineData.BtnAbrirJuego):
-                    MessageBox.Show("Abrir");
+                    this.openFileDialog1.FileName = string.Empty;
+                    this.openFileDialog1.Filter = Valor.NombreAbrirJuego(idioma);
+                    this.openFileDialog1.Title = Valor.TextoAbrirJuego(idioma);
+                    this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+                    this.openFileDialog1.ShowDialog();
+                    pathArchivo = openFileDialog1.FileName;
                     break;
                 case (EngineData.BtnOtroJuego):
                     crearOtro = EngineData.Verdadero;

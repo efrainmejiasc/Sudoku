@@ -49,8 +49,8 @@ namespace SudokuParaTodos
        public const string BtnEspañol = "btnEspañol";
        public const string BtnIngles = "btnIngles";
        public const string BtnPortugues = "btnPortugues";
-       public const string DataFileSave = "Sudoku Para Todos | *.jll";
-       public const string DataFileSaveHow = "Guardar Sudoku Como";
+
+       public const string FiltroFile = " | *.jll";
        public const string ExtensionFile = "jll";
 
        public const string portu = "portu";
@@ -73,7 +73,7 @@ namespace SudokuParaTodos
         public const string Right = "Right";
         public const string Left = "Left";
 
-        private string idioma = string.Empty;
+       private string idioma = string.Empty;
 
        public void SetIdioma (string v) { idioma = v; }
 
@@ -85,7 +85,7 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Sudoku Para Todos - Crear Juego                                                                                                                                                                                                  Numeros y Candidatos";
+                    titulo = "Sudoku Para Todos - Crear Juego                                                                                                                                                                                                 Numeros y Candidatos";
                     break;
                 case ("Ingles"):
                     titulo = "Sudoku For All - Create Game                                                                                                                                                                                                  Numbers and Candidates";
@@ -93,8 +93,96 @@ namespace SudokuParaTodos
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos - Criar Jogo                                                                                                                                                                                                  Números e Candidatos";
                     break;
+                default:
+                    titulo = "Sudoku Para Todos - Crear Juego                                                                                                                                                                                                 Numeros y Candidatos";
+                    break;
             }
             return titulo;
+        }
+
+       public string NombreJuegoFileFiltro (string lenguaje)
+       {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Sudoku Para Todos" + FiltroFile;                                                                                                                                                                                            
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Sudoku For All" + FiltroFile;                                                                                                                                                                                               
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Sudoku Para Todos" + FiltroFile;                                                                                                                                                                                              
+                    break;
+                default:
+                    nombreJuego = "Sudoku Para Todos" + FiltroFile;
+                    break;
+            }
+            return nombreJuego;
+        }
+
+        public string TituloGuardarJuego(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Guardar Sudoku Como";
+                    break;
+                case ("Ingles"):
+                    titulo = "Save Sudoku As";
+                    break;
+                case ("Portugues"):
+                    titulo = "Salve o Sudoku Como";
+                    break;
+                default:
+                    titulo = "Guardar Sudoku Como";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string NombreAbrirJuego(string lenguaje)
+        {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Archivos de Texto" + FiltroFile;
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Text Files" + FiltroFile;
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Arquivos de Textos" + FiltroFile;
+                    break;
+                default:
+                    nombreJuego = "Archivos de Texto" + FiltroFile;
+                    break;
+            }
+            return nombreJuego;
+        }
+
+
+        public string TextoAbrirJuego(string lenguaje)
+        {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Abrir Juego";
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Open Game";
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Jogo Aberto";
+                    break;
+                default:
+                    nombreJuego = "Abrir Juego";
+                    break;
+            }
+            return nombreJuego;
         }
 
 

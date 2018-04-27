@@ -123,6 +123,12 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.txtIndice = new System.Windows.Forms.TextBox();
             this.lblIndice = new System.Windows.Forms.Label();
+            this.btnDer2 = new System.Windows.Forms.Button();
+            this.btnIzq2 = new System.Windows.Forms.Button();
+            this.btnDer1 = new System.Windows.Forms.Button();
+            this.btnIzq1 = new System.Windows.Forms.Button();
+            this.btnDos = new System.Windows.Forms.Button();
+            this.btnTres = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.pincelL = new System.Windows.Forms.Button();
             this.pincelK = new System.Windows.Forms.Button();
@@ -166,6 +172,9 @@
             this.mColores = new System.Windows.Forms.ToolStripMenuItem();
             this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
+            this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
+            this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
+            this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pincelE = new System.Windows.Forms.Button();
             this.pincelD = new System.Windows.Forms.Button();
@@ -269,15 +278,6 @@
             this.pincelF = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnDer2 = new System.Windows.Forms.Button();
-            this.btnIzq2 = new System.Windows.Forms.Button();
-            this.btnDer1 = new System.Windows.Forms.Button();
-            this.btnIzq1 = new System.Windows.Forms.Button();
-            this.btnDos = new System.Windows.Forms.Button();
-            this.btnTres = new System.Windows.Forms.Button();
-            this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
-            this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
-            this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1602,7 +1602,7 @@
             // 
             this.txtNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNota.Location = new System.Drawing.Point(305, 38);
+            this.txtNota.Location = new System.Drawing.Point(313, 31);
             this.txtNota.Margin = new System.Windows.Forms.Padding(2);
             this.txtNota.MaxLength = 7;
             this.txtNota.Name = "txtNota";
@@ -1683,6 +1683,96 @@
             this.lblIndice.TabIndex = 92;
             this.lblIndice.Text = "1";
             // 
+            // btnDer2
+            // 
+            this.btnDer2.BackColor = System.Drawing.Color.Silver;
+            this.btnDer2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
+            this.btnDer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDer2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnDer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDer2.ForeColor = System.Drawing.Color.Silver;
+            this.btnDer2.Location = new System.Drawing.Point(237, 60);
+            this.btnDer2.Name = "btnDer2";
+            this.btnDer2.Size = new System.Drawing.Size(36, 24);
+            this.btnDer2.TabIndex = 91;
+            this.btnDer2.UseVisualStyleBackColor = false;
+            // 
+            // btnIzq2
+            // 
+            this.btnIzq2.BackColor = System.Drawing.Color.Silver;
+            this.btnIzq2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.btnIzq2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIzq2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnIzq2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzq2.ForeColor = System.Drawing.Color.Silver;
+            this.btnIzq2.Location = new System.Drawing.Point(201, 60);
+            this.btnIzq2.Name = "btnIzq2";
+            this.btnIzq2.Size = new System.Drawing.Size(36, 24);
+            this.btnIzq2.TabIndex = 90;
+            this.btnIzq2.UseVisualStyleBackColor = false;
+            // 
+            // btnDer1
+            // 
+            this.btnDer1.BackColor = System.Drawing.Color.Silver;
+            this.btnDer1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
+            this.btnDer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDer1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnDer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDer1.ForeColor = System.Drawing.Color.Silver;
+            this.btnDer1.Location = new System.Drawing.Point(237, 30);
+            this.btnDer1.Name = "btnDer1";
+            this.btnDer1.Size = new System.Drawing.Size(36, 24);
+            this.btnDer1.TabIndex = 89;
+            this.btnDer1.UseVisualStyleBackColor = false;
+            // 
+            // btnIzq1
+            // 
+            this.btnIzq1.BackColor = System.Drawing.Color.Silver;
+            this.btnIzq1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.btnIzq1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIzq1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnIzq1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzq1.ForeColor = System.Drawing.Color.Silver;
+            this.btnIzq1.Location = new System.Drawing.Point(201, 30);
+            this.btnIzq1.Name = "btnIzq1";
+            this.btnIzq1.Size = new System.Drawing.Size(36, 24);
+            this.btnIzq1.TabIndex = 88;
+            this.btnIzq1.UseVisualStyleBackColor = false;
+            // 
+            // btnDos
+            // 
+            this.btnDos.BackColor = System.Drawing.Color.Silver;
+            this.btnDos.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D21;
+            this.btnDos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDos.ForeColor = System.Drawing.Color.Silver;
+            this.btnDos.Location = new System.Drawing.Point(379, 60);
+            this.btnDos.Name = "btnDos";
+            this.btnDos.Size = new System.Drawing.Size(27, 28);
+            this.btnDos.TabIndex = 87;
+            this.btnDos.UseVisualStyleBackColor = false;
+            // 
+            // btnTres
+            // 
+            this.btnTres.BackColor = System.Drawing.Color.Silver;
+            this.btnTres.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D3;
+            this.btnTres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTres.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTres.ForeColor = System.Drawing.Color.Silver;
+            this.btnTres.Location = new System.Drawing.Point(345, 60);
+            this.btnTres.Name = "btnTres";
+            this.btnTres.Size = new System.Drawing.Size(27, 28);
+            this.btnTres.TabIndex = 86;
+            this.btnTres.UseVisualStyleBackColor = false;
+            // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.White;
@@ -1690,7 +1780,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Silver;
-            this.btnDelete.Location = new System.Drawing.Point(305, 69);
+            this.btnDelete.Location = new System.Drawing.Point(313, 62);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(25, 24);
             this.btnDelete.TabIndex = 85;
@@ -2167,6 +2257,30 @@
             this.mIdiomas.Name = "mIdiomas";
             this.mIdiomas.Size = new System.Drawing.Size(67, 20);
             this.mIdiomas.Text = "IDIOMAS";
+            // 
+            // mIEspañol
+            // 
+            this.mIEspañol.Image = global::SudokuParaTodos.Properties.Resources.spain;
+            this.mIEspañol.Name = "mIEspañol";
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Text = "Español";
+            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
+            // 
+            // mIIngles
+            // 
+            this.mIIngles.Image = global::SudokuParaTodos.Properties.Resources.usa;
+            this.mIIngles.Name = "mIIngles";
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Text = "English";
+            this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
+            // 
+            // mIPortugues
+            // 
+            this.mIPortugues.Image = global::SudokuParaTodos.Properties.Resources.port;
+            this.mIPortugues.Name = "mIPortugues";
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Text = "Portugues";
+            this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // panel11
             // 
@@ -3201,120 +3315,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // btnDer2
-            // 
-            this.btnDer2.BackColor = System.Drawing.Color.Silver;
-            this.btnDer2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.btnDer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDer2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDer2.ForeColor = System.Drawing.Color.Silver;
-            this.btnDer2.Location = new System.Drawing.Point(237, 60);
-            this.btnDer2.Name = "btnDer2";
-            this.btnDer2.Size = new System.Drawing.Size(36, 24);
-            this.btnDer2.TabIndex = 91;
-            this.btnDer2.UseVisualStyleBackColor = false;
-            // 
-            // btnIzq2
-            // 
-            this.btnIzq2.BackColor = System.Drawing.Color.Silver;
-            this.btnIzq2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzq2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzq2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzq2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzq2.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzq2.Location = new System.Drawing.Point(201, 60);
-            this.btnIzq2.Name = "btnIzq2";
-            this.btnIzq2.Size = new System.Drawing.Size(36, 24);
-            this.btnIzq2.TabIndex = 90;
-            this.btnIzq2.UseVisualStyleBackColor = false;
-            // 
-            // btnDer1
-            // 
-            this.btnDer1.BackColor = System.Drawing.Color.Silver;
-            this.btnDer1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.btnDer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDer1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDer1.ForeColor = System.Drawing.Color.Silver;
-            this.btnDer1.Location = new System.Drawing.Point(237, 30);
-            this.btnDer1.Name = "btnDer1";
-            this.btnDer1.Size = new System.Drawing.Size(36, 24);
-            this.btnDer1.TabIndex = 89;
-            this.btnDer1.UseVisualStyleBackColor = false;
-            // 
-            // btnIzq1
-            // 
-            this.btnIzq1.BackColor = System.Drawing.Color.Silver;
-            this.btnIzq1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzq1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzq1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzq1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzq1.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzq1.Location = new System.Drawing.Point(201, 30);
-            this.btnIzq1.Name = "btnIzq1";
-            this.btnIzq1.Size = new System.Drawing.Size(36, 24);
-            this.btnIzq1.TabIndex = 88;
-            this.btnIzq1.UseVisualStyleBackColor = false;
-            // 
-            // btnDos
-            // 
-            this.btnDos.BackColor = System.Drawing.Color.Silver;
-            this.btnDos.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D21;
-            this.btnDos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(371, 67);
-            this.btnDos.Name = "btnDos";
-            this.btnDos.Size = new System.Drawing.Size(27, 28);
-            this.btnDos.TabIndex = 87;
-            this.btnDos.UseVisualStyleBackColor = false;
-            // 
-            // btnTres
-            // 
-            this.btnTres.BackColor = System.Drawing.Color.Silver;
-            this.btnTres.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D3;
-            this.btnTres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTres.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(337, 67);
-            this.btnTres.Name = "btnTres";
-            this.btnTres.Size = new System.Drawing.Size(27, 28);
-            this.btnTres.TabIndex = 86;
-            this.btnTres.UseVisualStyleBackColor = false;
-            // 
-            // mIEspañol
-            // 
-            this.mIEspañol.Image = global::SudokuParaTodos.Properties.Resources.spain;
-            this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
-            this.mIEspañol.Text = "Español";
-            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
-            // 
-            // mIIngles
-            // 
-            this.mIIngles.Image = global::SudokuParaTodos.Properties.Resources.usa;
-            this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
-            this.mIIngles.Text = "English";
-            this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
-            // 
-            // mIPortugues
-            // 
-            this.mIPortugues.Image = global::SudokuParaTodos.Properties.Resources.port;
-            this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
-            this.mIPortugues.Text = "Portugues";
-            this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // Form1
             // 

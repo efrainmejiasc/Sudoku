@@ -150,6 +150,7 @@ namespace SudokuParaTodos
             }
             return cajaTexto;
         }
+
         public TextBox[,] SetearTextBoxLimpio(TextBox[,] cajaTexto, string[,] vArray)
         {
             for (int f = 0; f <= 8; f++)
@@ -185,6 +186,26 @@ namespace SudokuParaTodos
                 }
             }
              return contadorIngresado;
+        }
+
+        public int[] Position(String sentido, int f, int c)
+        {
+            switch (sentido)
+            {
+                case "Up":
+                    pos[0] = f - 1; pos[1] = c;
+                    break;
+                case "Down":
+                    pos[0] = f + 1; pos[1] = c;
+                    break;
+                case "Right":
+                    pos[0] = f; pos[1] = c + 1;
+                    break;
+                case "Left":
+                    pos[0] = f; pos[1] = c - 1;
+                    break;
+            }
+            return pos;
         }
 
         // METODOS NUMEROS + CANDIDATOS 
@@ -496,26 +517,70 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        public int[] Position(String sentido, int f, int c)
+       // GUARDAR ARCHIVO
+        public void GuardarValoresIngresados(string pathArchivo, string[,] valorIngresado)
         {
-            switch (sentido)
+            if (pathArchivo != null && pathArchivo != "")
             {
-                case "Up":
-                    pos[0] = f - 1; pos[1] = c;
-                    break;
-                case "Down":
-                    pos[0] = f + 1; pos[1] = c;
-                    break;
-                case "Right":
-                    pos[0] = f; pos[1] = c + 1;
-                    break;
-                case "Left":
-                    pos[0] = f; pos[1] = c - 1;
-                    break;
+                string[] partes = pathArchivo.Split('\\');
+                string nombreArchivo = partes[partes.Length - 1];
+                string vLinea = string.Empty;
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo))
+                {
+                    string vIngresado = string.Empty;
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        for (int c = 0; c <= 8; c++)
+                        {
+                            if (valorIngresado[f, c] != null && valorIngresado[f, c] != string.Empty)
+                            {
+                                vIngresado = valorIngresado[f, c].Trim();
+                            }
+                            else
+                            {
+                                vIngresado = EngineData.Zero;
+                            }
+                            if (c == 0) vLinea = vIngresado + "-"; else if (c > 0 && c < 8) vLinea = vLinea + vIngresado + "-"; else if (c == 8) vLinea = vLinea + vIngresado;
+                        }
+                        file.WriteLine(vLinea);
+                        vLinea = string.Empty;
+                    }
+                }
             }
-            return pos;
         }
 
+        public void GuardarValoresEliminados(string pathArchivo, string[,] valorEliminado)
+        {
+            if (pathArchivo != null && pathArchivo != "")
+            {
+                string[] partes = pathArchivo.Split('\\');
+                string nombreArchivo = partes[partes.Length - 1];
+                string vLinea = string.Empty;
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo, true))
+                {
+                    string vEliminado = string.Empty;
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        for (int c = 0; c <= 8; c++)
+                        {
+                            if (valorEliminado[f, c] != null && valorEliminado[f, c] != string.Empty)
+                            {
+                                vEliminado = valorEliminado[f, c].Trim();
+                            }
+                            else
+                            {
+                                vEliminado = EngineData.Zero;
+                            }
+                            if (c == 0) vLinea = vEliminado + "-"; else if (c > 0 && c < 8) vLinea = vLinea + vEliminado + "-"; else if (c == 8) vLinea = vLinea + vEliminado;
+                        }
+                        file.WriteLine(vLinea);
+                        vLinea = string.Empty;
+                    }
+
+                }
+            }
+
+        }
 
     }
 }
