@@ -2,6 +2,8 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
+using System.IO;
+using System.Collections;
 
 namespace SudokuParaTodos
 {
@@ -99,6 +101,8 @@ namespace SudokuParaTodos
             v[2].BackColor = Color.CornflowerBlue;
             v[3].BackColor = Color.LightCoral;
             v[4].BackColor = Color.Crimson;
+            v[5].BackColor = Color.Silver;
+            v[6].BackColor = Color.LemonChiffon;
             return v;
         }
 
@@ -128,36 +132,36 @@ namespace SudokuParaTodos
             return valorCandidato;
         }
 
-        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vArray ,float fontBig = 0, float fontSmall = 0 )
+        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vArray )
         {
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
                 {
                     cajaTexto[f, c].Text = vArray[f,c];
-                    if (vArray[f, c].Length == 1)
+                    /*if (vArray[f, c].Length == 1)
                     {
                         cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontBig);
-                        cajaTexto[f, c].ForeColor = Color.Green;
+                        cajaTexto[f, c].ForeColor = colorA;
                     }
                     else
                     {
                         cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontSmall);
-                        cajaTexto[f, c].ForeColor = Color.Blue;
-                    }
+                        cajaTexto[f, c].ForeColor = colorB;
+                    }*/
                     cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
                 }
             }
             return cajaTexto;
         }
 
-        public TextBox[,] SetearTextBoxLimpio(TextBox[,] cajaTexto, string[,] vArray)
+        public TextBox[,] SetearTextBoxLimpio(TextBox[,] cajaTexto)
         {
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
                 {
-                    cajaTexto[f, c].Text = vArray[f, c];
+                    cajaTexto[f, c].Text = string.Empty;
                 }           
             }
             return cajaTexto;
@@ -188,7 +192,7 @@ namespace SudokuParaTodos
              return contadorIngresado;
         }
 
-        public int[] Position(String sentido, int f, int c)
+        public int[] Position(string sentido, int f, int c)
         {
             switch (sentido)
             {
@@ -399,12 +403,12 @@ namespace SudokuParaTodos
                         }
                         else
                         {
-                          valorCandidatoSinEliminados[f, c] = string.Empty;
+                          valorCandidatoSinEliminados[f, c] = valorCandidato[f,c];
                         }
                     }
                     else
                     {
-                      valorCandidatoSinEliminados[f, c] = string.Empty;
+                      valorCandidatoSinEliminados[f, c] = valorIngresado[f,c];
                     }
                 }
             }
@@ -501,7 +505,7 @@ namespace SudokuParaTodos
             return valorCandidatoSinEliminados;
         }
 
-        public TextBox[,] SetearTextBoxJuegoSinEliminados(TextBox[,] cajaTexto,  string[,] valorCandidatoSinEliminados, float fontBig = 0, float fontSmall = 0)
+        public TextBox[,] SetearTextBoxJuegoSinEliminados(TextBox[,] cajaTexto,  string[,] valorCandidatoSinEliminados)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -517,7 +521,24 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-       // GUARDAR ARCHIVO
+        // GUARDAR ARCHIVO
+        public bool ExisteValorIngresado(string[,] plantilla)
+        {
+            bool existeValor = false;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (plantilla[f, c] != null && plantilla[f, c] != string.Empty)
+                    {
+                        existeValor = true;
+                        return existeValor;
+                    }
+                }
+            }
+            return existeValor;
+        }
+
         public void GuardarValoresIngresados(string pathArchivo, string[,] valorIngresado)
         {
             if (pathArchivo != null && pathArchivo != "")
@@ -540,7 +561,9 @@ namespace SudokuParaTodos
                             {
                                 vIngresado = EngineData.Zero;
                             }
-                            if (c == 0) vLinea = vIngresado + "-"; else if (c > 0 && c < 8) vLinea = vLinea + vIngresado + "-"; else if (c == 8) vLinea = vLinea + vIngresado;
+                            if (c == 0) vLinea = vIngresado + "-";
+                            else if (c > 0 && c < 8) vLinea = vLinea + vIngresado + "-";
+                            else if (c == 8) vLinea = vLinea + vIngresado;
                         }
                         file.WriteLine(vLinea);
                         vLinea = string.Empty;
@@ -571,7 +594,9 @@ namespace SudokuParaTodos
                             {
                                 vEliminado = EngineData.Zero;
                             }
-                            if (c == 0) vLinea = vEliminado + "-"; else if (c > 0 && c < 8) vLinea = vLinea + vEliminado + "-"; else if (c == 8) vLinea = vLinea + vEliminado;
+                            if (c == 0) vLinea = vEliminado + "-";
+                            else if (c > 0 && c < 8) vLinea = vLinea + vEliminado + "-";
+                            else if (c == 8) vLinea = vLinea + vEliminado;
                         }
                         file.WriteLine(vLinea);
                         vLinea = string.Empty;
@@ -580,6 +605,162 @@ namespace SudokuParaTodos
                 }
             }
 
+        }
+
+        public void GuardarValoresInicio(string pathArchivo, string[,] valorInicio)
+        {
+            if (pathArchivo != null && pathArchivo != string.Empty)
+            {
+                string[] partes = pathArchivo.Split('\\');
+                string nombreArchivo = partes[partes.Length - 1];
+                string vLinea = string.Empty;
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo, true))
+                {
+                    string vInicio = string.Empty;
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        for (int c = 0; c <= 8; c++)
+                        {
+                            if (valorInicio[f, c] != null && valorInicio[f, c] != string.Empty)
+                            {
+                                vInicio = valorInicio[f, c].Trim();
+                            }
+                            else
+                            {
+                                vInicio = EngineData.Zero;
+                            }
+                            if (c == 0) vLinea = vInicio + "-";
+                            else if (c > 0 && c < 8) vLinea = vLinea + vInicio + "-";
+                            else if (c == 8) vLinea = vLinea + vInicio;
+                        }
+                        file.WriteLine(vLinea);
+                        vLinea = string.Empty;
+                    }
+
+                }
+            }
+        }
+
+       public void GuardarValoresSolucion(string pathArchivo, string[,] valorSolucion)
+        {
+            if (pathArchivo != null && pathArchivo != "")
+            {
+                string[] partes = pathArchivo.Split('\\');
+                string nombreArchivo = partes[partes.Length - 1];
+                string vLinea = string.Empty;
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo, true))
+                {
+                    string vSolucion = string.Empty;
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        for (int c = 0; c <= 8; c++)
+                        {
+                            if (valorSolucion[f, c] != null && valorSolucion[f, c] != string.Empty)
+                            {
+                                vSolucion = valorSolucion[f, c].Trim();
+                            }
+                            else
+                            {
+                                vSolucion = EngineData.Zero;
+                            }
+                            if (c == 0) vLinea = vSolucion + "-";
+                            else if (c > 0 && c < 8) vLinea = vLinea + vSolucion + "-";
+                            else if (c == 8) vLinea = vLinea + vSolucion;
+                        }
+                        file.WriteLine(vLinea);
+                        vLinea = string.Empty ;
+                    }
+
+                }
+            }
+        }
+
+        //ATRIBUTOS ARCHIVO
+        public void ReadWriteTxt(string pathArchivo)
+        {
+            FileAttributes atributosAnteriores = File.GetAttributes(pathArchivo);
+            File.SetAttributes(pathArchivo, atributosAnteriores & ~FileAttributes.ReadOnly);
+        }
+
+        public void OnlyReadTxt(string pathArchivo)
+        {
+            FileAttributes atributosAnteriores = File.GetAttributes(pathArchivo);
+            File.SetAttributes(pathArchivo, atributosAnteriores | FileAttributes.ReadOnly);
+        }
+
+        public bool StatusOnlyReadTxt(string pathArchivo)
+        {
+            bool r = false;
+            FileAttributes atributos = File.GetAttributes(pathArchivo);
+            if ((atributos & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
+            {
+               r = true;
+            }
+            return r;
+        }
+
+        //ABRIR ARCHIVO
+        public ArrayList AbrirValoresArchivo(string pathArchivo)
+        {
+            ArrayList arrText = new ArrayList();
+            String sLine = string.Empty;
+            try
+            {
+                System.IO.StreamReader objReader = new System.IO.StreamReader(pathArchivo);
+                while (sLine != null)
+                {
+                    sLine = objReader.ReadLine();
+                    if (sLine != null) arrText.Add(sLine);
+                }
+                objReader.Close();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+
+            return arrText;
+        }
+
+        public string [,] SetValorIngresado(ArrayList arrText , string [,] valorIngresado)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                string[] lineaVector = arrText[f].ToString().Split('-');
+
+                if (f >= 0 && f <= 8)
+                {
+                    if (lineaVector.Length != 9) return valorIngresado;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != EngineData.Zero)
+                        {
+                            valorIngresado[f, columna] = lineaVector[columna];
+                        }
+                    }
+                }
+
+            }
+            return valorIngresado;
+        }
+
+        public string[,] SetValorEliminado (ArrayList arrText, string[,] valorEliminado)
+        {
+            for (int f = 0; f <= 17; f++)
+            {
+                String[] lineaVector = arrText[f].ToString().Split('-');
+
+                if (f >= 9 && f <= 17)
+                {
+                    if (lineaVector.Length != 9) return valorEliminado;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != "0")
+                        {
+                            valorEliminado[f - 9, columna] = lineaVector[columna];
+                        }
+                    }
+                }
+
+            }
+            return valorEliminado;
         }
 
     }

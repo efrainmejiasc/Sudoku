@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Globalization;
 using System.IO;
+using System.Collections;
 
 namespace SudokuParaTodos
 {
@@ -23,12 +24,13 @@ namespace SudokuParaTodos
         private EngineData Valor = EngineData.Instance();
         private TextBox[,] txtSudoku = new TextBox[9,9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
         private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
-        private Button[] btnPincel = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
+        private Button[] btnPincel = new Button[7];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private Button[] btnPincel2 = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES DERECHO
         private string[,] valorIngresado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
         private string[,] valorCandidato = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
         private string[,] valorEliminado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
+        private string[,] valorInicio = new string[9, 9];
         private int[] position = new int[2];
         int row = -1;
         int col = -1;
@@ -145,8 +147,8 @@ namespace SudokuParaTodos
         {
             btnPincel[0] = pincelA; btnPincel[1] = pincelB;
             btnPincel[2] = pincelC; btnPincel[3] = pincelD;
-            btnPincel[4] = pincelE; 
-           
+            btnPincel[4] = pincelE; btnPincel[5] = pincelK;
+            btnPincel[6] = pincelL;
             return btnPincel;
         }
 
@@ -215,7 +217,8 @@ namespace SudokuParaTodos
 
             crearOtro = EngineData.Falso;
             valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
-            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, fontBig: 20, fontSmall: 8);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato);
+            //************************************************************************************
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -320,9 +323,13 @@ namespace SudokuParaTodos
                     this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
                     this.saveFileDialog1.ShowDialog();
                     pathArchivo = saveFileDialog1.FileName;
-               
+
+                    bool existeValor = Funcion.ExisteValorIngresado(valorInicio);
+
                     Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
                     Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+                    Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+                    Funcion.GuardarValoresSolucion(pathArchivo, valorInicio);
                     valorIngresado = Funcion.LimpiarArreglo(valorIngresado);
                     valorEliminado = Funcion.LimpiarArreglo(valorEliminado);
 
@@ -330,8 +337,9 @@ namespace SudokuParaTodos
 
                     valorCandidatoSinEliminados = Funcion.LimpiarArreglo(valorCandidatoSinEliminados);
                     valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
-                    txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku, valorIngresado);
-                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, fontBig: 20, fontSmall: 8);
+                    txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato);
+                    //*********************************************************************************
                     break;
                 case (EngineData.BtnAbrirJuego):
                     this.openFileDialog1.FileName = string.Empty;
@@ -340,6 +348,21 @@ namespace SudokuParaTodos
                     this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
                     this.openFileDialog1.ShowDialog();
                     pathArchivo = openFileDialog1.FileName;
+                    if (pathArchivo  != string.Empty)
+                    {
+                        Funcion.ReadWriteTxt(pathArchivo);
+                        Valor.SetPathArchivo(pathArchivo);
+                        ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+                        valorIngresado = Funcion.LimpiarArreglo(valorIngresado);
+                        valorEliminado = Funcion.LimpiarArreglo(valorEliminado);
+                        txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+                        valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
+                        valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
+                        valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                        valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                        txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
+                        //***************************************************************************************************************
+                    }
                     break;
                 case (EngineData.BtnOtroJuego):
                     crearOtro = EngineData.Verdadero;
@@ -410,9 +433,10 @@ namespace SudokuParaTodos
                     valorIngresado[row, col] = txt.Text;
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato, 20, 8);
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorCandidato);
+                //***********************************************************************************************
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados, 20, 8);
+                txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
                 ContadorIngresado();
             }
             catch {}

@@ -121,7 +121,7 @@ namespace SudokuParaTodos
             return nombreJuego;
         }
 
-        public string TituloGuardarJuego(string lenguaje)
+       public string TituloGuardarJuego(string lenguaje)
         {
             string titulo = string.Empty;
             switch (lenguaje)
@@ -142,7 +142,7 @@ namespace SudokuParaTodos
             return titulo;
         }
 
-        public string NombreAbrirJuego(string lenguaje)
+       public string NombreAbrirJuego(string lenguaje)
         {
             string nombreJuego = string.Empty;
             switch (lenguaje)
@@ -163,8 +163,7 @@ namespace SudokuParaTodos
             return nombreJuego;
         }
 
-
-        public string TextoAbrirJuego(string lenguaje)
+       public string TextoAbrirJuego(string lenguaje)
         {
             string nombreJuego = string.Empty;
             switch (lenguaje)
@@ -185,6 +184,43 @@ namespace SudokuParaTodos
             return nombreJuego;
         }
 
+       private string pathArchivo = string.Empty;
+
+       public string GetPathArchivo()
+        {
+            return pathArchivo;
+        }
+
+       public void SetPathArchivo(string pArchivo)
+        {
+            pathArchivo = pArchivo;
+        }
+
+       private string[,] valorIngresado = new string[9, 9];
+
+       public string[,] GetValorIngresado()
+        {
+            return valorIngresado;
+        }
+
+       public void SetValorIngresado(string[,] vIngresado)
+        {
+            this.valorIngresado = new string[9, 9];
+            this.valorIngresado = vIngresado;
+        }
+
+       private string[,] valorEliminado = new string[9, 9];
+
+       public string[,] GetValorEliminado()
+        {
+            return valorEliminado;
+        }
+
+       public void SetValorEliminado(string[,] vEliminado)
+        {
+            this.valorEliminado = new string[9, 9];
+            this.valorEliminado = vEliminado;
+        }
 
     }
 }

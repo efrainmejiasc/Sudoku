@@ -278,6 +278,9 @@
             this.pincelF = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1611,10 +1614,18 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.textBox1);
+            this.panel10.Controls.Add(this.button1);
+            this.panel10.Controls.Add(this.button2);
             this.panel10.Controls.Add(this.txtIndice);
+            this.panel10.Controls.Add(this.pincelJ);
+            this.panel10.Controls.Add(this.pincelI);
             this.panel10.Controls.Add(this.lblIndice);
+            this.panel10.Controls.Add(this.pincelH);
             this.panel10.Controls.Add(this.btnDer2);
+            this.panel10.Controls.Add(this.pincelG);
             this.panel10.Controls.Add(this.btnIzq2);
+            this.panel10.Controls.Add(this.pincelF);
             this.panel10.Controls.Add(this.btnDer1);
             this.panel10.Controls.Add(this.btnIzq1);
             this.panel10.Controls.Add(this.btnDos);
@@ -3254,7 +3265,7 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(711, 39);
+            this.pincelJ.Location = new System.Drawing.Point(824, 36);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 73;
@@ -3267,7 +3278,7 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(683, 39);
+            this.pincelI.Location = new System.Drawing.Point(796, 36);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 72;
@@ -3280,7 +3291,7 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(655, 39);
+            this.pincelH.Location = new System.Drawing.Point(768, 36);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 71;
@@ -3293,7 +3304,7 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(627, 39);
+            this.pincelG.Location = new System.Drawing.Point(740, 36);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 70;
@@ -3306,7 +3317,7 @@
             this.pincelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelF.ForeColor = System.Drawing.Color.Silver;
-            this.pincelF.Location = new System.Drawing.Point(599, 39);
+            this.pincelF.Location = new System.Drawing.Point(712, 36);
             this.pincelF.Name = "pincelF";
             this.pincelF.Size = new System.Drawing.Size(25, 24);
             this.pincelF.TabIndex = 69;
@@ -3316,6 +3327,47 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.Location = new System.Drawing.Point(670, 36);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.MaxLength = 7;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(25, 24);
+            this.textBox1.TabIndex = 96;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Silver;
+            this.button1.Location = new System.Drawing.Point(632, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(36, 24);
+            this.button1.TabIndex = 95;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.Location = new System.Drawing.Point(596, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 24);
+            this.button2.TabIndex = 94;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3323,11 +3375,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1152, 643);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pincelJ);
-            this.Controls.Add(this.pincelI);
-            this.Controls.Add(this.pincelH);
-            this.Controls.Add(this.pincelG);
-            this.Controls.Add(this.pincelF);
             this.Controls.Add(this.panel20);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel18);
@@ -3649,6 +3696,9 @@
         private System.Windows.Forms.Button btnIzq2;
         private System.Windows.Forms.Button btnDer1;
         private System.Windows.Forms.Button btnIzq1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
