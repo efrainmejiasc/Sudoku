@@ -132,24 +132,37 @@ namespace SudokuParaTodos
             return valorCandidato;
         }
 
-        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vArray )
+        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vIngresado , string [,] vCandidato, Color colorA, Color colorB, float fontBig = 20, float fontSmall = 8 ,string lado = EngineData.Right)
         {
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
                 {
-                    cajaTexto[f, c].Text = vArray[f,c];
-                    /*if (vArray[f, c].Length == 1)
+                    if (lado == EngineData.Right)
                     {
-                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontBig);
-                        cajaTexto[f, c].ForeColor = colorA;
+                        if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                        {
+                            cajaTexto[f, c].Text = vIngresado[f, c];
+                            cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontBig);
+                            cajaTexto[f, c].ForeColor = colorA;
+                        }
+                        else if (vIngresado[f, c] == null || vIngresado[f, c] == string.Empty)
+                        {
+                            cajaTexto[f, c].Text = vCandidato[f, c];
+                            cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontSmall);
+                            cajaTexto[f, c].ForeColor = colorB;
+                        }
                     }
                     else
                     {
-                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontSmall);
-                        cajaTexto[f, c].ForeColor = colorB;
-                    }*/
-                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                        if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                        {
+                            cajaTexto[f, c].Text = vIngresado[f, c];
+                            cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontBig);
+                            cajaTexto[f, c].ForeColor = colorA;
+                        }
+                    }
+                   cajaTexto[f,c].TextAlign = HorizontalAlignment.Center;
                 }
             }
             return cajaTexto;
@@ -721,6 +734,7 @@ namespace SudokuParaTodos
 
         public string [,] SetValorIngresado(ArrayList arrText , string [,] valorIngresado)
         {
+            valorIngresado = new string[9,9];
             for (int f = 0; f <= 8; f++)
             {
                 string[] lineaVector = arrText[f].ToString().Split('-');
@@ -743,16 +757,17 @@ namespace SudokuParaTodos
 
         public string[,] SetValorEliminado (ArrayList arrText, string[,] valorEliminado)
         {
+            valorEliminado = new string[9, 9];
             for (int f = 0; f <= 17; f++)
             {
-                String[] lineaVector = arrText[f].ToString().Split('-');
+                string[] lineaVector = arrText[f].ToString().Split('-');
 
                 if (f >= 9 && f <= 17)
                 {
                     if (lineaVector.Length != 9) return valorEliminado;
                     for (int columna = 0; columna <= 8; columna++)
                     {
-                        if (lineaVector[columna] != "0")
+                        if (lineaVector[columna] != EngineData.Zero)
                         {
                             valorEliminado[f - 9, columna] = lineaVector[columna];
                         }
@@ -761,6 +776,52 @@ namespace SudokuParaTodos
 
             }
             return valorEliminado;
+        }
+
+        public string[,] SetValorInicio(ArrayList arrText, string [,] valorInicio)
+        {
+            valorInicio = new string[9, 9];
+            int fila = 0;
+            for (int f = 0; f <= 35; f++)
+            {
+                if (f >= 18 && f <= 26)
+                {
+                    string[] lineaVector = arrText[f].ToString().Split('-');
+                    if (lineaVector.Length != 9) return valorInicio;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != EngineData.Zero)
+                        {
+                            valorInicio[fila, columna] = lineaVector[columna];
+                        }
+                    }
+                    fila++;
+                }
+            }
+            return valorInicio;
+        }
+
+        public string[,] SetValorSolucion(ArrayList arrText, string[,] valorSolucion)
+        {
+            int fila = 0;
+            valorSolucion = new string[9, 9];
+            for (int f = 0; f <= 35; f++)
+            {
+                if (f >= 27 && f <= 35)
+                {
+                    string[] lineaVector = arrText[f].ToString().Split('-');
+                    if (lineaVector.Length != 9) return valorSolucion;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != EngineData.Zero)
+                        {
+                            valorSolucion[fila, columna] = lineaVector[columna];
+                        }
+                    }
+                    fila++;
+                }
+            }
+            return valorSolucion;
         }
 
     }

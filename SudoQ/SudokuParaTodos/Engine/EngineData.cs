@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -58,22 +59,22 @@ namespace SudokuParaTodos
        public const string IDIOMAS= "IDIOMAS";
        public const string LANGUAGES = "LANGUAGES";
 
-        public const string Btn1 = "btn1";
-        public const string Btn2 = "btn2";
-        public const string Btn3 = "btn3";
-        public const string Btn4 = "btn4";
-        public const string Btn5 = "btn5";
-        public const string Btn6 = "btn6";
-        public const string Btn7 = "btn7";
-        public const string Btn8 = "btn8";
-        public const string Btn9 = "btn9";
+       public const string Btn1 = "btn1";
+       public const string Btn2 = "btn2";
+       public const string Btn3 = "btn3";
+       public const string Btn4 = "btn4";
+       public const string Btn5 = "btn5";
+       public const string Btn6 = "btn6";
+       public const string Btn7 = "btn7";
+       public const string Btn8 = "btn8";
+       public const string Btn9 = "btn9";
 
-        public const string Up = "Up";
-        public const string Down = "Down";
-        public const string Right = "Right";
-        public const string Left = "Left";
+       public const string Up = "Up";
+       public const string Down = "Down";
+       public const string Right = "Right";
+       public const string Left = "Left";
 
-       private string idioma = string.Empty;
+        private string idioma = string.Empty;
 
        public void SetIdioma (string v) { idioma = v; }
 
@@ -196,6 +197,12 @@ namespace SudokuParaTodos
             pathArchivo = pArchivo;
         }
 
+       private ArrayList arrText = new ArrayList();
+
+       public ArrayList GetArrText() { return arrText;}
+
+       public void SetArrText (ArrayList vArrText) { arrText = vArrText; }
+
        private string[,] valorIngresado = new string[9, 9];
 
        public string[,] GetValorIngresado()
@@ -221,6 +228,32 @@ namespace SudokuParaTodos
             this.valorEliminado = new string[9, 9];
             this.valorEliminado = vEliminado;
         }
+
+       private string[,] valorInicio = new string[9, 9];
+
+       public string[,] GetValorInicio()
+        {
+            return valorInicio;
+        }
+
+       public void SetValorInicio(string[,] vInicio)
+        {
+            this.valorInicio = new string[9, 9];
+            this.valorInicio = vInicio;
+        }
+
+       private string[,] valorSolucion = new string[9, 9];
+
+       public string[,] GetValorSolucion()
+       {
+            return valorSolucion;
+       }
+
+       public void SetValorSolucion(string[,] vSolucion)
+       {
+            this.valorSolucion = new string[9, 9];
+            this.valorSolucion = vSolucion;
+       }
 
     }
 }
