@@ -12,8 +12,12 @@ namespace SudokuParaTodos
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
+            EngineData Valor = EngineData.Instance();
+            if (args.Length == 0) Valor.SetOpenFrom(EngineData.Exe);
+            else Valor.SetOpenFrom(EngineData.File);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -30,15 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt22 = new System.Windows.Forms.TextBox();
-            this.txt21 = new System.Windows.Forms.TextBox();
-            this.txt20 = new System.Windows.Forms.TextBox();
-            this.txt12 = new System.Windows.Forms.TextBox();
-            this.txt11 = new System.Windows.Forms.TextBox();
-            this.txt10 = new System.Windows.Forms.TextBox();
-            this.txt02 = new System.Windows.Forms.TextBox();
-            this.txt01 = new System.Windows.Forms.TextBox();
-            this.txt00 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt25 = new System.Windows.Forms.TextBox();
             this.txt24 = new System.Windows.Forms.TextBox();
@@ -121,10 +112,18 @@
             this.txt66 = new System.Windows.Forms.TextBox();
             this.txtNota = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtIndice = new System.Windows.Forms.TextBox();
+            this.pincelJ = new System.Windows.Forms.Button();
+            this.pincelI = new System.Windows.Forms.Button();
             this.lblIndice = new System.Windows.Forms.Label();
+            this.pincelH = new System.Windows.Forms.Button();
             this.btnDer2 = new System.Windows.Forms.Button();
+            this.pincelG = new System.Windows.Forms.Button();
             this.btnIzq2 = new System.Windows.Forms.Button();
+            this.pincelF = new System.Windows.Forms.Button();
             this.btnDer1 = new System.Windows.Forms.Button();
             this.btnIzq1 = new System.Windows.Forms.Button();
             this.btnDos = new System.Windows.Forms.Button();
@@ -271,16 +270,20 @@
             this.t68 = new System.Windows.Forms.TextBox();
             this.t67 = new System.Windows.Forms.TextBox();
             this.t66 = new System.Windows.Forms.TextBox();
-            this.pincelJ = new System.Windows.Forms.Button();
-            this.pincelI = new System.Windows.Forms.Button();
-            this.pincelH = new System.Windows.Forms.Button();
-            this.pincelG = new System.Windows.Forms.Button();
-            this.pincelF = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txt00 = new System.Windows.Forms.TextBox();
+            this.txt01 = new System.Windows.Forms.TextBox();
+            this.txt02 = new System.Windows.Forms.TextBox();
+            this.txt10 = new System.Windows.Forms.TextBox();
+            this.txt11 = new System.Windows.Forms.TextBox();
+            this.txt12 = new System.Windows.Forms.TextBox();
+            this.txt20 = new System.Windows.Forms.TextBox();
+            this.txt21 = new System.Windows.Forms.TextBox();
+            this.txt22 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -322,132 +325,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 148);
             this.panel1.TabIndex = 1;
-            // 
-            // txt22
-            // 
-            this.txt22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt22.ForeColor = System.Drawing.Color.Blue;
-            this.txt22.Location = new System.Drawing.Point(121, 94);
-            this.txt22.Multiline = true;
-            this.txt22.Name = "txt22";
-            this.txt22.Size = new System.Drawing.Size(59, 46);
-            this.txt22.TabIndex = 8;
-            this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt21
-            // 
-            this.txt21.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt21.ForeColor = System.Drawing.Color.Blue;
-            this.txt21.Location = new System.Drawing.Point(63, 94);
-            this.txt21.Multiline = true;
-            this.txt21.Name = "txt21";
-            this.txt21.Size = new System.Drawing.Size(59, 46);
-            this.txt21.TabIndex = 7;
-            this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt20
-            // 
-            this.txt20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt20.ForeColor = System.Drawing.Color.Blue;
-            this.txt20.Location = new System.Drawing.Point(5, 94);
-            this.txt20.Multiline = true;
-            this.txt20.Name = "txt20";
-            this.txt20.Size = new System.Drawing.Size(59, 46);
-            this.txt20.TabIndex = 6;
-            this.txt20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt12
-            // 
-            this.txt12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt12.ForeColor = System.Drawing.Color.Blue;
-            this.txt12.Location = new System.Drawing.Point(121, 49);
-            this.txt12.Multiline = true;
-            this.txt12.Name = "txt12";
-            this.txt12.Size = new System.Drawing.Size(59, 46);
-            this.txt12.TabIndex = 5;
-            this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt11
-            // 
-            this.txt11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt11.ForeColor = System.Drawing.Color.Blue;
-            this.txt11.Location = new System.Drawing.Point(63, 49);
-            this.txt11.Multiline = true;
-            this.txt11.Name = "txt11";
-            this.txt11.Size = new System.Drawing.Size(59, 46);
-            this.txt11.TabIndex = 4;
-            this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt10
-            // 
-            this.txt10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt10.ForeColor = System.Drawing.Color.Blue;
-            this.txt10.Location = new System.Drawing.Point(5, 49);
-            this.txt10.Multiline = true;
-            this.txt10.Name = "txt10";
-            this.txt10.Size = new System.Drawing.Size(59, 46);
-            this.txt10.TabIndex = 3;
-            this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt02
-            // 
-            this.txt02.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt02.ForeColor = System.Drawing.Color.Blue;
-            this.txt02.Location = new System.Drawing.Point(121, 3);
-            this.txt02.Multiline = true;
-            this.txt02.Name = "txt02";
-            this.txt02.Size = new System.Drawing.Size(59, 46);
-            this.txt02.TabIndex = 2;
-            this.txt02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt01
-            // 
-            this.txt01.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt01.ForeColor = System.Drawing.Color.Blue;
-            this.txt01.Location = new System.Drawing.Point(63, 3);
-            this.txt01.Multiline = true;
-            this.txt01.Name = "txt01";
-            this.txt01.Size = new System.Drawing.Size(59, 46);
-            this.txt01.TabIndex = 1;
-            this.txt01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
-            // 
-            // txt00
-            // 
-            this.txt00.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt00.ForeColor = System.Drawing.Color.Blue;
-            this.txt00.Location = new System.Drawing.Point(5, 3);
-            this.txt00.Multiline = true;
-            this.txt00.Name = "txt00";
-            this.txt00.Size = new System.Drawing.Size(59, 46);
-            this.txt00.TabIndex = 0;
-            this.txt00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
-            this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
             // panel2
             // 
@@ -1671,6 +1548,47 @@
             this.panel10.Size = new System.Drawing.Size(1152, 182);
             this.panel10.TabIndex = 10;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.Location = new System.Drawing.Point(670, 36);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.MaxLength = 7;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(25, 24);
+            this.textBox1.TabIndex = 96;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Silver;
+            this.button1.Location = new System.Drawing.Point(632, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(36, 24);
+            this.button1.TabIndex = 95;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.Location = new System.Drawing.Point(596, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 24);
+            this.button2.TabIndex = 94;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // txtIndice
             // 
             this.txtIndice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1681,6 +1599,32 @@
             this.txtIndice.Name = "txtIndice";
             this.txtIndice.Size = new System.Drawing.Size(25, 24);
             this.txtIndice.TabIndex = 93;
+            // 
+            // pincelJ
+            // 
+            this.pincelJ.BackColor = System.Drawing.Color.Silver;
+            this.pincelJ.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelJ.ForeColor = System.Drawing.Color.Silver;
+            this.pincelJ.Location = new System.Drawing.Point(824, 36);
+            this.pincelJ.Name = "pincelJ";
+            this.pincelJ.Size = new System.Drawing.Size(25, 24);
+            this.pincelJ.TabIndex = 73;
+            this.pincelJ.UseVisualStyleBackColor = false;
+            // 
+            // pincelI
+            // 
+            this.pincelI.BackColor = System.Drawing.Color.Silver;
+            this.pincelI.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelI.ForeColor = System.Drawing.Color.Silver;
+            this.pincelI.Location = new System.Drawing.Point(796, 36);
+            this.pincelI.Name = "pincelI";
+            this.pincelI.Size = new System.Drawing.Size(25, 24);
+            this.pincelI.TabIndex = 72;
+            this.pincelI.UseVisualStyleBackColor = false;
             // 
             // lblIndice
             // 
@@ -1693,6 +1637,19 @@
             this.lblIndice.Size = new System.Drawing.Size(14, 15);
             this.lblIndice.TabIndex = 92;
             this.lblIndice.Text = "1";
+            // 
+            // pincelH
+            // 
+            this.pincelH.BackColor = System.Drawing.Color.Silver;
+            this.pincelH.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelH.ForeColor = System.Drawing.Color.Silver;
+            this.pincelH.Location = new System.Drawing.Point(768, 36);
+            this.pincelH.Name = "pincelH";
+            this.pincelH.Size = new System.Drawing.Size(25, 24);
+            this.pincelH.TabIndex = 71;
+            this.pincelH.UseVisualStyleBackColor = false;
             // 
             // btnDer2
             // 
@@ -1709,6 +1666,19 @@
             this.btnDer2.TabIndex = 91;
             this.btnDer2.UseVisualStyleBackColor = false;
             // 
+            // pincelG
+            // 
+            this.pincelG.BackColor = System.Drawing.Color.Silver;
+            this.pincelG.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelG.ForeColor = System.Drawing.Color.Silver;
+            this.pincelG.Location = new System.Drawing.Point(740, 36);
+            this.pincelG.Name = "pincelG";
+            this.pincelG.Size = new System.Drawing.Size(25, 24);
+            this.pincelG.TabIndex = 70;
+            this.pincelG.UseVisualStyleBackColor = false;
+            // 
             // btnIzq2
             // 
             this.btnIzq2.BackColor = System.Drawing.Color.Silver;
@@ -1723,6 +1693,19 @@
             this.btnIzq2.Size = new System.Drawing.Size(36, 24);
             this.btnIzq2.TabIndex = 90;
             this.btnIzq2.UseVisualStyleBackColor = false;
+            // 
+            // pincelF
+            // 
+            this.pincelF.BackColor = System.Drawing.Color.Silver;
+            this.pincelF.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelF.ForeColor = System.Drawing.Color.Silver;
+            this.pincelF.Location = new System.Drawing.Point(712, 36);
+            this.pincelF.Name = "pincelF";
+            this.pincelF.Size = new System.Drawing.Size(25, 24);
+            this.pincelF.TabIndex = 69;
+            this.pincelF.UseVisualStyleBackColor = false;
             // 
             // btnDer1
             // 
@@ -2237,6 +2220,10 @@
             // 
             // mArchivo
             // 
+            this.mArchivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirToolStripMenuItem,
+            this.guardarToolStripMenuItem,
+            this.guardarComoToolStripMenuItem});
             this.mArchivo.Name = "mArchivo";
             this.mArchivo.Size = new System.Drawing.Size(70, 20);
             this.mArchivo.Text = "ARCHIVO";
@@ -3258,115 +3245,156 @@
             this.t66.Size = new System.Drawing.Size(59, 46);
             this.t66.TabIndex = 0;
             // 
-            // pincelJ
-            // 
-            this.pincelJ.BackColor = System.Drawing.Color.Silver;
-            this.pincelJ.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(824, 36);
-            this.pincelJ.Name = "pincelJ";
-            this.pincelJ.Size = new System.Drawing.Size(25, 24);
-            this.pincelJ.TabIndex = 73;
-            this.pincelJ.UseVisualStyleBackColor = false;
-            // 
-            // pincelI
-            // 
-            this.pincelI.BackColor = System.Drawing.Color.Silver;
-            this.pincelI.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(796, 36);
-            this.pincelI.Name = "pincelI";
-            this.pincelI.Size = new System.Drawing.Size(25, 24);
-            this.pincelI.TabIndex = 72;
-            this.pincelI.UseVisualStyleBackColor = false;
-            // 
-            // pincelH
-            // 
-            this.pincelH.BackColor = System.Drawing.Color.Silver;
-            this.pincelH.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(768, 36);
-            this.pincelH.Name = "pincelH";
-            this.pincelH.Size = new System.Drawing.Size(25, 24);
-            this.pincelH.TabIndex = 71;
-            this.pincelH.UseVisualStyleBackColor = false;
-            // 
-            // pincelG
-            // 
-            this.pincelG.BackColor = System.Drawing.Color.Silver;
-            this.pincelG.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(740, 36);
-            this.pincelG.Name = "pincelG";
-            this.pincelG.Size = new System.Drawing.Size(25, 24);
-            this.pincelG.TabIndex = 70;
-            this.pincelG.UseVisualStyleBackColor = false;
-            // 
-            // pincelF
-            // 
-            this.pincelF.BackColor = System.Drawing.Color.Silver;
-            this.pincelF.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelF.ForeColor = System.Drawing.Color.Silver;
-            this.pincelF.Location = new System.Drawing.Point(712, 36);
-            this.pincelF.Name = "pincelF";
-            this.pincelF.Size = new System.Drawing.Size(25, 24);
-            this.pincelF.TabIndex = 69;
-            this.pincelF.UseVisualStyleBackColor = false;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox1
+            // abrirToolStripMenuItem
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Location = new System.Drawing.Point(670, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 7;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(25, 24);
-            this.textBox1.TabIndex = 96;
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.abrirToolStripMenuItem.Text = "Abrir";
             // 
-            // button1
+            // guardarToolStripMenuItem
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(632, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 24);
-            this.button1.TabIndex = 95;
-            this.button1.UseVisualStyleBackColor = false;
+            this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
+            this.guardarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.guardarToolStripMenuItem.Text = "Guardar";
             // 
-            // button2
+            // guardarComoToolStripMenuItem
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(596, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 24);
-            this.button2.TabIndex = 94;
-            this.button2.UseVisualStyleBackColor = false;
+            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
+            this.guardarComoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.guardarComoToolStripMenuItem.Text = "Guardar Como";
+            // 
+            // txt00
+            // 
+            this.txt00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt00.ForeColor = System.Drawing.Color.Blue;
+            this.txt00.Location = new System.Drawing.Point(5, 3);
+            this.txt00.Multiline = true;
+            this.txt00.Name = "txt00";
+            this.txt00.Size = new System.Drawing.Size(59, 46);
+            this.txt00.TabIndex = 0;
+            this.txt00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt01
+            // 
+            this.txt01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt01.ForeColor = System.Drawing.Color.Blue;
+            this.txt01.Location = new System.Drawing.Point(63, 3);
+            this.txt01.Multiline = true;
+            this.txt01.Name = "txt01";
+            this.txt01.Size = new System.Drawing.Size(59, 46);
+            this.txt01.TabIndex = 1;
+            this.txt01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt02
+            // 
+            this.txt02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt02.ForeColor = System.Drawing.Color.Blue;
+            this.txt02.Location = new System.Drawing.Point(121, 3);
+            this.txt02.Multiline = true;
+            this.txt02.Name = "txt02";
+            this.txt02.Size = new System.Drawing.Size(59, 46);
+            this.txt02.TabIndex = 2;
+            this.txt02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt10
+            // 
+            this.txt10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt10.ForeColor = System.Drawing.Color.Blue;
+            this.txt10.Location = new System.Drawing.Point(5, 49);
+            this.txt10.Multiline = true;
+            this.txt10.Name = "txt10";
+            this.txt10.Size = new System.Drawing.Size(59, 46);
+            this.txt10.TabIndex = 3;
+            this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt11
+            // 
+            this.txt11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt11.ForeColor = System.Drawing.Color.Blue;
+            this.txt11.Location = new System.Drawing.Point(63, 49);
+            this.txt11.Multiline = true;
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(59, 46);
+            this.txt11.TabIndex = 4;
+            this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt12
+            // 
+            this.txt12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt12.ForeColor = System.Drawing.Color.Blue;
+            this.txt12.Location = new System.Drawing.Point(121, 49);
+            this.txt12.Multiline = true;
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(59, 46);
+            this.txt12.TabIndex = 5;
+            this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt20
+            // 
+            this.txt20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt20.ForeColor = System.Drawing.Color.Blue;
+            this.txt20.Location = new System.Drawing.Point(5, 94);
+            this.txt20.Multiline = true;
+            this.txt20.Name = "txt20";
+            this.txt20.Size = new System.Drawing.Size(59, 46);
+            this.txt20.TabIndex = 6;
+            this.txt20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt21
+            // 
+            this.txt21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt21.ForeColor = System.Drawing.Color.Blue;
+            this.txt21.Location = new System.Drawing.Point(63, 94);
+            this.txt21.Multiline = true;
+            this.txt21.Name = "txt21";
+            this.txt21.Size = new System.Drawing.Size(59, 46);
+            this.txt21.TabIndex = 7;
+            this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            // 
+            // txt22
+            // 
+            this.txt22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt22.ForeColor = System.Drawing.Color.Blue;
+            this.txt22.Location = new System.Drawing.Point(121, 94);
+            this.txt22.Multiline = true;
+            this.txt22.Name = "txt22";
+            this.txt22.Size = new System.Drawing.Size(59, 46);
+            this.txt22.TabIndex = 8;
+            this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
             // Form1
             // 
@@ -3448,15 +3476,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txt22;
-        private System.Windows.Forms.TextBox txt21;
-        private System.Windows.Forms.TextBox txt20;
-        private System.Windows.Forms.TextBox txt12;
-        private System.Windows.Forms.TextBox txt11;
-        private System.Windows.Forms.TextBox txt10;
-        private System.Windows.Forms.TextBox txt02;
-        private System.Windows.Forms.TextBox txt01;
-        private System.Windows.Forms.TextBox txt00;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txt25;
         private System.Windows.Forms.TextBox txt24;
@@ -3699,6 +3718,18 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem guardarComoToolStripMenuItem;
+        private System.Windows.Forms.TextBox txt22;
+        private System.Windows.Forms.TextBox txt21;
+        private System.Windows.Forms.TextBox txt20;
+        private System.Windows.Forms.TextBox txt12;
+        private System.Windows.Forms.TextBox txt11;
+        private System.Windows.Forms.TextBox txt10;
+        private System.Windows.Forms.TextBox txt02;
+        private System.Windows.Forms.TextBox txt01;
+        private System.Windows.Forms.TextBox txt00;
     }
 }
 

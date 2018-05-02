@@ -10,9 +10,9 @@ namespace SudokuParaTodos
 {
     public class EngineData
     {
-       private static EngineData valor;
+        private static EngineData valor;
 
-       public static EngineData Instance()
+        public static EngineData Instance()
         {
             if ((valor == null))
             {
@@ -21,66 +21,75 @@ namespace SudokuParaTodos
             return valor;
         }
 
-       public const string Titulo = "Sudoku Para Todos";
-       public const string ClaveRegWin = "SudokuParaTodos";
-       public const string FechaDeCreacion = "FechaDeCreacion";
-       public const string Clave = "Clave";
-       public const string Extension =".jll";
-       public const string ArchivoEjecutable = "SudokuParaTodos.exe";
-       public const string ProgramaId = "SudokuParaTodos";
-       public const string Comando = "open";
-       public const string DescripcionPrograma = "SudokuParaTodos File";
-       public const bool Falso = false;
-       public const bool Verdadero = true;
-       public const string Español = "mIEspañol";
-       public const string CulturaEspañol = "ES-VE";
-       public const string Ingles = "mIIngles";
-       public const string CulturaIngles = "EN-US";
-       public const string Portugues = "mIPortugues";
-       public const string CulturaPortugues= "PT-PT";
-       public const string LenguajeEspañol = "Español";
-       public const string LenguajeIngles = "Ingles";
-       public const string LenguajePortugues = "Portugues";
-       public const string BtnAbrirJuego = "btnAbrir";
-       public const string BtnGuardarJuego = "btnGuardar";
-       public const string BtnOtroJuego = "btnOtro";
-       public const string BtnSolucion = "btnSolucion";
-       public const string Zero = "0";
-       public const string TipoLetra = "Microsoft Sans Serif";
-       public const string BtnEspañol = "btnEspañol";
-       public const string BtnIngles = "btnIngles";
-       public const string BtnPortugues = "btnPortugues";
+        public const string Titulo = "Sudoku Para Todos";
+        public const string ClaveRegWin = "SudokuParaTodos";
+        public const string FechaDeCreacion = "FechaDeCreacion";
+        public const string Clave = "Clave";
+        public const string Extension = ".jll";
+        public const string ArchivoEjecutable = "SudokuParaTodos.exe";
+        public const string ProgramaId = "SudokuParaTodos";
+        public const string Comando = "open";
+        public const string DescripcionPrograma = "SudokuParaTodos File";
+        public const bool Falso = false;
+        public const bool Verdadero = true;
+        public const string Español = "mIEspañol";
+        public const string CulturaEspañol = "ES-VE";
+        public const string Ingles = "mIIngles";
+        public const string CulturaIngles = "EN-US";
+        public const string Portugues = "mIPortugues";
+        public const string CulturaPortugues = "PT-PT";
+        public const string LenguajeEspañol = "Español";
+        public const string LenguajeIngles = "Ingles";
+        public const string LenguajePortugues = "Portugues";
+        public const string BtnAbrirJuego = "btnAbrir";
+        public const string BtnGuardarJuego = "btnGuardar";
+        public const string BtnOtroJuego = "btnOtro";
+        public const string BtnSolucion = "btnSolucion";
+        public const string Zero = "0";
+        public const string TipoLetra = "Microsoft Sans Serif";
+        public const string BtnEspañol = "btnEspañol";
+        public const string BtnIngles = "btnIngles";
+        public const string BtnPortugues = "btnPortugues";
 
-       public const string FiltroFile = " | *.jll";
-       public const string ExtensionFile = "jll";
+        public const string FiltroFile = " | *.jll";
+        public const string ExtensionFile = "jll";
 
-       public const string portu = "portu";
-       public const string english = "english";
-       public const string IDIOMAS= "IDIOMAS";
-       public const string LANGUAGES = "LANGUAGES";
+        public const string portu = "portu";
+        public const string english = "english";
+        public const string IDIOMAS = "IDIOMAS";
+        public const string LANGUAGES = "LANGUAGES";
 
-       public const string Btn1 = "btn1";
-       public const string Btn2 = "btn2";
-       public const string Btn3 = "btn3";
-       public const string Btn4 = "btn4";
-       public const string Btn5 = "btn5";
-       public const string Btn6 = "btn6";
-       public const string Btn7 = "btn7";
-       public const string Btn8 = "btn8";
-       public const string Btn9 = "btn9";
+        public const string Btn1 = "btn1";
+        public const string Btn2 = "btn2";
+        public const string Btn3 = "btn3";
+        public const string Btn4 = "btn4";
+        public const string Btn5 = "btn5";
+        public const string Btn6 = "btn6";
+        public const string Btn7 = "btn7";
+        public const string Btn8 = "btn8";
+        public const string Btn9 = "btn9";
 
-       public const string Up = "Up";
-       public const string Down = "Down";
-       public const string Right = "Right";
-       public const string Left = "Left";
+        public const string Up = "Up";
+        public const string Down = "Down";
+        public const string Right = "Right";
+        public const string Left = "Left";
+
+        public const string Exe = "Exe";
+        public const string File = "File";
+
+        private string openFrom = string.Empty;
+
+        public void SetOpenFrom (string vOpen) { openFrom = vOpen; }
+
+        public string GetOpenFrom () { return openFrom; }
 
         private string idioma = string.Empty;
 
-       public void SetIdioma (string v) { idioma = v; }
+        public void SetIdioma(string v) { idioma = v; }
 
-       public string GetIdioma() { return idioma; }
+        public string GetIdioma() { return idioma; }
 
-       public string TituloForm (string lenguaje)
+        public string TituloForm(string lenguaje)
         {
             string titulo = string.Empty;
             switch (lenguaje)
@@ -101,19 +110,19 @@ namespace SudokuParaTodos
             return titulo;
         }
 
-       public string NombreJuegoFileFiltro (string lenguaje)
-       {
+        public string NombreJuegoFileFiltro(string lenguaje)
+        {
             string nombreJuego = string.Empty;
             switch (lenguaje)
             {
                 case ("Español"):
-                    nombreJuego = "Sudoku Para Todos" + FiltroFile;                                                                                                                                                                                            
+                    nombreJuego = "Sudoku Para Todos" + FiltroFile;
                     break;
                 case ("Ingles"):
-                    nombreJuego = "Sudoku For All" + FiltroFile;                                                                                                                                                                                               
+                    nombreJuego = "Sudoku For All" + FiltroFile;
                     break;
                 case ("Portugues"):
-                    nombreJuego = "Sudoku Para Todos" + FiltroFile;                                                                                                                                                                                              
+                    nombreJuego = "Sudoku Para Todos" + FiltroFile;
                     break;
                 default:
                     nombreJuego = "Sudoku Para Todos" + FiltroFile;
@@ -122,7 +131,7 @@ namespace SudokuParaTodos
             return nombreJuego;
         }
 
-       public string TituloGuardarJuego(string lenguaje)
+        public string TituloGuardarJuego(string lenguaje)
         {
             string titulo = string.Empty;
             switch (lenguaje)
@@ -143,7 +152,7 @@ namespace SudokuParaTodos
             return titulo;
         }
 
-       public string NombreAbrirJuego(string lenguaje)
+        public string NombreAbrirJuego(string lenguaje)
         {
             string nombreJuego = string.Empty;
             switch (lenguaje)
@@ -164,7 +173,7 @@ namespace SudokuParaTodos
             return nombreJuego;
         }
 
-       public string TextoAbrirJuego(string lenguaje)
+        public string TextoAbrirJuego(string lenguaje)
         {
             string nombreJuego = string.Empty;
             switch (lenguaje)
@@ -185,75 +194,74 @@ namespace SudokuParaTodos
             return nombreJuego;
         }
 
-       private string pathArchivo = string.Empty;
+        private string pathArchivo = string.Empty;
 
-       public string GetPathArchivo()
+        public string GetPathArchivo()
         {
             return pathArchivo;
         }
 
-       public void SetPathArchivo(string pArchivo)
+        public void SetPathArchivo(string pArchivo)
         {
             pathArchivo = pArchivo;
         }
 
-       private ArrayList arrText = new ArrayList();
+        private ArrayList arrText = new ArrayList();
 
-       public ArrayList GetArrText() { return arrText;}
+        public ArrayList GetArrText() { return arrText; }
 
-       public void SetArrText (ArrayList vArrText) { arrText = vArrText; }
+        public void SetArrText(ArrayList vArrText) { arrText = vArrText; }
 
-       private string[,] valorIngresado = new string[9, 9];
+        private string[,] valorIngresado = new string[9, 9];
 
-       public string[,] GetValorIngresado()
+        public string[,] GetValorIngresado()
         {
             return valorIngresado;
         }
 
-       public void SetValorIngresado(string[,] vIngresado)
+        public void SetValorIngresado(string[,] vIngresado)
         {
             this.valorIngresado = new string[9, 9];
             this.valorIngresado = vIngresado;
         }
 
-       private string[,] valorEliminado = new string[9, 9];
+        private string[,] valorEliminado = new string[9, 9];
 
-       public string[,] GetValorEliminado()
+        public string[,] GetValorEliminado()
         {
             return valorEliminado;
         }
 
-       public void SetValorEliminado(string[,] vEliminado)
+        public void SetValorEliminado(string[,] vEliminado)
         {
             this.valorEliminado = new string[9, 9];
             this.valorEliminado = vEliminado;
         }
 
-       private string[,] valorInicio = new string[9, 9];
+        private string[,] valorInicio = new string[9, 9];
 
-       public string[,] GetValorInicio()
+        public string[,] GetValorInicio()
         {
             return valorInicio;
         }
 
-       public void SetValorInicio(string[,] vInicio)
+        public void SetValorInicio(string[,] vInicio)
         {
             this.valorInicio = new string[9, 9];
             this.valorInicio = vInicio;
         }
 
-       private string[,] valorSolucion = new string[9, 9];
+        private string[,] valorSolucion = new string[9, 9];
 
-       public string[,] GetValorSolucion()
-       {
+        public string[,] GetValorSolucion()
+        {
             return valorSolucion;
-       }
+        }
 
-       public void SetValorSolucion(string[,] vSolucion)
-       {
+        public void SetValorSolucion(string[,] vSolucion)
+        {
             this.valorSolucion = new string[9, 9];
             this.valorSolucion = vSolucion;
-       }
-
+        }
     }
 }
