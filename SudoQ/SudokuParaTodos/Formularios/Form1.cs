@@ -320,16 +320,24 @@ namespace SudokuParaTodos
             switch (btn.Name)
             {
                 case (EngineData.BtnGuardarJuego):
-                    this.saveFileDialog1.FileName = string.Empty;
-                    this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
-                    this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
-                    this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
-                    this.saveFileDialog1.ShowDialog();
-                    pathArchivo = saveFileDialog1.FileName;
 
-                    if (pathArchivo == string.Empty) return;
+                    if (Valor.GetPathArchivo() == string.Empty)
+                    {
+                        this.saveFileDialog1.FileName = string.Empty;
+                        this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
+                        this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
+                        this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+                        this.saveFileDialog1.ShowDialog();
+                        pathArchivo = saveFileDialog1.FileName;
 
-                    bool existeValor = Funcion.ExisteValorIngresado(valorInicio);
+                        if (pathArchivo == string.Empty) return;
+                    }
+                    else
+                    {
+                        pathArchivo = Valor.GetPathArchivo();
+                    }
+
+                    bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
 
                     if (existeValor == EngineData.Falso)
                     {
@@ -340,9 +348,7 @@ namespace SudokuParaTodos
                     Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
                     Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
                     Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
-                    Funcion.GuardarValoresSolucion(pathArchivo, valorInicio);
-                    valorIngresado = Funcion.LimpiarArreglo(valorIngresado);
-                    valorEliminado = Funcion.LimpiarArreglo(valorEliminado);
+                    Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
 
                     openFrom = EngineData.File;
                     juegoGuardado = EngineData.Verdadero;
@@ -356,6 +362,7 @@ namespace SudokuParaTodos
                     pathArchivo = openFileDialog1.FileName;
 
                     if (pathArchivo == string.Empty) return;
+                    Valor.SetPathArchivo(pathArchivo);
 
                     Funcion.ReadWriteTxt(pathArchivo);
                     Valor.SetPathArchivo(pathArchivo);
@@ -464,6 +471,86 @@ namespace SudokuParaTodos
             }
         }
 
+        // MENU ARCHIVO
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string idioma = Valor.GetIdioma();
+            this.openFileDialog1.FileName = string.Empty;
+            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(idioma);
+            this.openFileDialog1.Title = Valor.TextoAbrirJuego(idioma);
+            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.openFileDialog1.ShowDialog();
+            string pathArchivo = openFileDialog1.FileName;
 
+            if (pathArchivo == string.Empty) return;
+            Valor.SetPathArchivo(pathArchivo);
+
+            Funcion.ReadWriteTxt(pathArchivo);
+            Valor.SetPathArchivo(pathArchivo);
+            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+
+            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
+            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
+            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
+            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+            valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+            txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
+        }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string pathArchivo = Valor.GetPathArchivo();
+            if (pathArchivo == string.Empty) return;
+            bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
+
+            if (existeValor == EngineData.Falso)
+            {
+                MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
+
+            openFrom = EngineData.File;
+            juegoGuardado = EngineData.Verdadero;
+        }
+
+        private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string pathArchivo = string.Empty;
+            string idioma = Valor.GetIdioma();
+            this.saveFileDialog1.FileName = string.Empty;
+            this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
+            this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
+            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.saveFileDialog1.ShowDialog();
+            pathArchivo = saveFileDialog1.FileName;
+
+            if (pathArchivo == string.Empty) return;
+
+            bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
+
+            if (existeValor == EngineData.Falso)
+            {
+                MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
+
+            openFrom = EngineData.File;
+            juegoGuardado = EngineData.Verdadero;
+        }
     }
 }
