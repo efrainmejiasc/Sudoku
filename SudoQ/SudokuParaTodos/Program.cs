@@ -14,13 +14,22 @@ namespace SudokuParaTodos
         [STAThread]
         static void Main(string[] args)
         {
-            EngineData Valor = EngineData.Instance();
-            if (args.Length == 0) Valor.SetOpenFrom(EngineData.Exe);
-            else Valor.SetOpenFrom(EngineData.File);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            EngineData Valor = EngineData.Instance();
+            if (args.Length == 0)
+            {
+                Valor.SetOpenFrom(EngineData.Exe);
+                Application.Run(new Form1());
+            }
+            else
+            {
+                Valor.SetOpenFrom(EngineData.File);
+                Application.Run(new Formularios.Form2());
+            }
+
+          
+      
         }
     }
 }

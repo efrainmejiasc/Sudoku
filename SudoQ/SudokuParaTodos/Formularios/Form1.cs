@@ -36,9 +36,7 @@ namespace SudokuParaTodos
         private int row = -1;
         private int col = -1;
         private int contadorIngresado = -1;
-        private string openFrom = string.Empty;
         private bool juegoGuardado;
-        private bool crearOtro;
 
         public Form1()
         {
@@ -55,7 +53,6 @@ namespace SudokuParaTodos
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel2 = AsociarBtnPincel2(btnPincel2);
             ComportamientoObjInicio();
-            openFrom = Valor.GetOpenFrom();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -98,7 +95,10 @@ namespace SudokuParaTodos
             txtSudoku[8, 6] = txt86; txtSudoku[8, 7] = txt87; txtSudoku[8, 8] = txt88;
             ////////////////////////////////////////////////////////////////////////////
             foreach (TextBox item in txtSudoku)
-                item.GotFocus += delegate { HideCaret(item.Handle); };
+            {
+                item.GotFocus += delegate { HideCaret(item.Handle); } ;
+                item.ReadOnly = true;
+            }
             return txtSudoku;
         }
 
@@ -142,7 +142,10 @@ namespace SudokuParaTodos
             txtSudoku2[8, 6] = t86; txtSudoku2[8, 7] = t87; txtSudoku2[8, 8] = t88;
             ////////////////////////////////////////////////////////////////////////////
             foreach (TextBox item in txtSudoku2)
+            {
                 item.GotFocus += delegate { HideCaret(item.Handle); };
+                item.ReadOnly = true;
+            }
             return txtSudoku2;
         }
 
@@ -242,6 +245,11 @@ namespace SudokuParaTodos
                 btnSolucion.Visible = EngineData.Falso;
                 txtNota.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
+                foreach (TextBox item in txtSudoku)
+                {
+                    item.GotFocus += delegate { HideCaret(item.Handle); };
+                    item.ReadOnly = false;
+                }
             }
         }
 
@@ -263,14 +271,14 @@ namespace SudokuParaTodos
         private int  ContadorIngresado()
         {
             contadorIngresado = Funcion.ContadorIngresado(valorIngresado);
-            if (contadorIngresado >= 1 && juegoGuardado == EngineData.Falso)
+            if (contadorIngresado >= 17 && juegoGuardado == EngineData.Falso)
             {
                 btnGuardar.Visible = EngineData.Verdadero;
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
             }
-            else if (contadorIngresado < 1)
+            else if (contadorIngresado < 17 || juegoGuardado == EngineData.Verdadero)
             {
                 btnGuardar.Visible = EngineData.Falso;
             }
@@ -320,38 +328,7 @@ namespace SudokuParaTodos
             switch (btn.Name)
             {
                 case (EngineData.BtnGuardarJuego):
-
-                    if (Valor.GetPathArchivo() == string.Empty)
-                    {
-                        this.saveFileDialog1.FileName = string.Empty;
-                        this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
-                        this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
-                        this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
-                        this.saveFileDialog1.ShowDialog();
-                        pathArchivo = saveFileDialog1.FileName;
-
-                        if (pathArchivo == string.Empty) return;
-                    }
-                    else
-                    {
-                        pathArchivo = Valor.GetPathArchivo();
-                    }
-
-                    bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
-
-                    if (existeValor == EngineData.Falso)
-                    {
-                        MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                        return;
-                    }
-
-                    Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
-                    Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
-                    Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
-                    Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
-
-                    openFrom = EngineData.File;
-                    juegoGuardado = EngineData.Verdadero;
+                    GuardarJuego();
                     break;
                 case (EngineData.BtnAbrirJuego):
                     this.openFileDialog1.FileName = string.Empty;
@@ -381,13 +358,58 @@ namespace SudokuParaTodos
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
                     break;
                 case (EngineData.BtnOtroJuego):
-                    //crearOtro = EngineData.Verdadero;
-                    MessageBox.Show("Crear");
+                    GuardarJuego();
+                    juegoGuardado = EngineData.Falso;
+                    contadorIngresado = -1;
+                    valorIngresado = new string[9, 9];
+                    valorCandidato = new string[9, 9];
+                    valorEliminado = new string[9, 9];
+                    valorCandidatoSinEliminados = new string[9, 9];
+                    valorInicio = new string[9, 9];
+                    valorSolucion = new string[9, 9];
                     break;
                 case (EngineData.BtnSolucion):
                     MessageBox.Show("Solucion");
                     break;
             }
+        }
+
+        private void GuardarJuego()
+        {
+            string pathArchivo = string.Empty;
+            string idioma = Valor.GetIdioma();
+            if (Valor.GetPathArchivo() == string.Empty)
+            {
+                this.saveFileDialog1.FileName = string.Empty;
+                this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
+                this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
+                this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+                this.saveFileDialog1.ShowDialog();
+                pathArchivo = saveFileDialog1.FileName;
+
+                if (pathArchivo == string.Empty) return;
+            }
+            else
+            {
+                pathArchivo = Valor.GetPathArchivo();
+            }
+
+            bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
+
+            if (existeValor == EngineData.Falso)
+            {
+                MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
+
+            juegoGuardado = EngineData.Verdadero;
+            btnOtro.Visible = EngineData.Verdadero;
+            btnGuardar.Visible = EngineData.Falso;
         }
 
         private void BotonesContadores_Click(object sender, EventArgs e)
@@ -443,12 +465,12 @@ namespace SudokuParaTodos
                 {
                     txt.Text = string.Empty;
                     valorIngresado[row, col] = string.Empty;
-                    if (openFrom == EngineData.Exe) {valorInicio[row, col] = string.Empty;}
+                    if (juegoGuardado == EngineData.Falso) {valorInicio[row, col] = string.Empty;}
                 }
                 else
                 {
                     valorIngresado[row, col] = txt.Text;
-                    if (openFrom == EngineData.Exe) {valorInicio[row, col] = string.Empty;}
+                    if (juegoGuardado == EngineData.Falso) {valorInicio[row, col] = string.Empty;}
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorIngresado,valorCandidato,Color.Green,Color.Blue);
@@ -502,55 +524,6 @@ namespace SudokuParaTodos
             txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
         }
 
-        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string pathArchivo = Valor.GetPathArchivo();
-            if (pathArchivo == string.Empty) return;
-            bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
-
-            if (existeValor == EngineData.Falso)
-            {
-                MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                return;
-            }
-
-            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
-            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
-            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
-            Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
-
-            openFrom = EngineData.File;
-            juegoGuardado = EngineData.Verdadero;
-        }
-
-        private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string pathArchivo = string.Empty;
-            string idioma = Valor.GetIdioma();
-            this.saveFileDialog1.FileName = string.Empty;
-            this.saveFileDialog1.Filter = Valor.NombreJuegoFileFiltro(idioma);
-            this.saveFileDialog1.Title = Valor.TituloGuardarJuego(idioma);
-            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
-            this.saveFileDialog1.ShowDialog();
-            pathArchivo = saveFileDialog1.FileName;
-
-            if (pathArchivo == string.Empty) return;
-
-            bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
-
-            if (existeValor == EngineData.Falso)
-            {
-                MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                return;
-            }
-
-            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
-            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
-            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
-            Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
-
-            openFrom = EngineData.File;
-            juegoGuardado = EngineData.Verdadero;
-        }
+     
     }
 }
