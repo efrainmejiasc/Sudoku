@@ -101,8 +101,6 @@ namespace SudokuParaTodos
             v[2].BackColor = Color.CornflowerBlue;
             v[3].BackColor = Color.LightCoral;
             v[4].BackColor = Color.Crimson;
-            v[5].BackColor = Color.Silver;
-            v[6].BackColor = Color.LemonChiffon;
             return v;
         }
 
@@ -110,7 +108,7 @@ namespace SudokuParaTodos
         {
             v[0].BackColor = Color.Silver;
             v[1].BackColor = Color.PaleGreen;
-            v[2].BackColor = Color.Green;
+            v[2].BackColor = Color.YellowGreen;
             v[3].BackColor = Color.LightSalmon;
             v[4].BackColor = Color.Orange;
             return v;
@@ -223,6 +221,18 @@ namespace SudokuParaTodos
                     break;
             }
             return pos;
+        }
+
+        public TextBox[,] SetearTextColorInicio(TextBox[,] cajaTexto)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                }
+            }
+            return cajaTexto;
         }
 
         // METODOS NUMEROS + CANDIDATOS 

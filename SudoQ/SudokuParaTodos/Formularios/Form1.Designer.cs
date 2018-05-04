@@ -119,49 +119,12 @@
             this.txt68 = new System.Windows.Forms.TextBox();
             this.txt67 = new System.Windows.Forms.TextBox();
             this.txt66 = new System.Windows.Forms.TextBox();
-            this.txtNota = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtIndice = new System.Windows.Forms.TextBox();
             this.pincelJ = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
-            this.lblIndice = new System.Windows.Forms.Label();
             this.pincelH = new System.Windows.Forms.Button();
-            this.btnDer2 = new System.Windows.Forms.Button();
             this.pincelG = new System.Windows.Forms.Button();
-            this.btnIzq2 = new System.Windows.Forms.Button();
             this.pincelF = new System.Windows.Forms.Button();
-            this.btnDer1 = new System.Windows.Forms.Button();
-            this.btnIzq1 = new System.Windows.Forms.Button();
-            this.btnDos = new System.Windows.Forms.Button();
-            this.btnTres = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.pincelL = new System.Windows.Forms.Button();
-            this.pincelK = new System.Windows.Forms.Button();
-            this.btnBB = new System.Windows.Forms.Button();
-            this.btnAA = new System.Windows.Forms.Button();
-            this.btnEL = new System.Windows.Forms.Button();
-            this.btnR = new System.Windows.Forms.Button();
-            this.lbl9 = new System.Windows.Forms.Label();
-            this.lbl8 = new System.Windows.Forms.Label();
-            this.lbl7 = new System.Windows.Forms.Label();
-            this.lbl6 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.lbl4 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
             this.pnlJuego = new System.Windows.Forms.Panel();
             this.btnAbrir = new System.Windows.Forms.Button();
             this.btnOtro = new System.Windows.Forms.Button();
@@ -334,6 +297,8 @@
             this.txt22.Size = new System.Drawing.Size(59, 46);
             this.txt22.TabIndex = 8;
             this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt22.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt22.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -348,6 +313,8 @@
             this.txt21.Size = new System.Drawing.Size(59, 46);
             this.txt21.TabIndex = 7;
             this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt21.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt21.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -362,6 +329,8 @@
             this.txt20.Size = new System.Drawing.Size(59, 46);
             this.txt20.TabIndex = 6;
             this.txt20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt20.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt20.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -376,6 +345,8 @@
             this.txt12.Size = new System.Drawing.Size(59, 46);
             this.txt12.TabIndex = 5;
             this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt12.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt12.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -390,6 +361,8 @@
             this.txt11.Size = new System.Drawing.Size(59, 46);
             this.txt11.TabIndex = 4;
             this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt11.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt11.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -404,6 +377,8 @@
             this.txt10.Size = new System.Drawing.Size(59, 46);
             this.txt10.TabIndex = 3;
             this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt10.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt10.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -418,6 +393,8 @@
             this.txt02.Size = new System.Drawing.Size(59, 46);
             this.txt02.TabIndex = 2;
             this.txt02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt02.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt02.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -432,6 +409,8 @@
             this.txt01.Size = new System.Drawing.Size(59, 46);
             this.txt01.TabIndex = 1;
             this.txt01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt01.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt01.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -446,6 +425,8 @@
             this.txt00.Size = new System.Drawing.Size(59, 46);
             this.txt00.TabIndex = 0;
             this.txt00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt00.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt00.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -478,6 +459,8 @@
             this.txt25.Size = new System.Drawing.Size(59, 46);
             this.txt25.TabIndex = 8;
             this.txt25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt25.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt25.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -492,6 +475,8 @@
             this.txt24.Size = new System.Drawing.Size(59, 46);
             this.txt24.TabIndex = 7;
             this.txt24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt24.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt24.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -506,6 +491,8 @@
             this.txt23.Size = new System.Drawing.Size(59, 46);
             this.txt23.TabIndex = 6;
             this.txt23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt23.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt23.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -520,6 +507,8 @@
             this.txt15.Size = new System.Drawing.Size(59, 46);
             this.txt15.TabIndex = 5;
             this.txt15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt15.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt15.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -534,6 +523,8 @@
             this.txt14.Size = new System.Drawing.Size(59, 46);
             this.txt14.TabIndex = 4;
             this.txt14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt14.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt14.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -548,6 +539,8 @@
             this.txt13.Size = new System.Drawing.Size(59, 46);
             this.txt13.TabIndex = 3;
             this.txt13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt13.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt13.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -562,6 +555,8 @@
             this.txt05.Size = new System.Drawing.Size(59, 46);
             this.txt05.TabIndex = 2;
             this.txt05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt05.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt05.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt05.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt05.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -576,6 +571,8 @@
             this.txt04.Size = new System.Drawing.Size(59, 46);
             this.txt04.TabIndex = 1;
             this.txt04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt04.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt04.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt04.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt04.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -590,6 +587,8 @@
             this.txt03.Size = new System.Drawing.Size(59, 46);
             this.txt03.TabIndex = 0;
             this.txt03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt03.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt03.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt03.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt03.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -622,6 +621,8 @@
             this.txt28.Size = new System.Drawing.Size(59, 46);
             this.txt28.TabIndex = 8;
             this.txt28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt28.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt28.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -636,6 +637,8 @@
             this.txt27.Size = new System.Drawing.Size(59, 46);
             this.txt27.TabIndex = 7;
             this.txt27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt27.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt27.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -650,6 +653,8 @@
             this.txt26.Size = new System.Drawing.Size(59, 46);
             this.txt26.TabIndex = 6;
             this.txt26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt26.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt26.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -664,6 +669,8 @@
             this.txt18.Size = new System.Drawing.Size(59, 46);
             this.txt18.TabIndex = 5;
             this.txt18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt18.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt18.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -678,6 +685,8 @@
             this.txt17.Size = new System.Drawing.Size(59, 46);
             this.txt17.TabIndex = 4;
             this.txt17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt17.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt17.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -692,6 +701,8 @@
             this.txt16.Size = new System.Drawing.Size(59, 46);
             this.txt16.TabIndex = 3;
             this.txt16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt16.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt16.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -706,6 +717,8 @@
             this.txt08.Size = new System.Drawing.Size(59, 46);
             this.txt08.TabIndex = 2;
             this.txt08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt08.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt08.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt08.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt08.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -720,6 +733,8 @@
             this.txt07.Size = new System.Drawing.Size(59, 46);
             this.txt07.TabIndex = 1;
             this.txt07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt07.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt07.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt07.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt07.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -734,6 +749,8 @@
             this.txt06.Size = new System.Drawing.Size(59, 46);
             this.txt06.TabIndex = 0;
             this.txt06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt06.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt06.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt06.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt06.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -766,6 +783,8 @@
             this.txt52.Size = new System.Drawing.Size(59, 46);
             this.txt52.TabIndex = 8;
             this.txt52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt52.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt52.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt52.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -780,6 +799,8 @@
             this.txt51.Size = new System.Drawing.Size(59, 46);
             this.txt51.TabIndex = 7;
             this.txt51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt51.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt51.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt51.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -794,6 +815,8 @@
             this.txt50.Size = new System.Drawing.Size(59, 46);
             this.txt50.TabIndex = 6;
             this.txt50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt50.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt50.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt50.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -808,6 +831,8 @@
             this.txt42.Size = new System.Drawing.Size(59, 46);
             this.txt42.TabIndex = 5;
             this.txt42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt42.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt42.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt42.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -822,6 +847,8 @@
             this.txt41.Size = new System.Drawing.Size(59, 46);
             this.txt41.TabIndex = 4;
             this.txt41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt41.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt41.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt41.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -836,6 +863,8 @@
             this.txt40.Size = new System.Drawing.Size(59, 46);
             this.txt40.TabIndex = 3;
             this.txt40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt40.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt40.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt40.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -850,6 +879,8 @@
             this.txt32.Size = new System.Drawing.Size(59, 46);
             this.txt32.TabIndex = 2;
             this.txt32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt32.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt32.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt32.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -864,6 +895,8 @@
             this.txt31.Size = new System.Drawing.Size(59, 46);
             this.txt31.TabIndex = 1;
             this.txt31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt31.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt31.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt31.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -878,6 +911,8 @@
             this.txt30.Size = new System.Drawing.Size(59, 46);
             this.txt30.TabIndex = 0;
             this.txt30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt30.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt30.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -910,6 +945,8 @@
             this.txt55.Size = new System.Drawing.Size(59, 46);
             this.txt55.TabIndex = 8;
             this.txt55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt55.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt55.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt55.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -924,6 +961,8 @@
             this.txt54.Size = new System.Drawing.Size(59, 46);
             this.txt54.TabIndex = 7;
             this.txt54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt54.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt54.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt54.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -938,6 +977,8 @@
             this.txt53.Size = new System.Drawing.Size(59, 46);
             this.txt53.TabIndex = 6;
             this.txt53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt53.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt53.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt53.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -952,6 +993,8 @@
             this.txt45.Size = new System.Drawing.Size(59, 46);
             this.txt45.TabIndex = 5;
             this.txt45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt45.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt45.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt45.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -966,6 +1009,8 @@
             this.txt44.Size = new System.Drawing.Size(59, 46);
             this.txt44.TabIndex = 4;
             this.txt44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt44.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt44.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt44.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -980,6 +1025,8 @@
             this.txt43.Size = new System.Drawing.Size(59, 46);
             this.txt43.TabIndex = 3;
             this.txt43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt43.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt43.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt43.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -994,6 +1041,8 @@
             this.txt35.Size = new System.Drawing.Size(59, 46);
             this.txt35.TabIndex = 2;
             this.txt35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt35.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt35.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt35.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1008,6 +1057,8 @@
             this.txt34.Size = new System.Drawing.Size(59, 46);
             this.txt34.TabIndex = 1;
             this.txt34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt34.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt34.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt34.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1022,6 +1073,8 @@
             this.txt33.Size = new System.Drawing.Size(59, 46);
             this.txt33.TabIndex = 0;
             this.txt33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt33.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt33.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt33.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1054,6 +1107,8 @@
             this.txt58.Size = new System.Drawing.Size(59, 46);
             this.txt58.TabIndex = 8;
             this.txt58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt58.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt58.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt58.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1068,6 +1123,8 @@
             this.txt57.Size = new System.Drawing.Size(59, 46);
             this.txt57.TabIndex = 7;
             this.txt57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt57.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt57.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt57.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1082,6 +1139,8 @@
             this.txt56.Size = new System.Drawing.Size(59, 46);
             this.txt56.TabIndex = 6;
             this.txt56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt56.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt56.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt56.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1096,6 +1155,8 @@
             this.txt48.Size = new System.Drawing.Size(59, 46);
             this.txt48.TabIndex = 5;
             this.txt48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt48.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt48.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt48.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1110,6 +1171,8 @@
             this.txt47.Size = new System.Drawing.Size(59, 46);
             this.txt47.TabIndex = 4;
             this.txt47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt47.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt47.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt47.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1124,6 +1187,8 @@
             this.txt46.Size = new System.Drawing.Size(59, 46);
             this.txt46.TabIndex = 3;
             this.txt46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt46.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt46.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt46.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1138,6 +1203,8 @@
             this.txt38.Size = new System.Drawing.Size(59, 46);
             this.txt38.TabIndex = 2;
             this.txt38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt38.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt38.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt38.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1152,6 +1219,8 @@
             this.txt37.Size = new System.Drawing.Size(59, 46);
             this.txt37.TabIndex = 1;
             this.txt37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt37.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt37.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt37.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1166,6 +1235,8 @@
             this.txt36.Size = new System.Drawing.Size(59, 46);
             this.txt36.TabIndex = 0;
             this.txt36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt36.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt36.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt36.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1198,6 +1269,8 @@
             this.txt82.Size = new System.Drawing.Size(59, 46);
             this.txt82.TabIndex = 8;
             this.txt82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt82.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt82.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt82.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt82.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1212,6 +1285,8 @@
             this.txt81.Size = new System.Drawing.Size(59, 46);
             this.txt81.TabIndex = 7;
             this.txt81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt81.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt81.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt81.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt81.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1226,6 +1301,8 @@
             this.txt80.Size = new System.Drawing.Size(59, 46);
             this.txt80.TabIndex = 6;
             this.txt80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt80.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt80.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt80.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt80.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1240,6 +1317,8 @@
             this.txt72.Size = new System.Drawing.Size(59, 46);
             this.txt72.TabIndex = 5;
             this.txt72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt72.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt72.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt72.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt72.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1254,6 +1333,8 @@
             this.txt71.Size = new System.Drawing.Size(59, 46);
             this.txt71.TabIndex = 4;
             this.txt71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt71.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt71.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt71.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt71.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1268,6 +1349,8 @@
             this.txt70.Size = new System.Drawing.Size(59, 46);
             this.txt70.TabIndex = 3;
             this.txt70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt70.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt70.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt70.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt70.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1282,6 +1365,8 @@
             this.txt62.Size = new System.Drawing.Size(59, 46);
             this.txt62.TabIndex = 2;
             this.txt62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt62.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt62.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt62.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1296,6 +1381,8 @@
             this.txt61.Size = new System.Drawing.Size(59, 46);
             this.txt61.TabIndex = 1;
             this.txt61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt61.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt61.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt61.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1310,6 +1397,8 @@
             this.txt60.Size = new System.Drawing.Size(59, 46);
             this.txt60.TabIndex = 0;
             this.txt60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt60.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt60.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt60.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1342,6 +1431,8 @@
             this.txt85.Size = new System.Drawing.Size(59, 46);
             this.txt85.TabIndex = 8;
             this.txt85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt85.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt85.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt85.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt85.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1356,6 +1447,8 @@
             this.txt84.Size = new System.Drawing.Size(59, 46);
             this.txt84.TabIndex = 7;
             this.txt84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt84.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt84.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt84.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt84.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1370,6 +1463,8 @@
             this.txt83.Size = new System.Drawing.Size(59, 46);
             this.txt83.TabIndex = 6;
             this.txt83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt83.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt83.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt83.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt83.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1384,6 +1479,8 @@
             this.txt75.Size = new System.Drawing.Size(59, 46);
             this.txt75.TabIndex = 5;
             this.txt75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt75.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt75.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt75.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt75.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1398,6 +1495,8 @@
             this.txt74.Size = new System.Drawing.Size(59, 46);
             this.txt74.TabIndex = 4;
             this.txt74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt74.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt74.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt74.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt74.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1412,6 +1511,8 @@
             this.txt73.Size = new System.Drawing.Size(59, 46);
             this.txt73.TabIndex = 3;
             this.txt73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt73.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt73.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt73.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt73.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1426,6 +1527,8 @@
             this.txt65.Size = new System.Drawing.Size(59, 46);
             this.txt65.TabIndex = 2;
             this.txt65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt65.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt65.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt65.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1440,6 +1543,8 @@
             this.txt64.Size = new System.Drawing.Size(59, 46);
             this.txt64.TabIndex = 1;
             this.txt64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt64.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt64.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt64.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1454,6 +1559,8 @@
             this.txt63.Size = new System.Drawing.Size(59, 46);
             this.txt63.TabIndex = 0;
             this.txt63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt63.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt63.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt63.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1486,6 +1593,8 @@
             this.txt88.Size = new System.Drawing.Size(59, 46);
             this.txt88.TabIndex = 8;
             this.txt88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt88.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt88.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt88.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1500,6 +1609,8 @@
             this.txt87.Size = new System.Drawing.Size(59, 46);
             this.txt87.TabIndex = 7;
             this.txt87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt87.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt87.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt87.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1514,6 +1625,8 @@
             this.txt86.Size = new System.Drawing.Size(59, 46);
             this.txt86.TabIndex = 6;
             this.txt86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt86.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt86.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt86.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt86.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1528,6 +1641,8 @@
             this.txt78.Size = new System.Drawing.Size(59, 46);
             this.txt78.TabIndex = 5;
             this.txt78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt78.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt78.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt78.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt78.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1542,6 +1657,8 @@
             this.txt77.Size = new System.Drawing.Size(59, 46);
             this.txt77.TabIndex = 4;
             this.txt77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt77.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt77.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt77.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt77.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1556,6 +1673,8 @@
             this.txt76.Size = new System.Drawing.Size(59, 46);
             this.txt76.TabIndex = 3;
             this.txt76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt76.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt76.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt76.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt76.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1570,6 +1689,8 @@
             this.txt68.Size = new System.Drawing.Size(59, 46);
             this.txt68.TabIndex = 2;
             this.txt68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt68.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt68.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt68.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1584,6 +1705,8 @@
             this.txt67.Size = new System.Drawing.Size(59, 46);
             this.txt67.TabIndex = 1;
             this.txt67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt67.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt67.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt67.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
@@ -1598,63 +1721,18 @@
             this.txt66.Size = new System.Drawing.Size(59, 46);
             this.txt66.TabIndex = 0;
             this.txt66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt66.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt66.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt66.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             // 
-            // txtNota
-            // 
-            this.txtNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNota.Location = new System.Drawing.Point(313, 31);
-            this.txtNota.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNota.MaxLength = 7;
-            this.txtNota.Name = "txtNota";
-            this.txtNota.Size = new System.Drawing.Size(93, 24);
-            this.txtNota.TabIndex = 40;
-            // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.textBox1);
-            this.panel10.Controls.Add(this.button1);
-            this.panel10.Controls.Add(this.button2);
-            this.panel10.Controls.Add(this.txtIndice);
             this.panel10.Controls.Add(this.pincelJ);
             this.panel10.Controls.Add(this.pincelI);
-            this.panel10.Controls.Add(this.lblIndice);
             this.panel10.Controls.Add(this.pincelH);
-            this.panel10.Controls.Add(this.btnDer2);
             this.panel10.Controls.Add(this.pincelG);
-            this.panel10.Controls.Add(this.btnIzq2);
             this.panel10.Controls.Add(this.pincelF);
-            this.panel10.Controls.Add(this.btnDer1);
-            this.panel10.Controls.Add(this.btnIzq1);
-            this.panel10.Controls.Add(this.btnDos);
-            this.panel10.Controls.Add(this.btnTres);
-            this.panel10.Controls.Add(this.btnDelete);
-            this.panel10.Controls.Add(this.pincelL);
-            this.panel10.Controls.Add(this.pincelK);
-            this.panel10.Controls.Add(this.btnBB);
-            this.panel10.Controls.Add(this.btnAA);
-            this.panel10.Controls.Add(this.btnEL);
-            this.panel10.Controls.Add(this.btnR);
-            this.panel10.Controls.Add(this.lbl9);
-            this.panel10.Controls.Add(this.lbl8);
-            this.panel10.Controls.Add(this.lbl7);
-            this.panel10.Controls.Add(this.lbl6);
-            this.panel10.Controls.Add(this.lbl5);
-            this.panel10.Controls.Add(this.lbl4);
-            this.panel10.Controls.Add(this.lbl3);
-            this.panel10.Controls.Add(this.lbl2);
-            this.panel10.Controls.Add(this.lbl1);
-            this.panel10.Controls.Add(this.btn9);
-            this.panel10.Controls.Add(this.btn8);
-            this.panel10.Controls.Add(this.btn7);
-            this.panel10.Controls.Add(this.btn6);
-            this.panel10.Controls.Add(this.btn5);
-            this.panel10.Controls.Add(this.btn4);
-            this.panel10.Controls.Add(this.btn3);
-            this.panel10.Controls.Add(this.btn2);
-            this.panel10.Controls.Add(this.btn1);
             this.panel10.Controls.Add(this.pnlJuego);
             this.panel10.Controls.Add(this.pnlLetra);
             this.panel10.Controls.Add(this.menuStrip1);
@@ -1664,64 +1742,11 @@
             this.panel10.Controls.Add(this.pincelC);
             this.panel10.Controls.Add(this.pincelB);
             this.panel10.Controls.Add(this.pincelA);
-            this.panel10.Controls.Add(this.txtNota);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1152, 182);
             this.panel10.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Location = new System.Drawing.Point(670, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 7;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(25, 24);
-            this.textBox1.TabIndex = 96;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(632, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 24);
-            this.button1.TabIndex = 95;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(596, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 24);
-            this.button2.TabIndex = 94;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // txtIndice
-            // 
-            this.txtIndice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIndice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtIndice.Location = new System.Drawing.Point(275, 60);
-            this.txtIndice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIndice.MaxLength = 7;
-            this.txtIndice.Name = "txtIndice";
-            this.txtIndice.Size = new System.Drawing.Size(25, 24);
-            this.txtIndice.TabIndex = 93;
             // 
             // pincelJ
             // 
@@ -1730,11 +1755,12 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(824, 36);
+            this.pincelJ.Location = new System.Drawing.Point(707, 35);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 73;
             this.pincelJ.UseVisualStyleBackColor = false;
+            this.pincelJ.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
             // 
             // pincelI
             // 
@@ -1743,23 +1769,12 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(796, 36);
+            this.pincelI.Location = new System.Drawing.Point(679, 35);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 72;
             this.pincelI.UseVisualStyleBackColor = false;
-            // 
-            // lblIndice
-            // 
-            this.lblIndice.AutoSize = true;
-            this.lblIndice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblIndice.Location = new System.Drawing.Point(280, 36);
-            this.lblIndice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIndice.Name = "lblIndice";
-            this.lblIndice.Size = new System.Drawing.Size(14, 15);
-            this.lblIndice.TabIndex = 92;
-            this.lblIndice.Text = "1";
+            this.pincelI.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
             // 
             // pincelH
             // 
@@ -1768,26 +1783,12 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(768, 36);
+            this.pincelH.Location = new System.Drawing.Point(651, 35);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 71;
             this.pincelH.UseVisualStyleBackColor = false;
-            // 
-            // btnDer2
-            // 
-            this.btnDer2.BackColor = System.Drawing.Color.Silver;
-            this.btnDer2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.btnDer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDer2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDer2.ForeColor = System.Drawing.Color.Silver;
-            this.btnDer2.Location = new System.Drawing.Point(237, 60);
-            this.btnDer2.Name = "btnDer2";
-            this.btnDer2.Size = new System.Drawing.Size(36, 24);
-            this.btnDer2.TabIndex = 91;
-            this.btnDer2.UseVisualStyleBackColor = false;
+            this.pincelH.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
             // 
             // pincelG
             // 
@@ -1796,26 +1797,12 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(740, 36);
+            this.pincelG.Location = new System.Drawing.Point(623, 35);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 70;
             this.pincelG.UseVisualStyleBackColor = false;
-            // 
-            // btnIzq2
-            // 
-            this.btnIzq2.BackColor = System.Drawing.Color.Silver;
-            this.btnIzq2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzq2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzq2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzq2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzq2.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzq2.Location = new System.Drawing.Point(201, 60);
-            this.btnIzq2.Name = "btnIzq2";
-            this.btnIzq2.Size = new System.Drawing.Size(36, 24);
-            this.btnIzq2.TabIndex = 90;
-            this.btnIzq2.UseVisualStyleBackColor = false;
+            this.pincelG.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
             // 
             // pincelF
             // 
@@ -1824,373 +1811,12 @@
             this.pincelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelF.ForeColor = System.Drawing.Color.Silver;
-            this.pincelF.Location = new System.Drawing.Point(712, 36);
+            this.pincelF.Location = new System.Drawing.Point(595, 35);
             this.pincelF.Name = "pincelF";
             this.pincelF.Size = new System.Drawing.Size(25, 24);
             this.pincelF.TabIndex = 69;
             this.pincelF.UseVisualStyleBackColor = false;
-            // 
-            // btnDer1
-            // 
-            this.btnDer1.BackColor = System.Drawing.Color.Silver;
-            this.btnDer1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.btnDer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDer1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDer1.ForeColor = System.Drawing.Color.Silver;
-            this.btnDer1.Location = new System.Drawing.Point(237, 30);
-            this.btnDer1.Name = "btnDer1";
-            this.btnDer1.Size = new System.Drawing.Size(36, 24);
-            this.btnDer1.TabIndex = 89;
-            this.btnDer1.UseVisualStyleBackColor = false;
-            // 
-            // btnIzq1
-            // 
-            this.btnIzq1.BackColor = System.Drawing.Color.Silver;
-            this.btnIzq1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzq1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzq1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzq1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzq1.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzq1.Location = new System.Drawing.Point(201, 30);
-            this.btnIzq1.Name = "btnIzq1";
-            this.btnIzq1.Size = new System.Drawing.Size(36, 24);
-            this.btnIzq1.TabIndex = 88;
-            this.btnIzq1.UseVisualStyleBackColor = false;
-            // 
-            // btnDos
-            // 
-            this.btnDos.BackColor = System.Drawing.Color.Silver;
-            this.btnDos.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D21;
-            this.btnDos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(379, 60);
-            this.btnDos.Name = "btnDos";
-            this.btnDos.Size = new System.Drawing.Size(27, 28);
-            this.btnDos.TabIndex = 87;
-            this.btnDos.UseVisualStyleBackColor = false;
-            // 
-            // btnTres
-            // 
-            this.btnTres.BackColor = System.Drawing.Color.Silver;
-            this.btnTres.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D3;
-            this.btnTres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTres.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(345, 60);
-            this.btnTres.Name = "btnTres";
-            this.btnTres.Size = new System.Drawing.Size(27, 28);
-            this.btnTres.TabIndex = 86;
-            this.btnTres.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.White;
-            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.Silver;
-            this.btnDelete.Location = new System.Drawing.Point(313, 62);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(25, 24);
-            this.btnDelete.TabIndex = 85;
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // pincelL
-            // 
-            this.pincelL.BackColor = System.Drawing.Color.Silver;
-            this.pincelL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelL.ForeColor = System.Drawing.Color.Silver;
-            this.pincelL.Location = new System.Drawing.Point(119, 30);
-            this.pincelL.Name = "pincelL";
-            this.pincelL.Size = new System.Drawing.Size(25, 24);
-            this.pincelL.TabIndex = 84;
-            this.pincelL.UseVisualStyleBackColor = false;
-            // 
-            // pincelK
-            // 
-            this.pincelK.BackColor = System.Drawing.Color.Silver;
-            this.pincelK.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelK.ForeColor = System.Drawing.Color.Silver;
-            this.pincelK.Location = new System.Drawing.Point(91, 30);
-            this.pincelK.Name = "pincelK";
-            this.pincelK.Size = new System.Drawing.Size(25, 24);
-            this.pincelK.TabIndex = 83;
-            this.pincelK.UseVisualStyleBackColor = false;
-            // 
-            // btnBB
-            // 
-            this.btnBB.BackColor = System.Drawing.Color.Silver;
-            this.btnBB.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnBB.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnBB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBB.ForeColor = System.Drawing.Color.Black;
-            this.btnBB.Location = new System.Drawing.Point(36, 30);
-            this.btnBB.Name = "btnBB";
-            this.btnBB.Size = new System.Drawing.Size(25, 24);
-            this.btnBB.TabIndex = 82;
-            this.btnBB.Text = "B";
-            this.btnBB.UseVisualStyleBackColor = false;
-            // 
-            // btnAA
-            // 
-            this.btnAA.BackColor = System.Drawing.Color.Silver;
-            this.btnAA.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnAA.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAA.ForeColor = System.Drawing.Color.Black;
-            this.btnAA.Location = new System.Drawing.Point(7, 30);
-            this.btnAA.Name = "btnAA";
-            this.btnAA.Size = new System.Drawing.Size(25, 24);
-            this.btnAA.TabIndex = 81;
-            this.btnAA.Text = "A";
-            this.btnAA.UseVisualStyleBackColor = false;
-            // 
-            // btnEL
-            // 
-            this.btnEL.BackColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(164, 60);
-            this.btnEL.Name = "btnEL";
-            this.btnEL.Size = new System.Drawing.Size(25, 24);
-            this.btnEL.TabIndex = 80;
-            this.btnEL.Text = "E";
-            this.btnEL.UseVisualStyleBackColor = false;
-            // 
-            // btnR
-            // 
-            this.btnR.BackColor = System.Drawing.Color.Silver;
-            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnR.ForeColor = System.Drawing.Color.Black;
-            this.btnR.Location = new System.Drawing.Point(164, 30);
-            this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(25, 24);
-            this.btnR.TabIndex = 79;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = false;
-            // 
-            // lbl9
-            // 
-            this.lbl9.AutoSize = true;
-            this.lbl9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl9.Location = new System.Drawing.Point(541, 127);
-            this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(13, 13);
-            this.lbl9.TabIndex = 78;
-            this.lbl9.Text = "0";
-            // 
-            // lbl8
-            // 
-            this.lbl8.AutoSize = true;
-            this.lbl8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl8.Location = new System.Drawing.Point(509, 127);
-            this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl8.Name = "lbl8";
-            this.lbl8.Size = new System.Drawing.Size(13, 13);
-            this.lbl8.TabIndex = 77;
-            this.lbl8.Text = "0";
-            // 
-            // lbl7
-            // 
-            this.lbl7.AutoSize = true;
-            this.lbl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl7.Location = new System.Drawing.Point(475, 127);
-            this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(13, 13);
-            this.lbl7.TabIndex = 76;
-            this.lbl7.Text = "0";
-            // 
-            // lbl6
-            // 
-            this.lbl6.AutoSize = true;
-            this.lbl6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl6.Location = new System.Drawing.Point(443, 127);
-            this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(13, 13);
-            this.lbl6.TabIndex = 75;
-            this.lbl6.Text = "0";
-            // 
-            // lbl5
-            // 
-            this.lbl5.AutoSize = true;
-            this.lbl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl5.Location = new System.Drawing.Point(409, 127);
-            this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(13, 13);
-            this.lbl5.TabIndex = 74;
-            this.lbl5.Text = "0";
-            // 
-            // lbl4
-            // 
-            this.lbl4.AutoSize = true;
-            this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl4.Location = new System.Drawing.Point(377, 127);
-            this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(13, 13);
-            this.lbl4.TabIndex = 73;
-            this.lbl4.Text = "0";
-            // 
-            // lbl3
-            // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl3.Location = new System.Drawing.Point(343, 127);
-            this.lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(13, 13);
-            this.lbl3.TabIndex = 72;
-            this.lbl3.Text = "0";
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl2.Location = new System.Drawing.Point(311, 127);
-            this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(13, 13);
-            this.lbl2.TabIndex = 71;
-            this.lbl2.Text = "0";
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl1.Location = new System.Drawing.Point(277, 127);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(13, 13);
-            this.lbl1.TabIndex = 70;
-            this.lbl1.Text = "0";
-            // 
-            // btn9
-            // 
-            this.btn9.BackColor = System.Drawing.Color.Silver;
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.ForeColor = System.Drawing.Color.Blue;
-            this.btn9.Location = new System.Drawing.Point(536, 144);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(28, 27);
-            this.btn9.TabIndex = 68;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = false;
-            // 
-            // btn8
-            // 
-            this.btn8.BackColor = System.Drawing.Color.Silver;
-            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.ForeColor = System.Drawing.Color.Blue;
-            this.btn8.Location = new System.Drawing.Point(503, 144);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(28, 27);
-            this.btn8.TabIndex = 67;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = false;
-            // 
-            // btn7
-            // 
-            this.btn7.BackColor = System.Drawing.Color.Silver;
-            this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.ForeColor = System.Drawing.Color.Blue;
-            this.btn7.Location = new System.Drawing.Point(470, 144);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(28, 27);
-            this.btn7.TabIndex = 66;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = false;
-            // 
-            // btn6
-            // 
-            this.btn6.BackColor = System.Drawing.Color.Silver;
-            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.ForeColor = System.Drawing.Color.Blue;
-            this.btn6.Location = new System.Drawing.Point(437, 144);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(28, 27);
-            this.btn6.TabIndex = 65;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = false;
-            // 
-            // btn5
-            // 
-            this.btn5.BackColor = System.Drawing.Color.Silver;
-            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.ForeColor = System.Drawing.Color.Blue;
-            this.btn5.Location = new System.Drawing.Point(404, 144);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(28, 27);
-            this.btn5.TabIndex = 64;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = false;
-            // 
-            // btn4
-            // 
-            this.btn4.BackColor = System.Drawing.Color.Silver;
-            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.ForeColor = System.Drawing.Color.Blue;
-            this.btn4.Location = new System.Drawing.Point(371, 144);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(28, 27);
-            this.btn4.TabIndex = 63;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = false;
-            // 
-            // btn3
-            // 
-            this.btn3.BackColor = System.Drawing.Color.Silver;
-            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.ForeColor = System.Drawing.Color.Blue;
-            this.btn3.Location = new System.Drawing.Point(338, 144);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(28, 27);
-            this.btn3.TabIndex = 62;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = false;
-            // 
-            // btn2
-            // 
-            this.btn2.BackColor = System.Drawing.Color.Silver;
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.ForeColor = System.Drawing.Color.Blue;
-            this.btn2.Location = new System.Drawing.Point(305, 144);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(28, 27);
-            this.btn2.TabIndex = 61;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
-            // 
-            // btn1
-            // 
-            this.btn1.BackColor = System.Drawing.Color.Silver;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.Color.Blue;
-            this.btn1.Location = new System.Drawing.Point(272, 144);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(28, 27);
-            this.btn1.TabIndex = 69;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
+            this.pincelF.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
             // 
             // pnlJuego
             // 
@@ -2337,7 +1963,7 @@
             this.mIdiomas});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(470, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(378, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2420,6 +2046,7 @@
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 55;
             this.pincelE.UseVisualStyleBackColor = false;
+            this.pincelE.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
             // 
             // pincelD
             // 
@@ -2433,6 +2060,7 @@
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 54;
             this.pincelD.UseVisualStyleBackColor = false;
+            this.pincelD.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
             // 
             // pincelC
             // 
@@ -2446,6 +2074,7 @@
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 53;
             this.pincelC.UseVisualStyleBackColor = false;
+            this.pincelC.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
             // 
             // pincelB
             // 
@@ -2459,6 +2088,7 @@
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 52;
             this.pincelB.UseVisualStyleBackColor = false;
+            this.pincelB.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
             // 
             // pincelA
             // 
@@ -2472,6 +2102,7 @@
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 51;
             this.pincelA.UseVisualStyleBackColor = false;
+            this.pincelA.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
             // 
             // panel12
             // 
@@ -2499,6 +2130,8 @@
             this.t22.Name = "t22";
             this.t22.Size = new System.Drawing.Size(59, 46);
             this.t22.TabIndex = 8;
+            this.t22.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t22.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t21
             // 
@@ -2508,6 +2141,8 @@
             this.t21.Name = "t21";
             this.t21.Size = new System.Drawing.Size(59, 46);
             this.t21.TabIndex = 7;
+            this.t21.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t21.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t20
             // 
@@ -2517,6 +2152,8 @@
             this.t20.Name = "t20";
             this.t20.Size = new System.Drawing.Size(59, 46);
             this.t20.TabIndex = 6;
+            this.t20.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t20.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t12
             // 
@@ -2526,6 +2163,8 @@
             this.t12.Name = "t12";
             this.t12.Size = new System.Drawing.Size(59, 46);
             this.t12.TabIndex = 5;
+            this.t12.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t12.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t11
             // 
@@ -2535,6 +2174,8 @@
             this.t11.Name = "t11";
             this.t11.Size = new System.Drawing.Size(59, 46);
             this.t11.TabIndex = 4;
+            this.t11.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t11.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t10
             // 
@@ -2544,6 +2185,8 @@
             this.t10.Name = "t10";
             this.t10.Size = new System.Drawing.Size(59, 46);
             this.t10.TabIndex = 3;
+            this.t10.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t10.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t02
             // 
@@ -2553,6 +2196,8 @@
             this.t02.Name = "t02";
             this.t02.Size = new System.Drawing.Size(59, 46);
             this.t02.TabIndex = 2;
+            this.t02.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t02.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t01
             // 
@@ -2562,6 +2207,8 @@
             this.t01.Name = "t01";
             this.t01.Size = new System.Drawing.Size(59, 46);
             this.t01.TabIndex = 1;
+            this.t01.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t01.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t00
             // 
@@ -2571,6 +2218,8 @@
             this.t00.Name = "t00";
             this.t00.Size = new System.Drawing.Size(59, 46);
             this.t00.TabIndex = 0;
+            this.t00.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t00.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel13
             // 
@@ -2598,6 +2247,8 @@
             this.t25.Name = "t25";
             this.t25.Size = new System.Drawing.Size(59, 46);
             this.t25.TabIndex = 8;
+            this.t25.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t25.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t24
             // 
@@ -2607,6 +2258,8 @@
             this.t24.Name = "t24";
             this.t24.Size = new System.Drawing.Size(59, 46);
             this.t24.TabIndex = 7;
+            this.t24.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t24.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t23
             // 
@@ -2616,6 +2269,8 @@
             this.t23.Name = "t23";
             this.t23.Size = new System.Drawing.Size(59, 46);
             this.t23.TabIndex = 6;
+            this.t23.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t23.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t15
             // 
@@ -2625,6 +2280,8 @@
             this.t15.Name = "t15";
             this.t15.Size = new System.Drawing.Size(59, 46);
             this.t15.TabIndex = 5;
+            this.t15.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t15.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t14
             // 
@@ -2634,6 +2291,8 @@
             this.t14.Name = "t14";
             this.t14.Size = new System.Drawing.Size(59, 46);
             this.t14.TabIndex = 4;
+            this.t14.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t14.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t13
             // 
@@ -2643,6 +2302,8 @@
             this.t13.Name = "t13";
             this.t13.Size = new System.Drawing.Size(59, 46);
             this.t13.TabIndex = 3;
+            this.t13.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t13.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t05
             // 
@@ -2652,6 +2313,8 @@
             this.t05.Name = "t05";
             this.t05.Size = new System.Drawing.Size(59, 46);
             this.t05.TabIndex = 2;
+            this.t05.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t05.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t04
             // 
@@ -2661,6 +2324,8 @@
             this.t04.Name = "t04";
             this.t04.Size = new System.Drawing.Size(59, 46);
             this.t04.TabIndex = 1;
+            this.t04.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t04.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t03
             // 
@@ -2670,6 +2335,8 @@
             this.t03.Name = "t03";
             this.t03.Size = new System.Drawing.Size(59, 46);
             this.t03.TabIndex = 0;
+            this.t03.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t03.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel14
             // 
@@ -2697,6 +2364,8 @@
             this.t28.Name = "t28";
             this.t28.Size = new System.Drawing.Size(59, 46);
             this.t28.TabIndex = 8;
+            this.t28.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t28.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t27
             // 
@@ -2706,6 +2375,8 @@
             this.t27.Name = "t27";
             this.t27.Size = new System.Drawing.Size(59, 46);
             this.t27.TabIndex = 7;
+            this.t27.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t27.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t26
             // 
@@ -2715,6 +2386,8 @@
             this.t26.Name = "t26";
             this.t26.Size = new System.Drawing.Size(59, 46);
             this.t26.TabIndex = 6;
+            this.t26.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t26.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t18
             // 
@@ -2724,6 +2397,8 @@
             this.t18.Name = "t18";
             this.t18.Size = new System.Drawing.Size(59, 46);
             this.t18.TabIndex = 5;
+            this.t18.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t18.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t17
             // 
@@ -2733,6 +2408,8 @@
             this.t17.Name = "t17";
             this.t17.Size = new System.Drawing.Size(59, 46);
             this.t17.TabIndex = 4;
+            this.t17.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t17.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t16
             // 
@@ -2742,6 +2419,8 @@
             this.t16.Name = "t16";
             this.t16.Size = new System.Drawing.Size(59, 46);
             this.t16.TabIndex = 3;
+            this.t16.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t16.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t08
             // 
@@ -2751,6 +2430,8 @@
             this.t08.Name = "t08";
             this.t08.Size = new System.Drawing.Size(59, 46);
             this.t08.TabIndex = 2;
+            this.t08.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t08.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t07
             // 
@@ -2760,6 +2441,8 @@
             this.t07.Name = "t07";
             this.t07.Size = new System.Drawing.Size(59, 46);
             this.t07.TabIndex = 1;
+            this.t07.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t07.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t06
             // 
@@ -2769,6 +2452,8 @@
             this.t06.Name = "t06";
             this.t06.Size = new System.Drawing.Size(59, 46);
             this.t06.TabIndex = 0;
+            this.t06.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t06.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel15
             // 
@@ -2796,6 +2481,8 @@
             this.t52.Name = "t52";
             this.t52.Size = new System.Drawing.Size(59, 46);
             this.t52.TabIndex = 8;
+            this.t52.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t52.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t51
             // 
@@ -2805,6 +2492,8 @@
             this.t51.Name = "t51";
             this.t51.Size = new System.Drawing.Size(59, 46);
             this.t51.TabIndex = 7;
+            this.t51.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t51.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t50
             // 
@@ -2814,6 +2503,8 @@
             this.t50.Name = "t50";
             this.t50.Size = new System.Drawing.Size(59, 46);
             this.t50.TabIndex = 6;
+            this.t50.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t50.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t42
             // 
@@ -2823,6 +2514,8 @@
             this.t42.Name = "t42";
             this.t42.Size = new System.Drawing.Size(59, 46);
             this.t42.TabIndex = 5;
+            this.t42.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t42.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t41
             // 
@@ -2832,6 +2525,8 @@
             this.t41.Name = "t41";
             this.t41.Size = new System.Drawing.Size(59, 46);
             this.t41.TabIndex = 4;
+            this.t41.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t41.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t40
             // 
@@ -2841,6 +2536,8 @@
             this.t40.Name = "t40";
             this.t40.Size = new System.Drawing.Size(59, 46);
             this.t40.TabIndex = 3;
+            this.t40.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t40.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t32
             // 
@@ -2850,6 +2547,8 @@
             this.t32.Name = "t32";
             this.t32.Size = new System.Drawing.Size(59, 46);
             this.t32.TabIndex = 2;
+            this.t32.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t32.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t31
             // 
@@ -2859,6 +2558,8 @@
             this.t31.Name = "t31";
             this.t31.Size = new System.Drawing.Size(59, 46);
             this.t31.TabIndex = 1;
+            this.t31.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t31.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t30
             // 
@@ -2868,6 +2569,8 @@
             this.t30.Name = "t30";
             this.t30.Size = new System.Drawing.Size(59, 46);
             this.t30.TabIndex = 0;
+            this.t30.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t30.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel16
             // 
@@ -2895,6 +2598,8 @@
             this.t55.Name = "t55";
             this.t55.Size = new System.Drawing.Size(59, 46);
             this.t55.TabIndex = 8;
+            this.t55.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t55.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t54
             // 
@@ -2904,6 +2609,8 @@
             this.t54.Name = "t54";
             this.t54.Size = new System.Drawing.Size(59, 46);
             this.t54.TabIndex = 7;
+            this.t54.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t54.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t53
             // 
@@ -2913,6 +2620,8 @@
             this.t53.Name = "t53";
             this.t53.Size = new System.Drawing.Size(59, 46);
             this.t53.TabIndex = 6;
+            this.t53.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t53.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t45
             // 
@@ -2922,6 +2631,8 @@
             this.t45.Name = "t45";
             this.t45.Size = new System.Drawing.Size(59, 46);
             this.t45.TabIndex = 5;
+            this.t45.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t45.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t44
             // 
@@ -2931,6 +2642,8 @@
             this.t44.Name = "t44";
             this.t44.Size = new System.Drawing.Size(59, 46);
             this.t44.TabIndex = 4;
+            this.t44.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t44.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t43
             // 
@@ -2940,6 +2653,8 @@
             this.t43.Name = "t43";
             this.t43.Size = new System.Drawing.Size(59, 46);
             this.t43.TabIndex = 3;
+            this.t43.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t43.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t35
             // 
@@ -2949,6 +2664,8 @@
             this.t35.Name = "t35";
             this.t35.Size = new System.Drawing.Size(59, 46);
             this.t35.TabIndex = 2;
+            this.t35.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t35.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t34
             // 
@@ -2958,6 +2675,8 @@
             this.t34.Name = "t34";
             this.t34.Size = new System.Drawing.Size(59, 46);
             this.t34.TabIndex = 1;
+            this.t34.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t34.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t33
             // 
@@ -2967,6 +2686,8 @@
             this.t33.Name = "t33";
             this.t33.Size = new System.Drawing.Size(59, 46);
             this.t33.TabIndex = 0;
+            this.t33.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t33.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel17
             // 
@@ -2994,6 +2715,8 @@
             this.t58.Name = "t58";
             this.t58.Size = new System.Drawing.Size(59, 46);
             this.t58.TabIndex = 8;
+            this.t58.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t58.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t57
             // 
@@ -3003,6 +2726,8 @@
             this.t57.Name = "t57";
             this.t57.Size = new System.Drawing.Size(59, 46);
             this.t57.TabIndex = 7;
+            this.t57.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t57.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t56
             // 
@@ -3012,6 +2737,8 @@
             this.t56.Name = "t56";
             this.t56.Size = new System.Drawing.Size(59, 46);
             this.t56.TabIndex = 6;
+            this.t56.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t56.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t48
             // 
@@ -3021,6 +2748,8 @@
             this.t48.Name = "t48";
             this.t48.Size = new System.Drawing.Size(59, 46);
             this.t48.TabIndex = 5;
+            this.t48.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t48.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t47
             // 
@@ -3030,6 +2759,8 @@
             this.t47.Name = "t47";
             this.t47.Size = new System.Drawing.Size(59, 46);
             this.t47.TabIndex = 4;
+            this.t47.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t47.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t46
             // 
@@ -3039,6 +2770,8 @@
             this.t46.Name = "t46";
             this.t46.Size = new System.Drawing.Size(59, 46);
             this.t46.TabIndex = 3;
+            this.t46.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t46.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t38
             // 
@@ -3048,6 +2781,8 @@
             this.t38.Name = "t38";
             this.t38.Size = new System.Drawing.Size(59, 46);
             this.t38.TabIndex = 2;
+            this.t38.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t38.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t37
             // 
@@ -3057,6 +2792,8 @@
             this.t37.Name = "t37";
             this.t37.Size = new System.Drawing.Size(59, 46);
             this.t37.TabIndex = 1;
+            this.t37.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t37.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t36
             // 
@@ -3066,6 +2803,8 @@
             this.t36.Name = "t36";
             this.t36.Size = new System.Drawing.Size(59, 46);
             this.t36.TabIndex = 0;
+            this.t36.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t36.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel18
             // 
@@ -3093,6 +2832,8 @@
             this.t82.Name = "t82";
             this.t82.Size = new System.Drawing.Size(59, 46);
             this.t82.TabIndex = 8;
+            this.t82.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t82.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t81
             // 
@@ -3102,6 +2843,8 @@
             this.t81.Name = "t81";
             this.t81.Size = new System.Drawing.Size(59, 46);
             this.t81.TabIndex = 7;
+            this.t81.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t81.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t80
             // 
@@ -3111,6 +2854,8 @@
             this.t80.Name = "t80";
             this.t80.Size = new System.Drawing.Size(59, 46);
             this.t80.TabIndex = 6;
+            this.t80.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t80.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t72
             // 
@@ -3120,6 +2865,8 @@
             this.t72.Name = "t72";
             this.t72.Size = new System.Drawing.Size(59, 46);
             this.t72.TabIndex = 5;
+            this.t72.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t72.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t71
             // 
@@ -3129,6 +2876,8 @@
             this.t71.Name = "t71";
             this.t71.Size = new System.Drawing.Size(59, 46);
             this.t71.TabIndex = 4;
+            this.t71.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t71.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t70
             // 
@@ -3138,6 +2887,8 @@
             this.t70.Name = "t70";
             this.t70.Size = new System.Drawing.Size(59, 46);
             this.t70.TabIndex = 3;
+            this.t70.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t70.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t62
             // 
@@ -3147,6 +2898,8 @@
             this.t62.Name = "t62";
             this.t62.Size = new System.Drawing.Size(59, 46);
             this.t62.TabIndex = 2;
+            this.t62.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t62.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t61
             // 
@@ -3156,6 +2909,8 @@
             this.t61.Name = "t61";
             this.t61.Size = new System.Drawing.Size(59, 46);
             this.t61.TabIndex = 1;
+            this.t61.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t61.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t60
             // 
@@ -3165,6 +2920,8 @@
             this.t60.Name = "t60";
             this.t60.Size = new System.Drawing.Size(59, 46);
             this.t60.TabIndex = 0;
+            this.t60.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t60.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel19
             // 
@@ -3192,6 +2949,8 @@
             this.t85.Name = "t85";
             this.t85.Size = new System.Drawing.Size(59, 46);
             this.t85.TabIndex = 8;
+            this.t85.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t85.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t84
             // 
@@ -3201,6 +2960,8 @@
             this.t84.Name = "t84";
             this.t84.Size = new System.Drawing.Size(59, 46);
             this.t84.TabIndex = 7;
+            this.t84.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t84.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t83
             // 
@@ -3210,6 +2971,8 @@
             this.t83.Name = "t83";
             this.t83.Size = new System.Drawing.Size(59, 46);
             this.t83.TabIndex = 6;
+            this.t83.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t83.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t75
             // 
@@ -3219,6 +2982,8 @@
             this.t75.Name = "t75";
             this.t75.Size = new System.Drawing.Size(59, 46);
             this.t75.TabIndex = 5;
+            this.t75.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t75.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t74
             // 
@@ -3228,6 +2993,8 @@
             this.t74.Name = "t74";
             this.t74.Size = new System.Drawing.Size(59, 46);
             this.t74.TabIndex = 4;
+            this.t74.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t74.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t73
             // 
@@ -3237,6 +3004,8 @@
             this.t73.Name = "t73";
             this.t73.Size = new System.Drawing.Size(59, 46);
             this.t73.TabIndex = 3;
+            this.t73.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t73.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t65
             // 
@@ -3246,6 +3015,8 @@
             this.t65.Name = "t65";
             this.t65.Size = new System.Drawing.Size(59, 46);
             this.t65.TabIndex = 2;
+            this.t65.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t65.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t64
             // 
@@ -3255,6 +3026,8 @@
             this.t64.Name = "t64";
             this.t64.Size = new System.Drawing.Size(59, 46);
             this.t64.TabIndex = 1;
+            this.t64.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t64.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t63
             // 
@@ -3264,6 +3037,8 @@
             this.t63.Name = "t63";
             this.t63.Size = new System.Drawing.Size(59, 46);
             this.t63.TabIndex = 0;
+            this.t63.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t63.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // panel20
             // 
@@ -3291,6 +3066,8 @@
             this.t88.Name = "t88";
             this.t88.Size = new System.Drawing.Size(59, 46);
             this.t88.TabIndex = 8;
+            this.t88.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t88.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t87
             // 
@@ -3300,6 +3077,8 @@
             this.t87.Name = "t87";
             this.t87.Size = new System.Drawing.Size(59, 46);
             this.t87.TabIndex = 7;
+            this.t87.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t87.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t86
             // 
@@ -3309,6 +3088,8 @@
             this.t86.Name = "t86";
             this.t86.Size = new System.Drawing.Size(59, 46);
             this.t86.TabIndex = 6;
+            this.t86.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t86.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t78
             // 
@@ -3318,6 +3099,8 @@
             this.t78.Name = "t78";
             this.t78.Size = new System.Drawing.Size(59, 46);
             this.t78.TabIndex = 5;
+            this.t78.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t78.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t77
             // 
@@ -3327,6 +3110,8 @@
             this.t77.Name = "t77";
             this.t77.Size = new System.Drawing.Size(59, 46);
             this.t77.TabIndex = 4;
+            this.t77.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t77.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t76
             // 
@@ -3336,6 +3121,8 @@
             this.t76.Name = "t76";
             this.t76.Size = new System.Drawing.Size(59, 46);
             this.t76.TabIndex = 3;
+            this.t76.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t76.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t68
             // 
@@ -3345,6 +3132,8 @@
             this.t68.Name = "t68";
             this.t68.Size = new System.Drawing.Size(59, 46);
             this.t68.TabIndex = 2;
+            this.t68.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t68.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t67
             // 
@@ -3354,6 +3143,8 @@
             this.t67.Name = "t67";
             this.t67.Size = new System.Drawing.Size(59, 46);
             this.t67.TabIndex = 1;
+            this.t67.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t67.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // t66
             // 
@@ -3363,6 +3154,8 @@
             this.t66.Name = "t66";
             this.t66.Size = new System.Drawing.Size(59, 46);
             this.t66.TabIndex = 0;
+            this.t66.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t66.Enter += new System.EventHandler(this.t00_Enter);
             // 
             // openFileDialog1
             // 
@@ -3528,7 +3321,6 @@
         private System.Windows.Forms.TextBox txt68;
         private System.Windows.Forms.TextBox txt67;
         private System.Windows.Forms.TextBox txt66;
-        private System.Windows.Forms.TextBox txtNota;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button pincelE;
         private System.Windows.Forms.Button pincelD;
@@ -3648,48 +3440,12 @@
         private System.Windows.Forms.ToolStripMenuItem mIEspañol;
         private System.Windows.Forms.ToolStripMenuItem mIIngles;
         private System.Windows.Forms.ToolStripMenuItem mIPortugues;
-        private System.Windows.Forms.Label lbl9;
-        private System.Windows.Forms.Label lbl8;
-        private System.Windows.Forms.Label lbl7;
-        private System.Windows.Forms.Label lbl6;
-        private System.Windows.Forms.Label lbl5;
-        private System.Windows.Forms.Label lbl4;
-        private System.Windows.Forms.Label lbl3;
-        private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btn8;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btnE;
         private System.Windows.Forms.Button btnG;
         private System.Windows.Forms.Button btnF;
         private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnA;
-        private System.Windows.Forms.Button btnEL;
-        private System.Windows.Forms.Button btnR;
-        private System.Windows.Forms.Button btnBB;
-        private System.Windows.Forms.Button btnAA;
-        private System.Windows.Forms.Button pincelL;
-        private System.Windows.Forms.Button pincelK;
-        private System.Windows.Forms.Button btnDos;
-        private System.Windows.Forms.Button btnTres;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox txtIndice;
-        private System.Windows.Forms.Label lblIndice;
-        private System.Windows.Forms.Button btnDer2;
-        private System.Windows.Forms.Button btnIzq2;
-        private System.Windows.Forms.Button btnDer1;
-        private System.Windows.Forms.Button btnIzq1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txt22;
         private System.Windows.Forms.TextBox txt21;
         private System.Windows.Forms.TextBox txt20;

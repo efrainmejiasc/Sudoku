@@ -24,7 +24,7 @@ namespace SudokuParaTodos
         private EngineData Valor = EngineData.Instance();
         private TextBox[,] txtSudoku = new TextBox[9,9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
         private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
-        private Button[] btnPincel = new Button[7];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
+        private Button[] btnPincel = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private Button[] btnPincel2 = new Button[5];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES DERECHO
         private string[,] valorIngresado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
         private string[,] valorCandidato = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
@@ -35,6 +35,10 @@ namespace SudokuParaTodos
         private int[] position = new int[2];
         private int row = -1;
         private int col = -1;
+        private Color colorFondoActIzquierdo;
+        private bool pincelMarcadorIzquierdo = false;
+        private Color colorFondoActDerecho;
+        private bool pincelMarcadorDerecho = false;
         private int contadorIngresado = -1;
         private bool juegoGuardado;
 
@@ -144,7 +148,7 @@ namespace SudokuParaTodos
             foreach (TextBox item in txtSudoku2)
             {
                 item.GotFocus += delegate { HideCaret(item.Handle); };
-                item.ReadOnly = true;
+                //item.ReadOnly = true;
             }
             return txtSudoku2;
         }
@@ -153,8 +157,7 @@ namespace SudokuParaTodos
         {
             btnPincel[0] = pincelA; btnPincel[1] = pincelB;
             btnPincel[2] = pincelC; btnPincel[3] = pincelD;
-            btnPincel[4] = pincelE; btnPincel[5] = pincelK;
-            btnPincel[6] = pincelL;
+            btnPincel[4] = pincelE; 
             return btnPincel;
         }
 
@@ -175,7 +178,6 @@ namespace SudokuParaTodos
             mTablero.Visible = EngineData.Falso;
             mColores.Visible = EngineData.Falso;
             mContadores.Visible = EngineData.Falso;
-            txtNota.Visible = EngineData.Falso;
             foreach (Button btn in btnPincel) { btn.Visible = EngineData.Falso; }
             pnlJuego.Visible = EngineData.Falso;
             mArchivo.Visible = EngineData.Falso;
@@ -186,41 +188,8 @@ namespace SudokuParaTodos
             btnB.Visible = EngineData.Falso;
             btnC.Visible = EngineData.Falso;
             pnlLetra.Visible = EngineData.Falso;
-            btn1.Visible = EngineData.Falso;
-            btn2.Visible = EngineData.Falso;
-            btn3.Visible = EngineData.Falso;
-            btn4.Visible = EngineData.Falso;
-            btn5.Visible = EngineData.Falso;
-            btn6.Visible = EngineData.Falso;
-            btn7.Visible = EngineData.Falso;
-            btn8.Visible = EngineData.Falso;
-            btn9.Visible = EngineData.Falso;
-            lbl1.Visible = EngineData.Falso;
-            lbl2.Visible = EngineData.Falso;
-            lbl3.Visible = EngineData.Falso;
-            lbl4.Visible = EngineData.Falso;
-            lbl5.Visible = EngineData.Falso;
-            lbl6.Visible = EngineData.Falso;
-            lbl7.Visible = EngineData.Falso;
-            lbl8.Visible = EngineData.Falso;
-            lbl9.Visible = EngineData.Falso;
-            btnR.Visible = EngineData.Falso;
-            btnEL.Visible = EngineData.Falso;
-            btnAA.Visible = EngineData.Falso;
-            btnBB.Visible = EngineData.Falso;
-            pincelK.Visible = EngineData.Falso;
-            pincelL.Visible = EngineData.Falso;
-            lblIndice.Visible = EngineData.Falso;
-            txtIndice.Visible = EngineData.Falso;
-            btnIzq1.Visible = EngineData.Falso;
-            btnIzq2.Visible = EngineData.Falso;
-            btnDer1.Visible = EngineData.Falso;
-            btnDer2.Visible = EngineData.Falso;
+           
             //juegoGuardado = EngineData.Falso;
-            btnDelete.Visible = EngineData.Falso;
-            btnTres.Visible = EngineData.Falso;
-            btnDos.Visible = EngineData.Falso;
-
             //crearOtro = EngineData.Falso;
             valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
@@ -243,7 +212,6 @@ namespace SudokuParaTodos
                 btnOtro.Visible = EngineData.Falso;
                 btnGuardar.Visible = EngineData.Falso;
                 btnSolucion.Visible = EngineData.Falso;
-                txtNota.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
                 foreach (TextBox item in txtSudoku)
                 {
@@ -369,7 +337,7 @@ namespace SudokuParaTodos
                     valorSolucion = new string[9, 9];
                     break;
                 case (EngineData.BtnSolucion):
-                    MessageBox.Show("Solucion");
+                    GuardarJuego();
                     break;
             }
         }
@@ -438,6 +406,21 @@ namespace SudokuParaTodos
             }
         }
 
+        private void txt00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (pincelMarcadorIzquierdo)
+            {
+                if (valorIngresado[row, col] != null && valorIngresado[row, col] != string.Empty)
+                {
+                    txtSudoku[row, col].BackColor = colorFondoActIzquierdo;
+                }
+            }
+        }
+
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -493,37 +476,63 @@ namespace SudokuParaTodos
             }
         }
 
-        // MENU ARCHIVO
-        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void txt00_DoubleClick(object sender, EventArgs e)
         {
-            string idioma = Valor.GetIdioma();
-            this.openFileDialog1.FileName = string.Empty;
-            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(idioma);
-            this.openFileDialog1.Title = Valor.TextoAbrirJuego(idioma);
-            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
-            this.openFileDialog1.ShowDialog();
-            string pathArchivo = openFileDialog1.FileName;
-
-            if (pathArchivo == string.Empty) return;
-            Valor.SetPathArchivo(pathArchivo);
-
-            Funcion.ReadWriteTxt(pathArchivo);
-            Valor.SetPathArchivo(pathArchivo);
-            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
-
-            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
-            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
-            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
-            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
-
-            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
-            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-            valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
-            txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
         }
 
-     
+        private void t00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
+            if (pincelMarcadorDerecho)
+            {
+              txtSudoku2[row, col].BackColor = colorFondoActDerecho;    
+            }
+        }
+
+        private void t00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
+        }
+
+        private void ColorMarcadorIzquierdo_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcadorIzquierdo = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            }
+            else
+            {
+                pincelMarcadorIzquierdo = EngineData.Verdadero;
+                colorFondoActIzquierdo = pincel.BackColor;
+            }
+        }
+
+        private void ColorMarcadorDerecho_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+               pincelMarcadorDerecho = EngineData.Falso;
+               txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            }
+            else
+            {
+               pincelMarcadorDerecho = EngineData.Verdadero;
+               colorFondoActDerecho = pincel.BackColor;
+            }
+           
+        }
+
     }
 }
