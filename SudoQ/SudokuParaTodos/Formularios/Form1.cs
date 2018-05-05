@@ -33,15 +33,17 @@ namespace SudokuParaTodos
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
         private int[] position = new int[2];
+        private bool juegoGuardado;
+        private int contadorIngresado = -1;
         private int row = -1;
         private int col = -1;
         private Color colorFondoActIzquierdo;
         private bool pincelMarcadorIzquierdo = false;
         private Color colorFondoActDerecho;
         private bool pincelMarcadorDerecho = false;
-        private int contadorIngresado = -1;
-        private bool juegoGuardado;
+        private EngineSudoku.LetrasJuego LetrasJuego = new EngineSudoku.LetrasJuego();
 
+   
         public Form1()
         {
             InitializeComponent();
@@ -188,10 +190,8 @@ namespace SudokuParaTodos
             btnB.Visible = EngineData.Falso;
             btnC.Visible = EngineData.Falso;
             pnlLetra.Visible = EngineData.Falso;
-           
-            //juegoGuardado = EngineData.Falso;
-            //crearOtro = EngineData.Falso;
             valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
+            valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -258,7 +258,7 @@ namespace SudokuParaTodos
             {
                 btnSolucion.Visible = EngineData.Falso;
             }
-
+            LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado);
             return contadorIngresado;
         }
 
@@ -285,6 +285,36 @@ namespace SudokuParaTodos
             }
             AplicarIdioma();
             ComportamientoObjExpandido();
+        }
+
+        private void ColorMarcadorIzquierdo_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcadorIzquierdo = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            }
+            else
+            {
+                pincelMarcadorIzquierdo = EngineData.Verdadero;
+                colorFondoActIzquierdo = pincel.BackColor;
+            }
+        }
+
+        private void ColorMarcadorDerecho_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcadorDerecho = EngineData.Falso;
+                txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            }
+            else
+            {
+                pincelMarcadorDerecho = EngineData.Verdadero;
+                colorFondoActDerecho = pincel.BackColor;
+            }
 
         }
 
@@ -324,6 +354,7 @@ namespace SudokuParaTodos
                     txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
                     txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
+                    ContadorIngresado();
                     break;
                 case (EngineData.BtnOtroJuego):
                     GuardarJuego();
@@ -503,35 +534,30 @@ namespace SudokuParaTodos
             txt.BackColor = Color.WhiteSmoke;
         }
 
-        private void ColorMarcadorIzquierdo_Click(object sender, EventArgs e)
+        private void t00_KeyUp(object sender, KeyEventArgs e)
         {
-            Button pincel = (Button)sender;
-            if (pincel.BackColor == Color.Silver)
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (valorIngresado[row,col] != null && valorIngresado[row, col] != string.Empty)
             {
-                pincelMarcadorIzquierdo = EngineData.Falso;
-                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                txtSudoku2[row, col].Text = valorIngresado[row, col];
             }
             else
             {
-                pincelMarcadorIzquierdo = EngineData.Verdadero;
-                colorFondoActIzquierdo = pincel.BackColor;
+                txtSudoku2[row, col].Text = valorCandidatoSinEliminados[row, col];
             }
-        }
-
-        private void ColorMarcadorDerecho_Click(object sender, EventArgs e)
-        {
-            Button pincel = (Button)sender;
-            if (pincel.BackColor == Color.Silver)
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
-               pincelMarcadorDerecho = EngineData.Falso;
-               txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku2[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku2[row, col].Focus(); }
+                return;
             }
-            else
-            {
-               pincelMarcadorDerecho = EngineData.Verdadero;
-               colorFondoActDerecho = pincel.BackColor;
-            }
-           
         }
 
     }

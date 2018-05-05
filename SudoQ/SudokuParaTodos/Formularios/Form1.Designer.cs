@@ -2132,6 +2132,7 @@
             this.t22.TabIndex = 8;
             this.t22.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t22.Enter += new System.EventHandler(this.t00_Enter);
+            this.t22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t21
             // 
@@ -2143,6 +2144,7 @@
             this.t21.TabIndex = 7;
             this.t21.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t21.Enter += new System.EventHandler(this.t00_Enter);
+            this.t21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t20
             // 
@@ -2154,6 +2156,7 @@
             this.t20.TabIndex = 6;
             this.t20.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t20.Enter += new System.EventHandler(this.t00_Enter);
+            this.t20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t12
             // 
@@ -2165,6 +2168,7 @@
             this.t12.TabIndex = 5;
             this.t12.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t12.Enter += new System.EventHandler(this.t00_Enter);
+            this.t12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t11
             // 
@@ -2176,6 +2180,7 @@
             this.t11.TabIndex = 4;
             this.t11.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t11.Enter += new System.EventHandler(this.t00_Enter);
+            this.t11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t10
             // 
@@ -2187,6 +2192,7 @@
             this.t10.TabIndex = 3;
             this.t10.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t10.Enter += new System.EventHandler(this.t00_Enter);
+            this.t10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t02
             // 
@@ -2198,6 +2204,7 @@
             this.t02.TabIndex = 2;
             this.t02.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t02.Enter += new System.EventHandler(this.t00_Enter);
+            this.t02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t01
             // 
@@ -2209,6 +2216,7 @@
             this.t01.TabIndex = 1;
             this.t01.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t01.Enter += new System.EventHandler(this.t00_Enter);
+            this.t01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t00
             // 
@@ -2220,6 +2228,7 @@
             this.t00.TabIndex = 0;
             this.t00.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t00.Enter += new System.EventHandler(this.t00_Enter);
+            this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel13
             // 
@@ -2249,6 +2258,7 @@
             this.t25.TabIndex = 8;
             this.t25.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t25.Enter += new System.EventHandler(this.t00_Enter);
+            this.t25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t24
             // 
@@ -2260,6 +2270,7 @@
             this.t24.TabIndex = 7;
             this.t24.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t24.Enter += new System.EventHandler(this.t00_Enter);
+            this.t24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t23
             // 
@@ -2271,6 +2282,7 @@
             this.t23.TabIndex = 6;
             this.t23.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t23.Enter += new System.EventHandler(this.t00_Enter);
+            this.t23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t15
             // 
@@ -2282,6 +2294,7 @@
             this.t15.TabIndex = 5;
             this.t15.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t15.Enter += new System.EventHandler(this.t00_Enter);
+            this.t15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t14
             // 
@@ -2293,6 +2306,7 @@
             this.t14.TabIndex = 4;
             this.t14.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t14.Enter += new System.EventHandler(this.t00_Enter);
+            this.t14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t13
             // 
@@ -2304,6 +2318,7 @@
             this.t13.TabIndex = 3;
             this.t13.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t13.Enter += new System.EventHandler(this.t00_Enter);
+            this.t13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t05
             // 
@@ -2315,6 +2330,7 @@
             this.t05.TabIndex = 2;
             this.t05.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t05.Enter += new System.EventHandler(this.t00_Enter);
+            this.t05.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t04
             // 
@@ -2326,6 +2342,7 @@
             this.t04.TabIndex = 1;
             this.t04.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t04.Enter += new System.EventHandler(this.t00_Enter);
+            this.t04.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t03
             // 
@@ -2337,6 +2354,7 @@
             this.t03.TabIndex = 0;
             this.t03.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t03.Enter += new System.EventHandler(this.t00_Enter);
+            this.t03.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel14
             // 
@@ -2366,6 +2384,7 @@
             this.t28.TabIndex = 8;
             this.t28.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t28.Enter += new System.EventHandler(this.t00_Enter);
+            this.t28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t27
             // 
@@ -2377,6 +2396,7 @@
             this.t27.TabIndex = 7;
             this.t27.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t27.Enter += new System.EventHandler(this.t00_Enter);
+            this.t27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t26
             // 
@@ -2388,6 +2408,7 @@
             this.t26.TabIndex = 6;
             this.t26.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t26.Enter += new System.EventHandler(this.t00_Enter);
+            this.t26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t18
             // 
@@ -2399,6 +2420,7 @@
             this.t18.TabIndex = 5;
             this.t18.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t18.Enter += new System.EventHandler(this.t00_Enter);
+            this.t18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t17
             // 
@@ -2410,6 +2432,7 @@
             this.t17.TabIndex = 4;
             this.t17.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t17.Enter += new System.EventHandler(this.t00_Enter);
+            this.t17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t16
             // 
@@ -2421,6 +2444,7 @@
             this.t16.TabIndex = 3;
             this.t16.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t16.Enter += new System.EventHandler(this.t00_Enter);
+            this.t16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t08
             // 
@@ -2432,6 +2456,7 @@
             this.t08.TabIndex = 2;
             this.t08.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t08.Enter += new System.EventHandler(this.t00_Enter);
+            this.t08.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t07
             // 
@@ -2443,6 +2468,7 @@
             this.t07.TabIndex = 1;
             this.t07.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t07.Enter += new System.EventHandler(this.t00_Enter);
+            this.t07.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t06
             // 
@@ -2454,6 +2480,7 @@
             this.t06.TabIndex = 0;
             this.t06.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t06.Enter += new System.EventHandler(this.t00_Enter);
+            this.t06.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel15
             // 
@@ -2483,6 +2510,7 @@
             this.t52.TabIndex = 8;
             this.t52.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t52.Enter += new System.EventHandler(this.t00_Enter);
+            this.t52.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t51
             // 
@@ -2494,6 +2522,7 @@
             this.t51.TabIndex = 7;
             this.t51.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t51.Enter += new System.EventHandler(this.t00_Enter);
+            this.t51.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t50
             // 
@@ -2505,6 +2534,7 @@
             this.t50.TabIndex = 6;
             this.t50.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t50.Enter += new System.EventHandler(this.t00_Enter);
+            this.t50.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t42
             // 
@@ -2516,6 +2546,7 @@
             this.t42.TabIndex = 5;
             this.t42.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t42.Enter += new System.EventHandler(this.t00_Enter);
+            this.t42.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t41
             // 
@@ -2527,6 +2558,7 @@
             this.t41.TabIndex = 4;
             this.t41.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t41.Enter += new System.EventHandler(this.t00_Enter);
+            this.t41.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t40
             // 
@@ -2538,6 +2570,7 @@
             this.t40.TabIndex = 3;
             this.t40.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t40.Enter += new System.EventHandler(this.t00_Enter);
+            this.t40.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t32
             // 
@@ -2549,6 +2582,7 @@
             this.t32.TabIndex = 2;
             this.t32.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t32.Enter += new System.EventHandler(this.t00_Enter);
+            this.t32.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t31
             // 
@@ -2560,6 +2594,7 @@
             this.t31.TabIndex = 1;
             this.t31.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t31.Enter += new System.EventHandler(this.t00_Enter);
+            this.t31.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t30
             // 
@@ -2571,6 +2606,7 @@
             this.t30.TabIndex = 0;
             this.t30.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t30.Enter += new System.EventHandler(this.t00_Enter);
+            this.t30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel16
             // 
@@ -2600,6 +2636,7 @@
             this.t55.TabIndex = 8;
             this.t55.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t55.Enter += new System.EventHandler(this.t00_Enter);
+            this.t55.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t54
             // 
@@ -2611,6 +2648,7 @@
             this.t54.TabIndex = 7;
             this.t54.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t54.Enter += new System.EventHandler(this.t00_Enter);
+            this.t54.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t53
             // 
@@ -2622,6 +2660,7 @@
             this.t53.TabIndex = 6;
             this.t53.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t53.Enter += new System.EventHandler(this.t00_Enter);
+            this.t53.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t45
             // 
@@ -2633,6 +2672,7 @@
             this.t45.TabIndex = 5;
             this.t45.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t45.Enter += new System.EventHandler(this.t00_Enter);
+            this.t45.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t44
             // 
@@ -2644,6 +2684,7 @@
             this.t44.TabIndex = 4;
             this.t44.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t44.Enter += new System.EventHandler(this.t00_Enter);
+            this.t44.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t43
             // 
@@ -2655,6 +2696,7 @@
             this.t43.TabIndex = 3;
             this.t43.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t43.Enter += new System.EventHandler(this.t00_Enter);
+            this.t43.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t35
             // 
@@ -2666,6 +2708,7 @@
             this.t35.TabIndex = 2;
             this.t35.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t35.Enter += new System.EventHandler(this.t00_Enter);
+            this.t35.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t34
             // 
@@ -2677,6 +2720,7 @@
             this.t34.TabIndex = 1;
             this.t34.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t34.Enter += new System.EventHandler(this.t00_Enter);
+            this.t34.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t33
             // 
@@ -2688,6 +2732,7 @@
             this.t33.TabIndex = 0;
             this.t33.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t33.Enter += new System.EventHandler(this.t00_Enter);
+            this.t33.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel17
             // 
@@ -2717,6 +2762,7 @@
             this.t58.TabIndex = 8;
             this.t58.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t58.Enter += new System.EventHandler(this.t00_Enter);
+            this.t58.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t57
             // 
@@ -2728,6 +2774,7 @@
             this.t57.TabIndex = 7;
             this.t57.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t57.Enter += new System.EventHandler(this.t00_Enter);
+            this.t57.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t56
             // 
@@ -2739,6 +2786,7 @@
             this.t56.TabIndex = 6;
             this.t56.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t56.Enter += new System.EventHandler(this.t00_Enter);
+            this.t56.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t48
             // 
@@ -2750,6 +2798,7 @@
             this.t48.TabIndex = 5;
             this.t48.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t48.Enter += new System.EventHandler(this.t00_Enter);
+            this.t48.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t47
             // 
@@ -2761,6 +2810,7 @@
             this.t47.TabIndex = 4;
             this.t47.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t47.Enter += new System.EventHandler(this.t00_Enter);
+            this.t47.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t46
             // 
@@ -2772,6 +2822,7 @@
             this.t46.TabIndex = 3;
             this.t46.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t46.Enter += new System.EventHandler(this.t00_Enter);
+            this.t46.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t38
             // 
@@ -2783,6 +2834,7 @@
             this.t38.TabIndex = 2;
             this.t38.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t38.Enter += new System.EventHandler(this.t00_Enter);
+            this.t38.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t37
             // 
@@ -2794,6 +2846,7 @@
             this.t37.TabIndex = 1;
             this.t37.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t37.Enter += new System.EventHandler(this.t00_Enter);
+            this.t37.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t36
             // 
@@ -2805,6 +2858,7 @@
             this.t36.TabIndex = 0;
             this.t36.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t36.Enter += new System.EventHandler(this.t00_Enter);
+            this.t36.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel18
             // 
@@ -2834,6 +2888,7 @@
             this.t82.TabIndex = 8;
             this.t82.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t82.Enter += new System.EventHandler(this.t00_Enter);
+            this.t82.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t81
             // 
@@ -2845,6 +2900,7 @@
             this.t81.TabIndex = 7;
             this.t81.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t81.Enter += new System.EventHandler(this.t00_Enter);
+            this.t81.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t80
             // 
@@ -2856,6 +2912,7 @@
             this.t80.TabIndex = 6;
             this.t80.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t80.Enter += new System.EventHandler(this.t00_Enter);
+            this.t80.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t72
             // 
@@ -2867,6 +2924,7 @@
             this.t72.TabIndex = 5;
             this.t72.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t72.Enter += new System.EventHandler(this.t00_Enter);
+            this.t72.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t71
             // 
@@ -2878,6 +2936,7 @@
             this.t71.TabIndex = 4;
             this.t71.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t71.Enter += new System.EventHandler(this.t00_Enter);
+            this.t71.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t70
             // 
@@ -2889,6 +2948,7 @@
             this.t70.TabIndex = 3;
             this.t70.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t70.Enter += new System.EventHandler(this.t00_Enter);
+            this.t70.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t62
             // 
@@ -2900,6 +2960,7 @@
             this.t62.TabIndex = 2;
             this.t62.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t62.Enter += new System.EventHandler(this.t00_Enter);
+            this.t62.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t61
             // 
@@ -2911,6 +2972,7 @@
             this.t61.TabIndex = 1;
             this.t61.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t61.Enter += new System.EventHandler(this.t00_Enter);
+            this.t61.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t60
             // 
@@ -2922,6 +2984,7 @@
             this.t60.TabIndex = 0;
             this.t60.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t60.Enter += new System.EventHandler(this.t00_Enter);
+            this.t60.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel19
             // 
@@ -2951,6 +3014,7 @@
             this.t85.TabIndex = 8;
             this.t85.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t85.Enter += new System.EventHandler(this.t00_Enter);
+            this.t85.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t84
             // 
@@ -2962,6 +3026,7 @@
             this.t84.TabIndex = 7;
             this.t84.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t84.Enter += new System.EventHandler(this.t00_Enter);
+            this.t84.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t83
             // 
@@ -2973,6 +3038,7 @@
             this.t83.TabIndex = 6;
             this.t83.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t83.Enter += new System.EventHandler(this.t00_Enter);
+            this.t83.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t75
             // 
@@ -2984,6 +3050,7 @@
             this.t75.TabIndex = 5;
             this.t75.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t75.Enter += new System.EventHandler(this.t00_Enter);
+            this.t75.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t74
             // 
@@ -2995,6 +3062,7 @@
             this.t74.TabIndex = 4;
             this.t74.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t74.Enter += new System.EventHandler(this.t00_Enter);
+            this.t74.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t73
             // 
@@ -3006,6 +3074,7 @@
             this.t73.TabIndex = 3;
             this.t73.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t73.Enter += new System.EventHandler(this.t00_Enter);
+            this.t73.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t65
             // 
@@ -3017,6 +3086,7 @@
             this.t65.TabIndex = 2;
             this.t65.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t65.Enter += new System.EventHandler(this.t00_Enter);
+            this.t65.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t64
             // 
@@ -3028,6 +3098,7 @@
             this.t64.TabIndex = 1;
             this.t64.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t64.Enter += new System.EventHandler(this.t00_Enter);
+            this.t64.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t63
             // 
@@ -3039,6 +3110,7 @@
             this.t63.TabIndex = 0;
             this.t63.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t63.Enter += new System.EventHandler(this.t00_Enter);
+            this.t63.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // panel20
             // 
@@ -3068,6 +3140,7 @@
             this.t88.TabIndex = 8;
             this.t88.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t88.Enter += new System.EventHandler(this.t00_Enter);
+            this.t88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t87
             // 
@@ -3079,6 +3152,7 @@
             this.t87.TabIndex = 7;
             this.t87.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t87.Enter += new System.EventHandler(this.t00_Enter);
+            this.t87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t86
             // 
@@ -3090,6 +3164,7 @@
             this.t86.TabIndex = 6;
             this.t86.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t86.Enter += new System.EventHandler(this.t00_Enter);
+            this.t86.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t78
             // 
@@ -3101,6 +3176,7 @@
             this.t78.TabIndex = 5;
             this.t78.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t78.Enter += new System.EventHandler(this.t00_Enter);
+            this.t78.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t77
             // 
@@ -3112,6 +3188,7 @@
             this.t77.TabIndex = 4;
             this.t77.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t77.Enter += new System.EventHandler(this.t00_Enter);
+            this.t77.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t76
             // 
@@ -3123,6 +3200,7 @@
             this.t76.TabIndex = 3;
             this.t76.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t76.Enter += new System.EventHandler(this.t00_Enter);
+            this.t76.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t68
             // 
@@ -3134,6 +3212,7 @@
             this.t68.TabIndex = 2;
             this.t68.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t68.Enter += new System.EventHandler(this.t00_Enter);
+            this.t68.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t67
             // 
@@ -3145,6 +3224,7 @@
             this.t67.TabIndex = 1;
             this.t67.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t67.Enter += new System.EventHandler(this.t00_Enter);
+            this.t67.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // t66
             // 
@@ -3156,6 +3236,7 @@
             this.t66.TabIndex = 0;
             this.t66.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t66.Enter += new System.EventHandler(this.t00_Enter);
+            this.t66.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
             // openFileDialog1
             // 

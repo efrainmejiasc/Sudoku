@@ -27,9 +27,6 @@ namespace SudokuParaTodos
                 Valor.SetOpenFrom(EngineData.File);
                 Application.Run(new Formularios.Form2());
             }
-
-          
-      
         }
     }
 }

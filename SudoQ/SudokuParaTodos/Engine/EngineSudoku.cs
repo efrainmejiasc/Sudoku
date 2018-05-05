@@ -203,6 +203,16 @@ namespace SudokuParaTodos
              return contadorIngresado;
         }
 
+        public LetrasJuego SetLetrasJuego (int num)
+        {
+            LetrasJuego letras = new LetrasJuego
+            {
+                F = num,
+                E = 81 - num
+           };
+            return letras;
+        }
+
         public int[] Position(string sentido, int f, int c)
         {
             switch (sentido)
@@ -233,6 +243,16 @@ namespace SudokuParaTodos
                 }
             }
             return cajaTexto;
+        }
+
+        public class LetrasJuego
+        {
+            public double A { get; set; }
+            public double B { get; set; }
+            public double C { get; set; }
+            public double F { get; set; }
+            public double E { get; set; }
+            public double G { get; set; }
         }
 
         // METODOS NUMEROS + CANDIDATOS 
