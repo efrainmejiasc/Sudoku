@@ -74,6 +74,9 @@ namespace SudokuParaTodos
         public const string Right = "Right";
         public const string Left = "Left";
 
+        public const string SoloLectura = "SoloLectura";
+        public const string LecturaEscritura = "LecturaEscritura";
+
         public const string Exe = "Exe";
         public const string File = "File";
 

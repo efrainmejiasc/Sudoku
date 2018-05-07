@@ -101,16 +101,11 @@ namespace SudokuParaTodos
             v[2].BackColor = Color.CornflowerBlue;
             v[3].BackColor = Color.LightCoral;
             v[4].BackColor = Color.Crimson;
-            return v;
-        }
 
-        public Button [] ColoresPincel2(Button[] v)
-        {
-            v[0].BackColor = Color.Silver;
-            v[1].BackColor = Color.PaleGreen;
-            v[2].BackColor = Color.YellowGreen;
-            v[3].BackColor = Color.LightSalmon;
-            v[4].BackColor = Color.Orange;
+            v[5].BackColor = Color.PaleGreen;
+            v[6].BackColor = Color.YellowGreen;
+            v[7].BackColor = Color.LightSalmon;
+            v[8].BackColor = Color.Orange;
             return v;
         }
 

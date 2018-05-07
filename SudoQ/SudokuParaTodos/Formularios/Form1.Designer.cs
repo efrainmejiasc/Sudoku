@@ -124,7 +124,6 @@
             this.pincelI = new System.Windows.Forms.Button();
             this.pincelH = new System.Windows.Forms.Button();
             this.pincelG = new System.Windows.Forms.Button();
-            this.pincelF = new System.Windows.Forms.Button();
             this.pnlJuego = new System.Windows.Forms.Panel();
             this.btnAbrir = new System.Windows.Forms.Button();
             this.btnOtro = new System.Windows.Forms.Button();
@@ -1732,7 +1731,6 @@
             this.panel10.Controls.Add(this.pincelI);
             this.panel10.Controls.Add(this.pincelH);
             this.panel10.Controls.Add(this.pincelG);
-            this.panel10.Controls.Add(this.pincelF);
             this.panel10.Controls.Add(this.pnlJuego);
             this.panel10.Controls.Add(this.pnlLetra);
             this.panel10.Controls.Add(this.menuStrip1);
@@ -1755,12 +1753,12 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(707, 35);
+            this.pincelJ.Location = new System.Drawing.Point(945, 35);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 73;
             this.pincelJ.UseVisualStyleBackColor = false;
-            this.pincelJ.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
+            this.pincelJ.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelI
             // 
@@ -1769,12 +1767,12 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(679, 35);
+            this.pincelI.Location = new System.Drawing.Point(916, 35);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 72;
             this.pincelI.UseVisualStyleBackColor = false;
-            this.pincelI.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
+            this.pincelI.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelH
             // 
@@ -1783,12 +1781,12 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(651, 35);
+            this.pincelH.Location = new System.Drawing.Point(887, 35);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 71;
             this.pincelH.UseVisualStyleBackColor = false;
-            this.pincelH.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
+            this.pincelH.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelG
             // 
@@ -1797,26 +1795,12 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(623, 35);
+            this.pincelG.Location = new System.Drawing.Point(858, 35);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 70;
             this.pincelG.UseVisualStyleBackColor = false;
-            this.pincelG.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
-            // 
-            // pincelF
-            // 
-            this.pincelF.BackColor = System.Drawing.Color.Silver;
-            this.pincelF.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelF.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelF.ForeColor = System.Drawing.Color.Silver;
-            this.pincelF.Location = new System.Drawing.Point(595, 35);
-            this.pincelF.Name = "pincelF";
-            this.pincelF.Size = new System.Drawing.Size(25, 24);
-            this.pincelF.TabIndex = 69;
-            this.pincelF.UseVisualStyleBackColor = false;
-            this.pincelF.Click += new System.EventHandler(this.ColorMarcadorDerecho_Click);
+            this.pincelG.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pnlJuego
             // 
@@ -2041,12 +2025,12 @@
             this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(119, 60);
+            this.pincelE.Location = new System.Drawing.Point(829, 35);
             this.pincelE.Name = "pincelE";
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 55;
             this.pincelE.UseVisualStyleBackColor = false;
-            this.pincelE.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
+            this.pincelE.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelD
             // 
@@ -2055,12 +2039,12 @@
             this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(91, 60);
+            this.pincelD.Location = new System.Drawing.Point(800, 35);
             this.pincelD.Name = "pincelD";
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 54;
             this.pincelD.UseVisualStyleBackColor = false;
-            this.pincelD.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
+            this.pincelD.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelC
             // 
@@ -2069,12 +2053,12 @@
             this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(63, 60);
+            this.pincelC.Location = new System.Drawing.Point(771, 35);
             this.pincelC.Name = "pincelC";
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 53;
             this.pincelC.UseVisualStyleBackColor = false;
-            this.pincelC.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
+            this.pincelC.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelB
             // 
@@ -2083,12 +2067,12 @@
             this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(35, 60);
+            this.pincelB.Location = new System.Drawing.Point(742, 35);
             this.pincelB.Name = "pincelB";
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 52;
             this.pincelB.UseVisualStyleBackColor = false;
-            this.pincelB.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
+            this.pincelB.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelA
             // 
@@ -2097,12 +2081,12 @@
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelA.ForeColor = System.Drawing.Color.Silver;
-            this.pincelA.Location = new System.Drawing.Point(7, 60);
+            this.pincelA.Location = new System.Drawing.Point(713, 35);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 51;
             this.pincelA.UseVisualStyleBackColor = false;
-            this.pincelA.Click += new System.EventHandler(this.ColorMarcadorIzquierdo_Click);
+            this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // panel12
             // 
@@ -3507,7 +3491,6 @@
         private System.Windows.Forms.Button pincelI;
         private System.Windows.Forms.Button pincelH;
         private System.Windows.Forms.Button pincelG;
-        private System.Windows.Forms.Button pincelF;
         private System.Windows.Forms.Panel pnlJuego;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
