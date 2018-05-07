@@ -849,5 +849,101 @@ namespace SudokuParaTodos
             return valorSolucion;
         }
 
+        //FILAS COLUMNAS RECUADROS
+
+        public string[,] ObtenerSetearValoresFila(string[,] valorIngresado, string [,] valorCandidato, string [,] valorEliminado, int fila)//MANEJA PLANTILLA FILAS
+        {
+            string[,] valorPlantilla = new string[9, 9]; 
+            ListBox candidatos = new ListBox();
+            ListBox eliminadosOrganizados = new ListBox();
+            for (int c = 0; c <= 8; c++)
+            {
+                if (valorIngresado[fila, c] == null || valorIngresado[fila, c] == string.Empty)
+                {
+                    int col = 0;
+                    candidatos.Items.Clear();
+                    candidatos = OrganizarLista(candidatos, valorCandidato[fila, c]);
+                    if (valorEliminado[fila, c] != null && valorEliminado[fila, c] != string.Empty)//Si Existe Eliminado -> Eliminarlo
+                    {
+                        eliminadosOrganizados.Items.Clear();
+                        eliminadosOrganizados = OrganizarLista(eliminadosOrganizados, valorEliminado[fila, c]);
+                        candidatos = QuitarEliminados(candidatos, eliminadosOrganizados);
+                    }
+                    foreach (string candidato in candidatos.Items)
+                    {
+                        col = Convert.ToInt32(candidato)- 1;
+                        valorPlantilla[c, col] = candidato;
+                    }
+                    candidatos.Items.Clear();
+                }
+
+
+            }
+            return valorPlantilla;
+        }
+
+        public string[,] ObtenerSetearValoresColumna(string[,] valorIngresado, string[,] valorCandidato, string[,] valorEliminado, int columna) //MANEJA PLANTILLAS COLUMNA
+        {
+            string[,] valorPlantilla = new string[9, 9];
+            ListBox candidatos = new ListBox();
+            ListBox eliminadosOrganizados = new ListBox();
+            for (int f = 0; f <= 8; f++)
+            {
+                if (valorIngresado[f, columna] == null || valorIngresado[f, columna] == string.Empty)
+                {
+                    int col = 0;
+                    candidatos.Items.Clear();
+                    candidatos = OrganizarLista(candidatos, valorCandidato[f, columna]);
+                    if (valorEliminado[f, columna] != null && valorEliminado[f, columna] != string.Empty)//Si Existe Eliminado -> Eliminarlo
+                    {
+                        eliminadosOrganizados.Items.Clear();
+                        eliminadosOrganizados = OrganizarLista(eliminadosOrganizados, valorEliminado[f, columna]);
+                        candidatos = QuitarEliminados(candidatos, eliminadosOrganizados);
+                    }
+                    foreach (String candidato in candidatos.Items)
+                    {
+                        col = Convert.ToInt32(candidato) - 1;
+                        valorPlantilla[f, col] = candidato;
+                    }
+                    candidatos.Items.Clear();
+                }
+            }
+            return valorPlantilla;
+        }
+
+        public string[,] ObtenerSetearValoresRecuadro(string[,] valorIngresado, string[,] valorCandidato, string[,] valorEliminado, int fila, int columna)//MANEJA PLANTILLAS RECUADRO
+        {
+            string[,] valorPlantilla = new string[9, 9];
+            ListBox candidatos = new ListBox();
+            ListBox eliminadosOrganizados = new ListBox();
+            int i = 0;
+            for (int f = fila; f <= fila + 2; f++)
+            {
+                for (int c = columna; c <= columna + 2; c++)
+                {
+                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty)
+                    {
+                        int col = 0;
+                        candidatos.Items.Clear();
+                        candidatos = OrganizarLista(candidatos, valorCandidato[f, c]);
+                        if (valorEliminado[f, c] != null && valorEliminado[f, c] != string.Empty)//Si Existe Eliminado -> Eliminarlo
+                        {
+                            eliminadosOrganizados.Items.Clear();
+                            eliminadosOrganizados = OrganizarLista(eliminadosOrganizados, valorEliminado[f, c]);
+                            candidatos = QuitarEliminados(candidatos, eliminadosOrganizados);
+                        }
+                        foreach (String candidato in candidatos.Items)
+                        {
+                            col = Convert.ToInt32(candidato) - 1;
+                            valorPlantilla[i, col] = candidato;
+                        }
+                        candidatos.Items.Clear();
+                    }
+                    i++;
+                }
+            }
+            return valorPlantilla;
+        }
+
     }
 }
