@@ -74,9 +74,6 @@ namespace SudokuParaTodos
         public const string Right = "Right";
         public const string Left = "Left";
 
-        public const string SoloLectura = "SoloLectura";
-        public const string LecturaEscritura = "LecturaEscritura";
-
         public const string Exe = "Exe";
         public const string File = "File";
 
@@ -195,6 +192,69 @@ namespace SudokuParaTodos
                     break;
             }
             return nombreJuego;
+        }
+
+        public string Mensaje1(string lenguaje)
+        {
+            string mensaje = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    mensaje = "DEBE GUARDAR VALORES DE INICIO DEL JUEGO ANTES DE GUARDAR LA SOLUCION";
+                    break;
+                case ("Ingles"):
+                    mensaje = "YOU MUST SAVE VALUES TO START THE GAME BEFORE SAVING THE SOLUTION";
+                    break;
+                case ("Portugues"):
+                    mensaje = "VOCÊ DEVE SALVAR VALORES PARA INICIAR O JOGO ANTES DE SALVAR A SOLUÇÃO";
+                    break;
+                default:
+                    mensaje = "DEBE GUARDAR VALORES DE INICIO DEL JUEGO ANTES DE GUARDAR LA SOLUCION";
+                    break;
+            }
+            return mensaje;
+        }
+
+        public string Mensaje2(string lenguaje)
+        {
+            string mensaje = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    mensaje = "DEBE INGRESAR VALORES DE INICIO DEL JUEGO";
+                    break;
+                case ("Ingles"):
+                    mensaje = "MUST ENTER VALUES STARTING THE GAME";
+                    break;
+                case ("Portugues"):
+                    mensaje = "DEVE INSERIR VALORES INICIANDO O JOGO";
+                    break;
+                default:
+                    mensaje = "DEBE INGRESAR VALORES DE INICIO DEL JUEGO";
+                    break;
+            }
+            return mensaje;
+        }
+
+        public string TituloMensaje(string lenguaje)
+        {
+            string mensaje = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    mensaje = "INFORMACION DEL SISTEMA";
+                    break;
+                case ("Ingles"):
+                    mensaje = "SYSTEM INFORMATION";
+                    break;
+                case ("Portugues"):
+                    mensaje = "INFORMAÇÃO DO SISTEMA";
+                    break;
+                default:
+                    mensaje = "INFORMACION DEL SISTEMA";
+                    break;
+            }
+            return mensaje;
         }
 
         private string pathArchivo = string.Empty;

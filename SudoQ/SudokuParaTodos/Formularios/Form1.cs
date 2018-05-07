@@ -373,7 +373,7 @@ namespace SudokuParaTodos
                     pathArchivo = Valor.GetPathArchivo();
                     if(pathArchivo==string.Empty)
                     {
-                        MessageBox.Show("DEBE GUARDAR VALORES DE INICIO DEL JUEGO ANTES DE GUARDAR LA SOLUCION", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        MessageBox.Show(Valor.Mensaje1(Valor.GetIdioma()), Valor.TituloMensaje(Valor.GetIdioma()), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                         return;
                     }
                     GuardarJuego(pathArchivo);
@@ -390,7 +390,7 @@ namespace SudokuParaTodos
 
             if (existeValor == EngineData.Falso)
             {
-                MessageBox.Show("DEBE INGRESAR VALORES DE INICIO DEL JUEGO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(Valor.Mensaje2(Valor.GetIdioma()), Valor.TituloMensaje(Valor.GetIdioma()), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
