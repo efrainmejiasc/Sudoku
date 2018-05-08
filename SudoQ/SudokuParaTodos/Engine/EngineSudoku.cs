@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using System.Collections;
+using System.Data;
 
 namespace SudokuParaTodos
 {
@@ -679,7 +680,7 @@ namespace SudokuParaTodos
             }
         }
 
-       public void GuardarValoresSolucion(string pathArchivo, string[,] valorSolucion)
+        public void GuardarValoresSolucion(string pathArchivo, string[,] valorSolucion)
         {
             if (pathArchivo != null && pathArchivo != "")
             {
@@ -850,7 +851,6 @@ namespace SudokuParaTodos
         }
 
         //FILAS COLUMNAS RECUADROS
-
         public string[,] ObtenerSetearValoresFila(string[,] valorIngresado, string [,] valorCandidato, string [,] valorEliminado, int fila)//MANEJA PLANTILLA FILAS
         {
             string[,] valorPlantilla = new string[9, 9]; 
@@ -944,6 +944,63 @@ namespace SudokuParaTodos
             }
             return valorPlantilla;
         }
+
+        //CREAR TABLAS 
+        public DataTable CrearTabla1()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("POS.");
+            dt.Columns.Add("G.");
+            dt.Columns.Add("Nº");
+            dt.Columns.Add("c.v.");
+            AgregarFilas(dt, 27);
+            return dt;
+        }
+
+        public DataTable CrearTabla2()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("POS.");
+            dt.Columns.Add("G.");
+            dt.Columns.Add("Nº");
+            dt.Columns.Add("SOLO");
+            dt.Columns.Add("OCULTO");
+            AgregarFilas(dt, 27);
+            return dt;
+        }
+
+        private  DataTable AgregarFilas(DataTable dt, int nF)
+        {
+            for (int i = 1; i <= nF; i++)
+            {
+                dt.Rows.Add(i,"","","");
+            }
+            return dt;
+        }
+
+        // FORMATO DATAGRIDVIEW
+        public DataGridView FormatoDataGridView1(DataGridView dgv)
+        {
+            //dataGridView1.AutoGenerateColumns = EngineData.Falso;
+            dgv.Columns[0].Width = 50;
+            dgv.Columns[1].Width = 50;
+            dgv.Columns[2].Width = 50;
+            dgv.Columns[3].Width = 50;
+            dgv.ClearSelection();
+            return dgv;
+        }
+
+        public DataGridView FormatoDataGridView2(DataGridView dgv)
+        {
+            dgv.Columns[0].Width = 50;
+            dgv.Columns[1].Width = 50;
+            dgv.Columns[2].Width = 50;
+            dgv.Columns[3].Width = 50;
+            dgv.Columns[4].Width = 50;
+            dgv.ClearSelection();
+            return dgv;
+        }
+
 
     }
 }

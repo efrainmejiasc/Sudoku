@@ -227,6 +227,7 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
+            this.btnSelectColor = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnlJuego.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -237,6 +238,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.btnSelectColor);
             this.panel10.Controls.Add(this.pincelJ);
             this.panel10.Controls.Add(this.pincelI);
             this.panel10.Controls.Add(this.pincelH);
@@ -253,7 +255,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1152, 182);
+            this.panel10.Size = new System.Drawing.Size(1145, 182);
             this.panel10.TabIndex = 10;
             // 
             // pincelJ
@@ -525,7 +527,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1152, 24);
+            this.panel11.Size = new System.Drawing.Size(1145, 24);
             this.panel11.TabIndex = 59;
             // 
             // pincelE
@@ -589,12 +591,13 @@
             this.pincelA.BackColor = System.Drawing.Color.Silver;
             this.pincelA.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelA.ForeColor = System.Drawing.Color.Silver;
+            this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelA.ForeColor = System.Drawing.Color.Black;
             this.pincelA.Location = new System.Drawing.Point(713, 35);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 51;
+            this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
@@ -604,6 +607,7 @@
             // 
             // pnl1
             // 
+            this.pnl1.BackColor = System.Drawing.Color.Silver;
             this.pnl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl1.Controls.Add(this.txt88);
             this.pnl1.Controls.Add(this.txt85);
@@ -1989,6 +1993,7 @@
             // 
             // pnl2
             // 
+            this.pnl2.BackColor = System.Drawing.Color.Silver;
             this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl2.Controls.Add(this.t88);
             this.pnl2.Controls.Add(this.t85);
@@ -3291,12 +3296,25 @@
             this.t00.Enter += new System.EventHandler(this.t00_Enter);
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
+            // btnSelectColor
+            // 
+            this.btnSelectColor.BackColor = System.Drawing.Color.White;
+            this.btnSelectColor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
+            this.btnSelectColor.Location = new System.Drawing.Point(974, 35);
+            this.btnSelectColor.Name = "btnSelectColor";
+            this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
+            this.btnSelectColor.TabIndex = 74;
+            this.btnSelectColor.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1152, 652);
+            this.ClientSize = new System.Drawing.Size(1145, 646);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
@@ -3519,6 +3537,7 @@
         private System.Windows.Forms.TextBox t02;
         private System.Windows.Forms.TextBox t01;
         private System.Windows.Forms.TextBox t00;
+        private System.Windows.Forms.Button btnSelectColor;
     }
 }
 

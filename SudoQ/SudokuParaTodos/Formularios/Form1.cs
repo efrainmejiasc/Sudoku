@@ -164,7 +164,7 @@ namespace SudokuParaTodos
 
         private void ComportamientoObjInicio()
         {
-            this.Size = new Size(592 , 682);
+            this.Size = new Size(587 , 687);
             btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
@@ -182,7 +182,7 @@ namespace SudokuParaTodos
             pnlLetra.Visible = EngineData.Falso;
             valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
-            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+            //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -193,7 +193,7 @@ namespace SudokuParaTodos
         {
             if (Valor.GetIdioma() != string.Empty)
             {
-                this.Size = new Size(1168, 682);
+                this.Size = new Size(1161, 685);
                 foreach (Button btn in btnPincel) { btn.Visible = EngineData.Verdadero; }
                 btnPincel = Funcion.ColoresPincel(btnPincel);
                 pnlJuego.Visible = EngineData.Verdadero;
@@ -284,11 +284,13 @@ namespace SudokuParaTodos
                 pincelMarcador = EngineData.Falso;
                 txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
                 txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                btnSelectColor.BackColor = Color.Silver;
             }
             else
             {
                 pincelMarcador = EngineData.Verdadero;
                 colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
             }
         }
 
@@ -321,8 +323,8 @@ namespace SudokuParaTodos
                     txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
                     valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
                     valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                    txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+                    //txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+                    //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
                     ContadorIngresado();
                     break;
@@ -365,7 +367,7 @@ namespace SudokuParaTodos
 
                     valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
                     valorCandidatoSinEliminados = valorCandidato;
-                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+                    //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
                     txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
                     btnOtro.Visible = false;
                     break;
@@ -477,7 +479,7 @@ namespace SudokuParaTodos
                     if (juegoGuardado == EngineData.Falso) {valorInicio[row, col] = txt.Text; }
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorIngresado,valorCandidato,Color.Green,Color.Blue);
+                //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorIngresado,valorCandidato,Color.Green,Color.Blue);
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
                 ContadorIngresado();

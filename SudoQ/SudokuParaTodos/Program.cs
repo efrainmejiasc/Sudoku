@@ -20,7 +20,7 @@ namespace SudokuParaTodos
             if (args.Length == 0)
             {
                 Valor.SetOpenFrom(EngineData.Exe);
-                Application.Run(new Formularios.Form2());
+                Application.Run(new Form1());
             }
             else
             {
