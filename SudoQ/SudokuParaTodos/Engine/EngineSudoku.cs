@@ -126,7 +126,7 @@ namespace SudokuParaTodos
             return valorCandidato;
         }
 
-        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vIngresado , string [,] vCandidato, Color colorA, Color colorB, float fontBig = 20, float fontSmall = 8 ,string lado = EngineData.Right)
+        public TextBox [,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vIngresado , string [,] vCandidato, string [,] vInicio, Color colorA, Color colorB, float fontBig = 20, float fontSmall = 8 ,string lado = EngineData.Right)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -154,9 +154,37 @@ namespace SudokuParaTodos
                             cajaTexto[f, c].Text = vIngresado[f, c];
                             cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, fontBig);
                             cajaTexto[f, c].ForeColor = colorA;
+                            if (vInicio[f, c] != null && vInicio[f, c] != string.Empty)
+                            {
+                                cajaTexto[f, c].ForeColor = Color.Black;
+                            }
+
                         }
                     }
                    cajaTexto[f,c].TextAlign = HorizontalAlignment.Center;
+                }
+            }
+            return cajaTexto;
+        }
+
+        public TextBox[,] SetearTextBoxJuegoInicio(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vInicio)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                    {
+                        cajaTexto[f, c].Text = vIngresado[f, c];
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
+                        cajaTexto[f, c].ForeColor = Color.Blue;
+                        if (vInicio[f, c] != null && vInicio[f, c] != string.Empty)
+                        {
+                            cajaTexto[f, c].ForeColor = Color.Black;
+                        }
+
+                    }
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
                 }
             }
             return cajaTexto;
@@ -199,12 +227,31 @@ namespace SudokuParaTodos
              return contadorIngresado;
         }
 
-        public LetrasJuego SetLetrasJuego (int num)
+        public int ContadorCandidatos (string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
+        {
+            int contadorCandidatos = 0;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty)
+                    {
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(System.Environment.NewLine, "");
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                        contadorCandidatos = contadorCandidatos + valorCandidatoSinEliminados[f, c].Length;
+                    }
+                }
+            }
+            return contadorCandidatos;
+        }
+
+        public LetrasJuego SetLetrasJuego (int num, string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
         {
             LetrasJuego letras = new LetrasJuego
             {
                 F = num,
-                E = 81 - num
+                E = 81 - num,
+                G = ContadorCandidatos(valorIngresado,valorCandidatoSinEliminados)
            };
             return letras;
         }
@@ -738,6 +785,16 @@ namespace SudokuParaTodos
             return r;
         }
 
+        public bool ExiteArchivo(string pathArchivo)
+        {
+            bool resultado = false;
+            if (File.Exists(pathArchivo))
+            {
+                resultado = true;
+            }
+            return resultado;
+        }
+
         //ABRIR ARCHIVO
         public ArrayList AbrirValoresArchivo(string pathArchivo)
         {
@@ -986,6 +1043,7 @@ namespace SudokuParaTodos
             dgv.Columns[1].Width = 50;
             dgv.Columns[2].Width = 50;
             dgv.Columns[3].Width = 50;
+            dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgv.ClearSelection();
             return dgv;
         }
@@ -996,7 +1054,8 @@ namespace SudokuParaTodos
             dgv.Columns[1].Width = 50;
             dgv.Columns[2].Width = 50;
             dgv.Columns[3].Width = 50;
-            dgv.Columns[4].Width = 50;
+            dgv.Columns[4].Width = 80;
+            dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgv.ClearSelection();
             return dgv;
         }

@@ -36,7 +36,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnSelectColor = new System.Windows.Forms.Button();
+            this.pincelJ = new System.Windows.Forms.Button();
+            this.pincelI = new System.Windows.Forms.Button();
+            this.pincelH = new System.Windows.Forms.Button();
+            this.pincelG = new System.Windows.Forms.Button();
+            this.pincelE = new System.Windows.Forms.Button();
+            this.pincelD = new System.Windows.Forms.Button();
+            this.pincelC = new System.Windows.Forms.Button();
+            this.pincelB = new System.Windows.Forms.Button();
+            this.pincelA = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -180,16 +191,6 @@
             this.txt00 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btnSelectColor = new System.Windows.Forms.Button();
-            this.pincelJ = new System.Windows.Forms.Button();
-            this.pincelI = new System.Windows.Forms.Button();
-            this.pincelH = new System.Windows.Forms.Button();
-            this.pincelG = new System.Windows.Forms.Button();
-            this.pincelE = new System.Windows.Forms.Button();
-            this.pincelD = new System.Windows.Forms.Button();
-            this.pincelC = new System.Windows.Forms.Button();
-            this.pincelB = new System.Windows.Forms.Button();
-            this.pincelA = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.pnlJuego.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -257,6 +258,137 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 182);
             this.panel10.TabIndex = 11;
+            // 
+            // btnSelectColor
+            // 
+            this.btnSelectColor.BackColor = System.Drawing.Color.White;
+            this.btnSelectColor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
+            this.btnSelectColor.Location = new System.Drawing.Point(980, 36);
+            this.btnSelectColor.Name = "btnSelectColor";
+            this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
+            this.btnSelectColor.TabIndex = 106;
+            this.btnSelectColor.UseVisualStyleBackColor = false;
+            // 
+            // pincelJ
+            // 
+            this.pincelJ.BackColor = System.Drawing.Color.Silver;
+            this.pincelJ.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelJ.ForeColor = System.Drawing.Color.Silver;
+            this.pincelJ.Location = new System.Drawing.Point(951, 36);
+            this.pincelJ.Name = "pincelJ";
+            this.pincelJ.Size = new System.Drawing.Size(25, 24);
+            this.pincelJ.TabIndex = 105;
+            this.pincelJ.UseVisualStyleBackColor = false;
+            // 
+            // pincelI
+            // 
+            this.pincelI.BackColor = System.Drawing.Color.Silver;
+            this.pincelI.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelI.ForeColor = System.Drawing.Color.Silver;
+            this.pincelI.Location = new System.Drawing.Point(922, 36);
+            this.pincelI.Name = "pincelI";
+            this.pincelI.Size = new System.Drawing.Size(25, 24);
+            this.pincelI.TabIndex = 104;
+            this.pincelI.UseVisualStyleBackColor = false;
+            // 
+            // pincelH
+            // 
+            this.pincelH.BackColor = System.Drawing.Color.Silver;
+            this.pincelH.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelH.ForeColor = System.Drawing.Color.Silver;
+            this.pincelH.Location = new System.Drawing.Point(893, 36);
+            this.pincelH.Name = "pincelH";
+            this.pincelH.Size = new System.Drawing.Size(25, 24);
+            this.pincelH.TabIndex = 103;
+            this.pincelH.UseVisualStyleBackColor = false;
+            // 
+            // pincelG
+            // 
+            this.pincelG.BackColor = System.Drawing.Color.Silver;
+            this.pincelG.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelG.ForeColor = System.Drawing.Color.Silver;
+            this.pincelG.Location = new System.Drawing.Point(864, 36);
+            this.pincelG.Name = "pincelG";
+            this.pincelG.Size = new System.Drawing.Size(25, 24);
+            this.pincelG.TabIndex = 102;
+            this.pincelG.UseVisualStyleBackColor = false;
+            // 
+            // pincelE
+            // 
+            this.pincelE.BackColor = System.Drawing.Color.Silver;
+            this.pincelE.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelE.ForeColor = System.Drawing.Color.Silver;
+            this.pincelE.Location = new System.Drawing.Point(835, 36);
+            this.pincelE.Name = "pincelE";
+            this.pincelE.Size = new System.Drawing.Size(25, 24);
+            this.pincelE.TabIndex = 101;
+            this.pincelE.UseVisualStyleBackColor = false;
+            // 
+            // pincelD
+            // 
+            this.pincelD.BackColor = System.Drawing.Color.Silver;
+            this.pincelD.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelD.ForeColor = System.Drawing.Color.Silver;
+            this.pincelD.Location = new System.Drawing.Point(806, 36);
+            this.pincelD.Name = "pincelD";
+            this.pincelD.Size = new System.Drawing.Size(25, 24);
+            this.pincelD.TabIndex = 100;
+            this.pincelD.UseVisualStyleBackColor = false;
+            // 
+            // pincelC
+            // 
+            this.pincelC.BackColor = System.Drawing.Color.Silver;
+            this.pincelC.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelC.ForeColor = System.Drawing.Color.Silver;
+            this.pincelC.Location = new System.Drawing.Point(777, 36);
+            this.pincelC.Name = "pincelC";
+            this.pincelC.Size = new System.Drawing.Size(25, 24);
+            this.pincelC.TabIndex = 99;
+            this.pincelC.UseVisualStyleBackColor = false;
+            // 
+            // pincelB
+            // 
+            this.pincelB.BackColor = System.Drawing.Color.Silver;
+            this.pincelB.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelB.ForeColor = System.Drawing.Color.Silver;
+            this.pincelB.Location = new System.Drawing.Point(748, 36);
+            this.pincelB.Name = "pincelB";
+            this.pincelB.Size = new System.Drawing.Size(25, 24);
+            this.pincelB.TabIndex = 98;
+            this.pincelB.UseVisualStyleBackColor = false;
+            // 
+            // pincelA
+            // 
+            this.pincelA.BackColor = System.Drawing.Color.Silver;
+            this.pincelA.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelA.ForeColor = System.Drawing.Color.Black;
+            this.pincelA.Location = new System.Drawing.Point(719, 36);
+            this.pincelA.Name = "pincelA";
+            this.pincelA.Size = new System.Drawing.Size(25, 24);
+            this.pincelA.TabIndex = 97;
+            this.pincelA.Text = "R";
+            this.pincelA.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -1999,6 +2131,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2015,7 +2148,7 @@
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView1.Location = new System.Drawing.Point(570, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(580, 71);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
@@ -2030,12 +2163,13 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.dataGridView1.RowTemplate.Height = 20;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(222, 565);
+            this.dataGridView1.Size = new System.Drawing.Size(222, 564);
             this.dataGridView1.TabIndex = 22;
             // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2052,7 +2186,7 @@
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dataGridView2.Location = new System.Drawing.Point(885, 66);
+            this.dataGridView2.Location = new System.Drawing.Point(826, 71);
             this.dataGridView2.Name = "dataGridView2";
             dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
@@ -2067,139 +2201,8 @@
             this.dataGridView2.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.dataGridView2.RowTemplate.Height = 20;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(248, 565);
+            this.dataGridView2.Size = new System.Drawing.Size(302, 564);
             this.dataGridView2.TabIndex = 23;
-            // 
-            // btnSelectColor
-            // 
-            this.btnSelectColor.BackColor = System.Drawing.Color.White;
-            this.btnSelectColor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
-            this.btnSelectColor.Location = new System.Drawing.Point(980, 36);
-            this.btnSelectColor.Name = "btnSelectColor";
-            this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
-            this.btnSelectColor.TabIndex = 106;
-            this.btnSelectColor.UseVisualStyleBackColor = false;
-            // 
-            // pincelJ
-            // 
-            this.pincelJ.BackColor = System.Drawing.Color.Silver;
-            this.pincelJ.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(951, 36);
-            this.pincelJ.Name = "pincelJ";
-            this.pincelJ.Size = new System.Drawing.Size(25, 24);
-            this.pincelJ.TabIndex = 105;
-            this.pincelJ.UseVisualStyleBackColor = false;
-            // 
-            // pincelI
-            // 
-            this.pincelI.BackColor = System.Drawing.Color.Silver;
-            this.pincelI.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(922, 36);
-            this.pincelI.Name = "pincelI";
-            this.pincelI.Size = new System.Drawing.Size(25, 24);
-            this.pincelI.TabIndex = 104;
-            this.pincelI.UseVisualStyleBackColor = false;
-            // 
-            // pincelH
-            // 
-            this.pincelH.BackColor = System.Drawing.Color.Silver;
-            this.pincelH.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(893, 36);
-            this.pincelH.Name = "pincelH";
-            this.pincelH.Size = new System.Drawing.Size(25, 24);
-            this.pincelH.TabIndex = 103;
-            this.pincelH.UseVisualStyleBackColor = false;
-            // 
-            // pincelG
-            // 
-            this.pincelG.BackColor = System.Drawing.Color.Silver;
-            this.pincelG.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(864, 36);
-            this.pincelG.Name = "pincelG";
-            this.pincelG.Size = new System.Drawing.Size(25, 24);
-            this.pincelG.TabIndex = 102;
-            this.pincelG.UseVisualStyleBackColor = false;
-            // 
-            // pincelE
-            // 
-            this.pincelE.BackColor = System.Drawing.Color.Silver;
-            this.pincelE.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(835, 36);
-            this.pincelE.Name = "pincelE";
-            this.pincelE.Size = new System.Drawing.Size(25, 24);
-            this.pincelE.TabIndex = 101;
-            this.pincelE.UseVisualStyleBackColor = false;
-            // 
-            // pincelD
-            // 
-            this.pincelD.BackColor = System.Drawing.Color.Silver;
-            this.pincelD.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(806, 36);
-            this.pincelD.Name = "pincelD";
-            this.pincelD.Size = new System.Drawing.Size(25, 24);
-            this.pincelD.TabIndex = 100;
-            this.pincelD.UseVisualStyleBackColor = false;
-            // 
-            // pincelC
-            // 
-            this.pincelC.BackColor = System.Drawing.Color.Silver;
-            this.pincelC.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(777, 36);
-            this.pincelC.Name = "pincelC";
-            this.pincelC.Size = new System.Drawing.Size(25, 24);
-            this.pincelC.TabIndex = 99;
-            this.pincelC.UseVisualStyleBackColor = false;
-            // 
-            // pincelB
-            // 
-            this.pincelB.BackColor = System.Drawing.Color.Silver;
-            this.pincelB.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(748, 36);
-            this.pincelB.Name = "pincelB";
-            this.pincelB.Size = new System.Drawing.Size(25, 24);
-            this.pincelB.TabIndex = 98;
-            this.pincelB.UseVisualStyleBackColor = false;
-            // 
-            // pincelA
-            // 
-            this.pincelA.BackColor = System.Drawing.Color.Silver;
-            this.pincelA.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelA.ForeColor = System.Drawing.Color.Black;
-            this.pincelA.Location = new System.Drawing.Point(719, 36);
-            this.pincelA.Name = "pincelA";
-            this.pincelA.Size = new System.Drawing.Size(25, 24);
-            this.pincelA.TabIndex = 97;
-            this.pincelA.Text = "R";
-            this.pincelA.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -2210,6 +2213,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

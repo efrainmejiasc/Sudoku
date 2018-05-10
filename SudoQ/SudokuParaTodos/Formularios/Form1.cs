@@ -32,7 +32,8 @@ namespace SudokuParaTodos
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
         private int[] position = new int[2];
-        private bool juegoGuardado;
+        private string openFrom = string.Empty;
+        private bool vInit = EngineData.Falso;
         private int contadorIngresado = -1;
         private int row = -1;
         private int col = -1;
@@ -180,9 +181,9 @@ namespace SudokuParaTodos
             btnB.Visible = EngineData.Falso;
             btnC.Visible = EngineData.Falso;
             pnlLetra.Visible = EngineData.Falso;
-            valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
+            valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
-            //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -202,6 +203,7 @@ namespace SudokuParaTodos
                 btnGuardar.Visible = EngineData.Falso;
                 btnSolucion.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
+                ContadorIngresado();
                 foreach (TextBox item in txtSudoku)
                 {
                     item.GotFocus += delegate { HideCaret(item.Handle); };
@@ -227,15 +229,15 @@ namespace SudokuParaTodos
 
         private int  ContadorIngresado()
         {
-            contadorIngresado = Funcion.ContadorIngresado(valorIngresado);
-            if (contadorIngresado >= 17 && juegoGuardado == EngineData.Falso)
+            contadorIngresado = Funcion.ContadorIngresado(valorSolucion);
+            if (contadorIngresado >= 17 )
             {
                 btnGuardar.Visible = EngineData.Verdadero;
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
             }
-            else if (contadorIngresado < 17 || juegoGuardado == EngineData.Verdadero)
+            else if (contadorIngresado < 17 )
             {
                 btnGuardar.Visible = EngineData.Falso;
             }
@@ -247,7 +249,10 @@ namespace SudokuParaTodos
             {
                 btnSolucion.Visible = EngineData.Falso;
             }
-            LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado);
+            LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado,valorSolucion,valorCandidatoSinEliminados);
+            btnF.Text = LetrasJuego.F.ToString();
+            btnE.Text = LetrasJuego.E.ToString();
+            btnG.Text = LetrasJuego.G.ToString();
             return contadorIngresado;
         }
 
@@ -311,22 +316,29 @@ namespace SudokuParaTodos
 
                     if (pathArchivo == string.Empty) return;
                     Valor.SetPathArchivo(pathArchivo);
-                    Funcion.ReadWriteTxt(pathArchivo);
+                    Valor.SetOpenFrom (openFrom);
 
                     ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
-
                     valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
                     valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
                     valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
                     valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
 
                     txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
-                    valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                    valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                    //txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-                    //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+                    valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
+                    valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
+                    txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorSolucion, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
                     ContadorIngresado();
+                    openFrom = EngineData.File;
+                    Valor.SetOpenFrom(openFrom);
+                    vInit = EngineData.Verdadero;
+
+                    btnGuardar.Visible = EngineData.Verdadero;
+                    btnOtro.Visible = EngineData.Verdadero;
+                    btnAbrir.Visible = EngineData.Falso;
+                    btnSolucion.Visible = EngineData.Falso;
                     break;
                 case (EngineData.BtnGuardarJuego):
                     if (Valor.GetPathArchivo() == string.Empty)
@@ -344,16 +356,28 @@ namespace SudokuParaTodos
                     else
                     {
                         pathArchivo = Valor.GetPathArchivo();
+                        if (pathArchivo == string.Empty) return;
                     }
                     GuardarJuego(pathArchivo);
+
+                    if (openFrom != EngineData.File)
+                    {
+                        btnOtro.Visible = EngineData.Verdadero;
+                        btnAbrir.Visible = EngineData.Verdadero;
+                        btnSolucion.Visible = EngineData.Falso;
+                    }
+                    btnGuardar.Visible = EngineData.Falso;
+                    if (vInit == EngineData.Falso) { vInit = EngineData.Verdadero; }
                     break;
                 case (EngineData.BtnOtroJuego):
                     pathArchivo = Valor.GetPathArchivo();
-                    Funcion.ReadWriteTxt(pathArchivo);
-                    GuardarJuego(pathArchivo);
-                    Funcion.OnlyReadTxt(pathArchivo);
-                    juegoGuardado = EngineData.Falso;
+                    if (pathArchivo == string.Empty)
+                    {
+                        MessageBox.Show(Valor.Mensaje1(Valor.GetIdioma()), Valor.TituloMensaje(Valor.GetIdioma()), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        return;
+                    }
 
+                    GuardarJuego(pathArchivo);
                     pathArchivo = string.Empty;
                     Valor.SetPathArchivo(pathArchivo);
 
@@ -365,11 +389,18 @@ namespace SudokuParaTodos
                     valorInicio = new string[9, 9];
                     valorSolucion = new string[9, 9];
 
-                    valorCandidato = Funcion.CandidatosJuego(valorIngresado, valorCandidato);
+                    valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
                     valorCandidatoSinEliminados = valorCandidato;
-                    //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorIngresado, valorCandidato, Color.Green, Color.Blue);
+                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
                     txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
-                    btnOtro.Visible = false;
+
+                    btnGuardar.Visible = EngineData.Falso;
+                    btnOtro.Visible = EngineData.Falso;
+                    btnAbrir.Visible = EngineData.Verdadero;
+                    btnSolucion.Visible = EngineData.Falso;
+                    openFrom = EngineData.Exe;
+                    Valor.SetOpenFrom(openFrom);
+                    vInit = EngineData.Falso;
                     break;
                 case (EngineData.BtnSolucion):
                     pathArchivo = Valor.GetPathArchivo();
@@ -378,9 +409,12 @@ namespace SudokuParaTodos
                         MessageBox.Show(Valor.Mensaje1(Valor.GetIdioma()), Valor.TituloMensaje(Valor.GetIdioma()), MessageBoxButtons.OK, MessageBoxIcon.Stop);
                         return;
                     }
+
                     GuardarJuego(pathArchivo);
-                    Funcion.OnlyReadTxt(pathArchivo);
                     btnSolucion.Visible = EngineData.Falso;
+                    btnOtro.Visible = EngineData.Verdadero;
+                    btnAbrir.Visible = EngineData.Verdadero;
+                    btnGuardar.Visible = EngineData.Falso;
                     break;
             }
         }
@@ -388,7 +422,7 @@ namespace SudokuParaTodos
         private void GuardarJuego(string pathArchivo)
         {
             string idioma = Valor.GetIdioma();
-            bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
+            bool existeValor = Funcion.ExisteValorIngresado(valorSolucion);
 
             if (existeValor == EngineData.Falso)
             {
@@ -396,14 +430,12 @@ namespace SudokuParaTodos
                 return;
             }
 
+            if (Funcion.ExiteArchivo(pathArchivo)){ Funcion.ReadWriteTxt(pathArchivo); }
             Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
             Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
             Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
-            Funcion.GuardarValoresSolucion(pathArchivo, valorIngresado);
-
-            juegoGuardado = EngineData.Verdadero;
-            btnOtro.Visible = EngineData.Verdadero;
-            btnGuardar.Visible = EngineData.Falso;
+            Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
         private void BotonesContadores_Click(object sender, EventArgs e)
@@ -438,6 +470,14 @@ namespace SudokuParaTodos
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!vInit)
+            {
+               txt.ForeColor = Color.Black;
+            }
+            else
+            {
+               txt.ForeColor = Color.Blue;
+            }
             if (pincelMarcador)
             {
               txtSudoku[row, col].BackColor = colorFondoAct;
@@ -470,17 +510,17 @@ namespace SudokuParaTodos
                 if (txt.Text == EngineData.Zero)
                 {
                     txt.Text = string.Empty;
-                    valorIngresado[row, col] = string.Empty;
-                    if (juegoGuardado == EngineData.Falso) {valorInicio[row, col] = string.Empty;}
+                    valorSolucion[row, col] = string.Empty;
+                    if (vInit == EngineData.Falso) {valorInicio[row, col] = string.Empty;}
                 }
                 else
                 {
-                    valorIngresado[row, col] = txt.Text;
-                    if (juegoGuardado == EngineData.Falso) {valorInicio[row, col] = txt.Text; }
+                    valorSolucion[row, col] = txt.Text;
+                    if (vInit == EngineData.Falso) {valorInicio[row, col] = txt.Text; }
                 }
-                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                //txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorIngresado,valorCandidato,Color.Green,Color.Blue);
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorSolucion,valorCandidato, valorInicio, Color.Green,Color.Blue);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
                 txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
                 ContadorIngresado();
             }
@@ -512,7 +552,6 @@ namespace SudokuParaTodos
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-
             if (pincelMarcador)
             {
               txtSudoku2[row, col].BackColor = colorFondoAct;    
@@ -531,9 +570,9 @@ namespace SudokuParaTodos
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-            if (valorIngresado[row,col] != null && valorIngresado[row, col] != string.Empty)
+            if (valorSolucion[row,col] != null && valorSolucion[row, col] != string.Empty)
             {
-                txtSudoku2[row, col].Text = valorIngresado[row, col];
+                txtSudoku2[row, col].Text = valorSolucion[row, col];
             }
             else
             {
