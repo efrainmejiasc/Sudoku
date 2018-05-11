@@ -1011,7 +1011,7 @@ namespace SudokuParaTodos
             dt.Columns.Add("G.");
             dt.Columns.Add("Nº");
             dt.Columns.Add("c.v.");
-            AgregarFilas(dt, 27);
+            AgregarFilas(dt, 27,"TABLA1");
             return dt;
         }
 
@@ -1023,15 +1023,27 @@ namespace SudokuParaTodos
             dt.Columns.Add("Nº");
             dt.Columns.Add("SOLO");
             dt.Columns.Add("OCULTO");
-            AgregarFilas(dt, 27);
+            AgregarFilas(dt, 27,"TABLA2");
             return dt;
         }
 
-        private  DataTable AgregarFilas(DataTable dt, int nF)
+        private  DataTable AgregarFilas(DataTable dt, int nF , string tabla)
         {
             for (int i = 1; i <= nF; i++)
             {
-                dt.Rows.Add(i,"","","");
+                if (tabla == "TABLA2")
+                {
+                    if (i >= 1 && i<= 9)
+                        dt.Rows.Add(i, "F", i , "");
+                    else if (i >= 10 && i <= 18)
+                        dt.Rows.Add(i, "C", i - 9, "");
+                    else if (i >= 19 && i <= 27)
+                        dt.Rows.Add(i, "R", i - 18, "");
+                }
+                else
+                {
+                    dt.Rows.Add(i, "", "", "");
+                }
             }
             return dt;
         }
