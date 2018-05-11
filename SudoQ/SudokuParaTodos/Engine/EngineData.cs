@@ -77,6 +77,8 @@ namespace SudokuParaTodos
         public const string Exe = "Exe";
         public const string File = "File";
 
+        public Color GetColorCeldaAct () { return Color.DarkGray; }
+
         private string openFrom = string.Empty;
 
         public void SetOpenFrom (string vOpen) { openFrom = vOpen; }

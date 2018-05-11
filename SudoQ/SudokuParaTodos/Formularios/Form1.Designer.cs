@@ -724,6 +724,7 @@
             this.txt88.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt88.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt88.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt85
             // 
@@ -741,6 +742,7 @@
             this.txt85.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt85.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt85.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt85.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt87
             // 
@@ -758,6 +760,7 @@
             this.txt87.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt87.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt87.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt84
             // 
@@ -775,6 +778,7 @@
             this.txt84.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt84.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt84.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt84.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt86
             // 
@@ -792,6 +796,7 @@
             this.txt86.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt86.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt86.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt86.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt83
             // 
@@ -809,6 +814,7 @@
             this.txt83.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt83.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt83.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt83.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt78
             // 
@@ -826,6 +832,7 @@
             this.txt78.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt78.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt78.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt78.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt75
             // 
@@ -843,6 +850,7 @@
             this.txt75.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt75.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt75.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt75.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt77
             // 
@@ -860,6 +868,7 @@
             this.txt77.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt77.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt77.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt77.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt74
             // 
@@ -877,6 +886,7 @@
             this.txt74.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt74.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt74.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt74.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt76
             // 
@@ -894,6 +904,7 @@
             this.txt76.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt76.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt76.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt76.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt73
             // 
@@ -911,6 +922,7 @@
             this.txt73.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt73.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt73.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt73.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt68
             // 
@@ -928,6 +940,7 @@
             this.txt68.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt68.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt68.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt65
             // 
@@ -945,6 +958,7 @@
             this.txt65.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt65.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt65.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt67
             // 
@@ -962,6 +976,7 @@
             this.txt67.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt67.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt67.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt64
             // 
@@ -979,6 +994,7 @@
             this.txt64.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt64.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt64.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt66
             // 
@@ -996,6 +1012,7 @@
             this.txt66.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt66.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt66.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt63
             // 
@@ -1013,6 +1030,7 @@
             this.txt63.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt63.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt63.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt82
             // 
@@ -1030,6 +1048,7 @@
             this.txt82.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt82.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt82.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt82.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt81
             // 
@@ -1047,6 +1066,7 @@
             this.txt81.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt81.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt81.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt81.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt80
             // 
@@ -1064,6 +1084,7 @@
             this.txt80.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt80.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt80.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt80.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt72
             // 
@@ -1081,6 +1102,7 @@
             this.txt72.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt72.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt72.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt72.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt71
             // 
@@ -1098,6 +1120,7 @@
             this.txt71.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt71.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt71.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt71.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt70
             // 
@@ -1115,6 +1138,7 @@
             this.txt70.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt70.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt70.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt70.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt62
             // 
@@ -1132,6 +1156,7 @@
             this.txt62.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt62.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt62.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt61
             // 
@@ -1149,6 +1174,7 @@
             this.txt61.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt61.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt61.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt60
             // 
@@ -1166,6 +1192,7 @@
             this.txt60.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt60.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt60.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt58
             // 
@@ -1183,6 +1210,7 @@
             this.txt58.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt58.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt58.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt57
             // 
@@ -1200,6 +1228,7 @@
             this.txt57.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt57.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt57.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt56
             // 
@@ -1217,6 +1246,7 @@
             this.txt56.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt56.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt56.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt48
             // 
@@ -1234,6 +1264,7 @@
             this.txt48.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt48.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt48.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt47
             // 
@@ -1251,6 +1282,7 @@
             this.txt47.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt47.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt47.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt46
             // 
@@ -1268,6 +1300,7 @@
             this.txt46.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt46.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt46.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt38
             // 
@@ -1285,6 +1318,7 @@
             this.txt38.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt38.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt38.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt37
             // 
@@ -1302,6 +1336,7 @@
             this.txt37.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt37.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt37.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt36
             // 
@@ -1319,6 +1354,7 @@
             this.txt36.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt36.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt36.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt55
             // 
@@ -1336,6 +1372,7 @@
             this.txt55.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt55.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt55.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt54
             // 
@@ -1353,6 +1390,7 @@
             this.txt54.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt54.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt54.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt53
             // 
@@ -1370,6 +1408,7 @@
             this.txt53.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt53.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt53.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt45
             // 
@@ -1387,6 +1426,7 @@
             this.txt45.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt45.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt45.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt44
             // 
@@ -1404,6 +1444,7 @@
             this.txt44.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt44.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt44.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt43
             // 
@@ -1421,6 +1462,7 @@
             this.txt43.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt43.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt43.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt35
             // 
@@ -1438,6 +1480,7 @@
             this.txt35.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt35.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt35.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt34
             // 
@@ -1455,6 +1498,7 @@
             this.txt34.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt34.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt34.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt33
             // 
@@ -1472,6 +1516,7 @@
             this.txt33.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt33.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt33.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt52
             // 
@@ -1489,6 +1534,7 @@
             this.txt52.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt52.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt52.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt51
             // 
@@ -1506,6 +1552,7 @@
             this.txt51.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt51.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt51.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt28
             // 
@@ -1523,6 +1570,7 @@
             this.txt28.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt28.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt06
             // 
@@ -1540,6 +1588,7 @@
             this.txt06.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt06.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt06.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt06.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt50
             // 
@@ -1557,6 +1606,7 @@
             this.txt50.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt50.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt50.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt27
             // 
@@ -1574,6 +1624,7 @@
             this.txt27.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt27.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt42
             // 
@@ -1591,6 +1642,7 @@
             this.txt42.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt42.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt42.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt18
             // 
@@ -1608,6 +1660,7 @@
             this.txt18.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt18.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt41
             // 
@@ -1625,6 +1678,7 @@
             this.txt41.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt41.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt41.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt07
             // 
@@ -1642,6 +1696,7 @@
             this.txt07.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt07.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt07.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt07.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt40
             // 
@@ -1659,6 +1714,7 @@
             this.txt40.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt40.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt40.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt17
             // 
@@ -1676,6 +1732,7 @@
             this.txt17.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt17.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt32
             // 
@@ -1693,6 +1750,7 @@
             this.txt32.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt32.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt32.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt16
             // 
@@ -1710,6 +1768,7 @@
             this.txt16.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt16.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt31
             // 
@@ -1727,6 +1786,7 @@
             this.txt31.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt31.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt31.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt08
             // 
@@ -1744,6 +1804,7 @@
             this.txt08.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt08.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt08.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt08.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt26
             // 
@@ -1761,6 +1822,7 @@
             this.txt26.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt26.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt30
             // 
@@ -1778,6 +1840,7 @@
             this.txt30.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt30.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt25
             // 
@@ -1795,6 +1858,7 @@
             this.txt25.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt25.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt24
             // 
@@ -1812,6 +1876,7 @@
             this.txt24.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt24.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt23
             // 
@@ -1829,6 +1894,7 @@
             this.txt23.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt23.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt15
             // 
@@ -1846,6 +1912,7 @@
             this.txt15.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt15.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt14
             // 
@@ -1863,6 +1930,7 @@
             this.txt14.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt14.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt13
             // 
@@ -1880,6 +1948,7 @@
             this.txt13.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt13.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt05
             // 
@@ -1897,6 +1966,7 @@
             this.txt05.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt05.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt05.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt05.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt04
             // 
@@ -1914,6 +1984,7 @@
             this.txt04.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt04.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt04.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt04.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt03
             // 
@@ -1931,6 +2002,7 @@
             this.txt03.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt03.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt03.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt03.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt22
             // 
@@ -1948,6 +2020,7 @@
             this.txt22.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt22.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt21
             // 
@@ -1965,6 +2038,7 @@
             this.txt21.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt21.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt20
             // 
@@ -1982,6 +2056,7 @@
             this.txt20.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt20.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt12
             // 
@@ -1999,6 +2074,7 @@
             this.txt12.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt12.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt11
             // 
@@ -2016,6 +2092,7 @@
             this.txt11.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt11.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt10
             // 
@@ -2033,6 +2110,7 @@
             this.txt10.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt10.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt02
             // 
@@ -2050,6 +2128,7 @@
             this.txt02.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt02.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt01
             // 
@@ -2067,6 +2146,7 @@
             this.txt01.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt01.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt00
             // 
@@ -2084,6 +2164,7 @@
             this.txt00.Enter += new System.EventHandler(this.txt00_Enter);
             this.txt00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt00.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // pnl2
             // 

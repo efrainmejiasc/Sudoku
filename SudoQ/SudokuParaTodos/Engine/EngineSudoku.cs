@@ -227,35 +227,6 @@ namespace SudokuParaTodos
              return contadorIngresado;
         }
 
-        public int ContadorCandidatos (string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
-        {
-            int contadorCandidatos = 0;
-            for (int f = 0; f <= 8; f++)
-            {
-                for (int c = 0; c <= 8; c++)
-                {
-                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty)
-                    {
-                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(System.Environment.NewLine, "");
-                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
-                        contadorCandidatos = contadorCandidatos + valorCandidatoSinEliminados[f, c].Length;
-                    }
-                }
-            }
-            return contadorCandidatos;
-        }
-
-        public LetrasJuego SetLetrasJuego (int num, string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
-        {
-            LetrasJuego letras = new LetrasJuego
-            {
-                F = num,
-                E = 81 - num,
-                G = ContadorCandidatos(valorIngresado,valorCandidatoSinEliminados)
-           };
-            return letras;
-        }
-
         public int[] Position(string sentido, int f, int c)
         {
             switch (sentido)
@@ -288,6 +259,7 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        // LETRAS JUEGO 
         public class LetrasJuego
         {
             public double A { get; set; }
@@ -296,6 +268,35 @@ namespace SudokuParaTodos
             public double F { get; set; }
             public double E { get; set; }
             public double G { get; set; }
+        }
+
+        public int ContadorCandidatos(string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
+        {
+            int contadorCandidatos = 0;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty)
+                    {
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(System.Environment.NewLine, "");
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                        contadorCandidatos = contadorCandidatos + valorCandidatoSinEliminados[f, c].Length;
+                    }
+                }
+            }
+            return contadorCandidatos;
+        }
+
+        public LetrasJuego SetLetrasJuego(int num, string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
+        {
+            LetrasJuego letras = new LetrasJuego
+            {
+                F = num,
+                E = 81 - num,
+                G = ContadorCandidatos(valorIngresado, valorCandidatoSinEliminados)
+            };
+            return letras;
         }
 
         // METODOS NUMEROS + CANDIDATOS 

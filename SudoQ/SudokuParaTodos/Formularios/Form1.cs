@@ -39,6 +39,7 @@ namespace SudokuParaTodos
         private int col = -1;
         private Color colorFondoAct;
         private bool pincelMarcador = false;
+        private Color colorCeldaAnt;
         private EngineSudoku.LetrasJuego LetrasJuego = new EngineSudoku.LetrasJuego();
    
         public Form1()
@@ -470,6 +471,7 @@ namespace SudokuParaTodos
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+
             if (!vInit)
             {
                txt.ForeColor = Color.Black;
@@ -480,8 +482,14 @@ namespace SudokuParaTodos
             }
             if (pincelMarcador)
             {
-              txtSudoku[row, col].BackColor = colorFondoAct;
+                txtSudoku[row, col].BackColor = colorFondoAct;
             }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+
         }
 
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
@@ -544,6 +552,17 @@ namespace SudokuParaTodos
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
             txt.BackColor = Color.WhiteSmoke;
+        }
+
+        private void txt00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
         }
 
         private void t00_Enter(object sender, EventArgs e)
