@@ -1,6 +1,6 @@
 ﻿namespace SudokuParaTodos.Formularios
 {
-    partial class Form2
+    partial class AzulUno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
@@ -51,44 +42,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtIndice = new System.Windows.Forms.TextBox();
-            this.lblIndice = new System.Windows.Forms.Label();
-            this.btnDer2 = new System.Windows.Forms.Button();
-            this.btnIzq2 = new System.Windows.Forms.Button();
-            this.btnDer1 = new System.Windows.Forms.Button();
-            this.btnIzq1 = new System.Windows.Forms.Button();
-            this.btnDos = new System.Windows.Forms.Button();
-            this.btnTres = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.pincelL = new System.Windows.Forms.Button();
             this.pincelK = new System.Windows.Forms.Button();
             this.btnBB = new System.Windows.Forms.Button();
             this.btnAA = new System.Windows.Forms.Button();
-            this.btnEL = new System.Windows.Forms.Button();
-            this.btnR = new System.Windows.Forms.Button();
-            this.lbl9 = new System.Windows.Forms.Label();
-            this.lbl8 = new System.Windows.Forms.Label();
-            this.lbl7 = new System.Windows.Forms.Label();
-            this.lbl6 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.lbl4 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.pnlJuego = new System.Windows.Forms.Panel();
-            this.btnAbrir = new System.Windows.Forms.Button();
-            this.btnOtro = new System.Windows.Forms.Button();
-            this.btnSolucion = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.pnlLetra = new System.Windows.Forms.Panel();
             this.btnE = new System.Windows.Forms.Button();
             this.btnG = new System.Windows.Forms.Button();
@@ -189,15 +146,10 @@
             this.txt02 = new System.Windows.Forms.TextBox();
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel10.SuspendLayout();
-            this.pnlJuego.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel10
@@ -215,40 +167,10 @@
             this.panel10.Controls.Add(this.textBox1);
             this.panel10.Controls.Add(this.button1);
             this.panel10.Controls.Add(this.button2);
-            this.panel10.Controls.Add(this.txtIndice);
-            this.panel10.Controls.Add(this.lblIndice);
-            this.panel10.Controls.Add(this.btnDer2);
-            this.panel10.Controls.Add(this.btnIzq2);
-            this.panel10.Controls.Add(this.btnDer1);
-            this.panel10.Controls.Add(this.btnIzq1);
-            this.panel10.Controls.Add(this.btnDos);
-            this.panel10.Controls.Add(this.btnTres);
-            this.panel10.Controls.Add(this.btnDelete);
             this.panel10.Controls.Add(this.pincelL);
             this.panel10.Controls.Add(this.pincelK);
             this.panel10.Controls.Add(this.btnBB);
             this.panel10.Controls.Add(this.btnAA);
-            this.panel10.Controls.Add(this.btnEL);
-            this.panel10.Controls.Add(this.btnR);
-            this.panel10.Controls.Add(this.lbl9);
-            this.panel10.Controls.Add(this.lbl8);
-            this.panel10.Controls.Add(this.lbl7);
-            this.panel10.Controls.Add(this.lbl6);
-            this.panel10.Controls.Add(this.lbl5);
-            this.panel10.Controls.Add(this.lbl4);
-            this.panel10.Controls.Add(this.lbl3);
-            this.panel10.Controls.Add(this.lbl2);
-            this.panel10.Controls.Add(this.lbl1);
-            this.panel10.Controls.Add(this.btn9);
-            this.panel10.Controls.Add(this.btn8);
-            this.panel10.Controls.Add(this.btn7);
-            this.panel10.Controls.Add(this.btn6);
-            this.panel10.Controls.Add(this.btn5);
-            this.panel10.Controls.Add(this.btn4);
-            this.panel10.Controls.Add(this.btn3);
-            this.panel10.Controls.Add(this.btn2);
-            this.panel10.Controls.Add(this.btn1);
-            this.panel10.Controls.Add(this.pnlJuego);
             this.panel10.Controls.Add(this.pnlLetra);
             this.panel10.Controls.Add(this.menuStrip1);
             this.panel10.Controls.Add(this.panel11);
@@ -257,7 +179,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 182);
-            this.panel10.TabIndex = 11;
+            this.panel10.TabIndex = 12;
             // 
             // btnSelectColor
             // 
@@ -266,7 +188,7 @@
             this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
-            this.btnSelectColor.Location = new System.Drawing.Point(980, 36);
+            this.btnSelectColor.Location = new System.Drawing.Point(976, 36);
             this.btnSelectColor.Name = "btnSelectColor";
             this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
             this.btnSelectColor.TabIndex = 106;
@@ -279,7 +201,7 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(951, 36);
+            this.pincelJ.Location = new System.Drawing.Point(947, 36);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 105;
@@ -292,7 +214,7 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(922, 36);
+            this.pincelI.Location = new System.Drawing.Point(918, 36);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 104;
@@ -305,7 +227,7 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(893, 36);
+            this.pincelH.Location = new System.Drawing.Point(889, 36);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 103;
@@ -318,7 +240,7 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(864, 36);
+            this.pincelG.Location = new System.Drawing.Point(860, 36);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 102;
@@ -331,7 +253,7 @@
             this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(835, 36);
+            this.pincelE.Location = new System.Drawing.Point(831, 36);
             this.pincelE.Name = "pincelE";
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 101;
@@ -344,7 +266,7 @@
             this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(806, 36);
+            this.pincelD.Location = new System.Drawing.Point(802, 36);
             this.pincelD.Name = "pincelD";
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 100;
@@ -357,7 +279,7 @@
             this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(777, 36);
+            this.pincelC.Location = new System.Drawing.Point(773, 36);
             this.pincelC.Name = "pincelC";
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 99;
@@ -370,7 +292,7 @@
             this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(748, 36);
+            this.pincelB.Location = new System.Drawing.Point(744, 36);
             this.pincelB.Name = "pincelB";
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 98;
@@ -383,7 +305,7 @@
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelA.ForeColor = System.Drawing.Color.Black;
-            this.pincelA.Location = new System.Drawing.Point(719, 36);
+            this.pincelA.Location = new System.Drawing.Point(715, 36);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
@@ -430,132 +352,6 @@
             this.button2.Size = new System.Drawing.Size(36, 24);
             this.button2.TabIndex = 94;
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // txtIndice
-            // 
-            this.txtIndice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIndice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtIndice.Location = new System.Drawing.Point(275, 60);
-            this.txtIndice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIndice.MaxLength = 7;
-            this.txtIndice.Name = "txtIndice";
-            this.txtIndice.Size = new System.Drawing.Size(25, 24);
-            this.txtIndice.TabIndex = 93;
-            // 
-            // lblIndice
-            // 
-            this.lblIndice.AutoSize = true;
-            this.lblIndice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblIndice.Location = new System.Drawing.Point(280, 36);
-            this.lblIndice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIndice.Name = "lblIndice";
-            this.lblIndice.Size = new System.Drawing.Size(14, 15);
-            this.lblIndice.TabIndex = 92;
-            this.lblIndice.Text = "1";
-            // 
-            // btnDer2
-            // 
-            this.btnDer2.BackColor = System.Drawing.Color.Silver;
-            this.btnDer2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.btnDer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDer2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDer2.ForeColor = System.Drawing.Color.Silver;
-            this.btnDer2.Location = new System.Drawing.Point(237, 60);
-            this.btnDer2.Name = "btnDer2";
-            this.btnDer2.Size = new System.Drawing.Size(36, 24);
-            this.btnDer2.TabIndex = 91;
-            this.btnDer2.UseVisualStyleBackColor = false;
-            // 
-            // btnIzq2
-            // 
-            this.btnIzq2.BackColor = System.Drawing.Color.Silver;
-            this.btnIzq2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzq2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzq2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzq2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzq2.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzq2.Location = new System.Drawing.Point(201, 60);
-            this.btnIzq2.Name = "btnIzq2";
-            this.btnIzq2.Size = new System.Drawing.Size(36, 24);
-            this.btnIzq2.TabIndex = 90;
-            this.btnIzq2.UseVisualStyleBackColor = false;
-            // 
-            // btnDer1
-            // 
-            this.btnDer1.BackColor = System.Drawing.Color.Silver;
-            this.btnDer1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
-            this.btnDer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDer1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDer1.ForeColor = System.Drawing.Color.Silver;
-            this.btnDer1.Location = new System.Drawing.Point(237, 30);
-            this.btnDer1.Name = "btnDer1";
-            this.btnDer1.Size = new System.Drawing.Size(36, 24);
-            this.btnDer1.TabIndex = 89;
-            this.btnDer1.UseVisualStyleBackColor = false;
-            // 
-            // btnIzq1
-            // 
-            this.btnIzq1.BackColor = System.Drawing.Color.Silver;
-            this.btnIzq1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzq1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzq1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzq1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzq1.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzq1.Location = new System.Drawing.Point(201, 30);
-            this.btnIzq1.Name = "btnIzq1";
-            this.btnIzq1.Size = new System.Drawing.Size(36, 24);
-            this.btnIzq1.TabIndex = 88;
-            this.btnIzq1.UseVisualStyleBackColor = false;
-            // 
-            // btnDos
-            // 
-            this.btnDos.BackColor = System.Drawing.Color.Silver;
-            this.btnDos.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D21;
-            this.btnDos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(379, 60);
-            this.btnDos.Name = "btnDos";
-            this.btnDos.Size = new System.Drawing.Size(27, 28);
-            this.btnDos.TabIndex = 87;
-            this.btnDos.UseVisualStyleBackColor = false;
-            // 
-            // btnTres
-            // 
-            this.btnTres.BackColor = System.Drawing.Color.Silver;
-            this.btnTres.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D3;
-            this.btnTres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTres.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(345, 60);
-            this.btnTres.Name = "btnTres";
-            this.btnTres.Size = new System.Drawing.Size(27, 28);
-            this.btnTres.TabIndex = 86;
-            this.btnTres.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.White;
-            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.Silver;
-            this.btnDelete.Location = new System.Drawing.Point(313, 62);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(25, 24);
-            this.btnDelete.TabIndex = 85;
-            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // pincelL
             // 
@@ -610,288 +406,6 @@
             this.btnAA.TabIndex = 81;
             this.btnAA.Text = "A";
             this.btnAA.UseVisualStyleBackColor = false;
-            // 
-            // btnEL
-            // 
-            this.btnEL.BackColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(164, 60);
-            this.btnEL.Name = "btnEL";
-            this.btnEL.Size = new System.Drawing.Size(25, 24);
-            this.btnEL.TabIndex = 80;
-            this.btnEL.Text = "E";
-            this.btnEL.UseVisualStyleBackColor = false;
-            // 
-            // btnR
-            // 
-            this.btnR.BackColor = System.Drawing.Color.Silver;
-            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnR.ForeColor = System.Drawing.Color.Black;
-            this.btnR.Location = new System.Drawing.Point(164, 30);
-            this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(25, 24);
-            this.btnR.TabIndex = 79;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = false;
-            // 
-            // lbl9
-            // 
-            this.lbl9.AutoSize = true;
-            this.lbl9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl9.Location = new System.Drawing.Point(541, 127);
-            this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(13, 13);
-            this.lbl9.TabIndex = 78;
-            this.lbl9.Text = "0";
-            // 
-            // lbl8
-            // 
-            this.lbl8.AutoSize = true;
-            this.lbl8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl8.Location = new System.Drawing.Point(509, 127);
-            this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl8.Name = "lbl8";
-            this.lbl8.Size = new System.Drawing.Size(13, 13);
-            this.lbl8.TabIndex = 77;
-            this.lbl8.Text = "0";
-            // 
-            // lbl7
-            // 
-            this.lbl7.AutoSize = true;
-            this.lbl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl7.Location = new System.Drawing.Point(475, 127);
-            this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(13, 13);
-            this.lbl7.TabIndex = 76;
-            this.lbl7.Text = "0";
-            // 
-            // lbl6
-            // 
-            this.lbl6.AutoSize = true;
-            this.lbl6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl6.Location = new System.Drawing.Point(443, 127);
-            this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(13, 13);
-            this.lbl6.TabIndex = 75;
-            this.lbl6.Text = "0";
-            // 
-            // lbl5
-            // 
-            this.lbl5.AutoSize = true;
-            this.lbl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl5.Location = new System.Drawing.Point(409, 127);
-            this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(13, 13);
-            this.lbl5.TabIndex = 74;
-            this.lbl5.Text = "0";
-            // 
-            // lbl4
-            // 
-            this.lbl4.AutoSize = true;
-            this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl4.Location = new System.Drawing.Point(377, 127);
-            this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(13, 13);
-            this.lbl4.TabIndex = 73;
-            this.lbl4.Text = "0";
-            // 
-            // lbl3
-            // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl3.Location = new System.Drawing.Point(343, 127);
-            this.lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(13, 13);
-            this.lbl3.TabIndex = 72;
-            this.lbl3.Text = "0";
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl2.Location = new System.Drawing.Point(311, 127);
-            this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(13, 13);
-            this.lbl2.TabIndex = 71;
-            this.lbl2.Text = "0";
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl1.Location = new System.Drawing.Point(277, 127);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(13, 13);
-            this.lbl1.TabIndex = 70;
-            this.lbl1.Text = "0";
-            // 
-            // btn9
-            // 
-            this.btn9.BackColor = System.Drawing.Color.Silver;
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.ForeColor = System.Drawing.Color.Blue;
-            this.btn9.Location = new System.Drawing.Point(536, 144);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(28, 27);
-            this.btn9.TabIndex = 68;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = false;
-            // 
-            // btn8
-            // 
-            this.btn8.BackColor = System.Drawing.Color.Silver;
-            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.ForeColor = System.Drawing.Color.Blue;
-            this.btn8.Location = new System.Drawing.Point(503, 144);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(28, 27);
-            this.btn8.TabIndex = 67;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = false;
-            // 
-            // btn7
-            // 
-            this.btn7.BackColor = System.Drawing.Color.Silver;
-            this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.ForeColor = System.Drawing.Color.Blue;
-            this.btn7.Location = new System.Drawing.Point(470, 144);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(28, 27);
-            this.btn7.TabIndex = 66;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = false;
-            // 
-            // btn6
-            // 
-            this.btn6.BackColor = System.Drawing.Color.Silver;
-            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.ForeColor = System.Drawing.Color.Blue;
-            this.btn6.Location = new System.Drawing.Point(437, 144);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(28, 27);
-            this.btn6.TabIndex = 65;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = false;
-            // 
-            // btn5
-            // 
-            this.btn5.BackColor = System.Drawing.Color.Silver;
-            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.ForeColor = System.Drawing.Color.Blue;
-            this.btn5.Location = new System.Drawing.Point(404, 144);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(28, 27);
-            this.btn5.TabIndex = 64;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = false;
-            // 
-            // btn4
-            // 
-            this.btn4.BackColor = System.Drawing.Color.Silver;
-            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.ForeColor = System.Drawing.Color.Blue;
-            this.btn4.Location = new System.Drawing.Point(371, 144);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(28, 27);
-            this.btn4.TabIndex = 63;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = false;
-            // 
-            // btn3
-            // 
-            this.btn3.BackColor = System.Drawing.Color.Silver;
-            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.ForeColor = System.Drawing.Color.Blue;
-            this.btn3.Location = new System.Drawing.Point(338, 144);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(28, 27);
-            this.btn3.TabIndex = 62;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = false;
-            // 
-            // btn2
-            // 
-            this.btn2.BackColor = System.Drawing.Color.Silver;
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.ForeColor = System.Drawing.Color.Blue;
-            this.btn2.Location = new System.Drawing.Point(305, 144);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(28, 27);
-            this.btn2.TabIndex = 61;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
-            // 
-            // btn1
-            // 
-            this.btn1.BackColor = System.Drawing.Color.Silver;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.Color.Blue;
-            this.btn1.Location = new System.Drawing.Point(272, 144);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(28, 27);
-            this.btn1.TabIndex = 69;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
-            // 
-            // pnlJuego
-            // 
-            this.pnlJuego.Controls.Add(this.btnAbrir);
-            this.pnlJuego.Controls.Add(this.btnOtro);
-            this.pnlJuego.Controls.Add(this.btnSolucion);
-            this.pnlJuego.Controls.Add(this.btnGuardar);
-            this.pnlJuego.Location = new System.Drawing.Point(7, 108);
-            this.pnlJuego.Name = "pnlJuego";
-            this.pnlJuego.Size = new System.Drawing.Size(246, 63);
-            this.pnlJuego.TabIndex = 59;
-            // 
-            // btnAbrir
-            // 
-            this.btnAbrir.Location = new System.Drawing.Point(122, 36);
-            this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(117, 23);
-            this.btnAbrir.TabIndex = 68;
-            this.btnAbrir.Text = "Abrir Juego";
-            this.btnAbrir.UseVisualStyleBackColor = true;
-            // 
-            // btnOtro
-            // 
-            this.btnOtro.Location = new System.Drawing.Point(5, 36);
-            this.btnOtro.Name = "btnOtro";
-            this.btnOtro.Size = new System.Drawing.Size(117, 23);
-            this.btnOtro.TabIndex = 67;
-            this.btnOtro.Text = "Crear Otro Juego";
-            this.btnOtro.UseVisualStyleBackColor = true;
-            // 
-            // btnSolucion
-            // 
-            this.btnSolucion.Location = new System.Drawing.Point(122, 7);
-            this.btnSolucion.Name = "btnSolucion";
-            this.btnSolucion.Size = new System.Drawing.Size(117, 23);
-            this.btnSolucion.TabIndex = 66;
-            this.btnSolucion.Text = "Guardar Solucion";
-            this.btnSolucion.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(5, 7);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(117, 23);
-            this.btnGuardar.TabIndex = 65;
-            this.btnGuardar.Text = "Guardar Juego";
-            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // pnlLetra
             // 
@@ -1154,7 +668,7 @@
             this.pnl1.Location = new System.Drawing.Point(7, 188);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
-            this.pnl1.TabIndex = 21;
+            this.pnl1.TabIndex = 22;
             // 
             // txt88
             // 
@@ -2128,106 +1642,23 @@
             this.txt00.TabIndex = 21;
             this.txt00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(580, 69);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersWidth = 20;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.dataGridView1.RowTemplate.Height = 20;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(222, 564);
-            this.dataGridView1.TabIndex = 22;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView2.Location = new System.Drawing.Point(831, 69);
-            this.dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView2.RowHeadersWidth = 20;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView2.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.dataGridView2.RowTemplate.Height = 20;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(302, 564);
-            this.dataGridView2.TabIndex = 23;
-            // 
-            // Form2
+            // AzulUno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1145, 641);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "AzulUno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Text = "Form3";
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.pnlJuego.ResumeLayout(false);
             this.pnlLetra.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2238,44 +1669,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtIndice;
-        private System.Windows.Forms.Label lblIndice;
-        private System.Windows.Forms.Button btnDer2;
-        private System.Windows.Forms.Button btnIzq2;
-        private System.Windows.Forms.Button btnDer1;
-        private System.Windows.Forms.Button btnIzq1;
-        private System.Windows.Forms.Button btnDos;
-        private System.Windows.Forms.Button btnTres;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button pincelL;
         private System.Windows.Forms.Button pincelK;
         private System.Windows.Forms.Button btnBB;
         private System.Windows.Forms.Button btnAA;
-        private System.Windows.Forms.Button btnEL;
-        private System.Windows.Forms.Button btnR;
-        private System.Windows.Forms.Label lbl9;
-        private System.Windows.Forms.Label lbl8;
-        private System.Windows.Forms.Label lbl7;
-        private System.Windows.Forms.Label lbl6;
-        private System.Windows.Forms.Label lbl5;
-        private System.Windows.Forms.Label lbl4;
-        private System.Windows.Forms.Label lbl3;
-        private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btn8;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Panel pnlJuego;
-        private System.Windows.Forms.Button btnAbrir;
-        private System.Windows.Forms.Button btnOtro;
-        private System.Windows.Forms.Button btnSolucion;
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Panel pnlLetra;
         private System.Windows.Forms.Button btnE;
         private System.Windows.Forms.Button btnG;
@@ -2294,90 +1691,6 @@
         private System.Windows.Forms.ToolStripMenuItem mIPortugues;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox txtNota;
-        private System.Windows.Forms.Panel pnl1;
-        private System.Windows.Forms.TextBox txt22;
-        private System.Windows.Forms.TextBox txt21;
-        private System.Windows.Forms.TextBox txt20;
-        private System.Windows.Forms.TextBox txt12;
-        private System.Windows.Forms.TextBox txt11;
-        private System.Windows.Forms.TextBox txt10;
-        private System.Windows.Forms.TextBox txt02;
-        private System.Windows.Forms.TextBox txt01;
-        private System.Windows.Forms.TextBox txt00;
-        private System.Windows.Forms.TextBox txt25;
-        private System.Windows.Forms.TextBox txt24;
-        private System.Windows.Forms.TextBox txt23;
-        private System.Windows.Forms.TextBox txt15;
-        private System.Windows.Forms.TextBox txt14;
-        private System.Windows.Forms.TextBox txt13;
-        private System.Windows.Forms.TextBox txt05;
-        private System.Windows.Forms.TextBox txt04;
-        private System.Windows.Forms.TextBox txt03;
-        private System.Windows.Forms.TextBox txt28;
-        private System.Windows.Forms.TextBox txt27;
-        private System.Windows.Forms.TextBox txt26;
-        private System.Windows.Forms.TextBox txt18;
-        private System.Windows.Forms.TextBox txt17;
-        private System.Windows.Forms.TextBox txt16;
-        private System.Windows.Forms.TextBox txt08;
-        private System.Windows.Forms.TextBox txt07;
-        private System.Windows.Forms.TextBox txt06;
-        private System.Windows.Forms.TextBox txt52;
-        private System.Windows.Forms.TextBox txt51;
-        private System.Windows.Forms.TextBox txt50;
-        private System.Windows.Forms.TextBox txt42;
-        private System.Windows.Forms.TextBox txt41;
-        private System.Windows.Forms.TextBox txt40;
-        private System.Windows.Forms.TextBox txt32;
-        private System.Windows.Forms.TextBox txt31;
-        private System.Windows.Forms.TextBox txt30;
-        private System.Windows.Forms.TextBox txt55;
-        private System.Windows.Forms.TextBox txt54;
-        private System.Windows.Forms.TextBox txt53;
-        private System.Windows.Forms.TextBox txt45;
-        private System.Windows.Forms.TextBox txt44;
-        private System.Windows.Forms.TextBox txt43;
-        private System.Windows.Forms.TextBox txt35;
-        private System.Windows.Forms.TextBox txt34;
-        private System.Windows.Forms.TextBox txt33;
-        private System.Windows.Forms.TextBox txt58;
-        private System.Windows.Forms.TextBox txt57;
-        private System.Windows.Forms.TextBox txt56;
-        private System.Windows.Forms.TextBox txt48;
-        private System.Windows.Forms.TextBox txt47;
-        private System.Windows.Forms.TextBox txt46;
-        private System.Windows.Forms.TextBox txt38;
-        private System.Windows.Forms.TextBox txt37;
-        private System.Windows.Forms.TextBox txt36;
-        private System.Windows.Forms.TextBox txt82;
-        private System.Windows.Forms.TextBox txt81;
-        private System.Windows.Forms.TextBox txt80;
-        private System.Windows.Forms.TextBox txt72;
-        private System.Windows.Forms.TextBox txt71;
-        private System.Windows.Forms.TextBox txt70;
-        private System.Windows.Forms.TextBox txt62;
-        private System.Windows.Forms.TextBox txt61;
-        private System.Windows.Forms.TextBox txt60;
-        private System.Windows.Forms.TextBox txt85;
-        private System.Windows.Forms.TextBox txt84;
-        private System.Windows.Forms.TextBox txt83;
-        private System.Windows.Forms.TextBox txt75;
-        private System.Windows.Forms.TextBox txt74;
-        private System.Windows.Forms.TextBox txt73;
-        private System.Windows.Forms.TextBox txt65;
-        private System.Windows.Forms.TextBox txt64;
-        private System.Windows.Forms.TextBox txt63;
-        private System.Windows.Forms.TextBox txt88;
-        private System.Windows.Forms.TextBox txt87;
-        private System.Windows.Forms.TextBox txt86;
-        private System.Windows.Forms.TextBox txt78;
-        private System.Windows.Forms.TextBox txt77;
-        private System.Windows.Forms.TextBox txt76;
-        private System.Windows.Forms.TextBox txt68;
-        private System.Windows.Forms.TextBox txt67;
-        private System.Windows.Forms.TextBox txt66;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnSelectColor;
         private System.Windows.Forms.Button pincelJ;
         private System.Windows.Forms.Button pincelI;
@@ -2388,5 +1701,87 @@
         private System.Windows.Forms.Button pincelC;
         private System.Windows.Forms.Button pincelB;
         private System.Windows.Forms.Button pincelA;
+        private System.Windows.Forms.Panel pnl1;
+        private System.Windows.Forms.TextBox txt88;
+        private System.Windows.Forms.TextBox txt85;
+        private System.Windows.Forms.TextBox txt87;
+        private System.Windows.Forms.TextBox txt84;
+        private System.Windows.Forms.TextBox txt86;
+        private System.Windows.Forms.TextBox txt83;
+        private System.Windows.Forms.TextBox txt78;
+        private System.Windows.Forms.TextBox txt75;
+        private System.Windows.Forms.TextBox txt77;
+        private System.Windows.Forms.TextBox txt74;
+        private System.Windows.Forms.TextBox txt76;
+        private System.Windows.Forms.TextBox txt73;
+        private System.Windows.Forms.TextBox txt68;
+        private System.Windows.Forms.TextBox txt65;
+        private System.Windows.Forms.TextBox txt67;
+        private System.Windows.Forms.TextBox txt64;
+        private System.Windows.Forms.TextBox txt66;
+        private System.Windows.Forms.TextBox txt63;
+        private System.Windows.Forms.TextBox txt82;
+        private System.Windows.Forms.TextBox txt81;
+        private System.Windows.Forms.TextBox txt80;
+        private System.Windows.Forms.TextBox txt72;
+        private System.Windows.Forms.TextBox txt71;
+        private System.Windows.Forms.TextBox txt70;
+        private System.Windows.Forms.TextBox txt62;
+        private System.Windows.Forms.TextBox txt61;
+        private System.Windows.Forms.TextBox txt60;
+        private System.Windows.Forms.TextBox txt58;
+        private System.Windows.Forms.TextBox txt57;
+        private System.Windows.Forms.TextBox txt56;
+        private System.Windows.Forms.TextBox txt48;
+        private System.Windows.Forms.TextBox txt47;
+        private System.Windows.Forms.TextBox txt46;
+        private System.Windows.Forms.TextBox txt38;
+        private System.Windows.Forms.TextBox txt37;
+        private System.Windows.Forms.TextBox txt36;
+        private System.Windows.Forms.TextBox txt55;
+        private System.Windows.Forms.TextBox txt54;
+        private System.Windows.Forms.TextBox txt53;
+        private System.Windows.Forms.TextBox txt45;
+        private System.Windows.Forms.TextBox txt44;
+        private System.Windows.Forms.TextBox txt43;
+        private System.Windows.Forms.TextBox txt35;
+        private System.Windows.Forms.TextBox txt34;
+        private System.Windows.Forms.TextBox txt33;
+        private System.Windows.Forms.TextBox txt52;
+        private System.Windows.Forms.TextBox txt51;
+        private System.Windows.Forms.TextBox txt28;
+        private System.Windows.Forms.TextBox txt06;
+        private System.Windows.Forms.TextBox txt50;
+        private System.Windows.Forms.TextBox txt27;
+        private System.Windows.Forms.TextBox txt42;
+        private System.Windows.Forms.TextBox txt18;
+        private System.Windows.Forms.TextBox txt41;
+        private System.Windows.Forms.TextBox txt07;
+        private System.Windows.Forms.TextBox txt40;
+        private System.Windows.Forms.TextBox txt17;
+        private System.Windows.Forms.TextBox txt32;
+        private System.Windows.Forms.TextBox txt16;
+        private System.Windows.Forms.TextBox txt31;
+        private System.Windows.Forms.TextBox txt08;
+        private System.Windows.Forms.TextBox txt26;
+        private System.Windows.Forms.TextBox txt30;
+        private System.Windows.Forms.TextBox txt25;
+        private System.Windows.Forms.TextBox txt24;
+        private System.Windows.Forms.TextBox txt23;
+        private System.Windows.Forms.TextBox txt15;
+        private System.Windows.Forms.TextBox txt14;
+        private System.Windows.Forms.TextBox txt13;
+        private System.Windows.Forms.TextBox txt05;
+        private System.Windows.Forms.TextBox txt04;
+        private System.Windows.Forms.TextBox txt03;
+        private System.Windows.Forms.TextBox txt22;
+        private System.Windows.Forms.TextBox txt21;
+        private System.Windows.Forms.TextBox txt20;
+        private System.Windows.Forms.TextBox txt12;
+        private System.Windows.Forms.TextBox txt11;
+        private System.Windows.Forms.TextBox txt10;
+        private System.Windows.Forms.TextBox txt02;
+        private System.Windows.Forms.TextBox txt01;
+        private System.Windows.Forms.TextBox txt00;
     }
 }

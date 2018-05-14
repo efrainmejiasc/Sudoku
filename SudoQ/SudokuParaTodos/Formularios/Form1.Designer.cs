@@ -260,7 +260,7 @@
             // 
             // btnSelectColor
             // 
-            this.btnSelectColor.BackColor = System.Drawing.Color.White;
+            this.btnSelectColor.BackColor = System.Drawing.Color.Silver;
             this.btnSelectColor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -703,9 +703,9 @@
             this.pnl1.Controls.Add(this.txt02);
             this.pnl1.Controls.Add(this.txt01);
             this.pnl1.Controls.Add(this.txt00);
-            this.pnl1.Location = new System.Drawing.Point(7, 192);
+            this.pnl1.Location = new System.Drawing.Point(7, 188);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(557, 447);
+            this.pnl1.Size = new System.Drawing.Size(555, 445);
             this.pnl1.TabIndex = 69;
             // 
             // txt88
@@ -2251,9 +2251,9 @@
             this.pnl2.Controls.Add(this.t02);
             this.pnl2.Controls.Add(this.t01);
             this.pnl2.Controls.Add(this.t00);
-            this.pnl2.Location = new System.Drawing.Point(583, 193);
+            this.pnl2.Location = new System.Drawing.Point(583, 188);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(557, 447);
+            this.pnl2.Size = new System.Drawing.Size(555, 445);
             this.pnl2.TabIndex = 70;
             // 
             // t88
@@ -3557,7 +3557,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1145, 646);
+            this.ClientSize = new System.Drawing.Size(1145, 641);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);

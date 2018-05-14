@@ -22,6 +22,8 @@ namespace SudokuParaTodos
         //***********************************************************************************************************
         private EngineSudoku Funcion = new EngineSudoku();
         private EngineData Valor = EngineData.Instance();
+        private EngineSudoku.LetrasJuego LetrasJuego = new EngineSudoku.LetrasJuego();
+
         private TextBox[,] txtSudoku = new TextBox[9,9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
         private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
@@ -31,6 +33,10 @@ namespace SudokuParaTodos
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
+        private object[] Fila = new object[9];
+        private object[] Columna = new object[9];
+        private object[] Recuadro = new object[9];
+
         private int[] position = new int[2];
         private string openFrom = string.Empty;
         private bool vInit = EngineData.Falso;
@@ -40,7 +46,9 @@ namespace SudokuParaTodos
         private Color colorFondoAct;
         private bool pincelMarcador = false;
         private Color colorCeldaAnt;
-        private EngineSudoku.LetrasJuego LetrasJuego = new EngineSudoku.LetrasJuego();
+      
+
+
    
         public Form1()
         {
@@ -166,7 +174,7 @@ namespace SudokuParaTodos
 
         private void ComportamientoObjInicio()
         {
-            this.Size = new Size(587 , 687);
+            this.Size = new Size(586 , 680);
             btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
@@ -185,6 +193,9 @@ namespace SudokuParaTodos
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
+            Fila = Funcion.ObjetoMatrix();
+            Columna = Funcion.ObjetoMatrix();
+            Recuadro = Funcion.ObjetoMatrix();
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -195,7 +206,7 @@ namespace SudokuParaTodos
         {
             if (Valor.GetIdioma() != string.Empty)
             {
-                this.Size = new Size(1161, 685);
+                this.Size = new Size(1161 , 680);
                 foreach (Button btn in btnPincel) { btn.Visible = EngineData.Verdadero; }
                 btnPincel = Funcion.ColoresPincel(btnPincel);
                 pnlJuego.Visible = EngineData.Verdadero;
@@ -204,7 +215,7 @@ namespace SudokuParaTodos
                 btnGuardar.Visible = EngineData.Falso;
                 btnSolucion.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
-                ContadorIngresado();
+                ContadorIngresado(0,0);
                 foreach (TextBox item in txtSudoku)
                 {
                     item.GotFocus += delegate { HideCaret(item.Handle); };
@@ -228,7 +239,7 @@ namespace SudokuParaTodos
             this.Text = Valor.TituloForm(Valor.GetIdioma()); 
         }
 
-        private int  ContadorIngresado()
+        private int  ContadorIngresado(int row,int fila)
         {
             contadorIngresado = Funcion.ContadorIngresado(valorSolucion);
             if (contadorIngresado >= 17 )
@@ -291,12 +302,16 @@ namespace SudokuParaTodos
                 txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
                 txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                 btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.uno;
             }
             else
             {
                 pincelMarcador = EngineData.Verdadero;
                 colorFondoAct = pincel.BackColor;
                 btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.dos;
             }
         }
 
@@ -331,7 +346,7 @@ namespace SudokuParaTodos
                     txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorSolucion, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
                     txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
-                    ContadorIngresado();
+                    ContadorIngresado(0,0);
                     openFrom = EngineData.File;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Verdadero;
@@ -530,7 +545,7 @@ namespace SudokuParaTodos
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorSolucion,valorCandidato, valorInicio, Color.Green,Color.Blue);
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
                 txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
-                ContadorIngresado();
+                ContadorIngresado(row,col);
             }
             catch {}
 

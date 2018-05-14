@@ -77,6 +77,9 @@ namespace SudokuParaTodos
         public const string Exe = "Exe";
         public const string File = "File";
 
+        public const int uno = 1;
+        public const int dos = 2;
+
         public Color GetColorCeldaAct () { return Color.DarkGray; }
 
         private string openFrom = string.Empty;
@@ -328,5 +331,7 @@ namespace SudokuParaTodos
             this.valorSolucion = new string[9, 9];
             this.valorSolucion = vSolucion;
         }
+
+
     }
 }

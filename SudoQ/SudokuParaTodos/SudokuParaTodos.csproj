@@ -102,11 +102,11 @@
     <Compile Include="Formularios\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form3.cs">
+    <Compile Include="Formularios\AzulUno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Formularios\AzulUno.Designer.cs">
+      <DependentUpon>AzulUno.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="Formularios\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\AzulUno.resx">
+      <DependentUpon>AzulUno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

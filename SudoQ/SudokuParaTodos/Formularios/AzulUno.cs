@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SudokuParaTodos.Formularios
 {
-    public partial class Form3 : Form
+    public partial class AzulUno : Form
     {
-        public Form3()
+        public AzulUno()
         {
             InitializeComponent();
         }

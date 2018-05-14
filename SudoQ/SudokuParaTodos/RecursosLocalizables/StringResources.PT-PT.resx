@@ -131,7 +131,7 @@
     <value>Jogo Aberto</value>
   </data>
   <data name="btnOtro" xml:space="preserve">
-    <value>Criar Outro Jogo</value>
+    <value>Crie Outro Jogo</value>
   </data>
   <data name="btnSolucion" xml:space="preserve">
     <value>Salvar Solução</value>

@@ -1003,6 +1003,19 @@ namespace SudokuParaTodos
             return valorPlantilla;
         }
 
+        // SETEAR OBJETOS FILAS
+
+        public object [] ObjetoMatrix()
+        {
+            string [,] plantilla = new string [9,9];
+            object [] objMatrix = new object [9];
+            for (int i = 0; i<= 8; i++)
+            {
+                objMatrix[i] = plantilla;
+            }
+            return objMatrix;
+        }
+
         //CREAR TABLAS 
         public DataTable CrearTabla1()
         {
@@ -1072,6 +1085,10 @@ namespace SudokuParaTodos
             dgv.ClearSelection();
             return dgv;
         }
+
+
+
+
 
 
     }

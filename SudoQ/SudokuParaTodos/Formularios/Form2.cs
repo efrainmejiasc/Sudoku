@@ -109,5 +109,7 @@ namespace SudokuParaTodos.Formularios
             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
             txtSudoku = Funcion.SetearTextBoxJuegoInicio(txtSudoku, valorIngresado, valorInicio);
         }
+
+
     }
 }
