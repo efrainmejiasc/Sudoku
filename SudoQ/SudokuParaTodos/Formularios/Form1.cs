@@ -33,10 +33,6 @@ namespace SudokuParaTodos
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
-        private object[] Fila = new object[9];
-        private object[] Columna = new object[9];
-        private object[] Recuadro = new object[9];
-
         private int[] position = new int[2];
         private string openFrom = string.Empty;
         private bool vInit = EngineData.Falso;
@@ -48,8 +44,6 @@ namespace SudokuParaTodos
         private Color colorCeldaAnt;
       
 
-
-   
         public Form1()
         {
             InitializeComponent();
@@ -193,9 +187,6 @@ namespace SudokuParaTodos
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
-            Fila = Funcion.ObjetoMatrix();
-            Columna = Funcion.ObjetoMatrix();
-            Recuadro = Funcion.ObjetoMatrix();
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -215,7 +206,7 @@ namespace SudokuParaTodos
                 btnGuardar.Visible = EngineData.Falso;
                 btnSolucion.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
-                ContadorIngresado(0,0);
+                ContadorIngresado(-1,-1);
                 foreach (TextBox item in txtSudoku)
                 {
                     item.GotFocus += delegate { HideCaret(item.Handle); };
@@ -239,19 +230,19 @@ namespace SudokuParaTodos
             this.Text = Valor.TituloForm(Valor.GetIdioma()); 
         }
 
-        private int  ContadorIngresado(int row,int fila)
+        private int ContadorIngresado(int row, int col)
         {
             contadorIngresado = Funcion.ContadorIngresado(valorSolucion);
-            if (contadorIngresado >= 17 )
+            if (contadorIngresado >= 17)
             {
                 btnGuardar.Visible = EngineData.Verdadero;
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
             }
-            else if (contadorIngresado < 17 )
+            else if (contadorIngresado < 17)
             {
-                btnGuardar.Visible = EngineData.Falso;
+               btnGuardar.Visible = EngineData.Falso;
             }
             if (contadorIngresado == 81)
             {
@@ -261,7 +252,7 @@ namespace SudokuParaTodos
             {
                 btnSolucion.Visible = EngineData.Falso;
             }
-            LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado,valorSolucion,valorCandidatoSinEliminados);
+            LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado, valorSolucion, valorCandidatoSinEliminados);
             btnF.Text = LetrasJuego.F.ToString();
             btnE.Text = LetrasJuego.E.ToString();
             btnG.Text = LetrasJuego.G.ToString();
@@ -346,7 +337,12 @@ namespace SudokuParaTodos
                     txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorSolucion, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
                     txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
-                    ContadorIngresado(0,0);
+
+                    ContadorIngresado(-1,-1);
+                    /*Fila = Funcion.EstadoFilaColumnaRecuadro(Fila, valorSolucion, valorCandidato, valorEliminado, EngineData.Fila);
+                    Columna = Funcion.EstadoFilaColumnaRecuadro(Fila, valorSolucion, valorCandidato, valorEliminado, EngineData.Columna);
+                    Recuadro = Funcion.EstadoFilaColumnaRecuadro(Fila, valorSolucion, valorCandidato, valorEliminado, EngineData.Recuadro);*/
+
                     openFrom = EngineData.File;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Verdadero;

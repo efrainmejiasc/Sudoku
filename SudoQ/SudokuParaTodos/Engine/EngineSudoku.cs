@@ -969,7 +969,7 @@ namespace SudokuParaTodos
             return valorPlantilla;
         }
 
-        public string[,] ObtenerSetearValoresRecuadro(string[,] valorIngresado, string[,] valorCandidato, string[,] valorEliminado, int fila, int columna)//MANEJA PLANTILLAS RECUADRO
+        public string[,] ObtenerSetearValoresRecuadro(string[,] valorIngresado, string[,] valorCandidato, string[,] valorEliminado, int fila ,int columna)//MANEJA PLANTILLAS RECUADRO
         {
             string[,] valorPlantilla = new string[9, 9];
             ListBox candidatos = new ListBox();
@@ -1001,19 +1001,6 @@ namespace SudokuParaTodos
                 }
             }
             return valorPlantilla;
-        }
-
-        // SETEAR OBJETOS FILAS
-
-        public object [] ObjetoMatrix()
-        {
-            string [,] plantilla = new string [9,9];
-            object [] objMatrix = new object [9];
-            for (int i = 0; i<= 8; i++)
-            {
-                objMatrix[i] = plantilla;
-            }
-            return objMatrix;
         }
 
         //CREAR TABLAS 

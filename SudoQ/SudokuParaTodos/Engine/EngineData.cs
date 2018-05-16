@@ -80,6 +80,8 @@ namespace SudokuParaTodos
         public const int uno = 1;
         public const int dos = 2;
 
+    
+
         public Color GetColorCeldaAct () { return Color.DarkGray; }
 
         private string openFrom = string.Empty;
