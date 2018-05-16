@@ -334,6 +334,5 @@ namespace SudokuParaTodos
             this.valorSolucion = vSolucion;
         }
 
-
     }
 }

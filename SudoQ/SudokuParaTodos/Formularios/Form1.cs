@@ -33,6 +33,10 @@ namespace SudokuParaTodos
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
+        private string [] solo = new string[27];
+        private string[] oculto = new string[27];
+
+
         private int[] position = new int[2];
         private string openFrom = string.Empty;
         private bool vInit = EngineData.Falso;
@@ -187,6 +191,7 @@ namespace SudokuParaTodos
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
+
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -239,6 +244,40 @@ namespace SudokuParaTodos
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
+                EngineSudoku.CandidatoUnicoCelda Unico = new EngineSudoku.CandidatoUnicoCelda();
+                int r = 0;
+                solo = new string[27];
+                oculto = new string[27];
+                for (int f = 0; f <= 8; f++)
+                {
+                    for (int c = 0; c <= 8; c++)
+                    {
+                        Unico = Funcion.ExisteCandidatoUnico(valorSolucion, valorCandidatoSinEliminados, f, c);
+                        if (Unico.Contador == 1)
+                        {
+                      
+                            bool resultadoFilaUnico = Funcion.FilaCandidatoUnico(valorSolucion, f, c);//SOLO
+                            if (resultadoFilaUnico)
+                            {
+                                r = Funcion.NumeroRecuadro(f, c);
+                                solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor ;
+                                solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                                solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                            }
+   
+                            bool resultadoColumnaUnico = Funcion.ColumnaCandidatoUnico(valorSolucion, f, c);//OCULTO
+                            if (resultadoColumnaUnico)
+                            {
+                                r = Funcion.NumeroRecuadro(f, c);
+                                solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                                solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                                solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                            }
+
+                        }
+                    }
+                }
+                string l = "";
             }
             else if (contadorIngresado < 17)
             {
@@ -339,10 +378,7 @@ namespace SudokuParaTodos
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
 
                     ContadorIngresado(-1,-1);
-                    /*Fila = Funcion.EstadoFilaColumnaRecuadro(Fila, valorSolucion, valorCandidato, valorEliminado, EngineData.Fila);
-                    Columna = Funcion.EstadoFilaColumnaRecuadro(Fila, valorSolucion, valorCandidato, valorEliminado, EngineData.Columna);
-                    Recuadro = Funcion.EstadoFilaColumnaRecuadro(Fila, valorSolucion, valorCandidato, valorEliminado, EngineData.Recuadro);*/
-
+               
                     openFrom = EngineData.File;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Verdadero;

@@ -495,7 +495,7 @@ namespace SudokuParaTodos
                     }
                     else
                     {
-                      valorCandidatoSinEliminados[f, c] = valorIngresado[f,c];
+                        valorCandidatoSinEliminados[f, c] = valorIngresado[f,c];
                     }
                 }
             }
@@ -592,7 +592,7 @@ namespace SudokuParaTodos
             return valorCandidatoSinEliminados;
         }
 
-        public TextBox[,] SetearTextBoxJuegoSinEliminados(TextBox[,] cajaTexto,  string[,] valorCandidatoSinEliminados)
+        public TextBox[,] SetearTextBoxJuegoSinEliminados(TextBox[,] cajaTexto, string[,] valorCandidatoSinEliminados)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -1001,6 +1001,87 @@ namespace SudokuParaTodos
                 }
             }
             return valorPlantilla;
+        }
+
+        //ESTADOS SOLO DEL JUEGO FILAS COLUMNAS 
+        public CandidatoUnicoCelda ExisteCandidatoUnico(string[,] valorIngresado, string[,] valorCandidatoSinEliminados,int f,int c)
+        {
+           CandidatoUnicoCelda Unico = new CandidatoUnicoCelda();
+           int count = 0;
+           if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
+           {
+             valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
+             valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+             valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
+              if (valorCandidatoSinEliminados[f, c].Length == 1)
+              {
+                    count = count + 1;
+                    Unico.Fila = f;
+                    Unico.Columna = c;
+                    Unico.Valor = valorCandidatoSinEliminados[f, c];
+                    Unico.Contador = count;
+              }
+           }
+           return Unico;
+        }
+
+        public bool FilaCandidatoUnico(string[,] valorIngresado, int f , int c)
+        {
+            bool resultado = EngineData.Verdadero ;
+            for (int col = 0; col <= 8; col++)
+            {
+                if (col != c)
+                {
+                    if (valorIngresado[f, col] == null || valorIngresado[f, col] == string.Empty)
+                    {
+                        resultado = EngineData.Falso;
+                    }
+                }
+            }
+            return resultado;
+        }
+
+        public int NumeroRecuadro(int f, int c)
+        {
+            int recuadro = -1;
+
+            if ((f >= 0 && f <= 2) && (c >= 0 && c <= 2)) { recuadro = 0; }
+            else if ((f >= 0 && f <= 2) && (c >= 3 && c <= 5)) { recuadro = 1; }
+            else if ((f >= 0 && f <= 2) && (c >= 6 && c <= 8)) { recuadro = 2; }
+
+            else if ((f >= 3 && f <= 5) && (c >= 0 && c <= 2)) { recuadro = 3; }
+            else if ((f >= 3 && f <= 5) && (c >= 3 && c <= 5)) { recuadro = 4; }
+            else if ((f >= 3 && f <= 5) && (c >= 6 && c <= 8)) { recuadro = 5; }
+
+            else if ((f >= 6 && f <= 8) && (c >= 0 && c <= 2)) { recuadro = 6; }
+            else if ((f >= 6 && f <= 8) && (c >= 3 && c <= 5)) { recuadro = 7; }
+            else if ((f >= 6 && f <= 8) && (c >= 6 && c <= 8)) { recuadro = 8; }
+
+            return recuadro;
+        }
+
+        public bool ColumnaCandidatoUnico(string[,] valorIngresado, int f, int c)
+        {
+            bool resultado = EngineData.Verdadero;
+            for (int fil = 0; fil <= 8; fil++)
+            {
+                if (fil != f)
+                {
+                    if (valorIngresado[fil, c] == null || valorIngresado[fil, c] == string.Empty)
+                    {
+                        resultado = EngineData.Falso;
+                    }
+                }
+            }
+            return resultado;
+        }
+
+        public class CandidatoUnicoCelda
+        {
+            public int Fila { get; set; }
+            public int Columna { get; set; }
+            public int Contador { get; set; }
+            public string Valor { get; set; }
         }
 
         //CREAR TABLAS 
