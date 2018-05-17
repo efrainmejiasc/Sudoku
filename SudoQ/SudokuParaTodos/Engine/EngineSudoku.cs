@@ -167,7 +167,7 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        public TextBox[,] SetearTextBoxJuegoInicio(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vInicio)
+        public TextBox [,] SetearTextBoxJuegoInicio(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vInicio)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -190,7 +190,7 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        public TextBox[,] SetearTextBoxLimpio(TextBox[,] cajaTexto)
+        public TextBox [,] SetearTextBoxLimpio(TextBox[,] cajaTexto)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -202,7 +202,7 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        public string[,] LimpiarArreglo(string[,] arreglo)
+        public string [,] LimpiarArreglo(string[,] arreglo)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -227,7 +227,7 @@ namespace SudokuParaTodos
              return contadorIngresado;
         }
 
-        public int[] Position(string sentido, int f, int c)
+        public int [] Position(string sentido, int f, int c)
         {
             switch (sentido)
             {
@@ -247,7 +247,7 @@ namespace SudokuParaTodos
             return pos;
         }
 
-        public TextBox[,] SetearTextColorInicio(TextBox[,] cajaTexto)
+        public TextBox [,] SetearTextColorInicio(TextBox[,] cajaTexto)
         {
             for (int f = 0; f <= 8; f++)
             {

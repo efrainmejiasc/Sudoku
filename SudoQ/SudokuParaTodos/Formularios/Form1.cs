@@ -36,15 +36,14 @@ namespace SudokuParaTodos
         private string [] solo = new string[27];
         private string[] oculto = new string[27];
 
-
         private int[] position = new int[2];
         private string openFrom = string.Empty;
         private bool vInit = EngineData.Falso;
-        private int contadorIngresado = -1;
+        private int contadorIngresado = 0;
         private int row = -1;
         private int col = -1;
         private Color colorFondoAct;
-        private bool pincelMarcador = false;
+        private bool pincelMarcador = EngineData.Falso;
         private Color colorCeldaAnt;
       
 
@@ -106,7 +105,7 @@ namespace SudokuParaTodos
             foreach (TextBox item in txtSudoku)
             {
                 item.GotFocus += delegate { HideCaret(item.Handle); } ;
-                item.ReadOnly = true;
+                item.ReadOnly = EngineData.Verdadero;
             }
             return txtSudoku;
         }
@@ -241,61 +240,80 @@ namespace SudokuParaTodos
             if (contadorIngresado >= 17)
             {
                 btnGuardar.Visible = EngineData.Verdadero;
+                pincelA.Focus();
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
-                EngineSudoku.CandidatoUnicoCelda Unico = new EngineSudoku.CandidatoUnicoCelda();
-                int r = 0;
-                solo = new string[27];
-                oculto = new string[27];
-                for (int f = 0; f <= 8; f++)
+                if (row >= 0)
                 {
-                    for (int c = 0; c <= 8; c++)
-                    {
-                        Unico = Funcion.ExisteCandidatoUnico(valorSolucion, valorCandidatoSinEliminados, f, c);
-                        if (Unico.Contador == 1)
-                        {
-                      
-                            bool resultadoFilaUnico = Funcion.FilaCandidatoUnico(valorSolucion, f, c);//SOLO
-                            if (resultadoFilaUnico)
-                            {
-                                r = Funcion.NumeroRecuadro(f, c);
-                                solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor ;
-                                solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                                solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                            }
-   
-                            bool resultadoColumnaUnico = Funcion.ColumnaCandidatoUnico(valorSolucion, f, c);//OCULTO
-                            if (resultadoColumnaUnico)
-                            {
-                                r = Funcion.NumeroRecuadro(f, c);
-                                solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                                solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                                solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                            }
-
-                        }
-                    }
-                }
-                string l = "";
+                   SoloOculto();          }
             }
             else if (contadorIngresado < 17)
             {
                btnGuardar.Visible = EngineData.Falso;
+                btnA.Visible = EngineData.Falso;
+                btnB.Visible = EngineData.Falso;
+                btnC.Visible = EngineData.Falso;
             }
             if (contadorIngresado == 81)
             {
                 btnSolucion.Visible = EngineData.Verdadero;
+                btnAbrir.Visible = EngineData.Falso;
+                btnOtro.Visible = EngineData.Falso;
+                btnGuardar.Visible = EngineData.Falso;
             }
             else if (contadorIngresado < 81)
             {
                 btnSolucion.Visible = EngineData.Falso;
             }
+            SetLetrasJuego();
+            return contadorIngresado;
+        }
+
+        private void SoloOculto()
+        {
+            EngineSudoku.CandidatoUnicoCelda Unico = new EngineSudoku.CandidatoUnicoCelda();
+            int r = 0;
+            solo = new string[27];
+            oculto = new string[27];
+            bool resultadoFilaUnico = EngineData.Falso;
+            bool resultadoColumnaUnico = EngineData.Falso;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    Unico = Funcion.ExisteCandidatoUnico(valorSolucion, valorCandidatoSinEliminados, f, c);
+                    if (Unico.Contador == 1)
+                    {
+                        resultadoFilaUnico = Funcion.FilaCandidatoUnico(valorSolucion, f, c);//SOLO
+                        if (resultadoFilaUnico)
+                        {
+                            r = Funcion.NumeroRecuadro(f, c);
+                            solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                            solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                            solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                        }
+
+                        resultadoColumnaUnico = Funcion.ColumnaCandidatoUnico(valorSolucion, f, c);//OCULTO
+                        if (resultadoColumnaUnico)
+                        {
+                            r = Funcion.NumeroRecuadro(f, c);
+                            solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                            solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                            solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void SetLetrasJuego()
+        {
             LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado, valorSolucion, valorCandidatoSinEliminados);
             btnF.Text = LetrasJuego.F.ToString();
             btnE.Text = LetrasJuego.E.ToString();
             btnG.Text = LetrasJuego.G.ToString();
-            return contadorIngresado;
         }
 
         ////////////EVENTOS////////////////////////////////////////////////////////////////////////
@@ -387,6 +405,10 @@ namespace SudokuParaTodos
                     btnOtro.Visible = EngineData.Verdadero;
                     btnAbrir.Visible = EngineData.Falso;
                     btnSolucion.Visible = EngineData.Falso;
+
+                    btnA.Visible = EngineData.Falso;
+                    btnB.Visible = EngineData.Falso;
+                    btnC.Visible = EngineData.Falso;
                     break;
                 case (EngineData.BtnGuardarJuego):
                     if (Valor.GetPathArchivo() == string.Empty)
@@ -429,7 +451,7 @@ namespace SudokuParaTodos
                     pathArchivo = string.Empty;
                     Valor.SetPathArchivo(pathArchivo);
 
-                    contadorIngresado = -1;
+                    contadorIngresado = 0;
                     valorIngresado = new string[9, 9];
                     valorCandidato = new string[9, 9];
                     valorEliminado = new string[9, 9];
@@ -449,6 +471,7 @@ namespace SudokuParaTodos
                     openFrom = EngineData.Exe;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Falso;
+                    SetLetrasJuego();
                     break;
                 case (EngineData.BtnSolucion):
                     pathArchivo = Valor.GetPathArchivo();
@@ -459,10 +482,30 @@ namespace SudokuParaTodos
                     }
 
                     GuardarJuego(pathArchivo);
-                    btnSolucion.Visible = EngineData.Falso;
-                    btnOtro.Visible = EngineData.Verdadero;
-                    btnAbrir.Visible = EngineData.Verdadero;
+                    pathArchivo = string.Empty;
+                    Valor.SetPathArchivo(pathArchivo);
+
+                    contadorIngresado = 0;
+                    valorIngresado = new string[9, 9];
+                    valorCandidato = new string[9, 9];
+                    valorEliminado = new string[9, 9];
+                    valorCandidatoSinEliminados = new string[9, 9];
+                    valorInicio = new string[9, 9];
+                    valorSolucion = new string[9, 9];
+
+                    valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
+                    valorCandidatoSinEliminados = valorCandidato;
+                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
+                    txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+
                     btnGuardar.Visible = EngineData.Falso;
+                    btnOtro.Visible = EngineData.Falso;
+                    btnAbrir.Visible = EngineData.Verdadero;
+                    btnSolucion.Visible = EngineData.Falso;
+                    openFrom = EngineData.Exe;
+                    Valor.SetOpenFrom(openFrom);
+                    vInit = EngineData.Falso;
+                    SetLetrasJuego();
                     break;
             }
         }
@@ -486,32 +529,6 @@ namespace SudokuParaTodos
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
-        private void BotonesContadores_Click(object sender, EventArgs e)
-        {
-            Button btn = sender as Button;
-            switch (btn.Name)
-            {
-                case (EngineData.Btn1):
-                    break;
-                case (EngineData.Btn2):
-                    break;
-                case (EngineData.Btn3):
-                    break;
-                case (EngineData.Btn4):
-                    break;
-                case (EngineData.Btn5):
-                    break;
-                case (EngineData.Btn6):
-                    break;
-                case (EngineData.Btn7):
-                    break;
-                case (EngineData.Btn8):
-                    break;
-                case (EngineData.Btn9):
-                    break;
-            }
-        }
-
         private void txt00_Enter(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -525,7 +542,9 @@ namespace SudokuParaTodos
             }
             else
             {
-               txt.ForeColor = Color.Blue;
+                if(valorInicio[row,col] != null && valorInicio[row,col]!= string.Empty)
+                txt.ForeColor = Color.Black;
+                else txt.ForeColor = Color.Blue;
             }
             if (pincelMarcador)
             {
@@ -572,6 +591,9 @@ namespace SudokuParaTodos
                 {
                     valorSolucion[row, col] = txt.Text;
                     if (vInit == EngineData.Falso) {valorInicio[row, col] = txt.Text; }
+
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    { txt.Text = valorInicio[row, col]; }
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorSolucion,valorCandidato, valorInicio, Color.Green,Color.Blue);
