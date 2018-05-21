@@ -45,7 +45,6 @@ namespace SudokuParaTodos
         public const string BtnGuardarJuego = "btnGuardar";
         public const string BtnOtroJuego = "btnOtro";
         public const string BtnSolucion = "btnSolucion";
-        public const string Zero = "0";
         public const string TipoLetra = "Microsoft Sans Serif";
         public const string BtnEspañol = "btnEspañol";
         public const string BtnIngles = "btnIngles";
@@ -77,10 +76,21 @@ namespace SudokuParaTodos
         public const string Exe = "Exe";
         public const string File = "File";
 
-        public const int uno = 1;
-        public const int dos = 2;
+        public const int one = 1;
+        public const int two = 2;
 
-    
+        public const string Zero = "0";
+        public const string uno = "1";
+        public const string dos = "2";
+        public const string tres = "3";
+        public const string cuatro = "4";
+        public const string cinco = "5";
+        public const string seis = "6";
+        public const string siete = "7";
+        public const string ocho = "8";
+        public const string nueve = "9";
+
+
 
         public Color GetColorCeldaAct () { return Color.DarkGray; }
 

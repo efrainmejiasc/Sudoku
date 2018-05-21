@@ -259,46 +259,6 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        // LETRAS JUEGO 
-        public class LetrasJuego
-        {
-            public double A { get; set; }
-            public double B { get; set; }
-            public double C { get; set; }
-            public double F { get; set; }
-            public double E { get; set; }
-            public double G { get; set; }
-        }
-
-        public int ContadorCandidatos(string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
-        {
-            int contadorCandidatos = 0;
-            for (int f = 0; f <= 8; f++)
-            {
-                for (int c = 0; c <= 8; c++)
-                {
-                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty)
-                    {
-                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(System.Environment.NewLine, "");
-                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
-                        contadorCandidatos = contadorCandidatos + valorCandidatoSinEliminados[f, c].Length;
-                    }
-                }
-            }
-            return contadorCandidatos;
-        }
-
-        public LetrasJuego SetLetrasJuego(int num, string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
-        {
-            LetrasJuego letras = new LetrasJuego
-            {
-                F = num,
-                E = 81 - num,
-                G = ContadorCandidatos(valorIngresado, valorCandidatoSinEliminados)
-            };
-            return letras;
-        }
-
         // METODOS NUMEROS + CANDIDATOS 
         public string [,] ElejiblesInstantaneos(string[,] valorIngresado, string[,] valorCandidato )
         {
@@ -1003,44 +963,199 @@ namespace SudokuParaTodos
             return valorPlantilla;
         }
 
-        //ESTADOS SOLO DEL JUEGO FILAS COLUMNAS 
-        public CandidatoUnicoCelda ExisteCandidatoUnico(string[,] valorIngresado, string[,] valorCandidatoSinEliminados,int f,int c)
+        // CANDIDATOS SOLO DEL JUEGO
+        public string [] CandidatoSolo(string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
         {
-           CandidatoUnicoCelda Unico = new CandidatoUnicoCelda();
-           int count = 0;
-           if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
-           {
-             valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
-             valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
-             valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
-              if (valorCandidatoSinEliminados[f, c].Length == 1)
-              {
-                    count = count + 1;
-                    Unico.Fila = f;
-                    Unico.Columna = c;
-                    Unico.Valor = valorCandidatoSinEliminados[f, c];
-                    Unico.Contador = count;
-              }
-           }
-           return Unico;
-        }
-
-        public bool FilaCandidatoUnico(string[,] valorIngresado, int f , int c)
-        {
-            bool resultado = EngineData.Verdadero ;
-            for (int col = 0; col <= 8; col++)
+            string [] solo = new string [27];
+            int r = -1;
+            for (int f = 0; f <= 8; f++)
             {
-                if (col != c)
+                for (int c = 0; c <= 8; c++)
                 {
-                    if (valorIngresado[f, col] == null || valorIngresado[f, col] == string.Empty)
+                    if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
                     {
-                        resultado = EngineData.Falso;
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
+                        if (valorCandidatoSinEliminados[f, c].Length == 1)
+                        {
+                            r = NumeroRecuadro(f, c);
+                            solo[f] = (f + 1).ToString() + (c + 1).ToString() + valorCandidatoSinEliminados[f, c];
+                            solo[c + 9] = (f + 1).ToString() + (c + 1).ToString() + valorCandidatoSinEliminados[f, c];
+                            solo[r + 18] = (f + 1).ToString() + (c + 1).ToString() + valorCandidatoSinEliminados[f, c];
+                        }
                     }
                 }
             }
-            return resultado;
+            return solo;
         }
 
+        // CANDIDATOS OCULTOS DEL JUEGO
+        public ListBox MapeoFilaCandidatoOculto(string[,] valorIngresado, string[,] valorCandidatoSinEliminados,int f)
+        {
+            ListBox valor = Agregar1_9();
+            for (int c = 0; c <= 8; c++)
+            {
+                valor = ConcatenarCandidatosColumna(valor, valorIngresado, valorCandidatoSinEliminados, f, c);
+            }
+            valor = RemoverCaracterInicio(valor);
+            return valor;
+        }
+
+        private ListBox ConcatenarCandidatosColumna(ListBox valor, string[,] valorIngresado, string [,] valorCandidatoSinEliminados,int f , int c)
+        {
+            if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
+            {
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
+
+                if (valorCandidatoSinEliminados[f, c].Length > 1)
+                {
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
+                    {
+                        valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
+                    }
+                    else
+                    {
+                        valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
+                    {
+                        valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
+                    }
+                    else
+                    {
+                        valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
+                    {
+                        valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
+                    }
+                    else
+                    {
+                        valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
+                    {
+                        valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
+                    }
+                    else
+                    {
+                        valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
+                    {
+                        valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
+                    }
+                    else
+                    {
+                        valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
+                    {
+                        valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
+                    }
+                    else
+                    {
+                        valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
+                    {
+                        valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
+                    }
+                    else
+                    {
+                        valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
+                    {
+                        valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
+                    }
+                    else
+                    {
+                        valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
+                    {
+                        valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
+                    }
+                    else
+                    {
+                        valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
+                    }
+                }
+                else
+                {
+                    valor = Agregar0(valor);
+                }
+            }
+            else
+            {
+                valor = Agregar0(valor);
+            }
+
+            return valor;
+        }
+
+        private ListBox Agregar1_9()
+        {
+            ListBox valor = new ListBox();
+            for(int i = 1; i <= 9; i++)
+            {
+                valor.Items.Add(i.ToString());
+            }
+            return valor;
+        }
+
+        private ListBox Agregar0(ListBox valor)
+        {
+            for (int i = 0; i <= 8; i++)
+            {
+                valor.Items[i] = valor.Items[i].ToString() + EngineData.Zero;
+            }
+            return valor;
+        }
+
+        private ListBox RemoverCaracterInicio(ListBox valor)
+        {
+            for (int n = 0; n <= 8; n++)
+            {
+                valor.Items[n] = valor.Items[n].ToString().Remove(0, 1);
+            }
+            return valor;
+        }
+
+        public string [] SetearOculto (string [] oculto, ListBox valor, int f)
+        {
+            string cadena = string.Empty;
+            int cont = 0;
+            int columna = 0;
+            int r = 0;
+            for (int i = 0; i <= 8; i++ )
+            {
+                cont = 0;
+                cadena = valor.Items[i].ToString();
+                for (int c = 0; c <= 8; c++)
+                {
+                    if(cadena.Substring(c,1)!= EngineData.Zero)
+                    {
+                        cont++;
+                        columna = c;
+                    } 
+                }
+                if (cont == 1)
+                {
+                    r = NumeroRecuadro(f, columna);
+                    oculto[f] = (f + 1).ToString() + (columna + 1).ToString() + (columna + 1).ToString();
+                    oculto[columna + 9] = (f + 1).ToString() + (columna + 1).ToString() + (columna + 1).ToString();
+                    oculto[r + 18] = (f + 1).ToString() + (columna + 1).ToString() + (columna + 1).ToString();
+                }
+            }
+            return oculto;
+        }
+
+        //NUMERO RECUADRO
         public int NumeroRecuadro(int f, int c)
         {
             int recuadro = -1;
@@ -1060,28 +1175,97 @@ namespace SudokuParaTodos
             return recuadro;
         }
 
-        public bool ColumnaCandidatoUnico(string[,] valorIngresado, int f, int c)
+        // LETRAS JUEGO 
+        public class LetrasJuegoACB
         {
-            bool resultado = EngineData.Verdadero;
-            for (int fil = 0; fil <= 8; fil++)
+
+            public double A { get; set; }
+            public bool C { get; set; }
+            public double B { get; set; }
+        }
+
+        public class LetrasJuegoFEG
+        {
+
+            public double F { get; set; }
+            public double E { get; set; }
+            public double G { get; set; }
+        }
+
+        public LetrasJuegoACB SetLetrasJuegoACB(string[] solo, string[] oculto)
+        {
+            double contSolo = 0;
+            double contOculto= 0;
+            bool c = EngineData.Falso;
+            for (int i = 0; i <= solo.Length - 1; i++)
             {
-                if (fil != f)
+                if (solo[i] != null && solo[i] != string.Empty)
                 {
-                    if (valorIngresado[fil, c] == null || valorIngresado[fil, c] == string.Empty)
+                    contSolo++;
+                }
+            }
+            contSolo = contSolo / 3;
+
+            for (int i = 0; i <= oculto.Length - 1; i++)
+            {
+                if (oculto[i] != null && oculto[i] != string.Empty)
+                {
+                    contOculto++;
+                }
+            }
+            contOculto = contOculto / 3;
+
+            if (contSolo + contOculto == 0) c = EngineData.Falso;
+            else if (contSolo + contOculto > 0) c = EngineData.Verdadero;
+
+            LetrasJuegoACB letrasACB = new LetrasJuegoACB
+            {
+                A = RedondeoNumero(contSolo),
+                B = RedondeoNumero(contOculto),
+                C = c
+            };
+            return letrasACB;
+        }
+
+        private double RedondeoNumero(double n)
+        {
+            if (n > 0 && n <= 1) n = 1;
+            else if (n > 1 && n <= 2) n = 2;
+            else if (n > 2  && n <= 3) n = 3;
+            else if (n > 3 && n <= 4) n = 4;
+            else if (n > 4 && n <= 5) n = 5;
+            else if (n > 5 && n <= 6) n = 6;
+            else if (n > 6 && n <= 7) n = 7;
+            return n;
+        }
+
+        public LetrasJuegoFEG SetLetrasJuegoFEG(int num, string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
+        {
+            LetrasJuegoFEG letrasFEG = new LetrasJuegoFEG
+            {
+                F = num,
+                E = 81 - num,
+                G = ContadorCandidatos(valorIngresado, valorCandidatoSinEliminados)
+            };
+            return letrasFEG;
+        }
+
+        public int ContadorCandidatos(string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
+        {
+            int contadorCandidatos = 0;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (valorIngresado[f, c] == null || valorIngresado[f, c] == string.Empty)
                     {
-                        resultado = EngineData.Falso;
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(System.Environment.NewLine, "");
+                        valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                        contadorCandidatos = contadorCandidatos + valorCandidatoSinEliminados[f, c].Length;
                     }
                 }
             }
-            return resultado;
-        }
-
-        public class CandidatoUnicoCelda
-        {
-            public int Fila { get; set; }
-            public int Columna { get; set; }
-            public int Contador { get; set; }
-            public string Valor { get; set; }
+            return contadorCandidatos;
         }
 
         //CREAR TABLAS 

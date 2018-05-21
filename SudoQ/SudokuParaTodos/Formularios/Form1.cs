@@ -22,7 +22,8 @@ namespace SudokuParaTodos
         //***********************************************************************************************************
         private EngineSudoku Funcion = new EngineSudoku();
         private EngineData Valor = EngineData.Instance();
-        private EngineSudoku.LetrasJuego LetrasJuego = new EngineSudoku.LetrasJuego();
+        private EngineSudoku.LetrasJuegoFEG LetrasJuegoFEG = new EngineSudoku.LetrasJuegoFEG();
+        private EngineSudoku.LetrasJuegoACB LetrasJuegoACB= new EngineSudoku.LetrasJuegoACB();
 
         private TextBox[,] txtSudoku = new TextBox[9,9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
         private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
@@ -34,11 +35,12 @@ namespace SudokuParaTodos
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
         private string [] solo = new string[27];
-        private string[] oculto = new string[27];
+        private string [] oculto = new string[27];
 
         private int[] position = new int[2];
         private string openFrom = string.Empty;
-        private bool vInit = EngineData.Falso;
+        private bool vInit = EngineData.Falso;//Valores Iniciales 
+        //private bool juegoGuardado = EngineData.Falso;
         private int contadorIngresado = 0;
         private int row = -1;
         private int col = -1;
@@ -239,14 +241,25 @@ namespace SudokuParaTodos
             contadorIngresado = Funcion.ContadorIngresado(valorSolucion);
             if (contadorIngresado >= 17)
             {
-                btnGuardar.Visible = EngineData.Verdadero;
+                if (!vInit) { btnGuardar.Visible = EngineData.Verdadero; }
                 pincelA.Focus();
+              
+                if (row >= 0)
+                {
+                  solo = Funcion.CandidatoSolo(valorSolucion, valorCandidatoSinEliminados);
+                  oculto = new string[27];
+                  ListBox valor = new ListBox();
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        valor = Funcion.MapeoFilaCandidatoOculto(valorSolucion, valorCandidatoSinEliminados, f);
+                        oculto = Funcion.SetearOculto(oculto,valor,f);
+                        valor.Items.Clear();
+                    }
+                }
+                SetLetrasJuegoACB();
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
                 btnC.Visible = EngineData.Verdadero;
-                if (row >= 0)
-                {
-                   SoloOculto();          }
             }
             else if (contadorIngresado < 17)
             {
@@ -266,54 +279,25 @@ namespace SudokuParaTodos
             {
                 btnSolucion.Visible = EngineData.Falso;
             }
-            SetLetrasJuego();
+            SetLetrasJuegoFEG();
             return contadorIngresado;
         }
 
-        private void SoloOculto()
+        private void SetLetrasJuegoFEG()
         {
-            EngineSudoku.CandidatoUnicoCelda Unico = new EngineSudoku.CandidatoUnicoCelda();
-            int r = 0;
-            solo = new string[27];
-            oculto = new string[27];
-            bool resultadoFilaUnico = EngineData.Falso;
-            bool resultadoColumnaUnico = EngineData.Falso;
-            for (int f = 0; f <= 8; f++)
-            {
-                for (int c = 0; c <= 8; c++)
-                {
-                    Unico = Funcion.ExisteCandidatoUnico(valorSolucion, valorCandidatoSinEliminados, f, c);
-                    if (Unico.Contador == 1)
-                    {
-                        resultadoFilaUnico = Funcion.FilaCandidatoUnico(valorSolucion, f, c);//SOLO
-                        if (resultadoFilaUnico)
-                        {
-                            r = Funcion.NumeroRecuadro(f, c);
-                            solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                            solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                            solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                        }
-
-                        resultadoColumnaUnico = Funcion.ColumnaCandidatoUnico(valorSolucion, f, c);//OCULTO
-                        if (resultadoColumnaUnico)
-                        {
-                            r = Funcion.NumeroRecuadro(f, c);
-                            solo[f] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                            solo[c + 9] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                            solo[r + 18] = (Unico.Fila + 1).ToString() + (Unico.Columna + 1).ToString() + Unico.Valor;
-                        }
-
-                    }
-                }
-            }
+            LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorSolucion, valorCandidatoSinEliminados);
+            btnF.Text = LetrasJuegoFEG.F.ToString();
+            btnE.Text = LetrasJuegoFEG.E.ToString();
+            btnG.Text = LetrasJuegoFEG.G.ToString();
         }
 
-        private void SetLetrasJuego()
+        private void SetLetrasJuegoACB()
         {
-            LetrasJuego = Funcion.SetLetrasJuego(contadorIngresado, valorSolucion, valorCandidatoSinEliminados);
-            btnF.Text = LetrasJuego.F.ToString();
-            btnE.Text = LetrasJuego.E.ToString();
-            btnG.Text = LetrasJuego.G.ToString();
+            LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
+            btnA.Text = LetrasJuegoACB.A.ToString();
+            btnB.Text = LetrasJuegoACB.B.ToString();
+            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
         }
 
         ////////////EVENTOS////////////////////////////////////////////////////////////////////////
@@ -351,7 +335,7 @@ namespace SudokuParaTodos
                 txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                 btnSelectColor.BackColor = Color.Silver;
                 btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
-                btnSelectColor.FlatAppearance.BorderSize = EngineData.uno;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
             }
             else
             {
@@ -359,7 +343,7 @@ namespace SudokuParaTodos
                 colorFondoAct = pincel.BackColor;
                 btnSelectColor.BackColor = colorFondoAct;
                 btnSelectColor.FlatAppearance.BorderColor = Color.Black;
-                btnSelectColor.FlatAppearance.BorderSize = EngineData.dos;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
             }
         }
 
@@ -401,9 +385,9 @@ namespace SudokuParaTodos
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Verdadero;
 
-                    btnGuardar.Visible = EngineData.Verdadero;
+                    btnGuardar.Visible = EngineData.Falso;
                     btnOtro.Visible = EngineData.Verdadero;
-                    btnAbrir.Visible = EngineData.Falso;
+                    btnAbrir.Visible = EngineData.Verdadero;
                     btnSolucion.Visible = EngineData.Falso;
 
                     btnA.Visible = EngineData.Falso;
@@ -471,7 +455,7 @@ namespace SudokuParaTodos
                     openFrom = EngineData.Exe;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Falso;
-                    SetLetrasJuego();
+                    SetLetrasJuegoFEG();
                     break;
                 case (EngineData.BtnSolucion):
                     pathArchivo = Valor.GetPathArchivo();
@@ -505,7 +489,7 @@ namespace SudokuParaTodos
                     openFrom = EngineData.Exe;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Falso;
-                    SetLetrasJuego();
+                    SetLetrasJuegoFEG();
                     break;
             }
         }
