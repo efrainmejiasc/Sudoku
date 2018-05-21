@@ -991,18 +991,18 @@ namespace SudokuParaTodos
         }
 
         // CANDIDATOS OCULTOS DEL JUEGO
-        public ListBox MapeoFilaCandidatoOculto(string[,] valorIngresado, string[,] valorCandidatoSinEliminados,int f)
+        public ListBox MapeoFilaCandidatoOcultoFila(string[,] valorIngresado, string[,] valorCandidatoSinEliminados,int f)
         {
             ListBox valor = Agregar1_9();
             for (int c = 0; c <= 8; c++)
             {
-                valor = ConcatenarCandidatosColumna(valor, valorIngresado, valorCandidatoSinEliminados, f, c);
+                valor = ConcatenarCandidatosFila(valor, valorIngresado, valorCandidatoSinEliminados, f, c);
             }
             valor = RemoverCaracterInicio(valor);
             return valor;
         }
 
-        private ListBox ConcatenarCandidatosColumna(ListBox valor, string[,] valorIngresado, string [,] valorCandidatoSinEliminados,int f , int c)
+        private ListBox ConcatenarCandidatosFila(ListBox valor, string[,] valorIngresado, string [,] valorCandidatoSinEliminados,int f , int c)
         {
             if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
             {
@@ -1010,8 +1010,8 @@ namespace SudokuParaTodos
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
 
-                if (valorCandidatoSinEliminados[f, c].Length > 1)
-                {
+               // if (valorCandidatoSinEliminados[f, c].Length > 1)
+                //{
                     if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
                     {
                         valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
@@ -1089,14 +1089,184 @@ namespace SudokuParaTodos
                 {
                     valor = Agregar0(valor);
                 }
-            }
-            else
-            {
-                valor = Agregar0(valor);
-            }
+           // }
+            //else
+            //{
+               // valor = Agregar0(valor);
+            //}
 
             return valor;
         }
+
+        public string[] SetearOcultoFila(string[] oculto, ListBox valor, int f, string[,] valorCandidatoSinEliminados)
+        {
+            string cadena = string.Empty;
+            int cont = 0;
+            int columna = 0;
+            string valorCelda = string.Empty;
+            for (int i = 0; i <= 8; i++)
+            {
+                cont = 0;
+                cadena = valor.Items[i].ToString();
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (cadena.Substring(c, 1) != EngineData.Zero)
+                    {
+                        cont++;
+                        columna = c;
+                        valorCelda = cadena.Substring(c, 1);
+                    }
+                }
+                if (cont == 1)
+                {
+                    if (valorCandidatoSinEliminados[f, columna].Trim().Length > 1)
+                    {
+                        oculto[f] = (f + 1).ToString() + (columna + 1).ToString() + valorCelda;
+                    }
+                }
+            }
+            return oculto;
+        }
+
+        // **********************************************************************************************************************************************************************
+        public ListBox MapeoFilaCandidatoOcultoColumna(string[,] valorIngresado, string[,] valorCandidatoSinEliminados, int c)
+        {
+            ListBox valor = Agregar1_9();
+            for (int f = 0; f <= 8; f++)
+            {
+                valor = ConcatenarCandidatosColumna(valor, valorIngresado, valorCandidatoSinEliminados, f, c);
+            }
+            valor = RemoverCaracterInicio(valor);
+            return valor;
+        }
+
+        private ListBox ConcatenarCandidatosColumna(ListBox valor, string[,] valorIngresado, string[,] valorCandidatoSinEliminados, int f, int c)
+        {
+            if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
+            {
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
+
+                //if (valorCandidatoSinEliminados[f, c].Length > 1)
+                //{
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
+                    {
+                        valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
+                    }
+                    else
+                    {
+                        valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
+                    {
+                        valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
+                    }
+                    else
+                    {
+                        valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
+                    {
+                        valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
+                    }
+                    else
+                    {
+                        valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
+                    {
+                        valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
+                    }
+                    else
+                    {
+                        valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
+                    {
+                        valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
+                    }
+                    else
+                    {
+                        valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
+                    {
+                        valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
+                    }
+                    else
+                    {
+                        valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
+                    {
+                        valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
+                    }
+                    else
+                    {
+                        valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
+                    {
+                        valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
+                    }
+                    else
+                    {
+                        valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
+                    }
+                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
+                    {
+                        valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
+                    }
+                    else
+                    {
+                        valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
+                    }
+                }
+                else
+                {
+                    valor = Agregar0(valor);
+                }
+            //}
+            //else
+            //{
+                //valor = Agregar0(valor);
+            //}
+
+            return valor;
+        }
+
+        public string[] SetearOcultoColumna(string[] oculto, ListBox valor, int c, string[,] valorCandidatoSinEliminados)
+        {
+            string cadena = string.Empty;
+            int cont = 0;
+            int fila = 0;
+            string valorCelda = string.Empty;
+            for (int i = 0; i <= 8; i++)
+            {
+                cont = 0;
+                cadena = valor.Items[i].ToString();
+                for (int f = 0; f <= 8; f++)
+                {
+                    if (cadena.Substring(f, 1) != EngineData.Zero)
+                    {
+                        cont++;
+                        fila = f;
+                        valorCelda = cadena.Substring(f, 1);
+                    }
+                }
+                if (cont == 1)
+                {
+                    if (valorCandidatoSinEliminados[fila, c].Trim().Length > 1)
+                    {
+                        oculto[c + 9] = (fila + 1).ToString() + (c + 1).ToString() + valorCelda;
+                    }
+                }
+            }
+            return oculto;
+        }
+
+        // **********************************************************************************************************************************************************************
 
         private ListBox Agregar1_9()
         {
@@ -1124,35 +1294,6 @@ namespace SudokuParaTodos
                 valor.Items[n] = valor.Items[n].ToString().Remove(0, 1);
             }
             return valor;
-        }
-
-        public string [] SetearOculto (string [] oculto, ListBox valor, int f)
-        {
-            string cadena = string.Empty;
-            int cont = 0;
-            int columna = 0;
-            int r = 0;
-            for (int i = 0; i <= 8; i++ )
-            {
-                cont = 0;
-                cadena = valor.Items[i].ToString();
-                for (int c = 0; c <= 8; c++)
-                {
-                    if(cadena.Substring(c,1)!= EngineData.Zero)
-                    {
-                        cont++;
-                        columna = c;
-                    } 
-                }
-                if (cont == 1)
-                {
-                    r = NumeroRecuadro(f, columna);
-                    oculto[f] = (f + 1).ToString() + (columna + 1).ToString() + (columna + 1).ToString();
-                    oculto[columna + 9] = (f + 1).ToString() + (columna + 1).ToString() + (columna + 1).ToString();
-                    oculto[r + 18] = (f + 1).ToString() + (columna + 1).ToString() + (columna + 1).ToString();
-                }
-            }
-            return oculto;
         }
 
         //NUMERO RECUADRO
@@ -1213,7 +1354,6 @@ namespace SudokuParaTodos
                     contOculto++;
                 }
             }
-            contOculto = contOculto / 3;
 
             if (contSolo + contOculto == 0) c = EngineData.Falso;
             else if (contSolo + contOculto > 0) c = EngineData.Verdadero;

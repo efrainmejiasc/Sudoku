@@ -212,7 +212,7 @@ namespace SudokuParaTodos
                 btnGuardar.Visible = EngineData.Falso;
                 btnSolucion.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
-                ContadorIngresado(-1,-1);
+                //ContadorIngresado();
                 foreach (TextBox item in txtSudoku)
                 {
                     item.GotFocus += delegate { HideCaret(item.Handle); };
@@ -236,26 +236,15 @@ namespace SudokuParaTodos
             this.Text = Valor.TituloForm(Valor.GetIdioma()); 
         }
 
-        private int ContadorIngresado(int row, int col)
+        private int ContadorIngresado()
         {
             contadorIngresado = Funcion.ContadorIngresado(valorSolucion);
             if (contadorIngresado >= 17)
             {
                 if (!vInit) { btnGuardar.Visible = EngineData.Verdadero; }
                 pincelA.Focus();
-              
-                if (row >= 0)
-                {
-                  solo = Funcion.CandidatoSolo(valorSolucion, valorCandidatoSinEliminados);
-                  oculto = new string[27];
-                  ListBox valor = new ListBox();
-                    for (int f = 0; f <= 8; f++)
-                    {
-                        valor = Funcion.MapeoFilaCandidatoOculto(valorSolucion, valorCandidatoSinEliminados, f);
-                        oculto = Funcion.SetearOculto(oculto,valor,f);
-                        valor.Items.Clear();
-                    }
-                }
+
+                SetSoloOculto();
                 SetLetrasJuegoACB();
                 btnA.Visible = EngineData.Verdadero;
                 btnB.Visible = EngineData.Verdadero;
@@ -281,6 +270,22 @@ namespace SudokuParaTodos
             }
             SetLetrasJuegoFEG();
             return contadorIngresado;
+        }
+
+        private void SetSoloOculto()
+        {
+            solo = Funcion.CandidatoSolo(valorSolucion, valorCandidatoSinEliminados);
+            oculto = new string[27];
+            ListBox valor = new ListBox();
+            for (int f = 0; f <= 8; f++)
+            {
+                valor = Funcion.MapeoFilaCandidatoOcultoFila(valorSolucion, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoFila(oculto, valor, f,valorCandidatoSinEliminados);
+                valor.Items.Clear();
+                valor = Funcion.MapeoFilaCandidatoOcultoColumna(valorSolucion, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoColumna(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+            }            
         }
 
         private void SetLetrasJuegoFEG()
@@ -379,7 +384,7 @@ namespace SudokuParaTodos
                     txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
 
-                    ContadorIngresado(-1,-1);
+                    ContadorIngresado();
                
                     openFrom = EngineData.File;
                     Valor.SetOpenFrom(openFrom);
@@ -389,10 +394,6 @@ namespace SudokuParaTodos
                     btnOtro.Visible = EngineData.Verdadero;
                     btnAbrir.Visible = EngineData.Verdadero;
                     btnSolucion.Visible = EngineData.Falso;
-
-                    btnA.Visible = EngineData.Falso;
-                    btnB.Visible = EngineData.Falso;
-                    btnC.Visible = EngineData.Falso;
                     break;
                 case (EngineData.BtnGuardarJuego):
                     if (Valor.GetPathArchivo() == string.Empty)
@@ -583,7 +584,7 @@ namespace SudokuParaTodos
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorSolucion,valorCandidato, valorInicio, Color.Green,Color.Blue);
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
                 txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
-                ContadorIngresado(row,col);
+                ContadorIngresado();
             }
             catch {}
 
