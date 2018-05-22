@@ -285,6 +285,9 @@ namespace SudokuParaTodos
                 valor = Funcion.MapeoFilaCandidatoOcultoColumna(valorSolucion, valorCandidatoSinEliminados, f);
                 oculto = Funcion.SetearOcultoColumna(oculto, valor, f, valorCandidatoSinEliminados);
                 valor.Items.Clear();
+                valor = Funcion.MapeoFilaCandidatoOcultoRecuadro(valorSolucion, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoRecuadro(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
             }            
         }
 

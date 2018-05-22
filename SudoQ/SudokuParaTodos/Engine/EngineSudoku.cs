@@ -1009,91 +1009,83 @@ namespace SudokuParaTodos
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
-
-               // if (valorCandidatoSinEliminados[f, c].Length > 1)
-                //{
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
-                    {
-                        valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
-                    }
-                    else
-                    {
-                        valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
-                    {
-                        valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
-                    }
-                    else
-                    {
-                        valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
-                    {
-                        valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
-                    }
-                    else
-                    {
-                        valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
-                    {
-                        valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
-                    }
-                    else
-                    {
-                        valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
-                    {
-                        valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
-                    }
-                    else
-                    {
-                        valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
-                    {
-                        valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
-                    }
-                    else
-                    {
-                        valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
-                    {
-                        valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
-                    }
-                    else
-                    {
-                        valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
-                    {
-                        valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
-                    }
-                    else
-                    {
-                        valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
-                    {
-                        valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
-                    }
-                    else
-                    {
-                        valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
-                    }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
+                {
+                    valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
                 }
                 else
                 {
-                    valor = Agregar0(valor);
+                    valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
                 }
-           // }
-            //else
-            //{
-               // valor = Agregar0(valor);
-            //}
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
+                {
+                    valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
+                }
+                else
+                {
+                    valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
+                {
+                    valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
+                }
+                else
+                {
+                    valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
+                {
+                    valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
+                }
+                else
+                {
+                    valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
+                {
+                    valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
+                }
+                else
+                {
+                    valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
+                {
+                    valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
+                }
+                else
+                {
+                    valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
+                {
+                    valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
+                }
+                else
+                {
+                    valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
+                {
+                    valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
+                }
+                else
+                {
+                    valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
+                {
+                    valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
+                }
+                else
+                {
+                    valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
+                }
+            }
+            else
+            {
+                valor = Agregar0(valor);
+            }
 
             return valor;
         }
@@ -1147,91 +1139,83 @@ namespace SudokuParaTodos
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
                 valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
-
-                //if (valorCandidatoSinEliminados[f, c].Length > 1)
-                //{
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
-                    {
-                        valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
-                    }
-                    else
-                    {
-                        valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
-                    {
-                        valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
-                    }
-                    else
-                    {
-                        valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
-                    {
-                        valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
-                    }
-                    else
-                    {
-                        valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
-                    {
-                        valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
-                    }
-                    else
-                    {
-                        valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
-                    {
-                        valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
-                    }
-                    else
-                    {
-                        valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
-                    {
-                        valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
-                    }
-                    else
-                    {
-                        valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
-                    {
-                        valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
-                    }
-                    else
-                    {
-                        valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
-                    {
-                        valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
-                    }
-                    else
-                    {
-                        valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
-                    }
-                    if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
-                    {
-                        valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
-                    }
-                    else
-                    {
-                        valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
-                    }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
+                {
+                    valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
                 }
                 else
                 {
-                    valor = Agregar0(valor);
+                    valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
                 }
-            //}
-            //else
-            //{
-                //valor = Agregar0(valor);
-            //}
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
+                {
+                    valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
+                }
+                else
+                {
+                    valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
+                {
+                    valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
+                }
+                else
+                {
+                    valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
+                {
+                    valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
+                }
+                else
+                {
+                    valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
+                {
+                    valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
+                }
+                else
+                {
+                    valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
+                {
+                    valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
+                }
+                else
+                {
+                    valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
+                {
+                    valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
+                }
+                else
+                {
+                    valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
+                {
+                    valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
+                }
+                else
+                {
+                    valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
+                {
+                    valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
+                }
+                else
+                {
+                    valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
+                }
+            }
+            else
+            {
+                valor = Agregar0(valor);
+            }
 
             return valor;
         }
@@ -1267,7 +1251,345 @@ namespace SudokuParaTodos
         }
 
         // **********************************************************************************************************************************************************************
+        public ListBox MapeoFilaCandidatoOcultoRecuadro(string[,] valorIngresado, string[,] valorCandidatoSinEliminados, int recuadro)
+        {
+            ListBox valor = Agregar1_9();
+            int[] rango = new int[2];
+            rango = RangoRecuadro(recuadro);
+            int fila = rango[0];
+            int columna = rango[1];
 
+            for (int f = fila; f <= fila + 2; f++)
+            {
+                for (int c = columna; c <= columna + 2; c++)
+                {
+                    valor = ConcatenarCandidatosRecuadro(valor, valorIngresado, valorCandidatoSinEliminados, f, c);
+                }
+            }
+            valor = RemoverCaracterInicio(valor);
+            return valor;
+        }
+
+        private ListBox ConcatenarCandidatosRecuadro(ListBox valor, string[,] valorIngresado, string[,] valorCandidatoSinEliminados, int f, int c)
+        {
+            if (valorIngresado[f, c] == string.Empty || valorIngresado[f, c] == null)
+            {
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(Environment.NewLine, "");
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Replace(" ", "");
+                valorCandidatoSinEliminados[f, c] = valorCandidatoSinEliminados[f, c].Trim();
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.uno))
+                {
+                    valor.Items[0] = valor.Items[0].ToString() + EngineData.uno;
+                }
+                else
+                {
+                    valor.Items[0] = valor.Items[0].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.dos))
+                {
+                    valor.Items[1] = valor.Items[1].ToString() + EngineData.dos;
+                }
+                else
+                {
+                    valor.Items[1] = valor.Items[1].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.tres))
+                {
+                    valor.Items[2] = valor.Items[2].ToString() + EngineData.tres;
+                }
+                else
+                {
+                    valor.Items[2] = valor.Items[2].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cuatro))
+                {
+                    valor.Items[3] = valor.Items[3].ToString() + EngineData.cuatro;
+                }
+                else
+                {
+                    valor.Items[3] = valor.Items[3].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.cinco))
+                {
+                    valor.Items[4] = valor.Items[4].ToString() + EngineData.cinco;
+                }
+                else
+                {
+                    valor.Items[4] = valor.Items[4].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.seis))
+                {
+                    valor.Items[5] = valor.Items[5].ToString() + EngineData.seis;
+                }
+                else
+                {
+                    valor.Items[5] = valor.Items[5].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.siete))
+                {
+                    valor.Items[6] = valor.Items[6].ToString() + EngineData.siete;
+                }
+                else
+                {
+                    valor.Items[6] = valor.Items[6].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.ocho))
+                {
+                    valor.Items[7] = valor.Items[7].ToString() + EngineData.ocho;
+                }
+                else
+                {
+                    valor.Items[7] = valor.Items[7].ToString() + EngineData.Zero;
+                }
+                if (valorCandidatoSinEliminados[f, c].Contains(EngineData.nueve))
+                {
+                    valor.Items[8] = valor.Items[8].ToString() + EngineData.nueve;
+                }
+                else
+                {
+                    valor.Items[8] = valor.Items[8].ToString() + EngineData.Zero;
+                }
+            }
+            else
+            {
+                valor = Agregar0(valor);
+            }
+
+            return valor;
+        }
+
+        public string[] SetearOcultoRecuadro(string[] oculto, ListBox valor, int recuadro, string[,] valorCandidatoSinEliminados)
+        {
+            string cadena = string.Empty;
+            int cont = 0;
+            int[] obj = new int [2];
+            int fila = 0;
+            int columna = 0;
+            string valorCelda = string.Empty;
+
+            for (int i = 0; i <= 8; i++)
+            {
+                cont = 0;
+                cadena = valor.Items[i].ToString();
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (cadena.Substring(c, 1) != EngineData.Zero)
+                    {
+                        cont++;
+                        obj = FilaRecuadro(recuadro, c);
+                        fila = obj[0];
+                        columna = obj[1];
+                        valorCelda = cadena.Substring(c, 1);
+                    }
+                }
+                if (cont == 1)
+                {
+                    if (valorCandidatoSinEliminados[fila, columna].Trim().Length > 1)
+                    {
+                        oculto[fila + 18] = (fila + 1).ToString() + (columna + 1).ToString() + valorCelda;
+                    }
+                }
+            }
+            return oculto;
+        }
+
+        private int []  FilaRecuadro(int recuadro, int z)
+        {
+            int [] obj  = new int [2];
+            if (recuadro == 0)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 0; obj[1] = 0; }
+                    else if (z == 1) { obj[0] = 0; obj[1] = 1; }
+                    else if (z == 2) { obj[0] = 0; obj[1] = 2; }
+
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 1; obj[1] = 0; }
+                    else if (z == 4) { obj[0] = 1; obj[1] = 1; }
+                    else if (z == 5) { obj[0] = 1; obj[1] = 2; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 2; obj[1] = 0; }
+                    else if (z == 7) { obj[0] = 2; obj[1] = 1; }
+                    else if (z == 8) { obj[0] = 2; obj[1] = 2; }
+                }
+            }
+            else if (recuadro == 1)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 0; obj[1] = 3; }
+                    else if (z == 1) { obj[0] = 0; obj[1] = 4; }
+                    else if (z == 2) { obj[0] = 0; obj[1] = 5; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 1; obj[1] = 3; }
+                    else if (z == 4) { obj[0] = 1; obj[1] = 4; }
+                    else if (z == 5) { obj[0] = 1; obj[1] = 5; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 2; obj[1] = 3; }
+                    else if (z == 7) { obj[0] = 2; obj[1] = 4; }
+                    else if (z == 8) { obj[0] = 2; obj[1] = 5; }
+                }
+            }
+            else if (recuadro == 2)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 0; obj[1] = 6; }
+                    else if (z == 1) { obj[0] = 0; obj[1] = 7; }
+                    else if (z == 2) { obj[0] = 0; obj[1] = 8; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 1; obj[1] = 6; }
+                    else if (z == 4) { obj[0] = 1; obj[1] = 7; }
+                    else if (z == 5) { obj[0] = 1; obj[1] = 8; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 2; obj[1] = 6; }
+                    else if (z == 7) { obj[0] = 2; obj[1] = 7; }
+                    else if (z == 8) { obj[0] = 2; obj[1] = 8; }
+                }
+            }
+            else if (recuadro == 3)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 3; obj[1] = 0; }
+                    else if (z == 1) { obj[0] = 3; obj[1] = 1; }
+                    else if (z == 2) { obj[0] = 3; obj[1] = 2; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 4; obj[1] = 0; }
+                    else if (z == 4) { obj[0] = 4; obj[1] = 1; }
+                    else if (z == 5) { obj[0] = 4; obj[1] = 2; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 5; obj[1] = 0; }
+                    else if (z == 7) { obj[0] = 5; obj[1] = 1; }
+                    else if (z == 8) { obj[0] = 5; obj[1] = 2; }
+                }
+            }
+            else if (recuadro == 4)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 3; obj[1] = 3; }
+                    else if (z == 1) { obj[0] = 3; obj[1] = 4; }
+                    else if (z == 2) { obj[0] = 3; obj[1] = 5; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 4; obj[1] = 3; }
+                    else if (z == 4) { obj[0] = 4; obj[1] = 4; }
+                    else if (z == 5) { obj[0] = 4; obj[1] = 5; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 5; obj[1] = 3; }
+                    else if (z == 7) { obj[0] = 5; obj[1] = 4; }
+                    else if (z == 8) { obj[0] = 5; obj[1] = 5; }
+                }
+            }
+            else if (recuadro == 5)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 3; obj[1] = 6; }
+                    else if (z == 1) { obj[0] = 3; obj[1] = 7; }
+                    else if (z == 2) { obj[0] = 3; obj[1] = 8; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 4; obj[1] = 6; }
+                    else if (z == 4) { obj[0] = 4; obj[1] = 7; }
+                    else if (z == 5) { obj[0] = 4; obj[1] = 8; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 5; obj[1] = 6; }
+                    else if (z == 7) { obj[0] = 5; obj[1] = 7; }
+                    else if (z == 8) { obj[0] = 5; obj[1] = 8; }
+                }
+            }
+            else if (recuadro == 6)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 6; obj[1] = 0; }
+                    else if (z == 1) { obj[0] = 6; obj[1] = 1; }
+                    else if (z == 2) { obj[0] = 6; obj[1] = 2; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 7; obj[1] = 0; }
+                    else if (z == 4) { obj[0] = 7; obj[1] = 1; }
+                    else if (z == 5) { obj[0] = 7; obj[1] = 2; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 8; obj[1] = 0; }
+                    else if (z == 7) { obj[0] = 8; obj[1] = 1; }
+                    else if (z == 8) { obj[0] = 8; obj[1] = 2; }
+                }
+            }
+            else if (recuadro == 7)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 6; obj[1] = 3; }
+                    else if (z == 1) { obj[0] = 6; obj[1] = 4; }
+                    else if (z == 2) { obj[0] = 6; obj[1] = 5; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 7; obj[1] = 3; }
+                    else if (z == 4) { obj[0] = 7; obj[1] = 4; }
+                    else if (z == 5) { obj[0] = 7; obj[1] = 5; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 8; obj[1] = 3; }
+                    else if (z == 7) { obj[0] = 8; obj[1] = 4; }
+                    else if (z == 8) { obj[0] = 8; obj[1] = 5; }
+                }
+            }
+            else if (recuadro == 8)
+            {
+                if (z >= 0 && z <= 2)
+                {
+                    if (z == 0) { obj[0] = 6; obj[1] = 6; }
+                    else if (z == 1) { obj[0] = 6; obj[1] = 7; }
+                    else if (z == 2) { obj[0] = 6; obj[1] = 8; }
+                }
+                else if (z >= 3 && z <= 5)
+                {
+                    if (z == 3) { obj[0] = 7; obj[1] = 6; }
+                    else if (z == 4) { obj[0] = 7; obj[1] = 7; }
+                    else if (z == 5) { obj[0] = 7; obj[1] = 8; }
+                }
+                else if (z >= 6 && z <= 8)
+                {
+                    if (z == 6) { obj[0] = 8; obj[1] = 6; }
+                    else if (z == 7) { obj[0] = 8; obj[1] = 7; }
+                    else if (z == 8) { obj[0] = 8; obj[1] = 8; }
+                }
+            }
+            return obj;
+        }
+
+        // ***********************************************************************************************************************************************************************
         private ListBox Agregar1_9()
         {
             ListBox valor = new ListBox();
@@ -1314,6 +1636,21 @@ namespace SudokuParaTodos
             else if ((f >= 6 && f <= 8) && (c >= 6 && c <= 8)) { recuadro = 8; }
 
             return recuadro;
+        }
+
+        public int [] RangoRecuadro(int recuadro)
+        {
+            int[] rango = new int[2];
+            if (recuadro == 0) { rango[0] = 0; rango[1] = 0;}
+            else if (recuadro == 1) { rango[0] = 0; rango[1] = 3;}
+            else if (recuadro == 2) { rango[0] = 0; rango[1] = 6;}
+            else if (recuadro == 3) { rango[0] = 3; rango[1] = 0;}
+            else if (recuadro == 4) { rango[0] = 3; rango[1] = 3;}
+            else if (recuadro == 5) { rango[0] = 3; rango[1] = 6;}
+            else if (recuadro == 6) { rango[0] = 6; rango[1] = 0;}
+            else if (recuadro == 7) { rango[0] = 6; rango[1] = 3;}
+            else if (recuadro == 8) { rango[0] = 6; rango[1] = 6;}
+            return rango;
         }
 
         // LETRAS JUEGO 
