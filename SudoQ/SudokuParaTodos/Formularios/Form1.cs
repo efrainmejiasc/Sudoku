@@ -40,7 +40,6 @@ namespace SudokuParaTodos
         private int[] position = new int[2];
         private string openFrom = string.Empty;
         private bool vInit = EngineData.Falso;//Valores Iniciales 
-        //private bool juegoGuardado = EngineData.Falso;
         private int contadorIngresado = 0;
         private int row = -1;
         private int col = -1;
@@ -241,14 +240,13 @@ namespace SudokuParaTodos
             contadorIngresado = Funcion.ContadorIngresado(valorSolucion);
             if (contadorIngresado >= 17)
             {
-                if (!vInit) { btnGuardar.Visible = EngineData.Verdadero; }
-                pincelA.Focus();
-
-                SetSoloOculto();
-                SetLetrasJuegoACB();
-                btnA.Visible = EngineData.Verdadero;
-                btnB.Visible = EngineData.Verdadero;
-                btnC.Visible = EngineData.Verdadero;
+                if (!vInit)
+                {
+                    btnGuardar.Visible = EngineData.Verdadero;
+                    try { txtSudoku[row, col].Focus(); } catch { }
+                    SetSoloOculto();
+                    SetLetrasJuegoACB();
+                }
             }
             else if (contadorIngresado < 17)
             {
@@ -304,6 +302,18 @@ namespace SudokuParaTodos
             LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
             btnA.Text = LetrasJuegoACB.A.ToString();
             btnB.Text = LetrasJuegoACB.B.ToString();
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
+            {
+                btnA.Visible = EngineData.Verdadero;
+                btnB.Visible = EngineData.Verdadero;
+                btnC.Visible = EngineData.Verdadero;
+            }
+            else
+            {
+                btnA.Visible = EngineData.Falso;
+                btnB.Visible = EngineData.Falso;
+                btnC.Visible = EngineData.Falso;
+            }
             if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
             else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
         }

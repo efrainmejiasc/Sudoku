@@ -1816,9 +1816,5 @@ namespace SudokuParaTodos
         }
 
 
-
-
-
-
     }
 }
