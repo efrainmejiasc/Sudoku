@@ -133,7 +133,7 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a IDIOMAS.
+        ///   Busca una cadena traducida similar a IDIOMAS .
         /// </summary>
         internal static string mIdiomas {
             get {

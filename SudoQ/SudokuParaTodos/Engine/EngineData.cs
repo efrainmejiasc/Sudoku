@@ -55,7 +55,7 @@ namespace SudokuParaTodos
 
         public const string portu = "portu";
         public const string english = "english";
-        public const string IDIOMAS = "IDIOMAS";
+        public const string IDIOMAS = "IDIOMAS - LANGUAGES";
         public const string LANGUAGES = "LANGUAGES";
 
         public const string Btn1 = "btn1";
@@ -67,6 +67,18 @@ namespace SudokuParaTodos
         public const string Btn7 = "btn7";
         public const string Btn8 = "btn8";
         public const string Btn9 = "btn9";
+
+        public const string btnIzquierda = "btnIzquierda";
+        public const string btnDerecha = "btnDerecha";
+
+        public const string azul1_5 = "1/5";
+        public const string azul2_5 = "2/5";
+        public const string azul3_5 = "3/5";
+        public const string azul4_5 = "4/5";
+        public const string azul5_5 = "5/5";
+
+
+
 
         public const string Up = "Up";
         public const string Down = "Down";

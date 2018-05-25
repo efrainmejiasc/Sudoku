@@ -27,7 +27,16 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
+        private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
+
+        private int[] position = new int[2];
+        int row = -1;
+        int col = -1;
+        private Color colorFondoAct;
+        private bool pincelMarcador = EngineData.Falso;
+        private Color colorCeldaAnt;
+
 
         public AzulUno()
         {
@@ -37,33 +46,6 @@ namespace SudokuParaTodos.Formularios
         private void AzulUno_Load(object sender, EventArgs e)
         {
             ComportamientoObjetoInicio();
-        }
-
-        private void ComportamientoObjetoInicio()
-        {
-            pathArchivo = Valor.GetPathArchivo();
-            if (pathArchivo == string.Empty)
-            {
-                return;
-            }
-            txtSudoku = AsociarTxtMatriz(txtSudoku);
-            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
-            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
-            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
-            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
-            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
-            bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
-            if (resultado)
-            {
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-            }
-            else
-            {
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorInicio, valorCandidato, valorEliminado);
-                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorInicio, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-            }
-            
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -113,31 +95,205 @@ namespace SudokuParaTodos.Formularios
             return txtSudoku;
         }
 
+        private Button[] AsociarBtnPincel(Button[] btnPincel)
+        {
+            btnPincel[0] = pincelA; btnPincel[1] = pincelB;
+            btnPincel[2] = pincelC; btnPincel[3] = pincelD;
+            btnPincel[4] = pincelE;
+
+            btnPincel[5] = pincelG;
+            btnPincel[6] = pincelH; btnPincel[7] = pincelI;
+            btnPincel[8] = pincelJ;
+            return btnPincel;
+        }
+
+        private void ComportamientoObjetoInicio()
+        {
+            pathArchivo = Valor.GetPathArchivo();
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            txtBlueView.Text = EngineData.azul1_5;
+            txtSudoku = AsociarTxtMatriz(txtSudoku);
+            btnPincel= AsociarBtnPincel(btnPincel);
+            btnPincel = Funcion.ColoresPincel(btnPincel);
+            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
+            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
+            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
+            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+            bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
+            if (resultado)
+            {
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            }
+            else
+            {
+                valorIngresado = valorInicio;
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            }
+            
+        }
+
+        private void ColorMarcador_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcador = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+            }
+            else
+            {
+                pincelMarcador = EngineData.Verdadero;
+                colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+            }
+        }
+
+        private void NavegacionVistas(object sender, EventArgs e)
+        {
+            string vistazul = txtBlueView.Text;
+            Button btn = (Button)sender;
+            switch (btn.Name)
+            {
+                case (EngineData.btnIzquierda):
+                    if (vistazul == EngineData.azul1_5) txtBlueView.Text = EngineData.azul5_5;
+                    if (vistazul == EngineData.azul2_5) txtBlueView.Text = EngineData.azul1_5;
+                    if (vistazul == EngineData.azul3_5) txtBlueView.Text = EngineData.azul2_5;
+                    if (vistazul == EngineData.azul4_5) txtBlueView.Text = EngineData.azul3_5;
+                    if (vistazul == EngineData.azul5_5) txtBlueView.Text = EngineData.azul4_5;
+                    break;
+                case (EngineData.btnDerecha):
+                    if (vistazul == EngineData.azul1_5) txtBlueView.Text = EngineData.azul2_5;
+                    if (vistazul == EngineData.azul2_5) txtBlueView.Text = EngineData.azul3_5;
+                    if (vistazul == EngineData.azul3_5) txtBlueView.Text = EngineData.azul4_5;
+                    if (vistazul == EngineData.azul4_5) txtBlueView.Text = EngineData.azul5_5;
+                    if (vistazul == EngineData.azul5_5) txtBlueView.Text = EngineData.azul1_5;
+                    break;
+            }
+            ComportamientoVistaAzul(txtBlueView.Text);
+        }
+
+        private void ComportamientoVistaAzul(string vista)
+        {
+            switch (vista)
+            {
+                case (EngineData.azul1_5):
+                    break;
+                case (EngineData.azul2_5):
+                    break;
+                case (EngineData.azul3_5):
+                    break;
+                case (EngineData.azul4_5):
+                    break;
+                case (EngineData.azul5_5):
+                    break;
+            }
+        }
+    
         private void txt00_Enter(object sender, EventArgs e)
         {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
 
+            if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                txt.ForeColor = Color.Black;
+            else txt.ForeColor = Color.Blue;
+
+            if (pincelMarcador)
+            {
+                txtSudoku[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
         }
 
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
         }
 
         private void txt00_KeyUp(object sender, KeyEventArgs e)
         {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            try
+            {
+                if (txt.Text == EngineData.Zero)
+                {
+                    txt.Text = string.Empty;
+                    valorIngresado[row, col] = string.Empty;
+                }
+                else
+                {
+                    valorIngresado[row, col] = txt.Text;
+                   
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                    }
+                }
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+            }
+            catch { }
 
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku[row, col].Focus(); }
+                return;
+            }
         }
 
         private void txt00_DoubleClick(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
         }
 
         private void txt00_Leave(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
         }
-
-      
+ 
     }
 }

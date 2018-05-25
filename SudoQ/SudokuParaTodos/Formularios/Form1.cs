@@ -211,7 +211,6 @@ namespace SudokuParaTodos
                 btnGuardar.Visible = EngineData.Falso;
                 btnSolucion.Visible = EngineData.Falso;
                 pnlLetra.Visible = EngineData.Verdadero;
-                //ContadorIngresado();
                 foreach (TextBox item in txtSudoku)
                 {
                     item.GotFocus += delegate { HideCaret(item.Handle); };

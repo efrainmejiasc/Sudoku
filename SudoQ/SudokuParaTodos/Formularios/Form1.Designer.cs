@@ -53,8 +53,8 @@
             this.mColores = new System.Windows.Forms.ToolStripMenuItem();
             this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
-            this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
+            this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pincelE = new System.Windows.Forms.Button();
@@ -472,7 +472,7 @@
             this.mIdiomas});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(378, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(456, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -503,35 +503,32 @@
             // mIdiomas
             // 
             this.mIdiomas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mIEspañol,
             this.mIIngles,
+            this.mIEspañol,
             this.mIPortugues});
             this.mIdiomas.Name = "mIdiomas";
-            this.mIdiomas.Size = new System.Drawing.Size(67, 20);
-            this.mIdiomas.Text = "IDIOMAS";
-            // 
-            // mIEspañol
-            // 
-            this.mIEspañol.Image = global::SudokuParaTodos.Properties.Resources.spain;
-            this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
-            this.mIEspañol.Text = "Español";
-            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
+            this.mIdiomas.Size = new System.Drawing.Size(145, 20);
+            this.mIdiomas.Text = "IDIOMAS - LANGUAGES";
             // 
             // mIIngles
             // 
-            this.mIIngles.Image = global::SudokuParaTodos.Properties.Resources.usa;
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
+            // mIEspañol
+            // 
+            this.mIEspañol.Name = "mIEspañol";
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Text = "Español";
+            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
+            // 
             // mIPortugues
             // 
-            this.mIPortugues.Image = global::SudokuParaTodos.Properties.Resources.port;
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
-            this.mIPortugues.Text = "Portugues";
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // panel11
