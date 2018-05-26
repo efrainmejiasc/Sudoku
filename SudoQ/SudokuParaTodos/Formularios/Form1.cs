@@ -173,6 +173,7 @@ namespace SudokuParaTodos
         private void ComportamientoObjInicio()
         {
             this.Size = new Size(586 , 680);
+            this.MaximumSize = new Size(586, 680);
             btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
@@ -202,6 +203,7 @@ namespace SudokuParaTodos
         {
             if (Valor.GetIdioma() != string.Empty)
             {
+                this.MaximumSize = new Size(1161, 680);
                 this.Size = new Size(1161 , 680);
                 foreach (Button btn in btnPincel) { btn.Visible = EngineData.Verdadero; }
                 btnPincel = Funcion.ColoresPincel(btnPincel);

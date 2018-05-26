@@ -117,46 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="mArchivo" xml:space="preserve">
-    <value>ARCHIVO</value>
-  </data>
-  <data name="mColores" xml:space="preserve">
-    <value>COLORES</value>
-  </data>
-  <data name="mContadores" xml:space="preserve">
-    <value>CONTADORES</value>
-  </data>
-  <data name="mIdiomas" xml:space="preserve">
-    <value>IDIOMAS </value>
-  </data>
-  <data name="mIEspañol" xml:space="preserve">
-    <value>Español</value>
-  </data>
-  <data name="mIIngles" xml:space="preserve">
-    <value>Ingles</value>
-  </data>
-  <data name="mIPortugues" xml:space="preserve">
-    <value>Portugues</value>
-  </data>
-  <data name="mTablero" xml:space="preserve">
-    <value>TABLERO</value>
-  </data>
-  <data name="btnAbrir" xml:space="preserve">
-    <value>Abrir Juego</value>
-  </data>
-  <data name="btnGuardar" xml:space="preserve">
-    <value>Guardar Juego</value>
-  </data>
-  <data name="btnOtro" xml:space="preserve">
-    <value>Crear Otro Juego</value>
-  </data>
-  <data name="btnSolucion" xml:space="preserve">
-    <value>Guardar Solucion</value>
-  </data>
-  <data name="Form1" xml:space="preserve">
-    <value>Sudoku Para Todos</value>
-  </data>
-  <data name="FormularioAzulUno" xml:space="preserve">
-    <value>Sudoku Para Todos - Numeros:</value>
-  </data>
 </root>

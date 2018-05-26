@@ -106,6 +106,15 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Sudoku Para Todos - Numeros:.
+        /// </summary>
+        internal static string FormularioAzulUno {
+            get {
+                return ResourceManager.GetString("FormularioAzulUno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ARCHIVO.
         /// </summary>
         internal static string mArchivo {

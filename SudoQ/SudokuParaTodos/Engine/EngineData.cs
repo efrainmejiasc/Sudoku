@@ -21,7 +21,8 @@ namespace SudokuParaTodos
             return valor;
         }
 
-        public const string Titulo = "Sudoku Para Todos";
+        public const string Titulo = "Sudoku Para Todos ";
+        public const string Numeros = " - Numeros:";
         public const string ClaveRegWin = "SudokuParaTodos";
         public const string FechaDeCreacion = "FechaDeCreacion";
         public const string Clave = "Clave";

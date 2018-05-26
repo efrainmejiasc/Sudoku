@@ -136,4 +136,7 @@
   <data name="btnSolucion" xml:space="preserve">
     <value>Save Solution</value>
   </data>
+  <data name="FormularioAzulUno" xml:space="preserve">
+    <value>Sudoku For All - Numbers:</value>
+  </data>
 </root>
