@@ -32,6 +32,7 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
+        private Button[] btnPincel2 = new Button[2];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
 
         private int[] position = new int[2];
@@ -112,6 +113,10 @@ namespace SudokuParaTodos.Formularios
             btnPincel[5] = pincelG;
             btnPincel[6] = pincelH; btnPincel[7] = pincelI;
             btnPincel[8] = pincelJ;
+
+            btnPincel2[0] = pincelK;
+            btnPincel2[1] = pincelL;
+
             return btnPincel;
         }
 
@@ -185,21 +190,38 @@ namespace SudokuParaTodos.Formularios
         private void ColorMarcador_Click(object sender, EventArgs e)
         {
             Button pincel = (Button)sender;
-            if (pincel.BackColor == Color.Silver)
+            if (pincel.Name == "pincelK" || pincel.Name == "pincelL")
             {
-                pincelMarcador = EngineData.Falso;
-                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
-                btnSelectColor.BackColor = Color.Silver;
-                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
-                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+                if (pincel.BackColor == Color.Silver)
+                {
+                    pincelMarcador = EngineData.Falso;
+                    txtSudoku = Funcion.SetearTextColorInicioSinAmarillo(txtSudoku);
+                 
+                }
+                else
+                {
+                    pincelMarcador = EngineData.Verdadero;
+                    colorFondoAct = pincel.BackColor;
+                }
             }
             else
             {
-                pincelMarcador = EngineData.Verdadero;
-                colorFondoAct = pincel.BackColor;
-                btnSelectColor.BackColor = colorFondoAct;
-                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
-                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+                if (pincel.BackColor == Color.Silver)
+                {
+                    pincelMarcador = EngineData.Falso;
+                    txtSudoku = Funcion.SetearTextColorInicioConAmarillo(txtSudoku);
+                    btnSelectColor.BackColor = Color.Silver;
+                    btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                    btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+                }
+                else
+                {
+                    pincelMarcador = EngineData.Verdadero;
+                    colorFondoAct = pincel.BackColor;
+                    btnSelectColor.BackColor = colorFondoAct;
+                    btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                    btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+                }
             }
         }
 
@@ -267,15 +289,11 @@ namespace SudokuParaTodos.Formularios
             btnB.Text = LetrasJuegoACB.B.ToString();
             if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
             {
-                btnA.Visible = EngineData.Verdadero;
-                btnB.Visible = EngineData.Verdadero;
-                btnC.Visible = EngineData.Verdadero;
+                btnBB.Visible = EngineData.Falso;
             }
             else
             {
-                btnA.Visible = EngineData.Falso;
-                btnB.Visible = EngineData.Falso;
-                btnC.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
             }
             if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
             else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));

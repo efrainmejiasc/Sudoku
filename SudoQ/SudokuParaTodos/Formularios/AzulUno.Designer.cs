@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnAyuda = new System.Windows.Forms.Button();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.pincelL = new System.Windows.Forms.Button();
             this.pincelK = new System.Windows.Forms.Button();
             this.btnBB = new System.Windows.Forms.Button();
-            this.btnAA = new System.Windows.Forms.Button();
             this.pnlLetra = new System.Windows.Forms.Panel();
             this.btnE = new System.Windows.Forms.Button();
             this.btnG = new System.Windows.Forms.Button();
@@ -156,6 +156,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.btnAyuda);
             this.panel10.Controls.Add(this.btnSelectColor);
             this.panel10.Controls.Add(this.pincelJ);
             this.panel10.Controls.Add(this.pincelI);
@@ -172,7 +173,6 @@
             this.panel10.Controls.Add(this.pincelL);
             this.panel10.Controls.Add(this.pincelK);
             this.panel10.Controls.Add(this.btnBB);
-            this.panel10.Controls.Add(this.btnAA);
             this.panel10.Controls.Add(this.pnlLetra);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.txtNota);
@@ -182,9 +182,18 @@
             this.panel10.Size = new System.Drawing.Size(1145, 147);
             this.panel10.TabIndex = 12;
             // 
+            // btnAyuda
+            // 
+            this.btnAyuda.Location = new System.Drawing.Point(12, 73);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Size = new System.Drawing.Size(75, 23);
+            this.btnAyuda.TabIndex = 107;
+            this.btnAyuda.Text = "AYUDA";
+            this.btnAyuda.UseVisualStyleBackColor = true;
+            // 
             // btnSelectColor
             // 
-            this.btnSelectColor.BackColor = System.Drawing.Color.White;
+            this.btnSelectColor.BackColor = System.Drawing.Color.Silver;
             this.btnSelectColor.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -368,7 +377,7 @@
             // 
             // pincelL
             // 
-            this.pincelL.BackColor = System.Drawing.Color.Silver;
+            this.pincelL.BackColor = System.Drawing.Color.Yellow;
             this.pincelL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.pincelL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -378,19 +387,22 @@
             this.pincelL.Size = new System.Drawing.Size(25, 24);
             this.pincelL.TabIndex = 84;
             this.pincelL.UseVisualStyleBackColor = false;
+            this.pincelL.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelK
             // 
             this.pincelK.BackColor = System.Drawing.Color.Silver;
             this.pincelK.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.pincelK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelK.ForeColor = System.Drawing.Color.Silver;
+            this.pincelK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pincelK.ForeColor = System.Drawing.Color.Black;
             this.pincelK.Location = new System.Drawing.Point(91, 30);
             this.pincelK.Name = "pincelK";
             this.pincelK.Size = new System.Drawing.Size(25, 24);
             this.pincelK.TabIndex = 83;
+            this.pincelK.Text = "R";
             this.pincelK.UseVisualStyleBackColor = false;
+            this.pincelK.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // btnBB
             // 
@@ -405,20 +417,6 @@
             this.btnBB.TabIndex = 82;
             this.btnBB.Text = "B";
             this.btnBB.UseVisualStyleBackColor = false;
-            // 
-            // btnAA
-            // 
-            this.btnAA.BackColor = System.Drawing.Color.Silver;
-            this.btnAA.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnAA.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAA.ForeColor = System.Drawing.Color.Black;
-            this.btnAA.Location = new System.Drawing.Point(7, 30);
-            this.btnAA.Name = "btnAA";
-            this.btnAA.Size = new System.Drawing.Size(25, 24);
-            this.btnAA.TabIndex = 81;
-            this.btnAA.Text = "A";
-            this.btnAA.UseVisualStyleBackColor = false;
             // 
             // pnlLetra
             // 
@@ -547,21 +545,21 @@
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Portugues";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -2092,10 +2090,8 @@
         private System.Windows.Forms.TextBox txtBlueView;
         private System.Windows.Forms.Button btnDerecha;
         private System.Windows.Forms.Button btnIzquierda;
-        private System.Windows.Forms.Button pincelL;
         private System.Windows.Forms.Button pincelK;
         private System.Windows.Forms.Button btnBB;
-        private System.Windows.Forms.Button btnAA;
         private System.Windows.Forms.Panel pnlLetra;
         private System.Windows.Forms.Button btnE;
         private System.Windows.Forms.Button btnG;
@@ -2206,5 +2202,7 @@
         private System.Windows.Forms.TextBox txt02;
         private System.Windows.Forms.TextBox txt01;
         private System.Windows.Forms.TextBox txt00;
+        private System.Windows.Forms.Button btnAyuda;
+        private System.Windows.Forms.Button pincelL;
     }
 }

@@ -259,6 +259,32 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public TextBox[,] SetearTextColorInicioConAmarillo(TextBox[,] cajaTexto)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (cajaTexto[f, c].BackColor != Color.Yellow)
+                        cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                }
+            }
+            return cajaTexto;
+        }
+
+        public TextBox[,] SetearTextColorInicioSinAmarillo(TextBox[,] cajaTexto)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (cajaTexto[f, c].BackColor == Color.Yellow)
+                        cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                }
+            }
+            return cajaTexto;
+        }
+
         // METODOS NUMEROS + CANDIDATOS 
         public string [,] ElejiblesInstantaneos(string[,] valorIngresado, string[,] valorCandidato )
         {
