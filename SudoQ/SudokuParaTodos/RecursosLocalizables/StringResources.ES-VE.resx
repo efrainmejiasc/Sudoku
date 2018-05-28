@@ -139,4 +139,31 @@
   <data name="FormularioAzulUno" xml:space="preserve">
     <value>Sudoku Para Todos - Numeros:</value>
   </data>
+  <data name="crearJuego" xml:space="preserve">
+    <value>Crear Juego</value>
+  </data>
+  <data name="guardar" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="guardarComo" xml:space="preserve">
+    <value>Guardar Como</value>
+  </data>
+  <data name="reiniciar" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="abrirJuego" xml:space="preserve">
+    <value>Abrir Juego</value>
+  </data>
+  <data name="configuracion" xml:space="preserve">
+    <value>Configuracion</value>
+  </data>
+  <data name="activar" xml:space="preserve">
+    <value>Activar</value>
+  </data>
+  <data name="desactivar" xml:space="preserve">
+    <value>Desactivar</value>
+  </data>
+  <data name="btnAyuda" xml:space="preserve">
+    <value>AYUDA</value>
+  </data>
 </root>

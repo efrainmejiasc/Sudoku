@@ -42,7 +42,6 @@
             this.pincelA = new System.Windows.Forms.Button();
             this.txtBlueView = new System.Windows.Forms.TextBox();
             this.btnDerecha = new System.Windows.Forms.Button();
-            this.btnIzquierda = new System.Windows.Forms.Button();
             this.pincelL = new System.Windows.Forms.Button();
             this.pincelK = new System.Windows.Forms.Button();
             this.btnBB = new System.Windows.Forms.Button();
@@ -56,13 +55,23 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mArchivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearJuego = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirJuego = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardar = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
+            this.reiniciar = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
             this.mTablero = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.mColores = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuracion = new System.Windows.Forms.ToolStripMenuItem();
             this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
+            this.activar = new System.Windows.Forms.ToolStripMenuItem();
+            this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
             this.txtNota = new System.Windows.Forms.TextBox();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
@@ -169,7 +178,6 @@
             this.panel10.Controls.Add(this.pincelA);
             this.panel10.Controls.Add(this.txtBlueView);
             this.panel10.Controls.Add(this.btnDerecha);
-            this.panel10.Controls.Add(this.btnIzquierda);
             this.panel10.Controls.Add(this.pincelL);
             this.panel10.Controls.Add(this.pincelK);
             this.panel10.Controls.Add(this.btnBB);
@@ -359,22 +367,6 @@
             this.btnDerecha.UseVisualStyleBackColor = false;
             this.btnDerecha.Click += new System.EventHandler(this.NavegacionVistas);
             // 
-            // btnIzquierda
-            // 
-            this.btnIzquierda.BackColor = System.Drawing.Color.Silver;
-            this.btnIzquierda.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnIzquierda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIzquierda.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnIzquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIzquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzquierda.ForeColor = System.Drawing.Color.Silver;
-            this.btnIzquierda.Location = new System.Drawing.Point(596, 36);
-            this.btnIzquierda.Name = "btnIzquierda";
-            this.btnIzquierda.Size = new System.Drawing.Size(36, 24);
-            this.btnIzquierda.TabIndex = 94;
-            this.btnIzquierda.UseVisualStyleBackColor = false;
-            this.btnIzquierda.Click += new System.EventHandler(this.NavegacionVistas);
-            // 
             // pincelL
             // 
             this.pincelL.BackColor = System.Drawing.Color.Yellow;
@@ -528,9 +520,45 @@
             // 
             // mArchivo
             // 
+            this.mArchivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearJuego,
+            this.abrirJuego,
+            this.guardar,
+            this.guardarComo,
+            this.reiniciar});
             this.mArchivo.Name = "mArchivo";
             this.mArchivo.Size = new System.Drawing.Size(70, 20);
             this.mArchivo.Text = "ARCHIVO";
+            // 
+            // crearJuego
+            // 
+            this.crearJuego.Name = "crearJuego";
+            this.crearJuego.Size = new System.Drawing.Size(152, 22);
+            this.crearJuego.Text = "Crear Juego";
+            // 
+            // abrirJuego
+            // 
+            this.abrirJuego.Name = "abrirJuego";
+            this.abrirJuego.Size = new System.Drawing.Size(152, 22);
+            this.abrirJuego.Text = "Abrir Juego";
+            // 
+            // guardar
+            // 
+            this.guardar.Name = "guardar";
+            this.guardar.Size = new System.Drawing.Size(152, 22);
+            this.guardar.Text = "Guardar";
+            // 
+            // guardarComo
+            // 
+            this.guardarComo.Name = "guardarComo";
+            this.guardarComo.Size = new System.Drawing.Size(152, 22);
+            this.guardarComo.Text = "Guardar Como";
+            // 
+            // reiniciar
+            // 
+            this.reiniciar.Name = "reiniciar";
+            this.reiniciar.Size = new System.Drawing.Size(152, 22);
+            this.reiniciar.Text = "Reiniciar";
             // 
             // mIdiomas
             // 
@@ -545,41 +573,83 @@
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Portugues";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mTablero
             // 
+            this.mTablero.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
             this.mTablero.Name = "mTablero";
             this.mTablero.Size = new System.Drawing.Size(68, 20);
             this.mTablero.Text = "TABLERO";
             // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Text = "80%";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Text = "100%";
+            // 
             // mColores
             // 
+            this.mColores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuracion});
             this.mColores.Name = "mColores";
             this.mColores.Size = new System.Drawing.Size(70, 20);
             this.mColores.Text = "COLORES";
             // 
+            // configuracion
+            // 
+            this.configuracion.Name = "configuracion";
+            this.configuracion.Size = new System.Drawing.Size(152, 22);
+            this.configuracion.Text = "Configuracion";
+            // 
             // mContadores
             // 
+            this.mContadores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.activar,
+            this.desactivar});
             this.mContadores.Name = "mContadores";
             this.mContadores.Size = new System.Drawing.Size(95, 20);
             this.mContadores.Text = "CONTADORES";
+            // 
+            // activar
+            // 
+            this.activar.Checked = true;
+            this.activar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.activar.Name = "activar";
+            this.activar.Size = new System.Drawing.Size(152, 22);
+            this.activar.Text = "Activar";
+            // 
+            // desactivar
+            // 
+            this.desactivar.Checked = true;
+            this.desactivar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.desactivar.Name = "desactivar";
+            this.desactivar.Size = new System.Drawing.Size(152, 22);
+            this.desactivar.Text = "Desactivar";
             // 
             // txtNota
             // 
@@ -2089,7 +2159,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TextBox txtBlueView;
         private System.Windows.Forms.Button btnDerecha;
-        private System.Windows.Forms.Button btnIzquierda;
         private System.Windows.Forms.Button pincelK;
         private System.Windows.Forms.Button btnBB;
         private System.Windows.Forms.Panel pnlLetra;
@@ -2204,5 +2273,15 @@
         private System.Windows.Forms.TextBox txt00;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button pincelL;
+        private System.Windows.Forms.ToolStripMenuItem crearJuego;
+        private System.Windows.Forms.ToolStripMenuItem abrirJuego;
+        private System.Windows.Forms.ToolStripMenuItem guardar;
+        private System.Windows.Forms.ToolStripMenuItem guardarComo;
+        private System.Windows.Forms.ToolStripMenuItem reiniciar;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem configuracion;
+        private System.Windows.Forms.ToolStripMenuItem activar;
+        private System.Windows.Forms.ToolStripMenuItem desactivar;
     }
 }

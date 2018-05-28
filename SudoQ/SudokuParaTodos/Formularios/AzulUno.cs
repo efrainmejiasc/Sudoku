@@ -54,7 +54,6 @@ namespace SudokuParaTodos.Formularios
         private void AzulUno_Load(object sender, EventArgs e)
         {
             ComportamientoObjetoInicio();
-            ContadorIngresado();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -152,7 +151,7 @@ namespace SudokuParaTodos.Formularios
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
-         
+            ContadorIngresado();
         }
 
         private void AplicarIdioma()
@@ -160,9 +159,18 @@ namespace SudokuParaTodos.Formularios
             this.Text = RecursosLocalizables.StringResources.FormularioAzulUno;
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
-            mColores.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mColores.Text = RecursosLocalizables.StringResources.mColores;
             mTablero.Text = RecursosLocalizables.StringResources.mTablero;
             mContadores.Text = RecursosLocalizables.StringResources.mContadores;
+            crearJuego.Text = RecursosLocalizables.StringResources.crearJuego;
+            abrirJuego.Text = RecursosLocalizables.StringResources.abrirJuego;
+            guardar.Text = RecursosLocalizables.StringResources.guardar;
+            guardarComo.Text = RecursosLocalizables.StringResources.guardarComo;
+            reiniciar.Text = RecursosLocalizables.StringResources.reiniciar;
+            configuracion.Text = RecursosLocalizables.StringResources.configuracion;
+            activar.Text = RecursosLocalizables.StringResources.activar;
+            desactivar.Text = RecursosLocalizables.StringResources.desactivar;
+            btnAyuda.Text = RecursosLocalizables.StringResources.btnAyuda;
         }
 
         private void Lenguaje_Click(object sender, EventArgs e)
@@ -229,23 +237,13 @@ namespace SudokuParaTodos.Formularios
         {
             string vistazul = txtBlueView.Text;
             Button btn = (Button)sender;
-            switch (btn.Name)
-            {
-                case (EngineData.btnIzquierda):
-                    if (vistazul == EngineData.azul1_5) txtBlueView.Text = EngineData.azul5_5;
-                    if (vistazul == EngineData.azul2_5) txtBlueView.Text = EngineData.azul1_5;
-                    if (vistazul == EngineData.azul3_5) txtBlueView.Text = EngineData.azul2_5;
-                    if (vistazul == EngineData.azul4_5) txtBlueView.Text = EngineData.azul3_5;
-                    if (vistazul == EngineData.azul5_5) txtBlueView.Text = EngineData.azul4_5;
-                    break;
-                case (EngineData.btnDerecha):
-                    if (vistazul == EngineData.azul1_5) txtBlueView.Text = EngineData.azul2_5;
-                    if (vistazul == EngineData.azul2_5) txtBlueView.Text = EngineData.azul3_5;
-                    if (vistazul == EngineData.azul3_5) txtBlueView.Text = EngineData.azul4_5;
-                    if (vistazul == EngineData.azul4_5) txtBlueView.Text = EngineData.azul5_5;
-                    if (vistazul == EngineData.azul5_5) txtBlueView.Text = EngineData.azul1_5;
-                    break;
-            }
+
+            if (vistazul == EngineData.azul1_5) txtBlueView.Text = EngineData.azul5_5;
+            if (vistazul == EngineData.azul2_5) txtBlueView.Text = EngineData.azul1_5;
+            if (vistazul == EngineData.azul3_5) txtBlueView.Text = EngineData.azul2_5;
+            if (vistazul == EngineData.azul4_5) txtBlueView.Text = EngineData.azul3_5;
+            if (vistazul == EngineData.azul5_5) txtBlueView.Text = EngineData.azul4_5;
+
             ComportamientoVistaAzul(txtBlueView.Text);
         }
 
@@ -414,6 +412,5 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
-     
     }
 }

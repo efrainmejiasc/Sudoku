@@ -63,9 +63,36 @@ namespace SudokuParaTodos.RecursosLocalizables {
         /// <summary>
         ///   Busca una cadena traducida similar a Abrir Juego.
         /// </summary>
+        internal static string abrirJuego {
+            get {
+                return ResourceManager.GetString("abrirJuego", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Activar.
+        /// </summary>
+        internal static string activar {
+            get {
+                return ResourceManager.GetString("activar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Abrir Juego.
+        /// </summary>
         internal static string btnAbrir {
             get {
                 return ResourceManager.GetString("btnAbrir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a AYUDA.
+        /// </summary>
+        internal static string btnAyuda {
+            get {
+                return ResourceManager.GetString("btnAyuda", resourceCulture);
             }
         }
         
@@ -97,6 +124,33 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Configuracion.
+        /// </summary>
+        internal static string configuracion {
+            get {
+                return ResourceManager.GetString("configuracion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crear Juego.
+        /// </summary>
+        internal static string crearJuego {
+            get {
+                return ResourceManager.GetString("crearJuego", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Desactivar.
+        /// </summary>
+        internal static string desactivar {
+            get {
+                return ResourceManager.GetString("desactivar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Sudoku Para Todos.
         /// </summary>
         internal static string Form1 {
@@ -111,6 +165,24 @@ namespace SudokuParaTodos.RecursosLocalizables {
         internal static string FormularioAzulUno {
             get {
                 return ResourceManager.GetString("FormularioAzulUno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar.
+        /// </summary>
+        internal static string guardar {
+            get {
+                return ResourceManager.GetString("guardar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar Como.
+        /// </summary>
+        internal static string guardarComo {
+            get {
+                return ResourceManager.GetString("guardarComo", resourceCulture);
             }
         }
         
@@ -183,6 +255,15 @@ namespace SudokuParaTodos.RecursosLocalizables {
         internal static string mTablero {
             get {
                 return ResourceManager.GetString("mTablero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Reiniciar.
+        /// </summary>
+        internal static string reiniciar {
+            get {
+                return ResourceManager.GetString("reiniciar", resourceCulture);
             }
         }
     }

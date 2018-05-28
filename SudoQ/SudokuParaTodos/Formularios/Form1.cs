@@ -218,6 +218,7 @@ namespace SudokuParaTodos
                     item.GotFocus += delegate { HideCaret(item.Handle); };
                     item.ReadOnly = false;
                 }
+                SetLetrasJuegoFEG();
             }
         }
 
@@ -317,6 +318,16 @@ namespace SudokuParaTodos
             }
             if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
             else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+        }
+
+        private void InicializarACB()
+        {
+            btnA.Text = EngineData.Zero;
+            btnB.Text = EngineData.Zero;
+            btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+            btnA.Visible = EngineData.Falso;
+            btnB.Visible = EngineData.Falso;
+            btnC.Visible = EngineData.Falso;
         }
 
         ////////////EVENTOS////////////////////////////////////////////////////////////////////////
@@ -470,6 +481,7 @@ namespace SudokuParaTodos
                     openFrom = EngineData.Exe;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Falso;
+                    InicializarACB();
                     SetLetrasJuegoFEG();
                     break;
                 case (EngineData.BtnSolucion):
@@ -504,6 +516,7 @@ namespace SudokuParaTodos
                     openFrom = EngineData.Exe;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Falso;
+                    InicializarACB();
                     SetLetrasJuegoFEG();
                     break;
             }
