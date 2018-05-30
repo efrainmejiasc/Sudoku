@@ -113,6 +113,12 @@ namespace SudokuParaTodos
 
         public string GetOpenFrom () { return openFrom; }
 
+        private string nombreIdioma = string.Empty;
+
+        public void SetNombreIdioma(string v) { nombreIdioma = v; }
+
+        public string GetNombreIdioma() { return nombreIdioma; }
+
         private string idioma = string.Empty;
 
         public void SetIdioma(string v) { idioma = v; }

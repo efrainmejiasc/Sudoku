@@ -24,7 +24,7 @@ namespace SudokuParaTodos
             }
             else
             {
-                Valor.SetOpenFrom(EngineData.File);
+                Valor.SetOpenFrom(EngineData.Exe);
                 Valor.SetPathArchivo(args[0]);
                 Application.Run(new Formularios.AzulUno());
             }

@@ -44,6 +44,7 @@ namespace SudokuParaTodos.Formularios
         private string[] solo = new string[27];
         private string[] oculto = new string[27];
         private int contadorIngresado = 0;
+        private bool contadorActivado = EngineData.Falso;
 
 
         public AzulUno()
@@ -53,6 +54,17 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_Load(object sender, EventArgs e)
         {
+            if (Valor.GetIdioma() == string.Empty)
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
+                Valor.SetIdioma(EngineData.CulturaEspañol);
+                Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(Valor.GetIdioma());
+            }
+            AplicarIdioma();
             ComportamientoObjetoInicio();
         }
 
@@ -133,25 +145,8 @@ namespace SudokuParaTodos.Formularios
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             btnPincel= AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);
-            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
-            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
-            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
-            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
-            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
-            bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
-            if (resultado)
-            {
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-            }
-            else
-            {
-                valorIngresado = valorInicio;
-                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-            }
-            ContadorIngresado();
+            ActivarDesactivarContadores(EngineData.Falso);
+            AbrirJuego(pathArchivo);
         }
 
         private void AplicarIdioma()
@@ -181,15 +176,18 @@ namespace SudokuParaTodos.Formularios
             {
                 case (EngineData.Español):
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
-                    Valor.SetIdioma(EngineData.LenguajeEspañol);
+                    Valor.SetIdioma(EngineData.CulturaEspañol);
+                    Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
                     break;
                 case (EngineData.Ingles):
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
-                    Valor.SetIdioma(EngineData.LenguajeIngles);
+                    Valor.SetIdioma(EngineData.CulturaIngles);
+                    Valor.SetNombreIdioma(EngineData.LenguajeIngles);
                     break;
                 case (EngineData.Portugues):
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
-                    Valor.SetIdioma(EngineData.LenguajePortugues);
+                    Valor.SetIdioma(EngineData.CulturaPortugues);
+                    Valor.SetNombreIdioma(EngineData.LenguajePortugues);
                     break;
             }
             AplicarIdioma();
@@ -270,31 +268,35 @@ namespace SudokuParaTodos.Formularios
            SetSoloOculto();
            SetLetrasJuegoACB();
            SetLetrasJuegoFEG();
-        }
-
-        private void SetLetrasJuegoFEG()
-        {
-            LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
-            btnF.Text = LetrasJuegoFEG.F.ToString();
-            btnE.Text = LetrasJuegoFEG.E.ToString();
-            btnG.Text = LetrasJuegoFEG.G.ToString();
-        }
-
-        private void SetLetrasJuegoACB()
-        {
-            LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
-            btnA.Text = LetrasJuegoACB.A.ToString();
-            btnB.Text = LetrasJuegoACB.B.ToString();
-            if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
+           if (!contadorActivado)
             {
-                btnBB.Visible = EngineData.Falso;
+                btnF.Text = EngineData.Zero;
+                btnE.Text = EngineData.Zero;
+                btnG.Text = EngineData.Zero;
+                btnA.Visible = EngineData.Falso;
+                btnB.Visible = EngineData.Falso;
             }
             else
             {
-                btnBB.Visible = EngineData.Verdadero;
+                btnA.Visible = EngineData.Verdadero;
+                btnB.Visible = EngineData.Verdadero;
             }
-            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
-            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+        }
+
+        private void ActivarDesactivarContadores(bool action)
+        {
+            if (action)
+            {
+              activar.Checked = EngineData.Verdadero;
+              desactivar.Checked = EngineData.Falso;
+              contadorActivado = EngineData.Verdadero;
+            }
+            else
+            {
+              desactivar.Checked = EngineData.Verdadero;
+              activar.Checked = EngineData.Falso;
+              contadorActivado = EngineData.Falso;
+            }
         }
 
         private void SetSoloOculto()
@@ -314,6 +316,64 @@ namespace SudokuParaTodos.Formularios
                 oculto = Funcion.SetearOcultoRecuadro(oculto, valor, f, valorCandidatoSinEliminados);
                 valor.Items.Clear();
             }
+        }
+
+        private void SetLetrasJuegoACB()
+        {
+            LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
+            btnA.Text = LetrasJuegoACB.A.ToString();
+            btnB.Text = LetrasJuegoACB.B.ToString();
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
+            {
+                btnBB.Visible = EngineData.Falso;
+            }
+            else
+            {
+                btnBB.Visible = EngineData.Verdadero;
+            }
+            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+        }
+
+        private void SetLetrasJuegoFEG()
+        {
+            LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
+            btnF.Text = LetrasJuegoFEG.F.ToString();
+            btnE.Text = LetrasJuegoFEG.E.ToString();
+            btnG.Text = LetrasJuegoFEG.G.ToString();
+        }
+
+        private void AbrirJuego(string pathArchivo)
+        {
+            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
+            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
+            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
+            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+            bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
+            if (resultado)
+            {
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            }
+            else
+            {
+                valorIngresado = valorInicio;
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            }
+            ContadorIngresado();
+        }
+
+        private void GuardarJuego(string pathArchivo)
+        {
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
         private void txt00_Enter(object sender, EventArgs e)
@@ -412,5 +472,85 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
+        //*****************************************************************************************************************
+        private void crearJuego_Click(object sender, EventArgs e)
+        {
+            Valor.SetOpenFrom(EngineData.Exe);
+            Form1 f = new Form1(Valor.GetIdioma()) ;
+            f.Show();
+            this.Hide();
+        }
+
+        private void abrirJuego_Click(object sender, EventArgs e)
+        {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.openFileDialog1.FileName = string.Empty;
+            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.openFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.openFileDialog1.ShowDialog();
+            pathArchivo = openFileDialog1.FileName;
+
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            Valor.SetPathArchivo(pathArchivo);
+            AbrirJuego(pathArchivo);
+        }
+
+        private void reiniciar_Click(object sender, EventArgs e)
+        {
+            pathArchivo = Valor.GetPathArchivo();
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            valorIngresado = new string[9, 9];
+            valorEliminado = new string[9, 9];
+            GuardarJuego(pathArchivo);
+            AbrirJuego(pathArchivo);
+            ContadorIngresado();
+        }
+
+        private void guardar_Click(object sender, EventArgs e)
+        {
+            pathArchivo = Valor.GetPathArchivo();
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            GuardarJuego(pathArchivo);
+        }
+
+        private void guardarComo_Click(object sender, EventArgs e)
+        {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.openFileDialog1.FileName = string.Empty;
+            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.openFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.openFileDialog1.ShowDialog();
+            pathArchivo = openFileDialog1.FileName;
+
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            Valor.SetPathArchivo(pathArchivo);
+            GuardarJuego(pathArchivo);
+        }
+
+        private void activar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Verdadero);
+            ContadorIngresado();
+        }
+
+        private void desactivar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Falso);
+            ContadorIngresado();
+        }
     }
 }
