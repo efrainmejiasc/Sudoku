@@ -285,6 +285,19 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public TextBox[,] SetearEstadoAmarillo( string[,] valorAmarillo, TextBox[,] cajaTexto)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (valorAmarillo[f, c] == EngineData.uno)
+                        cajaTexto[f, c].BackColor = Color.Yellow;
+                }
+            }
+            return cajaTexto;
+        }
+
         // METODOS NUMEROS + CANDIDATOS 
         public string [,] ElejiblesInstantaneos(string[,] valorIngresado, string[,] valorCandidato )
         {
@@ -748,6 +761,73 @@ namespace SudokuParaTodos
             }
         }
 
+        public void GuardarValoresAmarilloInicio(string pathArchivo, string[,] valorAmarillo)
+        {
+            valorAmarillo = new string[9, 9];
+            if (pathArchivo != null && pathArchivo != "")
+            {
+                string[] partes = pathArchivo.Split('\\');
+                string nombreArchivo = partes[partes.Length - 1];
+                string vLinea = string.Empty;
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo, true))
+                {
+                    string vSolucion = string.Empty;
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        for (int c = 0; c <= 8; c++)
+                        {
+                            if (valorAmarillo[f, c] != null && valorAmarillo[f, c] != string.Empty)
+                            {
+                                vSolucion = EngineData.uno;
+                            }
+                            else
+                            {
+                                vSolucion = EngineData.Zero;
+                            }
+                            if (c == 0) vLinea = vSolucion + "-";
+                            else if (c > 0 && c < 8) vLinea = vLinea + vSolucion + "-";
+                            else if (c == 8) vLinea = vLinea + vSolucion;
+                        }
+                        file.WriteLine(vLinea);
+                        vLinea = string.Empty;
+                    }
+
+                }
+            }
+        }
+
+        public TextBox[,] GuardarValoresAmarillo(string pathArchivo , TextBox[,] cajaTexto)
+        {
+            string[] partes = pathArchivo.Split('\\');
+            string nombreArchivo = partes[partes.Length - 1];
+            string vLinea = string.Empty;
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo, true))
+            {
+                string vSolucion = string.Empty;
+                for (int f = 0; f <= 8; f++)
+                {
+                    for (int c = 0; c <= 8; c++)
+                    {
+                        if (cajaTexto[f,c].BackColor == Color.Yellow)
+                        {
+                            vSolucion = EngineData.uno;
+                        }
+                        else
+                        {
+                            vSolucion = EngineData.Zero;
+                        }
+                        if (c == 0) vLinea = vSolucion + "-";
+                        else if (c > 0 && c < 8) vLinea = vLinea + vSolucion + "-";
+                        else if (c == 8) vLinea = vLinea + vSolucion;
+                    }
+                    file.WriteLine(vLinea);
+                    vLinea = string.Empty;
+                }
+
+            }
+            return cajaTexto;
+        }
+
         //ATRIBUTOS ARCHIVO
         public void ReadWriteTxt(string pathArchivo)
         {
@@ -852,7 +932,7 @@ namespace SudokuParaTodos
         {
             valorInicio = new string[9, 9];
             int fila = 0;
-            for (int f = 0; f <= 35; f++)
+            for (int f = 0; f <= 26; f++)
             {
                 if (f >= 18 && f <= 26)
                 {
@@ -892,6 +972,45 @@ namespace SudokuParaTodos
                 }
             }
             return valorSolucion;
+        }
+
+        public string[,] SetValorAmarillo(ArrayList arrText, string[,] valorAmarillo )
+        {
+            int fila = 0;
+            valorAmarillo = new string[9, 9];
+            for (int f = 0; f <= 44; f++)
+            {
+                if (f >= 36 && f <= 44)
+                {
+                    string[] lineaVector = arrText[f].ToString().Split('-');
+                    if (lineaVector.Length != 9) return valorAmarillo;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != EngineData.Zero)
+                        {
+                            valorAmarillo[fila, columna] = lineaVector[columna];
+                        }
+                    }
+                    fila++;
+                }
+            }
+            return valorAmarillo;
+        }
+
+        public string[,] IgualarIngresadoInicio(string[,] vIngresado ,string[,] vInicio)
+        {
+           
+            for (int f = 0; f <= 8; f++)
+            {
+               for (int c = 0; c <= 8; c++)
+                {
+                   if (vInicio[f,c] != null && vInicio[f,c] != string.Empty)
+                   {
+                        vIngresado[f, c] = vInicio[f, c];
+                   }
+                }
+            }
+            return vIngresado;
         }
 
         //FILAS COLUMNAS RECUADROS
@@ -1840,7 +1959,6 @@ namespace SudokuParaTodos
             dgv.ClearSelection();
             return dgv;
         }
-
 
     }
 }

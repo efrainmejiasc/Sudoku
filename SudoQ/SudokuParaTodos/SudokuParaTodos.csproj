@@ -90,6 +90,12 @@
   <ItemGroup>
     <Compile Include="Engine\EngineData.cs" />
     <Compile Include="Engine\EngineSudoku.cs" />
+    <Compile Include="Formularios\AzulDos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AzulDos.Designer.cs">
+      <DependentUpon>AzulDos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StringResources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\AzulDos.resx">
+      <DependentUpon>AzulDos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AzulUno.en-US.resx">
       <DependentUpon>AzulUno.cs</DependentUpon>
     </EmbeddedResource>

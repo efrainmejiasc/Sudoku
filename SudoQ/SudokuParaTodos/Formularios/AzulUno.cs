@@ -31,6 +31,7 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
+        private string[,] valorAmarillo = new string[9, 9];
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private Button[] btnPincel2 = new Button[2];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
@@ -270,9 +271,6 @@ namespace SudokuParaTodos.Formularios
            SetLetrasJuegoFEG();
            if (!contadorActivado)
             {
-                btnF.Text = EngineData.Zero;
-                btnE.Text = EngineData.Zero;
-                btnG.Text = EngineData.Zero;
                 btnA.Visible = EngineData.Falso;
                 btnB.Visible = EngineData.Falso;
             }
@@ -350,29 +348,41 @@ namespace SudokuParaTodos.Formularios
             valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
             valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
             valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+            valorAmarillo = Funcion.SetValorAmarillo(arrText, valorAmarillo);
             bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
             if (resultado)
             {
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
             else
             {
-                valorIngresado = valorInicio;
+                valorIngresado = Funcion.IgualarIngresadoInicio(valorIngresado, valorInicio);
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
+            txtSudoku = Funcion.SetearEstadoAmarillo(valorAmarillo, txtSudoku);
             ContadorIngresado();
         }
 
-        private void GuardarJuego(string pathArchivo)
+        private void GuardarJuego(string pathArchivo, string tipo)
         {
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
             Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
             Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
             Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
             Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
+            if (tipo == string.Empty)
+            {
+                Funcion.GuardarValoresAmarillo(pathArchivo, txtSudoku);
+            }
+            else
+            {
+                Funcion.GuardarValoresAmarilloInicio(pathArchivo, valorAmarillo);
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            }
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
@@ -424,12 +434,17 @@ namespace SudokuParaTodos.Formularios
                 if (txt.Text == EngineData.Zero)
                 {
                     txt.Text = string.Empty;
+
                     valorIngresado[row, col] = string.Empty;
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                    }
                 }
                 else
                 {
                     valorIngresado[row, col] = txt.Text;
-                   
+
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
                     {
                         txt.Text = valorInicio[row, col];
@@ -508,7 +523,8 @@ namespace SudokuParaTodos.Formularios
             }
             valorIngresado = new string[9, 9];
             valorEliminado = new string[9, 9];
-            GuardarJuego(pathArchivo);
+            GuardarJuego(pathArchivo,EngineData.reiniciar);
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             AbrirJuego(pathArchivo);
             ContadorIngresado();
         }
@@ -520,25 +536,25 @@ namespace SudokuParaTodos.Formularios
             {
                 return;
             }
-            GuardarJuego(pathArchivo);
+            GuardarJuego(pathArchivo,string.Empty);
         }
 
         private void guardarComo_Click(object sender, EventArgs e)
         {
             string nombreIdioma = Valor.GetNombreIdioma();
-            this.openFileDialog1.FileName = string.Empty;
-            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
-            this.openFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
-            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
-            this.openFileDialog1.ShowDialog();
-            pathArchivo = openFileDialog1.FileName;
+            this.saveFileDialog1.FileName = string.Empty;
+            this.saveFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.saveFileDialog1.ShowDialog();
+            pathArchivo = saveFileDialog1.FileName;
 
             if (pathArchivo == string.Empty)
             {
                 return;
             }
             Valor.SetPathArchivo(pathArchivo);
-            GuardarJuego(pathArchivo);
+            GuardarJuego(pathArchivo,string.Empty);
         }
 
         private void activar_Click(object sender, EventArgs e)
