@@ -110,88 +110,6 @@
             this.txt02 = new System.Windows.Forms.TextBox();
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.textBox61 = new System.Windows.Forms.TextBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.textBox70 = new System.Windows.Forms.TextBox();
-            this.textBox71 = new System.Windows.Forms.TextBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.textBox73 = new System.Windows.Forms.TextBox();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.textBox75 = new System.Windows.Forms.TextBox();
-            this.textBox76 = new System.Windows.Forms.TextBox();
-            this.textBox77 = new System.Windows.Forms.TextBox();
-            this.textBox78 = new System.Windows.Forms.TextBox();
-            this.textBox79 = new System.Windows.Forms.TextBox();
-            this.textBox80 = new System.Windows.Forms.TextBox();
-            this.textBox81 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnSelectColor = new System.Windows.Forms.Button();
@@ -206,8 +124,6 @@
             this.pincelA = new System.Windows.Forms.Button();
             this.txtBlueView = new System.Windows.Forms.TextBox();
             this.btnDerecha = new System.Windows.Forms.Button();
-            this.pincelL = new System.Windows.Forms.Button();
-            this.pincelK = new System.Windows.Forms.Button();
             this.btnBB = new System.Windows.Forms.Button();
             this.pnlLetra = new System.Windows.Forms.Panel();
             this.btnE = new System.Windows.Forms.Button();
@@ -237,12 +153,94 @@
             this.activar = new System.Windows.Forms.ToolStripMenuItem();
             this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
             this.txtNota = new System.Windows.Forms.TextBox();
+            this.pnl2 = new System.Windows.Forms.Panel();
+            this.t88 = new System.Windows.Forms.TextBox();
+            this.t85 = new System.Windows.Forms.TextBox();
+            this.t87 = new System.Windows.Forms.TextBox();
+            this.t84 = new System.Windows.Forms.TextBox();
+            this.t86 = new System.Windows.Forms.TextBox();
+            this.t83 = new System.Windows.Forms.TextBox();
+            this.t78 = new System.Windows.Forms.TextBox();
+            this.t75 = new System.Windows.Forms.TextBox();
+            this.t77 = new System.Windows.Forms.TextBox();
+            this.t74 = new System.Windows.Forms.TextBox();
+            this.t76 = new System.Windows.Forms.TextBox();
+            this.t73 = new System.Windows.Forms.TextBox();
+            this.t68 = new System.Windows.Forms.TextBox();
+            this.t65 = new System.Windows.Forms.TextBox();
+            this.t67 = new System.Windows.Forms.TextBox();
+            this.t64 = new System.Windows.Forms.TextBox();
+            this.t66 = new System.Windows.Forms.TextBox();
+            this.t63 = new System.Windows.Forms.TextBox();
+            this.t82 = new System.Windows.Forms.TextBox();
+            this.t81 = new System.Windows.Forms.TextBox();
+            this.t80 = new System.Windows.Forms.TextBox();
+            this.t72 = new System.Windows.Forms.TextBox();
+            this.t71 = new System.Windows.Forms.TextBox();
+            this.t70 = new System.Windows.Forms.TextBox();
+            this.t62 = new System.Windows.Forms.TextBox();
+            this.t61 = new System.Windows.Forms.TextBox();
+            this.t60 = new System.Windows.Forms.TextBox();
+            this.t58 = new System.Windows.Forms.TextBox();
+            this.t57 = new System.Windows.Forms.TextBox();
+            this.t56 = new System.Windows.Forms.TextBox();
+            this.t48 = new System.Windows.Forms.TextBox();
+            this.t47 = new System.Windows.Forms.TextBox();
+            this.t46 = new System.Windows.Forms.TextBox();
+            this.t38 = new System.Windows.Forms.TextBox();
+            this.t37 = new System.Windows.Forms.TextBox();
+            this.t36 = new System.Windows.Forms.TextBox();
+            this.t55 = new System.Windows.Forms.TextBox();
+            this.t54 = new System.Windows.Forms.TextBox();
+            this.t53 = new System.Windows.Forms.TextBox();
+            this.t45 = new System.Windows.Forms.TextBox();
+            this.t44 = new System.Windows.Forms.TextBox();
+            this.t43 = new System.Windows.Forms.TextBox();
+            this.t35 = new System.Windows.Forms.TextBox();
+            this.t34 = new System.Windows.Forms.TextBox();
+            this.t33 = new System.Windows.Forms.TextBox();
+            this.t52 = new System.Windows.Forms.TextBox();
+            this.t51 = new System.Windows.Forms.TextBox();
+            this.t28 = new System.Windows.Forms.TextBox();
+            this.t06 = new System.Windows.Forms.TextBox();
+            this.t50 = new System.Windows.Forms.TextBox();
+            this.t27 = new System.Windows.Forms.TextBox();
+            this.t42 = new System.Windows.Forms.TextBox();
+            this.t18 = new System.Windows.Forms.TextBox();
+            this.t41 = new System.Windows.Forms.TextBox();
+            this.t07 = new System.Windows.Forms.TextBox();
+            this.t40 = new System.Windows.Forms.TextBox();
+            this.t17 = new System.Windows.Forms.TextBox();
+            this.t32 = new System.Windows.Forms.TextBox();
+            this.t16 = new System.Windows.Forms.TextBox();
+            this.t31 = new System.Windows.Forms.TextBox();
+            this.t08 = new System.Windows.Forms.TextBox();
+            this.t26 = new System.Windows.Forms.TextBox();
+            this.t30 = new System.Windows.Forms.TextBox();
+            this.t25 = new System.Windows.Forms.TextBox();
+            this.t24 = new System.Windows.Forms.TextBox();
+            this.t23 = new System.Windows.Forms.TextBox();
+            this.t15 = new System.Windows.Forms.TextBox();
+            this.t14 = new System.Windows.Forms.TextBox();
+            this.t13 = new System.Windows.Forms.TextBox();
+            this.t05 = new System.Windows.Forms.TextBox();
+            this.t04 = new System.Windows.Forms.TextBox();
+            this.t03 = new System.Windows.Forms.TextBox();
+            this.t22 = new System.Windows.Forms.TextBox();
+            this.t21 = new System.Windows.Forms.TextBox();
+            this.t20 = new System.Windows.Forms.TextBox();
+            this.t12 = new System.Windows.Forms.TextBox();
+            this.t11 = new System.Windows.Forms.TextBox();
+            this.t10 = new System.Windows.Forms.TextBox();
+            this.t02 = new System.Windows.Forms.TextBox();
+            this.t01 = new System.Windows.Forms.TextBox();
+            this.t00 = new System.Windows.Forms.TextBox();
             this.pnl1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.pnl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl1
@@ -347,6 +345,11 @@
             this.txt88.Size = new System.Drawing.Size(59, 46);
             this.txt88.TabIndex = 30;
             this.txt88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt88.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt88.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt88.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt88.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt85
             // 
@@ -360,6 +363,11 @@
             this.txt85.Size = new System.Drawing.Size(59, 46);
             this.txt85.TabIndex = 92;
             this.txt85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt85.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt85.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt85.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt85.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt85.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt87
             // 
@@ -373,6 +381,11 @@
             this.txt87.Size = new System.Drawing.Size(59, 46);
             this.txt87.TabIndex = 29;
             this.txt87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt87.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt87.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt87.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt87.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt84
             // 
@@ -386,6 +399,11 @@
             this.txt84.Size = new System.Drawing.Size(59, 46);
             this.txt84.TabIndex = 91;
             this.txt84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt84.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt84.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt84.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt84.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt84.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt86
             // 
@@ -399,6 +417,11 @@
             this.txt86.Size = new System.Drawing.Size(59, 46);
             this.txt86.TabIndex = 28;
             this.txt86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt86.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt86.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt86.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt86.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt86.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt83
             // 
@@ -412,6 +435,11 @@
             this.txt83.Size = new System.Drawing.Size(59, 46);
             this.txt83.TabIndex = 90;
             this.txt83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt83.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt83.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt83.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt83.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt83.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt78
             // 
@@ -425,6 +453,11 @@
             this.txt78.Size = new System.Drawing.Size(59, 46);
             this.txt78.TabIndex = 27;
             this.txt78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt78.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt78.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt78.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt78.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt78.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt75
             // 
@@ -438,6 +471,11 @@
             this.txt75.Size = new System.Drawing.Size(59, 46);
             this.txt75.TabIndex = 89;
             this.txt75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt75.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt75.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt75.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt75.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt75.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt77
             // 
@@ -451,6 +489,11 @@
             this.txt77.Size = new System.Drawing.Size(59, 46);
             this.txt77.TabIndex = 26;
             this.txt77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt77.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt77.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt77.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt77.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt77.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt74
             // 
@@ -464,6 +507,11 @@
             this.txt74.Size = new System.Drawing.Size(59, 46);
             this.txt74.TabIndex = 88;
             this.txt74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt74.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt74.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt74.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt74.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt74.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt76
             // 
@@ -477,6 +525,11 @@
             this.txt76.Size = new System.Drawing.Size(59, 46);
             this.txt76.TabIndex = 25;
             this.txt76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt76.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt76.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt76.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt76.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt76.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt73
             // 
@@ -490,6 +543,11 @@
             this.txt73.Size = new System.Drawing.Size(59, 46);
             this.txt73.TabIndex = 87;
             this.txt73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt73.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt73.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt73.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt73.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt73.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt68
             // 
@@ -503,6 +561,11 @@
             this.txt68.Size = new System.Drawing.Size(59, 46);
             this.txt68.TabIndex = 24;
             this.txt68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt68.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt68.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt68.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt68.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt65
             // 
@@ -516,6 +579,11 @@
             this.txt65.Size = new System.Drawing.Size(59, 46);
             this.txt65.TabIndex = 86;
             this.txt65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt65.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt65.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt65.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt65.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt67
             // 
@@ -529,6 +597,11 @@
             this.txt67.Size = new System.Drawing.Size(59, 46);
             this.txt67.TabIndex = 23;
             this.txt67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt67.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt67.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt67.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt67.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt64
             // 
@@ -542,6 +615,11 @@
             this.txt64.Size = new System.Drawing.Size(59, 46);
             this.txt64.TabIndex = 85;
             this.txt64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt64.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt64.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt64.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt64.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt66
             // 
@@ -555,6 +633,11 @@
             this.txt66.Size = new System.Drawing.Size(59, 46);
             this.txt66.TabIndex = 22;
             this.txt66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt66.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt66.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt66.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt66.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt63
             // 
@@ -568,6 +651,11 @@
             this.txt63.Size = new System.Drawing.Size(59, 46);
             this.txt63.TabIndex = 84;
             this.txt63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt63.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt63.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt63.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt63.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt82
             // 
@@ -581,6 +669,11 @@
             this.txt82.Size = new System.Drawing.Size(59, 46);
             this.txt82.TabIndex = 83;
             this.txt82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt82.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt82.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt82.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt82.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt82.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt81
             // 
@@ -594,6 +687,11 @@
             this.txt81.Size = new System.Drawing.Size(59, 46);
             this.txt81.TabIndex = 82;
             this.txt81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt81.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt81.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt81.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt81.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt81.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt80
             // 
@@ -607,6 +705,11 @@
             this.txt80.Size = new System.Drawing.Size(59, 46);
             this.txt80.TabIndex = 81;
             this.txt80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt80.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt80.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt80.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt80.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt80.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt72
             // 
@@ -620,6 +723,11 @@
             this.txt72.Size = new System.Drawing.Size(59, 46);
             this.txt72.TabIndex = 80;
             this.txt72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt72.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt72.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt72.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt72.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt72.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt71
             // 
@@ -633,6 +741,11 @@
             this.txt71.Size = new System.Drawing.Size(59, 46);
             this.txt71.TabIndex = 79;
             this.txt71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt71.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt71.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt71.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt71.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt71.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt70
             // 
@@ -646,6 +759,11 @@
             this.txt70.Size = new System.Drawing.Size(59, 46);
             this.txt70.TabIndex = 78;
             this.txt70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt70.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt70.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt70.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt70.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt70.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt62
             // 
@@ -659,6 +777,11 @@
             this.txt62.Size = new System.Drawing.Size(59, 46);
             this.txt62.TabIndex = 77;
             this.txt62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt62.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt62.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt62.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt62.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt61
             // 
@@ -672,6 +795,11 @@
             this.txt61.Size = new System.Drawing.Size(59, 46);
             this.txt61.TabIndex = 76;
             this.txt61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt61.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt61.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt61.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt61.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt60
             // 
@@ -685,6 +813,11 @@
             this.txt60.Size = new System.Drawing.Size(59, 46);
             this.txt60.TabIndex = 75;
             this.txt60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt60.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt60.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt60.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt60.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt58
             // 
@@ -698,6 +831,11 @@
             this.txt58.Size = new System.Drawing.Size(59, 46);
             this.txt58.TabIndex = 74;
             this.txt58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt58.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt58.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt58.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt58.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt57
             // 
@@ -711,6 +849,11 @@
             this.txt57.Size = new System.Drawing.Size(59, 46);
             this.txt57.TabIndex = 73;
             this.txt57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt57.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt57.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt57.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt57.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt56
             // 
@@ -724,6 +867,11 @@
             this.txt56.Size = new System.Drawing.Size(59, 46);
             this.txt56.TabIndex = 72;
             this.txt56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt56.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt56.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt56.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt56.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt48
             // 
@@ -737,6 +885,11 @@
             this.txt48.Size = new System.Drawing.Size(59, 46);
             this.txt48.TabIndex = 71;
             this.txt48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt48.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt48.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt48.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt48.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt47
             // 
@@ -750,6 +903,11 @@
             this.txt47.Size = new System.Drawing.Size(59, 46);
             this.txt47.TabIndex = 70;
             this.txt47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt47.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt47.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt47.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt47.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt46
             // 
@@ -763,6 +921,11 @@
             this.txt46.Size = new System.Drawing.Size(59, 46);
             this.txt46.TabIndex = 69;
             this.txt46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt46.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt46.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt46.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt46.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt38
             // 
@@ -776,6 +939,11 @@
             this.txt38.Size = new System.Drawing.Size(59, 46);
             this.txt38.TabIndex = 68;
             this.txt38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt38.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt38.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt38.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt38.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt37
             // 
@@ -789,6 +957,11 @@
             this.txt37.Size = new System.Drawing.Size(59, 46);
             this.txt37.TabIndex = 67;
             this.txt37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt37.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt37.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt37.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt37.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt36
             // 
@@ -802,6 +975,11 @@
             this.txt36.Size = new System.Drawing.Size(59, 46);
             this.txt36.TabIndex = 66;
             this.txt36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt36.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt36.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt36.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt36.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt55
             // 
@@ -815,6 +993,11 @@
             this.txt55.Size = new System.Drawing.Size(59, 46);
             this.txt55.TabIndex = 65;
             this.txt55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt55.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt55.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt55.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt55.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt54
             // 
@@ -828,6 +1011,11 @@
             this.txt54.Size = new System.Drawing.Size(59, 46);
             this.txt54.TabIndex = 64;
             this.txt54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt54.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt54.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt54.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt54.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt53
             // 
@@ -841,6 +1029,11 @@
             this.txt53.Size = new System.Drawing.Size(59, 46);
             this.txt53.TabIndex = 63;
             this.txt53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt53.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt53.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt53.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt53.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt45
             // 
@@ -854,6 +1047,11 @@
             this.txt45.Size = new System.Drawing.Size(59, 46);
             this.txt45.TabIndex = 62;
             this.txt45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt45.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt45.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt45.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt45.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt44
             // 
@@ -867,6 +1065,11 @@
             this.txt44.Size = new System.Drawing.Size(59, 46);
             this.txt44.TabIndex = 61;
             this.txt44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt44.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt44.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt44.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt44.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt43
             // 
@@ -880,6 +1083,11 @@
             this.txt43.Size = new System.Drawing.Size(59, 46);
             this.txt43.TabIndex = 60;
             this.txt43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt43.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt43.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt43.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt43.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt35
             // 
@@ -893,6 +1101,11 @@
             this.txt35.Size = new System.Drawing.Size(59, 46);
             this.txt35.TabIndex = 59;
             this.txt35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt35.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt35.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt35.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt35.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt34
             // 
@@ -906,6 +1119,11 @@
             this.txt34.Size = new System.Drawing.Size(59, 46);
             this.txt34.TabIndex = 58;
             this.txt34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt34.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt34.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt34.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt34.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt33
             // 
@@ -919,6 +1137,11 @@
             this.txt33.Size = new System.Drawing.Size(59, 46);
             this.txt33.TabIndex = 57;
             this.txt33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt33.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt33.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt33.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt33.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt52
             // 
@@ -932,6 +1155,11 @@
             this.txt52.Size = new System.Drawing.Size(59, 46);
             this.txt52.TabIndex = 56;
             this.txt52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt52.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt52.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt52.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt52.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt51
             // 
@@ -945,6 +1173,11 @@
             this.txt51.Size = new System.Drawing.Size(59, 46);
             this.txt51.TabIndex = 55;
             this.txt51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt51.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt51.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt51.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt51.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt28
             // 
@@ -958,6 +1191,11 @@
             this.txt28.Size = new System.Drawing.Size(59, 46);
             this.txt28.TabIndex = 47;
             this.txt28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt28.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt28.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt28.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt06
             // 
@@ -971,6 +1209,11 @@
             this.txt06.Size = new System.Drawing.Size(59, 46);
             this.txt06.TabIndex = 39;
             this.txt06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt06.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt06.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt06.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt06.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt06.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt50
             // 
@@ -984,6 +1227,11 @@
             this.txt50.Size = new System.Drawing.Size(59, 46);
             this.txt50.TabIndex = 54;
             this.txt50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt50.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt50.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt50.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt50.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt27
             // 
@@ -997,6 +1245,11 @@
             this.txt27.Size = new System.Drawing.Size(59, 46);
             this.txt27.TabIndex = 46;
             this.txt27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt27.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt27.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt27.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt42
             // 
@@ -1010,6 +1263,11 @@
             this.txt42.Size = new System.Drawing.Size(59, 46);
             this.txt42.TabIndex = 53;
             this.txt42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt42.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt42.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt42.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt42.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt18
             // 
@@ -1023,6 +1281,11 @@
             this.txt18.Size = new System.Drawing.Size(59, 46);
             this.txt18.TabIndex = 44;
             this.txt18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt18.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt18.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt18.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt41
             // 
@@ -1036,6 +1299,11 @@
             this.txt41.Size = new System.Drawing.Size(59, 46);
             this.txt41.TabIndex = 52;
             this.txt41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt41.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt41.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt41.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt41.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt07
             // 
@@ -1049,6 +1317,11 @@
             this.txt07.Size = new System.Drawing.Size(59, 46);
             this.txt07.TabIndex = 40;
             this.txt07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt07.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt07.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt07.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt07.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt07.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt40
             // 
@@ -1062,6 +1335,11 @@
             this.txt40.Size = new System.Drawing.Size(59, 46);
             this.txt40.TabIndex = 51;
             this.txt40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt40.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt40.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt40.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt40.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt17
             // 
@@ -1075,6 +1353,11 @@
             this.txt17.Size = new System.Drawing.Size(59, 46);
             this.txt17.TabIndex = 43;
             this.txt17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt17.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt17.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt17.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt32
             // 
@@ -1088,6 +1371,11 @@
             this.txt32.Size = new System.Drawing.Size(59, 46);
             this.txt32.TabIndex = 50;
             this.txt32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt32.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt32.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt32.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt32.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt16
             // 
@@ -1101,6 +1389,11 @@
             this.txt16.Size = new System.Drawing.Size(59, 46);
             this.txt16.TabIndex = 42;
             this.txt16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt16.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt16.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt16.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt31
             // 
@@ -1114,6 +1407,11 @@
             this.txt31.Size = new System.Drawing.Size(59, 46);
             this.txt31.TabIndex = 49;
             this.txt31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt31.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt31.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt31.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt31.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt08
             // 
@@ -1127,6 +1425,11 @@
             this.txt08.Size = new System.Drawing.Size(59, 46);
             this.txt08.TabIndex = 41;
             this.txt08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt08.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt08.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt08.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt08.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt08.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt26
             // 
@@ -1140,6 +1443,11 @@
             this.txt26.Size = new System.Drawing.Size(59, 46);
             this.txt26.TabIndex = 45;
             this.txt26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt26.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt26.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt26.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt30
             // 
@@ -1153,6 +1461,11 @@
             this.txt30.Size = new System.Drawing.Size(59, 46);
             this.txt30.TabIndex = 48;
             this.txt30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt30.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt30.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt30.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt25
             // 
@@ -1166,6 +1479,11 @@
             this.txt25.Size = new System.Drawing.Size(59, 46);
             this.txt25.TabIndex = 38;
             this.txt25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt25.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt25.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt25.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt24
             // 
@@ -1179,6 +1497,11 @@
             this.txt24.Size = new System.Drawing.Size(59, 46);
             this.txt24.TabIndex = 37;
             this.txt24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt24.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt24.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt24.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt23
             // 
@@ -1192,6 +1515,11 @@
             this.txt23.Size = new System.Drawing.Size(59, 46);
             this.txt23.TabIndex = 36;
             this.txt23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt23.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt23.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt23.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt15
             // 
@@ -1205,6 +1533,11 @@
             this.txt15.Size = new System.Drawing.Size(59, 46);
             this.txt15.TabIndex = 35;
             this.txt15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt15.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt15.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt15.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt14
             // 
@@ -1218,6 +1551,11 @@
             this.txt14.Size = new System.Drawing.Size(59, 46);
             this.txt14.TabIndex = 34;
             this.txt14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt14.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt14.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt14.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt13
             // 
@@ -1231,6 +1569,11 @@
             this.txt13.Size = new System.Drawing.Size(59, 46);
             this.txt13.TabIndex = 33;
             this.txt13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt13.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt13.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt13.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt05
             // 
@@ -1244,6 +1587,11 @@
             this.txt05.Size = new System.Drawing.Size(59, 46);
             this.txt05.TabIndex = 32;
             this.txt05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt05.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt05.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt05.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt05.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt05.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt04
             // 
@@ -1257,6 +1605,11 @@
             this.txt04.Size = new System.Drawing.Size(59, 46);
             this.txt04.TabIndex = 31;
             this.txt04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt04.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt04.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt04.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt04.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt04.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt03
             // 
@@ -1270,6 +1623,11 @@
             this.txt03.Size = new System.Drawing.Size(59, 46);
             this.txt03.TabIndex = 30;
             this.txt03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt03.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt03.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt03.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt03.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt03.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt22
             // 
@@ -1283,6 +1641,11 @@
             this.txt22.Size = new System.Drawing.Size(59, 46);
             this.txt22.TabIndex = 29;
             this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt22.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt22.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt22.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt21
             // 
@@ -1296,6 +1659,11 @@
             this.txt21.Size = new System.Drawing.Size(59, 46);
             this.txt21.TabIndex = 28;
             this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt21.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt21.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt21.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt20
             // 
@@ -1309,6 +1677,11 @@
             this.txt20.Size = new System.Drawing.Size(59, 46);
             this.txt20.TabIndex = 27;
             this.txt20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt20.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt20.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt20.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt12
             // 
@@ -1322,6 +1695,11 @@
             this.txt12.Size = new System.Drawing.Size(59, 46);
             this.txt12.TabIndex = 26;
             this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt12.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt12.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt12.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt11
             // 
@@ -1335,6 +1713,11 @@
             this.txt11.Size = new System.Drawing.Size(59, 46);
             this.txt11.TabIndex = 25;
             this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt11.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt11.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt11.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt10
             // 
@@ -1348,6 +1731,11 @@
             this.txt10.Size = new System.Drawing.Size(59, 46);
             this.txt10.TabIndex = 24;
             this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt10.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt10.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt10.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt02
             // 
@@ -1361,6 +1749,11 @@
             this.txt02.Size = new System.Drawing.Size(59, 46);
             this.txt02.TabIndex = 23;
             this.txt02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt02.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt02.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt02.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt01
             // 
@@ -1374,6 +1767,11 @@
             this.txt01.Size = new System.Drawing.Size(59, 46);
             this.txt01.TabIndex = 22;
             this.txt01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt01.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt01.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt01.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // txt00
             // 
@@ -1387,1149 +1785,11 @@
             this.txt00.Size = new System.Drawing.Size(59, 46);
             this.txt00.TabIndex = 21;
             this.txt00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox12);
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.textBox14);
-            this.panel1.Controls.Add(this.textBox15);
-            this.panel1.Controls.Add(this.textBox16);
-            this.panel1.Controls.Add(this.textBox17);
-            this.panel1.Controls.Add(this.textBox18);
-            this.panel1.Controls.Add(this.textBox19);
-            this.panel1.Controls.Add(this.textBox20);
-            this.panel1.Controls.Add(this.textBox21);
-            this.panel1.Controls.Add(this.textBox22);
-            this.panel1.Controls.Add(this.textBox23);
-            this.panel1.Controls.Add(this.textBox24);
-            this.panel1.Controls.Add(this.textBox25);
-            this.panel1.Controls.Add(this.textBox26);
-            this.panel1.Controls.Add(this.textBox27);
-            this.panel1.Controls.Add(this.textBox28);
-            this.panel1.Controls.Add(this.textBox29);
-            this.panel1.Controls.Add(this.textBox30);
-            this.panel1.Controls.Add(this.textBox31);
-            this.panel1.Controls.Add(this.textBox32);
-            this.panel1.Controls.Add(this.textBox33);
-            this.panel1.Controls.Add(this.textBox34);
-            this.panel1.Controls.Add(this.textBox35);
-            this.panel1.Controls.Add(this.textBox36);
-            this.panel1.Controls.Add(this.textBox37);
-            this.panel1.Controls.Add(this.textBox38);
-            this.panel1.Controls.Add(this.textBox39);
-            this.panel1.Controls.Add(this.textBox40);
-            this.panel1.Controls.Add(this.textBox41);
-            this.panel1.Controls.Add(this.textBox42);
-            this.panel1.Controls.Add(this.textBox43);
-            this.panel1.Controls.Add(this.textBox44);
-            this.panel1.Controls.Add(this.textBox45);
-            this.panel1.Controls.Add(this.textBox46);
-            this.panel1.Controls.Add(this.textBox47);
-            this.panel1.Controls.Add(this.textBox48);
-            this.panel1.Controls.Add(this.textBox49);
-            this.panel1.Controls.Add(this.textBox50);
-            this.panel1.Controls.Add(this.textBox51);
-            this.panel1.Controls.Add(this.textBox52);
-            this.panel1.Controls.Add(this.textBox53);
-            this.panel1.Controls.Add(this.textBox54);
-            this.panel1.Controls.Add(this.textBox55);
-            this.panel1.Controls.Add(this.textBox56);
-            this.panel1.Controls.Add(this.textBox57);
-            this.panel1.Controls.Add(this.textBox58);
-            this.panel1.Controls.Add(this.textBox59);
-            this.panel1.Controls.Add(this.textBox60);
-            this.panel1.Controls.Add(this.textBox61);
-            this.panel1.Controls.Add(this.textBox62);
-            this.panel1.Controls.Add(this.textBox63);
-            this.panel1.Controls.Add(this.textBox64);
-            this.panel1.Controls.Add(this.textBox65);
-            this.panel1.Controls.Add(this.textBox66);
-            this.panel1.Controls.Add(this.textBox67);
-            this.panel1.Controls.Add(this.textBox68);
-            this.panel1.Controls.Add(this.textBox69);
-            this.panel1.Controls.Add(this.textBox70);
-            this.panel1.Controls.Add(this.textBox71);
-            this.panel1.Controls.Add(this.textBox72);
-            this.panel1.Controls.Add(this.textBox73);
-            this.panel1.Controls.Add(this.textBox74);
-            this.panel1.Controls.Add(this.textBox75);
-            this.panel1.Controls.Add(this.textBox76);
-            this.panel1.Controls.Add(this.textBox77);
-            this.panel1.Controls.Add(this.textBox78);
-            this.panel1.Controls.Add(this.textBox79);
-            this.panel1.Controls.Add(this.textBox80);
-            this.panel1.Controls.Add(this.textBox81);
-            this.panel1.Location = new System.Drawing.Point(578, 184);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(555, 445);
-            this.panel1.TabIndex = 71;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(487, 387);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 46);
-            this.textBox1.TabIndex = 30;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(306, 388);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(59, 46);
-            this.textBox2.TabIndex = 92;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(428, 387);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(59, 46);
-            this.textBox3.TabIndex = 29;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(247, 388);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(59, 46);
-            this.textBox4.TabIndex = 91;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(369, 387);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(59, 46);
-            this.textBox5.TabIndex = 28;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(188, 388);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(59, 46);
-            this.textBox6.TabIndex = 90;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox7.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(487, 341);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(59, 46);
-            this.textBox7.TabIndex = 27;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox8.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(306, 342);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(59, 46);
-            this.textBox8.TabIndex = 89;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(428, 341);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(59, 46);
-            this.textBox9.TabIndex = 26;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox10.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(247, 342);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(59, 46);
-            this.textBox10.TabIndex = 88;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox11.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(369, 341);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(59, 46);
-            this.textBox11.TabIndex = 25;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox12.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(188, 342);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(59, 46);
-            this.textBox12.TabIndex = 87;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox13.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.Black;
-            this.textBox13.Location = new System.Drawing.Point(487, 295);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(59, 46);
-            this.textBox13.TabIndex = 24;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox14.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.Black;
-            this.textBox14.Location = new System.Drawing.Point(306, 296);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(59, 46);
-            this.textBox14.TabIndex = 86;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox15.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.Color.Black;
-            this.textBox15.Location = new System.Drawing.Point(428, 295);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(59, 46);
-            this.textBox15.TabIndex = 23;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox16.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.Black;
-            this.textBox16.Location = new System.Drawing.Point(247, 296);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(59, 46);
-            this.textBox16.TabIndex = 85;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox17.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.Color.Black;
-            this.textBox17.Location = new System.Drawing.Point(369, 295);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(59, 46);
-            this.textBox17.TabIndex = 22;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox18.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.Color.Black;
-            this.textBox18.Location = new System.Drawing.Point(188, 296);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(59, 46);
-            this.textBox18.TabIndex = 84;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox19.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.ForeColor = System.Drawing.Color.Black;
-            this.textBox19.Location = new System.Drawing.Point(125, 388);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(59, 46);
-            this.textBox19.TabIndex = 83;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox20
-            // 
-            this.textBox20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox20.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.ForeColor = System.Drawing.Color.Black;
-            this.textBox20.Location = new System.Drawing.Point(66, 388);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(59, 46);
-            this.textBox20.TabIndex = 82;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox21
-            // 
-            this.textBox21.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox21.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.ForeColor = System.Drawing.Color.Black;
-            this.textBox21.Location = new System.Drawing.Point(7, 388);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(59, 46);
-            this.textBox21.TabIndex = 81;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox22
-            // 
-            this.textBox22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox22.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.ForeColor = System.Drawing.Color.Black;
-            this.textBox22.Location = new System.Drawing.Point(125, 342);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(59, 46);
-            this.textBox22.TabIndex = 80;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox23
-            // 
-            this.textBox23.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox23.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.ForeColor = System.Drawing.Color.Black;
-            this.textBox23.Location = new System.Drawing.Point(66, 342);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(59, 46);
-            this.textBox23.TabIndex = 79;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox24
-            // 
-            this.textBox24.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox24.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.ForeColor = System.Drawing.Color.Black;
-            this.textBox24.Location = new System.Drawing.Point(7, 342);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(59, 46);
-            this.textBox24.TabIndex = 78;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox25
-            // 
-            this.textBox25.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox25.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.ForeColor = System.Drawing.Color.Black;
-            this.textBox25.Location = new System.Drawing.Point(125, 296);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(59, 46);
-            this.textBox25.TabIndex = 77;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox26
-            // 
-            this.textBox26.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox26.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.ForeColor = System.Drawing.Color.Black;
-            this.textBox26.Location = new System.Drawing.Point(66, 296);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(59, 46);
-            this.textBox26.TabIndex = 76;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox27
-            // 
-            this.textBox27.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox27.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox27.ForeColor = System.Drawing.Color.Black;
-            this.textBox27.Location = new System.Drawing.Point(7, 296);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(59, 46);
-            this.textBox27.TabIndex = 75;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox28
-            // 
-            this.textBox28.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox28.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox28.ForeColor = System.Drawing.Color.Black;
-            this.textBox28.Location = new System.Drawing.Point(487, 244);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(59, 46);
-            this.textBox28.TabIndex = 74;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox29
-            // 
-            this.textBox29.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox29.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.ForeColor = System.Drawing.Color.Black;
-            this.textBox29.Location = new System.Drawing.Point(428, 244);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(59, 46);
-            this.textBox29.TabIndex = 73;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox30
-            // 
-            this.textBox30.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox30.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox30.ForeColor = System.Drawing.Color.Black;
-            this.textBox30.Location = new System.Drawing.Point(369, 244);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(59, 46);
-            this.textBox30.TabIndex = 72;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox31
-            // 
-            this.textBox31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox31.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox31.ForeColor = System.Drawing.Color.Black;
-            this.textBox31.Location = new System.Drawing.Point(487, 198);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(59, 46);
-            this.textBox31.TabIndex = 71;
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox32
-            // 
-            this.textBox32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox32.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox32.ForeColor = System.Drawing.Color.Black;
-            this.textBox32.Location = new System.Drawing.Point(428, 198);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(59, 46);
-            this.textBox32.TabIndex = 70;
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox33
-            // 
-            this.textBox33.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox33.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox33.ForeColor = System.Drawing.Color.Black;
-            this.textBox33.Location = new System.Drawing.Point(369, 198);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(59, 46);
-            this.textBox33.TabIndex = 69;
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox34
-            // 
-            this.textBox34.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox34.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox34.ForeColor = System.Drawing.Color.Black;
-            this.textBox34.Location = new System.Drawing.Point(487, 152);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(59, 46);
-            this.textBox34.TabIndex = 68;
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox35
-            // 
-            this.textBox35.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox35.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox35.ForeColor = System.Drawing.Color.Black;
-            this.textBox35.Location = new System.Drawing.Point(428, 152);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(59, 46);
-            this.textBox35.TabIndex = 67;
-            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox36
-            // 
-            this.textBox36.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox36.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox36.ForeColor = System.Drawing.Color.Black;
-            this.textBox36.Location = new System.Drawing.Point(369, 152);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(59, 46);
-            this.textBox36.TabIndex = 66;
-            this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox37
-            // 
-            this.textBox37.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox37.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox37.ForeColor = System.Drawing.Color.Black;
-            this.textBox37.Location = new System.Drawing.Point(306, 244);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(59, 46);
-            this.textBox37.TabIndex = 65;
-            this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox38
-            // 
-            this.textBox38.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox38.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox38.ForeColor = System.Drawing.Color.Black;
-            this.textBox38.Location = new System.Drawing.Point(247, 244);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(59, 46);
-            this.textBox38.TabIndex = 64;
-            this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox39
-            // 
-            this.textBox39.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox39.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox39.ForeColor = System.Drawing.Color.Black;
-            this.textBox39.Location = new System.Drawing.Point(188, 244);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(59, 46);
-            this.textBox39.TabIndex = 63;
-            this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox40
-            // 
-            this.textBox40.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox40.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox40.ForeColor = System.Drawing.Color.Black;
-            this.textBox40.Location = new System.Drawing.Point(306, 198);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(59, 46);
-            this.textBox40.TabIndex = 62;
-            this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox41
-            // 
-            this.textBox41.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox41.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox41.ForeColor = System.Drawing.Color.Black;
-            this.textBox41.Location = new System.Drawing.Point(247, 198);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(59, 46);
-            this.textBox41.TabIndex = 61;
-            this.textBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox42
-            // 
-            this.textBox42.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox42.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox42.ForeColor = System.Drawing.Color.Black;
-            this.textBox42.Location = new System.Drawing.Point(188, 198);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(59, 46);
-            this.textBox42.TabIndex = 60;
-            this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox43
-            // 
-            this.textBox43.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox43.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox43.ForeColor = System.Drawing.Color.Black;
-            this.textBox43.Location = new System.Drawing.Point(306, 152);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(59, 46);
-            this.textBox43.TabIndex = 59;
-            this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox44
-            // 
-            this.textBox44.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox44.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox44.ForeColor = System.Drawing.Color.Black;
-            this.textBox44.Location = new System.Drawing.Point(247, 152);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(59, 46);
-            this.textBox44.TabIndex = 58;
-            this.textBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox45
-            // 
-            this.textBox45.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox45.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox45.ForeColor = System.Drawing.Color.Black;
-            this.textBox45.Location = new System.Drawing.Point(188, 152);
-            this.textBox45.Multiline = true;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(59, 46);
-            this.textBox45.TabIndex = 57;
-            this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox46
-            // 
-            this.textBox46.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox46.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox46.ForeColor = System.Drawing.Color.Black;
-            this.textBox46.Location = new System.Drawing.Point(125, 244);
-            this.textBox46.Multiline = true;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(59, 46);
-            this.textBox46.TabIndex = 56;
-            this.textBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox47
-            // 
-            this.textBox47.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox47.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox47.ForeColor = System.Drawing.Color.Black;
-            this.textBox47.Location = new System.Drawing.Point(66, 244);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(59, 46);
-            this.textBox47.TabIndex = 55;
-            this.textBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox48
-            // 
-            this.textBox48.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox48.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox48.ForeColor = System.Drawing.Color.Black;
-            this.textBox48.Location = new System.Drawing.Point(487, 100);
-            this.textBox48.Multiline = true;
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(59, 46);
-            this.textBox48.TabIndex = 47;
-            this.textBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox49
-            // 
-            this.textBox49.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox49.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox49.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox49.ForeColor = System.Drawing.Color.Black;
-            this.textBox49.Location = new System.Drawing.Point(369, 8);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(59, 46);
-            this.textBox49.TabIndex = 39;
-            this.textBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox50
-            // 
-            this.textBox50.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox50.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox50.ForeColor = System.Drawing.Color.Black;
-            this.textBox50.Location = new System.Drawing.Point(7, 244);
-            this.textBox50.Multiline = true;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(59, 46);
-            this.textBox50.TabIndex = 54;
-            this.textBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox51
-            // 
-            this.textBox51.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox51.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox51.ForeColor = System.Drawing.Color.Black;
-            this.textBox51.Location = new System.Drawing.Point(428, 100);
-            this.textBox51.Multiline = true;
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(59, 46);
-            this.textBox51.TabIndex = 46;
-            this.textBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox52
-            // 
-            this.textBox52.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox52.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox52.ForeColor = System.Drawing.Color.Black;
-            this.textBox52.Location = new System.Drawing.Point(125, 198);
-            this.textBox52.Multiline = true;
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(59, 46);
-            this.textBox52.TabIndex = 53;
-            this.textBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox53
-            // 
-            this.textBox53.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox53.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox53.ForeColor = System.Drawing.Color.Black;
-            this.textBox53.Location = new System.Drawing.Point(487, 54);
-            this.textBox53.Multiline = true;
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(59, 46);
-            this.textBox53.TabIndex = 44;
-            this.textBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox54
-            // 
-            this.textBox54.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox54.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox54.ForeColor = System.Drawing.Color.Black;
-            this.textBox54.Location = new System.Drawing.Point(66, 198);
-            this.textBox54.Multiline = true;
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(59, 46);
-            this.textBox54.TabIndex = 52;
-            this.textBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox55
-            // 
-            this.textBox55.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox55.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox55.ForeColor = System.Drawing.Color.Black;
-            this.textBox55.Location = new System.Drawing.Point(428, 8);
-            this.textBox55.Multiline = true;
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(59, 46);
-            this.textBox55.TabIndex = 40;
-            this.textBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox56
-            // 
-            this.textBox56.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox56.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox56.ForeColor = System.Drawing.Color.Black;
-            this.textBox56.Location = new System.Drawing.Point(7, 198);
-            this.textBox56.Multiline = true;
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(59, 46);
-            this.textBox56.TabIndex = 51;
-            this.textBox56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox57
-            // 
-            this.textBox57.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox57.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox57.ForeColor = System.Drawing.Color.Black;
-            this.textBox57.Location = new System.Drawing.Point(428, 54);
-            this.textBox57.Multiline = true;
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(59, 46);
-            this.textBox57.TabIndex = 43;
-            this.textBox57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox58
-            // 
-            this.textBox58.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox58.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox58.ForeColor = System.Drawing.Color.Black;
-            this.textBox58.Location = new System.Drawing.Point(125, 152);
-            this.textBox58.Multiline = true;
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(59, 46);
-            this.textBox58.TabIndex = 50;
-            this.textBox58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox59
-            // 
-            this.textBox59.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox59.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox59.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox59.ForeColor = System.Drawing.Color.Black;
-            this.textBox59.Location = new System.Drawing.Point(369, 54);
-            this.textBox59.Multiline = true;
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(59, 46);
-            this.textBox59.TabIndex = 42;
-            this.textBox59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox60
-            // 
-            this.textBox60.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox60.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox60.ForeColor = System.Drawing.Color.Black;
-            this.textBox60.Location = new System.Drawing.Point(66, 152);
-            this.textBox60.Multiline = true;
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(59, 46);
-            this.textBox60.TabIndex = 49;
-            this.textBox60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox61
-            // 
-            this.textBox61.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox61.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox61.ForeColor = System.Drawing.Color.Black;
-            this.textBox61.Location = new System.Drawing.Point(487, 8);
-            this.textBox61.Multiline = true;
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(59, 46);
-            this.textBox61.TabIndex = 41;
-            this.textBox61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox62
-            // 
-            this.textBox62.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox62.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox62.ForeColor = System.Drawing.Color.Black;
-            this.textBox62.Location = new System.Drawing.Point(369, 100);
-            this.textBox62.Multiline = true;
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(59, 46);
-            this.textBox62.TabIndex = 45;
-            this.textBox62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox63
-            // 
-            this.textBox63.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox63.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox63.ForeColor = System.Drawing.Color.Black;
-            this.textBox63.Location = new System.Drawing.Point(7, 152);
-            this.textBox63.Multiline = true;
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(59, 46);
-            this.textBox63.TabIndex = 48;
-            this.textBox63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox64
-            // 
-            this.textBox64.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox64.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox64.ForeColor = System.Drawing.Color.Black;
-            this.textBox64.Location = new System.Drawing.Point(306, 100);
-            this.textBox64.Multiline = true;
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(59, 46);
-            this.textBox64.TabIndex = 38;
-            this.textBox64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox65
-            // 
-            this.textBox65.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox65.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox65.ForeColor = System.Drawing.Color.Black;
-            this.textBox65.Location = new System.Drawing.Point(247, 100);
-            this.textBox65.Multiline = true;
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(59, 46);
-            this.textBox65.TabIndex = 37;
-            this.textBox65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox66
-            // 
-            this.textBox66.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox66.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox66.ForeColor = System.Drawing.Color.Black;
-            this.textBox66.Location = new System.Drawing.Point(188, 100);
-            this.textBox66.Multiline = true;
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(59, 46);
-            this.textBox66.TabIndex = 36;
-            this.textBox66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox67
-            // 
-            this.textBox67.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox67.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox67.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox67.ForeColor = System.Drawing.Color.Black;
-            this.textBox67.Location = new System.Drawing.Point(306, 54);
-            this.textBox67.Multiline = true;
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(59, 46);
-            this.textBox67.TabIndex = 35;
-            this.textBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox68
-            // 
-            this.textBox68.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox68.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox68.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox68.ForeColor = System.Drawing.Color.Black;
-            this.textBox68.Location = new System.Drawing.Point(247, 54);
-            this.textBox68.Multiline = true;
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(59, 46);
-            this.textBox68.TabIndex = 34;
-            this.textBox68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox69
-            // 
-            this.textBox69.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox69.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox69.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox69.ForeColor = System.Drawing.Color.Black;
-            this.textBox69.Location = new System.Drawing.Point(188, 54);
-            this.textBox69.Multiline = true;
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(59, 46);
-            this.textBox69.TabIndex = 33;
-            this.textBox69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox70
-            // 
-            this.textBox70.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox70.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox70.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox70.ForeColor = System.Drawing.Color.Black;
-            this.textBox70.Location = new System.Drawing.Point(306, 8);
-            this.textBox70.Multiline = true;
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(59, 46);
-            this.textBox70.TabIndex = 32;
-            this.textBox70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox71
-            // 
-            this.textBox71.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox71.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox71.ForeColor = System.Drawing.Color.Black;
-            this.textBox71.Location = new System.Drawing.Point(247, 8);
-            this.textBox71.Multiline = true;
-            this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(59, 46);
-            this.textBox71.TabIndex = 31;
-            this.textBox71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox72
-            // 
-            this.textBox72.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox72.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox72.ForeColor = System.Drawing.Color.Black;
-            this.textBox72.Location = new System.Drawing.Point(188, 8);
-            this.textBox72.Multiline = true;
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(59, 46);
-            this.textBox72.TabIndex = 30;
-            this.textBox72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox73
-            // 
-            this.textBox73.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox73.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox73.ForeColor = System.Drawing.Color.Black;
-            this.textBox73.Location = new System.Drawing.Point(125, 100);
-            this.textBox73.Multiline = true;
-            this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(59, 46);
-            this.textBox73.TabIndex = 29;
-            this.textBox73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox74
-            // 
-            this.textBox74.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox74.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox74.ForeColor = System.Drawing.Color.Black;
-            this.textBox74.Location = new System.Drawing.Point(66, 100);
-            this.textBox74.Multiline = true;
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(59, 46);
-            this.textBox74.TabIndex = 28;
-            this.textBox74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox75
-            // 
-            this.textBox75.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox75.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox75.ForeColor = System.Drawing.Color.Black;
-            this.textBox75.Location = new System.Drawing.Point(7, 100);
-            this.textBox75.Multiline = true;
-            this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(59, 46);
-            this.textBox75.TabIndex = 27;
-            this.textBox75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox76
-            // 
-            this.textBox76.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox76.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox76.ForeColor = System.Drawing.Color.Black;
-            this.textBox76.Location = new System.Drawing.Point(125, 54);
-            this.textBox76.Multiline = true;
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(59, 46);
-            this.textBox76.TabIndex = 26;
-            this.textBox76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox77
-            // 
-            this.textBox77.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox77.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox77.ForeColor = System.Drawing.Color.Black;
-            this.textBox77.Location = new System.Drawing.Point(66, 54);
-            this.textBox77.Multiline = true;
-            this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(59, 46);
-            this.textBox77.TabIndex = 25;
-            this.textBox77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox78
-            // 
-            this.textBox78.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox78.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox78.ForeColor = System.Drawing.Color.Black;
-            this.textBox78.Location = new System.Drawing.Point(7, 54);
-            this.textBox78.Multiline = true;
-            this.textBox78.Name = "textBox78";
-            this.textBox78.Size = new System.Drawing.Size(59, 46);
-            this.textBox78.TabIndex = 24;
-            this.textBox78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox79
-            // 
-            this.textBox79.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox79.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox79.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox79.ForeColor = System.Drawing.Color.Black;
-            this.textBox79.Location = new System.Drawing.Point(125, 8);
-            this.textBox79.Multiline = true;
-            this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(59, 46);
-            this.textBox79.TabIndex = 23;
-            this.textBox79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox80
-            // 
-            this.textBox80.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox80.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox80.ForeColor = System.Drawing.Color.Black;
-            this.textBox80.Location = new System.Drawing.Point(66, 8);
-            this.textBox80.Multiline = true;
-            this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(59, 46);
-            this.textBox80.TabIndex = 22;
-            this.textBox80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox81
-            // 
-            this.textBox81.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox81.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox81.ForeColor = System.Drawing.Color.Black;
-            this.textBox81.Location = new System.Drawing.Point(7, 8);
-            this.textBox81.Multiline = true;
-            this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(59, 46);
-            this.textBox81.TabIndex = 21;
-            this.textBox81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt00.DoubleClick += new System.EventHandler(this.txt00_DoubleClick);
+            this.txt00.Enter += new System.EventHandler(this.txt00_Enter);
+            this.txt00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
+            this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
+            this.txt00.Leave += new System.EventHandler(this.txt00_Leave);
             // 
             // panel10
             // 
@@ -2547,8 +1807,6 @@
             this.panel10.Controls.Add(this.pincelA);
             this.panel10.Controls.Add(this.txtBlueView);
             this.panel10.Controls.Add(this.btnDerecha);
-            this.panel10.Controls.Add(this.pincelL);
-            this.panel10.Controls.Add(this.pincelK);
             this.panel10.Controls.Add(this.btnBB);
             this.panel10.Controls.Add(this.pnlLetra);
             this.panel10.Controls.Add(this.panel11);
@@ -2726,33 +1984,6 @@
             this.btnDerecha.Size = new System.Drawing.Size(36, 24);
             this.btnDerecha.TabIndex = 95;
             this.btnDerecha.UseVisualStyleBackColor = false;
-            // 
-            // pincelL
-            // 
-            this.pincelL.BackColor = System.Drawing.Color.Yellow;
-            this.pincelL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelL.ForeColor = System.Drawing.Color.Silver;
-            this.pincelL.Location = new System.Drawing.Point(119, 30);
-            this.pincelL.Name = "pincelL";
-            this.pincelL.Size = new System.Drawing.Size(25, 24);
-            this.pincelL.TabIndex = 84;
-            this.pincelL.UseVisualStyleBackColor = false;
-            // 
-            // pincelK
-            // 
-            this.pincelK.BackColor = System.Drawing.Color.Silver;
-            this.pincelK.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.pincelK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pincelK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pincelK.ForeColor = System.Drawing.Color.Black;
-            this.pincelK.Location = new System.Drawing.Point(91, 30);
-            this.pincelK.Name = "pincelK";
-            this.pincelK.Size = new System.Drawing.Size(25, 24);
-            this.pincelK.TabIndex = 83;
-            this.pincelK.Text = "R";
-            this.pincelK.UseVisualStyleBackColor = false;
             // 
             // btnBB
             // 
@@ -3013,20 +2244,1562 @@
             this.txtNota.Size = new System.Drawing.Size(93, 24);
             this.txtNota.TabIndex = 40;
             // 
+            // pnl2
+            // 
+            this.pnl2.BackColor = System.Drawing.Color.Silver;
+            this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl2.Controls.Add(this.t88);
+            this.pnl2.Controls.Add(this.t85);
+            this.pnl2.Controls.Add(this.t87);
+            this.pnl2.Controls.Add(this.t84);
+            this.pnl2.Controls.Add(this.t86);
+            this.pnl2.Controls.Add(this.t83);
+            this.pnl2.Controls.Add(this.t78);
+            this.pnl2.Controls.Add(this.t75);
+            this.pnl2.Controls.Add(this.t77);
+            this.pnl2.Controls.Add(this.t74);
+            this.pnl2.Controls.Add(this.t76);
+            this.pnl2.Controls.Add(this.t73);
+            this.pnl2.Controls.Add(this.t68);
+            this.pnl2.Controls.Add(this.t65);
+            this.pnl2.Controls.Add(this.t67);
+            this.pnl2.Controls.Add(this.t64);
+            this.pnl2.Controls.Add(this.t66);
+            this.pnl2.Controls.Add(this.t63);
+            this.pnl2.Controls.Add(this.t82);
+            this.pnl2.Controls.Add(this.t81);
+            this.pnl2.Controls.Add(this.t80);
+            this.pnl2.Controls.Add(this.t72);
+            this.pnl2.Controls.Add(this.t71);
+            this.pnl2.Controls.Add(this.t70);
+            this.pnl2.Controls.Add(this.t62);
+            this.pnl2.Controls.Add(this.t61);
+            this.pnl2.Controls.Add(this.t60);
+            this.pnl2.Controls.Add(this.t58);
+            this.pnl2.Controls.Add(this.t57);
+            this.pnl2.Controls.Add(this.t56);
+            this.pnl2.Controls.Add(this.t48);
+            this.pnl2.Controls.Add(this.t47);
+            this.pnl2.Controls.Add(this.t46);
+            this.pnl2.Controls.Add(this.t38);
+            this.pnl2.Controls.Add(this.t37);
+            this.pnl2.Controls.Add(this.t36);
+            this.pnl2.Controls.Add(this.t55);
+            this.pnl2.Controls.Add(this.t54);
+            this.pnl2.Controls.Add(this.t53);
+            this.pnl2.Controls.Add(this.t45);
+            this.pnl2.Controls.Add(this.t44);
+            this.pnl2.Controls.Add(this.t43);
+            this.pnl2.Controls.Add(this.t35);
+            this.pnl2.Controls.Add(this.t34);
+            this.pnl2.Controls.Add(this.t33);
+            this.pnl2.Controls.Add(this.t52);
+            this.pnl2.Controls.Add(this.t51);
+            this.pnl2.Controls.Add(this.t28);
+            this.pnl2.Controls.Add(this.t06);
+            this.pnl2.Controls.Add(this.t50);
+            this.pnl2.Controls.Add(this.t27);
+            this.pnl2.Controls.Add(this.t42);
+            this.pnl2.Controls.Add(this.t18);
+            this.pnl2.Controls.Add(this.t41);
+            this.pnl2.Controls.Add(this.t07);
+            this.pnl2.Controls.Add(this.t40);
+            this.pnl2.Controls.Add(this.t17);
+            this.pnl2.Controls.Add(this.t32);
+            this.pnl2.Controls.Add(this.t16);
+            this.pnl2.Controls.Add(this.t31);
+            this.pnl2.Controls.Add(this.t08);
+            this.pnl2.Controls.Add(this.t26);
+            this.pnl2.Controls.Add(this.t30);
+            this.pnl2.Controls.Add(this.t25);
+            this.pnl2.Controls.Add(this.t24);
+            this.pnl2.Controls.Add(this.t23);
+            this.pnl2.Controls.Add(this.t15);
+            this.pnl2.Controls.Add(this.t14);
+            this.pnl2.Controls.Add(this.t13);
+            this.pnl2.Controls.Add(this.t05);
+            this.pnl2.Controls.Add(this.t04);
+            this.pnl2.Controls.Add(this.t03);
+            this.pnl2.Controls.Add(this.t22);
+            this.pnl2.Controls.Add(this.t21);
+            this.pnl2.Controls.Add(this.t20);
+            this.pnl2.Controls.Add(this.t12);
+            this.pnl2.Controls.Add(this.t11);
+            this.pnl2.Controls.Add(this.t10);
+            this.pnl2.Controls.Add(this.t02);
+            this.pnl2.Controls.Add(this.t01);
+            this.pnl2.Controls.Add(this.t00);
+            this.pnl2.Location = new System.Drawing.Point(578, 184);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(555, 445);
+            this.pnl2.TabIndex = 73;
+            // 
+            // t88
+            // 
+            this.t88.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t88.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t88.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t88.ForeColor = System.Drawing.Color.Blue;
+            this.t88.Location = new System.Drawing.Point(487, 387);
+            this.t88.Multiline = true;
+            this.t88.Name = "t88";
+            this.t88.Size = new System.Drawing.Size(59, 46);
+            this.t88.TabIndex = 30;
+            this.t88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t88.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t88.Enter += new System.EventHandler(this.t00_Enter);
+            this.t88.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t88.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t85
+            // 
+            this.t85.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t85.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t85.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t85.ForeColor = System.Drawing.Color.Blue;
+            this.t85.Location = new System.Drawing.Point(306, 388);
+            this.t85.Multiline = true;
+            this.t85.Name = "t85";
+            this.t85.Size = new System.Drawing.Size(59, 46);
+            this.t85.TabIndex = 92;
+            this.t85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t85.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t85.Enter += new System.EventHandler(this.t00_Enter);
+            this.t85.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t85.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t85.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t87
+            // 
+            this.t87.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t87.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t87.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t87.ForeColor = System.Drawing.Color.Blue;
+            this.t87.Location = new System.Drawing.Point(428, 387);
+            this.t87.Multiline = true;
+            this.t87.Name = "t87";
+            this.t87.Size = new System.Drawing.Size(59, 46);
+            this.t87.TabIndex = 29;
+            this.t87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t87.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t87.Enter += new System.EventHandler(this.t00_Enter);
+            this.t87.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t87.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t84
+            // 
+            this.t84.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t84.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t84.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t84.ForeColor = System.Drawing.Color.Blue;
+            this.t84.Location = new System.Drawing.Point(247, 388);
+            this.t84.Multiline = true;
+            this.t84.Name = "t84";
+            this.t84.Size = new System.Drawing.Size(59, 46);
+            this.t84.TabIndex = 91;
+            this.t84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t84.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t84.Enter += new System.EventHandler(this.t00_Enter);
+            this.t84.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t84.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t84.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t86
+            // 
+            this.t86.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t86.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t86.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t86.ForeColor = System.Drawing.Color.Blue;
+            this.t86.Location = new System.Drawing.Point(369, 387);
+            this.t86.Multiline = true;
+            this.t86.Name = "t86";
+            this.t86.Size = new System.Drawing.Size(59, 46);
+            this.t86.TabIndex = 28;
+            this.t86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t83
+            // 
+            this.t83.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t83.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t83.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t83.ForeColor = System.Drawing.Color.Blue;
+            this.t83.Location = new System.Drawing.Point(188, 388);
+            this.t83.Multiline = true;
+            this.t83.Name = "t83";
+            this.t83.Size = new System.Drawing.Size(59, 46);
+            this.t83.TabIndex = 90;
+            this.t83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t83.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t83.Enter += new System.EventHandler(this.t00_Enter);
+            this.t83.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t83.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t83.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t78
+            // 
+            this.t78.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t78.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t78.ForeColor = System.Drawing.Color.Blue;
+            this.t78.Location = new System.Drawing.Point(487, 341);
+            this.t78.Multiline = true;
+            this.t78.Name = "t78";
+            this.t78.Size = new System.Drawing.Size(59, 46);
+            this.t78.TabIndex = 27;
+            this.t78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t78.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t78.Enter += new System.EventHandler(this.t00_Enter);
+            this.t78.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t78.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t78.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t75
+            // 
+            this.t75.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t75.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t75.ForeColor = System.Drawing.Color.Blue;
+            this.t75.Location = new System.Drawing.Point(306, 342);
+            this.t75.Multiline = true;
+            this.t75.Name = "t75";
+            this.t75.Size = new System.Drawing.Size(59, 46);
+            this.t75.TabIndex = 89;
+            this.t75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t75.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t75.Enter += new System.EventHandler(this.t00_Enter);
+            this.t75.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t75.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t75.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t77
+            // 
+            this.t77.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t77.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t77.ForeColor = System.Drawing.Color.Blue;
+            this.t77.Location = new System.Drawing.Point(428, 341);
+            this.t77.Multiline = true;
+            this.t77.Name = "t77";
+            this.t77.Size = new System.Drawing.Size(59, 46);
+            this.t77.TabIndex = 26;
+            this.t77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t77.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t77.Enter += new System.EventHandler(this.t00_Enter);
+            this.t77.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t77.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t77.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t74
+            // 
+            this.t74.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t74.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t74.ForeColor = System.Drawing.Color.Blue;
+            this.t74.Location = new System.Drawing.Point(247, 342);
+            this.t74.Multiline = true;
+            this.t74.Name = "t74";
+            this.t74.Size = new System.Drawing.Size(59, 46);
+            this.t74.TabIndex = 88;
+            this.t74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t74.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t74.Enter += new System.EventHandler(this.t00_Enter);
+            this.t74.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t74.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t74.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t76
+            // 
+            this.t76.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t76.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t76.ForeColor = System.Drawing.Color.Blue;
+            this.t76.Location = new System.Drawing.Point(369, 341);
+            this.t76.Multiline = true;
+            this.t76.Name = "t76";
+            this.t76.Size = new System.Drawing.Size(59, 46);
+            this.t76.TabIndex = 25;
+            this.t76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t76.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t76.Enter += new System.EventHandler(this.t00_Enter);
+            this.t76.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t76.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t76.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t73
+            // 
+            this.t73.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t73.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t73.ForeColor = System.Drawing.Color.Blue;
+            this.t73.Location = new System.Drawing.Point(188, 342);
+            this.t73.Multiline = true;
+            this.t73.Name = "t73";
+            this.t73.Size = new System.Drawing.Size(59, 46);
+            this.t73.TabIndex = 87;
+            this.t73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t73.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t73.Enter += new System.EventHandler(this.t00_Enter);
+            this.t73.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t73.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t73.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t68
+            // 
+            this.t68.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t68.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t68.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t68.ForeColor = System.Drawing.Color.Blue;
+            this.t68.Location = new System.Drawing.Point(487, 295);
+            this.t68.Multiline = true;
+            this.t68.Name = "t68";
+            this.t68.Size = new System.Drawing.Size(59, 46);
+            this.t68.TabIndex = 24;
+            this.t68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t68.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t68.Enter += new System.EventHandler(this.t00_Enter);
+            this.t68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t68.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t68.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t65
+            // 
+            this.t65.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t65.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t65.ForeColor = System.Drawing.Color.Blue;
+            this.t65.Location = new System.Drawing.Point(306, 296);
+            this.t65.Multiline = true;
+            this.t65.Name = "t65";
+            this.t65.Size = new System.Drawing.Size(59, 46);
+            this.t65.TabIndex = 86;
+            this.t65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t65.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t65.Enter += new System.EventHandler(this.t00_Enter);
+            this.t65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t65.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t65.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t67
+            // 
+            this.t67.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t67.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t67.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t67.ForeColor = System.Drawing.Color.Blue;
+            this.t67.Location = new System.Drawing.Point(428, 295);
+            this.t67.Multiline = true;
+            this.t67.Name = "t67";
+            this.t67.Size = new System.Drawing.Size(59, 46);
+            this.t67.TabIndex = 23;
+            this.t67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t67.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t67.Enter += new System.EventHandler(this.t00_Enter);
+            this.t67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t67.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t67.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t64
+            // 
+            this.t64.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t64.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t64.ForeColor = System.Drawing.Color.Blue;
+            this.t64.Location = new System.Drawing.Point(247, 296);
+            this.t64.Multiline = true;
+            this.t64.Name = "t64";
+            this.t64.Size = new System.Drawing.Size(59, 46);
+            this.t64.TabIndex = 85;
+            this.t64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t64.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t64.Enter += new System.EventHandler(this.t00_Enter);
+            this.t64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t64.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t64.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t66
+            // 
+            this.t66.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t66.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t66.ForeColor = System.Drawing.Color.Blue;
+            this.t66.Location = new System.Drawing.Point(369, 295);
+            this.t66.Multiline = true;
+            this.t66.Name = "t66";
+            this.t66.Size = new System.Drawing.Size(59, 46);
+            this.t66.TabIndex = 22;
+            this.t66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t66.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t66.Enter += new System.EventHandler(this.t00_Enter);
+            this.t66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t66.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t66.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t63
+            // 
+            this.t63.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t63.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t63.ForeColor = System.Drawing.Color.Blue;
+            this.t63.Location = new System.Drawing.Point(188, 296);
+            this.t63.Multiline = true;
+            this.t63.Name = "t63";
+            this.t63.Size = new System.Drawing.Size(59, 46);
+            this.t63.TabIndex = 84;
+            this.t63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t63.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t63.Enter += new System.EventHandler(this.t00_Enter);
+            this.t63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t63.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t63.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t82
+            // 
+            this.t82.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t82.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t82.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t82.ForeColor = System.Drawing.Color.Blue;
+            this.t82.Location = new System.Drawing.Point(125, 388);
+            this.t82.Multiline = true;
+            this.t82.Name = "t82";
+            this.t82.Size = new System.Drawing.Size(59, 46);
+            this.t82.TabIndex = 83;
+            this.t82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t82.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t82.Enter += new System.EventHandler(this.t00_Enter);
+            this.t82.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t82.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t82.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t81
+            // 
+            this.t81.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t81.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t81.ForeColor = System.Drawing.Color.Blue;
+            this.t81.Location = new System.Drawing.Point(66, 388);
+            this.t81.Multiline = true;
+            this.t81.Name = "t81";
+            this.t81.Size = new System.Drawing.Size(59, 46);
+            this.t81.TabIndex = 82;
+            this.t81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t81.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t81.Enter += new System.EventHandler(this.t00_Enter);
+            this.t81.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t81.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t81.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t80
+            // 
+            this.t80.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t80.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t80.ForeColor = System.Drawing.Color.Blue;
+            this.t80.Location = new System.Drawing.Point(7, 388);
+            this.t80.Multiline = true;
+            this.t80.Name = "t80";
+            this.t80.Size = new System.Drawing.Size(59, 46);
+            this.t80.TabIndex = 81;
+            this.t80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t80.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t80.Enter += new System.EventHandler(this.t00_Enter);
+            this.t80.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t80.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t80.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t72
+            // 
+            this.t72.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t72.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t72.ForeColor = System.Drawing.Color.Blue;
+            this.t72.Location = new System.Drawing.Point(125, 342);
+            this.t72.Multiline = true;
+            this.t72.Name = "t72";
+            this.t72.Size = new System.Drawing.Size(59, 46);
+            this.t72.TabIndex = 80;
+            this.t72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t72.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t72.Enter += new System.EventHandler(this.t00_Enter);
+            this.t72.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t72.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t72.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t71
+            // 
+            this.t71.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t71.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t71.ForeColor = System.Drawing.Color.Blue;
+            this.t71.Location = new System.Drawing.Point(66, 342);
+            this.t71.Multiline = true;
+            this.t71.Name = "t71";
+            this.t71.Size = new System.Drawing.Size(59, 46);
+            this.t71.TabIndex = 79;
+            this.t71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t71.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t71.Enter += new System.EventHandler(this.t00_Enter);
+            this.t71.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t71.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t71.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t70
+            // 
+            this.t70.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t70.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t70.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t70.ForeColor = System.Drawing.Color.Blue;
+            this.t70.Location = new System.Drawing.Point(7, 342);
+            this.t70.Multiline = true;
+            this.t70.Name = "t70";
+            this.t70.Size = new System.Drawing.Size(59, 46);
+            this.t70.TabIndex = 78;
+            this.t70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t70.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t70.Enter += new System.EventHandler(this.t00_Enter);
+            this.t70.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t70.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t70.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t62
+            // 
+            this.t62.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t62.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t62.ForeColor = System.Drawing.Color.Blue;
+            this.t62.Location = new System.Drawing.Point(125, 296);
+            this.t62.Multiline = true;
+            this.t62.Name = "t62";
+            this.t62.Size = new System.Drawing.Size(59, 46);
+            this.t62.TabIndex = 77;
+            this.t62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t62.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t62.Enter += new System.EventHandler(this.t00_Enter);
+            this.t62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t62.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t62.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t61
+            // 
+            this.t61.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t61.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t61.ForeColor = System.Drawing.Color.Blue;
+            this.t61.Location = new System.Drawing.Point(66, 296);
+            this.t61.Multiline = true;
+            this.t61.Name = "t61";
+            this.t61.Size = new System.Drawing.Size(59, 46);
+            this.t61.TabIndex = 76;
+            this.t61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t61.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t61.Enter += new System.EventHandler(this.t00_Enter);
+            this.t61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t61.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t61.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t60
+            // 
+            this.t60.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t60.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t60.ForeColor = System.Drawing.Color.Blue;
+            this.t60.Location = new System.Drawing.Point(7, 296);
+            this.t60.Multiline = true;
+            this.t60.Name = "t60";
+            this.t60.Size = new System.Drawing.Size(59, 46);
+            this.t60.TabIndex = 75;
+            this.t60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t60.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t60.Enter += new System.EventHandler(this.t00_Enter);
+            this.t60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t60.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t60.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t58
+            // 
+            this.t58.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t58.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t58.ForeColor = System.Drawing.Color.Blue;
+            this.t58.Location = new System.Drawing.Point(487, 244);
+            this.t58.Multiline = true;
+            this.t58.Name = "t58";
+            this.t58.Size = new System.Drawing.Size(59, 46);
+            this.t58.TabIndex = 74;
+            this.t58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t58.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t58.Enter += new System.EventHandler(this.t00_Enter);
+            this.t58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t58.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t58.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t57
+            // 
+            this.t57.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t57.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t57.ForeColor = System.Drawing.Color.Blue;
+            this.t57.Location = new System.Drawing.Point(428, 244);
+            this.t57.Multiline = true;
+            this.t57.Name = "t57";
+            this.t57.Size = new System.Drawing.Size(59, 46);
+            this.t57.TabIndex = 73;
+            this.t57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t57.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t57.Enter += new System.EventHandler(this.t00_Enter);
+            this.t57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t57.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t57.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t56
+            // 
+            this.t56.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t56.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t56.ForeColor = System.Drawing.Color.Blue;
+            this.t56.Location = new System.Drawing.Point(369, 244);
+            this.t56.Multiline = true;
+            this.t56.Name = "t56";
+            this.t56.Size = new System.Drawing.Size(59, 46);
+            this.t56.TabIndex = 72;
+            this.t56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t56.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t56.Enter += new System.EventHandler(this.t00_Enter);
+            this.t56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t56.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t56.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t48
+            // 
+            this.t48.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t48.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t48.ForeColor = System.Drawing.Color.Blue;
+            this.t48.Location = new System.Drawing.Point(487, 198);
+            this.t48.Multiline = true;
+            this.t48.Name = "t48";
+            this.t48.Size = new System.Drawing.Size(59, 46);
+            this.t48.TabIndex = 71;
+            this.t48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t48.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t48.Enter += new System.EventHandler(this.t00_Enter);
+            this.t48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t48.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t48.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t47
+            // 
+            this.t47.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t47.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t47.ForeColor = System.Drawing.Color.Blue;
+            this.t47.Location = new System.Drawing.Point(428, 198);
+            this.t47.Multiline = true;
+            this.t47.Name = "t47";
+            this.t47.Size = new System.Drawing.Size(59, 46);
+            this.t47.TabIndex = 70;
+            this.t47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t47.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t47.Enter += new System.EventHandler(this.t00_Enter);
+            this.t47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t47.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t47.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t46
+            // 
+            this.t46.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t46.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t46.ForeColor = System.Drawing.Color.Blue;
+            this.t46.Location = new System.Drawing.Point(369, 198);
+            this.t46.Multiline = true;
+            this.t46.Name = "t46";
+            this.t46.Size = new System.Drawing.Size(59, 46);
+            this.t46.TabIndex = 69;
+            this.t46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t46.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t46.Enter += new System.EventHandler(this.t00_Enter);
+            this.t46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t46.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t46.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t38
+            // 
+            this.t38.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t38.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t38.ForeColor = System.Drawing.Color.Blue;
+            this.t38.Location = new System.Drawing.Point(487, 152);
+            this.t38.Multiline = true;
+            this.t38.Name = "t38";
+            this.t38.Size = new System.Drawing.Size(59, 46);
+            this.t38.TabIndex = 68;
+            this.t38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t38.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t38.Enter += new System.EventHandler(this.t00_Enter);
+            this.t38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t38.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t38.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t37
+            // 
+            this.t37.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t37.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t37.ForeColor = System.Drawing.Color.Blue;
+            this.t37.Location = new System.Drawing.Point(428, 152);
+            this.t37.Multiline = true;
+            this.t37.Name = "t37";
+            this.t37.Size = new System.Drawing.Size(59, 46);
+            this.t37.TabIndex = 67;
+            this.t37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t37.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t37.Enter += new System.EventHandler(this.t00_Enter);
+            this.t37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t37.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t37.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t36
+            // 
+            this.t36.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t36.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t36.ForeColor = System.Drawing.Color.Blue;
+            this.t36.Location = new System.Drawing.Point(369, 152);
+            this.t36.Multiline = true;
+            this.t36.Name = "t36";
+            this.t36.Size = new System.Drawing.Size(59, 46);
+            this.t36.TabIndex = 66;
+            this.t36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t36.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t36.Enter += new System.EventHandler(this.t00_Enter);
+            this.t36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t36.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t36.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t55
+            // 
+            this.t55.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t55.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t55.ForeColor = System.Drawing.Color.Blue;
+            this.t55.Location = new System.Drawing.Point(306, 244);
+            this.t55.Multiline = true;
+            this.t55.Name = "t55";
+            this.t55.Size = new System.Drawing.Size(59, 46);
+            this.t55.TabIndex = 65;
+            this.t55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t55.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t55.Enter += new System.EventHandler(this.t00_Enter);
+            this.t55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t55.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t55.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t54
+            // 
+            this.t54.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t54.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t54.ForeColor = System.Drawing.Color.Blue;
+            this.t54.Location = new System.Drawing.Point(247, 244);
+            this.t54.Multiline = true;
+            this.t54.Name = "t54";
+            this.t54.Size = new System.Drawing.Size(59, 46);
+            this.t54.TabIndex = 64;
+            this.t54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t54.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t54.Enter += new System.EventHandler(this.t00_Enter);
+            this.t54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t54.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t54.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t53
+            // 
+            this.t53.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t53.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t53.ForeColor = System.Drawing.Color.Blue;
+            this.t53.Location = new System.Drawing.Point(188, 244);
+            this.t53.Multiline = true;
+            this.t53.Name = "t53";
+            this.t53.Size = new System.Drawing.Size(59, 46);
+            this.t53.TabIndex = 63;
+            this.t53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t53.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t53.Enter += new System.EventHandler(this.t00_Enter);
+            this.t53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t53.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t53.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t45
+            // 
+            this.t45.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t45.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t45.ForeColor = System.Drawing.Color.Blue;
+            this.t45.Location = new System.Drawing.Point(306, 198);
+            this.t45.Multiline = true;
+            this.t45.Name = "t45";
+            this.t45.Size = new System.Drawing.Size(59, 46);
+            this.t45.TabIndex = 62;
+            this.t45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t45.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t45.Enter += new System.EventHandler(this.t00_Enter);
+            this.t45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t45.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t45.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t44
+            // 
+            this.t44.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t44.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t44.ForeColor = System.Drawing.Color.Blue;
+            this.t44.Location = new System.Drawing.Point(247, 198);
+            this.t44.Multiline = true;
+            this.t44.Name = "t44";
+            this.t44.Size = new System.Drawing.Size(59, 46);
+            this.t44.TabIndex = 61;
+            this.t44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t44.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t44.Enter += new System.EventHandler(this.t00_Enter);
+            this.t44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t44.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t44.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t43
+            // 
+            this.t43.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t43.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t43.ForeColor = System.Drawing.Color.Blue;
+            this.t43.Location = new System.Drawing.Point(188, 198);
+            this.t43.Multiline = true;
+            this.t43.Name = "t43";
+            this.t43.Size = new System.Drawing.Size(59, 46);
+            this.t43.TabIndex = 60;
+            this.t43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t43.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t43.Enter += new System.EventHandler(this.t00_Enter);
+            this.t43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t43.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t43.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t35
+            // 
+            this.t35.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t35.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t35.ForeColor = System.Drawing.Color.Blue;
+            this.t35.Location = new System.Drawing.Point(306, 152);
+            this.t35.Multiline = true;
+            this.t35.Name = "t35";
+            this.t35.Size = new System.Drawing.Size(59, 46);
+            this.t35.TabIndex = 59;
+            this.t35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t35.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t35.Enter += new System.EventHandler(this.t00_Enter);
+            this.t35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t35.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t35.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t34
+            // 
+            this.t34.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t34.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t34.ForeColor = System.Drawing.Color.Blue;
+            this.t34.Location = new System.Drawing.Point(247, 152);
+            this.t34.Multiline = true;
+            this.t34.Name = "t34";
+            this.t34.Size = new System.Drawing.Size(59, 46);
+            this.t34.TabIndex = 58;
+            this.t34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t34.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t34.Enter += new System.EventHandler(this.t00_Enter);
+            this.t34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t34.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t34.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t33
+            // 
+            this.t33.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t33.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t33.ForeColor = System.Drawing.Color.Blue;
+            this.t33.Location = new System.Drawing.Point(188, 152);
+            this.t33.Multiline = true;
+            this.t33.Name = "t33";
+            this.t33.Size = new System.Drawing.Size(59, 46);
+            this.t33.TabIndex = 57;
+            this.t33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t33.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t33.Enter += new System.EventHandler(this.t00_Enter);
+            this.t33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t33.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t33.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t52
+            // 
+            this.t52.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t52.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t52.ForeColor = System.Drawing.Color.Blue;
+            this.t52.Location = new System.Drawing.Point(125, 244);
+            this.t52.Multiline = true;
+            this.t52.Name = "t52";
+            this.t52.Size = new System.Drawing.Size(59, 46);
+            this.t52.TabIndex = 56;
+            this.t52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t52.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t52.Enter += new System.EventHandler(this.t00_Enter);
+            this.t52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t52.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t52.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t51
+            // 
+            this.t51.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t51.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t51.ForeColor = System.Drawing.Color.Blue;
+            this.t51.Location = new System.Drawing.Point(66, 244);
+            this.t51.Multiline = true;
+            this.t51.Name = "t51";
+            this.t51.Size = new System.Drawing.Size(59, 46);
+            this.t51.TabIndex = 55;
+            this.t51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t51.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t51.Enter += new System.EventHandler(this.t00_Enter);
+            this.t51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t51.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t51.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t28
+            // 
+            this.t28.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t28.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t28.ForeColor = System.Drawing.Color.Blue;
+            this.t28.Location = new System.Drawing.Point(487, 100);
+            this.t28.Multiline = true;
+            this.t28.Name = "t28";
+            this.t28.Size = new System.Drawing.Size(59, 46);
+            this.t28.TabIndex = 47;
+            this.t28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t28.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t28.Enter += new System.EventHandler(this.t00_Enter);
+            this.t28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t28.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t06
+            // 
+            this.t06.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t06.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t06.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t06.ForeColor = System.Drawing.Color.Blue;
+            this.t06.Location = new System.Drawing.Point(369, 8);
+            this.t06.Multiline = true;
+            this.t06.Name = "t06";
+            this.t06.Size = new System.Drawing.Size(59, 46);
+            this.t06.TabIndex = 39;
+            this.t06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t06.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t06.Enter += new System.EventHandler(this.t00_Enter);
+            this.t06.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t06.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t06.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t50
+            // 
+            this.t50.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t50.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t50.ForeColor = System.Drawing.Color.Blue;
+            this.t50.Location = new System.Drawing.Point(7, 244);
+            this.t50.Multiline = true;
+            this.t50.Name = "t50";
+            this.t50.Size = new System.Drawing.Size(59, 46);
+            this.t50.TabIndex = 54;
+            this.t50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t50.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t50.Enter += new System.EventHandler(this.t00_Enter);
+            this.t50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t50.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t50.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t27
+            // 
+            this.t27.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t27.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t27.ForeColor = System.Drawing.Color.Blue;
+            this.t27.Location = new System.Drawing.Point(428, 100);
+            this.t27.Multiline = true;
+            this.t27.Name = "t27";
+            this.t27.Size = new System.Drawing.Size(59, 46);
+            this.t27.TabIndex = 46;
+            this.t27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t27.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t27.Enter += new System.EventHandler(this.t00_Enter);
+            this.t27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t27.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t42
+            // 
+            this.t42.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t42.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t42.ForeColor = System.Drawing.Color.Blue;
+            this.t42.Location = new System.Drawing.Point(125, 198);
+            this.t42.Multiline = true;
+            this.t42.Name = "t42";
+            this.t42.Size = new System.Drawing.Size(59, 46);
+            this.t42.TabIndex = 53;
+            this.t42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t42.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t42.Enter += new System.EventHandler(this.t00_Enter);
+            this.t42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t42.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t42.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t18
+            // 
+            this.t18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t18.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t18.ForeColor = System.Drawing.Color.Blue;
+            this.t18.Location = new System.Drawing.Point(487, 54);
+            this.t18.Multiline = true;
+            this.t18.Name = "t18";
+            this.t18.Size = new System.Drawing.Size(59, 46);
+            this.t18.TabIndex = 44;
+            this.t18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t18.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t18.Enter += new System.EventHandler(this.t00_Enter);
+            this.t18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t18.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t41
+            // 
+            this.t41.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t41.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t41.ForeColor = System.Drawing.Color.Blue;
+            this.t41.Location = new System.Drawing.Point(66, 198);
+            this.t41.Multiline = true;
+            this.t41.Name = "t41";
+            this.t41.Size = new System.Drawing.Size(59, 46);
+            this.t41.TabIndex = 52;
+            this.t41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t41.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t41.Enter += new System.EventHandler(this.t00_Enter);
+            this.t41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t41.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t41.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t07
+            // 
+            this.t07.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t07.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t07.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t07.ForeColor = System.Drawing.Color.Blue;
+            this.t07.Location = new System.Drawing.Point(428, 8);
+            this.t07.Multiline = true;
+            this.t07.Name = "t07";
+            this.t07.Size = new System.Drawing.Size(59, 46);
+            this.t07.TabIndex = 40;
+            this.t07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t07.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t07.Enter += new System.EventHandler(this.t00_Enter);
+            this.t07.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t07.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t07.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t40
+            // 
+            this.t40.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t40.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t40.ForeColor = System.Drawing.Color.Blue;
+            this.t40.Location = new System.Drawing.Point(7, 198);
+            this.t40.Multiline = true;
+            this.t40.Name = "t40";
+            this.t40.Size = new System.Drawing.Size(59, 46);
+            this.t40.TabIndex = 51;
+            this.t40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t40.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t40.Enter += new System.EventHandler(this.t00_Enter);
+            this.t40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t40.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t40.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t17
+            // 
+            this.t17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t17.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t17.ForeColor = System.Drawing.Color.Blue;
+            this.t17.Location = new System.Drawing.Point(428, 54);
+            this.t17.Multiline = true;
+            this.t17.Name = "t17";
+            this.t17.Size = new System.Drawing.Size(59, 46);
+            this.t17.TabIndex = 43;
+            this.t17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t17.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t17.Enter += new System.EventHandler(this.t00_Enter);
+            this.t17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t17.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t32
+            // 
+            this.t32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t32.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t32.ForeColor = System.Drawing.Color.Blue;
+            this.t32.Location = new System.Drawing.Point(125, 152);
+            this.t32.Multiline = true;
+            this.t32.Name = "t32";
+            this.t32.Size = new System.Drawing.Size(59, 46);
+            this.t32.TabIndex = 50;
+            this.t32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t32.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t32.Enter += new System.EventHandler(this.t00_Enter);
+            this.t32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t32.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t32.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t16
+            // 
+            this.t16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t16.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t16.ForeColor = System.Drawing.Color.Blue;
+            this.t16.Location = new System.Drawing.Point(369, 54);
+            this.t16.Multiline = true;
+            this.t16.Name = "t16";
+            this.t16.Size = new System.Drawing.Size(59, 46);
+            this.t16.TabIndex = 42;
+            this.t16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t16.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t16.Enter += new System.EventHandler(this.t00_Enter);
+            this.t16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t16.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t31
+            // 
+            this.t31.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t31.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t31.ForeColor = System.Drawing.Color.Blue;
+            this.t31.Location = new System.Drawing.Point(66, 152);
+            this.t31.Multiline = true;
+            this.t31.Name = "t31";
+            this.t31.Size = new System.Drawing.Size(59, 46);
+            this.t31.TabIndex = 49;
+            this.t31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t31.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t31.Enter += new System.EventHandler(this.t00_Enter);
+            this.t31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t31.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t31.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t08
+            // 
+            this.t08.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t08.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t08.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t08.ForeColor = System.Drawing.Color.Blue;
+            this.t08.Location = new System.Drawing.Point(487, 8);
+            this.t08.Multiline = true;
+            this.t08.Name = "t08";
+            this.t08.Size = new System.Drawing.Size(59, 46);
+            this.t08.TabIndex = 41;
+            this.t08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t08.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t08.Enter += new System.EventHandler(this.t00_Enter);
+            this.t08.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t08.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t08.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t26
+            // 
+            this.t26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t26.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t26.ForeColor = System.Drawing.Color.Blue;
+            this.t26.Location = new System.Drawing.Point(369, 100);
+            this.t26.Multiline = true;
+            this.t26.Name = "t26";
+            this.t26.Size = new System.Drawing.Size(59, 46);
+            this.t26.TabIndex = 45;
+            this.t26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t26.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t26.Enter += new System.EventHandler(this.t00_Enter);
+            this.t26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t26.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t30
+            // 
+            this.t30.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t30.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t30.ForeColor = System.Drawing.Color.Blue;
+            this.t30.Location = new System.Drawing.Point(7, 152);
+            this.t30.Multiline = true;
+            this.t30.Name = "t30";
+            this.t30.Size = new System.Drawing.Size(59, 46);
+            this.t30.TabIndex = 48;
+            this.t30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t30.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t30.Enter += new System.EventHandler(this.t00_Enter);
+            this.t30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t30.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t25
+            // 
+            this.t25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t25.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t25.ForeColor = System.Drawing.Color.Blue;
+            this.t25.Location = new System.Drawing.Point(306, 100);
+            this.t25.Multiline = true;
+            this.t25.Name = "t25";
+            this.t25.Size = new System.Drawing.Size(59, 46);
+            this.t25.TabIndex = 38;
+            this.t25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t25.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t25.Enter += new System.EventHandler(this.t00_Enter);
+            this.t25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t25.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t24
+            // 
+            this.t24.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t24.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t24.ForeColor = System.Drawing.Color.Blue;
+            this.t24.Location = new System.Drawing.Point(247, 100);
+            this.t24.Multiline = true;
+            this.t24.Name = "t24";
+            this.t24.Size = new System.Drawing.Size(59, 46);
+            this.t24.TabIndex = 37;
+            this.t24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t24.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t24.Enter += new System.EventHandler(this.t00_Enter);
+            this.t24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t24.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t23
+            // 
+            this.t23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t23.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t23.ForeColor = System.Drawing.Color.Blue;
+            this.t23.Location = new System.Drawing.Point(188, 100);
+            this.t23.Multiline = true;
+            this.t23.Name = "t23";
+            this.t23.Size = new System.Drawing.Size(59, 46);
+            this.t23.TabIndex = 36;
+            this.t23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t23.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t23.Enter += new System.EventHandler(this.t00_Enter);
+            this.t23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t23.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t15
+            // 
+            this.t15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t15.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t15.ForeColor = System.Drawing.Color.Blue;
+            this.t15.Location = new System.Drawing.Point(306, 54);
+            this.t15.Multiline = true;
+            this.t15.Name = "t15";
+            this.t15.Size = new System.Drawing.Size(59, 46);
+            this.t15.TabIndex = 35;
+            this.t15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t15.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t15.Enter += new System.EventHandler(this.t00_Enter);
+            this.t15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t15.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t14
+            // 
+            this.t14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t14.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t14.ForeColor = System.Drawing.Color.Blue;
+            this.t14.Location = new System.Drawing.Point(247, 54);
+            this.t14.Multiline = true;
+            this.t14.Name = "t14";
+            this.t14.Size = new System.Drawing.Size(59, 46);
+            this.t14.TabIndex = 34;
+            this.t14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t14.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t14.Enter += new System.EventHandler(this.t00_Enter);
+            this.t14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t14.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t13
+            // 
+            this.t13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t13.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t13.ForeColor = System.Drawing.Color.Blue;
+            this.t13.Location = new System.Drawing.Point(188, 54);
+            this.t13.Multiline = true;
+            this.t13.Name = "t13";
+            this.t13.Size = new System.Drawing.Size(59, 46);
+            this.t13.TabIndex = 33;
+            this.t13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t13.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t13.Enter += new System.EventHandler(this.t00_Enter);
+            this.t13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t13.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t05
+            // 
+            this.t05.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t05.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t05.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t05.ForeColor = System.Drawing.Color.Blue;
+            this.t05.Location = new System.Drawing.Point(306, 8);
+            this.t05.Multiline = true;
+            this.t05.Name = "t05";
+            this.t05.Size = new System.Drawing.Size(59, 46);
+            this.t05.TabIndex = 32;
+            this.t05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t05.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t05.Enter += new System.EventHandler(this.t00_Enter);
+            this.t05.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t05.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t05.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t04
+            // 
+            this.t04.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t04.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t04.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t04.ForeColor = System.Drawing.Color.Blue;
+            this.t04.Location = new System.Drawing.Point(247, 8);
+            this.t04.Multiline = true;
+            this.t04.Name = "t04";
+            this.t04.Size = new System.Drawing.Size(59, 46);
+            this.t04.TabIndex = 31;
+            this.t04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t04.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t04.Enter += new System.EventHandler(this.t00_Enter);
+            this.t04.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t04.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t04.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t03
+            // 
+            this.t03.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t03.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t03.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t03.ForeColor = System.Drawing.Color.Blue;
+            this.t03.Location = new System.Drawing.Point(188, 8);
+            this.t03.Multiline = true;
+            this.t03.Name = "t03";
+            this.t03.Size = new System.Drawing.Size(59, 46);
+            this.t03.TabIndex = 30;
+            this.t03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t03.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t03.Enter += new System.EventHandler(this.t00_Enter);
+            this.t03.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t03.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t03.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t22
+            // 
+            this.t22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t22.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t22.ForeColor = System.Drawing.Color.Blue;
+            this.t22.Location = new System.Drawing.Point(125, 100);
+            this.t22.Multiline = true;
+            this.t22.Name = "t22";
+            this.t22.Size = new System.Drawing.Size(59, 46);
+            this.t22.TabIndex = 29;
+            this.t22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t22.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t22.Enter += new System.EventHandler(this.t00_Enter);
+            this.t22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t22.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t21
+            // 
+            this.t21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t21.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t21.ForeColor = System.Drawing.Color.Blue;
+            this.t21.Location = new System.Drawing.Point(66, 100);
+            this.t21.Multiline = true;
+            this.t21.Name = "t21";
+            this.t21.Size = new System.Drawing.Size(59, 46);
+            this.t21.TabIndex = 28;
+            this.t21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t21.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t21.Enter += new System.EventHandler(this.t00_Enter);
+            this.t21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t21.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t20
+            // 
+            this.t20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t20.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t20.ForeColor = System.Drawing.Color.Blue;
+            this.t20.Location = new System.Drawing.Point(7, 100);
+            this.t20.Multiline = true;
+            this.t20.Name = "t20";
+            this.t20.Size = new System.Drawing.Size(59, 46);
+            this.t20.TabIndex = 27;
+            this.t20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t20.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t20.Enter += new System.EventHandler(this.t00_Enter);
+            this.t20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t20.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t12
+            // 
+            this.t12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t12.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t12.ForeColor = System.Drawing.Color.Blue;
+            this.t12.Location = new System.Drawing.Point(125, 54);
+            this.t12.Multiline = true;
+            this.t12.Name = "t12";
+            this.t12.Size = new System.Drawing.Size(59, 46);
+            this.t12.TabIndex = 26;
+            this.t12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t12.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t12.Enter += new System.EventHandler(this.t00_Enter);
+            this.t12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t12.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t11
+            // 
+            this.t11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t11.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t11.ForeColor = System.Drawing.Color.Blue;
+            this.t11.Location = new System.Drawing.Point(66, 54);
+            this.t11.Multiline = true;
+            this.t11.Name = "t11";
+            this.t11.Size = new System.Drawing.Size(59, 46);
+            this.t11.TabIndex = 25;
+            this.t11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t11.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t11.Enter += new System.EventHandler(this.t00_Enter);
+            this.t11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t11.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t10
+            // 
+            this.t10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t10.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t10.ForeColor = System.Drawing.Color.Blue;
+            this.t10.Location = new System.Drawing.Point(7, 54);
+            this.t10.Multiline = true;
+            this.t10.Name = "t10";
+            this.t10.Size = new System.Drawing.Size(59, 46);
+            this.t10.TabIndex = 24;
+            this.t10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t10.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t10.Enter += new System.EventHandler(this.t00_Enter);
+            this.t10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t10.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t02
+            // 
+            this.t02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t02.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t02.ForeColor = System.Drawing.Color.Blue;
+            this.t02.Location = new System.Drawing.Point(125, 8);
+            this.t02.Multiline = true;
+            this.t02.Name = "t02";
+            this.t02.Size = new System.Drawing.Size(59, 46);
+            this.t02.TabIndex = 23;
+            this.t02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t02.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t02.Enter += new System.EventHandler(this.t00_Enter);
+            this.t02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t02.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t01
+            // 
+            this.t01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t01.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t01.ForeColor = System.Drawing.Color.Blue;
+            this.t01.Location = new System.Drawing.Point(66, 8);
+            this.t01.Multiline = true;
+            this.t01.Name = "t01";
+            this.t01.Size = new System.Drawing.Size(59, 46);
+            this.t01.TabIndex = 22;
+            this.t01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t01.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t01.Enter += new System.EventHandler(this.t00_Enter);
+            this.t01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t01.Leave += new System.EventHandler(this.t00_Leave);
+            // 
+            // t00
+            // 
+            this.t00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t00.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t00.ForeColor = System.Drawing.Color.Blue;
+            this.t00.Location = new System.Drawing.Point(7, 8);
+            this.t00.Multiline = true;
+            this.t00.Name = "t00";
+            this.t00.Size = new System.Drawing.Size(59, 46);
+            this.t00.TabIndex = 21;
+            this.t00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t00.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
+            this.t00.Enter += new System.EventHandler(this.t00_Enter);
+            this.t00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
+            this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
+            this.t00.Leave += new System.EventHandler(this.t00_Leave);
+            // 
             // AzulDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1145, 641);
+            this.Controls.Add(this.pnl2);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl1);
             this.Name = "AzulDos";
             this.Text = "AzulDos";
+            this.Load += new System.EventHandler(this.AzulDos_Load);
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.pnlLetra.ResumeLayout(false);
@@ -3034,6 +3807,8 @@
             this.panel11.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.pnl2.ResumeLayout(false);
+            this.pnl2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3122,88 +3897,6 @@
         private System.Windows.Forms.TextBox txt02;
         private System.Windows.Forms.TextBox txt01;
         private System.Windows.Forms.TextBox txt00;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox51;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox59;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.TextBox textBox61;
-        private System.Windows.Forms.TextBox textBox62;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox66;
-        private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox69;
-        private System.Windows.Forms.TextBox textBox70;
-        private System.Windows.Forms.TextBox textBox71;
-        private System.Windows.Forms.TextBox textBox72;
-        private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.TextBox textBox74;
-        private System.Windows.Forms.TextBox textBox75;
-        private System.Windows.Forms.TextBox textBox76;
-        private System.Windows.Forms.TextBox textBox77;
-        private System.Windows.Forms.TextBox textBox78;
-        private System.Windows.Forms.TextBox textBox79;
-        private System.Windows.Forms.TextBox textBox80;
-        private System.Windows.Forms.TextBox textBox81;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnSelectColor;
@@ -3218,8 +3911,6 @@
         private System.Windows.Forms.Button pincelA;
         private System.Windows.Forms.TextBox txtBlueView;
         private System.Windows.Forms.Button btnDerecha;
-        private System.Windows.Forms.Button pincelL;
-        private System.Windows.Forms.Button pincelK;
         private System.Windows.Forms.Button btnBB;
         private System.Windows.Forms.Panel pnlLetra;
         private System.Windows.Forms.Button btnE;
@@ -3249,5 +3940,87 @@
         private System.Windows.Forms.ToolStripMenuItem activar;
         private System.Windows.Forms.ToolStripMenuItem desactivar;
         private System.Windows.Forms.TextBox txtNota;
+        private System.Windows.Forms.Panel pnl2;
+        private System.Windows.Forms.TextBox t88;
+        private System.Windows.Forms.TextBox t85;
+        private System.Windows.Forms.TextBox t87;
+        private System.Windows.Forms.TextBox t84;
+        private System.Windows.Forms.TextBox t86;
+        private System.Windows.Forms.TextBox t83;
+        private System.Windows.Forms.TextBox t78;
+        private System.Windows.Forms.TextBox t75;
+        private System.Windows.Forms.TextBox t77;
+        private System.Windows.Forms.TextBox t74;
+        private System.Windows.Forms.TextBox t76;
+        private System.Windows.Forms.TextBox t73;
+        private System.Windows.Forms.TextBox t68;
+        private System.Windows.Forms.TextBox t65;
+        private System.Windows.Forms.TextBox t67;
+        private System.Windows.Forms.TextBox t64;
+        private System.Windows.Forms.TextBox t66;
+        private System.Windows.Forms.TextBox t63;
+        private System.Windows.Forms.TextBox t82;
+        private System.Windows.Forms.TextBox t81;
+        private System.Windows.Forms.TextBox t80;
+        private System.Windows.Forms.TextBox t72;
+        private System.Windows.Forms.TextBox t71;
+        private System.Windows.Forms.TextBox t70;
+        private System.Windows.Forms.TextBox t62;
+        private System.Windows.Forms.TextBox t61;
+        private System.Windows.Forms.TextBox t60;
+        private System.Windows.Forms.TextBox t58;
+        private System.Windows.Forms.TextBox t57;
+        private System.Windows.Forms.TextBox t56;
+        private System.Windows.Forms.TextBox t48;
+        private System.Windows.Forms.TextBox t47;
+        private System.Windows.Forms.TextBox t46;
+        private System.Windows.Forms.TextBox t38;
+        private System.Windows.Forms.TextBox t37;
+        private System.Windows.Forms.TextBox t36;
+        private System.Windows.Forms.TextBox t55;
+        private System.Windows.Forms.TextBox t54;
+        private System.Windows.Forms.TextBox t53;
+        private System.Windows.Forms.TextBox t45;
+        private System.Windows.Forms.TextBox t44;
+        private System.Windows.Forms.TextBox t43;
+        private System.Windows.Forms.TextBox t35;
+        private System.Windows.Forms.TextBox t34;
+        private System.Windows.Forms.TextBox t33;
+        private System.Windows.Forms.TextBox t52;
+        private System.Windows.Forms.TextBox t51;
+        private System.Windows.Forms.TextBox t28;
+        private System.Windows.Forms.TextBox t06;
+        private System.Windows.Forms.TextBox t50;
+        private System.Windows.Forms.TextBox t27;
+        private System.Windows.Forms.TextBox t42;
+        private System.Windows.Forms.TextBox t18;
+        private System.Windows.Forms.TextBox t41;
+        private System.Windows.Forms.TextBox t07;
+        private System.Windows.Forms.TextBox t40;
+        private System.Windows.Forms.TextBox t17;
+        private System.Windows.Forms.TextBox t32;
+        private System.Windows.Forms.TextBox t16;
+        private System.Windows.Forms.TextBox t31;
+        private System.Windows.Forms.TextBox t08;
+        private System.Windows.Forms.TextBox t26;
+        private System.Windows.Forms.TextBox t30;
+        private System.Windows.Forms.TextBox t25;
+        private System.Windows.Forms.TextBox t24;
+        private System.Windows.Forms.TextBox t23;
+        private System.Windows.Forms.TextBox t15;
+        private System.Windows.Forms.TextBox t14;
+        private System.Windows.Forms.TextBox t13;
+        private System.Windows.Forms.TextBox t05;
+        private System.Windows.Forms.TextBox t04;
+        private System.Windows.Forms.TextBox t03;
+        private System.Windows.Forms.TextBox t22;
+        private System.Windows.Forms.TextBox t21;
+        private System.Windows.Forms.TextBox t20;
+        private System.Windows.Forms.TextBox t12;
+        private System.Windows.Forms.TextBox t11;
+        private System.Windows.Forms.TextBox t10;
+        private System.Windows.Forms.TextBox t02;
+        private System.Windows.Forms.TextBox t01;
+        private System.Windows.Forms.TextBox t00;
     }
 }

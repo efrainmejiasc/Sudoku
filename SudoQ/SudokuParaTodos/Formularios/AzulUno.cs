@@ -31,9 +31,7 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
-        private string[,] valorAmarillo = new string[9, 9];
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
-        private Button[] btnPincel2 = new Button[2];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
 
         private int[] position = new int[2];
@@ -126,9 +124,6 @@ namespace SudokuParaTodos.Formularios
             btnPincel[6] = pincelH; btnPincel[7] = pincelI;
             btnPincel[8] = pincelJ;
 
-            btnPincel2[0] = pincelK;
-            btnPincel2[1] = pincelL;
-
             return btnPincel;
         }
 
@@ -197,38 +192,21 @@ namespace SudokuParaTodos.Formularios
         private void ColorMarcador_Click(object sender, EventArgs e)
         {
             Button pincel = (Button)sender;
-            if (pincel.Name == "pincelK" || pincel.Name == "pincelL")
+            if (pincel.BackColor == Color.Silver)
             {
-                if (pincel.BackColor == Color.Silver)
-                {
-                    pincelMarcador = EngineData.Falso;
-                    txtSudoku = Funcion.SetearTextColorInicioSinAmarillo(txtSudoku);
-                 
-                }
-                else
-                {
-                    pincelMarcador = EngineData.Verdadero;
-                    colorFondoAct = pincel.BackColor;
-                }
+                pincelMarcador = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
             }
             else
             {
-                if (pincel.BackColor == Color.Silver)
-                {
-                    pincelMarcador = EngineData.Falso;
-                    txtSudoku = Funcion.SetearTextColorInicioConAmarillo(txtSudoku);
-                    btnSelectColor.BackColor = Color.Silver;
-                    btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
-                    btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
-                }
-                else
-                {
-                    pincelMarcador = EngineData.Verdadero;
-                    colorFondoAct = pincel.BackColor;
-                    btnSelectColor.BackColor = colorFondoAct;
-                    btnSelectColor.FlatAppearance.BorderColor = Color.Black;
-                    btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
-                }
+                pincelMarcador = EngineData.Verdadero;
+                colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
             }
         }
 
@@ -343,12 +321,12 @@ namespace SudokuParaTodos.Formularios
 
         private void AbrirJuego(string pathArchivo)
         {
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
             valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
             valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
             valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
             valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
-            valorAmarillo = Funcion.SetValorAmarillo(arrText, valorAmarillo);
             bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
             if (resultado)
             {
@@ -363,7 +341,6 @@ namespace SudokuParaTodos.Formularios
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
-            txtSudoku = Funcion.SetearEstadoAmarillo(valorAmarillo, txtSudoku);
             ContadorIngresado();
         }
 
@@ -374,15 +351,6 @@ namespace SudokuParaTodos.Formularios
             Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
             Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
             Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
-            if (tipo == string.Empty)
-            {
-                Funcion.GuardarValoresAmarillo(pathArchivo, txtSudoku);
-            }
-            else
-            {
-                Funcion.GuardarValoresAmarilloInicio(pathArchivo, valorAmarillo);
-                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
-            }
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
@@ -439,6 +407,7 @@ namespace SudokuParaTodos.Formularios
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
                     {
                         txt.Text = valorInicio[row, col];
+                        valorIngresado[row, col] = txt.Text;
                     }
                 }
                 else

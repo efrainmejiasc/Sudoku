@@ -34,7 +34,6 @@ namespace SudokuParaTodos
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
-        private string[,] valorAmarillo= new string[9, 9];
         private string [] solo = new string[27];
         private string [] oculto = new string[27];
 
@@ -581,7 +580,6 @@ namespace SudokuParaTodos
             Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
             Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
             Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
-            Funcion.GuardarValoresAmarilloInicio(pathArchivo, valorAmarillo);
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
