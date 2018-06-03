@@ -1973,7 +1973,7 @@
             // btnDerecha
             // 
             this.btnDerecha.BackColor = System.Drawing.Color.Silver;
-            this.btnDerecha.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
+            this.btnDerecha.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
             this.btnDerecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDerecha.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnDerecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1984,6 +1984,7 @@
             this.btnDerecha.Size = new System.Drawing.Size(36, 24);
             this.btnDerecha.TabIndex = 95;
             this.btnDerecha.UseVisualStyleBackColor = false;
+            this.btnDerecha.Click += new System.EventHandler(this.NavegacionVistas);
             // 
             // btnBB
             // 
@@ -3796,6 +3797,7 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl1);
             this.Name = "AzulDos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AzulDos";
             this.Load += new System.EventHandler(this.AzulDos_Load);
             this.pnl1.ResumeLayout(false);

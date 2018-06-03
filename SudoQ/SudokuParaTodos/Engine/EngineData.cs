@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SudokuParaTodos
 {
@@ -117,6 +118,26 @@ namespace SudokuParaTodos
         public void SetNombreIdioma(string v) { nombreIdioma = v; }
 
         public string GetNombreIdioma() { return nombreIdioma; }
+
+        public string NombreIdiomaCultura(string vCultura)
+        {
+            switch (vCultura)
+            {
+                case (CulturaEspañol):
+                    nombreIdioma = LenguajeEspañol ;
+                    break;
+                case (CulturaIngles):
+                    nombreIdioma = LenguajeIngles;
+                    break;
+                case (CulturaPortugues):
+                    nombreIdioma = LenguajePortugues;
+                    break;
+                default:
+                    nombreIdioma = LenguajeEspañol;
+                    break;
+            }
+            return nombreIdioma;
+        }
 
         private string idioma = string.Empty;
 
@@ -310,6 +331,7 @@ namespace SudokuParaTodos
 
         public void SetArrText(ArrayList vArrText) { arrText = vArrText; }
 
+        //**********************************************************************************
         private string[,] valorIngresado = new string[9, 9];
 
         public string[,] GetValorIngresado()
@@ -362,5 +384,12 @@ namespace SudokuParaTodos
             this.valorSolucion = vSolucion;
         }
 
+        //**********************************************************************************
+
+        private bool objFrom  = false;
+
+        public void SetObjFrom(bool from) { objFrom = from; }
+
+        public bool GetObjFrom () { return objFrom; }
     }
 }

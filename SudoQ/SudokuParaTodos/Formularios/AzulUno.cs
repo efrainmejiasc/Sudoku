@@ -63,8 +63,23 @@ namespace SudokuParaTodos.Formularios
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(Valor.GetIdioma());
             }
+
             AplicarIdioma();
-            ComportamientoObjetoInicio();
+
+            if (!Valor.GetObjFrom())
+            {
+                ComportamientoObjetoInicio();
+                AbrirJuego(pathArchivo);
+            }
+            else
+            {
+                Valor.SetObjFrom(EngineData.Falso);
+                valorIngresado = Valor.GetValorIngresado();
+                valorEliminado = Valor.GetValorEliminado();
+                valorInicio = Valor.GetValorInicio();
+                ComportamientoObjetoInicio();
+                SetearJuego();
+            }
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -137,12 +152,10 @@ namespace SudokuParaTodos.Formularios
             this.MaximumSize = new Size(1161, 680);
             this.Size = new Size(1161, 680);
             this.Text = EngineData.Titulo + EngineData.Numeros;
-            txtBlueView.Text = EngineData.azul1_5;
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             btnPincel= AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);
             ActivarDesactivarContadores(EngineData.Falso);
-            AbrirJuego(pathArchivo);
         }
 
         private void AplicarIdioma()
@@ -212,33 +225,12 @@ namespace SudokuParaTodos.Formularios
 
         private void NavegacionVistas(object sender, EventArgs e)
         {
-            string vistazul = txtBlueView.Text;
-            Button btn = (Button)sender;
-
-            if (vistazul == EngineData.azul1_5) txtBlueView.Text = EngineData.azul5_5;
-            if (vistazul == EngineData.azul2_5) txtBlueView.Text = EngineData.azul1_5;
-            if (vistazul == EngineData.azul3_5) txtBlueView.Text = EngineData.azul2_5;
-            if (vistazul == EngineData.azul4_5) txtBlueView.Text = EngineData.azul3_5;
-            if (vistazul == EngineData.azul5_5) txtBlueView.Text = EngineData.azul4_5;
-
-            ComportamientoVistaAzul(txtBlueView.Text);
-        }
-
-        private void ComportamientoVistaAzul(string vista)
-        {
-            switch (vista)
-            {
-                case (EngineData.azul1_5):
-                    break;
-                case (EngineData.azul2_5):
-                    break;
-                case (EngineData.azul3_5):
-                    break;
-                case (EngineData.azul4_5):
-                    break;
-                case (EngineData.azul5_5):
-                    break;
-            }
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorEliminado(valorEliminado);
+            AzulDos f = new AzulDos();
+            f.Show();
+            this.Hide();
         }
 
         private void ContadorIngresado()
@@ -330,9 +322,7 @@ namespace SudokuParaTodos.Formularios
             bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
             if (resultado)
             {
-                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+                SetearJuego();
             }
             else
             {
@@ -342,6 +332,13 @@ namespace SudokuParaTodos.Formularios
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
             ContadorIngresado();
+        }
+
+        private void SetearJuego()
+        {
+            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+            valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
         }
 
         private void GuardarJuego(string pathArchivo, string tipo)
