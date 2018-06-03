@@ -1851,6 +1851,7 @@
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 105;
             this.pincelJ.UseVisualStyleBackColor = false;
+            this.pincelJ.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelI
             // 
@@ -1864,6 +1865,7 @@
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 104;
             this.pincelI.UseVisualStyleBackColor = false;
+            this.pincelI.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelH
             // 
@@ -1877,6 +1879,7 @@
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 103;
             this.pincelH.UseVisualStyleBackColor = false;
+            this.pincelH.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelG
             // 
@@ -1890,6 +1893,7 @@
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 102;
             this.pincelG.UseVisualStyleBackColor = false;
+            this.pincelG.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelE
             // 
@@ -1903,6 +1907,7 @@
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 101;
             this.pincelE.UseVisualStyleBackColor = false;
+            this.pincelE.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelD
             // 
@@ -1916,6 +1921,7 @@
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 100;
             this.pincelD.UseVisualStyleBackColor = false;
+            this.pincelD.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelC
             // 
@@ -1929,6 +1935,7 @@
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 99;
             this.pincelC.UseVisualStyleBackColor = false;
+            this.pincelC.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelB
             // 
@@ -1942,6 +1949,7 @@
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 98;
             this.pincelB.UseVisualStyleBackColor = false;
+            this.pincelB.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // pincelA
             // 
@@ -1956,6 +1964,7 @@
             this.pincelA.TabIndex = 97;
             this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
+            this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
             // txtBlueView
             // 

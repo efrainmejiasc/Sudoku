@@ -79,6 +79,7 @@ namespace SudokuParaTodos.Formularios
                 valorInicio = Valor.GetValorInicio();
                 ComportamientoObjetoInicio();
                 SetearJuego();
+                ContadorIngresado();
             }
         }
 

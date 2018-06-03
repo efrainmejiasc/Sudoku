@@ -25,6 +25,7 @@ namespace SudokuParaTodos.Formularios
         private EngineSudoku.LetrasJuegoACB LetrasJuegoACB = new EngineSudoku.LetrasJuegoACB();
 
         private TextBox[,] txtSudoku = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
+        private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
         private string[,] valorIngresado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
         private string[,] valorCandidato = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
         private string[,] valorEliminado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
@@ -74,6 +75,8 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
+            SetearJuego();
+            ContadorIngresado();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -200,6 +203,7 @@ namespace SudokuParaTodos.Formularios
             this.Size = new Size(1161, 680);
             this.Text = EngineData.Titulo + EngineData.Numeros;
             txtSudoku = AsociarTxtMatriz(txtSudoku);
+            txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);
             ActivarDesactivarContadores(EngineData.Falso);
@@ -245,10 +249,104 @@ namespace SudokuParaTodos.Formularios
                 contadorActivado = EngineData.Falso;
             }
         }
+
+        private void SetearJuego()
+        {
+            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+            valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+        }
+
+        private void ContadorIngresado()
+        {
+            contadorIngresado = Funcion.ContadorIngresado(valorIngresado);
+            SetSoloOculto();
+            SetLetrasJuegoACB();
+            SetLetrasJuegoFEG();
+            if (!contadorActivado)
+            {
+                btnA.Visible = EngineData.Falso;
+                btnB.Visible = EngineData.Falso;
+            }
+            else
+            {
+                btnA.Visible = EngineData.Verdadero;
+                btnB.Visible = EngineData.Verdadero;
+            }
+        }
+
+        private void SetSoloOculto()
+        {
+            solo = Funcion.CandidatoSolo(valorIngresado, valorCandidatoSinEliminados);
+            oculto = new string[27];
+            ListBox valor = new ListBox();
+            for (int f = 0; f <= 8; f++)
+            {
+                valor = Funcion.MapeoFilaCandidatoOcultoFila(valorIngresado, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoFila(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+                valor = Funcion.MapeoFilaCandidatoOcultoColumna(valorIngresado, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoColumna(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+                valor = Funcion.MapeoFilaCandidatoOcultoRecuadro(valorIngresado, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoRecuadro(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+            }
+        }
+
+        private void SetLetrasJuegoACB()
+        {
+            LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
+            btnA.Text = LetrasJuegoACB.A.ToString();
+            btnB.Text = LetrasJuegoACB.B.ToString();
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
+            {
+                btnBB.Visible = EngineData.Falso;
+            }
+            else
+            {
+                btnBB.Visible = EngineData.Verdadero;
+            }
+            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+        }
+
+        private void SetLetrasJuegoFEG()
+        {
+            LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
+            btnF.Text = LetrasJuegoFEG.F.ToString();
+            btnE.Text = LetrasJuegoFEG.E.ToString();
+            btnG.Text = LetrasJuegoFEG.G.ToString();
+        }
+
+        private void ColorMarcador_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcador = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+            }
+            else
+            {
+                pincelMarcador = EngineData.Verdadero;
+                colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+            }
+        }
         //***************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
         }
 
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
