@@ -342,7 +342,7 @@ namespace SudokuParaTodos.Formularios
             txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
         }
 
-        private void GuardarJuego(string pathArchivo, string tipo)
+        private void GuardarJuego(string pathArchivo)
         {
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
             Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
@@ -352,6 +352,7 @@ namespace SudokuParaTodos.Formularios
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
+        //************************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -490,10 +491,9 @@ namespace SudokuParaTodos.Formularios
             }
             valorIngresado = new string[9, 9];
             valorEliminado = new string[9, 9];
-            GuardarJuego(pathArchivo,EngineData.reiniciar);
+            GuardarJuego(pathArchivo);
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             AbrirJuego(pathArchivo);
-            ContadorIngresado();
         }
 
         private void guardar_Click(object sender, EventArgs e)
@@ -503,7 +503,7 @@ namespace SudokuParaTodos.Formularios
             {
                 return;
             }
-            GuardarJuego(pathArchivo,string.Empty);
+            GuardarJuego(pathArchivo);
         }
 
         private void guardarComo_Click(object sender, EventArgs e)
@@ -521,7 +521,7 @@ namespace SudokuParaTodos.Formularios
                 return;
             }
             Valor.SetPathArchivo(pathArchivo);
-            GuardarJuego(pathArchivo,string.Empty);
+            GuardarJuego(pathArchivo);
         }
 
         private void activar_Click(object sender, EventArgs e)

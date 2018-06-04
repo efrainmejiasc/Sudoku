@@ -235,6 +235,8 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -2113,7 +2115,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(378, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(470, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2134,30 +2136,35 @@
             this.crearJuego.Name = "crearJuego";
             this.crearJuego.Size = new System.Drawing.Size(152, 22);
             this.crearJuego.Text = "Crear Juego";
+            this.crearJuego.Click += new System.EventHandler(this.crearJuego_Click);
             // 
             // abrirJuego
             // 
             this.abrirJuego.Name = "abrirJuego";
             this.abrirJuego.Size = new System.Drawing.Size(152, 22);
             this.abrirJuego.Text = "Abrir Juego";
+            this.abrirJuego.Click += new System.EventHandler(this.abrirJuego_Click);
             // 
             // guardar
             // 
             this.guardar.Name = "guardar";
             this.guardar.Size = new System.Drawing.Size(152, 22);
             this.guardar.Text = "Guardar";
+            this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
             // guardarComo
             // 
             this.guardarComo.Name = "guardarComo";
             this.guardarComo.Size = new System.Drawing.Size(152, 22);
             this.guardarComo.Text = "Guardar Como";
+            this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
             // reiniciar
             // 
             this.reiniciar.Name = "reiniciar";
             this.reiniciar.Size = new System.Drawing.Size(152, 22);
             this.reiniciar.Text = "Reiniciar";
+            this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
             // 
             // mIdiomas
             // 
@@ -2174,18 +2181,21 @@
             this.mIEspañol.Name = "mIEspañol";
             this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
+            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
             this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
+            this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
             this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Portugues";
+            this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mTablero
             // 
@@ -2195,6 +2205,7 @@
             this.mTablero.Name = "mTablero";
             this.mTablero.Size = new System.Drawing.Size(68, 20);
             this.mTablero.Text = "TABLERO";
+            this.mTablero.Visible = false;
             // 
             // toolStripMenuItem2
             // 
@@ -2215,6 +2226,7 @@
             this.mColores.Name = "mColores";
             this.mColores.Size = new System.Drawing.Size(70, 20);
             this.mColores.Text = "COLORES";
+            this.mColores.Visible = false;
             // 
             // configuracion
             // 
@@ -2234,14 +2246,16 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(152, 22);
             this.activar.Text = "Activar";
+            this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(152, 22);
             this.desactivar.Text = "Desactivar";
+            this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
             // txtNota
             // 
@@ -3797,6 +3811,10 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // AzulDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4033,5 +4051,7 @@
         private System.Windows.Forms.TextBox t02;
         private System.Windows.Forms.TextBox t01;
         private System.Windows.Forms.TextBox t00;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
