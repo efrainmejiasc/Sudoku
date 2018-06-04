@@ -1815,7 +1815,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 165);
-            this.panel10.TabIndex = 72;
+            this.panel10.TabIndex = 0;
             // 
             // btnAyuda
             // 
@@ -2114,7 +2114,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(378, 24);
-            this.menuStrip1.TabIndex = 58;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // mArchivo

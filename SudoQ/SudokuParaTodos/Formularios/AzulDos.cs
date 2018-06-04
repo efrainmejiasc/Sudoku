@@ -38,7 +38,7 @@ namespace SudokuParaTodos.Formularios
         private int[] position = new int[2];
         int row = -1;
         int col = -1;
-        private Color colorFondoAct;
+        private Color colorFondoAct ;
         private bool pincelMarcador = EngineData.Falso;
         private Color colorCeldaAnt;
         private string[] solo = new string[27];
@@ -75,6 +75,7 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
+            valorEliminado[8, 8] = "5 3 7";
             SetearJuego();
             ContadorIngresado();
         }
@@ -255,6 +256,7 @@ namespace SudokuParaTodos.Formularios
             valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
             txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            txtSudoku2 = Funcion.SetearTextBoxNumeroEliminados(txtSudoku2, valorIngresado, valorEliminado);
         }
 
         private void ContadorIngresado()
@@ -347,32 +349,112 @@ namespace SudokuParaTodos.Formularios
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                txt.ForeColor = Color.Black;
+            else txt.ForeColor = Color.Blue;
+
+            if (pincelMarcador)
+            {
+                txtSudoku[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
         }
 
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
         }
 
         private void txt00_KeyUp(object sender, KeyEventArgs e)
         {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            try
+            {
+                if (txt.Text == EngineData.Zero)
+                {
+                    txt.Text = string.Empty;
 
+                    valorIngresado[row, col] = string.Empty;
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                        valorIngresado[row, col] = txt.Text;
+                    }
+                }
+                else
+                {
+                    valorIngresado[row, col] = txt.Text;
+
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                    }
+                }
+                SetearJuego();
+                ContadorIngresado();
+            }
+            catch { }
+
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku[row, col].Focus(); }
+                return;
+            }
         }
 
         private void txt00_DoubleClick(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
         }
 
         private void txt00_Leave(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
         }
 
         //*************************************************************************************************
         private void t00_Enter(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (pincelMarcador)
+            {
+                txtSudoku2[row, col].BackColor = colorFondoAct;
+            }
         }
 
         private void t00_KeyPress(object sender, KeyPressEventArgs e)
@@ -382,12 +464,41 @@ namespace SudokuParaTodos.Formularios
 
         private void t00_KeyUp(object sender, KeyEventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (valorIngresado[row, col] != null && valorIngresado[row, col] != string.Empty)
+            {
+                txtSudoku2[row, col].Text = valorIngresado[row, col];
+            }
+            else
+            {
+                if (valorEliminado[row, col] != null && valorEliminado[row, col] != string.Empty)
+                {
+                    txtSudoku2[row, col].Text = valorEliminado[row, col];
+                    txtSudoku2[row, col].Font = new Font(EngineData.TipoLetra, 8);
+                    txtSudoku2[row, col].ForeColor = Color.Red;
+                    txtSudoku2[row, col].TextAlign = HorizontalAlignment.Left;
+                }
+            }
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku2[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku2[row, col].Focus(); }
+                return;
+            }
         }
 
         private void t00_DoubleClick(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
         }
 
         private void t00_Leave(object sender, EventArgs e)

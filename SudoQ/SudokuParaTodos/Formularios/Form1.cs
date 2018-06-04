@@ -688,6 +688,8 @@ namespace SudokuParaTodos
             }
         }
 
+        //*************************************************************************************
+
         private void t00_Enter(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -718,7 +720,11 @@ namespace SudokuParaTodos
             }
             else
             {
-                txtSudoku2[row, col].Text = valorCandidatoSinEliminados[row, col];
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
+                txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
+                ContadorIngresado();
             }
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)

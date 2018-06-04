@@ -190,6 +190,39 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public TextBox[,] SetearTextBoxNumeroEliminados(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vEliminado)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                    {
+                        cajaTexto[f, c].Text = vIngresado[f, c];
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
+                        cajaTexto[f, c].ForeColor = Color.Green;
+                        cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                    }
+                    else
+                    {
+                        if(vEliminado[f, c] != null && vEliminado[f, c] != string.Empty)
+                        {
+                            cajaTexto[f, c].Text = vEliminado[f, c];
+                            cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 8);
+                            cajaTexto[f, c].ForeColor = Color.Red;
+                            cajaTexto[f, c].TextAlign = HorizontalAlignment.Left;
+                        }
+                        else
+                        {
+                            cajaTexto[f, c].Text = string.Empty;
+                        }
+                    }
+                  
+                }
+            }
+            return cajaTexto;
+        }
+
         public TextBox [,] SetearTextBoxLimpio(TextBox[,] cajaTexto)
         {
             for (int f = 0; f <= 8; f++)
