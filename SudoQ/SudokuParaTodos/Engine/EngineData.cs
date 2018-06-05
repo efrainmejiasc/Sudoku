@@ -166,6 +166,48 @@ namespace SudokuParaTodos
             return titulo;
         }
 
+        public string TituloFormA2(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Sudoku Para Todos - Números:                                                                                                                                                                                              Números y Candidatos Excluidos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Sudoku For All - Numbers:                                                                                                                                                                                                 Numbers and Candidates Excluded";
+                    break;
+                case ("Portugues"):
+                    titulo = "Sudoku Para Todos - Números:                                                                                                                                                                                              Números e Candidatos Excluído";
+                    break;
+                default:
+                    titulo = "Sudoku Para Todos - Números:                                                                                                                                                                                              Números y Candidatos Excluidos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloFormR1(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                           Candidatos Excluidos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Sudoku For All - Filtered Candidates:                                                                                                                                                                                                Candidates Excluded";
+                    break;
+                case ("Portugues"):
+                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                             Candidatos Excluído";
+                    break;
+                default:
+                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                              Candidatos Excluidos";
+                    break;
+            }
+            return titulo;
+        }
+
         public string NombreJuegoFileFiltro(string lenguaje)
         {
             string nombreJuego = string.Empty;
@@ -391,5 +433,11 @@ namespace SudokuParaTodos
         public void SetObjFrom(bool from) { objFrom = from; }
 
         public bool GetObjFrom () { return objFrom; }
+
+        private bool visiblidadACB = true ;
+
+        public void SetVisibilidadACB (bool v) { visiblidadACB = v; }
+
+        public bool GetVisibilidadACB() { return visiblidadACB; }
     }
 }

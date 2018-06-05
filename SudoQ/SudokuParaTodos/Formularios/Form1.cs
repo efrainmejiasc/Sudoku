@@ -75,7 +75,7 @@ namespace SudokuParaTodos
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
             btnPincel = AsociarBtnPincel(btnPincel);
-            ComportamientoObjInicio2();
+            ComportamientoObjInicio();
             ComportamientoObjExpandido();
         }
 
@@ -207,6 +207,7 @@ namespace SudokuParaTodos
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
+     
 
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
@@ -273,7 +274,7 @@ namespace SudokuParaTodos
             btnGuardar.Text = RecursosLocalizables.StringResources.btnGuardar;
             btnOtro.Text =  RecursosLocalizables.StringResources.btnOtro;
             btnSolucion.Text = RecursosLocalizables.StringResources.btnSolucion;
-            this.Text = Valor.TituloForm(Valor.GetIdioma()); 
+            this.Text = Valor.TituloForm(Valor.GetNombreIdioma()); 
         }
 
         private int ContadorIngresado()
@@ -291,7 +292,7 @@ namespace SudokuParaTodos
             }
             else if (contadorIngresado < 17)
             {
-               btnGuardar.Visible = EngineData.Falso;
+                btnGuardar.Visible = EngineData.Falso;
                 btnA.Visible = EngineData.Falso;
                 btnB.Visible = EngineData.Falso;
                 btnC.Visible = EngineData.Falso;
@@ -308,6 +309,7 @@ namespace SudokuParaTodos
                 btnSolucion.Visible = EngineData.Falso;
             }
             SetLetrasJuegoFEG();
+            VisibilidadACB();
             return contadorIngresado;
         }
 
@@ -367,6 +369,22 @@ namespace SudokuParaTodos
             btnA.Visible = EngineData.Falso;
             btnB.Visible = EngineData.Falso;
             btnC.Visible = EngineData.Falso;
+        }
+
+        private void VisibilidadACB()
+        {
+            if (vInit)
+            {
+                btnA.Visible = EngineData.Falso;
+                btnC.Visible = EngineData.Falso;
+                btnB.Visible = EngineData.Falso;
+            }
+            else
+            {
+                btnA.Visible = EngineData.Verdadero;
+                btnC.Visible = EngineData.Verdadero;
+                btnB.Visible = EngineData.Verdadero;
+            }
         }
 
         ////////////EVENTOS////////////////////////////////////////////////////////////////////////
@@ -451,8 +469,6 @@ namespace SudokuParaTodos
                     txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
                     txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
 
-                    ContadorIngresado();
-               
                     openFrom = EngineData.File;
                     Valor.SetOpenFrom(openFrom);
                     vInit = EngineData.Verdadero;
@@ -461,6 +477,8 @@ namespace SudokuParaTodos
                     btnOtro.Visible = EngineData.Verdadero;
                     btnAbrir.Visible = EngineData.Verdadero;
                     btnSolucion.Visible = EngineData.Falso;
+
+                    ContadorIngresado();
                     break;
                 case (EngineData.BtnGuardarJuego):
                     if (Valor.GetPathArchivo() == string.Empty)

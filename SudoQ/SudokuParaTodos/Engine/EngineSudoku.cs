@@ -1794,6 +1794,14 @@ namespace SudokuParaTodos
             return contadorCandidatos;
         }
 
+        public bool Visibilidad70 ( double v)
+        {
+            bool visible = EngineData.Falso;
+            if (v < 70) visible = EngineData.Verdadero;
+
+            return visible;
+        }
+
         //CREAR TABLAS 
         public DataTable CrearTabla1()
         {

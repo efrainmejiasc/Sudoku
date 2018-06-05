@@ -122,7 +122,6 @@
             this.pincelC = new System.Windows.Forms.Button();
             this.pincelB = new System.Windows.Forms.Button();
             this.pincelA = new System.Windows.Forms.Button();
-            this.txtBlueView = new System.Windows.Forms.TextBox();
             this.btnDerecha = new System.Windows.Forms.Button();
             this.btnBB = new System.Windows.Forms.Button();
             this.pnlLetra = new System.Windows.Forms.Panel();
@@ -1807,7 +1806,6 @@
             this.panel10.Controls.Add(this.pincelC);
             this.panel10.Controls.Add(this.pincelB);
             this.panel10.Controls.Add(this.pincelA);
-            this.panel10.Controls.Add(this.txtBlueView);
             this.panel10.Controls.Add(this.btnDerecha);
             this.panel10.Controls.Add(this.btnBB);
             this.panel10.Controls.Add(this.pnlLetra);
@@ -1968,19 +1966,6 @@
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
-            // txtBlueView
-            // 
-            this.txtBlueView.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBlueView.ForeColor = System.Drawing.Color.Black;
-            this.txtBlueView.Location = new System.Drawing.Point(670, 36);
-            this.txtBlueView.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBlueView.MaxLength = 7;
-            this.txtBlueView.Name = "txtBlueView";
-            this.txtBlueView.Size = new System.Drawing.Size(30, 24);
-            this.txtBlueView.TabIndex = 96;
-            this.txtBlueView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBlueView.Visible = false;
-            // 
             // btnDerecha
             // 
             this.btnDerecha.BackColor = System.Drawing.Color.Silver;
@@ -2010,6 +1995,7 @@
             this.btnBB.TabIndex = 82;
             this.btnBB.Text = "B";
             this.btnBB.UseVisualStyleBackColor = false;
+            this.btnBB.Click += new System.EventHandler(this.btnBB_Click);
             // 
             // pnlLetra
             // 
@@ -2115,7 +2101,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(470, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(240, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2179,21 +2165,21 @@
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Portugues";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -2246,14 +2232,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(152, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(152, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -3938,7 +3924,6 @@
         private System.Windows.Forms.Button pincelC;
         private System.Windows.Forms.Button pincelB;
         private System.Windows.Forms.Button pincelA;
-        private System.Windows.Forms.TextBox txtBlueView;
         private System.Windows.Forms.Button btnDerecha;
         private System.Windows.Forms.Button btnBB;
         private System.Windows.Forms.Panel pnlLetra;

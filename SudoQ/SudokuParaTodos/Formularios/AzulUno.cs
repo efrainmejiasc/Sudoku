@@ -307,6 +307,8 @@ namespace SudokuParaTodos.Formularios
         private void SetLetrasJuegoFEG()
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
+            btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             btnF.Text = LetrasJuegoFEG.F.ToString();
             btnE.Text = LetrasJuegoFEG.E.ToString();
             btnG.Text = LetrasJuegoFEG.G.ToString();
@@ -350,6 +352,13 @@ namespace SudokuParaTodos.Formularios
             Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
             Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
+        }
+
+        private void btnBB_Click(object sender, EventArgs e)
+        {
+            RojoUno f = new RojoUno();
+            f.Show();
+            this.Hide();
         }
 
         //************************************************************************************************************
@@ -535,5 +544,6 @@ namespace SudokuParaTodos.Formularios
             ActivarDesactivarContadores(EngineData.Falso);
             ContadorIngresado();
         }
+
     }
 }

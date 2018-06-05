@@ -174,25 +174,6 @@ namespace SudokuParaTodos.Formularios
             return txtSudoku2;
         }
 
-        private void AplicarIdioma()
-        {
-            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno;
-            mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
-            mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
-            mColores.Text = RecursosLocalizables.StringResources.mColores;
-            mTablero.Text = RecursosLocalizables.StringResources.mTablero;
-            mContadores.Text = RecursosLocalizables.StringResources.mContadores;
-            crearJuego.Text = RecursosLocalizables.StringResources.crearJuego;
-            abrirJuego.Text = RecursosLocalizables.StringResources.abrirJuego;
-            guardar.Text = RecursosLocalizables.StringResources.guardar;
-            guardarComo.Text = RecursosLocalizables.StringResources.guardarComo;
-            reiniciar.Text = RecursosLocalizables.StringResources.reiniciar;
-            configuracion.Text = RecursosLocalizables.StringResources.configuracion;
-            activar.Text = RecursosLocalizables.StringResources.activar;
-            desactivar.Text = RecursosLocalizables.StringResources.desactivar;
-            btnAyuda.Text = RecursosLocalizables.StringResources.btnAyuda;
-        }
-
         private void ComportamientoObjetoInicio()
         {
             pathArchivo = Valor.GetPathArchivo();
@@ -202,7 +183,6 @@ namespace SudokuParaTodos.Formularios
             }
             this.MaximumSize = new Size(1161, 680);
             this.Size = new Size(1161, 680);
-            this.Text = EngineData.Titulo + EngineData.Numeros;
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
             btnPincel = AsociarBtnPincel(btnPincel);
@@ -315,6 +295,8 @@ namespace SudokuParaTodos.Formularios
         private void SetLetrasJuegoFEG()
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
+            btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             btnF.Text = LetrasJuegoFEG.F.ToString();
             btnE.Text = LetrasJuegoFEG.E.ToString();
             btnG.Text = LetrasJuegoFEG.G.ToString();
@@ -342,29 +324,23 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
-        private void Lenguaje_Click(object sender, EventArgs e)
+        private void AplicarIdioma()
         {
-            EngineData Valor = EngineData.Instance();
-            ToolStripMenuItem toolStrip = sender as ToolStripMenuItem;
-            switch (toolStrip.Name)
-            {
-                case (EngineData.Español):
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
-                    Valor.SetIdioma(EngineData.CulturaEspañol);
-                    Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
-                    break;
-                case (EngineData.Ingles):
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
-                    Valor.SetIdioma(EngineData.CulturaIngles);
-                    Valor.SetNombreIdioma(EngineData.LenguajeIngles);
-                    break;
-                case (EngineData.Portugues):
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
-                    Valor.SetIdioma(EngineData.CulturaPortugues);
-                    Valor.SetNombreIdioma(EngineData.LenguajePortugues);
-                    break;
-            }
-            AplicarIdioma();
+            this.Text = Valor.TituloFormA2(Valor.GetNombreIdioma());
+            mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
+            mColores.Text = RecursosLocalizables.StringResources.mColores;
+            mTablero.Text = RecursosLocalizables.StringResources.mTablero;
+            mContadores.Text = RecursosLocalizables.StringResources.mContadores;
+            crearJuego.Text = RecursosLocalizables.StringResources.crearJuego;
+            abrirJuego.Text = RecursosLocalizables.StringResources.abrirJuego;
+            guardar.Text = RecursosLocalizables.StringResources.guardar;
+            guardarComo.Text = RecursosLocalizables.StringResources.guardarComo;
+            reiniciar.Text = RecursosLocalizables.StringResources.reiniciar;
+            configuracion.Text = RecursosLocalizables.StringResources.configuracion;
+            activar.Text = RecursosLocalizables.StringResources.activar;
+            desactivar.Text = RecursosLocalizables.StringResources.desactivar;
+            btnAyuda.Text = RecursosLocalizables.StringResources.btnAyuda;
         }
 
         private void AbrirJuego(string pathArchivo)
@@ -401,6 +377,38 @@ namespace SudokuParaTodos.Formularios
             Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
             Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
+        }
+
+        private void Lenguaje_Click(object sender, EventArgs e)
+        {
+            EngineData Valor = EngineData.Instance();
+            ToolStripMenuItem toolStrip = sender as ToolStripMenuItem;
+            switch (toolStrip.Name)
+            {
+                case (EngineData.Español):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
+                    Valor.SetIdioma(EngineData.CulturaEspañol);
+                    Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
+                    break;
+                case (EngineData.Ingles):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
+                    Valor.SetIdioma(EngineData.CulturaIngles);
+                    Valor.SetNombreIdioma(EngineData.LenguajeIngles);
+                    break;
+                case (EngineData.Portugues):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
+                    Valor.SetIdioma(EngineData.CulturaPortugues);
+                    Valor.SetNombreIdioma(EngineData.LenguajePortugues);
+                    break;
+            }
+            AplicarIdioma();
+        }
+
+        private void btnBB_Click(object sender, EventArgs e)
+        {
+            RojoUno f = new RojoUno();
+            f.Show();
+            this.Hide();
         }
 
         //************************************************************************************************
@@ -647,5 +655,6 @@ namespace SudokuParaTodos.Formularios
             ActivarDesactivarContadores(EngineData.Falso);
             ContadorIngresado();
         }
+
     }
 }

@@ -379,6 +379,7 @@
             this.btnBB.TabIndex = 82;
             this.btnBB.Text = "B";
             this.btnBB.UseVisualStyleBackColor = false;
+            this.btnBB.Click += new System.EventHandler(this.btnBB_Click);
             // 
             // pnlLetra
             // 
