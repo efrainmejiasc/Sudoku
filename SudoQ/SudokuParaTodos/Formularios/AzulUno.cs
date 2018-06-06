@@ -361,6 +361,17 @@ namespace SudokuParaTodos.Formularios
             this.Hide();
         }
 
+        private string GuardarComoSaveDialog()
+        {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.saveFileDialog1.FileName = string.Empty;
+            this.saveFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.saveFileDialog1.ShowDialog();
+            return saveFileDialog1.FileName;
+        }
+
         //************************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
@@ -510,21 +521,27 @@ namespace SudokuParaTodos.Formularios
             pathArchivo = Valor.GetPathArchivo();
             if (pathArchivo == string.Empty)
             {
-                return;
+                pathArchivo = GuardarComoSaveDialog();
+                if (pathArchivo != string.Empty)
+                {
+                    Valor.SetPathArchivo(pathArchivo);
+                    GuardarJuego(pathArchivo);
+                }
+                else
+                {
+                    return;
+                }
             }
-            GuardarJuego(pathArchivo);
+            else
+            {
+                GuardarJuego(pathArchivo);
+            }
+           
         }
 
         private void guardarComo_Click(object sender, EventArgs e)
         {
-            string nombreIdioma = Valor.GetNombreIdioma();
-            this.saveFileDialog1.FileName = string.Empty;
-            this.saveFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
-            this.saveFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
-            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
-            this.saveFileDialog1.ShowDialog();
-            pathArchivo = saveFileDialog1.FileName;
-
+            pathArchivo = GuardarComoSaveDialog();
             if (pathArchivo == string.Empty)
             {
                 return;

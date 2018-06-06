@@ -76,6 +76,7 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
+            //valorEliminado[8, 8] = "5 3";
             SetearJuego();
             ContadorIngresado();
         }
@@ -411,6 +412,17 @@ namespace SudokuParaTodos.Formularios
             this.Hide();
         }
 
+        private string GuardarComoSaveDialog()
+        {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.saveFileDialog1.FileName = string.Empty;
+            this.saveFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.saveFileDialog1.ShowDialog();
+            return saveFileDialog1.FileName;
+        }
+
         //************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
@@ -536,20 +548,34 @@ namespace SudokuParaTodos.Formularios
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-            if (valorIngresado[row, col] != null && valorIngresado[row, col] != string.Empty)
+            try
             {
-                txtSudoku2[row, col].Text = valorIngresado[row, col];
-            }
-            else
-            {
-                if (valorEliminado[row, col] != null && valorEliminado[row, col] != string.Empty)
+                if (txt.Text == EngineData.Zero)
                 {
-                    txtSudoku2[row, col].Text = valorEliminado[row, col];
-                    txtSudoku2[row, col].Font = new Font(EngineData.TipoLetra, 8);
-                    txtSudoku2[row, col].ForeColor = Color.Red;
-                    txtSudoku2[row, col].TextAlign = HorizontalAlignment.Left;
+                    txt.Text = string.Empty;
+
+                    valorIngresado[row, col] = string.Empty;
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                        valorIngresado[row, col] = txt.Text;
+                    }
                 }
+                else
+                {
+                    valorIngresado[row, col] = txt.Text;
+
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                    }
+                }
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                ContadorIngresado();
             }
+            catch { }
+
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
@@ -607,21 +633,27 @@ namespace SudokuParaTodos.Formularios
             pathArchivo = Valor.GetPathArchivo();
             if (pathArchivo == string.Empty)
             {
-                return;
+                pathArchivo = GuardarComoSaveDialog();
+                if (pathArchivo != string.Empty)
+                {
+                    Valor.SetPathArchivo(pathArchivo);
+                    GuardarJuego(pathArchivo);
+                }
+                else
+                {
+                    return;
+                }
             }
-            GuardarJuego(pathArchivo);
+            else
+            {
+                GuardarJuego(pathArchivo);
+            }
+
         }
 
         private void guardarComo_Click(object sender, EventArgs e)
         {
-            string nombreIdioma = Valor.GetNombreIdioma();
-            this.saveFileDialog1.FileName = string.Empty;
-            this.saveFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
-            this.saveFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
-            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
-            this.saveFileDialog1.ShowDialog();
-            pathArchivo = saveFileDialog1.FileName;
-
+            pathArchivo = GuardarComoSaveDialog();
             if (pathArchivo == string.Empty)
             {
                 return;
