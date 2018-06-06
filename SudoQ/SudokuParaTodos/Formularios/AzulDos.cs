@@ -407,6 +407,9 @@ namespace SudokuParaTodos.Formularios
 
         private void btnBB_Click(object sender, EventArgs e)
         {
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorEliminado(valorEliminado);
             RojoUno f = new RojoUno();
             f.Show();
             this.Hide();
@@ -540,42 +543,23 @@ namespace SudokuParaTodos.Formularios
 
         private void t00_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+            txt.Text = string.Empty;
         }
 
         private void t00_KeyUp(object sender, KeyEventArgs e)
         {
-            TextBox txt = (TextBox)sender;
-            row = Int32.Parse(txt.Name.Substring(1, 1));
-            col = Int32.Parse(txt.Name.Substring(2, 1));
-            try
-            {
-                if (txt.Text == EngineData.Zero)
-                {
-                    txt.Text = string.Empty;
-
-                    valorIngresado[row, col] = string.Empty;
-                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
-                    {
-                        txt.Text = valorInicio[row, col];
-                        valorIngresado[row, col] = txt.Text;
-                    }
-                }
-                else
-                {
-                    valorIngresado[row, col] = txt.Text;
-
-                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
-                    {
-                        txt.Text = valorInicio[row, col];
-                    }
-                }
-                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-                ContadorIngresado();
-            }
-            catch { }
-
+            SetearJuego();
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
@@ -688,5 +672,9 @@ namespace SudokuParaTodos.Formularios
             ContadorIngresado();
         }
 
+        private void AzulDos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Funcion.Salir();
+        }
     }
 }

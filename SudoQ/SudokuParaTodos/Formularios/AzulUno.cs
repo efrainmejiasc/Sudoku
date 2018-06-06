@@ -356,6 +356,9 @@ namespace SudokuParaTodos.Formularios
 
         private void btnBB_Click(object sender, EventArgs e)
         {
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorEliminado(valorEliminado);
             RojoUno f = new RojoUno();
             f.Show();
             this.Hide();
@@ -562,5 +565,9 @@ namespace SudokuParaTodos.Formularios
             ContadorIngresado();
         }
 
+        private void AzulUno_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Funcion.Salir();
+        }
     }
 }

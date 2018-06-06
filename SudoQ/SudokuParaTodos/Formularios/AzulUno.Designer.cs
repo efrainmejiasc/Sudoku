@@ -2118,6 +2118,7 @@
             this.Name = "AzulUno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AzulUno_FormClosed);
             this.Load += new System.EventHandler(this.AzulUno_Load);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();

@@ -292,6 +292,43 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public TextBox [,] SetearTextBoxCandidatos (TextBox[,] cajaTexto,string [,]vIngresado, string [,] vCandidatosSinEliminados)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                    {
+                     
+                    }
+                    else
+                    {
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 8);
+                        cajaTexto[f, c].ForeColor = Color.Blue;
+                        cajaTexto[f, c].Text  = vCandidatosSinEliminados[f, c];
+                    }
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                }
+            }
+            return cajaTexto;
+        }
+
+        public TextBox[,] SetearTextBoxEliminados(TextBox[,] cajaTexto, string[,] vEliminado)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 8);
+                    cajaTexto[f, c].ForeColor = Color.Red;
+                    cajaTexto[f, c].Text = vEliminado[f, c];
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Left;
+                }
+            }
+            return cajaTexto;
+        }
+
         // METODOS NUMEROS + CANDIDATOS 
         public string [,] ElejiblesInstantaneos(string[,] valorIngresado, string[,] valorCandidato )
         {
@@ -1870,6 +1907,14 @@ namespace SudokuParaTodos
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgv.ClearSelection();
             return dgv;
+        }
+
+        // SALIDA DEL SISTEMA 
+
+        public void Salir()
+        {
+            DialogResult result = MessageBox.Show("DESEA SALIR DE LA APLICACION ?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result.ToString().ToUpper() == "YES") Application.Exit();
         }
 
     }

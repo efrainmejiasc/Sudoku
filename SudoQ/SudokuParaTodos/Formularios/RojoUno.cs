@@ -76,8 +76,16 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
-            //SetearJuego();
-            //ContadorIngresado();
+            SetearJuego();
+            ContadorIngresado();
+        }
+
+        private void SetearJuego()
+        {
+            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+            valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+            txtSudoku = Funcion.SetearTextBoxCandidatos(txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+            txtSudoku2 = Funcion.SetearTextBoxEliminados(txtSudoku2, valorEliminado);
         }
 
         private void ComportamientoObjetoInicio()
@@ -125,6 +133,8 @@ namespace SudokuParaTodos.Formularios
         {
             this.Text = Valor.TituloFormR1(Valor.GetNombreIdioma());
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            activar.Text = RecursosLocalizables.StringResources.activar;
+            desactivar.Text = RecursosLocalizables.StringResources.desactivar;
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -250,5 +260,71 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
+        private void btnAA_Click(object sender, EventArgs e)
+        {
+            AzulDos F = new AzulDos();
+            F.Show();
+            this.Hide();
+        }
+
+        private void ContadorIngresado()
+        {
+            contadorIngresado = Funcion.ContadorIngresado(valorIngresado);
+            SetSoloOculto();
+            SetLetrasJuegoACB();
+            SetLetrasJuegoFEG();
+            if (!contadorActivado)
+            {
+                btnA.Visible = EngineData.Falso;
+                btnB.Visible = EngineData.Falso;
+            }
+            else
+            {
+                btnA.Visible = EngineData.Verdadero;
+                btnB.Visible = EngineData.Verdadero;
+            }
+        }
+
+        private void SetSoloOculto()
+        {
+            solo = Funcion.CandidatoSolo(valorIngresado, valorCandidatoSinEliminados);
+            oculto = new string[27];
+            ListBox valor = new ListBox();
+            for (int f = 0; f <= 8; f++)
+            {
+                valor = Funcion.MapeoFilaCandidatoOcultoFila(valorIngresado, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoFila(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+                valor = Funcion.MapeoFilaCandidatoOcultoColumna(valorIngresado, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoColumna(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+                valor = Funcion.MapeoFilaCandidatoOcultoRecuadro(valorIngresado, valorCandidatoSinEliminados, f);
+                oculto = Funcion.SetearOcultoRecuadro(oculto, valor, f, valorCandidatoSinEliminados);
+                valor.Items.Clear();
+            }
+        }
+
+        private void SetLetrasJuegoACB()
+        {
+            LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
+            btnA.Text = LetrasJuegoACB.A.ToString();
+            btnB.Text = LetrasJuegoACB.B.ToString();
+            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+        }
+
+        private void SetLetrasJuegoFEG()
+        {
+            LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
+            btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            btnF.Text = LetrasJuegoFEG.F.ToString();
+            btnE.Text = LetrasJuegoFEG.E.ToString();
+            btnG.Text = LetrasJuegoFEG.G.ToString();
+        }
+
+        private void RojoUno_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Funcion.Salir();
+        }
     }
 }
