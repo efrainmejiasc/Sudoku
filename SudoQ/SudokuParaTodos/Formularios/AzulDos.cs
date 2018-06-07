@@ -535,9 +535,15 @@ namespace SudokuParaTodos.Formularios
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
+
             if (pincelMarcador)
             {
                 txtSudoku2[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
             }
         }
 
@@ -582,7 +588,13 @@ namespace SudokuParaTodos.Formularios
 
         private void t00_Leave(object sender, EventArgs e)
         {
-
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
         }
 
         //*************************************************************************************************
@@ -674,7 +686,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulDos_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Funcion.Salir();
+           // Funcion.Salir();
         }
     }
 }

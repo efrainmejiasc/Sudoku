@@ -567,7 +567,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Funcion.Salir();
+           // Funcion.Salir();
         }
     }
 }

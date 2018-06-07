@@ -329,6 +329,58 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public string ContadorCandidatoEspecifico (string n, string [,]vIngresado, string[,] vCandidatoSinEliminados)
+        {
+            int count = 0;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] == null || vIngresado[f, c] == string.Empty)
+                    {
+                        if (vCandidatoSinEliminados[f, c].Contains(n))
+                        {
+                            count++;
+                        }
+                    }
+                }
+            }
+
+            return count.ToString();
+        }
+
+        public TextBox[,] SetearTextBoxCandidatoEspecifico(string n,TextBox[,] cajaTexto, string[,] vIngresado, string[,] vCandidatoSinEliminados)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] == null || vIngresado[f, c] == string.Empty)
+                    {
+                        if (vCandidatoSinEliminados[f, c].Contains(n))
+                        {
+                            cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
+                            cajaTexto[f, c].ForeColor = Color.Blue;
+                            cajaTexto[f, c].BackColor = Color.LightCyan;
+                            cajaTexto[f, c].Text = n;
+                        }
+                        else
+                        {
+                            cajaTexto[f, c].Text = string.Empty;
+                            cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                        }
+                    }
+                    else
+                    {
+                        cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                    }
+
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                }
+            }
+            return cajaTexto;
+        }
+
         // METODOS NUMEROS + CANDIDATOS 
         public string [,] ElejiblesInstantaneos(string[,] valorIngresado, string[,] valorCandidato )
         {
@@ -1913,8 +1965,23 @@ namespace SudokuParaTodos
 
         public void Salir()
         {
-            DialogResult result = MessageBox.Show("DESEA SALIR DE LA APLICACION ?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result.ToString().ToUpper() == "YES") Application.Exit();
+            if (!Valor.GetSalir())
+            {
+                Valor.SetSalir(EngineData.Verdadero);
+                DialogResult result = MessageBox.Show("DESEA SALIR DE LA APLICACION ?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result.ToString().ToUpper() == "YES")
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
     }

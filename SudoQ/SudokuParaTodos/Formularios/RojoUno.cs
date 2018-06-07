@@ -84,8 +84,9 @@ namespace SudokuParaTodos.Formularios
         {
             valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-            txtSudoku = Funcion.SetearTextBoxCandidatos(txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+           // txtSudoku = Funcion.SetearTextBoxCandidatos(txtSudoku, valorIngresado, valorCandidatoSinEliminados);
             txtSudoku2 = Funcion.SetearTextBoxEliminados(txtSudoku2, valorEliminado);
+            ActualizarContadoresCandidatos();
         }
 
         private void ComportamientoObjetoInicio()
@@ -324,7 +325,227 @@ namespace SudokuParaTodos.Formularios
 
         private void RojoUno_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Funcion.Salir();
+           // Funcion.Salir();
+        }
+
+        private void ContadoresCandidatos_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            switch (btn.Name)
+            {
+                case (EngineData.Btn1):
+                    lbl1.Text = Funcion.ContadorCandidatoEspecifico(EngineData.uno, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.uno,txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn2):
+                    lbl2.Text = Funcion.ContadorCandidatoEspecifico(EngineData.dos, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.dos, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn3):
+                    lbl3.Text = Funcion.ContadorCandidatoEspecifico(EngineData.tres, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.tres, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn4):
+                    lbl4.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cuatro, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cuatro, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn5):
+                    lbl5.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cinco, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cinco, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn6):
+                    lbl6.Text = Funcion.ContadorCandidatoEspecifico(EngineData.seis, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.seis, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn7):
+                    lbl7.Text = Funcion.ContadorCandidatoEspecifico(EngineData.siete, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.siete, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn8):
+                    lbl8.Text = Funcion.ContadorCandidatoEspecifico(EngineData.ocho, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.ocho, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.Btn9):
+                    lbl9.Text = Funcion.ContadorCandidatoEspecifico(EngineData.nueve, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.nueve, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+            }
+        }
+
+        private void ActualizarContadoresCandidatos()
+        {
+            lbl1.Text = Funcion.ContadorCandidatoEspecifico(EngineData.uno, valorIngresado, valorCandidatoSinEliminados);
+            lbl2.Text = Funcion.ContadorCandidatoEspecifico(EngineData.dos, valorIngresado, valorCandidatoSinEliminados);
+            lbl3.Text = Funcion.ContadorCandidatoEspecifico(EngineData.tres, valorIngresado, valorCandidatoSinEliminados);
+            lbl4.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cuatro, valorIngresado, valorCandidatoSinEliminados);
+            lbl5.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cinco, valorIngresado, valorCandidatoSinEliminados);
+            lbl6.Text = Funcion.ContadorCandidatoEspecifico(EngineData.seis, valorIngresado, valorCandidatoSinEliminados);
+            lbl7.Text = Funcion.ContadorCandidatoEspecifico(EngineData.siete, valorIngresado, valorCandidatoSinEliminados);
+            lbl8.Text = Funcion.ContadorCandidatoEspecifico(EngineData.ocho, valorIngresado, valorCandidatoSinEliminados);
+            lbl9.Text = Funcion.ContadorCandidatoEspecifico(EngineData.nueve, valorIngresado, valorCandidatoSinEliminados);
+        }
+
+        private void ColorMarcador_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcador = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+            }
+            else
+            {
+                pincelMarcador = EngineData.Verdadero;
+                colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+            }
+        }
+
+        //*************************************************************************************
+
+        private void txt00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            if (pincelMarcador)
+            {
+                txtSudoku[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+        }
+
+        private void txt00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+        }
+
+        private void txt00_KeyUp(object sender, KeyEventArgs e)
+        {
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void txt00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+
+            if (txt.Text == string.Empty)
+                txt.BackColor = Color.WhiteSmoke;
+            else
+                txt.BackColor = Color.LightCyan;
+        }
+
+        private void txt00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
+        }
+
+        //****************************************************************************************
+
+        private void t00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (pincelMarcador)
+            {
+                txtSudoku2[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+        }
+
+        private void t00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+            txt.Text = string.Empty;
+        }
+
+        private void t00_KeyUp(object sender, KeyEventArgs e)
+        {
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku2[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku2[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void t00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
+        }
+
+        private void t00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
         }
     }
 }
