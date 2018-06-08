@@ -381,6 +381,47 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public string OrdenarCadena (string v)
+        {
+            v = v.Trim();
+            string [] a = v.Split(' ');
+            int aux1 = 0;
+            int aux2 = 0;
+            for (int i = 0; i <= a.Length  - 1; i++)
+            {
+                for (int j = 0; j <= a.Length - 1; j++)
+                {
+                    if (Convert.ToInt32(a[i]) <= Convert.ToInt32(a[j]))
+                    {
+                        aux1 = Convert.ToInt32(a[j]);
+                        aux2 = Convert.ToInt32(a[i]);
+                        a[i] = aux1.ToString();
+                        a[j] = aux2.ToString();
+                     }
+                }
+            }
+
+            v = string.Empty;
+
+            for (int i = 0; i <= a.Length - 1; i++)
+            {
+                if (i == 0)
+                {
+                    v = a[i];
+                }
+                else if (i == 1 || i == 3 || i == 4 || i == 6 || i == 7)
+                {
+                    v = v + " " + a[i];
+                }
+                else if (i == 2 || i == 5 || i == 8 )
+                {
+                    v = v + " " + a[i] + Environment.NewLine ;
+                }
+            }
+
+            return v;
+        }
+
         // METODOS NUMEROS + CANDIDATOS 
         public string [,] ElejiblesInstantaneos(string[,] valorIngresado, string[,] valorCandidato )
         {

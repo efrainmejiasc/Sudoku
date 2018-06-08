@@ -600,6 +600,7 @@ namespace SudokuParaTodos.Formularios
         //*************************************************************************************************
         private void crearJuego_Click(object sender, EventArgs e)
         {
+            Valor.SetPathArchivo(string.Empty);
             Valor.SetOpenFrom(EngineData.Exe);
             Form1 f = new Form1(Valor.GetIdioma());
             f.Show();

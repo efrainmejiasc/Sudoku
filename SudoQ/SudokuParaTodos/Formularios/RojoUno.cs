@@ -407,6 +407,38 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
+        private void EliminarRestablecerCandidato_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            switch (btn.Name)
+            {
+                case (EngineData.eliminar):
+                    string candidatoEliminar = txtSudoku[row,col].Text;
+                    valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
+                    valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                    txtSudoku[row, col].BackColor = Color.WhiteSmoke;
+                    txtSudoku[row, col].Text  = string.Empty;
+                    break;
+                case (EngineData .restablecer):
+                    string candidatoRestablecer = txtSudoku2[row, col].Text.Trim();
+                    if (candidatoRestablecer.Length > 1)
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                        valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                    }
+                    else
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                    }
+                    txtSudoku2[row, col].Text = valorEliminado[row, col];
+                    //txtSudoku[row, col].BackColor = Color.LightCyan;
+                    //txtSudoku[row, col].Text = candidatoRestablecer;
+                    break;
+            }
+            ActualizarContadoresCandidatos();
+            SetearJuego();
+        }
+
         //*************************************************************************************
 
         private void txt00_Enter(object sender, EventArgs e)
@@ -445,6 +477,10 @@ namespace SudokuParaTodos.Formularios
 
         private void txt00_KeyUp(object sender, KeyEventArgs e)
         {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
@@ -462,6 +498,8 @@ namespace SudokuParaTodos.Formularios
         {
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
 
             if (txt.Text == string.Empty)
                 txt.BackColor = Color.WhiteSmoke;
@@ -503,6 +541,9 @@ namespace SudokuParaTodos.Formularios
         {
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
             if (!char.IsNumber(e.KeyChar))
             {
                 e.Handled = true;
@@ -517,6 +558,11 @@ namespace SudokuParaTodos.Formularios
 
         private void t00_KeyUp(object sender, KeyEventArgs e)
         {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
@@ -534,6 +580,8 @@ namespace SudokuParaTodos.Formularios
         {
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
             txt.BackColor = Color.WhiteSmoke;
         }
 

@@ -276,6 +276,7 @@
             this.btnEL.TabIndex = 83;
             this.btnEL.Text = "E";
             this.btnEL.UseVisualStyleBackColor = false;
+            this.btnEL.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
             // 
             // btnR
             // 
@@ -290,6 +291,7 @@
             this.btnR.TabIndex = 82;
             this.btnR.Text = "R";
             this.btnR.UseVisualStyleBackColor = false;
+            this.btnR.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
             // 
             // panel10
             // 
@@ -3947,6 +3949,7 @@
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RojoUno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoUno";

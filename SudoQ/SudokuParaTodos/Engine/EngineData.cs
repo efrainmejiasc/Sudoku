@@ -73,12 +73,6 @@ namespace SudokuParaTodos
         public const string btnIzquierda = "btnIzquierda";
         public const string btnDerecha = "btnDerecha";
 
-        public const string azul1_5 = "1/5";
-        public const string azul2_5 = "2/5";
-        public const string azul3_5 = "3/5";
-        public const string azul4_5 = "4/5";
-        public const string azul5_5 = "5/5";
-
         public const string Up = "Up";
         public const string Down = "Down";
         public const string Right = "Right";
@@ -101,7 +95,8 @@ namespace SudokuParaTodos
         public const string ocho = "8";
         public const string nueve = "9";
 
-        public const string reiniciar= "reiniciar";
+        public const string eliminar = "btnEL";
+        public const string restablecer = "btnR";
 
 
 
