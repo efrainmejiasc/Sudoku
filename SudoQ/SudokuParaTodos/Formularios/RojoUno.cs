@@ -48,6 +48,8 @@ namespace SudokuParaTodos.Formularios
 
         string idiomaCultura = string.Empty;
         string idiomaNombre = string.Empty;
+        string lado = string.Empty;
+
 
 
         public RojoUno()
@@ -310,8 +312,14 @@ namespace SudokuParaTodos.Formularios
             LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
             btnA.Text = LetrasJuegoACB.A.ToString();
             btnB.Text = LetrasJuegoACB.B.ToString();
-            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
-            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+            if (!LetrasJuegoACB.C)
+            {
+                btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+            }
+            else
+            {
+                btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+            }
         }
 
         private void SetLetrasJuegoFEG()
@@ -385,6 +393,49 @@ namespace SudokuParaTodos.Formularios
             lbl9.Text = Funcion.ContadorCandidatoEspecifico(EngineData.nueve, valorIngresado, valorCandidatoSinEliminados);
         }
 
+        private void ActualizarCandidato(string v)
+        {
+            switch (v)
+            {
+                case (EngineData.uno):
+                    lbl1.Text = Funcion.ContadorCandidatoEspecifico(EngineData.uno, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.uno, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.dos):
+                    lbl2.Text = Funcion.ContadorCandidatoEspecifico(EngineData.dos, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.dos, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.tres):
+                    lbl3.Text = Funcion.ContadorCandidatoEspecifico(EngineData.tres, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.tres, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.cuatro):
+                    lbl4.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cuatro, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cuatro, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.cinco):
+                    lbl5.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cinco, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cinco, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.seis):
+                    lbl6.Text = Funcion.ContadorCandidatoEspecifico(EngineData.seis, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.seis, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.siete):
+                    lbl7.Text = Funcion.ContadorCandidatoEspecifico(EngineData.siete, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.siete, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.ocho):
+                    lbl8.Text = Funcion.ContadorCandidatoEspecifico(EngineData.ocho, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.ocho, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.nueve):
+                    lbl9.Text = Funcion.ContadorCandidatoEspecifico(EngineData.nueve, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.nueve, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+            }
+        }
+
         private void ColorMarcador_Click(object sender, EventArgs e)
         {
             Button pincel = (Button)sender;
@@ -413,30 +464,58 @@ namespace SudokuParaTodos.Formularios
             switch (btn.Name)
             {
                 case (EngineData.eliminar):
+                    if (lado != EngineData.btnIzquierda) return;
                     string candidatoEliminar = txtSudoku[row,col].Text;
+                    if (candidatoEliminar == string.Empty) return;
                     valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
                     valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     txtSudoku[row, col].BackColor = Color.WhiteSmoke;
                     txtSudoku[row, col].Text  = string.Empty;
+                    ActualizarContadoresCandidatos();
+                    SetearJuego();
                     break;
                 case (EngineData .restablecer):
+                    if (lado != EngineData.btnDerecha) return;
                     string candidatoRestablecer = txtSudoku2[row, col].Text.Trim();
-                    if (candidatoRestablecer.Length > 1)
+                    if (candidatoRestablecer == string.Empty) return;
+                    if (candidatoRestablecer.Length == 1)
                     {
                         valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
                         valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     }
                     else
                     {
-                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                        return;
                     }
                     txtSudoku2[row, col].Text = valorEliminado[row, col];
-                    //txtSudoku[row, col].BackColor = Color.LightCyan;
-                    //txtSudoku[row, col].Text = candidatoRestablecer;
+                    ActualizarContadoresCandidatos();
+                    SetearJuego();
+                    ActualizarCandidato(candidatoRestablecer);
                     break;
             }
-            ActualizarContadoresCandidatos();
-            SetearJuego();
+            ContadorIngresado();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorEliminado(valorEliminado);
+            RojoDos f = new RojoDos();
+            f.Show();
+            this.Hide();
+        }
+
+        private void activar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Verdadero);
+            ContadorIngresado();
+        }
+
+        private void desactivar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Falso);
+            ContadorIngresado();
         }
 
         //*************************************************************************************
@@ -457,6 +536,8 @@ namespace SudokuParaTodos.Formularios
                 colorCeldaAnt = txt.BackColor;
                 txt.BackColor = Valor.GetColorCeldaAct();
             }
+
+            lado = EngineData.btnIzquierda;
         }
 
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
@@ -535,6 +616,7 @@ namespace SudokuParaTodos.Formularios
                 colorCeldaAnt = txt.BackColor;
                 txt.BackColor = Valor.GetColorCeldaAct();
             }
+            lado = EngineData.btnDerecha; 
         }
 
         private void t00_KeyPress(object sender, KeyPressEventArgs e)
@@ -595,5 +677,7 @@ namespace SudokuParaTodos.Formularios
                 txt.BackColor = colorCeldaAnt;
             }
         }
+
+      
     }
 }

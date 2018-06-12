@@ -1142,6 +1142,30 @@ namespace SudokuParaTodos
             return valorPlantilla;
         }
 
+        public string[,] InicioPlantillaVacio(string[,] plantilla)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    plantilla[f, c] = (c + 1).ToString();
+                }
+            }
+            return plantilla;
+        }
+
+        public TextBox[,] SetearPlantillaVacia(TextBox[,] cajaTexto,string [,] plantilla)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].Text = plantilla[f,c];
+                }
+            }
+            return cajaTexto;
+        }
+
         // CANDIDATOS SOLO DEL JUEGO
         public string [] CandidatoSolo(string[,] valorIngresado, string[,] valorCandidatoSinEliminados)
         {
@@ -2005,23 +2029,24 @@ namespace SudokuParaTodos
         // SALIDA DEL SISTEMA 
 
         public void Salir()
-        {
-            if (!Valor.GetSalir())
+        {  
+            DialogResult result = MessageBox.Show("DESEA SALIR DE LA APLICACION ?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result.ToString().ToUpper() == "YES")
             {
-                Valor.SetSalir(EngineData.Verdadero);
-                DialogResult result = MessageBox.Show("DESEA SALIR DE LA APLICACION ?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result.ToString().ToUpper() == "YES")
-                {
-                    Application.Exit();
-                }
-                else
-                {
-                    return;
-                }
+                Form1 f = new Form1();
+                f.Close();
+                Formularios.AzulUno a = new Formularios.AzulUno();
+                a.Close();
+                Formularios.AzulDos a2 = new Formularios.AzulDos();
+                a2.Close();
+                Formularios.RojoUno r = new Formularios.RojoUno();
+                r.Close();
+                Formularios.RojoDos r2 = new Formularios.RojoDos();
+                r2.Close();
             }
             else
             {
-                Application.Exit();
+                return;
             }
         }
 

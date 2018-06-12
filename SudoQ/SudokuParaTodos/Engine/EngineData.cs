@@ -436,10 +436,5 @@ namespace SudokuParaTodos
         public bool GetVisibilidadACB() { return visiblidadACB; }
 
         //***********************************************************************************
-        private bool salir = false;
-
-        public void SetSalir (bool v) { salir = v; }
-
-        public bool GetSalir() { return salir; }
     }
 }

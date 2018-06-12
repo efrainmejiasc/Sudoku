@@ -300,8 +300,15 @@ namespace SudokuParaTodos.Formularios
             {
                 btnBB.Visible = EngineData.Verdadero;
             }
-            if (!LetrasJuegoACB.C) btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
-            else btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+            if (!LetrasJuegoACB.C)
+            {
+                btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
+                btnBB.Visible = EngineData.Verdadero;
+            }
+            else
+            {
+                btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+            }
         }
 
         private void SetLetrasJuegoFEG()
@@ -568,7 +575,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_FormClosed(object sender, FormClosedEventArgs e)
         {
-           // Funcion.Salir();
+            Funcion.Salir();
         }
     }
 }
