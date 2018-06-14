@@ -45,6 +45,8 @@ namespace SudokuParaTodos.Formularios
         private int contadorIngresado = 0;
         private bool contadorActivado = EngineData.Falso;
 
+        private bool lenguajeSi = EngineData.Falso;
+
 
         public AzulUno()
         {
@@ -200,6 +202,7 @@ namespace SudokuParaTodos.Formularios
                     Valor.SetNombreIdioma(EngineData.LenguajePortugues);
                     break;
             }
+            lenguajeSi = EngineData.Verdadero;
             AplicarIdioma();
         }
 
@@ -441,11 +444,13 @@ namespace SudokuParaTodos.Formularios
                 }
                 else
                 {
-                    valorIngresado[row, col] = txt.Text;
-
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
                     {
                         txt.Text = valorInicio[row, col];
+                    }
+                    else
+                    {
+                        valorIngresado[row, col] = txt.Text;
                     }
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
@@ -573,9 +578,10 @@ namespace SudokuParaTodos.Formularios
             ContadorIngresado();
         }
 
-        private void AzulUno_FormClosed(object sender, FormClosedEventArgs e)
+        private void AzulUno_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Funcion.Salir();
+            if (lenguajeSi) e.Cancel = false;
+            else e.Cancel = true;
         }
     }
 }

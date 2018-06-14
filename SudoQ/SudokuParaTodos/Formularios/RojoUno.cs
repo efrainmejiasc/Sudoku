@@ -481,6 +481,10 @@ namespace SudokuParaTodos.Formularios
                     if (candidatoRestablecer.Length == 1)
                     {
                         valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                    }
+                    else if (candidatoRestablecer.Length > 1)
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
                         valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     }
                     else

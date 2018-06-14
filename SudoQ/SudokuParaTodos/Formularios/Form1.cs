@@ -46,7 +46,9 @@ namespace SudokuParaTodos
         private Color colorFondoAct;
         private bool pincelMarcador = EngineData.Falso;
         private Color colorCeldaAnt;
-      
+
+        private bool lenguajeSi = EngineData.Falso;
+
 
         public Form1()
         {
@@ -381,9 +383,18 @@ namespace SudokuParaTodos
             }
             else
             {
-                btnA.Visible = EngineData.Verdadero;
-                btnC.Visible = EngineData.Verdadero;
-                btnB.Visible = EngineData.Verdadero;
+                if (contadorIngresado >= 17)
+                {
+                    btnA.Visible = EngineData.Verdadero;
+                    btnC.Visible = EngineData.Verdadero;
+                    btnB.Visible = EngineData.Verdadero;
+                }
+                else
+                {
+                    btnA.Visible = EngineData.Falso;
+                    btnC.Visible = EngineData.Falso;
+                    btnB.Visible = EngineData.Falso;
+                }
             }
         }
 
@@ -413,6 +424,7 @@ namespace SudokuParaTodos
             }
             AplicarIdioma();
             ComportamientoObjExpandido();
+            lenguajeSi = EngineData.Verdadero;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -757,9 +769,10 @@ namespace SudokuParaTodos
             }
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Funcion.Salir();
+            if (lenguajeSi) e.Cancel = false;
+            else e.Cancel = true;
         }
     }
 }

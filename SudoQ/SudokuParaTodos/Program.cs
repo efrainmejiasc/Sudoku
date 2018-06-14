@@ -22,8 +22,8 @@ namespace SudokuParaTodos
                 Valor.SetOpenFrom(EngineData.Exe);
                 Form1 f = new Form1();
                 Application.Run(f);
-             
-               /* Valor.SetOpenFrom(EngineData.File);
+
+                /*Valor.SetOpenFrom(EngineData.File);
                 Valor.SetPathArchivo(@"D:\BBB.jll");
                 Application.Run(new Formularios.AzulUno());*/
             }

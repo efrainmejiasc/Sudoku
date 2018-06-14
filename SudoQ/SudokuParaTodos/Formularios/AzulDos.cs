@@ -492,11 +492,13 @@ namespace SudokuParaTodos.Formularios
                 }
                 else
                 {
-                    valorIngresado[row, col] = txt.Text;
-
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
                     {
                         txt.Text = valorInicio[row, col];
+                    }
+                    else
+                    {
+                        valorIngresado[row, col] = txt.Text;
                     }
                 }
                 SetearJuego();

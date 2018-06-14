@@ -348,6 +348,17 @@ namespace SudokuParaTodos.Formularios
                 valorPlantilla = Funcion.ObtenerSetearValoresFila(valorIngresado, valorCandidato, valorEliminado, fila);
                 txtSudoku = Funcion.SetearPlantillaVacia(txtSudoku, valorPlantilla);
             }
+            string[] f = new string[9];
+            f = Valor.GetNumeroFila(fila);
+            tC1.Text = f[0];
+            tC2.Text = f[1];
+            tC3.Text = f[2];
+            tC4.Text = f[3];
+            tC5.Text = f[4];
+            tC6.Text = f[5];
+            tC7.Text = f[6];
+            tC8.Text = f[7];
+            tC9.Text = f[8];
         }
 
         private void ColumnaEstado_Click(object sender, EventArgs e)//PLANTILLA DE COLUMNA
@@ -380,6 +391,18 @@ namespace SudokuParaTodos.Formularios
                 valorPlantilla = Funcion.ObtenerSetearValoresColumna(valorIngresado, valorCandidato,valorEliminado, columna);
                 txtSudoku = Funcion.SetearPlantillaVacia(txtSudoku, valorPlantilla);
             }
+
+            string[] c = new string[9];
+            c = Valor.GetNumeroColumna(columna);
+            tC1.Text = c[0];
+            tC2.Text = c[1];
+            tC3.Text = c[2];
+            tC4.Text = c[3];
+            tC5.Text = c[4];
+            tC6.Text = c[5];
+            tC7.Text = c[6];
+            tC8.Text = c[7];
+            tC9.Text = c[8];
         }
 
         private void EstadoRecuadro_Click(object sender, EventArgs e)//PLANTILLAS DE RECUADRO
@@ -387,16 +410,16 @@ namespace SudokuParaTodos.Formularios
             String nombreRecuadro = string.Empty ;
             ToolStripMenuItem miPlantilla = new ToolStripMenuItem();
             miPlantilla = (ToolStripMenuItem)sender;
-            int rangoF = -1, rangoC = -1;
-            if (miPlantilla.Name == "recuadro1ToolStripMenuItem") { rangoF = 0; rangoC = 0; nombreRecuadro = "Recuadro Nº 1"; }
-            else if (miPlantilla.Name == "recuadro2ToolStripMenuItem") { rangoF = 0; rangoC = 3; nombreRecuadro = "Recuadro Nº 2"; }
-            else if (miPlantilla.Name == "recuadro3ToolStripMenuItem") { rangoF = 0; rangoC = 6; nombreRecuadro = "Recuadro Nº 3"; }
-            else if (miPlantilla.Name == "recuadro4ToolStripMenuItem") { rangoF = 3; rangoC = 0; nombreRecuadro = "Recuadro Nº 4"; }
-            else if (miPlantilla.Name == "recuadro5ToolStripMenuItem") { rangoF = 3; rangoC = 3; nombreRecuadro = "Recuadro Nº 5"; }
-            else if (miPlantilla.Name == "recuadro6ToolStripMenuItem") { rangoF = 3; rangoC = 6; nombreRecuadro = "Recuadro Nº 6"; }
-            else if (miPlantilla.Name == "recuadro7ToolStripMenuItem") { rangoF = 6; rangoC = 0; nombreRecuadro = "Recuadro Nº 7"; }
-            else if (miPlantilla.Name == "recuadro8ToolStripMenuItem") { rangoF = 6; rangoC = 3; nombreRecuadro = "Recuadro Nº 8"; }
-            else if (miPlantilla.Name == "recuadro9ToolStripMenuItem") { rangoF = 6; rangoC = 6; nombreRecuadro = "Recuadro Nº 9"; }
+            int rangoF = -1, rangoC = -1, rec = -1;
+            if (miPlantilla.Name == "recuadro1ToolStripMenuItem") { rangoF = 0; rangoC = 0; nombreRecuadro = "Recuadro Nº 1";  rec = 0; }
+            else if (miPlantilla.Name == "recuadro2ToolStripMenuItem") { rangoF = 0; rangoC = 3; nombreRecuadro = "Recuadro Nº 2"; rec = 1; }
+            else if (miPlantilla.Name == "recuadro3ToolStripMenuItem") { rangoF = 0; rangoC = 6; nombreRecuadro = "Recuadro Nº 3"; rec = 2; }
+            else if (miPlantilla.Name == "recuadro4ToolStripMenuItem") { rangoF = 3; rangoC = 0; nombreRecuadro = "Recuadro Nº 4"; rec = 3; }
+            else if (miPlantilla.Name == "recuadro5ToolStripMenuItem") { rangoF = 3; rangoC = 3; nombreRecuadro = "Recuadro Nº 5"; rec = 4; }
+            else if (miPlantilla.Name == "recuadro6ToolStripMenuItem") { rangoF = 3; rangoC = 6; nombreRecuadro = "Recuadro Nº 6"; rec = 5; }
+            else if (miPlantilla.Name == "recuadro7ToolStripMenuItem") { rangoF = 6; rangoC = 0; nombreRecuadro = "Recuadro Nº 7"; rec = 6; }
+            else if (miPlantilla.Name == "recuadro8ToolStripMenuItem") { rangoF = 6; rangoC = 3; nombreRecuadro = "Recuadro Nº 8"; rec = 7; }
+            else if (miPlantilla.Name == "recuadro9ToolStripMenuItem") { rangoF = 6; rangoC = 6; nombreRecuadro = "Recuadro Nº 9"; rec = 8; }
 
             string[,] valorPlantilla = new string[9, 9];
             bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
@@ -412,6 +435,18 @@ namespace SudokuParaTodos.Formularios
                 valorPlantilla = Funcion.ObtenerSetearValoresRecuadro(valorIngresado, valorCandidato, valorEliminado,rangoF, rangoC);
                 txtSudoku = Funcion.SetearPlantillaVacia(txtSudoku, valorPlantilla);
             }
+
+            string[] r = new string[9];
+            r = Valor.GetNumeroColumna(rec);
+            tC1.Text = r[0];
+            tC2.Text = r[1];
+            tC3.Text = r[2];
+            tC4.Text = r[3];
+            tC5.Text = r[4];
+            tC6.Text = r[5];
+            tC7.Text = r[6];
+            tC8.Text = r[7];
+            tC9.Text = r[8];
         }
 
     }

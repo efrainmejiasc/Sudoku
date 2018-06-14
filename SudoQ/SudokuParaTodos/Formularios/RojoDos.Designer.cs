@@ -28,88 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnl2 = new System.Windows.Forms.Panel();
-            this.t88 = new System.Windows.Forms.TextBox();
-            this.t85 = new System.Windows.Forms.TextBox();
-            this.t87 = new System.Windows.Forms.TextBox();
-            this.t84 = new System.Windows.Forms.TextBox();
-            this.t86 = new System.Windows.Forms.TextBox();
-            this.t83 = new System.Windows.Forms.TextBox();
-            this.t78 = new System.Windows.Forms.TextBox();
-            this.t75 = new System.Windows.Forms.TextBox();
-            this.t77 = new System.Windows.Forms.TextBox();
-            this.t74 = new System.Windows.Forms.TextBox();
-            this.t76 = new System.Windows.Forms.TextBox();
-            this.t73 = new System.Windows.Forms.TextBox();
-            this.t68 = new System.Windows.Forms.TextBox();
-            this.t65 = new System.Windows.Forms.TextBox();
-            this.t67 = new System.Windows.Forms.TextBox();
-            this.t64 = new System.Windows.Forms.TextBox();
-            this.t66 = new System.Windows.Forms.TextBox();
-            this.t63 = new System.Windows.Forms.TextBox();
-            this.t82 = new System.Windows.Forms.TextBox();
-            this.t81 = new System.Windows.Forms.TextBox();
-            this.t80 = new System.Windows.Forms.TextBox();
-            this.t72 = new System.Windows.Forms.TextBox();
-            this.t71 = new System.Windows.Forms.TextBox();
-            this.t70 = new System.Windows.Forms.TextBox();
-            this.t62 = new System.Windows.Forms.TextBox();
-            this.t61 = new System.Windows.Forms.TextBox();
-            this.t60 = new System.Windows.Forms.TextBox();
-            this.t58 = new System.Windows.Forms.TextBox();
-            this.t57 = new System.Windows.Forms.TextBox();
-            this.t56 = new System.Windows.Forms.TextBox();
-            this.t48 = new System.Windows.Forms.TextBox();
-            this.t47 = new System.Windows.Forms.TextBox();
-            this.t46 = new System.Windows.Forms.TextBox();
-            this.t38 = new System.Windows.Forms.TextBox();
-            this.t37 = new System.Windows.Forms.TextBox();
-            this.t36 = new System.Windows.Forms.TextBox();
-            this.t55 = new System.Windows.Forms.TextBox();
-            this.t54 = new System.Windows.Forms.TextBox();
-            this.t53 = new System.Windows.Forms.TextBox();
-            this.t45 = new System.Windows.Forms.TextBox();
-            this.t44 = new System.Windows.Forms.TextBox();
-            this.t43 = new System.Windows.Forms.TextBox();
-            this.t35 = new System.Windows.Forms.TextBox();
-            this.t34 = new System.Windows.Forms.TextBox();
-            this.t33 = new System.Windows.Forms.TextBox();
-            this.t52 = new System.Windows.Forms.TextBox();
-            this.t51 = new System.Windows.Forms.TextBox();
-            this.t28 = new System.Windows.Forms.TextBox();
-            this.t06 = new System.Windows.Forms.TextBox();
-            this.t50 = new System.Windows.Forms.TextBox();
-            this.t27 = new System.Windows.Forms.TextBox();
-            this.t42 = new System.Windows.Forms.TextBox();
-            this.t18 = new System.Windows.Forms.TextBox();
-            this.t41 = new System.Windows.Forms.TextBox();
-            this.t07 = new System.Windows.Forms.TextBox();
-            this.t40 = new System.Windows.Forms.TextBox();
-            this.t17 = new System.Windows.Forms.TextBox();
-            this.t32 = new System.Windows.Forms.TextBox();
-            this.t16 = new System.Windows.Forms.TextBox();
-            this.t31 = new System.Windows.Forms.TextBox();
-            this.t08 = new System.Windows.Forms.TextBox();
-            this.t26 = new System.Windows.Forms.TextBox();
-            this.t30 = new System.Windows.Forms.TextBox();
-            this.t25 = new System.Windows.Forms.TextBox();
-            this.t24 = new System.Windows.Forms.TextBox();
-            this.t23 = new System.Windows.Forms.TextBox();
-            this.t15 = new System.Windows.Forms.TextBox();
-            this.t14 = new System.Windows.Forms.TextBox();
-            this.t13 = new System.Windows.Forms.TextBox();
-            this.t05 = new System.Windows.Forms.TextBox();
-            this.t04 = new System.Windows.Forms.TextBox();
-            this.t03 = new System.Windows.Forms.TextBox();
-            this.t22 = new System.Windows.Forms.TextBox();
-            this.t21 = new System.Windows.Forms.TextBox();
-            this.t20 = new System.Windows.Forms.TextBox();
-            this.t12 = new System.Windows.Forms.TextBox();
-            this.t11 = new System.Windows.Forms.TextBox();
-            this.t10 = new System.Windows.Forms.TextBox();
-            this.t02 = new System.Windows.Forms.TextBox();
-            this.t01 = new System.Windows.Forms.TextBox();
-            this.t00 = new System.Windows.Forms.TextBox();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
@@ -203,6 +121,37 @@
             this.cONTADORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activar = new System.Windows.Forms.ToolStripMenuItem();
             this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
+            this.gRUPOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fila9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columna9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recuadro9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.btnAA = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
@@ -241,1187 +190,96 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
-            this.gRUPOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.filasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columnasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fila9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columna9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.recuadro9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnl2.SuspendLayout();
+            this.t00 = new System.Windows.Forms.TextBox();
+            this.t01 = new System.Windows.Forms.TextBox();
+            this.t02 = new System.Windows.Forms.TextBox();
+            this.t10 = new System.Windows.Forms.TextBox();
+            this.t11 = new System.Windows.Forms.TextBox();
+            this.t12 = new System.Windows.Forms.TextBox();
+            this.t20 = new System.Windows.Forms.TextBox();
+            this.t21 = new System.Windows.Forms.TextBox();
+            this.t22 = new System.Windows.Forms.TextBox();
+            this.t03 = new System.Windows.Forms.TextBox();
+            this.t04 = new System.Windows.Forms.TextBox();
+            this.t05 = new System.Windows.Forms.TextBox();
+            this.t13 = new System.Windows.Forms.TextBox();
+            this.t14 = new System.Windows.Forms.TextBox();
+            this.t15 = new System.Windows.Forms.TextBox();
+            this.t23 = new System.Windows.Forms.TextBox();
+            this.t24 = new System.Windows.Forms.TextBox();
+            this.t25 = new System.Windows.Forms.TextBox();
+            this.t30 = new System.Windows.Forms.TextBox();
+            this.t26 = new System.Windows.Forms.TextBox();
+            this.t08 = new System.Windows.Forms.TextBox();
+            this.t31 = new System.Windows.Forms.TextBox();
+            this.t16 = new System.Windows.Forms.TextBox();
+            this.t32 = new System.Windows.Forms.TextBox();
+            this.t17 = new System.Windows.Forms.TextBox();
+            this.t40 = new System.Windows.Forms.TextBox();
+            this.t07 = new System.Windows.Forms.TextBox();
+            this.t41 = new System.Windows.Forms.TextBox();
+            this.t18 = new System.Windows.Forms.TextBox();
+            this.t42 = new System.Windows.Forms.TextBox();
+            this.t27 = new System.Windows.Forms.TextBox();
+            this.t50 = new System.Windows.Forms.TextBox();
+            this.t06 = new System.Windows.Forms.TextBox();
+            this.t28 = new System.Windows.Forms.TextBox();
+            this.t51 = new System.Windows.Forms.TextBox();
+            this.t52 = new System.Windows.Forms.TextBox();
+            this.t33 = new System.Windows.Forms.TextBox();
+            this.t34 = new System.Windows.Forms.TextBox();
+            this.t35 = new System.Windows.Forms.TextBox();
+            this.t43 = new System.Windows.Forms.TextBox();
+            this.t44 = new System.Windows.Forms.TextBox();
+            this.t45 = new System.Windows.Forms.TextBox();
+            this.t53 = new System.Windows.Forms.TextBox();
+            this.t54 = new System.Windows.Forms.TextBox();
+            this.t55 = new System.Windows.Forms.TextBox();
+            this.t36 = new System.Windows.Forms.TextBox();
+            this.t37 = new System.Windows.Forms.TextBox();
+            this.t38 = new System.Windows.Forms.TextBox();
+            this.t46 = new System.Windows.Forms.TextBox();
+            this.t47 = new System.Windows.Forms.TextBox();
+            this.t48 = new System.Windows.Forms.TextBox();
+            this.t56 = new System.Windows.Forms.TextBox();
+            this.t57 = new System.Windows.Forms.TextBox();
+            this.t58 = new System.Windows.Forms.TextBox();
+            this.t60 = new System.Windows.Forms.TextBox();
+            this.t61 = new System.Windows.Forms.TextBox();
+            this.t62 = new System.Windows.Forms.TextBox();
+            this.t70 = new System.Windows.Forms.TextBox();
+            this.t71 = new System.Windows.Forms.TextBox();
+            this.t72 = new System.Windows.Forms.TextBox();
+            this.t80 = new System.Windows.Forms.TextBox();
+            this.t81 = new System.Windows.Forms.TextBox();
+            this.t82 = new System.Windows.Forms.TextBox();
+            this.t63 = new System.Windows.Forms.TextBox();
+            this.t66 = new System.Windows.Forms.TextBox();
+            this.t64 = new System.Windows.Forms.TextBox();
+            this.t67 = new System.Windows.Forms.TextBox();
+            this.t65 = new System.Windows.Forms.TextBox();
+            this.t68 = new System.Windows.Forms.TextBox();
+            this.t73 = new System.Windows.Forms.TextBox();
+            this.t76 = new System.Windows.Forms.TextBox();
+            this.t74 = new System.Windows.Forms.TextBox();
+            this.t77 = new System.Windows.Forms.TextBox();
+            this.t75 = new System.Windows.Forms.TextBox();
+            this.t78 = new System.Windows.Forms.TextBox();
+            this.t83 = new System.Windows.Forms.TextBox();
+            this.t86 = new System.Windows.Forms.TextBox();
+            this.t84 = new System.Windows.Forms.TextBox();
+            this.t87 = new System.Windows.Forms.TextBox();
+            this.t85 = new System.Windows.Forms.TextBox();
+            this.t88 = new System.Windows.Forms.TextBox();
+            this.pnl2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnlLetra.SuspendLayout();
+            this.pnl2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnl2
-            // 
-            this.pnl2.BackColor = System.Drawing.Color.Silver;
-            this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl2.Controls.Add(this.t88);
-            this.pnl2.Controls.Add(this.t85);
-            this.pnl2.Controls.Add(this.t87);
-            this.pnl2.Controls.Add(this.t84);
-            this.pnl2.Controls.Add(this.t86);
-            this.pnl2.Controls.Add(this.t83);
-            this.pnl2.Controls.Add(this.t78);
-            this.pnl2.Controls.Add(this.t75);
-            this.pnl2.Controls.Add(this.t77);
-            this.pnl2.Controls.Add(this.t74);
-            this.pnl2.Controls.Add(this.t76);
-            this.pnl2.Controls.Add(this.t73);
-            this.pnl2.Controls.Add(this.t68);
-            this.pnl2.Controls.Add(this.t65);
-            this.pnl2.Controls.Add(this.t67);
-            this.pnl2.Controls.Add(this.t64);
-            this.pnl2.Controls.Add(this.t66);
-            this.pnl2.Controls.Add(this.t63);
-            this.pnl2.Controls.Add(this.t82);
-            this.pnl2.Controls.Add(this.t81);
-            this.pnl2.Controls.Add(this.t80);
-            this.pnl2.Controls.Add(this.t72);
-            this.pnl2.Controls.Add(this.t71);
-            this.pnl2.Controls.Add(this.t70);
-            this.pnl2.Controls.Add(this.t62);
-            this.pnl2.Controls.Add(this.t61);
-            this.pnl2.Controls.Add(this.t60);
-            this.pnl2.Controls.Add(this.t58);
-            this.pnl2.Controls.Add(this.t57);
-            this.pnl2.Controls.Add(this.t56);
-            this.pnl2.Controls.Add(this.t48);
-            this.pnl2.Controls.Add(this.t47);
-            this.pnl2.Controls.Add(this.t46);
-            this.pnl2.Controls.Add(this.t38);
-            this.pnl2.Controls.Add(this.t37);
-            this.pnl2.Controls.Add(this.t36);
-            this.pnl2.Controls.Add(this.t55);
-            this.pnl2.Controls.Add(this.t54);
-            this.pnl2.Controls.Add(this.t53);
-            this.pnl2.Controls.Add(this.t45);
-            this.pnl2.Controls.Add(this.t44);
-            this.pnl2.Controls.Add(this.t43);
-            this.pnl2.Controls.Add(this.t35);
-            this.pnl2.Controls.Add(this.t34);
-            this.pnl2.Controls.Add(this.t33);
-            this.pnl2.Controls.Add(this.t52);
-            this.pnl2.Controls.Add(this.t51);
-            this.pnl2.Controls.Add(this.t28);
-            this.pnl2.Controls.Add(this.t06);
-            this.pnl2.Controls.Add(this.t50);
-            this.pnl2.Controls.Add(this.t27);
-            this.pnl2.Controls.Add(this.t42);
-            this.pnl2.Controls.Add(this.t18);
-            this.pnl2.Controls.Add(this.t41);
-            this.pnl2.Controls.Add(this.t07);
-            this.pnl2.Controls.Add(this.t40);
-            this.pnl2.Controls.Add(this.t17);
-            this.pnl2.Controls.Add(this.t32);
-            this.pnl2.Controls.Add(this.t16);
-            this.pnl2.Controls.Add(this.t31);
-            this.pnl2.Controls.Add(this.t08);
-            this.pnl2.Controls.Add(this.t26);
-            this.pnl2.Controls.Add(this.t30);
-            this.pnl2.Controls.Add(this.t25);
-            this.pnl2.Controls.Add(this.t24);
-            this.pnl2.Controls.Add(this.t23);
-            this.pnl2.Controls.Add(this.t15);
-            this.pnl2.Controls.Add(this.t14);
-            this.pnl2.Controls.Add(this.t13);
-            this.pnl2.Controls.Add(this.t05);
-            this.pnl2.Controls.Add(this.t04);
-            this.pnl2.Controls.Add(this.t03);
-            this.pnl2.Controls.Add(this.t22);
-            this.pnl2.Controls.Add(this.t21);
-            this.pnl2.Controls.Add(this.t20);
-            this.pnl2.Controls.Add(this.t12);
-            this.pnl2.Controls.Add(this.t11);
-            this.pnl2.Controls.Add(this.t10);
-            this.pnl2.Controls.Add(this.t02);
-            this.pnl2.Controls.Add(this.t01);
-            this.pnl2.Controls.Add(this.t00);
-            this.pnl2.Location = new System.Drawing.Point(637, 171);
-            this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(555, 445);
-            this.pnl2.TabIndex = 89;
-            // 
-            // t88
-            // 
-            this.t88.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t88.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t88.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t88.ForeColor = System.Drawing.Color.Blue;
-            this.t88.Location = new System.Drawing.Point(487, 387);
-            this.t88.Multiline = true;
-            this.t88.Name = "t88";
-            this.t88.Size = new System.Drawing.Size(59, 46);
-            this.t88.TabIndex = 30;
-            this.t88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t85
-            // 
-            this.t85.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t85.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t85.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t85.ForeColor = System.Drawing.Color.Blue;
-            this.t85.Location = new System.Drawing.Point(306, 388);
-            this.t85.Multiline = true;
-            this.t85.Name = "t85";
-            this.t85.Size = new System.Drawing.Size(59, 46);
-            this.t85.TabIndex = 92;
-            this.t85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t87
-            // 
-            this.t87.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t87.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t87.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t87.ForeColor = System.Drawing.Color.Blue;
-            this.t87.Location = new System.Drawing.Point(428, 387);
-            this.t87.Multiline = true;
-            this.t87.Name = "t87";
-            this.t87.Size = new System.Drawing.Size(59, 46);
-            this.t87.TabIndex = 29;
-            this.t87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t84
-            // 
-            this.t84.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t84.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t84.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t84.ForeColor = System.Drawing.Color.Blue;
-            this.t84.Location = new System.Drawing.Point(247, 388);
-            this.t84.Multiline = true;
-            this.t84.Name = "t84";
-            this.t84.Size = new System.Drawing.Size(59, 46);
-            this.t84.TabIndex = 91;
-            this.t84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t86
-            // 
-            this.t86.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t86.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t86.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t86.ForeColor = System.Drawing.Color.Blue;
-            this.t86.Location = new System.Drawing.Point(369, 387);
-            this.t86.Multiline = true;
-            this.t86.Name = "t86";
-            this.t86.Size = new System.Drawing.Size(59, 46);
-            this.t86.TabIndex = 28;
-            this.t86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t83
-            // 
-            this.t83.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t83.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t83.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t83.ForeColor = System.Drawing.Color.Blue;
-            this.t83.Location = new System.Drawing.Point(188, 388);
-            this.t83.Multiline = true;
-            this.t83.Name = "t83";
-            this.t83.Size = new System.Drawing.Size(59, 46);
-            this.t83.TabIndex = 90;
-            this.t83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t78
-            // 
-            this.t78.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t78.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t78.ForeColor = System.Drawing.Color.Blue;
-            this.t78.Location = new System.Drawing.Point(487, 341);
-            this.t78.Multiline = true;
-            this.t78.Name = "t78";
-            this.t78.Size = new System.Drawing.Size(59, 46);
-            this.t78.TabIndex = 27;
-            this.t78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t75
-            // 
-            this.t75.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t75.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t75.ForeColor = System.Drawing.Color.Blue;
-            this.t75.Location = new System.Drawing.Point(306, 342);
-            this.t75.Multiline = true;
-            this.t75.Name = "t75";
-            this.t75.Size = new System.Drawing.Size(59, 46);
-            this.t75.TabIndex = 89;
-            this.t75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t77
-            // 
-            this.t77.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t77.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t77.ForeColor = System.Drawing.Color.Blue;
-            this.t77.Location = new System.Drawing.Point(428, 341);
-            this.t77.Multiline = true;
-            this.t77.Name = "t77";
-            this.t77.Size = new System.Drawing.Size(59, 46);
-            this.t77.TabIndex = 26;
-            this.t77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t74
-            // 
-            this.t74.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t74.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t74.ForeColor = System.Drawing.Color.Blue;
-            this.t74.Location = new System.Drawing.Point(247, 342);
-            this.t74.Multiline = true;
-            this.t74.Name = "t74";
-            this.t74.Size = new System.Drawing.Size(59, 46);
-            this.t74.TabIndex = 88;
-            this.t74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t76
-            // 
-            this.t76.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t76.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t76.ForeColor = System.Drawing.Color.Blue;
-            this.t76.Location = new System.Drawing.Point(369, 341);
-            this.t76.Multiline = true;
-            this.t76.Name = "t76";
-            this.t76.Size = new System.Drawing.Size(59, 46);
-            this.t76.TabIndex = 25;
-            this.t76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t73
-            // 
-            this.t73.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t73.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t73.ForeColor = System.Drawing.Color.Blue;
-            this.t73.Location = new System.Drawing.Point(188, 342);
-            this.t73.Multiline = true;
-            this.t73.Name = "t73";
-            this.t73.Size = new System.Drawing.Size(59, 46);
-            this.t73.TabIndex = 87;
-            this.t73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t68
-            // 
-            this.t68.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t68.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t68.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t68.ForeColor = System.Drawing.Color.Blue;
-            this.t68.Location = new System.Drawing.Point(487, 295);
-            this.t68.Multiline = true;
-            this.t68.Name = "t68";
-            this.t68.Size = new System.Drawing.Size(59, 46);
-            this.t68.TabIndex = 24;
-            this.t68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t65
-            // 
-            this.t65.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t65.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t65.ForeColor = System.Drawing.Color.Blue;
-            this.t65.Location = new System.Drawing.Point(306, 296);
-            this.t65.Multiline = true;
-            this.t65.Name = "t65";
-            this.t65.Size = new System.Drawing.Size(59, 46);
-            this.t65.TabIndex = 86;
-            this.t65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t67
-            // 
-            this.t67.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t67.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t67.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t67.ForeColor = System.Drawing.Color.Blue;
-            this.t67.Location = new System.Drawing.Point(428, 295);
-            this.t67.Multiline = true;
-            this.t67.Name = "t67";
-            this.t67.Size = new System.Drawing.Size(59, 46);
-            this.t67.TabIndex = 23;
-            this.t67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t64
-            // 
-            this.t64.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t64.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t64.ForeColor = System.Drawing.Color.Blue;
-            this.t64.Location = new System.Drawing.Point(247, 296);
-            this.t64.Multiline = true;
-            this.t64.Name = "t64";
-            this.t64.Size = new System.Drawing.Size(59, 46);
-            this.t64.TabIndex = 85;
-            this.t64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t66
-            // 
-            this.t66.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t66.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t66.ForeColor = System.Drawing.Color.Blue;
-            this.t66.Location = new System.Drawing.Point(369, 295);
-            this.t66.Multiline = true;
-            this.t66.Name = "t66";
-            this.t66.Size = new System.Drawing.Size(59, 46);
-            this.t66.TabIndex = 22;
-            this.t66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t63
-            // 
-            this.t63.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t63.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t63.ForeColor = System.Drawing.Color.Blue;
-            this.t63.Location = new System.Drawing.Point(188, 296);
-            this.t63.Multiline = true;
-            this.t63.Name = "t63";
-            this.t63.Size = new System.Drawing.Size(59, 46);
-            this.t63.TabIndex = 84;
-            this.t63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t82
-            // 
-            this.t82.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t82.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t82.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t82.ForeColor = System.Drawing.Color.Blue;
-            this.t82.Location = new System.Drawing.Point(125, 388);
-            this.t82.Multiline = true;
-            this.t82.Name = "t82";
-            this.t82.Size = new System.Drawing.Size(59, 46);
-            this.t82.TabIndex = 83;
-            this.t82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t81
-            // 
-            this.t81.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t81.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t81.ForeColor = System.Drawing.Color.Blue;
-            this.t81.Location = new System.Drawing.Point(66, 388);
-            this.t81.Multiline = true;
-            this.t81.Name = "t81";
-            this.t81.Size = new System.Drawing.Size(59, 46);
-            this.t81.TabIndex = 82;
-            this.t81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t80
-            // 
-            this.t80.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t80.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t80.ForeColor = System.Drawing.Color.Blue;
-            this.t80.Location = new System.Drawing.Point(7, 388);
-            this.t80.Multiline = true;
-            this.t80.Name = "t80";
-            this.t80.Size = new System.Drawing.Size(59, 46);
-            this.t80.TabIndex = 81;
-            this.t80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t72
-            // 
-            this.t72.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t72.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t72.ForeColor = System.Drawing.Color.Blue;
-            this.t72.Location = new System.Drawing.Point(125, 342);
-            this.t72.Multiline = true;
-            this.t72.Name = "t72";
-            this.t72.Size = new System.Drawing.Size(59, 46);
-            this.t72.TabIndex = 80;
-            this.t72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t71
-            // 
-            this.t71.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t71.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t71.ForeColor = System.Drawing.Color.Blue;
-            this.t71.Location = new System.Drawing.Point(66, 342);
-            this.t71.Multiline = true;
-            this.t71.Name = "t71";
-            this.t71.Size = new System.Drawing.Size(59, 46);
-            this.t71.TabIndex = 79;
-            this.t71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t70
-            // 
-            this.t70.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t70.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t70.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t70.ForeColor = System.Drawing.Color.Blue;
-            this.t70.Location = new System.Drawing.Point(7, 342);
-            this.t70.Multiline = true;
-            this.t70.Name = "t70";
-            this.t70.Size = new System.Drawing.Size(59, 46);
-            this.t70.TabIndex = 78;
-            this.t70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t62
-            // 
-            this.t62.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t62.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t62.ForeColor = System.Drawing.Color.Blue;
-            this.t62.Location = new System.Drawing.Point(125, 296);
-            this.t62.Multiline = true;
-            this.t62.Name = "t62";
-            this.t62.Size = new System.Drawing.Size(59, 46);
-            this.t62.TabIndex = 77;
-            this.t62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t61
-            // 
-            this.t61.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t61.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t61.ForeColor = System.Drawing.Color.Blue;
-            this.t61.Location = new System.Drawing.Point(66, 296);
-            this.t61.Multiline = true;
-            this.t61.Name = "t61";
-            this.t61.Size = new System.Drawing.Size(59, 46);
-            this.t61.TabIndex = 76;
-            this.t61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t60
-            // 
-            this.t60.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t60.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t60.ForeColor = System.Drawing.Color.Blue;
-            this.t60.Location = new System.Drawing.Point(7, 296);
-            this.t60.Multiline = true;
-            this.t60.Name = "t60";
-            this.t60.Size = new System.Drawing.Size(59, 46);
-            this.t60.TabIndex = 75;
-            this.t60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t58
-            // 
-            this.t58.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t58.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t58.ForeColor = System.Drawing.Color.Blue;
-            this.t58.Location = new System.Drawing.Point(487, 244);
-            this.t58.Multiline = true;
-            this.t58.Name = "t58";
-            this.t58.Size = new System.Drawing.Size(59, 46);
-            this.t58.TabIndex = 74;
-            this.t58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t57
-            // 
-            this.t57.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t57.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t57.ForeColor = System.Drawing.Color.Blue;
-            this.t57.Location = new System.Drawing.Point(428, 244);
-            this.t57.Multiline = true;
-            this.t57.Name = "t57";
-            this.t57.Size = new System.Drawing.Size(59, 46);
-            this.t57.TabIndex = 73;
-            this.t57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t56
-            // 
-            this.t56.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t56.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t56.ForeColor = System.Drawing.Color.Blue;
-            this.t56.Location = new System.Drawing.Point(369, 244);
-            this.t56.Multiline = true;
-            this.t56.Name = "t56";
-            this.t56.Size = new System.Drawing.Size(59, 46);
-            this.t56.TabIndex = 72;
-            this.t56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t48
-            // 
-            this.t48.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t48.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t48.ForeColor = System.Drawing.Color.Blue;
-            this.t48.Location = new System.Drawing.Point(487, 198);
-            this.t48.Multiline = true;
-            this.t48.Name = "t48";
-            this.t48.Size = new System.Drawing.Size(59, 46);
-            this.t48.TabIndex = 71;
-            this.t48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t47
-            // 
-            this.t47.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t47.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t47.ForeColor = System.Drawing.Color.Blue;
-            this.t47.Location = new System.Drawing.Point(428, 198);
-            this.t47.Multiline = true;
-            this.t47.Name = "t47";
-            this.t47.Size = new System.Drawing.Size(59, 46);
-            this.t47.TabIndex = 70;
-            this.t47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t46
-            // 
-            this.t46.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t46.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t46.ForeColor = System.Drawing.Color.Blue;
-            this.t46.Location = new System.Drawing.Point(369, 198);
-            this.t46.Multiline = true;
-            this.t46.Name = "t46";
-            this.t46.Size = new System.Drawing.Size(59, 46);
-            this.t46.TabIndex = 69;
-            this.t46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t38
-            // 
-            this.t38.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t38.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t38.ForeColor = System.Drawing.Color.Blue;
-            this.t38.Location = new System.Drawing.Point(487, 152);
-            this.t38.Multiline = true;
-            this.t38.Name = "t38";
-            this.t38.Size = new System.Drawing.Size(59, 46);
-            this.t38.TabIndex = 68;
-            this.t38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t37
-            // 
-            this.t37.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t37.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t37.ForeColor = System.Drawing.Color.Blue;
-            this.t37.Location = new System.Drawing.Point(428, 152);
-            this.t37.Multiline = true;
-            this.t37.Name = "t37";
-            this.t37.Size = new System.Drawing.Size(59, 46);
-            this.t37.TabIndex = 67;
-            this.t37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t36
-            // 
-            this.t36.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t36.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t36.ForeColor = System.Drawing.Color.Blue;
-            this.t36.Location = new System.Drawing.Point(369, 152);
-            this.t36.Multiline = true;
-            this.t36.Name = "t36";
-            this.t36.Size = new System.Drawing.Size(59, 46);
-            this.t36.TabIndex = 66;
-            this.t36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t55
-            // 
-            this.t55.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t55.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t55.ForeColor = System.Drawing.Color.Blue;
-            this.t55.Location = new System.Drawing.Point(306, 244);
-            this.t55.Multiline = true;
-            this.t55.Name = "t55";
-            this.t55.Size = new System.Drawing.Size(59, 46);
-            this.t55.TabIndex = 65;
-            this.t55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t54
-            // 
-            this.t54.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t54.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t54.ForeColor = System.Drawing.Color.Blue;
-            this.t54.Location = new System.Drawing.Point(247, 244);
-            this.t54.Multiline = true;
-            this.t54.Name = "t54";
-            this.t54.Size = new System.Drawing.Size(59, 46);
-            this.t54.TabIndex = 64;
-            this.t54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t53
-            // 
-            this.t53.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t53.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t53.ForeColor = System.Drawing.Color.Blue;
-            this.t53.Location = new System.Drawing.Point(188, 244);
-            this.t53.Multiline = true;
-            this.t53.Name = "t53";
-            this.t53.Size = new System.Drawing.Size(59, 46);
-            this.t53.TabIndex = 63;
-            this.t53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t45
-            // 
-            this.t45.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t45.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t45.ForeColor = System.Drawing.Color.Blue;
-            this.t45.Location = new System.Drawing.Point(306, 198);
-            this.t45.Multiline = true;
-            this.t45.Name = "t45";
-            this.t45.Size = new System.Drawing.Size(59, 46);
-            this.t45.TabIndex = 62;
-            this.t45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t44
-            // 
-            this.t44.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t44.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t44.ForeColor = System.Drawing.Color.Blue;
-            this.t44.Location = new System.Drawing.Point(247, 198);
-            this.t44.Multiline = true;
-            this.t44.Name = "t44";
-            this.t44.Size = new System.Drawing.Size(59, 46);
-            this.t44.TabIndex = 61;
-            this.t44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t43
-            // 
-            this.t43.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t43.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t43.ForeColor = System.Drawing.Color.Blue;
-            this.t43.Location = new System.Drawing.Point(188, 198);
-            this.t43.Multiline = true;
-            this.t43.Name = "t43";
-            this.t43.Size = new System.Drawing.Size(59, 46);
-            this.t43.TabIndex = 60;
-            this.t43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t35
-            // 
-            this.t35.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t35.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t35.ForeColor = System.Drawing.Color.Blue;
-            this.t35.Location = new System.Drawing.Point(306, 152);
-            this.t35.Multiline = true;
-            this.t35.Name = "t35";
-            this.t35.Size = new System.Drawing.Size(59, 46);
-            this.t35.TabIndex = 59;
-            this.t35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t34
-            // 
-            this.t34.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t34.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t34.ForeColor = System.Drawing.Color.Blue;
-            this.t34.Location = new System.Drawing.Point(247, 152);
-            this.t34.Multiline = true;
-            this.t34.Name = "t34";
-            this.t34.Size = new System.Drawing.Size(59, 46);
-            this.t34.TabIndex = 58;
-            this.t34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t33
-            // 
-            this.t33.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t33.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t33.ForeColor = System.Drawing.Color.Blue;
-            this.t33.Location = new System.Drawing.Point(188, 152);
-            this.t33.Multiline = true;
-            this.t33.Name = "t33";
-            this.t33.Size = new System.Drawing.Size(59, 46);
-            this.t33.TabIndex = 57;
-            this.t33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t52
-            // 
-            this.t52.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t52.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t52.ForeColor = System.Drawing.Color.Blue;
-            this.t52.Location = new System.Drawing.Point(125, 244);
-            this.t52.Multiline = true;
-            this.t52.Name = "t52";
-            this.t52.Size = new System.Drawing.Size(59, 46);
-            this.t52.TabIndex = 56;
-            this.t52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t51
-            // 
-            this.t51.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t51.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t51.ForeColor = System.Drawing.Color.Blue;
-            this.t51.Location = new System.Drawing.Point(66, 244);
-            this.t51.Multiline = true;
-            this.t51.Name = "t51";
-            this.t51.Size = new System.Drawing.Size(59, 46);
-            this.t51.TabIndex = 55;
-            this.t51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t28
-            // 
-            this.t28.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t28.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t28.ForeColor = System.Drawing.Color.Blue;
-            this.t28.Location = new System.Drawing.Point(487, 100);
-            this.t28.Multiline = true;
-            this.t28.Name = "t28";
-            this.t28.Size = new System.Drawing.Size(59, 46);
-            this.t28.TabIndex = 47;
-            this.t28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t06
-            // 
-            this.t06.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t06.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t06.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t06.ForeColor = System.Drawing.Color.Blue;
-            this.t06.Location = new System.Drawing.Point(369, 8);
-            this.t06.Multiline = true;
-            this.t06.Name = "t06";
-            this.t06.Size = new System.Drawing.Size(59, 46);
-            this.t06.TabIndex = 39;
-            this.t06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t50
-            // 
-            this.t50.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t50.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t50.ForeColor = System.Drawing.Color.Blue;
-            this.t50.Location = new System.Drawing.Point(7, 244);
-            this.t50.Multiline = true;
-            this.t50.Name = "t50";
-            this.t50.Size = new System.Drawing.Size(59, 46);
-            this.t50.TabIndex = 54;
-            this.t50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t27
-            // 
-            this.t27.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t27.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t27.ForeColor = System.Drawing.Color.Blue;
-            this.t27.Location = new System.Drawing.Point(428, 100);
-            this.t27.Multiline = true;
-            this.t27.Name = "t27";
-            this.t27.Size = new System.Drawing.Size(59, 46);
-            this.t27.TabIndex = 46;
-            this.t27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t42
-            // 
-            this.t42.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t42.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t42.ForeColor = System.Drawing.Color.Blue;
-            this.t42.Location = new System.Drawing.Point(125, 198);
-            this.t42.Multiline = true;
-            this.t42.Name = "t42";
-            this.t42.Size = new System.Drawing.Size(59, 46);
-            this.t42.TabIndex = 53;
-            this.t42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t18
-            // 
-            this.t18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t18.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t18.ForeColor = System.Drawing.Color.Blue;
-            this.t18.Location = new System.Drawing.Point(487, 54);
-            this.t18.Multiline = true;
-            this.t18.Name = "t18";
-            this.t18.Size = new System.Drawing.Size(59, 46);
-            this.t18.TabIndex = 44;
-            this.t18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t41
-            // 
-            this.t41.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t41.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t41.ForeColor = System.Drawing.Color.Blue;
-            this.t41.Location = new System.Drawing.Point(66, 198);
-            this.t41.Multiline = true;
-            this.t41.Name = "t41";
-            this.t41.Size = new System.Drawing.Size(59, 46);
-            this.t41.TabIndex = 52;
-            this.t41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t07
-            // 
-            this.t07.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t07.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t07.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t07.ForeColor = System.Drawing.Color.Blue;
-            this.t07.Location = new System.Drawing.Point(428, 8);
-            this.t07.Multiline = true;
-            this.t07.Name = "t07";
-            this.t07.Size = new System.Drawing.Size(59, 46);
-            this.t07.TabIndex = 40;
-            this.t07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t40
-            // 
-            this.t40.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t40.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t40.ForeColor = System.Drawing.Color.Blue;
-            this.t40.Location = new System.Drawing.Point(7, 198);
-            this.t40.Multiline = true;
-            this.t40.Name = "t40";
-            this.t40.Size = new System.Drawing.Size(59, 46);
-            this.t40.TabIndex = 51;
-            this.t40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t17
-            // 
-            this.t17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t17.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t17.ForeColor = System.Drawing.Color.Blue;
-            this.t17.Location = new System.Drawing.Point(428, 54);
-            this.t17.Multiline = true;
-            this.t17.Name = "t17";
-            this.t17.Size = new System.Drawing.Size(59, 46);
-            this.t17.TabIndex = 43;
-            this.t17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t32
-            // 
-            this.t32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t32.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t32.ForeColor = System.Drawing.Color.Blue;
-            this.t32.Location = new System.Drawing.Point(125, 152);
-            this.t32.Multiline = true;
-            this.t32.Name = "t32";
-            this.t32.Size = new System.Drawing.Size(59, 46);
-            this.t32.TabIndex = 50;
-            this.t32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t16
-            // 
-            this.t16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t16.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t16.ForeColor = System.Drawing.Color.Blue;
-            this.t16.Location = new System.Drawing.Point(369, 54);
-            this.t16.Multiline = true;
-            this.t16.Name = "t16";
-            this.t16.Size = new System.Drawing.Size(59, 46);
-            this.t16.TabIndex = 42;
-            this.t16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t31
-            // 
-            this.t31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t31.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t31.ForeColor = System.Drawing.Color.Blue;
-            this.t31.Location = new System.Drawing.Point(66, 152);
-            this.t31.Multiline = true;
-            this.t31.Name = "t31";
-            this.t31.Size = new System.Drawing.Size(59, 46);
-            this.t31.TabIndex = 49;
-            this.t31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t08
-            // 
-            this.t08.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t08.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t08.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t08.ForeColor = System.Drawing.Color.Blue;
-            this.t08.Location = new System.Drawing.Point(487, 8);
-            this.t08.Multiline = true;
-            this.t08.Name = "t08";
-            this.t08.Size = new System.Drawing.Size(59, 46);
-            this.t08.TabIndex = 41;
-            this.t08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t26
-            // 
-            this.t26.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t26.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t26.ForeColor = System.Drawing.Color.Blue;
-            this.t26.Location = new System.Drawing.Point(369, 100);
-            this.t26.Multiline = true;
-            this.t26.Name = "t26";
-            this.t26.Size = new System.Drawing.Size(59, 46);
-            this.t26.TabIndex = 45;
-            this.t26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t30
-            // 
-            this.t30.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t30.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t30.ForeColor = System.Drawing.Color.Blue;
-            this.t30.Location = new System.Drawing.Point(7, 152);
-            this.t30.Multiline = true;
-            this.t30.Name = "t30";
-            this.t30.Size = new System.Drawing.Size(59, 46);
-            this.t30.TabIndex = 48;
-            this.t30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t25
-            // 
-            this.t25.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t25.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t25.ForeColor = System.Drawing.Color.Blue;
-            this.t25.Location = new System.Drawing.Point(306, 100);
-            this.t25.Multiline = true;
-            this.t25.Name = "t25";
-            this.t25.Size = new System.Drawing.Size(59, 46);
-            this.t25.TabIndex = 38;
-            this.t25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t24
-            // 
-            this.t24.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t24.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t24.ForeColor = System.Drawing.Color.Blue;
-            this.t24.Location = new System.Drawing.Point(247, 100);
-            this.t24.Multiline = true;
-            this.t24.Name = "t24";
-            this.t24.Size = new System.Drawing.Size(59, 46);
-            this.t24.TabIndex = 37;
-            this.t24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t23
-            // 
-            this.t23.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t23.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t23.ForeColor = System.Drawing.Color.Blue;
-            this.t23.Location = new System.Drawing.Point(188, 100);
-            this.t23.Multiline = true;
-            this.t23.Name = "t23";
-            this.t23.Size = new System.Drawing.Size(59, 46);
-            this.t23.TabIndex = 36;
-            this.t23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t15
-            // 
-            this.t15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t15.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t15.ForeColor = System.Drawing.Color.Blue;
-            this.t15.Location = new System.Drawing.Point(306, 54);
-            this.t15.Multiline = true;
-            this.t15.Name = "t15";
-            this.t15.Size = new System.Drawing.Size(59, 46);
-            this.t15.TabIndex = 35;
-            this.t15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t14
-            // 
-            this.t14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t14.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t14.ForeColor = System.Drawing.Color.Blue;
-            this.t14.Location = new System.Drawing.Point(247, 54);
-            this.t14.Multiline = true;
-            this.t14.Name = "t14";
-            this.t14.Size = new System.Drawing.Size(59, 46);
-            this.t14.TabIndex = 34;
-            this.t14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t13
-            // 
-            this.t13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t13.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t13.ForeColor = System.Drawing.Color.Blue;
-            this.t13.Location = new System.Drawing.Point(188, 54);
-            this.t13.Multiline = true;
-            this.t13.Name = "t13";
-            this.t13.Size = new System.Drawing.Size(59, 46);
-            this.t13.TabIndex = 33;
-            this.t13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t05
-            // 
-            this.t05.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t05.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t05.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t05.ForeColor = System.Drawing.Color.Blue;
-            this.t05.Location = new System.Drawing.Point(306, 8);
-            this.t05.Multiline = true;
-            this.t05.Name = "t05";
-            this.t05.Size = new System.Drawing.Size(59, 46);
-            this.t05.TabIndex = 32;
-            this.t05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t04
-            // 
-            this.t04.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t04.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t04.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t04.ForeColor = System.Drawing.Color.Blue;
-            this.t04.Location = new System.Drawing.Point(247, 8);
-            this.t04.Multiline = true;
-            this.t04.Name = "t04";
-            this.t04.Size = new System.Drawing.Size(59, 46);
-            this.t04.TabIndex = 31;
-            this.t04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t03
-            // 
-            this.t03.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t03.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t03.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t03.ForeColor = System.Drawing.Color.Blue;
-            this.t03.Location = new System.Drawing.Point(188, 8);
-            this.t03.Multiline = true;
-            this.t03.Name = "t03";
-            this.t03.Size = new System.Drawing.Size(59, 46);
-            this.t03.TabIndex = 30;
-            this.t03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t22
-            // 
-            this.t22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t22.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t22.ForeColor = System.Drawing.Color.Blue;
-            this.t22.Location = new System.Drawing.Point(125, 100);
-            this.t22.Multiline = true;
-            this.t22.Name = "t22";
-            this.t22.Size = new System.Drawing.Size(59, 46);
-            this.t22.TabIndex = 29;
-            this.t22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t21
-            // 
-            this.t21.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t21.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t21.ForeColor = System.Drawing.Color.Blue;
-            this.t21.Location = new System.Drawing.Point(66, 100);
-            this.t21.Multiline = true;
-            this.t21.Name = "t21";
-            this.t21.Size = new System.Drawing.Size(59, 46);
-            this.t21.TabIndex = 28;
-            this.t21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t20
-            // 
-            this.t20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t20.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t20.ForeColor = System.Drawing.Color.Blue;
-            this.t20.Location = new System.Drawing.Point(7, 100);
-            this.t20.Multiline = true;
-            this.t20.Name = "t20";
-            this.t20.Size = new System.Drawing.Size(59, 46);
-            this.t20.TabIndex = 27;
-            this.t20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t12
-            // 
-            this.t12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t12.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t12.ForeColor = System.Drawing.Color.Blue;
-            this.t12.Location = new System.Drawing.Point(125, 54);
-            this.t12.Multiline = true;
-            this.t12.Name = "t12";
-            this.t12.Size = new System.Drawing.Size(59, 46);
-            this.t12.TabIndex = 26;
-            this.t12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t11
-            // 
-            this.t11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t11.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t11.ForeColor = System.Drawing.Color.Blue;
-            this.t11.Location = new System.Drawing.Point(66, 54);
-            this.t11.Multiline = true;
-            this.t11.Name = "t11";
-            this.t11.Size = new System.Drawing.Size(59, 46);
-            this.t11.TabIndex = 25;
-            this.t11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t10
-            // 
-            this.t10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t10.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t10.ForeColor = System.Drawing.Color.Blue;
-            this.t10.Location = new System.Drawing.Point(7, 54);
-            this.t10.Multiline = true;
-            this.t10.Name = "t10";
-            this.t10.Size = new System.Drawing.Size(59, 46);
-            this.t10.TabIndex = 24;
-            this.t10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t02
-            // 
-            this.t02.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t02.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t02.ForeColor = System.Drawing.Color.Blue;
-            this.t02.Location = new System.Drawing.Point(125, 8);
-            this.t02.Multiline = true;
-            this.t02.Name = "t02";
-            this.t02.Size = new System.Drawing.Size(59, 46);
-            this.t02.TabIndex = 23;
-            this.t02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t01
-            // 
-            this.t01.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t01.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t01.ForeColor = System.Drawing.Color.Blue;
-            this.t01.Location = new System.Drawing.Point(66, 8);
-            this.t01.Multiline = true;
-            this.t01.Name = "t01";
-            this.t01.Size = new System.Drawing.Size(59, 46);
-            this.t01.TabIndex = 22;
-            this.t01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t00
-            // 
-            this.t00.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.t00.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.t00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t00.ForeColor = System.Drawing.Color.Blue;
-            this.t00.Location = new System.Drawing.Point(7, 8);
-            this.t00.Multiline = true;
-            this.t00.Name = "t00";
-            this.t00.Size = new System.Drawing.Size(59, 46);
-            this.t00.TabIndex = 21;
-            this.t00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pnl1
             // 
@@ -1510,7 +368,7 @@
             this.pnl1.Controls.Add(this.txt00);
             this.pnl1.Location = new System.Drawing.Point(12, 171);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(555, 445);
+            this.pnl1.Size = new System.Drawing.Size(548, 434);
             this.pnl1.TabIndex = 88;
             // 
             // txt88
@@ -1519,7 +377,7 @@
             this.txt88.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt88.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt88.ForeColor = System.Drawing.Color.Black;
-            this.txt88.Location = new System.Drawing.Point(487, 387);
+            this.txt88.Location = new System.Drawing.Point(479, 376);
             this.txt88.Multiline = true;
             this.txt88.Name = "txt88";
             this.txt88.Size = new System.Drawing.Size(59, 46);
@@ -1532,7 +390,7 @@
             this.txt85.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt85.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt85.ForeColor = System.Drawing.Color.Black;
-            this.txt85.Location = new System.Drawing.Point(306, 388);
+            this.txt85.Location = new System.Drawing.Point(302, 376);
             this.txt85.Multiline = true;
             this.txt85.Name = "txt85";
             this.txt85.Size = new System.Drawing.Size(59, 46);
@@ -1545,7 +403,7 @@
             this.txt87.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt87.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt87.ForeColor = System.Drawing.Color.Black;
-            this.txt87.Location = new System.Drawing.Point(428, 387);
+            this.txt87.Location = new System.Drawing.Point(420, 376);
             this.txt87.Multiline = true;
             this.txt87.Name = "txt87";
             this.txt87.Size = new System.Drawing.Size(59, 46);
@@ -1558,7 +416,7 @@
             this.txt84.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt84.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt84.ForeColor = System.Drawing.Color.Black;
-            this.txt84.Location = new System.Drawing.Point(247, 388);
+            this.txt84.Location = new System.Drawing.Point(243, 376);
             this.txt84.Multiline = true;
             this.txt84.Name = "txt84";
             this.txt84.Size = new System.Drawing.Size(59, 46);
@@ -1571,7 +429,7 @@
             this.txt86.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt86.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt86.ForeColor = System.Drawing.Color.Black;
-            this.txt86.Location = new System.Drawing.Point(369, 387);
+            this.txt86.Location = new System.Drawing.Point(361, 376);
             this.txt86.Multiline = true;
             this.txt86.Name = "txt86";
             this.txt86.Size = new System.Drawing.Size(59, 46);
@@ -1584,7 +442,7 @@
             this.txt83.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt83.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt83.ForeColor = System.Drawing.Color.Black;
-            this.txt83.Location = new System.Drawing.Point(188, 388);
+            this.txt83.Location = new System.Drawing.Point(184, 376);
             this.txt83.Multiline = true;
             this.txt83.Name = "txt83";
             this.txt83.Size = new System.Drawing.Size(59, 46);
@@ -1597,7 +455,7 @@
             this.txt78.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt78.ForeColor = System.Drawing.Color.Black;
-            this.txt78.Location = new System.Drawing.Point(487, 341);
+            this.txt78.Location = new System.Drawing.Point(479, 330);
             this.txt78.Multiline = true;
             this.txt78.Name = "txt78";
             this.txt78.Size = new System.Drawing.Size(59, 46);
@@ -1610,7 +468,7 @@
             this.txt75.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt75.ForeColor = System.Drawing.Color.Black;
-            this.txt75.Location = new System.Drawing.Point(306, 342);
+            this.txt75.Location = new System.Drawing.Point(302, 330);
             this.txt75.Multiline = true;
             this.txt75.Name = "txt75";
             this.txt75.Size = new System.Drawing.Size(59, 46);
@@ -1623,7 +481,7 @@
             this.txt77.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt77.ForeColor = System.Drawing.Color.Black;
-            this.txt77.Location = new System.Drawing.Point(428, 341);
+            this.txt77.Location = new System.Drawing.Point(420, 330);
             this.txt77.Multiline = true;
             this.txt77.Name = "txt77";
             this.txt77.Size = new System.Drawing.Size(59, 46);
@@ -1636,7 +494,7 @@
             this.txt74.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt74.ForeColor = System.Drawing.Color.Black;
-            this.txt74.Location = new System.Drawing.Point(247, 342);
+            this.txt74.Location = new System.Drawing.Point(243, 330);
             this.txt74.Multiline = true;
             this.txt74.Name = "txt74";
             this.txt74.Size = new System.Drawing.Size(59, 46);
@@ -1649,7 +507,7 @@
             this.txt76.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt76.ForeColor = System.Drawing.Color.Black;
-            this.txt76.Location = new System.Drawing.Point(369, 341);
+            this.txt76.Location = new System.Drawing.Point(361, 330);
             this.txt76.Multiline = true;
             this.txt76.Name = "txt76";
             this.txt76.Size = new System.Drawing.Size(59, 46);
@@ -1662,7 +520,7 @@
             this.txt73.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt73.ForeColor = System.Drawing.Color.Black;
-            this.txt73.Location = new System.Drawing.Point(188, 342);
+            this.txt73.Location = new System.Drawing.Point(184, 330);
             this.txt73.Multiline = true;
             this.txt73.Name = "txt73";
             this.txt73.Size = new System.Drawing.Size(59, 46);
@@ -1675,7 +533,7 @@
             this.txt68.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt68.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt68.ForeColor = System.Drawing.Color.Black;
-            this.txt68.Location = new System.Drawing.Point(487, 295);
+            this.txt68.Location = new System.Drawing.Point(479, 284);
             this.txt68.Multiline = true;
             this.txt68.Name = "txt68";
             this.txt68.Size = new System.Drawing.Size(59, 46);
@@ -1688,7 +546,7 @@
             this.txt65.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt65.ForeColor = System.Drawing.Color.Black;
-            this.txt65.Location = new System.Drawing.Point(306, 296);
+            this.txt65.Location = new System.Drawing.Point(302, 284);
             this.txt65.Multiline = true;
             this.txt65.Name = "txt65";
             this.txt65.Size = new System.Drawing.Size(59, 46);
@@ -1701,7 +559,7 @@
             this.txt67.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt67.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt67.ForeColor = System.Drawing.Color.Black;
-            this.txt67.Location = new System.Drawing.Point(428, 295);
+            this.txt67.Location = new System.Drawing.Point(420, 284);
             this.txt67.Multiline = true;
             this.txt67.Name = "txt67";
             this.txt67.Size = new System.Drawing.Size(59, 46);
@@ -1714,7 +572,7 @@
             this.txt64.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt64.ForeColor = System.Drawing.Color.Black;
-            this.txt64.Location = new System.Drawing.Point(247, 296);
+            this.txt64.Location = new System.Drawing.Point(243, 284);
             this.txt64.Multiline = true;
             this.txt64.Name = "txt64";
             this.txt64.Size = new System.Drawing.Size(59, 46);
@@ -1727,7 +585,7 @@
             this.txt66.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt66.ForeColor = System.Drawing.Color.Black;
-            this.txt66.Location = new System.Drawing.Point(369, 295);
+            this.txt66.Location = new System.Drawing.Point(361, 284);
             this.txt66.Multiline = true;
             this.txt66.Name = "txt66";
             this.txt66.Size = new System.Drawing.Size(59, 46);
@@ -1740,7 +598,7 @@
             this.txt63.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt63.ForeColor = System.Drawing.Color.Black;
-            this.txt63.Location = new System.Drawing.Point(188, 296);
+            this.txt63.Location = new System.Drawing.Point(184, 284);
             this.txt63.Multiline = true;
             this.txt63.Name = "txt63";
             this.txt63.Size = new System.Drawing.Size(59, 46);
@@ -1753,7 +611,7 @@
             this.txt82.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt82.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt82.ForeColor = System.Drawing.Color.Black;
-            this.txt82.Location = new System.Drawing.Point(125, 388);
+            this.txt82.Location = new System.Drawing.Point(125, 376);
             this.txt82.Multiline = true;
             this.txt82.Name = "txt82";
             this.txt82.Size = new System.Drawing.Size(59, 46);
@@ -1766,7 +624,7 @@
             this.txt81.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt81.ForeColor = System.Drawing.Color.Black;
-            this.txt81.Location = new System.Drawing.Point(66, 388);
+            this.txt81.Location = new System.Drawing.Point(66, 376);
             this.txt81.Multiline = true;
             this.txt81.Name = "txt81";
             this.txt81.Size = new System.Drawing.Size(59, 46);
@@ -1779,7 +637,7 @@
             this.txt80.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt80.ForeColor = System.Drawing.Color.Black;
-            this.txt80.Location = new System.Drawing.Point(7, 388);
+            this.txt80.Location = new System.Drawing.Point(7, 376);
             this.txt80.Multiline = true;
             this.txt80.Name = "txt80";
             this.txt80.Size = new System.Drawing.Size(59, 46);
@@ -1792,7 +650,7 @@
             this.txt72.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt72.ForeColor = System.Drawing.Color.Black;
-            this.txt72.Location = new System.Drawing.Point(125, 342);
+            this.txt72.Location = new System.Drawing.Point(125, 330);
             this.txt72.Multiline = true;
             this.txt72.Name = "txt72";
             this.txt72.Size = new System.Drawing.Size(59, 46);
@@ -1805,7 +663,7 @@
             this.txt71.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt71.ForeColor = System.Drawing.Color.Black;
-            this.txt71.Location = new System.Drawing.Point(66, 342);
+            this.txt71.Location = new System.Drawing.Point(66, 330);
             this.txt71.Multiline = true;
             this.txt71.Name = "txt71";
             this.txt71.Size = new System.Drawing.Size(59, 46);
@@ -1818,7 +676,7 @@
             this.txt70.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt70.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt70.ForeColor = System.Drawing.Color.Black;
-            this.txt70.Location = new System.Drawing.Point(7, 342);
+            this.txt70.Location = new System.Drawing.Point(7, 330);
             this.txt70.Multiline = true;
             this.txt70.Name = "txt70";
             this.txt70.Size = new System.Drawing.Size(59, 46);
@@ -1831,7 +689,7 @@
             this.txt62.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt62.ForeColor = System.Drawing.Color.Black;
-            this.txt62.Location = new System.Drawing.Point(125, 296);
+            this.txt62.Location = new System.Drawing.Point(125, 284);
             this.txt62.Multiline = true;
             this.txt62.Name = "txt62";
             this.txt62.Size = new System.Drawing.Size(59, 46);
@@ -1844,7 +702,7 @@
             this.txt61.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt61.ForeColor = System.Drawing.Color.Black;
-            this.txt61.Location = new System.Drawing.Point(66, 296);
+            this.txt61.Location = new System.Drawing.Point(66, 284);
             this.txt61.Multiline = true;
             this.txt61.Name = "txt61";
             this.txt61.Size = new System.Drawing.Size(59, 46);
@@ -1857,7 +715,7 @@
             this.txt60.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt60.ForeColor = System.Drawing.Color.Black;
-            this.txt60.Location = new System.Drawing.Point(7, 296);
+            this.txt60.Location = new System.Drawing.Point(7, 284);
             this.txt60.Multiline = true;
             this.txt60.Name = "txt60";
             this.txt60.Size = new System.Drawing.Size(59, 46);
@@ -1870,7 +728,7 @@
             this.txt58.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt58.ForeColor = System.Drawing.Color.Black;
-            this.txt58.Location = new System.Drawing.Point(487, 244);
+            this.txt58.Location = new System.Drawing.Point(479, 238);
             this.txt58.Multiline = true;
             this.txt58.Name = "txt58";
             this.txt58.Size = new System.Drawing.Size(59, 46);
@@ -1883,7 +741,7 @@
             this.txt57.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt57.ForeColor = System.Drawing.Color.Black;
-            this.txt57.Location = new System.Drawing.Point(428, 244);
+            this.txt57.Location = new System.Drawing.Point(420, 238);
             this.txt57.Multiline = true;
             this.txt57.Name = "txt57";
             this.txt57.Size = new System.Drawing.Size(59, 46);
@@ -1896,7 +754,7 @@
             this.txt56.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt56.ForeColor = System.Drawing.Color.Black;
-            this.txt56.Location = new System.Drawing.Point(369, 244);
+            this.txt56.Location = new System.Drawing.Point(361, 238);
             this.txt56.Multiline = true;
             this.txt56.Name = "txt56";
             this.txt56.Size = new System.Drawing.Size(59, 46);
@@ -1909,7 +767,7 @@
             this.txt48.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt48.ForeColor = System.Drawing.Color.Black;
-            this.txt48.Location = new System.Drawing.Point(487, 198);
+            this.txt48.Location = new System.Drawing.Point(479, 192);
             this.txt48.Multiline = true;
             this.txt48.Name = "txt48";
             this.txt48.Size = new System.Drawing.Size(59, 46);
@@ -1922,7 +780,7 @@
             this.txt47.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt47.ForeColor = System.Drawing.Color.Black;
-            this.txt47.Location = new System.Drawing.Point(428, 198);
+            this.txt47.Location = new System.Drawing.Point(420, 192);
             this.txt47.Multiline = true;
             this.txt47.Name = "txt47";
             this.txt47.Size = new System.Drawing.Size(59, 46);
@@ -1935,7 +793,7 @@
             this.txt46.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt46.ForeColor = System.Drawing.Color.Black;
-            this.txt46.Location = new System.Drawing.Point(369, 198);
+            this.txt46.Location = new System.Drawing.Point(361, 192);
             this.txt46.Multiline = true;
             this.txt46.Name = "txt46";
             this.txt46.Size = new System.Drawing.Size(59, 46);
@@ -1948,7 +806,7 @@
             this.txt38.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt38.ForeColor = System.Drawing.Color.Black;
-            this.txt38.Location = new System.Drawing.Point(487, 152);
+            this.txt38.Location = new System.Drawing.Point(479, 146);
             this.txt38.Multiline = true;
             this.txt38.Name = "txt38";
             this.txt38.Size = new System.Drawing.Size(59, 46);
@@ -1961,7 +819,7 @@
             this.txt37.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt37.ForeColor = System.Drawing.Color.Black;
-            this.txt37.Location = new System.Drawing.Point(428, 152);
+            this.txt37.Location = new System.Drawing.Point(420, 146);
             this.txt37.Multiline = true;
             this.txt37.Name = "txt37";
             this.txt37.Size = new System.Drawing.Size(59, 46);
@@ -1974,7 +832,7 @@
             this.txt36.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt36.ForeColor = System.Drawing.Color.Black;
-            this.txt36.Location = new System.Drawing.Point(369, 152);
+            this.txt36.Location = new System.Drawing.Point(361, 146);
             this.txt36.Multiline = true;
             this.txt36.Name = "txt36";
             this.txt36.Size = new System.Drawing.Size(59, 46);
@@ -1987,7 +845,7 @@
             this.txt55.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt55.ForeColor = System.Drawing.Color.Black;
-            this.txt55.Location = new System.Drawing.Point(306, 244);
+            this.txt55.Location = new System.Drawing.Point(302, 238);
             this.txt55.Multiline = true;
             this.txt55.Name = "txt55";
             this.txt55.Size = new System.Drawing.Size(59, 46);
@@ -2000,7 +858,7 @@
             this.txt54.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt54.ForeColor = System.Drawing.Color.Black;
-            this.txt54.Location = new System.Drawing.Point(247, 244);
+            this.txt54.Location = new System.Drawing.Point(243, 238);
             this.txt54.Multiline = true;
             this.txt54.Name = "txt54";
             this.txt54.Size = new System.Drawing.Size(59, 46);
@@ -2013,7 +871,7 @@
             this.txt53.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt53.ForeColor = System.Drawing.Color.Black;
-            this.txt53.Location = new System.Drawing.Point(188, 244);
+            this.txt53.Location = new System.Drawing.Point(184, 238);
             this.txt53.Multiline = true;
             this.txt53.Name = "txt53";
             this.txt53.Size = new System.Drawing.Size(59, 46);
@@ -2026,7 +884,7 @@
             this.txt45.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt45.ForeColor = System.Drawing.Color.Black;
-            this.txt45.Location = new System.Drawing.Point(306, 198);
+            this.txt45.Location = new System.Drawing.Point(302, 192);
             this.txt45.Multiline = true;
             this.txt45.Name = "txt45";
             this.txt45.Size = new System.Drawing.Size(59, 46);
@@ -2039,7 +897,7 @@
             this.txt44.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt44.ForeColor = System.Drawing.Color.Black;
-            this.txt44.Location = new System.Drawing.Point(247, 198);
+            this.txt44.Location = new System.Drawing.Point(243, 192);
             this.txt44.Multiline = true;
             this.txt44.Name = "txt44";
             this.txt44.Size = new System.Drawing.Size(59, 46);
@@ -2052,7 +910,7 @@
             this.txt43.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt43.ForeColor = System.Drawing.Color.Black;
-            this.txt43.Location = new System.Drawing.Point(188, 198);
+            this.txt43.Location = new System.Drawing.Point(184, 192);
             this.txt43.Multiline = true;
             this.txt43.Name = "txt43";
             this.txt43.Size = new System.Drawing.Size(59, 46);
@@ -2065,7 +923,7 @@
             this.txt35.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt35.ForeColor = System.Drawing.Color.Black;
-            this.txt35.Location = new System.Drawing.Point(306, 152);
+            this.txt35.Location = new System.Drawing.Point(302, 146);
             this.txt35.Multiline = true;
             this.txt35.Name = "txt35";
             this.txt35.Size = new System.Drawing.Size(59, 46);
@@ -2078,7 +936,7 @@
             this.txt34.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt34.ForeColor = System.Drawing.Color.Black;
-            this.txt34.Location = new System.Drawing.Point(247, 152);
+            this.txt34.Location = new System.Drawing.Point(243, 146);
             this.txt34.Multiline = true;
             this.txt34.Name = "txt34";
             this.txt34.Size = new System.Drawing.Size(59, 46);
@@ -2091,7 +949,7 @@
             this.txt33.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt33.ForeColor = System.Drawing.Color.Black;
-            this.txt33.Location = new System.Drawing.Point(188, 152);
+            this.txt33.Location = new System.Drawing.Point(184, 146);
             this.txt33.Multiline = true;
             this.txt33.Name = "txt33";
             this.txt33.Size = new System.Drawing.Size(59, 46);
@@ -2104,7 +962,7 @@
             this.txt52.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt52.ForeColor = System.Drawing.Color.Black;
-            this.txt52.Location = new System.Drawing.Point(125, 244);
+            this.txt52.Location = new System.Drawing.Point(125, 238);
             this.txt52.Multiline = true;
             this.txt52.Name = "txt52";
             this.txt52.Size = new System.Drawing.Size(59, 46);
@@ -2117,7 +975,7 @@
             this.txt51.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt51.ForeColor = System.Drawing.Color.Black;
-            this.txt51.Location = new System.Drawing.Point(66, 244);
+            this.txt51.Location = new System.Drawing.Point(66, 238);
             this.txt51.Multiline = true;
             this.txt51.Name = "txt51";
             this.txt51.Size = new System.Drawing.Size(59, 46);
@@ -2130,7 +988,7 @@
             this.txt28.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt28.ForeColor = System.Drawing.Color.Black;
-            this.txt28.Location = new System.Drawing.Point(487, 100);
+            this.txt28.Location = new System.Drawing.Point(479, 100);
             this.txt28.Multiline = true;
             this.txt28.Name = "txt28";
             this.txt28.Size = new System.Drawing.Size(59, 46);
@@ -2143,7 +1001,7 @@
             this.txt06.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt06.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt06.ForeColor = System.Drawing.Color.Black;
-            this.txt06.Location = new System.Drawing.Point(369, 8);
+            this.txt06.Location = new System.Drawing.Point(361, 8);
             this.txt06.Multiline = true;
             this.txt06.Name = "txt06";
             this.txt06.Size = new System.Drawing.Size(59, 46);
@@ -2156,7 +1014,7 @@
             this.txt50.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt50.ForeColor = System.Drawing.Color.Black;
-            this.txt50.Location = new System.Drawing.Point(7, 244);
+            this.txt50.Location = new System.Drawing.Point(7, 238);
             this.txt50.Multiline = true;
             this.txt50.Name = "txt50";
             this.txt50.Size = new System.Drawing.Size(59, 46);
@@ -2169,7 +1027,7 @@
             this.txt27.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt27.ForeColor = System.Drawing.Color.Black;
-            this.txt27.Location = new System.Drawing.Point(428, 100);
+            this.txt27.Location = new System.Drawing.Point(420, 100);
             this.txt27.Multiline = true;
             this.txt27.Name = "txt27";
             this.txt27.Size = new System.Drawing.Size(59, 46);
@@ -2182,7 +1040,7 @@
             this.txt42.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt42.ForeColor = System.Drawing.Color.Black;
-            this.txt42.Location = new System.Drawing.Point(125, 198);
+            this.txt42.Location = new System.Drawing.Point(125, 192);
             this.txt42.Multiline = true;
             this.txt42.Name = "txt42";
             this.txt42.Size = new System.Drawing.Size(59, 46);
@@ -2195,7 +1053,7 @@
             this.txt18.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt18.ForeColor = System.Drawing.Color.Black;
-            this.txt18.Location = new System.Drawing.Point(487, 54);
+            this.txt18.Location = new System.Drawing.Point(479, 54);
             this.txt18.Multiline = true;
             this.txt18.Name = "txt18";
             this.txt18.Size = new System.Drawing.Size(59, 46);
@@ -2208,7 +1066,7 @@
             this.txt41.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt41.ForeColor = System.Drawing.Color.Black;
-            this.txt41.Location = new System.Drawing.Point(66, 198);
+            this.txt41.Location = new System.Drawing.Point(66, 192);
             this.txt41.Multiline = true;
             this.txt41.Name = "txt41";
             this.txt41.Size = new System.Drawing.Size(59, 46);
@@ -2221,7 +1079,7 @@
             this.txt07.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt07.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt07.ForeColor = System.Drawing.Color.Black;
-            this.txt07.Location = new System.Drawing.Point(428, 8);
+            this.txt07.Location = new System.Drawing.Point(420, 8);
             this.txt07.Multiline = true;
             this.txt07.Name = "txt07";
             this.txt07.Size = new System.Drawing.Size(59, 46);
@@ -2234,7 +1092,7 @@
             this.txt40.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt40.ForeColor = System.Drawing.Color.Black;
-            this.txt40.Location = new System.Drawing.Point(7, 198);
+            this.txt40.Location = new System.Drawing.Point(7, 192);
             this.txt40.Multiline = true;
             this.txt40.Name = "txt40";
             this.txt40.Size = new System.Drawing.Size(59, 46);
@@ -2247,7 +1105,7 @@
             this.txt17.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt17.ForeColor = System.Drawing.Color.Black;
-            this.txt17.Location = new System.Drawing.Point(428, 54);
+            this.txt17.Location = new System.Drawing.Point(420, 54);
             this.txt17.Multiline = true;
             this.txt17.Name = "txt17";
             this.txt17.Size = new System.Drawing.Size(59, 46);
@@ -2260,7 +1118,7 @@
             this.txt32.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt32.ForeColor = System.Drawing.Color.Black;
-            this.txt32.Location = new System.Drawing.Point(125, 152);
+            this.txt32.Location = new System.Drawing.Point(125, 146);
             this.txt32.Multiline = true;
             this.txt32.Name = "txt32";
             this.txt32.Size = new System.Drawing.Size(59, 46);
@@ -2273,7 +1131,7 @@
             this.txt16.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt16.ForeColor = System.Drawing.Color.Black;
-            this.txt16.Location = new System.Drawing.Point(369, 54);
+            this.txt16.Location = new System.Drawing.Point(361, 54);
             this.txt16.Multiline = true;
             this.txt16.Name = "txt16";
             this.txt16.Size = new System.Drawing.Size(59, 46);
@@ -2286,7 +1144,7 @@
             this.txt31.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt31.ForeColor = System.Drawing.Color.Black;
-            this.txt31.Location = new System.Drawing.Point(66, 152);
+            this.txt31.Location = new System.Drawing.Point(66, 146);
             this.txt31.Multiline = true;
             this.txt31.Name = "txt31";
             this.txt31.Size = new System.Drawing.Size(59, 46);
@@ -2299,7 +1157,7 @@
             this.txt08.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt08.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt08.ForeColor = System.Drawing.Color.Black;
-            this.txt08.Location = new System.Drawing.Point(487, 8);
+            this.txt08.Location = new System.Drawing.Point(479, 8);
             this.txt08.Multiline = true;
             this.txt08.Name = "txt08";
             this.txt08.Size = new System.Drawing.Size(59, 46);
@@ -2312,7 +1170,7 @@
             this.txt26.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt26.ForeColor = System.Drawing.Color.Black;
-            this.txt26.Location = new System.Drawing.Point(369, 100);
+            this.txt26.Location = new System.Drawing.Point(361, 100);
             this.txt26.Multiline = true;
             this.txt26.Name = "txt26";
             this.txt26.Size = new System.Drawing.Size(59, 46);
@@ -2325,7 +1183,7 @@
             this.txt30.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt30.ForeColor = System.Drawing.Color.Black;
-            this.txt30.Location = new System.Drawing.Point(7, 152);
+            this.txt30.Location = new System.Drawing.Point(7, 146);
             this.txt30.Multiline = true;
             this.txt30.Name = "txt30";
             this.txt30.Size = new System.Drawing.Size(59, 46);
@@ -2338,7 +1196,7 @@
             this.txt25.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt25.ForeColor = System.Drawing.Color.Black;
-            this.txt25.Location = new System.Drawing.Point(306, 100);
+            this.txt25.Location = new System.Drawing.Point(302, 100);
             this.txt25.Multiline = true;
             this.txt25.Name = "txt25";
             this.txt25.Size = new System.Drawing.Size(59, 46);
@@ -2351,7 +1209,7 @@
             this.txt24.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt24.ForeColor = System.Drawing.Color.Black;
-            this.txt24.Location = new System.Drawing.Point(247, 100);
+            this.txt24.Location = new System.Drawing.Point(243, 100);
             this.txt24.Multiline = true;
             this.txt24.Name = "txt24";
             this.txt24.Size = new System.Drawing.Size(59, 46);
@@ -2364,7 +1222,7 @@
             this.txt23.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt23.ForeColor = System.Drawing.Color.Black;
-            this.txt23.Location = new System.Drawing.Point(188, 100);
+            this.txt23.Location = new System.Drawing.Point(184, 100);
             this.txt23.Multiline = true;
             this.txt23.Name = "txt23";
             this.txt23.Size = new System.Drawing.Size(59, 46);
@@ -2377,7 +1235,7 @@
             this.txt15.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt15.ForeColor = System.Drawing.Color.Black;
-            this.txt15.Location = new System.Drawing.Point(306, 54);
+            this.txt15.Location = new System.Drawing.Point(302, 54);
             this.txt15.Multiline = true;
             this.txt15.Name = "txt15";
             this.txt15.Size = new System.Drawing.Size(59, 46);
@@ -2390,7 +1248,7 @@
             this.txt14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt14.ForeColor = System.Drawing.Color.Black;
-            this.txt14.Location = new System.Drawing.Point(247, 54);
+            this.txt14.Location = new System.Drawing.Point(243, 54);
             this.txt14.Multiline = true;
             this.txt14.Name = "txt14";
             this.txt14.Size = new System.Drawing.Size(59, 46);
@@ -2403,7 +1261,7 @@
             this.txt13.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt13.ForeColor = System.Drawing.Color.Black;
-            this.txt13.Location = new System.Drawing.Point(188, 54);
+            this.txt13.Location = new System.Drawing.Point(184, 54);
             this.txt13.Multiline = true;
             this.txt13.Name = "txt13";
             this.txt13.Size = new System.Drawing.Size(59, 46);
@@ -2416,7 +1274,7 @@
             this.txt05.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt05.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt05.ForeColor = System.Drawing.Color.Black;
-            this.txt05.Location = new System.Drawing.Point(306, 8);
+            this.txt05.Location = new System.Drawing.Point(302, 8);
             this.txt05.Multiline = true;
             this.txt05.Name = "txt05";
             this.txt05.Size = new System.Drawing.Size(59, 46);
@@ -2429,7 +1287,7 @@
             this.txt04.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt04.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt04.ForeColor = System.Drawing.Color.Black;
-            this.txt04.Location = new System.Drawing.Point(247, 8);
+            this.txt04.Location = new System.Drawing.Point(243, 8);
             this.txt04.Multiline = true;
             this.txt04.Name = "txt04";
             this.txt04.Size = new System.Drawing.Size(59, 46);
@@ -2442,7 +1300,7 @@
             this.txt03.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt03.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt03.ForeColor = System.Drawing.Color.Black;
-            this.txt03.Location = new System.Drawing.Point(188, 8);
+            this.txt03.Location = new System.Drawing.Point(184, 8);
             this.txt03.Multiline = true;
             this.txt03.Name = "txt03";
             this.txt03.Size = new System.Drawing.Size(59, 46);
@@ -2626,7 +1484,7 @@
             this.gRUPOSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(404, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(312, 24);
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2670,16 +1528,263 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(152, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(152, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
+            // 
+            // gRUPOSToolStripMenuItem
+            // 
+            this.gRUPOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.filasToolStripMenuItem,
+            this.columnasToolStripMenuItem,
+            this.recuadrosToolStripMenuItem});
+            this.gRUPOSToolStripMenuItem.Name = "gRUPOSToolStripMenuItem";
+            this.gRUPOSToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.gRUPOSToolStripMenuItem.Text = "GRUPOS";
+            // 
+            // filasToolStripMenuItem
+            // 
+            this.filasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fila1ToolStripMenuItem,
+            this.fila2ToolStripMenuItem,
+            this.fila3ToolStripMenuItem,
+            this.fila4ToolStripMenuItem,
+            this.fila5ToolStripMenuItem,
+            this.fila6ToolStripMenuItem,
+            this.fila7ToolStripMenuItem,
+            this.fila8ToolStripMenuItem,
+            this.fila9ToolStripMenuItem});
+            this.filasToolStripMenuItem.Name = "filasToolStripMenuItem";
+            this.filasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.filasToolStripMenuItem.Text = "Filas";
+            // 
+            // fila1ToolStripMenuItem
+            // 
+            this.fila1ToolStripMenuItem.Name = "fila1ToolStripMenuItem";
+            this.fila1ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila1ToolStripMenuItem.Text = "Fila 1";
+            this.fila1ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila2ToolStripMenuItem
+            // 
+            this.fila2ToolStripMenuItem.Name = "fila2ToolStripMenuItem";
+            this.fila2ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila2ToolStripMenuItem.Text = "Fila 2";
+            this.fila2ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila3ToolStripMenuItem
+            // 
+            this.fila3ToolStripMenuItem.Name = "fila3ToolStripMenuItem";
+            this.fila3ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila3ToolStripMenuItem.Text = "Fila 3";
+            this.fila3ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila4ToolStripMenuItem
+            // 
+            this.fila4ToolStripMenuItem.Name = "fila4ToolStripMenuItem";
+            this.fila4ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila4ToolStripMenuItem.Text = "Fila 4";
+            this.fila4ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila5ToolStripMenuItem
+            // 
+            this.fila5ToolStripMenuItem.Name = "fila5ToolStripMenuItem";
+            this.fila5ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila5ToolStripMenuItem.Text = "Fila 5";
+            this.fila5ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila6ToolStripMenuItem
+            // 
+            this.fila6ToolStripMenuItem.Name = "fila6ToolStripMenuItem";
+            this.fila6ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila6ToolStripMenuItem.Text = "Fila 6";
+            this.fila6ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila7ToolStripMenuItem
+            // 
+            this.fila7ToolStripMenuItem.Name = "fila7ToolStripMenuItem";
+            this.fila7ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila7ToolStripMenuItem.Text = "Fila 7";
+            this.fila7ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila8ToolStripMenuItem
+            // 
+            this.fila8ToolStripMenuItem.Name = "fila8ToolStripMenuItem";
+            this.fila8ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila8ToolStripMenuItem.Text = "Fila 8";
+            this.fila8ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // fila9ToolStripMenuItem
+            // 
+            this.fila9ToolStripMenuItem.Name = "fila9ToolStripMenuItem";
+            this.fila9ToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.fila9ToolStripMenuItem.Text = "Fila 9";
+            this.fila9ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            // 
+            // columnasToolStripMenuItem
+            // 
+            this.columnasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.columna1ToolStripMenuItem,
+            this.columna2ToolStripMenuItem,
+            this.columna3ToolStripMenuItem,
+            this.columna4ToolStripMenuItem,
+            this.columna5ToolStripMenuItem,
+            this.columna6ToolStripMenuItem,
+            this.columna7ToolStripMenuItem,
+            this.columna8ToolStripMenuItem,
+            this.columna9ToolStripMenuItem});
+            this.columnasToolStripMenuItem.Name = "columnasToolStripMenuItem";
+            this.columnasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.columnasToolStripMenuItem.Text = "Columnas";
+            // 
+            // columna1ToolStripMenuItem
+            // 
+            this.columna1ToolStripMenuItem.Name = "columna1ToolStripMenuItem";
+            this.columna1ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna1ToolStripMenuItem.Text = "Columna 1 ";
+            this.columna1ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna2ToolStripMenuItem
+            // 
+            this.columna2ToolStripMenuItem.Name = "columna2ToolStripMenuItem";
+            this.columna2ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna2ToolStripMenuItem.Text = "Columna 2";
+            this.columna2ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna3ToolStripMenuItem
+            // 
+            this.columna3ToolStripMenuItem.Name = "columna3ToolStripMenuItem";
+            this.columna3ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna3ToolStripMenuItem.Text = "Columna 3";
+            this.columna3ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna4ToolStripMenuItem
+            // 
+            this.columna4ToolStripMenuItem.Name = "columna4ToolStripMenuItem";
+            this.columna4ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna4ToolStripMenuItem.Text = "Columna 4";
+            this.columna4ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna5ToolStripMenuItem
+            // 
+            this.columna5ToolStripMenuItem.Name = "columna5ToolStripMenuItem";
+            this.columna5ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna5ToolStripMenuItem.Text = "Columna 5";
+            this.columna5ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna6ToolStripMenuItem
+            // 
+            this.columna6ToolStripMenuItem.Name = "columna6ToolStripMenuItem";
+            this.columna6ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna6ToolStripMenuItem.Text = "Columna 6";
+            this.columna6ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna7ToolStripMenuItem
+            // 
+            this.columna7ToolStripMenuItem.Name = "columna7ToolStripMenuItem";
+            this.columna7ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna7ToolStripMenuItem.Text = "Columna 7";
+            this.columna7ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna8ToolStripMenuItem
+            // 
+            this.columna8ToolStripMenuItem.Name = "columna8ToolStripMenuItem";
+            this.columna8ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna8ToolStripMenuItem.Text = "Columna 8";
+            this.columna8ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // columna9ToolStripMenuItem
+            // 
+            this.columna9ToolStripMenuItem.Name = "columna9ToolStripMenuItem";
+            this.columna9ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.columna9ToolStripMenuItem.Text = "Columna 9";
+            this.columna9ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            // 
+            // recuadrosToolStripMenuItem
+            // 
+            this.recuadrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.recuadro1ToolStripMenuItem,
+            this.recuadro2ToolStripMenuItem,
+            this.recuadro3ToolStripMenuItem,
+            this.recuadro4ToolStripMenuItem,
+            this.recuadro5ToolStripMenuItem,
+            this.recuadro6ToolStripMenuItem,
+            this.recuadro7ToolStripMenuItem,
+            this.recuadro8ToolStripMenuItem,
+            this.recuadro9ToolStripMenuItem});
+            this.recuadrosToolStripMenuItem.Name = "recuadrosToolStripMenuItem";
+            this.recuadrosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.recuadrosToolStripMenuItem.Text = "Recuadros";
+            // 
+            // recuadro1ToolStripMenuItem
+            // 
+            this.recuadro1ToolStripMenuItem.Name = "recuadro1ToolStripMenuItem";
+            this.recuadro1ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro1ToolStripMenuItem.Text = "Recuadro 1";
+            this.recuadro1ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro2ToolStripMenuItem
+            // 
+            this.recuadro2ToolStripMenuItem.Name = "recuadro2ToolStripMenuItem";
+            this.recuadro2ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro2ToolStripMenuItem.Text = "Recuadro 2";
+            this.recuadro2ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro3ToolStripMenuItem
+            // 
+            this.recuadro3ToolStripMenuItem.Name = "recuadro3ToolStripMenuItem";
+            this.recuadro3ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro3ToolStripMenuItem.Text = "Recuadro 3";
+            this.recuadro3ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro4ToolStripMenuItem
+            // 
+            this.recuadro4ToolStripMenuItem.Name = "recuadro4ToolStripMenuItem";
+            this.recuadro4ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro4ToolStripMenuItem.Text = "Recuadro 4";
+            this.recuadro4ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro5ToolStripMenuItem
+            // 
+            this.recuadro5ToolStripMenuItem.Name = "recuadro5ToolStripMenuItem";
+            this.recuadro5ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro5ToolStripMenuItem.Text = "Recuadro 5";
+            this.recuadro5ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro6ToolStripMenuItem
+            // 
+            this.recuadro6ToolStripMenuItem.Name = "recuadro6ToolStripMenuItem";
+            this.recuadro6ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro6ToolStripMenuItem.Text = "Recuadro 6";
+            this.recuadro6ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro7ToolStripMenuItem
+            // 
+            this.recuadro7ToolStripMenuItem.Name = "recuadro7ToolStripMenuItem";
+            this.recuadro7ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro7ToolStripMenuItem.Text = "Recuadro 7 ";
+            this.recuadro7ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro8ToolStripMenuItem
+            // 
+            this.recuadro8ToolStripMenuItem.Name = "recuadro8ToolStripMenuItem";
+            this.recuadro8ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro8ToolStripMenuItem.Text = "Recuadro 8";
+            this.recuadro8ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            // 
+            // recuadro9ToolStripMenuItem
+            // 
+            this.recuadro9ToolStripMenuItem.Name = "recuadro9ToolStripMenuItem";
+            this.recuadro9ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.recuadro9ToolStripMenuItem.Text = "Recuadro 9";
+            this.recuadro9ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
             // 
             // btnSelectColor
             // 
@@ -2943,9 +2048,10 @@
             this.tC1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC1.ForeColor = System.Drawing.Color.Black;
-            this.tC1.Location = new System.Drawing.Point(573, 180);
+            this.tC1.Location = new System.Drawing.Point(573, 190);
             this.tC1.Multiline = true;
             this.tC1.Name = "tC1";
+            this.tC1.ReadOnly = true;
             this.tC1.Size = new System.Drawing.Size(36, 33);
             this.tC1.TabIndex = 91;
             this.tC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2956,9 +2062,10 @@
             this.tC2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC2.ForeColor = System.Drawing.Color.Black;
-            this.tC2.Location = new System.Drawing.Point(573, 226);
+            this.tC2.Location = new System.Drawing.Point(573, 236);
             this.tC2.Multiline = true;
             this.tC2.Name = "tC2";
+            this.tC2.ReadOnly = true;
             this.tC2.Size = new System.Drawing.Size(36, 33);
             this.tC2.TabIndex = 92;
             this.tC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2969,9 +2076,10 @@
             this.tC3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC3.ForeColor = System.Drawing.Color.Black;
-            this.tC3.Location = new System.Drawing.Point(573, 272);
+            this.tC3.Location = new System.Drawing.Point(573, 282);
             this.tC3.Multiline = true;
             this.tC3.Name = "tC3";
+            this.tC3.ReadOnly = true;
             this.tC3.Size = new System.Drawing.Size(36, 33);
             this.tC3.TabIndex = 93;
             this.tC3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2982,9 +2090,10 @@
             this.tC4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC4.ForeColor = System.Drawing.Color.Black;
-            this.tC4.Location = new System.Drawing.Point(573, 324);
+            this.tC4.Location = new System.Drawing.Point(573, 328);
             this.tC4.Multiline = true;
             this.tC4.Name = "tC4";
+            this.tC4.ReadOnly = true;
             this.tC4.Size = new System.Drawing.Size(36, 33);
             this.tC4.TabIndex = 94;
             this.tC4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2995,9 +2104,10 @@
             this.tC5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC5.ForeColor = System.Drawing.Color.Black;
-            this.tC5.Location = new System.Drawing.Point(573, 370);
+            this.tC5.Location = new System.Drawing.Point(573, 374);
             this.tC5.Multiline = true;
             this.tC5.Name = "tC5";
+            this.tC5.ReadOnly = true;
             this.tC5.Size = new System.Drawing.Size(36, 33);
             this.tC5.TabIndex = 95;
             this.tC5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3008,9 +2118,10 @@
             this.tC6.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC6.ForeColor = System.Drawing.Color.Black;
-            this.tC6.Location = new System.Drawing.Point(573, 416);
+            this.tC6.Location = new System.Drawing.Point(573, 420);
             this.tC6.Multiline = true;
             this.tC6.Name = "tC6";
+            this.tC6.ReadOnly = true;
             this.tC6.Size = new System.Drawing.Size(36, 33);
             this.tC6.TabIndex = 96;
             this.tC6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3021,9 +2132,10 @@
             this.tC7.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC7.ForeColor = System.Drawing.Color.Black;
-            this.tC7.Location = new System.Drawing.Point(573, 467);
+            this.tC7.Location = new System.Drawing.Point(573, 466);
             this.tC7.Multiline = true;
             this.tC7.Name = "tC7";
+            this.tC7.ReadOnly = true;
             this.tC7.Size = new System.Drawing.Size(36, 33);
             this.tC7.TabIndex = 97;
             this.tC7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3034,9 +2146,10 @@
             this.tC8.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC8.ForeColor = System.Drawing.Color.Black;
-            this.tC8.Location = new System.Drawing.Point(573, 514);
+            this.tC8.Location = new System.Drawing.Point(573, 512);
             this.tC8.Multiline = true;
             this.tC8.Name = "tC8";
+            this.tC8.ReadOnly = true;
             this.tC8.Size = new System.Drawing.Size(36, 33);
             this.tC8.TabIndex = 98;
             this.tC8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3047,9 +2160,10 @@
             this.tC9.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tC9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tC9.ForeColor = System.Drawing.Color.Black;
-            this.tC9.Location = new System.Drawing.Point(573, 560);
+            this.tC9.Location = new System.Drawing.Point(573, 559);
             this.tC9.Multiline = true;
             this.tC9.Name = "tC9";
+            this.tC9.ReadOnly = true;
             this.tC9.Size = new System.Drawing.Size(36, 33);
             this.tC9.TabIndex = 99;
             this.tC9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3060,9 +2174,10 @@
             this.textBox10.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(516, 622);
+            this.textBox10.Location = new System.Drawing.Point(502, 622);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(36, 33);
             this.textBox10.TabIndex = 108;
             this.textBox10.Text = "9";
@@ -3074,9 +2189,10 @@
             this.textBox11.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(457, 622);
+            this.textBox11.Location = new System.Drawing.Point(443, 622);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(36, 33);
             this.textBox11.TabIndex = 107;
             this.textBox11.Text = "8";
@@ -3088,9 +2204,10 @@
             this.textBox12.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(398, 622);
+            this.textBox12.Location = new System.Drawing.Point(384, 622);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(36, 33);
             this.textBox12.TabIndex = 106;
             this.textBox12.Text = "7";
@@ -3102,9 +2219,10 @@
             this.textBox13.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.ForeColor = System.Drawing.Color.Black;
-            this.textBox13.Location = new System.Drawing.Point(335, 622);
+            this.textBox13.Location = new System.Drawing.Point(325, 622);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(36, 33);
             this.textBox13.TabIndex = 105;
             this.textBox13.Text = "6";
@@ -3116,9 +2234,10 @@
             this.textBox14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.ForeColor = System.Drawing.Color.Black;
-            this.textBox14.Location = new System.Drawing.Point(276, 622);
+            this.textBox14.Location = new System.Drawing.Point(266, 622);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(36, 33);
             this.textBox14.TabIndex = 104;
             this.textBox14.Text = "5";
@@ -3130,9 +2249,10 @@
             this.textBox15.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox15.ForeColor = System.Drawing.Color.Black;
-            this.textBox15.Location = new System.Drawing.Point(217, 622);
+            this.textBox15.Location = new System.Drawing.Point(207, 622);
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(36, 33);
             this.textBox15.TabIndex = 103;
             this.textBox15.Text = "4";
@@ -3144,9 +2264,10 @@
             this.textBox16.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox16.ForeColor = System.Drawing.Color.Black;
-            this.textBox16.Location = new System.Drawing.Point(154, 622);
+            this.textBox16.Location = new System.Drawing.Point(148, 622);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(36, 33);
             this.textBox16.TabIndex = 102;
             this.textBox16.Text = "3";
@@ -3158,9 +2279,10 @@
             this.textBox17.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox17.ForeColor = System.Drawing.Color.Black;
-            this.textBox17.Location = new System.Drawing.Point(95, 622);
+            this.textBox17.Location = new System.Drawing.Point(89, 622);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(36, 33);
             this.textBox17.TabIndex = 101;
             this.textBox17.Text = "2";
@@ -3172,266 +2294,1173 @@
             this.textBox18.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox18.ForeColor = System.Drawing.Color.Black;
-            this.textBox18.Location = new System.Drawing.Point(36, 622);
+            this.textBox18.Location = new System.Drawing.Point(30, 622);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(36, 33);
             this.textBox18.TabIndex = 100;
             this.textBox18.Text = "1";
             this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gRUPOSToolStripMenuItem
+            // t00
             // 
-            this.gRUPOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.filasToolStripMenuItem,
-            this.columnasToolStripMenuItem,
-            this.recuadrosToolStripMenuItem});
-            this.gRUPOSToolStripMenuItem.Name = "gRUPOSToolStripMenuItem";
-            this.gRUPOSToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.gRUPOSToolStripMenuItem.Text = "GRUPOS";
+            this.t00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t00.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t00.ForeColor = System.Drawing.Color.Blue;
+            this.t00.Location = new System.Drawing.Point(7, 8);
+            this.t00.Multiline = true;
+            this.t00.Name = "t00";
+            this.t00.Size = new System.Drawing.Size(59, 46);
+            this.t00.TabIndex = 21;
+            this.t00.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // filasToolStripMenuItem
+            // t01
             // 
-            this.filasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fila1ToolStripMenuItem,
-            this.fila2ToolStripMenuItem,
-            this.fila3ToolStripMenuItem,
-            this.fila4ToolStripMenuItem,
-            this.fila5ToolStripMenuItem,
-            this.fila6ToolStripMenuItem,
-            this.fila7ToolStripMenuItem,
-            this.fila8ToolStripMenuItem,
-            this.fila9ToolStripMenuItem});
-            this.filasToolStripMenuItem.Name = "filasToolStripMenuItem";
-            this.filasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.filasToolStripMenuItem.Text = "Filas";
+            this.t01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t01.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t01.ForeColor = System.Drawing.Color.Blue;
+            this.t01.Location = new System.Drawing.Point(66, 8);
+            this.t01.Multiline = true;
+            this.t01.Name = "t01";
+            this.t01.Size = new System.Drawing.Size(59, 46);
+            this.t01.TabIndex = 22;
+            this.t01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columnasToolStripMenuItem
+            // t02
             // 
-            this.columnasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.columna1ToolStripMenuItem,
-            this.columna2ToolStripMenuItem,
-            this.columna3ToolStripMenuItem,
-            this.columna4ToolStripMenuItem,
-            this.columna5ToolStripMenuItem,
-            this.columna6ToolStripMenuItem,
-            this.columna7ToolStripMenuItem,
-            this.columna8ToolStripMenuItem,
-            this.columna9ToolStripMenuItem});
-            this.columnasToolStripMenuItem.Name = "columnasToolStripMenuItem";
-            this.columnasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columnasToolStripMenuItem.Text = "Columnas";
+            this.t02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t02.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t02.ForeColor = System.Drawing.Color.Blue;
+            this.t02.Location = new System.Drawing.Point(125, 8);
+            this.t02.Multiline = true;
+            this.t02.Name = "t02";
+            this.t02.Size = new System.Drawing.Size(59, 46);
+            this.t02.TabIndex = 23;
+            this.t02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadrosToolStripMenuItem
+            // t10
             // 
-            this.recuadrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.recuadro1ToolStripMenuItem,
-            this.recuadro2ToolStripMenuItem,
-            this.recuadro3ToolStripMenuItem,
-            this.recuadro4ToolStripMenuItem,
-            this.recuadro5ToolStripMenuItem,
-            this.recuadro6ToolStripMenuItem,
-            this.recuadro7ToolStripMenuItem,
-            this.recuadro8ToolStripMenuItem,
-            this.recuadro9ToolStripMenuItem});
-            this.recuadrosToolStripMenuItem.Name = "recuadrosToolStripMenuItem";
-            this.recuadrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadrosToolStripMenuItem.Text = "Recuadros";
+            this.t10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t10.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t10.ForeColor = System.Drawing.Color.Blue;
+            this.t10.Location = new System.Drawing.Point(7, 54);
+            this.t10.Multiline = true;
+            this.t10.Name = "t10";
+            this.t10.Size = new System.Drawing.Size(59, 46);
+            this.t10.TabIndex = 24;
+            this.t10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila1ToolStripMenuItem
+            // t11
             // 
-            this.fila1ToolStripMenuItem.Name = "fila1ToolStripMenuItem";
-            this.fila1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila1ToolStripMenuItem.Text = "Fila 1";
-            this.fila1ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t11.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t11.ForeColor = System.Drawing.Color.Blue;
+            this.t11.Location = new System.Drawing.Point(66, 54);
+            this.t11.Multiline = true;
+            this.t11.Name = "t11";
+            this.t11.Size = new System.Drawing.Size(59, 46);
+            this.t11.TabIndex = 25;
+            this.t11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila2ToolStripMenuItem
+            // t12
             // 
-            this.fila2ToolStripMenuItem.Name = "fila2ToolStripMenuItem";
-            this.fila2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila2ToolStripMenuItem.Text = "Fila 2";
-            this.fila2ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t12.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t12.ForeColor = System.Drawing.Color.Blue;
+            this.t12.Location = new System.Drawing.Point(125, 54);
+            this.t12.Multiline = true;
+            this.t12.Name = "t12";
+            this.t12.Size = new System.Drawing.Size(59, 46);
+            this.t12.TabIndex = 26;
+            this.t12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila3ToolStripMenuItem
+            // t20
             // 
-            this.fila3ToolStripMenuItem.Name = "fila3ToolStripMenuItem";
-            this.fila3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila3ToolStripMenuItem.Text = "Fila 3";
-            this.fila3ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t20.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t20.ForeColor = System.Drawing.Color.Blue;
+            this.t20.Location = new System.Drawing.Point(7, 100);
+            this.t20.Multiline = true;
+            this.t20.Name = "t20";
+            this.t20.Size = new System.Drawing.Size(59, 46);
+            this.t20.TabIndex = 27;
+            this.t20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila4ToolStripMenuItem
+            // t21
             // 
-            this.fila4ToolStripMenuItem.Name = "fila4ToolStripMenuItem";
-            this.fila4ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila4ToolStripMenuItem.Text = "Fila 4";
-            this.fila4ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t21.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t21.ForeColor = System.Drawing.Color.Blue;
+            this.t21.Location = new System.Drawing.Point(66, 100);
+            this.t21.Multiline = true;
+            this.t21.Name = "t21";
+            this.t21.Size = new System.Drawing.Size(59, 46);
+            this.t21.TabIndex = 28;
+            this.t21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila5ToolStripMenuItem
+            // t22
             // 
-            this.fila5ToolStripMenuItem.Name = "fila5ToolStripMenuItem";
-            this.fila5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila5ToolStripMenuItem.Text = "Fila 5";
-            this.fila5ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t22.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t22.ForeColor = System.Drawing.Color.Blue;
+            this.t22.Location = new System.Drawing.Point(125, 100);
+            this.t22.Multiline = true;
+            this.t22.Name = "t22";
+            this.t22.Size = new System.Drawing.Size(59, 46);
+            this.t22.TabIndex = 29;
+            this.t22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila6ToolStripMenuItem
+            // t03
             // 
-            this.fila6ToolStripMenuItem.Name = "fila6ToolStripMenuItem";
-            this.fila6ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila6ToolStripMenuItem.Text = "Fila 6";
-            this.fila6ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t03.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t03.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t03.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t03.ForeColor = System.Drawing.Color.Blue;
+            this.t03.Location = new System.Drawing.Point(188, 8);
+            this.t03.Multiline = true;
+            this.t03.Name = "t03";
+            this.t03.Size = new System.Drawing.Size(59, 46);
+            this.t03.TabIndex = 30;
+            this.t03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila7ToolStripMenuItem
+            // t04
             // 
-            this.fila7ToolStripMenuItem.Name = "fila7ToolStripMenuItem";
-            this.fila7ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila7ToolStripMenuItem.Text = "Fila 7";
-            this.fila7ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t04.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t04.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t04.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t04.ForeColor = System.Drawing.Color.Blue;
+            this.t04.Location = new System.Drawing.Point(247, 8);
+            this.t04.Multiline = true;
+            this.t04.Name = "t04";
+            this.t04.Size = new System.Drawing.Size(59, 46);
+            this.t04.TabIndex = 31;
+            this.t04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila8ToolStripMenuItem
+            // t05
             // 
-            this.fila8ToolStripMenuItem.Name = "fila8ToolStripMenuItem";
-            this.fila8ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila8ToolStripMenuItem.Text = "Fila 8";
-            this.fila8ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t05.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t05.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t05.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t05.ForeColor = System.Drawing.Color.Blue;
+            this.t05.Location = new System.Drawing.Point(306, 8);
+            this.t05.Multiline = true;
+            this.t05.Name = "t05";
+            this.t05.Size = new System.Drawing.Size(59, 46);
+            this.t05.TabIndex = 32;
+            this.t05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fila9ToolStripMenuItem
+            // t13
             // 
-            this.fila9ToolStripMenuItem.Name = "fila9ToolStripMenuItem";
-            this.fila9ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fila9ToolStripMenuItem.Text = "Fila 9";
-            this.fila9ToolStripMenuItem.Click += new System.EventHandler(this.FilaEstado_Click);
+            this.t13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t13.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t13.ForeColor = System.Drawing.Color.Blue;
+            this.t13.Location = new System.Drawing.Point(188, 54);
+            this.t13.Multiline = true;
+            this.t13.Name = "t13";
+            this.t13.Size = new System.Drawing.Size(59, 46);
+            this.t13.TabIndex = 33;
+            this.t13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna1ToolStripMenuItem
+            // t14
             // 
-            this.columna1ToolStripMenuItem.Name = "columna1ToolStripMenuItem";
-            this.columna1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna1ToolStripMenuItem.Text = "Columna 1 ";
-            this.columna1ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t14.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t14.ForeColor = System.Drawing.Color.Blue;
+            this.t14.Location = new System.Drawing.Point(247, 54);
+            this.t14.Multiline = true;
+            this.t14.Name = "t14";
+            this.t14.Size = new System.Drawing.Size(59, 46);
+            this.t14.TabIndex = 34;
+            this.t14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna2ToolStripMenuItem
+            // t15
             // 
-            this.columna2ToolStripMenuItem.Name = "columna2ToolStripMenuItem";
-            this.columna2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna2ToolStripMenuItem.Text = "Columna 2";
-            this.columna2ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t15.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t15.ForeColor = System.Drawing.Color.Blue;
+            this.t15.Location = new System.Drawing.Point(306, 54);
+            this.t15.Multiline = true;
+            this.t15.Name = "t15";
+            this.t15.Size = new System.Drawing.Size(59, 46);
+            this.t15.TabIndex = 35;
+            this.t15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna3ToolStripMenuItem
+            // t23
             // 
-            this.columna3ToolStripMenuItem.Name = "columna3ToolStripMenuItem";
-            this.columna3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna3ToolStripMenuItem.Text = "Columna 3";
-            this.columna3ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t23.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t23.ForeColor = System.Drawing.Color.Blue;
+            this.t23.Location = new System.Drawing.Point(188, 100);
+            this.t23.Multiline = true;
+            this.t23.Name = "t23";
+            this.t23.Size = new System.Drawing.Size(59, 46);
+            this.t23.TabIndex = 36;
+            this.t23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna4ToolStripMenuItem
+            // t24
             // 
-            this.columna4ToolStripMenuItem.Name = "columna4ToolStripMenuItem";
-            this.columna4ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna4ToolStripMenuItem.Text = "Columna 4";
-            this.columna4ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t24.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t24.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t24.ForeColor = System.Drawing.Color.Blue;
+            this.t24.Location = new System.Drawing.Point(247, 100);
+            this.t24.Multiline = true;
+            this.t24.Name = "t24";
+            this.t24.Size = new System.Drawing.Size(59, 46);
+            this.t24.TabIndex = 37;
+            this.t24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna5ToolStripMenuItem
+            // t25
             // 
-            this.columna5ToolStripMenuItem.Name = "columna5ToolStripMenuItem";
-            this.columna5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna5ToolStripMenuItem.Text = "Columna 5";
-            this.columna5ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t25.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t25.ForeColor = System.Drawing.Color.Blue;
+            this.t25.Location = new System.Drawing.Point(306, 100);
+            this.t25.Multiline = true;
+            this.t25.Name = "t25";
+            this.t25.Size = new System.Drawing.Size(59, 46);
+            this.t25.TabIndex = 38;
+            this.t25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna6ToolStripMenuItem
+            // t30
             // 
-            this.columna6ToolStripMenuItem.Name = "columna6ToolStripMenuItem";
-            this.columna6ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna6ToolStripMenuItem.Text = "Columna 6";
-            this.columna6ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t30.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t30.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t30.ForeColor = System.Drawing.Color.Blue;
+            this.t30.Location = new System.Drawing.Point(7, 152);
+            this.t30.Multiline = true;
+            this.t30.Name = "t30";
+            this.t30.Size = new System.Drawing.Size(59, 46);
+            this.t30.TabIndex = 48;
+            this.t30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna7ToolStripMenuItem
+            // t26
             // 
-            this.columna7ToolStripMenuItem.Name = "columna7ToolStripMenuItem";
-            this.columna7ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna7ToolStripMenuItem.Text = "Columna 7";
-            this.columna7ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t26.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t26.ForeColor = System.Drawing.Color.Blue;
+            this.t26.Location = new System.Drawing.Point(369, 100);
+            this.t26.Multiline = true;
+            this.t26.Name = "t26";
+            this.t26.Size = new System.Drawing.Size(59, 46);
+            this.t26.TabIndex = 45;
+            this.t26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna8ToolStripMenuItem
+            // t08
             // 
-            this.columna8ToolStripMenuItem.Name = "columna8ToolStripMenuItem";
-            this.columna8ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna8ToolStripMenuItem.Text = "Columna 8";
-            this.columna8ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t08.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t08.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t08.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t08.ForeColor = System.Drawing.Color.Blue;
+            this.t08.Location = new System.Drawing.Point(487, 8);
+            this.t08.Multiline = true;
+            this.t08.Name = "t08";
+            this.t08.Size = new System.Drawing.Size(59, 46);
+            this.t08.TabIndex = 41;
+            this.t08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // columna9ToolStripMenuItem
+            // t31
             // 
-            this.columna9ToolStripMenuItem.Name = "columna9ToolStripMenuItem";
-            this.columna9ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.columna9ToolStripMenuItem.Text = "Columna 9";
-            this.columna9ToolStripMenuItem.Click += new System.EventHandler(this.ColumnaEstado_Click);
+            this.t31.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t31.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t31.ForeColor = System.Drawing.Color.Blue;
+            this.t31.Location = new System.Drawing.Point(66, 152);
+            this.t31.Multiline = true;
+            this.t31.Name = "t31";
+            this.t31.Size = new System.Drawing.Size(59, 46);
+            this.t31.TabIndex = 49;
+            this.t31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro1ToolStripMenuItem
+            // t16
             // 
-            this.recuadro1ToolStripMenuItem.Name = "recuadro1ToolStripMenuItem";
-            this.recuadro1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro1ToolStripMenuItem.Text = "Recuadro 1";
-            this.recuadro1ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t16.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t16.ForeColor = System.Drawing.Color.Blue;
+            this.t16.Location = new System.Drawing.Point(369, 54);
+            this.t16.Multiline = true;
+            this.t16.Name = "t16";
+            this.t16.Size = new System.Drawing.Size(59, 46);
+            this.t16.TabIndex = 42;
+            this.t16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro2ToolStripMenuItem
+            // t32
             // 
-            this.recuadro2ToolStripMenuItem.Name = "recuadro2ToolStripMenuItem";
-            this.recuadro2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro2ToolStripMenuItem.Text = "Recuadro 2";
-            this.recuadro2ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t32.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t32.ForeColor = System.Drawing.Color.Blue;
+            this.t32.Location = new System.Drawing.Point(125, 152);
+            this.t32.Multiline = true;
+            this.t32.Name = "t32";
+            this.t32.Size = new System.Drawing.Size(59, 46);
+            this.t32.TabIndex = 50;
+            this.t32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro3ToolStripMenuItem
+            // t17
             // 
-            this.recuadro3ToolStripMenuItem.Name = "recuadro3ToolStripMenuItem";
-            this.recuadro3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro3ToolStripMenuItem.Text = "Recuadro 3";
-            this.recuadro3ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t17.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t17.ForeColor = System.Drawing.Color.Blue;
+            this.t17.Location = new System.Drawing.Point(428, 54);
+            this.t17.Multiline = true;
+            this.t17.Name = "t17";
+            this.t17.Size = new System.Drawing.Size(59, 46);
+            this.t17.TabIndex = 43;
+            this.t17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro4ToolStripMenuItem
+            // t40
             // 
-            this.recuadro4ToolStripMenuItem.Name = "recuadro4ToolStripMenuItem";
-            this.recuadro4ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro4ToolStripMenuItem.Text = "Recuadro 4";
-            this.recuadro4ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t40.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t40.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t40.ForeColor = System.Drawing.Color.Blue;
+            this.t40.Location = new System.Drawing.Point(7, 198);
+            this.t40.Multiline = true;
+            this.t40.Name = "t40";
+            this.t40.Size = new System.Drawing.Size(59, 46);
+            this.t40.TabIndex = 51;
+            this.t40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro5ToolStripMenuItem
+            // t07
             // 
-            this.recuadro5ToolStripMenuItem.Name = "recuadro5ToolStripMenuItem";
-            this.recuadro5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro5ToolStripMenuItem.Text = "Recuadro 5";
-            this.recuadro5ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t07.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t07.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t07.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t07.ForeColor = System.Drawing.Color.Blue;
+            this.t07.Location = new System.Drawing.Point(428, 8);
+            this.t07.Multiline = true;
+            this.t07.Name = "t07";
+            this.t07.Size = new System.Drawing.Size(59, 46);
+            this.t07.TabIndex = 40;
+            this.t07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro6ToolStripMenuItem
+            // t41
             // 
-            this.recuadro6ToolStripMenuItem.Name = "recuadro6ToolStripMenuItem";
-            this.recuadro6ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro6ToolStripMenuItem.Text = "Recuadro 6";
-            this.recuadro6ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t41.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t41.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t41.ForeColor = System.Drawing.Color.Blue;
+            this.t41.Location = new System.Drawing.Point(66, 198);
+            this.t41.Multiline = true;
+            this.t41.Name = "t41";
+            this.t41.Size = new System.Drawing.Size(59, 46);
+            this.t41.TabIndex = 52;
+            this.t41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro7ToolStripMenuItem
+            // t18
             // 
-            this.recuadro7ToolStripMenuItem.Name = "recuadro7ToolStripMenuItem";
-            this.recuadro7ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro7ToolStripMenuItem.Text = "Recuadro 7 ";
-            this.recuadro7ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t18.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t18.ForeColor = System.Drawing.Color.Blue;
+            this.t18.Location = new System.Drawing.Point(487, 54);
+            this.t18.Multiline = true;
+            this.t18.Name = "t18";
+            this.t18.Size = new System.Drawing.Size(59, 46);
+            this.t18.TabIndex = 44;
+            this.t18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro8ToolStripMenuItem
+            // t42
             // 
-            this.recuadro8ToolStripMenuItem.Name = "recuadro8ToolStripMenuItem";
-            this.recuadro8ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro8ToolStripMenuItem.Text = "Recuadro 8";
-            this.recuadro8ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t42.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t42.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t42.ForeColor = System.Drawing.Color.Blue;
+            this.t42.Location = new System.Drawing.Point(125, 198);
+            this.t42.Multiline = true;
+            this.t42.Name = "t42";
+            this.t42.Size = new System.Drawing.Size(59, 46);
+            this.t42.TabIndex = 53;
+            this.t42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // recuadro9ToolStripMenuItem
+            // t27
             // 
-            this.recuadro9ToolStripMenuItem.Name = "recuadro9ToolStripMenuItem";
-            this.recuadro9ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.recuadro9ToolStripMenuItem.Text = "Recuadro 9";
-            this.recuadro9ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
+            this.t27.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t27.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t27.ForeColor = System.Drawing.Color.Blue;
+            this.t27.Location = new System.Drawing.Point(428, 100);
+            this.t27.Multiline = true;
+            this.t27.Name = "t27";
+            this.t27.Size = new System.Drawing.Size(59, 46);
+            this.t27.TabIndex = 46;
+            this.t27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t50
+            // 
+            this.t50.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t50.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t50.ForeColor = System.Drawing.Color.Blue;
+            this.t50.Location = new System.Drawing.Point(7, 244);
+            this.t50.Multiline = true;
+            this.t50.Name = "t50";
+            this.t50.Size = new System.Drawing.Size(59, 46);
+            this.t50.TabIndex = 54;
+            this.t50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t06
+            // 
+            this.t06.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t06.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t06.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t06.ForeColor = System.Drawing.Color.Blue;
+            this.t06.Location = new System.Drawing.Point(369, 8);
+            this.t06.Multiline = true;
+            this.t06.Name = "t06";
+            this.t06.Size = new System.Drawing.Size(59, 46);
+            this.t06.TabIndex = 39;
+            this.t06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t28
+            // 
+            this.t28.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t28.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t28.ForeColor = System.Drawing.Color.Blue;
+            this.t28.Location = new System.Drawing.Point(487, 100);
+            this.t28.Multiline = true;
+            this.t28.Name = "t28";
+            this.t28.Size = new System.Drawing.Size(59, 46);
+            this.t28.TabIndex = 47;
+            this.t28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t51
+            // 
+            this.t51.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t51.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t51.ForeColor = System.Drawing.Color.Blue;
+            this.t51.Location = new System.Drawing.Point(66, 244);
+            this.t51.Multiline = true;
+            this.t51.Name = "t51";
+            this.t51.Size = new System.Drawing.Size(59, 46);
+            this.t51.TabIndex = 55;
+            this.t51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t52
+            // 
+            this.t52.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t52.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t52.ForeColor = System.Drawing.Color.Blue;
+            this.t52.Location = new System.Drawing.Point(125, 244);
+            this.t52.Multiline = true;
+            this.t52.Name = "t52";
+            this.t52.Size = new System.Drawing.Size(59, 46);
+            this.t52.TabIndex = 56;
+            this.t52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t33
+            // 
+            this.t33.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t33.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t33.ForeColor = System.Drawing.Color.Blue;
+            this.t33.Location = new System.Drawing.Point(188, 152);
+            this.t33.Multiline = true;
+            this.t33.Name = "t33";
+            this.t33.Size = new System.Drawing.Size(59, 46);
+            this.t33.TabIndex = 57;
+            this.t33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t34
+            // 
+            this.t34.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t34.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t34.ForeColor = System.Drawing.Color.Blue;
+            this.t34.Location = new System.Drawing.Point(247, 152);
+            this.t34.Multiline = true;
+            this.t34.Name = "t34";
+            this.t34.Size = new System.Drawing.Size(59, 46);
+            this.t34.TabIndex = 58;
+            this.t34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t35
+            // 
+            this.t35.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t35.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t35.ForeColor = System.Drawing.Color.Blue;
+            this.t35.Location = new System.Drawing.Point(306, 152);
+            this.t35.Multiline = true;
+            this.t35.Name = "t35";
+            this.t35.Size = new System.Drawing.Size(59, 46);
+            this.t35.TabIndex = 59;
+            this.t35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t43
+            // 
+            this.t43.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t43.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t43.ForeColor = System.Drawing.Color.Blue;
+            this.t43.Location = new System.Drawing.Point(188, 198);
+            this.t43.Multiline = true;
+            this.t43.Name = "t43";
+            this.t43.Size = new System.Drawing.Size(59, 46);
+            this.t43.TabIndex = 60;
+            this.t43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t44
+            // 
+            this.t44.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t44.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t44.ForeColor = System.Drawing.Color.Blue;
+            this.t44.Location = new System.Drawing.Point(247, 198);
+            this.t44.Multiline = true;
+            this.t44.Name = "t44";
+            this.t44.Size = new System.Drawing.Size(59, 46);
+            this.t44.TabIndex = 61;
+            this.t44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t45
+            // 
+            this.t45.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t45.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t45.ForeColor = System.Drawing.Color.Blue;
+            this.t45.Location = new System.Drawing.Point(306, 198);
+            this.t45.Multiline = true;
+            this.t45.Name = "t45";
+            this.t45.Size = new System.Drawing.Size(59, 46);
+            this.t45.TabIndex = 62;
+            this.t45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t53
+            // 
+            this.t53.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t53.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t53.ForeColor = System.Drawing.Color.Blue;
+            this.t53.Location = new System.Drawing.Point(188, 244);
+            this.t53.Multiline = true;
+            this.t53.Name = "t53";
+            this.t53.Size = new System.Drawing.Size(59, 46);
+            this.t53.TabIndex = 63;
+            this.t53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t54
+            // 
+            this.t54.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t54.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t54.ForeColor = System.Drawing.Color.Blue;
+            this.t54.Location = new System.Drawing.Point(247, 244);
+            this.t54.Multiline = true;
+            this.t54.Name = "t54";
+            this.t54.Size = new System.Drawing.Size(59, 46);
+            this.t54.TabIndex = 64;
+            this.t54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t55
+            // 
+            this.t55.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t55.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t55.ForeColor = System.Drawing.Color.Blue;
+            this.t55.Location = new System.Drawing.Point(306, 244);
+            this.t55.Multiline = true;
+            this.t55.Name = "t55";
+            this.t55.Size = new System.Drawing.Size(59, 46);
+            this.t55.TabIndex = 65;
+            this.t55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t36
+            // 
+            this.t36.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t36.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t36.ForeColor = System.Drawing.Color.Blue;
+            this.t36.Location = new System.Drawing.Point(369, 152);
+            this.t36.Multiline = true;
+            this.t36.Name = "t36";
+            this.t36.Size = new System.Drawing.Size(59, 46);
+            this.t36.TabIndex = 66;
+            this.t36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t37
+            // 
+            this.t37.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t37.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t37.ForeColor = System.Drawing.Color.Blue;
+            this.t37.Location = new System.Drawing.Point(428, 152);
+            this.t37.Multiline = true;
+            this.t37.Name = "t37";
+            this.t37.Size = new System.Drawing.Size(59, 46);
+            this.t37.TabIndex = 67;
+            this.t37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t38
+            // 
+            this.t38.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t38.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t38.ForeColor = System.Drawing.Color.Blue;
+            this.t38.Location = new System.Drawing.Point(487, 152);
+            this.t38.Multiline = true;
+            this.t38.Name = "t38";
+            this.t38.Size = new System.Drawing.Size(59, 46);
+            this.t38.TabIndex = 68;
+            this.t38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t46
+            // 
+            this.t46.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t46.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t46.ForeColor = System.Drawing.Color.Blue;
+            this.t46.Location = new System.Drawing.Point(369, 198);
+            this.t46.Multiline = true;
+            this.t46.Name = "t46";
+            this.t46.Size = new System.Drawing.Size(59, 46);
+            this.t46.TabIndex = 69;
+            this.t46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t47
+            // 
+            this.t47.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t47.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t47.ForeColor = System.Drawing.Color.Blue;
+            this.t47.Location = new System.Drawing.Point(428, 198);
+            this.t47.Multiline = true;
+            this.t47.Name = "t47";
+            this.t47.Size = new System.Drawing.Size(59, 46);
+            this.t47.TabIndex = 70;
+            this.t47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t48
+            // 
+            this.t48.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t48.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t48.ForeColor = System.Drawing.Color.Blue;
+            this.t48.Location = new System.Drawing.Point(487, 198);
+            this.t48.Multiline = true;
+            this.t48.Name = "t48";
+            this.t48.Size = new System.Drawing.Size(59, 46);
+            this.t48.TabIndex = 71;
+            this.t48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t56
+            // 
+            this.t56.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t56.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t56.ForeColor = System.Drawing.Color.Blue;
+            this.t56.Location = new System.Drawing.Point(369, 244);
+            this.t56.Multiline = true;
+            this.t56.Name = "t56";
+            this.t56.Size = new System.Drawing.Size(59, 46);
+            this.t56.TabIndex = 72;
+            this.t56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t57
+            // 
+            this.t57.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t57.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t57.ForeColor = System.Drawing.Color.Blue;
+            this.t57.Location = new System.Drawing.Point(428, 244);
+            this.t57.Multiline = true;
+            this.t57.Name = "t57";
+            this.t57.Size = new System.Drawing.Size(59, 46);
+            this.t57.TabIndex = 73;
+            this.t57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t58
+            // 
+            this.t58.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t58.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t58.ForeColor = System.Drawing.Color.Blue;
+            this.t58.Location = new System.Drawing.Point(487, 244);
+            this.t58.Multiline = true;
+            this.t58.Name = "t58";
+            this.t58.Size = new System.Drawing.Size(59, 46);
+            this.t58.TabIndex = 74;
+            this.t58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t60
+            // 
+            this.t60.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t60.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t60.ForeColor = System.Drawing.Color.Blue;
+            this.t60.Location = new System.Drawing.Point(7, 296);
+            this.t60.Multiline = true;
+            this.t60.Name = "t60";
+            this.t60.Size = new System.Drawing.Size(59, 46);
+            this.t60.TabIndex = 75;
+            this.t60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t61
+            // 
+            this.t61.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t61.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t61.ForeColor = System.Drawing.Color.Blue;
+            this.t61.Location = new System.Drawing.Point(66, 296);
+            this.t61.Multiline = true;
+            this.t61.Name = "t61";
+            this.t61.Size = new System.Drawing.Size(59, 46);
+            this.t61.TabIndex = 76;
+            this.t61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t62
+            // 
+            this.t62.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t62.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t62.ForeColor = System.Drawing.Color.Blue;
+            this.t62.Location = new System.Drawing.Point(125, 296);
+            this.t62.Multiline = true;
+            this.t62.Name = "t62";
+            this.t62.Size = new System.Drawing.Size(59, 46);
+            this.t62.TabIndex = 77;
+            this.t62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t70
+            // 
+            this.t70.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t70.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t70.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t70.ForeColor = System.Drawing.Color.Blue;
+            this.t70.Location = new System.Drawing.Point(7, 342);
+            this.t70.Multiline = true;
+            this.t70.Name = "t70";
+            this.t70.Size = new System.Drawing.Size(59, 46);
+            this.t70.TabIndex = 78;
+            this.t70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t71
+            // 
+            this.t71.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t71.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t71.ForeColor = System.Drawing.Color.Blue;
+            this.t71.Location = new System.Drawing.Point(66, 342);
+            this.t71.Multiline = true;
+            this.t71.Name = "t71";
+            this.t71.Size = new System.Drawing.Size(59, 46);
+            this.t71.TabIndex = 79;
+            this.t71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t72
+            // 
+            this.t72.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t72.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t72.ForeColor = System.Drawing.Color.Blue;
+            this.t72.Location = new System.Drawing.Point(125, 342);
+            this.t72.Multiline = true;
+            this.t72.Name = "t72";
+            this.t72.Size = new System.Drawing.Size(59, 46);
+            this.t72.TabIndex = 80;
+            this.t72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t80
+            // 
+            this.t80.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t80.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t80.ForeColor = System.Drawing.Color.Blue;
+            this.t80.Location = new System.Drawing.Point(7, 388);
+            this.t80.Multiline = true;
+            this.t80.Name = "t80";
+            this.t80.Size = new System.Drawing.Size(59, 46);
+            this.t80.TabIndex = 81;
+            this.t80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t81
+            // 
+            this.t81.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t81.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t81.ForeColor = System.Drawing.Color.Blue;
+            this.t81.Location = new System.Drawing.Point(66, 388);
+            this.t81.Multiline = true;
+            this.t81.Name = "t81";
+            this.t81.Size = new System.Drawing.Size(59, 46);
+            this.t81.TabIndex = 82;
+            this.t81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t82
+            // 
+            this.t82.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t82.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t82.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t82.ForeColor = System.Drawing.Color.Blue;
+            this.t82.Location = new System.Drawing.Point(125, 388);
+            this.t82.Multiline = true;
+            this.t82.Name = "t82";
+            this.t82.Size = new System.Drawing.Size(59, 46);
+            this.t82.TabIndex = 83;
+            this.t82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t63
+            // 
+            this.t63.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t63.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t63.ForeColor = System.Drawing.Color.Blue;
+            this.t63.Location = new System.Drawing.Point(188, 296);
+            this.t63.Multiline = true;
+            this.t63.Name = "t63";
+            this.t63.Size = new System.Drawing.Size(59, 46);
+            this.t63.TabIndex = 84;
+            this.t63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t66
+            // 
+            this.t66.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t66.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t66.ForeColor = System.Drawing.Color.Blue;
+            this.t66.Location = new System.Drawing.Point(369, 295);
+            this.t66.Multiline = true;
+            this.t66.Name = "t66";
+            this.t66.Size = new System.Drawing.Size(59, 46);
+            this.t66.TabIndex = 22;
+            this.t66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t64
+            // 
+            this.t64.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t64.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t64.ForeColor = System.Drawing.Color.Blue;
+            this.t64.Location = new System.Drawing.Point(247, 296);
+            this.t64.Multiline = true;
+            this.t64.Name = "t64";
+            this.t64.Size = new System.Drawing.Size(59, 46);
+            this.t64.TabIndex = 85;
+            this.t64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t67
+            // 
+            this.t67.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t67.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t67.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t67.ForeColor = System.Drawing.Color.Blue;
+            this.t67.Location = new System.Drawing.Point(428, 295);
+            this.t67.Multiline = true;
+            this.t67.Name = "t67";
+            this.t67.Size = new System.Drawing.Size(59, 46);
+            this.t67.TabIndex = 23;
+            this.t67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t65
+            // 
+            this.t65.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t65.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t65.ForeColor = System.Drawing.Color.Blue;
+            this.t65.Location = new System.Drawing.Point(306, 296);
+            this.t65.Multiline = true;
+            this.t65.Name = "t65";
+            this.t65.Size = new System.Drawing.Size(59, 46);
+            this.t65.TabIndex = 86;
+            this.t65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t68
+            // 
+            this.t68.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t68.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t68.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t68.ForeColor = System.Drawing.Color.Blue;
+            this.t68.Location = new System.Drawing.Point(487, 295);
+            this.t68.Multiline = true;
+            this.t68.Name = "t68";
+            this.t68.Size = new System.Drawing.Size(59, 46);
+            this.t68.TabIndex = 24;
+            this.t68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t73
+            // 
+            this.t73.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t73.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t73.ForeColor = System.Drawing.Color.Blue;
+            this.t73.Location = new System.Drawing.Point(188, 342);
+            this.t73.Multiline = true;
+            this.t73.Name = "t73";
+            this.t73.Size = new System.Drawing.Size(59, 46);
+            this.t73.TabIndex = 87;
+            this.t73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t76
+            // 
+            this.t76.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t76.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t76.ForeColor = System.Drawing.Color.Blue;
+            this.t76.Location = new System.Drawing.Point(369, 341);
+            this.t76.Multiline = true;
+            this.t76.Name = "t76";
+            this.t76.Size = new System.Drawing.Size(59, 46);
+            this.t76.TabIndex = 25;
+            this.t76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t74
+            // 
+            this.t74.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t74.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t74.ForeColor = System.Drawing.Color.Blue;
+            this.t74.Location = new System.Drawing.Point(247, 342);
+            this.t74.Multiline = true;
+            this.t74.Name = "t74";
+            this.t74.Size = new System.Drawing.Size(59, 46);
+            this.t74.TabIndex = 88;
+            this.t74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t77
+            // 
+            this.t77.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t77.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t77.ForeColor = System.Drawing.Color.Blue;
+            this.t77.Location = new System.Drawing.Point(428, 341);
+            this.t77.Multiline = true;
+            this.t77.Name = "t77";
+            this.t77.Size = new System.Drawing.Size(59, 46);
+            this.t77.TabIndex = 26;
+            this.t77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t75
+            // 
+            this.t75.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t75.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t75.ForeColor = System.Drawing.Color.Blue;
+            this.t75.Location = new System.Drawing.Point(306, 342);
+            this.t75.Multiline = true;
+            this.t75.Name = "t75";
+            this.t75.Size = new System.Drawing.Size(59, 46);
+            this.t75.TabIndex = 89;
+            this.t75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t78
+            // 
+            this.t78.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t78.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t78.ForeColor = System.Drawing.Color.Blue;
+            this.t78.Location = new System.Drawing.Point(487, 341);
+            this.t78.Multiline = true;
+            this.t78.Name = "t78";
+            this.t78.Size = new System.Drawing.Size(59, 46);
+            this.t78.TabIndex = 27;
+            this.t78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t83
+            // 
+            this.t83.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t83.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t83.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t83.ForeColor = System.Drawing.Color.Blue;
+            this.t83.Location = new System.Drawing.Point(188, 388);
+            this.t83.Multiline = true;
+            this.t83.Name = "t83";
+            this.t83.Size = new System.Drawing.Size(59, 46);
+            this.t83.TabIndex = 90;
+            this.t83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t86
+            // 
+            this.t86.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t86.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t86.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t86.ForeColor = System.Drawing.Color.Blue;
+            this.t86.Location = new System.Drawing.Point(369, 387);
+            this.t86.Multiline = true;
+            this.t86.Name = "t86";
+            this.t86.Size = new System.Drawing.Size(59, 46);
+            this.t86.TabIndex = 28;
+            this.t86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t84
+            // 
+            this.t84.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t84.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t84.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t84.ForeColor = System.Drawing.Color.Blue;
+            this.t84.Location = new System.Drawing.Point(247, 388);
+            this.t84.Multiline = true;
+            this.t84.Name = "t84";
+            this.t84.Size = new System.Drawing.Size(59, 46);
+            this.t84.TabIndex = 91;
+            this.t84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t87
+            // 
+            this.t87.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t87.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t87.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t87.ForeColor = System.Drawing.Color.Blue;
+            this.t87.Location = new System.Drawing.Point(428, 387);
+            this.t87.Multiline = true;
+            this.t87.Name = "t87";
+            this.t87.Size = new System.Drawing.Size(59, 46);
+            this.t87.TabIndex = 29;
+            this.t87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t85
+            // 
+            this.t85.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t85.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t85.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t85.ForeColor = System.Drawing.Color.Blue;
+            this.t85.Location = new System.Drawing.Point(306, 388);
+            this.t85.Multiline = true;
+            this.t85.Name = "t85";
+            this.t85.Size = new System.Drawing.Size(59, 46);
+            this.t85.TabIndex = 92;
+            this.t85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // t88
+            // 
+            this.t88.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.t88.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.t88.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t88.ForeColor = System.Drawing.Color.Blue;
+            this.t88.Location = new System.Drawing.Point(487, 387);
+            this.t88.Multiline = true;
+            this.t88.Name = "t88";
+            this.t88.Size = new System.Drawing.Size(59, 46);
+            this.t88.TabIndex = 30;
+            this.t88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pnl2
+            // 
+            this.pnl2.BackColor = System.Drawing.Color.Silver;
+            this.pnl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl2.Controls.Add(this.t88);
+            this.pnl2.Controls.Add(this.t85);
+            this.pnl2.Controls.Add(this.t87);
+            this.pnl2.Controls.Add(this.t84);
+            this.pnl2.Controls.Add(this.t86);
+            this.pnl2.Controls.Add(this.t83);
+            this.pnl2.Controls.Add(this.t78);
+            this.pnl2.Controls.Add(this.t75);
+            this.pnl2.Controls.Add(this.t77);
+            this.pnl2.Controls.Add(this.t74);
+            this.pnl2.Controls.Add(this.t76);
+            this.pnl2.Controls.Add(this.t73);
+            this.pnl2.Controls.Add(this.t68);
+            this.pnl2.Controls.Add(this.t65);
+            this.pnl2.Controls.Add(this.t67);
+            this.pnl2.Controls.Add(this.t64);
+            this.pnl2.Controls.Add(this.t66);
+            this.pnl2.Controls.Add(this.t63);
+            this.pnl2.Controls.Add(this.t82);
+            this.pnl2.Controls.Add(this.t81);
+            this.pnl2.Controls.Add(this.t80);
+            this.pnl2.Controls.Add(this.t72);
+            this.pnl2.Controls.Add(this.t71);
+            this.pnl2.Controls.Add(this.t70);
+            this.pnl2.Controls.Add(this.t62);
+            this.pnl2.Controls.Add(this.t61);
+            this.pnl2.Controls.Add(this.t60);
+            this.pnl2.Controls.Add(this.t58);
+            this.pnl2.Controls.Add(this.t57);
+            this.pnl2.Controls.Add(this.t56);
+            this.pnl2.Controls.Add(this.t48);
+            this.pnl2.Controls.Add(this.t47);
+            this.pnl2.Controls.Add(this.t46);
+            this.pnl2.Controls.Add(this.t38);
+            this.pnl2.Controls.Add(this.t37);
+            this.pnl2.Controls.Add(this.t36);
+            this.pnl2.Controls.Add(this.t55);
+            this.pnl2.Controls.Add(this.t54);
+            this.pnl2.Controls.Add(this.t53);
+            this.pnl2.Controls.Add(this.t45);
+            this.pnl2.Controls.Add(this.t44);
+            this.pnl2.Controls.Add(this.t43);
+            this.pnl2.Controls.Add(this.t35);
+            this.pnl2.Controls.Add(this.t34);
+            this.pnl2.Controls.Add(this.t33);
+            this.pnl2.Controls.Add(this.t52);
+            this.pnl2.Controls.Add(this.t51);
+            this.pnl2.Controls.Add(this.t28);
+            this.pnl2.Controls.Add(this.t06);
+            this.pnl2.Controls.Add(this.t50);
+            this.pnl2.Controls.Add(this.t27);
+            this.pnl2.Controls.Add(this.t42);
+            this.pnl2.Controls.Add(this.t18);
+            this.pnl2.Controls.Add(this.t41);
+            this.pnl2.Controls.Add(this.t07);
+            this.pnl2.Controls.Add(this.t40);
+            this.pnl2.Controls.Add(this.t17);
+            this.pnl2.Controls.Add(this.t32);
+            this.pnl2.Controls.Add(this.t16);
+            this.pnl2.Controls.Add(this.t31);
+            this.pnl2.Controls.Add(this.t08);
+            this.pnl2.Controls.Add(this.t26);
+            this.pnl2.Controls.Add(this.t30);
+            this.pnl2.Controls.Add(this.t25);
+            this.pnl2.Controls.Add(this.t24);
+            this.pnl2.Controls.Add(this.t23);
+            this.pnl2.Controls.Add(this.t15);
+            this.pnl2.Controls.Add(this.t14);
+            this.pnl2.Controls.Add(this.t13);
+            this.pnl2.Controls.Add(this.t05);
+            this.pnl2.Controls.Add(this.t04);
+            this.pnl2.Controls.Add(this.t03);
+            this.pnl2.Controls.Add(this.t22);
+            this.pnl2.Controls.Add(this.t21);
+            this.pnl2.Controls.Add(this.t20);
+            this.pnl2.Controls.Add(this.t12);
+            this.pnl2.Controls.Add(this.t11);
+            this.pnl2.Controls.Add(this.t10);
+            this.pnl2.Controls.Add(this.t02);
+            this.pnl2.Controls.Add(this.t01);
+            this.pnl2.Controls.Add(this.t00);
+            this.pnl2.Location = new System.Drawing.Point(637, 171);
+            this.pnl2.Name = "pnl2";
+            this.pnl2.Size = new System.Drawing.Size(555, 445);
+            this.pnl2.TabIndex = 89;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(573, 171);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 109;
+            this.label1.Text = "Celdas";
             // 
             // RojoDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1204, 673);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox12);
@@ -3458,8 +3487,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoDos";
             this.Load += new System.EventHandler(this.RojoDos_Load);
-            this.pnl2.ResumeLayout(false);
-            this.pnl2.PerformLayout();
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -3468,95 +3495,14 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pnlLetra.ResumeLayout(false);
+            this.pnl2.ResumeLayout(false);
+            this.pnl2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnl2;
-        private System.Windows.Forms.TextBox t88;
-        private System.Windows.Forms.TextBox t85;
-        private System.Windows.Forms.TextBox t87;
-        private System.Windows.Forms.TextBox t84;
-        private System.Windows.Forms.TextBox t86;
-        private System.Windows.Forms.TextBox t83;
-        private System.Windows.Forms.TextBox t78;
-        private System.Windows.Forms.TextBox t75;
-        private System.Windows.Forms.TextBox t77;
-        private System.Windows.Forms.TextBox t74;
-        private System.Windows.Forms.TextBox t76;
-        private System.Windows.Forms.TextBox t73;
-        private System.Windows.Forms.TextBox t68;
-        private System.Windows.Forms.TextBox t65;
-        private System.Windows.Forms.TextBox t67;
-        private System.Windows.Forms.TextBox t64;
-        private System.Windows.Forms.TextBox t66;
-        private System.Windows.Forms.TextBox t63;
-        private System.Windows.Forms.TextBox t82;
-        private System.Windows.Forms.TextBox t81;
-        private System.Windows.Forms.TextBox t80;
-        private System.Windows.Forms.TextBox t72;
-        private System.Windows.Forms.TextBox t71;
-        private System.Windows.Forms.TextBox t70;
-        private System.Windows.Forms.TextBox t62;
-        private System.Windows.Forms.TextBox t61;
-        private System.Windows.Forms.TextBox t60;
-        private System.Windows.Forms.TextBox t58;
-        private System.Windows.Forms.TextBox t57;
-        private System.Windows.Forms.TextBox t56;
-        private System.Windows.Forms.TextBox t48;
-        private System.Windows.Forms.TextBox t47;
-        private System.Windows.Forms.TextBox t46;
-        private System.Windows.Forms.TextBox t38;
-        private System.Windows.Forms.TextBox t37;
-        private System.Windows.Forms.TextBox t36;
-        private System.Windows.Forms.TextBox t55;
-        private System.Windows.Forms.TextBox t54;
-        private System.Windows.Forms.TextBox t53;
-        private System.Windows.Forms.TextBox t45;
-        private System.Windows.Forms.TextBox t44;
-        private System.Windows.Forms.TextBox t43;
-        private System.Windows.Forms.TextBox t35;
-        private System.Windows.Forms.TextBox t34;
-        private System.Windows.Forms.TextBox t33;
-        private System.Windows.Forms.TextBox t52;
-        private System.Windows.Forms.TextBox t51;
-        private System.Windows.Forms.TextBox t28;
-        private System.Windows.Forms.TextBox t06;
-        private System.Windows.Forms.TextBox t50;
-        private System.Windows.Forms.TextBox t27;
-        private System.Windows.Forms.TextBox t42;
-        private System.Windows.Forms.TextBox t18;
-        private System.Windows.Forms.TextBox t41;
-        private System.Windows.Forms.TextBox t07;
-        private System.Windows.Forms.TextBox t40;
-        private System.Windows.Forms.TextBox t17;
-        private System.Windows.Forms.TextBox t32;
-        private System.Windows.Forms.TextBox t16;
-        private System.Windows.Forms.TextBox t31;
-        private System.Windows.Forms.TextBox t08;
-        private System.Windows.Forms.TextBox t26;
-        private System.Windows.Forms.TextBox t30;
-        private System.Windows.Forms.TextBox t25;
-        private System.Windows.Forms.TextBox t24;
-        private System.Windows.Forms.TextBox t23;
-        private System.Windows.Forms.TextBox t15;
-        private System.Windows.Forms.TextBox t14;
-        private System.Windows.Forms.TextBox t13;
-        private System.Windows.Forms.TextBox t05;
-        private System.Windows.Forms.TextBox t04;
-        private System.Windows.Forms.TextBox t03;
-        private System.Windows.Forms.TextBox t22;
-        private System.Windows.Forms.TextBox t21;
-        private System.Windows.Forms.TextBox t20;
-        private System.Windows.Forms.TextBox t12;
-        private System.Windows.Forms.TextBox t11;
-        private System.Windows.Forms.TextBox t10;
-        private System.Windows.Forms.TextBox t02;
-        private System.Windows.Forms.TextBox t01;
-        private System.Windows.Forms.TextBox t00;
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.TextBox txt88;
         private System.Windows.Forms.TextBox txt85;
@@ -3719,5 +3665,88 @@
         private System.Windows.Forms.ToolStripMenuItem recuadro7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuadro8ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recuadro9ToolStripMenuItem;
+        private System.Windows.Forms.TextBox t00;
+        private System.Windows.Forms.TextBox t01;
+        private System.Windows.Forms.TextBox t02;
+        private System.Windows.Forms.TextBox t10;
+        private System.Windows.Forms.TextBox t11;
+        private System.Windows.Forms.TextBox t12;
+        private System.Windows.Forms.TextBox t20;
+        private System.Windows.Forms.TextBox t21;
+        private System.Windows.Forms.TextBox t22;
+        private System.Windows.Forms.TextBox t03;
+        private System.Windows.Forms.TextBox t04;
+        private System.Windows.Forms.TextBox t05;
+        private System.Windows.Forms.TextBox t13;
+        private System.Windows.Forms.TextBox t14;
+        private System.Windows.Forms.TextBox t15;
+        private System.Windows.Forms.TextBox t23;
+        private System.Windows.Forms.TextBox t24;
+        private System.Windows.Forms.TextBox t25;
+        private System.Windows.Forms.TextBox t30;
+        private System.Windows.Forms.TextBox t26;
+        private System.Windows.Forms.TextBox t08;
+        private System.Windows.Forms.TextBox t31;
+        private System.Windows.Forms.TextBox t16;
+        private System.Windows.Forms.TextBox t32;
+        private System.Windows.Forms.TextBox t17;
+        private System.Windows.Forms.TextBox t40;
+        private System.Windows.Forms.TextBox t07;
+        private System.Windows.Forms.TextBox t41;
+        private System.Windows.Forms.TextBox t18;
+        private System.Windows.Forms.TextBox t42;
+        private System.Windows.Forms.TextBox t27;
+        private System.Windows.Forms.TextBox t50;
+        private System.Windows.Forms.TextBox t06;
+        private System.Windows.Forms.TextBox t28;
+        private System.Windows.Forms.TextBox t51;
+        private System.Windows.Forms.TextBox t52;
+        private System.Windows.Forms.TextBox t33;
+        private System.Windows.Forms.TextBox t34;
+        private System.Windows.Forms.TextBox t35;
+        private System.Windows.Forms.TextBox t43;
+        private System.Windows.Forms.TextBox t44;
+        private System.Windows.Forms.TextBox t45;
+        private System.Windows.Forms.TextBox t53;
+        private System.Windows.Forms.TextBox t54;
+        private System.Windows.Forms.TextBox t55;
+        private System.Windows.Forms.TextBox t36;
+        private System.Windows.Forms.TextBox t37;
+        private System.Windows.Forms.TextBox t38;
+        private System.Windows.Forms.TextBox t46;
+        private System.Windows.Forms.TextBox t47;
+        private System.Windows.Forms.TextBox t48;
+        private System.Windows.Forms.TextBox t56;
+        private System.Windows.Forms.TextBox t57;
+        private System.Windows.Forms.TextBox t58;
+        private System.Windows.Forms.TextBox t60;
+        private System.Windows.Forms.TextBox t61;
+        private System.Windows.Forms.TextBox t62;
+        private System.Windows.Forms.TextBox t70;
+        private System.Windows.Forms.TextBox t71;
+        private System.Windows.Forms.TextBox t72;
+        private System.Windows.Forms.TextBox t80;
+        private System.Windows.Forms.TextBox t81;
+        private System.Windows.Forms.TextBox t82;
+        private System.Windows.Forms.TextBox t63;
+        private System.Windows.Forms.TextBox t66;
+        private System.Windows.Forms.TextBox t64;
+        private System.Windows.Forms.TextBox t67;
+        private System.Windows.Forms.TextBox t65;
+        private System.Windows.Forms.TextBox t68;
+        private System.Windows.Forms.TextBox t73;
+        private System.Windows.Forms.TextBox t76;
+        private System.Windows.Forms.TextBox t74;
+        private System.Windows.Forms.TextBox t77;
+        private System.Windows.Forms.TextBox t75;
+        private System.Windows.Forms.TextBox t78;
+        private System.Windows.Forms.TextBox t83;
+        private System.Windows.Forms.TextBox t86;
+        private System.Windows.Forms.TextBox t84;
+        private System.Windows.Forms.TextBox t87;
+        private System.Windows.Forms.TextBox t85;
+        private System.Windows.Forms.TextBox t88;
+        private System.Windows.Forms.Panel pnl2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -1073,8 +1073,6 @@ namespace SudokuParaTodos
                     }
                     candidatos.Items.Clear();
                 }
-
-
             }
             return valorPlantilla;
         }
