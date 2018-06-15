@@ -19,13 +19,13 @@ namespace SudokuParaTodos
             EngineData Valor = EngineData.Instance();
             if (args.Length == 0)
             {
-                Valor.SetOpenFrom(EngineData.Exe);
+                /*Valor.SetOpenFrom(EngineData.Exe);
                 Form1 f = new Form1();
-                Application.Run(f);
+                Application.Run(f);*/
 
-                /*Valor.SetOpenFrom(EngineData.File);
+                Valor.SetOpenFrom(EngineData.File);
                 Valor.SetPathArchivo(@"D:\BBB.jll");
-                Application.Run(new Formularios.AzulUno());*/
+                Application.Run(new Formularios.AzulUno());
             }
             else
             {

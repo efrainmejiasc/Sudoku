@@ -48,6 +48,9 @@ namespace SudokuParaTodos.Formularios
 
         string idiomaCultura = string.Empty;
         string idiomaNombre = string.Empty;
+        string lado = string.Empty;
+
+        string circuito = string.Empty;
 
 
         public RojoDos()
@@ -323,15 +326,15 @@ namespace SudokuParaTodos.Formularios
             ToolStripMenuItem miPlantilla = new ToolStripMenuItem();
             miPlantilla = (ToolStripMenuItem)sender;
             int fila = -1;
-            if (miPlantilla.Name == "fila1ToolStripMenuItem") { fila = 0; nombreFila = "Fila Nº 1"; }
-            else if (miPlantilla.Name == "fila2ToolStripMenuItem") { fila = 1; nombreFila = "Fila Nº 2"; }
-            else if (miPlantilla.Name == "fila3ToolStripMenuItem") { fila = 2; nombreFila = "Fila Nº 3"; }
-            else if (miPlantilla.Name == "fila4ToolStripMenuItem") { fila = 3; nombreFila = "Fila Nº 4"; }
-            else if (miPlantilla.Name == "fila5ToolStripMenuItem") { fila = 4; nombreFila = "Fila Nº 5"; }
-            else if (miPlantilla.Name == "fila6ToolStripMenuItem") { fila = 5; nombreFila = "Fila Nº 6"; }
-            else if (miPlantilla.Name == "fila7ToolStripMenuItem") { fila = 6; nombreFila = "Fila Nº 7"; }
-            else if (miPlantilla.Name == "fila8ToolStripMenuItem") { fila = 7; nombreFila = "Fila Nº 8"; }
-            else if (miPlantilla.Name == "fila9ToolStripMenuItem") { fila = 8; nombreFila = "Fila Nº 9"; }
+            if (miPlantilla.Name == "fila1ToolStripMenuItem") { fila = 0; nombreFila = "Fila Nº 1"; txtNota.Text = "F1"; }
+            else if (miPlantilla.Name == "fila2ToolStripMenuItem") { fila = 1; nombreFila = "Fila Nº 2"; txtNota.Text = "F2"; }
+            else if (miPlantilla.Name == "fila3ToolStripMenuItem") { fila = 2; nombreFila = "Fila Nº 3"; txtNota.Text = "F3"; }
+            else if (miPlantilla.Name == "fila4ToolStripMenuItem") { fila = 3; nombreFila = "Fila Nº 4"; txtNota.Text = "F4"; }
+            else if (miPlantilla.Name == "fila5ToolStripMenuItem") { fila = 4; nombreFila = "Fila Nº 5"; txtNota.Text = "F5"; }
+            else if (miPlantilla.Name == "fila6ToolStripMenuItem") { fila = 5; nombreFila = "Fila Nº 6"; txtNota.Text = "F6"; }
+            else if (miPlantilla.Name == "fila7ToolStripMenuItem") { fila = 6; nombreFila = "Fila Nº 7"; txtNota.Text = "F7"; }
+            else if (miPlantilla.Name == "fila8ToolStripMenuItem") { fila = 7; nombreFila = "Fila Nº 8"; txtNota.Text = "F8"; }
+            else if (miPlantilla.Name == "fila9ToolStripMenuItem") { fila = 8; nombreFila = "Fila Nº 9"; txtNota.Text = "F9"; }
 
 
             string[,] valorPlantilla = new string[9, 9];
@@ -359,23 +362,24 @@ namespace SudokuParaTodos.Formularios
             tC7.Text = f[6];
             tC8.Text = f[7];
             tC9.Text = f[8];
+            txt00.BackColor = Color.WhiteSmoke;
         }
 
-        private void ColumnaEstado_Click(object sender, EventArgs e)//PLANTILLA DE COLUMNA
+        private void ColumnaEstado_Click(object sender, EventArgs e)
         {
             String nombreColumna = string.Empty;
             ToolStripMenuItem miPlantilla = new ToolStripMenuItem();
             miPlantilla = (ToolStripMenuItem)sender;
             int columna = -1;
-            if (miPlantilla.Name == "columna1ToolStripMenuItem") { columna = 0; nombreColumna = "Columna Nº 1"; }
-            else if (miPlantilla.Name == "columna2ToolStripMenuItem") { columna = 1; nombreColumna = "Columna Nº 2"; }
-            else if (miPlantilla.Name == "columna3ToolStripMenuItem") { columna = 2; nombreColumna = "Columna Nº 3"; }
-            else if (miPlantilla.Name == "columna4ToolStripMenuItem") { columna = 3; nombreColumna = "Columna Nº 4"; }
-            else if (miPlantilla.Name == "columna5ToolStripMenuItem") { columna = 4; nombreColumna = "Columna Nº 5"; }
-            else if (miPlantilla.Name == "columna6ToolStripMenuItem") { columna = 5; nombreColumna = "Columna Nº 6"; }
-            else if (miPlantilla.Name == "columna7ToolStripMenuItem") { columna = 6; nombreColumna = "Columna Nº 7"; }
-            else if (miPlantilla.Name == "columna8ToolStripMenuItem") { columna = 7; nombreColumna = "Columna Nº 8"; }
-            else if (miPlantilla.Name == "columna9ToolStripMenuItem") { columna = 8; nombreColumna = "Columna Nº 9"; }
+            if (miPlantilla.Name == "columna1ToolStripMenuItem") { columna = 0; nombreColumna = "Columna Nº 1"; txtNota.Text = "C1"; }
+            else if (miPlantilla.Name == "columna2ToolStripMenuItem") { columna = 1; nombreColumna = "Columna Nº 2"; txtNota.Text = "C2"; }
+            else if (miPlantilla.Name == "columna3ToolStripMenuItem") { columna = 2; nombreColumna = "Columna Nº 3"; txtNota.Text = "C3"; }
+            else if (miPlantilla.Name == "columna4ToolStripMenuItem") { columna = 3; nombreColumna = "Columna Nº 4"; txtNota.Text = "C4"; }
+            else if (miPlantilla.Name == "columna5ToolStripMenuItem") { columna = 4; nombreColumna = "Columna Nº 5"; txtNota.Text = "C5"; }
+            else if (miPlantilla.Name == "columna6ToolStripMenuItem") { columna = 5; nombreColumna = "Columna Nº 6"; txtNota.Text = "C6"; }
+            else if (miPlantilla.Name == "columna7ToolStripMenuItem") { columna = 6; nombreColumna = "Columna Nº 7"; txtNota.Text = "C7"; }
+            else if (miPlantilla.Name == "columna8ToolStripMenuItem") { columna = 7; nombreColumna = "Columna Nº 8"; txtNota.Text = "C8"; }
+            else if (miPlantilla.Name == "columna9ToolStripMenuItem") { columna = 8; nombreColumna = "Columna Nº 9"; txtNota.Text = "C9"; }
 
             string[,] valorPlantilla = new string[9, 9];
             bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
@@ -405,21 +409,21 @@ namespace SudokuParaTodos.Formularios
             tC9.Text = c[8];
         }
 
-        private void EstadoRecuadro_Click(object sender, EventArgs e)//PLANTILLAS DE RECUADRO
+        private void EstadoRecuadro_Click(object sender, EventArgs e)
         {
             String nombreRecuadro = string.Empty ;
             ToolStripMenuItem miPlantilla = new ToolStripMenuItem();
             miPlantilla = (ToolStripMenuItem)sender;
             int rangoF = -1, rangoC = -1, rec = -1;
-            if (miPlantilla.Name == "recuadro1ToolStripMenuItem") { rangoF = 0; rangoC = 0; nombreRecuadro = "Recuadro Nº 1";  rec = 0; }
-            else if (miPlantilla.Name == "recuadro2ToolStripMenuItem") { rangoF = 0; rangoC = 3; nombreRecuadro = "Recuadro Nº 2"; rec = 1; }
-            else if (miPlantilla.Name == "recuadro3ToolStripMenuItem") { rangoF = 0; rangoC = 6; nombreRecuadro = "Recuadro Nº 3"; rec = 2; }
-            else if (miPlantilla.Name == "recuadro4ToolStripMenuItem") { rangoF = 3; rangoC = 0; nombreRecuadro = "Recuadro Nº 4"; rec = 3; }
-            else if (miPlantilla.Name == "recuadro5ToolStripMenuItem") { rangoF = 3; rangoC = 3; nombreRecuadro = "Recuadro Nº 5"; rec = 4; }
-            else if (miPlantilla.Name == "recuadro6ToolStripMenuItem") { rangoF = 3; rangoC = 6; nombreRecuadro = "Recuadro Nº 6"; rec = 5; }
-            else if (miPlantilla.Name == "recuadro7ToolStripMenuItem") { rangoF = 6; rangoC = 0; nombreRecuadro = "Recuadro Nº 7"; rec = 6; }
-            else if (miPlantilla.Name == "recuadro8ToolStripMenuItem") { rangoF = 6; rangoC = 3; nombreRecuadro = "Recuadro Nº 8"; rec = 7; }
-            else if (miPlantilla.Name == "recuadro9ToolStripMenuItem") { rangoF = 6; rangoC = 6; nombreRecuadro = "Recuadro Nº 9"; rec = 8; }
+            if (miPlantilla.Name == "recuadro1ToolStripMenuItem") { rangoF = 0; rangoC = 0; nombreRecuadro = "Recuadro Nº 1";  rec = 0; txtNota.Text = "R1"; }
+            else if (miPlantilla.Name == "recuadro2ToolStripMenuItem") { rangoF = 0; rangoC = 3; nombreRecuadro = "Recuadro Nº 2"; rec = 1; txtNota.Text = "R2"; }
+            else if (miPlantilla.Name == "recuadro3ToolStripMenuItem") { rangoF = 0; rangoC = 6; nombreRecuadro = "Recuadro Nº 3"; rec = 2; txtNota.Text = "R3"; }
+            else if (miPlantilla.Name == "recuadro4ToolStripMenuItem") { rangoF = 3; rangoC = 0; nombreRecuadro = "Recuadro Nº 4"; rec = 3; txtNota.Text = "R4"; }
+            else if (miPlantilla.Name == "recuadro5ToolStripMenuItem") { rangoF = 3; rangoC = 3; nombreRecuadro = "Recuadro Nº 5"; rec = 4; txtNota.Text = "R5"; }
+            else if (miPlantilla.Name == "recuadro6ToolStripMenuItem") { rangoF = 3; rangoC = 6; nombreRecuadro = "Recuadro Nº 6"; rec = 5; txtNota.Text = "R6"; }
+            else if (miPlantilla.Name == "recuadro7ToolStripMenuItem") { rangoF = 6; rangoC = 0; nombreRecuadro = "Recuadro Nº 7"; rec = 6; txtNota.Text = "R7"; }
+            else if (miPlantilla.Name == "recuadro8ToolStripMenuItem") { rangoF = 6; rangoC = 3; nombreRecuadro = "Recuadro Nº 8"; rec = 7; txtNota.Text = "R8"; }
+            else if (miPlantilla.Name == "recuadro9ToolStripMenuItem") { rangoF = 6; rangoC = 6; nombreRecuadro = "Recuadro Nº 9"; rec = 8; txtNota.Text = "R9"; }
 
             string[,] valorPlantilla = new string[9, 9];
             bool existeValor = Funcion.ExisteValorIngresado(valorIngresado);
@@ -437,7 +441,7 @@ namespace SudokuParaTodos.Formularios
             }
 
             string[] r = new string[9];
-            r = Valor.GetNumeroColumna(rec);
+            r = Valor.GetNumeroRecuadro(rec);
             tC1.Text = r[0];
             tC2.Text = r[1];
             tC3.Text = r[2];
@@ -448,6 +452,592 @@ namespace SudokuParaTodos.Formularios
             tC8.Text = r[7];
             tC9.Text = r[8];
         }
+
+        private void EliminarRestablecerCandidato_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            switch (btn.Name)
+            {
+                case (EngineData.eliminar):
+                    if (lado != EngineData.btnIzquierda) return;
+                    string candidatoEliminar = txtSudoku[row, col].Text;
+                    if (candidatoEliminar == string.Empty) return;
+                    valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
+                    valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                    txtSudoku[row, col].BackColor = Color.WhiteSmoke;
+                    txtSudoku[row, col].Text = string.Empty;
+                    //ActualizarContadoresCandidatos();
+                    SetearJuego();
+                    break;
+                case (EngineData.restablecer):
+                    if (lado != EngineData.btnDerecha) return;
+                    string candidatoRestablecer = txtSudoku2[row, col].Text.Trim();
+                    if (candidatoRestablecer == string.Empty) return;
+                    if (candidatoRestablecer.Length == 1)
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                    }
+                    else if (candidatoRestablecer.Length > 1)
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                        valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    txtSudoku2[row, col].Text = valorEliminado[row, col];
+                    //ActualizarContadoresCandidatos();
+                    SetearJuego();
+                    //ActualizarCandidato(candidatoRestablecer);
+                    break;
+            }
+            ContadorIngresado();
+        }
+
+        private void ColorMarcador_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcador = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+            }
+            else
+            {
+                pincelMarcador = EngineData.Verdadero;
+                colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+            }
+        }
+
+        private void fILASToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            circuito = "FILA";
+            //txtNota.Text = string.Empty;
+        }
+
+        private void cOLUMNASToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            circuito = "COLUMNA";
+            //txtNota.Text = string.Empty;
+        }
+
+        private void rECUADROToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            circuito = "RECUADRO";
+            //txtNota.Text = string.Empty;
+        }
+
+        private void btnGrup_Click(object sender, EventArgs e)
+        {
+            string cadena = txtNota.Text;
+            object obj = null;
+            EventArgs eve = null;
+
+            if (circuito == "FILA")
+            {
+                if (cadena == string.Empty || cadena.Contains ("C") || cadena.Contains("R"))
+                {
+                    cadena = "F1";
+                    txtNota.Text = cadena;
+                    obj = fila1ToolStripMenuItem;
+                }
+                else
+                {
+                    switch (cadena)
+                    {
+                        case ("F1"):
+                            txtNota.Text = "F2";
+                            obj = fila2ToolStripMenuItem;
+                            break;
+                        case ("F2"):
+                            txtNota.Text = "F3";
+                            obj = fila3ToolStripMenuItem;
+                            break;
+                        case ("F3"):
+                            txtNota.Text = "F4";
+                            obj = fila4ToolStripMenuItem;
+                            break;
+                        case ("F4"):
+                            txtNota.Text = "F5";
+                            obj = fila5ToolStripMenuItem;
+                            break;
+                        case ("F5"):
+                            txtNota.Text = "F6";
+                            obj = fila6ToolStripMenuItem;
+                            break;
+                        case ("F6"):
+                            txtNota.Text = "F7";
+                            obj = fila7ToolStripMenuItem;
+                            break;
+                        case ("F7"):
+                            txtNota.Text = "F8";
+                            obj = fila8ToolStripMenuItem;
+                            break;
+                        case ("F8"):
+                            txtNota.Text = "F9";
+                            obj = fila9ToolStripMenuItem;
+                            break;
+                        case ("F9"):
+                            txtNota.Text = "F1";
+                            obj = fila1ToolStripMenuItem;
+                            break;
+                    }
+                }
+                FilaEstado_Click(obj, eve);
+            }
+            else if (circuito == "COLUMNA")
+            {
+                if (cadena == string.Empty || cadena.Contains("F") || cadena.Contains("R"))
+                {
+                    cadena = "C1";
+                    txtNota.Text = cadena;
+                    obj = columna1ToolStripMenuItem;
+                }
+                else
+                {
+                    switch (cadena)
+                    {
+                        case ("C1"):
+                            txtNota.Text = "C2";
+                            obj = columna2ToolStripMenuItem;
+                            break;
+                        case ("C2"):
+                            txtNota.Text = "C3";
+                            obj = columna3ToolStripMenuItem;
+                            break;
+                        case ("C3"):
+                            txtNota.Text = "C4";
+                            obj = columna4ToolStripMenuItem;
+                            break;
+                        case ("C4"):
+                            txtNota.Text = "C5";
+                            obj = columna5ToolStripMenuItem;
+                            break;
+                        case ("C5"):
+                            txtNota.Text = "C6";
+                            obj = columna6ToolStripMenuItem;
+                            break;
+                        case ("C6"):
+                            txtNota.Text = "C7";
+                            obj = columna7ToolStripMenuItem;
+                            break;
+                        case ("C7"):
+                            txtNota.Text = "C8";
+                            obj = columna8ToolStripMenuItem;
+                            break;
+                        case ("C8"):
+                            txtNota.Text = "C9";
+                            obj = columna9ToolStripMenuItem;
+                            break;
+                        case ("C9"):
+                            txtNota.Text = "C1";
+                            obj = columna1ToolStripMenuItem;
+                            break;
+                    }
+                }
+                ColumnaEstado_Click(obj, eve);
+            }
+            else if (circuito == "RECUADRO")
+            {
+                if (cadena == string.Empty || cadena.Contains("F") || cadena.Contains("C"))
+                {
+                    cadena = "R1";
+                    txtNota.Text = cadena;
+                    obj = recuadro1ToolStripMenuItem;
+                }
+                else
+                {
+                    switch (cadena)
+                    {
+                        case ("R1"):
+                            txtNota.Text = "R2";
+                            obj = recuadro2ToolStripMenuItem;
+                            break;
+                        case ("R2"):
+                            txtNota.Text = "R3";
+                            obj = recuadro3ToolStripMenuItem;
+                            break;
+                        case ("R3"):
+                            txtNota.Text = "R4";
+                            obj = recuadro4ToolStripMenuItem;
+                            break;
+                        case ("R4"):
+                            txtNota.Text = "R5";
+                            obj = recuadro5ToolStripMenuItem;
+                            break;
+                        case ("R5"):
+                            txtNota.Text = "R6";
+                            obj = recuadro6ToolStripMenuItem;
+                            break;
+                        case ("R6"):
+                            txtNota.Text = "R7";
+                            obj = recuadro7ToolStripMenuItem;
+                            break;
+                        case ("R7"):
+                            txtNota.Text = "R8";
+                            obj = recuadro8ToolStripMenuItem;
+                            break;
+                        case ("R8"):
+                            txtNota.Text = "R9";
+                            obj = recuadro9ToolStripMenuItem;
+                            break;
+                        case ("R9"):
+                            txtNota.Text = "R1";
+                            obj = recuadro1ToolStripMenuItem;
+                            break;
+                    }
+                }
+                EstadoRecuadro_Click(obj, eve);
+            }
+            else
+            {
+                MessageBox.Show("ELIJA FILA, COLUMNA O RECUADRO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+         
+        }
+
+        private void btnGrup2_Click(object sender, EventArgs e)
+        {
+            string cadena = txtNota.Text;
+            object obj = null;
+            EventArgs eve = null;
+
+            if (circuito == "FILA")
+            {
+                if (cadena == string.Empty || cadena.Contains("C") || cadena.Contains("R"))
+                {
+                    cadena = "F9";
+                    txtNota.Text = cadena;
+                    obj = fila9ToolStripMenuItem;
+                }
+                else
+                {
+                    switch (cadena)
+                    {
+                        case ("F9"):
+                            txtNota.Text = "F8";
+                            obj = fila8ToolStripMenuItem;
+                            break;
+                        case ("F8"):
+                            txtNota.Text = "F7";
+                            obj = fila7ToolStripMenuItem;
+                            break;
+                        case ("F7"):
+                            txtNota.Text = "F6";
+                            obj = fila6ToolStripMenuItem;
+                            break;
+                        case ("F6"):
+                            txtNota.Text = "F5";
+                            obj = fila5ToolStripMenuItem;
+                            break;
+                        case ("F5"):
+                            txtNota.Text = "F4";
+                            obj = fila4ToolStripMenuItem;
+                            break;
+                        case ("F4"):
+                            txtNota.Text = "F3";
+                            obj = fila3ToolStripMenuItem;
+                            break;
+                        case ("F3"):
+                            txtNota.Text = "F2";
+                            obj = fila2ToolStripMenuItem;
+                            break;
+                        case ("F2"):
+                            txtNota.Text = "F1";
+                            obj = fila1ToolStripMenuItem;
+                            break;
+                        case ("F1"):
+                            txtNota.Text = "F9";
+                            obj = fila9ToolStripMenuItem;
+                            break;
+                    }
+                }
+                FilaEstado_Click(obj, eve);
+            }
+            else if (circuito == "COLUMNA")
+            {
+                if (cadena == string.Empty || cadena.Contains("F") || cadena.Contains("R"))
+                {
+                    cadena = "C9";
+                    txtNota.Text = cadena;
+                    obj = columna9ToolStripMenuItem;
+                }
+                else
+                {
+                    switch (cadena)
+                    {
+                        case ("C9"):
+                            txtNota.Text = "C8";
+                            obj = columna8ToolStripMenuItem;
+                            break;
+                        case ("C8"):
+                            txtNota.Text = "C7";
+                            obj = columna7ToolStripMenuItem;
+                            break;
+                        case ("C7"):
+                            txtNota.Text = "C6";
+                            obj = columna6ToolStripMenuItem;
+                            break;
+                        case ("C6"):
+                            txtNota.Text = "C5";
+                            obj = columna5ToolStripMenuItem;
+                            break;
+                        case ("C5"):
+                            txtNota.Text = "C4";
+                            obj = columna4ToolStripMenuItem;
+                            break;
+                        case ("C4"):
+                            txtNota.Text = "C3";
+                            obj = columna3ToolStripMenuItem;
+                            break;
+                        case ("C3"):
+                            txtNota.Text = "C2";
+                            obj = columna2ToolStripMenuItem;
+                            break;
+                        case ("C2"):
+                            txtNota.Text = "C1";
+                            obj = columna1ToolStripMenuItem;
+                            break;
+                        case ("C1"):
+                            txtNota.Text = "C9";
+                            obj = columna9ToolStripMenuItem;
+                            break;
+                    }
+                }
+                ColumnaEstado_Click(obj, eve);
+            }
+            else if (circuito == "RECUADRO")
+            {
+                if (cadena == string.Empty || cadena.Contains("F") || cadena.Contains("C"))
+                {
+                    cadena = "R9";
+                    txtNota.Text = cadena;
+                    obj = recuadro9ToolStripMenuItem;
+                }
+                else
+                {
+                    switch (cadena)
+                    {
+                        case ("R9"):
+                            txtNota.Text = "R8";
+                            obj = recuadro8ToolStripMenuItem;
+                            break;
+                        case ("R8"):
+                            txtNota.Text = "R7";
+                            obj = recuadro7ToolStripMenuItem;
+                            break;
+                        case ("R7"):
+                            txtNota.Text = "R6";
+                            obj = recuadro6ToolStripMenuItem;
+                            break;
+                        case ("R6"):
+                            txtNota.Text = "R5";
+                            obj = recuadro5ToolStripMenuItem;
+                            break;
+                        case ("R5"):
+                            txtNota.Text = "R4";
+                            obj = recuadro4ToolStripMenuItem;
+                            break;
+                        case ("R4"):
+                            txtNota.Text = "R3";
+                            obj = recuadro3ToolStripMenuItem;
+                            break;
+                        case ("R3"):
+                            txtNota.Text = "R2";
+                            obj = recuadro2ToolStripMenuItem;
+                            break;
+                        case ("R2"):
+                            txtNota.Text = "R1";
+                            obj = recuadro1ToolStripMenuItem;
+                            break;
+                        case ("R1"):
+                            txtNota.Text = "R9";
+                            obj = recuadro9ToolStripMenuItem;
+                            break;
+                    }
+                }
+                EstadoRecuadro_Click(obj, eve);
+            }
+            else
+            {
+                MessageBox.Show("ELIJA FILA, COLUMNA O RECUADRO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        //*************************************************************************************************
+
+        private void txt00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            if (pincelMarcador)
+            {
+                txtSudoku[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+
+            lado = EngineData.btnIzquierda;
+        }
+
+        private void txt00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+        }
+
+        private void txt00_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void txt00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            if (txt.Text == string.Empty)
+                txt.BackColor = Color.WhiteSmoke;
+            else
+                txt.BackColor = Color.LightCyan;
+        }
+
+        private void txt00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
+        }
+
+        //************************************************************************************************
+
+        private void t00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (pincelMarcador)
+            {
+                txtSudoku2[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+            lado = EngineData.btnDerecha;
+        }
+
+        private void t00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+            txt.Text = string.Empty;
+        }
+
+        private void t00_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku2[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku2[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void t00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            txt.BackColor = Color.WhiteSmoke;
+        }
+
+        private void t00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
+        }
+
+     
+
+
+
+        //***********************************************************************************************
 
     }
 }
