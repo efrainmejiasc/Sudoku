@@ -49,6 +49,8 @@ namespace SudokuParaTodos.Formularios
         string idiomaCultura = string.Empty;
         string idiomaNombre = string.Empty;
         string lado = string.Empty;
+        int numeroFiltrado = 0;
+        private string[,] valorFiltrado = new string[9, 9];
 
 
 
@@ -78,6 +80,7 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
+            //valorEliminado[8, 3] = "3 5";
             SetearJuego();
             ContadorIngresado();
         }
@@ -344,40 +347,50 @@ namespace SudokuParaTodos.Formularios
                 case (EngineData.Btn1):
                     lbl1.Text = Funcion.ContadorCandidatoEspecifico(EngineData.uno, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.uno,txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 1;
                     break;
                 case (EngineData.Btn2):
                     lbl2.Text = Funcion.ContadorCandidatoEspecifico(EngineData.dos, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.dos, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 2;
                     break;
                 case (EngineData.Btn3):
                     lbl3.Text = Funcion.ContadorCandidatoEspecifico(EngineData.tres, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.tres, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 3;
                     break;
                 case (EngineData.Btn4):
                     lbl4.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cuatro, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cuatro, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 4;
                     break;
                 case (EngineData.Btn5):
                     lbl5.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cinco, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cinco, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 5;
                     break;
                 case (EngineData.Btn6):
                     lbl6.Text = Funcion.ContadorCandidatoEspecifico(EngineData.seis, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.seis, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 6;
                     break;
                 case (EngineData.Btn7):
                     lbl7.Text = Funcion.ContadorCandidatoEspecifico(EngineData.siete, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.siete, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 7;
                     break;
                 case (EngineData.Btn8):
                     lbl8.Text = Funcion.ContadorCandidatoEspecifico(EngineData.ocho, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.ocho, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 8;
                     break;
                 case (EngineData.Btn9):
                     lbl9.Text = Funcion.ContadorCandidatoEspecifico(EngineData.nueve, valorIngresado, valorCandidatoSinEliminados);
                     txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.nueve, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    numeroFiltrado = 9;
                     break;
             }
+            valorFiltrado = Valor.GetNumFiltro();
         }
 
         private void ActualizarContadoresCandidatos()
@@ -473,7 +486,6 @@ namespace SudokuParaTodos.Formularios
                         SetearJuego();
                         return;
                     }
-
                     valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
                     valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     txtSudoku[row, col].BackColor = Color.WhiteSmoke;
@@ -485,26 +497,18 @@ namespace SudokuParaTodos.Formularios
                     if (lado != EngineData.btnDerecha) return;
                     string candidatoRestablecer = txtSudoku2[row, col].Text.Trim();
                     if (candidatoRestablecer == string.Empty) return;
-                    if (!valorEliminado[row, col].Contains(candidatoRestablecer))
-                    {
-                        ActualizarContadoresCandidatos();
-                        SetearJuego();
-                        ActualizarCandidato(candidatoRestablecer);
-                        return;
-                    }
                     if (candidatoRestablecer.Length == 1)
                     {
                         valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
                     }
                     else if (candidatoRestablecer.Length > 1)
                     {
-                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
-                        valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
-                    }
-                    else
-                    {
+                        // valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                        // valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                        //txtSudoku2[row, col].Text = valorEliminado[row, col];
                         return;
                     }
+
                     txtSudoku2[row, col].Text = valorEliminado[row, col];
                     ActualizarContadoresCandidatos();
                     SetearJuego();
@@ -579,14 +583,19 @@ namespace SudokuParaTodos.Formularios
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+
             if (txt.Text == EngineData.Zero)
             {
-                txt.Text = string.Empty;
+                txt.Text = valorFiltrado[row, col];
             }
             else
             {
-              if (valorEliminado[row,col].Contains(txt.Text)) { txt.Text = string.Empty; }
+               if (txt.Text != valorFiltrado[row, col])
+               {
+                    txt.Text = valorFiltrado[row, col];
+                }
             }
+
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
@@ -670,6 +679,15 @@ namespace SudokuParaTodos.Formularios
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
+
+            if (txt.Text == EngineData.Zero)
+            {
+                txt.Text = string.Empty;
+            }
+            else
+            {
+                if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
+            }
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)

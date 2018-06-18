@@ -79,6 +79,7 @@ namespace SudokuParaTodos.Formularios
                 valorIngresado = Valor.GetValorIngresado();
                 valorEliminado = Valor.GetValorEliminado();
                 valorInicio = Valor.GetValorInicio();
+                valorSolucion = Valor.GetValorSolucion();
                 ComportamientoObjetoInicio();
                 SetearJuego();
                 ContadorIngresado();
@@ -232,6 +233,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            Valor.SetValorSolucion(valorSolucion);
             AzulDos f = new AzulDos();
             f.Show();
             this.Hide();

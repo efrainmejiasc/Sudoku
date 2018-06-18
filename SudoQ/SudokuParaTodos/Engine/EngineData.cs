@@ -421,6 +421,19 @@ namespace SudokuParaTodos
             this.valorSolucion = vSolucion;
         }
 
+        private string[,] numFiltro = new string[9, 9];
+
+        public string[,] GetNumFiltro()
+        {
+            return numFiltro;
+        }
+
+        public void SetNumFiltro(string[,] vFiltro)
+        {
+            this.numFiltro = new string[9, 9];
+            this.numFiltro = vFiltro;
+        }
+
         //**********************************************************************************
 
         private bool objFrom  = false;

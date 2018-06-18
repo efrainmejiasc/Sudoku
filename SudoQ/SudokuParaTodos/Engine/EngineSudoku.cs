@@ -351,6 +351,7 @@ namespace SudokuParaTodos
 
         public TextBox[,] SetearTextBoxCandidatoEspecifico(string n,TextBox[,] cajaTexto, string[,] vIngresado, string[,] vCandidatoSinEliminados)
         {
+            string[,] numFiltro = new string[9, 9];
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
@@ -363,10 +364,12 @@ namespace SudokuParaTodos
                             cajaTexto[f, c].ForeColor = Color.Blue;
                             cajaTexto[f, c].BackColor = Color.LightCyan;
                             cajaTexto[f, c].Text = n;
+                            numFiltro[f, c] = n;
                         }
                         else
                         {
                             cajaTexto[f, c].Text = string.Empty;
+                            numFiltro[f, c] = string.Empty;
                             cajaTexto[f, c].BackColor = Color.WhiteSmoke;
                         }
                     }
@@ -378,6 +381,7 @@ namespace SudokuParaTodos
                     cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
                 }
             }
+            Valor.SetNumFiltro(numFiltro);
             return cajaTexto;
         }
 
