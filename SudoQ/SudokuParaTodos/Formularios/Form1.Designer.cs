@@ -48,10 +48,6 @@
             this.btnC = new System.Windows.Forms.Button();
             this.btnA = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mArchivo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mTablero = new System.Windows.Forms.ToolStripMenuItem();
-            this.mColores = new System.Windows.Forms.ToolStripMenuItem();
-            this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,6 +60,7 @@
             this.pincelA = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.lblSudoku = new System.Windows.Forms.Label();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
             this.txt87 = new System.Windows.Forms.TextBox();
@@ -228,10 +225,15 @@
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
+            this.mColores = new System.Windows.Forms.ToolStripMenuItem();
+            this.mTablero = new System.Windows.Forms.ToolStripMenuItem();
+            this.mArchivo = new System.Windows.Forms.ToolStripMenuItem();
             this.panel10.SuspendLayout();
             this.pnlJuego.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.pnl1.SuspendLayout();
             this.pnl2.SuspendLayout();
             this.SuspendLayout();
@@ -245,7 +247,6 @@
             this.panel10.Controls.Add(this.pincelG);
             this.panel10.Controls.Add(this.pnlJuego);
             this.panel10.Controls.Add(this.pnlLetra);
-            this.panel10.Controls.Add(this.menuStrip1);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.pincelE);
             this.panel10.Controls.Add(this.pincelD);
@@ -470,35 +471,11 @@
             this.mColores,
             this.mContadores,
             this.mIdiomas});
-            this.menuStrip1.Location = new System.Drawing.Point(186, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(196, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(456, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // mArchivo
-            // 
-            this.mArchivo.Name = "mArchivo";
-            this.mArchivo.Size = new System.Drawing.Size(70, 20);
-            this.mArchivo.Text = "ARCHIVO";
-            // 
-            // mTablero
-            // 
-            this.mTablero.Name = "mTablero";
-            this.mTablero.Size = new System.Drawing.Size(68, 20);
-            this.mTablero.Text = "TABLERO";
-            // 
-            // mColores
-            // 
-            this.mColores.Name = "mColores";
-            this.mColores.Size = new System.Drawing.Size(70, 20);
-            this.mColores.Text = "COLORES";
-            // 
-            // mContadores
-            // 
-            this.mContadores.Name = "mContadores";
-            this.mContadores.Size = new System.Drawing.Size(95, 20);
-            this.mContadores.Text = "CONTADORES";
             // 
             // mIdiomas
             // 
@@ -513,27 +490,28 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Gray;
+            this.panel11.Controls.Add(this.menuStrip1);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
@@ -619,6 +597,7 @@
             // 
             this.pnl1.BackColor = System.Drawing.Color.Silver;
             this.pnl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl1.Controls.Add(this.lblSudoku);
             this.pnl1.Controls.Add(this.txt88);
             this.pnl1.Controls.Add(this.txt85);
             this.pnl1.Controls.Add(this.txt87);
@@ -704,6 +683,16 @@
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
             this.pnl1.TabIndex = 69;
+            // 
+            // lblSudoku
+            // 
+            this.lblSudoku.AutoSize = true;
+            this.lblSudoku.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSudoku.Location = new System.Drawing.Point(187, 29);
+            this.lblSudoku.Name = "lblSudoku";
+            this.lblSudoku.Size = new System.Drawing.Size(178, 42);
+            this.lblSudoku.TabIndex = 93;
+            this.lblSudoku.Text = "SUDOKU";
             // 
             // txt88
             // 
@@ -3549,6 +3538,30 @@
             this.t00.Enter += new System.EventHandler(this.t00_Enter);
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
+            // mContadores
+            // 
+            this.mContadores.Name = "mContadores";
+            this.mContadores.Size = new System.Drawing.Size(95, 20);
+            this.mContadores.Text = "CONTADORES";
+            // 
+            // mColores
+            // 
+            this.mColores.Name = "mColores";
+            this.mColores.Size = new System.Drawing.Size(70, 20);
+            this.mColores.Text = "COLORES";
+            // 
+            // mTablero
+            // 
+            this.mTablero.Name = "mTablero";
+            this.mTablero.Size = new System.Drawing.Size(68, 20);
+            this.mTablero.Text = "TABLERO";
+            // 
+            // mArchivo
+            // 
+            this.mArchivo.Name = "mArchivo";
+            this.mArchivo.Size = new System.Drawing.Size(70, 20);
+            this.mArchivo.Text = "ARCHIVO";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3566,11 +3579,12 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.pnlJuego.ResumeLayout(false);
             this.pnlLetra.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
             this.pnl2.ResumeLayout(false);
@@ -3587,10 +3601,6 @@
         private System.Windows.Forms.Button pincelB;
         private System.Windows.Forms.Button pincelA;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mArchivo;
-        private System.Windows.Forms.ToolStripMenuItem mTablero;
-        private System.Windows.Forms.ToolStripMenuItem mColores;
-        private System.Windows.Forms.ToolStripMenuItem mContadores;
         private System.Windows.Forms.Button pincelJ;
         private System.Windows.Forms.Button pincelI;
         private System.Windows.Forms.Button pincelH;
@@ -3779,6 +3789,11 @@
         private System.Windows.Forms.TextBox t00;
         private System.Windows.Forms.Button btnSelectColor;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Label lblSudoku;
+        private System.Windows.Forms.ToolStripMenuItem mArchivo;
+        private System.Windows.Forms.ToolStripMenuItem mTablero;
+        private System.Windows.Forms.ToolStripMenuItem mColores;
+        private System.Windows.Forms.ToolStripMenuItem mContadores;
     }
 }
 

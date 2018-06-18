@@ -580,8 +580,12 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (lenguajeSi) e.Cancel = false;
-            else e.Cancel = true;
+            if (lenguajeSi)
+            {
+                DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result.ToString().ToUpper() == "YES") e.Cancel = false;
+                else e.Cancel = true;
+            }
         }
     }
 }

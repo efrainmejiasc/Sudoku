@@ -79,6 +79,7 @@ namespace SudokuParaTodos
             btnPincel = AsociarBtnPincel(btnPincel);
             ComportamientoObjInicio();
             ComportamientoObjExpandido();
+            SetPantallaInicio();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -215,6 +216,37 @@ namespace SudokuParaTodos
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else mIdiomas.Text = EngineData.IDIOMAS;
+        }
+
+        private void SetPantallaInicio()
+        {
+            string[,] pantallaIni = new string[9, 9];
+            pantallaIni[0, 0] = "7";
+            pantallaIni[0, 7] = "8";
+            pantallaIni[0, 8] = "1";
+            pantallaIni[2, 1] = "2";
+            pantallaIni[2, 3] = "5";
+            pantallaIni[2, 4] = "9";
+            pantallaIni[4, 2] = "6";
+            pantallaIni[4, 5] = "3";
+            pantallaIni[5, 4] = "4";
+            pantallaIni[3, 6] = "8";
+
+            pantallaIni[6, 1] = "1";
+            pantallaIni[6, 5] = "6";
+            pantallaIni[7, 6] = "7";
+            pantallaIni[8, 6] = "4";
+            pantallaIni[8, 6] = "5";
+            pantallaIni[8, 8] = "9";
+
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    txtSudoku[f, c].Text = pantallaIni[f, c];
+                }
+            }
+
         }
 
         private void ComportamientoObjInicio2()
@@ -402,6 +434,11 @@ namespace SudokuParaTodos
 
         private void Lenguaje_Click(object sender, EventArgs e)
         {
+            lblSudoku.Visible = EngineData.Falso;
+            if (!lenguajeSi)
+            {
+                Funcion.SetearTextBoxLimpio(txtSudoku);
+            }
             EngineData Valor = EngineData.Instance();
             ToolStripMenuItem toolStrip = sender as ToolStripMenuItem;
             switch (toolStrip.Name)
@@ -771,8 +808,12 @@ namespace SudokuParaTodos
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (lenguajeSi) e.Cancel = false;
-            else e.Cancel = true;
+            if (lenguajeSi)
+            {
+                DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result.ToString().ToUpper() == "YES") e.Cancel = false;
+                else e.Cancel = true;
+            }
         }
     }
 }

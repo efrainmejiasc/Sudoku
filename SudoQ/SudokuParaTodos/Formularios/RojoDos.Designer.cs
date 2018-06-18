@@ -111,6 +111,7 @@
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnGrup2 = new System.Windows.Forms.Button();
             this.btnGrup = new System.Windows.Forms.Button();
             this.txtNota = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -278,7 +279,6 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnGrup2 = new System.Windows.Forms.Button();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1863,6 +1863,22 @@
             this.panel10.Size = new System.Drawing.Size(1204, 165);
             this.panel10.TabIndex = 90;
             // 
+            // btnGrup2
+            // 
+            this.btnGrup2.BackColor = System.Drawing.Color.Silver;
+            this.btnGrup2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.btnGrup2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGrup2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnGrup2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrup2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrup2.ForeColor = System.Drawing.Color.Silver;
+            this.btnGrup2.Location = new System.Drawing.Point(266, 130);
+            this.btnGrup2.Name = "btnGrup2";
+            this.btnGrup2.Size = new System.Drawing.Size(36, 24);
+            this.btnGrup2.TabIndex = 95;
+            this.btnGrup2.UseVisualStyleBackColor = false;
+            this.btnGrup2.Click += new System.EventHandler(this.btnGrup2_Click);
+            // 
             // btnGrup
             // 
             this.btnGrup.BackColor = System.Drawing.Color.Silver;
@@ -2298,6 +2314,7 @@
             // btnEL
             // 
             this.btnEL.BackColor = System.Drawing.Color.Silver;
+            this.btnEL.Enabled = false;
             this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2312,6 +2329,7 @@
             // btnR
             // 
             this.btnR.BackColor = System.Drawing.Color.Silver;
+            this.btnR.Enabled = false;
             this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -4015,22 +4033,6 @@
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Celdas";
-            // 
-            // btnGrup2
-            // 
-            this.btnGrup2.BackColor = System.Drawing.Color.Silver;
-            this.btnGrup2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.btnGrup2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGrup2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnGrup2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrup2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrup2.ForeColor = System.Drawing.Color.Silver;
-            this.btnGrup2.Location = new System.Drawing.Point(266, 130);
-            this.btnGrup2.Name = "btnGrup2";
-            this.btnGrup2.Size = new System.Drawing.Size(36, 24);
-            this.btnGrup2.TabIndex = 95;
-            this.btnGrup2.UseVisualStyleBackColor = false;
-            this.btnGrup2.Click += new System.EventHandler(this.btnGrup2_Click);
             // 
             // RojoDos
             // 

@@ -467,6 +467,13 @@ namespace SudokuParaTodos.Formularios
                     if (lado != EngineData.btnIzquierda) return;
                     string candidatoEliminar = txtSudoku[row,col].Text;
                     if (candidatoEliminar == string.Empty) return;
+                    if (valorEliminado[row, col].Contains(candidatoEliminar))
+                    {
+                        ActualizarContadoresCandidatos();
+                        SetearJuego();
+                        return;
+                    }
+
                     valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
                     valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     txtSudoku[row, col].BackColor = Color.WhiteSmoke;
@@ -478,6 +485,13 @@ namespace SudokuParaTodos.Formularios
                     if (lado != EngineData.btnDerecha) return;
                     string candidatoRestablecer = txtSudoku2[row, col].Text.Trim();
                     if (candidatoRestablecer == string.Empty) return;
+                    if (!valorEliminado[row, col].Contains(candidatoRestablecer))
+                    {
+                        ActualizarContadoresCandidatos();
+                        SetearJuego();
+                        ActualizarCandidato(candidatoRestablecer);
+                        return;
+                    }
                     if (candidatoRestablecer.Length == 1)
                     {
                         valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
@@ -565,6 +579,14 @@ namespace SudokuParaTodos.Formularios
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (txt.Text == EngineData.Zero)
+            {
+                txt.Text = string.Empty;
+            }
+            else
+            {
+              if (valorEliminado[row,col].Contains(txt.Text)) { txt.Text = string.Empty; }
+            }
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
