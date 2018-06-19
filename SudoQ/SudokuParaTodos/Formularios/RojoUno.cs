@@ -722,6 +722,11 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
-       //******************************************************************************     
+        //******************************************************************************     
+        private void RojoUno_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
     }
 }

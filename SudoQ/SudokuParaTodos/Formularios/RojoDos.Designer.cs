@@ -279,6 +279,7 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -375,7 +376,7 @@
             this.pnl1.Location = new System.Drawing.Point(12, 171);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(548, 434);
-            this.pnl1.TabIndex = 0;
+            this.pnl1.TabIndex = 21;
             // 
             // txt88
             // 
@@ -1838,6 +1839,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.button2);
             this.panel10.Controls.Add(this.btnGrup2);
             this.panel10.Controls.Add(this.btnGrup);
             this.panel10.Controls.Add(this.txtNota);
@@ -1861,7 +1863,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1204, 165);
-            this.panel10.TabIndex = 90;
+            this.panel10.TabIndex = 3;
             // 
             // btnGrup2
             // 
@@ -1916,11 +1918,12 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(632, 36);
+            this.button1.Location = new System.Drawing.Point(673, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 24);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel11
             // 
@@ -1962,20 +1965,23 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
+            this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
+            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Português";
+            this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // cONTADORESToolStripMenuItem
             // 
@@ -2292,7 +2298,7 @@
             this.btnAA.Location = new System.Drawing.Point(32, 33);
             this.btnAA.Name = "btnAA";
             this.btnAA.Size = new System.Drawing.Size(25, 24);
-            this.btnAA.TabIndex = 1;
+            this.btnAA.TabIndex = 2;
             this.btnAA.Text = "A";
             this.btnAA.UseVisualStyleBackColor = false;
             this.btnAA.Click += new System.EventHandler(this.btnAA_Click);
@@ -2314,7 +2320,6 @@
             // btnEL
             // 
             this.btnEL.BackColor = System.Drawing.Color.Silver;
-            this.btnEL.Enabled = false;
             this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2329,7 +2334,6 @@
             // btnR
             // 
             this.btnR.BackColor = System.Drawing.Color.Silver;
-            this.btnR.Enabled = false;
             this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2467,7 +2471,7 @@
             this.pnlLetra.Location = new System.Drawing.Point(412, 27);
             this.pnlLetra.Name = "pnlLetra";
             this.pnlLetra.Size = new System.Drawing.Size(152, 88);
-            this.pnlLetra.TabIndex = 60;
+            this.pnlLetra.TabIndex = 3;
             // 
             // btnE
             // 
@@ -2487,7 +2491,7 @@
             this.btnG.Location = new System.Drawing.Point(103, 45);
             this.btnG.Name = "btnG";
             this.btnG.Size = new System.Drawing.Size(44, 38);
-            this.btnG.TabIndex = 5;
+            this.btnG.TabIndex = 3;
             this.btnG.Text = "g";
             this.btnG.UseVisualStyleBackColor = false;
             // 
@@ -2521,7 +2525,7 @@
             this.btnC.Location = new System.Drawing.Point(53, 1);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 38);
-            this.btnC.TabIndex = 1;
+            this.btnC.TabIndex = 2;
             this.btnC.Text = "c";
             this.btnC.UseVisualStyleBackColor = false;
             // 
@@ -2532,7 +2536,7 @@
             this.btnA.Location = new System.Drawing.Point(3, 1);
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(44, 38);
-            this.btnA.TabIndex = 0;
+            this.btnA.TabIndex = 1;
             this.btnA.Text = "a";
             this.btnA.UseVisualStyleBackColor = false;
             // 
@@ -2547,7 +2551,7 @@
             this.tC1.Name = "tC1";
             this.tC1.ReadOnly = true;
             this.tC1.Size = new System.Drawing.Size(36, 33);
-            this.tC1.TabIndex = 4;
+            this.tC1.TabIndex = 20;
             this.tC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tC2
@@ -2561,7 +2565,7 @@
             this.tC2.Name = "tC2";
             this.tC2.ReadOnly = true;
             this.tC2.Size = new System.Drawing.Size(36, 33);
-            this.tC2.TabIndex = 5;
+            this.tC2.TabIndex = 11;
             this.tC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tC3
@@ -2575,7 +2579,7 @@
             this.tC3.Name = "tC3";
             this.tC3.ReadOnly = true;
             this.tC3.Size = new System.Drawing.Size(36, 33);
-            this.tC3.TabIndex = 6;
+            this.tC3.TabIndex = 14;
             this.tC3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tC4
@@ -4023,7 +4027,7 @@
             this.pnl2.Location = new System.Drawing.Point(637, 171);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(555, 445);
-            this.pnl2.TabIndex = 1;
+            this.pnl2.TabIndex = 18;
             // 
             // label1
             // 
@@ -4033,6 +4037,22 @@
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Celdas";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.Location = new System.Drawing.Point(637, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 24);
+            this.button2.TabIndex = 96;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RojoDos
             // 
@@ -4061,10 +4081,11 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "RojoDos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoDos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RojoDos_FormClosing);
             this.Load += new System.EventHandler(this.RojoDos_Load);
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
@@ -4334,5 +4355,6 @@
         private System.Windows.Forms.ToolStripMenuItem cOLUMNASToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem rECUADROToolStripMenuItem;
         private System.Windows.Forms.Button btnGrup2;
+        private System.Windows.Forms.Button button2;
     }
 }
