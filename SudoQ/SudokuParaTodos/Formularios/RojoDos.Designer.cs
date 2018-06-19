@@ -111,6 +111,7 @@
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnGrup2 = new System.Windows.Forms.Button();
             this.btnGrup = new System.Windows.Forms.Button();
             this.txtNota = new System.Windows.Forms.TextBox();
@@ -161,8 +162,6 @@
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.btnAA = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
-            this.btnEL = new System.Windows.Forms.Button();
-            this.btnR = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
             this.pincelH = new System.Windows.Forms.Button();
             this.pincelG = new System.Windows.Forms.Button();
@@ -279,7 +278,8 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnR = new System.Windows.Forms.Button();
+            this.btnEL = new System.Windows.Forms.Button();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1865,6 +1865,22 @@
             this.panel10.Size = new System.Drawing.Size(1204, 165);
             this.panel10.TabIndex = 3;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.Location = new System.Drawing.Point(637, 36);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 24);
+            this.button2.TabIndex = 96;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // btnGrup2
             // 
             this.btnGrup2.BackColor = System.Drawing.Color.Silver;
@@ -1905,6 +1921,7 @@
             this.txtNota.Margin = new System.Windows.Forms.Padding(2);
             this.txtNota.MaxLength = 7;
             this.txtNota.Name = "txtNota";
+            this.txtNota.ReadOnly = true;
             this.txtNota.Size = new System.Drawing.Size(36, 24);
             this.txtNota.TabIndex = 61;
             this.txtNota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1965,21 +1982,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -2316,34 +2333,6 @@
             this.pincelJ.TabIndex = 13;
             this.pincelJ.UseVisualStyleBackColor = false;
             this.pincelJ.Click += new System.EventHandler(this.ColorMarcador_Click);
-            // 
-            // btnEL
-            // 
-            this.btnEL.BackColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(97, 64);
-            this.btnEL.Name = "btnEL";
-            this.btnEL.Size = new System.Drawing.Size(25, 24);
-            this.btnEL.TabIndex = 3;
-            this.btnEL.Text = "E";
-            this.btnEL.UseVisualStyleBackColor = false;
-            // 
-            // btnR
-            // 
-            this.btnR.BackColor = System.Drawing.Color.Silver;
-            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnR.ForeColor = System.Drawing.Color.Black;
-            this.btnR.Location = new System.Drawing.Point(97, 33);
-            this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(25, 24);
-            this.btnR.TabIndex = 2;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = false;
             // 
             // pincelI
             // 
@@ -4038,21 +4027,35 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Celdas";
             // 
-            // button2
+            // btnR
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(637, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 24);
-            this.button2.TabIndex = 96;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnR.BackColor = System.Drawing.Color.Silver;
+            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnR.ForeColor = System.Drawing.Color.Black;
+            this.btnR.Location = new System.Drawing.Point(97, 33);
+            this.btnR.Name = "btnR";
+            this.btnR.Size = new System.Drawing.Size(25, 24);
+            this.btnR.TabIndex = 2;
+            this.btnR.Text = "R";
+            this.btnR.UseVisualStyleBackColor = false;
+            this.btnR.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
+            // 
+            // btnEL
+            // 
+            this.btnEL.BackColor = System.Drawing.Color.Silver;
+            this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEL.ForeColor = System.Drawing.Color.Black;
+            this.btnEL.Location = new System.Drawing.Point(97, 64);
+            this.btnEL.Name = "btnEL";
+            this.btnEL.Size = new System.Drawing.Size(25, 24);
+            this.btnEL.TabIndex = 3;
+            this.btnEL.Text = "E";
+            this.btnEL.UseVisualStyleBackColor = false;
+            this.btnEL.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
             // 
             // RojoDos
             // 
@@ -4200,8 +4203,6 @@
         private System.Windows.Forms.Button btnSelectColor;
         private System.Windows.Forms.Button btnAA;
         private System.Windows.Forms.Button pincelJ;
-        private System.Windows.Forms.Button btnEL;
-        private System.Windows.Forms.Button btnR;
         private System.Windows.Forms.Button pincelI;
         private System.Windows.Forms.Button pincelH;
         private System.Windows.Forms.Button pincelG;
@@ -4356,5 +4357,7 @@
         private System.Windows.Forms.ToolStripMenuItem rECUADROToolStripMenuItem;
         private System.Windows.Forms.Button btnGrup2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEL;
+        private System.Windows.Forms.Button btnR;
     }
 }

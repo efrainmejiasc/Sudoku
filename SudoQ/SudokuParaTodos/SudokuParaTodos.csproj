@@ -120,6 +120,12 @@
     <Compile Include="Formularios\RojoDos.Designer.cs">
       <DependentUpon>RojoDos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\RojoTres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RojoTres.Designer.cs">
+      <DependentUpon>RojoTres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\RojoUno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RojoDos.resx">
       <DependentUpon>RojoDos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RojoTres.resx">
+      <DependentUpon>RojoTres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RojoUno.resx">
       <DependentUpon>RojoUno.cs</DependentUpon>

@@ -2052,5 +2052,7 @@ namespace SudokuParaTodos
             }
         }
 
+       
+
     }
 }

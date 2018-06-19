@@ -235,9 +235,7 @@ namespace SudokuParaTodos.Formularios
         {
             valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-            //txtSudoku = Funcion.SetearTextBoxCandidatos(txtSudoku, valorIngresado, valorCandidatoSinEliminados);
             txtSudoku2 = Funcion.SetearTextBoxEliminados(txtSudoku2, valorEliminado);
-            //ActualizarContadoresCandidatos();
         }
 
         private void ContadorIngresado()
@@ -303,6 +301,9 @@ namespace SudokuParaTodos.Formularios
 
         private void btnAA_Click(object sender, EventArgs e)
         {
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorEliminado(valorEliminado);
             AzulDos F = new AzulDos();
             F.Show();
             this.Hide();
@@ -460,14 +461,17 @@ namespace SudokuParaTodos.Formularios
             {
                 case (EngineData.eliminar):
                     if (lado != EngineData.btnIzquierda) return;
+                    if (txtNota.Text == string.Empty) return;
                     string candidatoEliminar = txtSudoku[row, col].Text;
                     if (candidatoEliminar == string.Empty) return;
-                    valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
-                    valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                    int[] fc = new int[2];
+                    fc = ProcesoEliminar();
+                    valorEliminado[fc[0],fc[1]] = valorEliminado[fc[0], fc[1]] + " " + candidatoEliminar;
+                    valorEliminado[fc[0], fc[1]] = Funcion.OrdenarCadena(valorEliminado[fc[0], fc[1]]);
                     txtSudoku[row, col].BackColor = Color.WhiteSmoke;
                     txtSudoku[row, col].Text = string.Empty;
-                    //ActualizarContadoresCandidatos();
                     SetearJuego();
+                    GrupoActualizar();
                     break;
                 case (EngineData.restablecer):
                     if (lado != EngineData.btnDerecha) return;
@@ -479,20 +483,31 @@ namespace SudokuParaTodos.Formularios
                     }
                     else if (candidatoRestablecer.Length > 1)
                     {
-                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
-                        valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
-                    }
-                    else
-                    {
                         return;
                     }
                     txtSudoku2[row, col].Text = valorEliminado[row, col];
-                    //ActualizarContadoresCandidatos();
                     SetearJuego();
-                    //ActualizarCandidato(candidatoRestablecer);
                     break;
             }
             ContadorIngresado();
+        }
+
+        public int [] ProcesoEliminar ()
+        {
+            int[] fc = new int [2];
+            string celda = string.Empty;
+            if (row == 0) { celda = tC1.Text; }
+            else if (row == 1) { celda = tC2.Text; }
+            else if (row == 2) { celda = tC3.Text; }
+            else if (row == 3) { celda = tC4.Text; }
+            else if (row == 4) { celda = tC5.Text; }
+            else if (row == 5) { celda = tC6.Text; }
+            else if (row == 6) { celda = tC7.Text; }
+            else if (row == 7) { celda = tC8.Text; }
+            else if (row == 8) { celda = tC9.Text; }
+            fc[0] = Convert.ToInt16(celda.Trim().Substring(0, 1)) - 1;
+            fc[1] = Convert.ToInt16(celda.Trim().Substring(1, 1)) - 1;
+            return fc;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -873,6 +888,124 @@ namespace SudokuParaTodos.Formularios
 
         }
 
+        private void GrupoActualizar()
+        {
+            string cadena = txtNota.Text;
+            object obj = null;
+            EventArgs eve = null;
+            switch (cadena)
+            {
+                case ("F1"):
+                    obj = fila1ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F2"):
+                    obj = fila2ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F3"):
+                    obj = fila3ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F4"):
+                    obj = fila4ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F5"):
+                    obj = fila5ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F6"):
+                    obj = fila6ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F7"):
+                    obj = fila7ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F8"):
+                    obj = fila8ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("F9"):
+                    obj = fila9ToolStripMenuItem;
+                    FilaEstado_Click(obj, eve);
+                    break;
+                case ("C1"):
+                    obj = columna1ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C2"):
+                    obj = columna2ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C3"):
+                    obj = columna3ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C4"):
+                    obj = columna4ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C5"):
+                    obj = columna5ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C6"):
+                    obj = columna6ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C7"):
+                    obj = columna7ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C8"):
+                    obj = columna8ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("C9"):
+                    obj = columna9ToolStripMenuItem;
+                    ColumnaEstado_Click(obj, eve);
+                    break;
+                case ("R1"):
+                    obj = recuadro1ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R2"):
+                    obj = recuadro2ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R3"):
+                    obj = recuadro3ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R4"):
+                    obj = recuadro4ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R5"):
+                    obj = recuadro5ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R6"):
+                    obj = recuadro6ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R7"):
+                    obj = recuadro7ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R8"):
+                    obj = recuadro8ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+                case ("R9"):
+                    obj = recuadro9ToolStripMenuItem;
+                    EstadoRecuadro_Click(obj, eve);
+                    break;
+            }
+        }
+
         private void Lenguaje_Click(object sender, EventArgs e)
         {
             EngineData Valor = EngineData.Instance();
@@ -903,7 +1036,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            RojoUno f = new RojoUno();
+            RojoTres f = new RojoTres();
             f.Show();
             this.Hide();
         }

@@ -80,7 +80,6 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
-            //valorEliminado[8, 3] = "3 5";
             SetearJuego();
             ContadorIngresado();
         }
@@ -268,6 +267,9 @@ namespace SudokuParaTodos.Formularios
 
         private void btnAA_Click(object sender, EventArgs e)
         {
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorEliminado(valorEliminado);
             AzulDos F = new AzulDos();
             F.Show();
             this.Hide();
@@ -480,11 +482,14 @@ namespace SudokuParaTodos.Formularios
                     if (lado != EngineData.btnIzquierda) return;
                     string candidatoEliminar = txtSudoku[row,col].Text;
                     if (candidatoEliminar == string.Empty) return;
-                    if (valorEliminado[row, col].Contains(candidatoEliminar))
+                    if (valorEliminado[row, col] != null)
                     {
-                        ActualizarContadoresCandidatos();
-                        SetearJuego();
-                        return;
+                        if (valorEliminado[row, col].Contains(candidatoEliminar))
+                        {
+                            ActualizarContadoresCandidatos();
+                            SetearJuego();
+                            return;
+                        }
                     }
                     valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
                     valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);

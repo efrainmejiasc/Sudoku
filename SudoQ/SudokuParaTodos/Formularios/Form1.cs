@@ -53,11 +53,15 @@ namespace SudokuParaTodos
         public Form1()
         {
             InitializeComponent();
+            txtSudoku = AsociarTxtMatriz(txtSudoku);
+            txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
+            SetPantallaInicio();
         }
 
         public Form1(string idioma)
         {
             InitializeComponent();
+            lblSudoku.Visible = EngineData.Falso;
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(idioma);
             Valor.SetIdioma(idioma);
             Funcion.AsociarExtension();
@@ -79,7 +83,6 @@ namespace SudokuParaTodos
             btnPincel = AsociarBtnPincel(btnPincel);
             ComportamientoObjInicio();
             ComportamientoObjExpandido();
-            SetPantallaInicio();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -283,7 +286,8 @@ namespace SudokuParaTodos
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
-        }
+            lenguajeSi = EngineData.Verdadero;
+    }
 
         private void ComportamientoObjExpandido()
         {
