@@ -81,6 +81,29 @@ namespace SudokuParaTodos.Formularios
             valorEliminado = Valor.GetValorEliminado();
             SetearJuego();
             ContadorIngresado();
+            QuitarCosete();
+        }
+
+        private void QuitarCosete()
+        {
+            tC1.GotFocus += delegate { HideCaret(tC1.Handle); };
+            tC2.GotFocus += delegate { HideCaret(tC2.Handle); };
+            tC3.GotFocus += delegate { HideCaret(tC3.Handle); };
+            tC4.GotFocus += delegate { HideCaret(tC4.Handle); };
+            tC5.GotFocus += delegate { HideCaret(tC5.Handle); };
+            tC6.GotFocus += delegate { HideCaret(tC6.Handle); };
+            tC7.GotFocus += delegate { HideCaret(tC7.Handle); };
+            tC8.GotFocus += delegate { HideCaret(tC8.Handle); };
+            tC9.GotFocus += delegate { HideCaret(tC9.Handle); };
+            textBox10.GotFocus += delegate { HideCaret(textBox10.Handle); };
+            textBox11.GotFocus += delegate { HideCaret(textBox11.Handle); };
+            textBox12.GotFocus += delegate { HideCaret(textBox12.Handle); };
+            textBox13.GotFocus += delegate { HideCaret(textBox13.Handle); };
+            textBox14.GotFocus += delegate { HideCaret(textBox14.Handle); };
+            textBox15.GotFocus += delegate { HideCaret(textBox15.Handle); };
+            textBox16.GotFocus += delegate { HideCaret(textBox16.Handle); };
+            textBox17.GotFocus += delegate { HideCaret(textBox17.Handle); };
+            textBox18.GotFocus += delegate { HideCaret(textBox18.Handle); };
         }
 
         private void AplicarIdioma()

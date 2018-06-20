@@ -830,10 +830,16 @@ namespace SudokuParaTodos
                 DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result.ToString().ToUpper() == "YES")
                 {
-                    Funcion.Salir();
                     e.Cancel = false;
                 }
-                else { e.Cancel = true; }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }

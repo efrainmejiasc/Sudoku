@@ -591,7 +591,10 @@ namespace SudokuParaTodos.Formularios
                     Funcion.Salir();
                     e.Cancel = false;
                 }
-                else { e.Cancel = true; }
+                else
+                {
+                    e.Cancel = true;
+                }
             //}
         }
     }
