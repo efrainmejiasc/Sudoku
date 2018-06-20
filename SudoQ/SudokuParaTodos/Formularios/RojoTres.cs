@@ -432,6 +432,31 @@ namespace SudokuParaTodos.Formularios
             this.Hide();
         }
 
+        private void Lenguaje_Click(object sender, EventArgs e)
+        {
+            EngineData Valor = EngineData.Instance();
+            ToolStripMenuItem toolStrip = sender as ToolStripMenuItem;
+            switch (toolStrip.Name)
+            {
+                case (EngineData.Español):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
+                    Valor.SetIdioma(EngineData.CulturaEspañol);
+                    Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
+                    break;
+                case (EngineData.Ingles):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
+                    Valor.SetIdioma(EngineData.CulturaIngles);
+                    Valor.SetNombreIdioma(EngineData.LenguajeIngles);
+                    break;
+                case (EngineData.Portugues):
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
+                    Valor.SetIdioma(EngineData.CulturaPortugues);
+                    Valor.SetNombreIdioma(EngineData.LenguajePortugues);
+                    break;
+            }
+            AplicarIdioma();
+        }
+
         //*************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
