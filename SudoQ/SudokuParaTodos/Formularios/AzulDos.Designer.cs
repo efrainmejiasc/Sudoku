@@ -3812,7 +3812,7 @@
             this.Name = "AzulDos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AzulDos";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AzulDos_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AzulDos_FormClosing);
             this.Load += new System.EventHandler(this.AzulDos_Load);
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();

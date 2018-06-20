@@ -138,6 +138,7 @@ namespace SudokuParaTodos.Formularios
         {
             this.Text = Valor.TituloFormR1(Valor.GetNombreIdioma());
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mContadores.Text = RecursosLocalizables.StringResources.mContadores;
             activar.Text = RecursosLocalizables.StringResources.activar;
             desactivar.Text = RecursosLocalizables.StringResources.desactivar;
         }

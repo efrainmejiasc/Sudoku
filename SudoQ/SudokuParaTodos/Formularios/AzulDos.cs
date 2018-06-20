@@ -696,9 +696,15 @@ namespace SudokuParaTodos.Formularios
             ContadorIngresado();
         }
 
-        private void AzulDos_FormClosed(object sender, FormClosedEventArgs e)
+        private void AzulDos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Funcion.Salir();
+            DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result.ToString().ToUpper() == "YES")
+            {
+                Funcion.Salir();
+                e.Cancel = false;
+            }
+            else { e.Cancel = true; }
         }
     }
 }

@@ -2031,25 +2031,17 @@ namespace SudokuParaTodos
         // SALIDA DEL SISTEMA 
 
         public void Salir()
-        {  
-            DialogResult result = MessageBox.Show("DESEA SALIR DE LA APLICACION ?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result.ToString().ToUpper() == "YES")
-            {
-                Form1 f = new Form1();
-                f.Close();
-                Formularios.AzulUno a = new Formularios.AzulUno();
-                a.Close();
-                Formularios.AzulDos a2 = new Formularios.AzulDos();
-                a2.Close();
-                Formularios.RojoUno r = new Formularios.RojoUno();
-                r.Close();
-                Formularios.RojoDos r2 = new Formularios.RojoDos();
-                r2.Close();
-            }
-            else
-            {
-                return;
-            }
+        {
+            Form1 f = new Form1();
+            f.Close();
+            Formularios.AzulUno a = new Formularios.AzulUno();
+            a.Close();
+            Formularios.AzulDos a2 = new Formularios.AzulDos();
+            a2.Close();
+            Formularios.RojoUno r = new Formularios.RojoUno();
+            r.Close();
+            Formularios.RojoDos r2 = new Formularios.RojoDos();
+            r2.Close();
         }
 
        

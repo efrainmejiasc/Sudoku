@@ -205,11 +205,29 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a COLUMNAS.
+        /// </summary>
+        internal static string mColumnas {
+            get {
+                return ResourceManager.GetString("mColumnas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a CONTADORES.
         /// </summary>
         internal static string mContadores {
             get {
                 return ResourceManager.GetString("mContadores", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FILAS.
+        /// </summary>
+        internal static string mFilas {
+            get {
+                return ResourceManager.GetString("mFilas", resourceCulture);
             }
         }
         
@@ -246,6 +264,15 @@ namespace SudokuParaTodos.RecursosLocalizables {
         internal static string mIPortugues {
             get {
                 return ResourceManager.GetString("mIPortugues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a RECUADROS.
+        /// </summary>
+        internal static string mRecuadros {
+            get {
+                return ResourceManager.GetString("mRecuadros", resourceCulture);
             }
         }
         

@@ -122,7 +122,7 @@
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTADORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.activar = new System.Windows.Forms.ToolStripMenuItem();
             this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
             this.gRUPOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -156,12 +156,14 @@
             this.recuadro7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuadro8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recuadro9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fILASToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cOLUMNASToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rECUADROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mFilas = new System.Windows.Forms.ToolStripMenuItem();
+            this.mColumnas = new System.Windows.Forms.ToolStripMenuItem();
+            this.mRecuadros = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.btnAA = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
+            this.btnEL = new System.Windows.Forms.Button();
+            this.btnR = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
             this.pincelH = new System.Windows.Forms.Button();
             this.pincelG = new System.Windows.Forms.Button();
@@ -278,8 +280,6 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnR = new System.Windows.Forms.Button();
-            this.btnEL = new System.Windows.Forms.Button();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1958,14 +1958,14 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mIdiomas,
-            this.cONTADORESToolStripMenuItem,
+            this.mContadores,
             this.gRUPOSToolStripMenuItem,
-            this.fILASToolStripMenuItem1,
-            this.cOLUMNASToolStripMenuItem1,
-            this.rECUADROToolStripMenuItem});
+            this.mFilas,
+            this.mColumnas,
+            this.mRecuadros});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(460, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(616, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2000,26 +2000,26 @@
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
-            // cONTADORESToolStripMenuItem
+            // mContadores
             // 
-            this.cONTADORESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mContadores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.activar,
             this.desactivar});
-            this.cONTADORESToolStripMenuItem.Name = "cONTADORESToolStripMenuItem";
-            this.cONTADORESToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.cONTADORESToolStripMenuItem.Text = "CONTADORES";
+            this.mContadores.Name = "mContadores";
+            this.mContadores.Size = new System.Drawing.Size(95, 20);
+            this.mContadores.Text = "CONTADORES";
             // 
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(152, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(152, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -2047,7 +2047,7 @@
             this.fila8ToolStripMenuItem,
             this.fila9ToolStripMenuItem});
             this.filasToolStripMenuItem.Name = "filasToolStripMenuItem";
-            this.filasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.filasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.filasToolStripMenuItem.Text = "Filas";
             // 
             // fila1ToolStripMenuItem
@@ -2126,7 +2126,7 @@
             this.columna8ToolStripMenuItem,
             this.columna9ToolStripMenuItem});
             this.columnasToolStripMenuItem.Name = "columnasToolStripMenuItem";
-            this.columnasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.columnasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.columnasToolStripMenuItem.Text = "Columnas";
             // 
             // columna1ToolStripMenuItem
@@ -2205,7 +2205,7 @@
             this.recuadro8ToolStripMenuItem,
             this.recuadro9ToolStripMenuItem});
             this.recuadrosToolStripMenuItem.Name = "recuadrosToolStripMenuItem";
-            this.recuadrosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.recuadrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.recuadrosToolStripMenuItem.Text = "Recuadros";
             // 
             // recuadro1ToolStripMenuItem
@@ -2271,26 +2271,26 @@
             this.recuadro9ToolStripMenuItem.Text = "Recuadro 9";
             this.recuadro9ToolStripMenuItem.Click += new System.EventHandler(this.EstadoRecuadro_Click);
             // 
-            // fILASToolStripMenuItem1
+            // mFilas
             // 
-            this.fILASToolStripMenuItem1.Name = "fILASToolStripMenuItem1";
-            this.fILASToolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
-            this.fILASToolStripMenuItem1.Text = "FILAS";
-            this.fILASToolStripMenuItem1.Click += new System.EventHandler(this.fILASToolStripMenuItem1_Click);
+            this.mFilas.Name = "mFilas";
+            this.mFilas.Size = new System.Drawing.Size(48, 20);
+            this.mFilas.Text = "FILAS";
+            this.mFilas.Click += new System.EventHandler(this.fILASToolStripMenuItem1_Click);
             // 
-            // cOLUMNASToolStripMenuItem1
+            // mColumnas
             // 
-            this.cOLUMNASToolStripMenuItem1.Name = "cOLUMNASToolStripMenuItem1";
-            this.cOLUMNASToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
-            this.cOLUMNASToolStripMenuItem1.Text = "COLUMNAS";
-            this.cOLUMNASToolStripMenuItem1.Click += new System.EventHandler(this.cOLUMNASToolStripMenuItem1_Click);
+            this.mColumnas.Name = "mColumnas";
+            this.mColumnas.Size = new System.Drawing.Size(84, 20);
+            this.mColumnas.Text = "COLUMNAS";
+            this.mColumnas.Click += new System.EventHandler(this.cOLUMNASToolStripMenuItem1_Click);
             // 
-            // rECUADROToolStripMenuItem
+            // mRecuadros
             // 
-            this.rECUADROToolStripMenuItem.Name = "rECUADROToolStripMenuItem";
-            this.rECUADROToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.rECUADROToolStripMenuItem.Text = "RECUADRO";
-            this.rECUADROToolStripMenuItem.Click += new System.EventHandler(this.rECUADROToolStripMenuItem_Click);
+            this.mRecuadros.Name = "mRecuadros";
+            this.mRecuadros.Size = new System.Drawing.Size(80, 20);
+            this.mRecuadros.Text = "RECUADRO";
+            this.mRecuadros.Click += new System.EventHandler(this.rECUADROToolStripMenuItem_Click);
             // 
             // btnSelectColor
             // 
@@ -2333,6 +2333,36 @@
             this.pincelJ.TabIndex = 13;
             this.pincelJ.UseVisualStyleBackColor = false;
             this.pincelJ.Click += new System.EventHandler(this.ColorMarcador_Click);
+            // 
+            // btnEL
+            // 
+            this.btnEL.BackColor = System.Drawing.Color.Silver;
+            this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEL.ForeColor = System.Drawing.Color.Black;
+            this.btnEL.Location = new System.Drawing.Point(97, 64);
+            this.btnEL.Name = "btnEL";
+            this.btnEL.Size = new System.Drawing.Size(25, 24);
+            this.btnEL.TabIndex = 3;
+            this.btnEL.Text = "E";
+            this.btnEL.UseVisualStyleBackColor = false;
+            this.btnEL.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
+            // 
+            // btnR
+            // 
+            this.btnR.BackColor = System.Drawing.Color.Silver;
+            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnR.ForeColor = System.Drawing.Color.Black;
+            this.btnR.Location = new System.Drawing.Point(97, 33);
+            this.btnR.Name = "btnR";
+            this.btnR.Size = new System.Drawing.Size(25, 24);
+            this.btnR.TabIndex = 2;
+            this.btnR.Text = "R";
+            this.btnR.UseVisualStyleBackColor = false;
+            this.btnR.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
             // 
             // pincelI
             // 
@@ -4027,36 +4057,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Celdas";
             // 
-            // btnR
-            // 
-            this.btnR.BackColor = System.Drawing.Color.Silver;
-            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnR.ForeColor = System.Drawing.Color.Black;
-            this.btnR.Location = new System.Drawing.Point(97, 33);
-            this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(25, 24);
-            this.btnR.TabIndex = 2;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = false;
-            this.btnR.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
-            // 
-            // btnEL
-            // 
-            this.btnEL.BackColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(97, 64);
-            this.btnEL.Name = "btnEL";
-            this.btnEL.Size = new System.Drawing.Size(25, 24);
-            this.btnEL.TabIndex = 3;
-            this.btnEL.Text = "E";
-            this.btnEL.UseVisualStyleBackColor = false;
-            this.btnEL.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
-            // 
             // RojoDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4197,7 +4197,7 @@
         private System.Windows.Forms.ToolStripMenuItem mIIngles;
         private System.Windows.Forms.ToolStripMenuItem mIEspañol;
         private System.Windows.Forms.ToolStripMenuItem mIPortugues;
-        private System.Windows.Forms.ToolStripMenuItem cONTADORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mContadores;
         private System.Windows.Forms.ToolStripMenuItem activar;
         private System.Windows.Forms.ToolStripMenuItem desactivar;
         private System.Windows.Forms.Button btnSelectColor;
@@ -4352,9 +4352,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGrup;
         private System.Windows.Forms.TextBox txtNota;
-        private System.Windows.Forms.ToolStripMenuItem fILASToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cOLUMNASToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem rECUADROToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mFilas;
+        private System.Windows.Forms.ToolStripMenuItem mColumnas;
+        private System.Windows.Forms.ToolStripMenuItem mRecuadros;
         private System.Windows.Forms.Button btnGrup2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEL;

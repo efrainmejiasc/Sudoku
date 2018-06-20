@@ -57,7 +57,7 @@
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTADORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.activar = new System.Windows.Forms.ToolStripMenuItem();
             this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSelectColor = new System.Windows.Forms.Button();
@@ -585,10 +585,10 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mIdiomas,
-            this.cONTADORESToolStripMenuItem});
+            this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(248, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(340, 24);
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -605,44 +605,44 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
-            // cONTADORESToolStripMenuItem
+            // mContadores
             // 
-            this.cONTADORESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mContadores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.activar,
             this.desactivar});
-            this.cONTADORESToolStripMenuItem.Name = "cONTADORESToolStripMenuItem";
-            this.cONTADORESToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.cONTADORESToolStripMenuItem.Text = "CONTADORES";
+            this.mContadores.Name = "mContadores";
+            this.mContadores.Size = new System.Drawing.Size(95, 20);
+            this.mContadores.Text = "CONTADORES";
             // 
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(152, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(152, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -4185,7 +4185,7 @@
         private System.Windows.Forms.ToolStripMenuItem mIIngles;
         private System.Windows.Forms.ToolStripMenuItem mIEspañol;
         private System.Windows.Forms.ToolStripMenuItem mIPortugues;
-        private System.Windows.Forms.ToolStripMenuItem cONTADORESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mContadores;
         private System.Windows.Forms.ToolStripMenuItem activar;
         private System.Windows.Forms.ToolStripMenuItem desactivar;
         private System.Windows.Forms.Label lbl9;

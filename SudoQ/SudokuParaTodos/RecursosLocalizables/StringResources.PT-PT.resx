@@ -166,4 +166,13 @@
   <data name="btnAyuda" xml:space="preserve">
     <value>AJUDA</value>
   </data>
+  <data name="mFilas" xml:space="preserve">
+    <value>O ROWS</value>
+  </data>
+  <data name="mColumnas" xml:space="preserve">
+    <value>COLUNAS</value>
+  </data>
+  <data name="mRecuadros" xml:space="preserve">
+    <value>BOXES</value>
+  </data>
 </root>

@@ -87,8 +87,12 @@ namespace SudokuParaTodos.Formularios
         {
             this.Text = Valor.TituloFormR2(Valor.GetNombreIdioma());
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mContadores.Text = RecursosLocalizables.StringResources.mContadores;
             activar.Text = RecursosLocalizables.StringResources.activar;
             desactivar.Text = RecursosLocalizables.StringResources.desactivar;
+            mFilas.Text = RecursosLocalizables.StringResources.mFilas;
+            mColumnas.Text = RecursosLocalizables.StringResources.mColumnas;
+            mRecuadros.Text = RecursosLocalizables.StringResources.mRecuadros;
         }
 
         private void ComportamientoObjetoInicio()
