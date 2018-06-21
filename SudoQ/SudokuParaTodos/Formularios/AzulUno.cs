@@ -597,5 +597,16 @@ namespace SudokuParaTodos.Formularios
                 }
             //}
         }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorEliminado(valorEliminado);
+            Valor.SetValorSolucion(valorSolucion);
+            Ayuda1 f = new Ayuda1();
+            f.Show();
+            this.Hide();
+        }
     }
 }

@@ -96,6 +96,12 @@
     <Compile Include="Formularios\Ayuda1.Designer.cs">
       <DependentUpon>Ayuda1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Ayuda2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ayuda2.Designer.cs">
+      <DependentUpon>Ayuda2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\AzulDos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StringResources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\Ayuda1.resx">
+      <DependentUpon>Ayuda1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ayuda2.resx">
+      <DependentUpon>Ayuda2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AzulDos.resx">
       <DependentUpon>AzulDos.cs</DependentUpon>
     </EmbeddedResource>
