@@ -90,6 +90,12 @@
   <ItemGroup>
     <Compile Include="Engine\EngineData.cs" />
     <Compile Include="Engine\EngineSudoku.cs" />
+    <Compile Include="Formularios\Ayuda1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ayuda1.Designer.cs">
+      <DependentUpon>Ayuda1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\AzulDos.cs">
       <SubType>Form</SubType>
     </Compile>

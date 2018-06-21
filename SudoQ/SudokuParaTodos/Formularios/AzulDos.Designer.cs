@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AzulDos));
             this.pnl1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
@@ -3809,6 +3810,7 @@
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AzulDos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AzulDos";

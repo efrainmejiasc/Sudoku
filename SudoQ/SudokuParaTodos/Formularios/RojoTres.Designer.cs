@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RojoTres));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnRes23 = new System.Windows.Forms.Button();
+            this.btnDos = new System.Windows.Forms.Button();
+            this.btnTres = new System.Windows.Forms.Button();
             this.lbl9 = new System.Windows.Forms.Label();
             this.lbl8 = new System.Windows.Forms.Label();
             this.lbl7 = new System.Windows.Forms.Label();
@@ -75,10 +80,6 @@
             this.btnB = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnA = new System.Windows.Forms.Button();
-            this.btnDos = new System.Windows.Forms.Button();
-            this.btnTres = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
@@ -255,7 +256,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.button1);
-            this.panel10.Controls.Add(this.button2);
+            this.panel10.Controls.Add(this.btnRes23);
             this.panel10.Controls.Add(this.btnDos);
             this.panel10.Controls.Add(this.btnTres);
             this.panel10.Controls.Add(this.lbl9);
@@ -295,6 +296,64 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 165);
             this.panel10.TabIndex = 86;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Silver;
+            this.button1.Location = new System.Drawing.Point(632, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(36, 24);
+            this.button1.TabIndex = 130;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnRes23
+            // 
+            this.btnRes23.BackColor = System.Drawing.Color.White;
+            this.btnRes23.Location = new System.Drawing.Point(286, 65);
+            this.btnRes23.Name = "btnRes23";
+            this.btnRes23.Size = new System.Drawing.Size(27, 28);
+            this.btnRes23.TabIndex = 129;
+            this.btnRes23.UseVisualStyleBackColor = false;
+            this.btnRes23.Click += new System.EventHandler(this.Filtro23Candidatos_Click);
+            // 
+            // btnDos
+            // 
+            this.btnDos.BackColor = System.Drawing.Color.Silver;
+            this.btnDos.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D21;
+            this.btnDos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDos.ForeColor = System.Drawing.Color.Silver;
+            this.btnDos.Location = new System.Drawing.Point(356, 65);
+            this.btnDos.Name = "btnDos";
+            this.btnDos.Size = new System.Drawing.Size(27, 28);
+            this.btnDos.TabIndex = 128;
+            this.btnDos.UseVisualStyleBackColor = false;
+            this.btnDos.Click += new System.EventHandler(this.Filtro23Candidatos_Click);
+            // 
+            // btnTres
+            // 
+            this.btnTres.BackColor = System.Drawing.Color.Silver;
+            this.btnTres.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D3;
+            this.btnTres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTres.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTres.ForeColor = System.Drawing.Color.Silver;
+            this.btnTres.Location = new System.Drawing.Point(321, 65);
+            this.btnTres.Name = "btnTres";
+            this.btnTres.Size = new System.Drawing.Size(27, 28);
+            this.btnTres.TabIndex = 127;
+            this.btnTres.UseVisualStyleBackColor = false;
+            this.btnTres.Click += new System.EventHandler(this.Filtro23Candidatos_Click);
             // 
             // lbl9
             // 
@@ -531,7 +590,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(340, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(248, 24);
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -548,21 +607,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -838,61 +897,6 @@
             this.btnA.TabIndex = 0;
             this.btnA.Text = "a";
             this.btnA.UseVisualStyleBackColor = false;
-            // 
-            // btnDos
-            // 
-            this.btnDos.BackColor = System.Drawing.Color.Silver;
-            this.btnDos.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D21;
-            this.btnDos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(356, 65);
-            this.btnDos.Name = "btnDos";
-            this.btnDos.Size = new System.Drawing.Size(27, 28);
-            this.btnDos.TabIndex = 128;
-            this.btnDos.UseVisualStyleBackColor = false;
-            // 
-            // btnTres
-            // 
-            this.btnTres.BackColor = System.Drawing.Color.Silver;
-            this.btnTres.BackgroundImage = global::SudokuParaTodos.Properties.Resources.D3;
-            this.btnTres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTres.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(321, 65);
-            this.btnTres.Name = "btnTres";
-            this.btnTres.Size = new System.Drawing.Size(27, 28);
-            this.btnTres.TabIndex = 127;
-            this.btnTres.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(286, 65);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(27, 28);
-            this.button2.TabIndex = 129;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Izq;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(632, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 24);
-            this.button1.TabIndex = 130;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnl1
             // 
@@ -3998,9 +4002,12 @@
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RojoTres";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoTres";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RojoTres_FormClosing);
             this.Load += new System.EventHandler(this.RojoTres_Load);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -4068,7 +4075,7 @@
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.Button btnDos;
         private System.Windows.Forms.Button btnTres;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRes23;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.TextBox txt88;

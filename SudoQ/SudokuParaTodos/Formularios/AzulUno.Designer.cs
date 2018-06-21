@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AzulUno));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnSelectColor = new System.Windows.Forms.Button();
@@ -2115,6 +2116,7 @@
             this.ClientSize = new System.Drawing.Size(1145, 641);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AzulUno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";

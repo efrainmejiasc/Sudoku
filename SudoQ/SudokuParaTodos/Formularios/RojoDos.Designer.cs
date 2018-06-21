@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RojoDos));
             this.pnl1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
@@ -1965,7 +1966,7 @@
             this.mRecuadros});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(616, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(460, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2012,14 +2013,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(152, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(152, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -2047,7 +2048,7 @@
             this.fila8ToolStripMenuItem,
             this.fila9ToolStripMenuItem});
             this.filasToolStripMenuItem.Name = "filasToolStripMenuItem";
-            this.filasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.filasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.filasToolStripMenuItem.Text = "Filas";
             // 
             // fila1ToolStripMenuItem
@@ -2126,7 +2127,7 @@
             this.columna8ToolStripMenuItem,
             this.columna9ToolStripMenuItem});
             this.columnasToolStripMenuItem.Name = "columnasToolStripMenuItem";
-            this.columnasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.columnasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.columnasToolStripMenuItem.Text = "Columnas";
             // 
             // columna1ToolStripMenuItem
@@ -2205,7 +2206,7 @@
             this.recuadro8ToolStripMenuItem,
             this.recuadro9ToolStripMenuItem});
             this.recuadrosToolStripMenuItem.Name = "recuadrosToolStripMenuItem";
-            this.recuadrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.recuadrosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.recuadrosToolStripMenuItem.Text = "Recuadros";
             // 
             // recuadro1ToolStripMenuItem
@@ -4085,6 +4086,7 @@
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RojoDos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoDos";

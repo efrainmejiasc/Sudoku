@@ -85,7 +85,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            this.Text = Valor.TituloFormR1(Valor.GetNombreIdioma());
+            this.Text = Valor.TituloFormR3(Valor.GetNombreIdioma());
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mContadores.Text = RecursosLocalizables.StringResources.mContadores;
             activar.Text = RecursosLocalizables.StringResources.activar;
@@ -457,6 +457,25 @@ namespace SudokuParaTodos.Formularios
             AplicarIdioma();
         }
 
+        private void Filtro23Candidatos_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            switch (btn.Name)
+            {
+                case (EngineData.BtnRes23):
+                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    break;
+                case (EngineData.BtnDos):
+                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    txtSudoku2 = Funcion.CandidatosFinalistas(txtSudoku2, Color.LightCyan, 3);
+                    break;
+                case (EngineData.BtnTres):
+                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    txtSudoku2 = Funcion.CandidatosFinalistas(txtSudoku2, Color.LightCyan, 5);
+                    break;
+            }
+        }
+
         //*************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
@@ -635,6 +654,11 @@ namespace SudokuParaTodos.Formularios
             {
                 txt.BackColor = colorCeldaAnt;
             }
+        }
+
+        private void RojoTres_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
         }
 
         //**************************************************************************************************

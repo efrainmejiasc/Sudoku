@@ -2028,8 +2028,24 @@ namespace SudokuParaTodos
             return dgv;
         }
 
-        // SALIDA DEL SISTEMA 
+        //CANDIDATOS 23
 
+       public TextBox[,] CandidatosFinalistas(TextBox [,] cajaTexto, Color color,int n)
+        {
+            for (int fila = 0; fila <= 8; fila++)
+            {
+                for (int columna = 0; columna <= 8; columna++)
+                {
+                    if (cajaTexto[fila, columna].Text.Trim().Length == n)
+                    {
+                        cajaTexto[fila, columna].BackColor = color;
+                    }
+                }
+            }
+            return cajaTexto;
+        }
+
+        // SALIDA DEL SISTEMA 
         public void Salir()
         {
             Form1 f = new Form1();

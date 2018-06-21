@@ -70,6 +70,10 @@ namespace SudokuParaTodos
         public const string Btn8 = "btn8";
         public const string Btn9 = "btn9";
 
+        public const string BtnRes23 = "btnRes23";
+        public const string BtnDos = "btnDos";
+        public const string BtnTres = "btnTres";
+
         public const string btnIzquierda = "btnIzquierda";
         public const string btnDerecha = "btnDerecha";
 
@@ -219,6 +223,27 @@ namespace SudokuParaTodos
                     break;
                 default:
                     titulo = "Sudoku Para Todos - Candidatos Ordenados:                                                                                                                                                                                              Candidatos Excluidos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloFormR3(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                           Candidatos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Sudoku For All - Filtered Candidates:                                                                                                                                                                                                Candidates";
+                    break;
+                case ("Portugues"):
+                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                             Candidatos";
+                    break;
+                default:
+                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                              Candidatos";
                     break;
             }
             return titulo;
