@@ -467,11 +467,11 @@ namespace SudokuParaTodos.Formularios
                     break;
                 case (EngineData.BtnDos):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
-                    txtSudoku2 = Funcion.CandidatosFinalistas(txtSudoku2, Color.LightCyan, 3);
+                    txtSudoku2 = Funcion.CandidatosFinalistas2(txtSudoku2, Color.PaleGreen);
                     break;
                 case (EngineData.BtnTres):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
-                    txtSudoku2 = Funcion.CandidatosFinalistas(txtSudoku2, Color.LightCyan, 5);
+                    txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange);
                     break;
             }
         }
@@ -604,7 +604,7 @@ namespace SudokuParaTodos.Formularios
                 e.Handled = false;
                 if (txt.Text.Length > 0) { txt.Text = string.Empty; }
             }
-            txt.Text = string.Empty;
+       
         }
 
         private void t00_KeyUp(object sender, KeyEventArgs e)
@@ -614,14 +614,7 @@ namespace SudokuParaTodos.Formularios
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
-            if (txt.Text == EngineData.Zero)
-            {
-                txt.Text = string.Empty;
-            }
-            else
-            {
-                if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
-            }
+            SetearJuego();
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)

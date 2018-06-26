@@ -1959,6 +1959,16 @@ namespace SudokuParaTodos
         }
 
         //CREAR TABLAS 
+        public DataTable CrearTabla()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("POS.");
+            dt.Columns.Add("G.");
+            dt.Columns.Add("Nº");
+            dt.Columns.Add("c.v.");
+            dt.Columns.Add("o.de.j.");
+            return dt;
+        }
         public DataTable CrearTabla1()
         {
             DataTable dt = new DataTable();
@@ -1966,6 +1976,7 @@ namespace SudokuParaTodos
             dt.Columns.Add("G.");
             dt.Columns.Add("Nº");
             dt.Columns.Add("c.v.");
+            dt.Columns.Add("o.de.j.");
             AgregarFilas(dt, 27,"TABLA1");
             return dt;
         }
@@ -1997,7 +2008,12 @@ namespace SudokuParaTodos
                 }
                 else
                 {
-                    dt.Rows.Add(i, "", "", "");
+                    if (i >= 1 && i <= 9)
+                        dt.Rows.Add(i, "F", i,"","");
+                    else if (i >= 10 && i <= 18)
+                        dt.Rows.Add(i, "C", i - 9,"","");
+                    else if (i >= 19 && i <= 27)
+                        dt.Rows.Add(i, "R", i - 18,"","");
                 }
             }
             return dt;
@@ -2028,15 +2044,281 @@ namespace SudokuParaTodos
             return dgv;
         }
 
+        //CONTABILIZAR GRUPOS VACIOS
+
+        public int ContableFila(int f, string [,] vIngresado)
+        {
+            int cVacias = 0;
+            for (int c = 0; c <= 8; c++)
+            {
+              if (vIngresado [f,c] == string.Empty || vIngresado[f, c] == null)
+              {
+                    cVacias++;
+              }
+            }
+            return cVacias;
+        }
+
+        public int ContableColumna(int c, string[,] vIngresado)
+        {
+            int cVacias = 0;
+            for (int f = 0; f <= 8; f++)
+            {
+                if (vIngresado[f, c] == string.Empty || vIngresado[f, c] == null)
+                {
+                    cVacias++;
+                }
+            }
+            return cVacias;
+        }
+
+        public int ContableRecuadro(int fila , int columna, string[,] vIngresado)
+        {
+            int cVacias = 0;
+            for (int f = fila; f <= fila + 2; f++)
+            {
+                for (int c = columna; c <= columna + 2; c++)
+                {
+                    if (vIngresado[f, c] == string.Empty || vIngresado[f, c] == null)
+                    {
+                        cVacias++;
+                    }
+                }
+            }
+            return cVacias;
+        }
+
+        public  DataTable ContarGruposVacios(DataTable dt, string [,] valorIngresado)
+        {
+            int n = 0;
+            int cv = 0;
+            int[] rec = new int[2];
+            foreach (DataRow r in dt.Rows)
+            {
+                if (n >= 0 && n <= 8)
+                {
+                    cv = ContableFila(n, valorIngresado);
+                    r[3] = cv.ToString();
+                }
+                else if (n >= 9 && n <= 17)
+                {
+                    cv = ContableColumna(n - 9, valorIngresado);
+                    r[3] = cv.ToString();
+                }
+                else if (n >= 18 && n <= 26)
+                {
+                    rec = RangoRecuadro(n - 18);
+                    cv = ContableRecuadro(rec[0], rec[1], valorIngresado);
+                    r[3] = cv.ToString();
+                }
+                n++;
+            }
+            return dt;
+        }
+         
+        public DataTable  MostrarSoloOculto (DataTable dt, string [] solo , string [] oculto)
+        {
+            int n = 0;
+            foreach (DataRow r in dt.Rows)
+            {
+               if (solo[n] != null || oculto[n] != null)
+                {
+                  r[4] = "?";
+                }
+                n++;
+            }
+            return dt;
+        }
+
+        public DataTable OrdernadorLetraNumerico(DataTable dt)
+        {
+            DataTable cero = new DataTable();
+            cero = CrearTabla();
+            DataTable uno = new DataTable();
+            uno = CrearTabla();
+            DataTable dos = new DataTable();
+            dos = CrearTabla();
+            DataTable tres = new DataTable();
+            tres = CrearTabla();
+            DataTable cuatro = new DataTable();
+            cuatro = CrearTabla();
+            DataTable cinco = new DataTable();
+            cinco = CrearTabla();
+            DataTable seis = new DataTable();
+            seis = CrearTabla();
+            DataTable siete = new DataTable();
+            siete = CrearTabla();
+            DataTable ocho = new DataTable();
+            ocho = CrearTabla();
+            DataTable nueve = new DataTable();
+            nueve = CrearTabla();
+            DataTable tabla = new DataTable();
+            tabla = CrearTabla();
+
+            foreach(DataRow r in dt.Rows)
+            {
+                if (r[1].ToString() == "F" && r[3].ToString() == "0")
+                {
+                    cero.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "1")
+                {
+                   uno.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "2")
+                {
+                    dos.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "3")
+                {
+                    tres.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "4")
+                {
+                    cuatro.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "5")
+                {
+                    cinco.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "6")
+                {
+                    seis.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "7")
+                {
+                    siete.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "8")
+                {
+                    ocho.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "F" && r[3].ToString() == "9")
+                {
+                    nueve.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+
+            }
+
+            foreach (DataRow r in dt.Rows)
+            {
+                if (r[1].ToString() == "C" && r[3].ToString() == "0")
+                {
+                    cero.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "1")
+                {
+                    uno.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "2")
+                {
+                    dos.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "3")
+                {
+                    tres.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "4")
+                {
+                    cuatro.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "5")
+                {
+                    cinco.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "6")
+                {
+                    seis.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "7")
+                {
+                    siete.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "8")
+                {
+                    ocho.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "C" && r[3].ToString() == "9")
+                {
+                    nueve.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+
+            }
+
+            foreach (DataRow r in dt.Rows)
+            {
+                if (r[1].ToString() == "R" && r[3].ToString() == "0")
+                {
+                    cero.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "1")
+                {
+                    uno.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "2")
+                {
+                    dos.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "3")
+                {
+                    tres.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "4")
+                {
+                    cuatro.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "5")
+                {
+                    cinco.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "6")
+                {
+                    seis.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "7")
+                {
+                    siete.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "8")
+                {
+                    ocho.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+                else if (r[1].ToString() == "R" && r[3].ToString() == "9")
+                {
+                    nueve.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+
+            }
+
+            tabla.Merge(cero);
+            tabla.Merge(uno);
+            tabla.Merge(dos);
+            tabla.Merge(tres);
+            tabla.Merge(cuatro);
+            tabla.Merge(cinco);
+            tabla.Merge(seis);
+            tabla.Merge(siete);
+            tabla.Merge(ocho);
+            tabla.Merge(nueve);
+
+            int n = 1;
+            foreach (DataRow r in tabla.Rows)
+            {
+                r[0] = n.ToString();
+                n++;
+            }
+
+                return tabla ;
+        }
         //CANDIDATOS 23
 
-       public TextBox[,] CandidatosFinalistas(TextBox [,] cajaTexto, Color color,int n)
+        public TextBox[,] CandidatosFinalistas2(TextBox[,] cajaTexto, Color color)
         {
             for (int fila = 0; fila <= 8; fila++)
             {
                 for (int columna = 0; columna <= 8; columna++)
                 {
-                    if (cajaTexto[fila, columna].Text.Trim().Length == n)
+                    if (cajaTexto[fila, columna].Text.Trim().Length == 3 || cajaTexto[fila, columna].Text.Trim().Length == 5)
                     {
                         cajaTexto[fila, columna].BackColor = color;
                     }
@@ -2045,17 +2327,20 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        // SALIDA DEL SISTEMA 
-        public void Salir()
+        public TextBox[,] CandidatosFinalistas3 (TextBox [,] cajaTexto, Color color)
         {
-            Form1 f = new Form1();
-            f.Close();
-            Formularios.AzulUno a = new Formularios.AzulUno();
-            a.Close();
-           
+            for (int fila = 0; fila <= 8; fila++)
+            {
+                for (int columna = 0; columna <= 8; columna++)
+                {
+                    if (cajaTexto[fila, columna].Text.Trim().Length == 3 || cajaTexto[fila, columna].Text.Trim().Length == 5)
+                    {
+                        cajaTexto[fila, columna].BackColor = color;
+                    }
+                }
+            }
+            return cajaTexto;
         }
-
-       
-
+      
     }
 }

@@ -281,6 +281,7 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1840,6 +1841,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.button2);
             this.panel10.Controls.Add(this.btnGrup2);
             this.panel10.Controls.Add(this.btnGrup);
@@ -4058,6 +4060,16 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Celdas";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(639, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 31);
+            this.label2.TabIndex = 110;
+            this.label2.Text = "B2";
+            // 
             // RojoDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4361,5 +4373,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnEL;
         private System.Windows.Forms.Button btnR;
+        private System.Windows.Forms.Label label2;
     }
 }

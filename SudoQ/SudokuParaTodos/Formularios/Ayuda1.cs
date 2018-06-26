@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,8 +45,9 @@ namespace SudokuParaTodos.Formularios
         private int contadorIngresado = 0;
         private bool contadorActivado = EngineData.Falso;
 
-        string idiomaCultura = string.Empty;
-        string idiomaNombre = string.Empty;
+        private string idiomaCultura = string.Empty;
+        private string idiomaNombre = string.Empty;
+
 
         public Ayuda1()
         {
@@ -76,8 +78,7 @@ namespace SudokuParaTodos.Formularios
             valorSolucion = Valor.GetValorSolucion();
             SetearJuego();
             ContadorIngresado();
-            dataGridView1.DataSource = Funcion.CrearTabla1();
-            dataGridView1 = Funcion.FormatoDataGridView1(dataGridView1);
+            ProcesosContables();
         }
 
         private void AplicarIdioma()
@@ -312,5 +313,285 @@ namespace SudokuParaTodos.Formularios
             f.Show();
             this.Hide();
         }
+
+        private void ColorMarcador_Click(object sender, EventArgs e)
+        {
+            Button pincel = (Button)sender;
+            if (pincel.BackColor == Color.Silver)
+            {
+                pincelMarcador = EngineData.Falso;
+                txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+                btnSelectColor.BackColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+            }
+            else
+            {
+                pincelMarcador = EngineData.Verdadero;
+                colorFondoAct = pincel.BackColor;
+                btnSelectColor.BackColor = colorFondoAct;
+                btnSelectColor.FlatAppearance.BorderColor = Color.Black;
+                btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
+            }
+        }
+
+        private void ProcesosContables()
+        {
+            dataGridView1.DataSource = null;
+            DataTable dt = new DataTable();
+            dt = Funcion.CrearTabla1();
+            dt = Funcion.ContarGruposVacios(dt,valorIngresado);
+            dt = Funcion.MostrarSoloOculto(dt, solo, oculto);
+            DataTable tabla = new DataTable();
+            tabla = Funcion.OrdernadorLetraNumerico(dt);
+            dataGridView1.DataSource = tabla;
+            dataGridView1 = Funcion.FormatoDataGridView1(dataGridView1);
+        }
+
+        private void AbrirJuego(string pathArchivo)
+        {
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+            valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
+            valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
+            valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
+            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+            bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
+            if (resultado)
+            {
+                SetearJuego();
+            }
+            else
+            {
+                valorIngresado = Funcion.IgualarIngresadoInicio(valorIngresado, valorInicio);
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            }
+            ContadorIngresado();
+        }
+
+        private string GuardarComoSaveDialog()
+        {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.saveFileDialog1.FileName = string.Empty;
+            this.saveFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.saveFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.saveFileDialog1.ShowDialog();
+            return saveFileDialog1.FileName;
+        }
+
+        private void GuardarJuego(string pathArchivo)
+        {
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
+        }
+
+        //**************************************************************************************
+        private void txt00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                txt.ForeColor = Color.Black;
+            else txt.ForeColor = Color.Blue;
+
+            if (pincelMarcador)
+            {
+                txtSudoku[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+        }
+
+        private void txt00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+        }
+
+        private void txt00_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            try
+            {
+                if (txt.Text == EngineData.Zero)
+                {
+                    txt.Text = string.Empty;
+
+                    valorIngresado[row, col] = string.Empty;
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                        valorIngresado[row, col] = txt.Text;
+                    }
+                }
+                else
+                {
+                    if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
+                    {
+                        txt.Text = valorInicio[row, col];
+                    }
+                    else
+                    {
+                        valorIngresado[row, col] = txt.Text;
+                    }
+                }
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                ContadorIngresado();
+                ProcesosContables();
+            }
+            catch { }
+
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void txt00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
+        }
+
+        private void txt00_Leave(object sender, EventArgs e)
+        {
+
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
+        }
+
+        private void Ayuda1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        //**********************************************************************************
+
+        private void activar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Verdadero);
+            ContadorIngresado();
+        }
+
+        private void desactivar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Falso);
+            ContadorIngresado();
+        }
+
+        private void crearJuego_Click(object sender, EventArgs e)
+        {
+            Valor.SetPathArchivo(string.Empty);
+            Valor.SetOpenFrom(EngineData.Exe);
+            Form1 f = new Form1(Valor.GetIdioma());
+            f.Show();
+            this.Hide();
+        }
+
+        private void abrirJuego_Click(object sender, EventArgs e)
+        {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.openFileDialog1.FileName = string.Empty;
+            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.openFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.openFileDialog1.ShowDialog();
+            pathArchivo = openFileDialog1.FileName;
+
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            Valor.SetPathArchivo(pathArchivo);
+            AbrirJuego(pathArchivo);
+        }
+
+        private void guardar_Click(object sender, EventArgs e)
+        {
+            pathArchivo = Valor.GetPathArchivo();
+            if (pathArchivo == string.Empty)
+            {
+                pathArchivo = GuardarComoSaveDialog();
+                if (pathArchivo != string.Empty)
+                {
+                    Valor.SetPathArchivo(pathArchivo);
+                    GuardarJuego(pathArchivo);
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                GuardarJuego(pathArchivo);
+            }
+
+        }
+
+        private void guardarComo_Click(object sender, EventArgs e)
+        {
+            pathArchivo = GuardarComoSaveDialog();
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            Valor.SetPathArchivo(pathArchivo);
+            GuardarJuego(pathArchivo);
+        }
+
+        private void reiniciar_Click(object sender, EventArgs e)
+        {
+            pathArchivo = Valor.GetPathArchivo();
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            valorIngresado = new string[9, 9];
+            valorEliminado = new string[9, 9];
+            GuardarJuego(pathArchivo);
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            AbrirJuego(pathArchivo);
+        }
+
     }
 }

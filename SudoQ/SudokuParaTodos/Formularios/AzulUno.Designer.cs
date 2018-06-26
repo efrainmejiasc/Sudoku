@@ -156,6 +156,7 @@
             this.txt00 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -166,6 +167,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.btnAyuda);
             this.panel10.Controls.Add(this.btnSelectColor);
             this.panel10.Controls.Add(this.pincelJ);
@@ -2109,6 +2111,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(620, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 31);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "A1";
+            // 
             // AzulUno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2265,5 +2277,6 @@
         private System.Windows.Forms.ToolStripMenuItem desactivar;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Label label1;
     }
 }

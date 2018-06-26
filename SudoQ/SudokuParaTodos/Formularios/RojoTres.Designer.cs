@@ -244,6 +244,7 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -255,6 +256,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.button1);
             this.panel10.Controls.Add(this.btnRes23);
             this.panel10.Controls.Add(this.btnDos);
@@ -3994,6 +3996,16 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(580, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 31);
+            this.label1.TabIndex = 131;
+            this.label1.Text = "B3";
+            // 
             // RojoTres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4241,5 +4253,6 @@
         private System.Windows.Forms.TextBox t02;
         private System.Windows.Forms.TextBox t01;
         private System.Windows.Forms.TextBox t00;
+        private System.Windows.Forms.Label label1;
     }
 }

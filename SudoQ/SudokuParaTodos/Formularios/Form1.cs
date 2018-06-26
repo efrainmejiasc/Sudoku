@@ -12,6 +12,7 @@ using System.Threading;
 using System.Globalization;
 using System.IO;
 using System.Collections;
+using System.Diagnostics;
 
 namespace SudokuParaTodos
 {
@@ -527,24 +528,17 @@ namespace SudokuParaTodos
                     valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
                     valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
                     valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
-
-                    txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
                     valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
                     valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
-                    txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorSolucion, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
-                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
-                    txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
 
-                    openFrom = EngineData.File;
-                    Valor.SetOpenFrom(openFrom);
-                    vInit = EngineData.Verdadero;
+                    Valor.SetValorIngresado(valorIngresado);
+                    Valor.SetValorEliminado(valorEliminado );
+                    Valor.SetValorInicio(valorInicio);
+                    Valor.SetValorSolucion(valorSolucion );
 
-                    btnGuardar.Visible = EngineData.Falso;
-                    btnOtro.Visible = EngineData.Verdadero;
-                    btnAbrir.Visible = EngineData.Verdadero;
-                    btnSolucion.Visible = EngineData.Falso;
-
-                    ContadorIngresado();
+                    Formularios.AzulUno f = new Formularios.AzulUno();
+                    f.Show();
+                   
                     break;
                 case (EngineData.BtnGuardarJuego):
                     if (Valor.GetPathArchivo() == string.Empty)
@@ -830,7 +824,14 @@ namespace SudokuParaTodos
                 DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result.ToString().ToUpper() == "YES")
                 {
-                    e.Cancel = false;
+                    var procesos = Process.GetProcesses();
+                    foreach (Process item in procesos)
+                    {
+                        if (item.ProcessName == "SudokuParaTodos")
+                        {
+                            item.Kill();
+                        }
+                    }
                 }
                 else
                 {

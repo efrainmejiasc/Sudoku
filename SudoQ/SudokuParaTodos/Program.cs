@@ -20,11 +20,11 @@ namespace SudokuParaTodos
             if (args.Length == 0)
             {
                 /*Valor.SetOpenFrom(EngineData.Exe);
-                Application.Run(new Form1()); */
+                Application.Run(new Form1());*/
 
                 Valor.SetOpenFrom(EngineData.File);
                 Valor.SetPathArchivo(@"D:\AAA.jll");
-               Application.Run(new Formularios.AzulUno()); 
+                Application.Run(new Formularios.AzulUno());
             }
             else
             {

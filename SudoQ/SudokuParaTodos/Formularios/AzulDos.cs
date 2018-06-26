@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -701,7 +702,14 @@ namespace SudokuParaTodos.Formularios
             DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result.ToString().ToUpper() == "YES")
             {
-                e.Cancel = false;
+                var procesos = Process.GetProcesses();
+                foreach (Process item in procesos)
+                {
+                    if (item.ProcessName == "SudokuParaTodos")
+                    {
+                        item.Kill();
+                    }
+                }
             }
             else
             {

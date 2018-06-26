@@ -514,6 +514,7 @@ namespace SudokuParaTodos.Formularios
                     }
                     txtSudoku2[row, col].Text = valorEliminado[row, col];
                     SetearJuego();
+                    GrupoActualizar();
                     break;
             }
             ContadorIngresado();
@@ -1121,6 +1122,8 @@ namespace SudokuParaTodos.Formularios
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            GrupoActualizar();
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
