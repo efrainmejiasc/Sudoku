@@ -467,11 +467,11 @@ namespace SudokuParaTodos.Formularios
                     break;
                 case (EngineData.BtnDos):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
-                    txtSudoku2 = Funcion.CandidatosFinalistas2(txtSudoku2, Color.PaleGreen);
+                    txtSudoku2 = Funcion.CandidatosFinalistas2(txtSudoku2, Color.Chartreuse);
                     break;
                 case (EngineData.BtnTres):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
-                    txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange);
+                    txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange,Color.Chartreuse);
                     break;
             }
         }

@@ -1969,6 +1969,7 @@ namespace SudokuParaTodos
             dt.Columns.Add("o.de.j.");
             return dt;
         }
+
         public DataTable CrearTabla1()
         {
             DataTable dt = new DataTable();
@@ -2119,11 +2120,45 @@ namespace SudokuParaTodos
         public DataTable  MostrarSoloOculto (DataTable dt, string [] solo , string [] oculto)
         {
             int n = 0;
+            string fila = string.Empty;
+            string columna = string.Empty;
+            int recuadro = 0;
+
             foreach (DataRow r in dt.Rows)
             {
-               if (solo[n] != null || oculto[n] != null)
+                r[4] = string.Empty;  
+            }
+            foreach (DataRow r in dt.Rows)
+            {
+                if (solo[n] != null || oculto[n] != null)
                 {
-                  r[4] = "?";
+                    if (n >= 0 && n <= 17)
+                    { 
+                     r[4] = "?";
+                    }
+                    else
+                    { 
+                        if(solo[n] != null)
+                        {
+                            r[4] = "?";
+                        }
+                        if (oculto[n] != null)
+                        {
+                            fila = oculto[n].Substring(0, 1);
+                            columna = oculto[n].Substring(1, 1);
+                            recuadro = NumeroRecuadro(Convert.ToInt16(fila) -1 , Convert.ToInt16(columna) - 1) ;
+                            if (recuadro == 0) { dt.Rows[18][4] = "?"; }
+                            else if (recuadro == 1) { dt.Rows[19][4] = "?"; }
+                            else if (recuadro == 2) { dt.Rows[20][4] = "?"; }
+                            else if (recuadro == 3) { dt.Rows[21][4] = "?"; }
+                            else if (recuadro == 4) { dt.Rows[22][4] = "?"; }
+                            else if (recuadro == 5) { dt.Rows[23][4] = "?"; }
+                            else if (recuadro == 6) { dt.Rows[24][4] = "?"; }
+                            else if (recuadro == 7) { dt.Rows[25][4] = "?"; }
+                            else if (recuadro == 8) { dt.Rows[26][4] = "?"; }
+
+                        }
+                    }
                 }
                 n++;
             }
@@ -2318,7 +2353,7 @@ namespace SudokuParaTodos
             {
                 for (int columna = 0; columna <= 8; columna++)
                 {
-                    if (cajaTexto[fila, columna].Text.Trim().Length == 3 || cajaTexto[fila, columna].Text.Trim().Length == 5)
+                    if (cajaTexto[fila, columna].Text.Trim().Length == 3 )
                     {
                         cajaTexto[fila, columna].BackColor = color;
                     }
@@ -2327,13 +2362,17 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        public TextBox[,] CandidatosFinalistas3 (TextBox [,] cajaTexto, Color color)
+        public TextBox[,] CandidatosFinalistas3 (TextBox [,] cajaTexto, Color color,Color color2)
         {
             for (int fila = 0; fila <= 8; fila++)
             {
                 for (int columna = 0; columna <= 8; columna++)
                 {
-                    if (cajaTexto[fila, columna].Text.Trim().Length == 3 || cajaTexto[fila, columna].Text.Trim().Length == 5)
+                    if (cajaTexto[fila, columna].Text.Trim().Length == 3 )
+                    {
+                        cajaTexto[fila, columna].BackColor = color2;
+                    }
+                    else if (cajaTexto[fila, columna].Text.Trim().Length == 5)
                     {
                         cajaTexto[fila, columna].BackColor = color;
                     }
