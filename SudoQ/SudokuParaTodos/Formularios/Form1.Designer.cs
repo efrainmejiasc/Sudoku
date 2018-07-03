@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
@@ -240,6 +242,8 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.label2);
+            this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.btnSelectColor);
             this.panel10.Controls.Add(this.pincelJ);
             this.panel10.Controls.Add(this.pincelI);
@@ -256,8 +260,26 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(570, 182);
+            this.panel10.Size = new System.Drawing.Size(1034, 182);
             this.panel10.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(778, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 76;
+            this.label2.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(287, 149);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 75;
+            this.label1.Tag = "";
             // 
             // btnSelectColor
             // 
@@ -468,7 +490,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(570, 24);
+            this.panel11.Size = new System.Drawing.Size(1034, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
@@ -3569,7 +3591,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(570, 641);
+            this.ClientSize = new System.Drawing.Size(1034, 641);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
@@ -3581,6 +3603,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.pnlJuego.ResumeLayout(false);
             this.pnlLetra.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -3796,6 +3819,8 @@
         private System.Windows.Forms.ToolStripMenuItem mTablero;
         private System.Windows.Forms.ToolStripMenuItem mColores;
         private System.Windows.Forms.ToolStripMenuItem mContadores;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

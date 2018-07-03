@@ -136,11 +136,23 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            this.Text = Valor.TituloFormR1(Valor.GetNombreIdioma());
+            int n = 20;
+            if (Valor.GetNombreIdioma() == EngineData.LenguajeEspañol)
+                n = 20;
+            else if (Valor.GetNombreIdioma() == EngineData.LenguajeIngles)
+                n = 17;
+            else if (Valor.GetNombreIdioma() == EngineData.LenguajePortugues)
+                n = 20;
+
+            this.Text = Valor.TituloFormR1(Valor.GetNombreIdioma()).Insert(n, Valor.GetNombreJuego());
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mContadores.Text = RecursosLocalizables.StringResources.mContadores;
             activar.Text = RecursosLocalizables.StringResources.activar;
             desactivar.Text = RecursosLocalizables.StringResources.desactivar;
+            string etiqueta = Valor.EtiquetaRojoUno(Valor.GetNombreIdioma());
+            string[] p = etiqueta.Split('/');
+            label2.Text = p[0].ToUpper();
+            label3.Text = p[1].ToUpper();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)

@@ -45,7 +45,7 @@ namespace SudokuParaTodos.Formularios
         private string[] oculto = new string[27];
         private int contadorIngresado = 0;
         private bool contadorActivado = EngineData.Falso;
-
+        private string nombreJuego = string.Empty;
         private bool lenguajeSi = EngineData.Falso;
 
 
@@ -85,6 +85,7 @@ namespace SudokuParaTodos.Formularios
                 SetearJuego();
                 ContadorIngresado();
             }
+
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -154,9 +155,11 @@ namespace SudokuParaTodos.Formularios
             {
                 return;
             }
+            nombreJuego = Funcion.NombreJuego(pathArchivo);
+            Valor.SetNombreJuego(nombreJuego);
             this.MaximumSize = new Size(1161, 680);
             this.Size = new Size(1161, 680);
-            this.Text = EngineData.Titulo + EngineData.Numeros;
+            this.Text = EngineData.Titulo + ": " + nombreJuego;
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             btnPincel= AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);
@@ -165,7 +168,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno;
+            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno + " " + Valor.GetNombreJuego();
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
             mColores.Text = RecursosLocalizables.StringResources.mColores;
@@ -180,6 +183,7 @@ namespace SudokuParaTodos.Formularios
             activar.Text = RecursosLocalizables.StringResources.activar;
             desactivar.Text = RecursosLocalizables.StringResources.desactivar;
             btnAyuda.Text = RecursosLocalizables.StringResources.btnAyuda;
+            label2.Text = Valor.EiquetaAzulUno(Valor.GetNombreIdioma()).ToUpper();
         }
 
         private void Lenguaje_Click(object sender, EventArgs e)

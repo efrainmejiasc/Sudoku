@@ -81,7 +81,20 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno;
+            int n = 20;
+            if (Valor.GetNombreIdioma() == EngineData.LenguajeEspañol)
+                n = 20;
+            else if (Valor.GetNombreIdioma() == EngineData.LenguajeIngles)
+                n = 17;
+            else if (Valor.GetNombreIdioma() == EngineData.LenguajePortugues)
+                n = 20;
+
+            this.Text = Valor.TituloFormY2(Valor.GetNombreIdioma()).Insert(n, Valor.GetNombreJuego());
+            string etiqueta = Valor.EtiquetaAyuda2(Valor.GetNombreIdioma());
+            string[] p = etiqueta.Split('/');
+            label2.Text = p[0].ToUpper();
+            label3.Text = p[1].ToUpper();
+            label1.Text = p[2].ToUpper();
         }
 
         private void ComportamientoObjetoInicio()
@@ -209,7 +222,7 @@ namespace SudokuParaTodos.Formularios
         {
             valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            txtSudoku = Funcion.SetearTextBoxJuegoInicio(txtSudoku, valorSolucion, valorInicio);
             txtSudoku2 = Funcion.SetearTextBoxEliminados(txtSudoku2, valorEliminado);
         }
 
@@ -370,7 +383,7 @@ namespace SudokuParaTodos.Formularios
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-
+            SetearJuego();
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {

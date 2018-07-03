@@ -326,7 +326,11 @@ namespace SudokuParaTodos
             btnGuardar.Text = RecursosLocalizables.StringResources.btnGuardar;
             btnOtro.Text =  RecursosLocalizables.StringResources.btnOtro;
             btnSolucion.Text = RecursosLocalizables.StringResources.btnSolucion;
-            this.Text = Valor.TituloForm(Valor.GetNombreIdioma()); 
+            this.Text = Valor.TituloForm(Valor.GetNombreIdioma());
+            string etiqueta = Valor.EiquetaCrearJuego(Valor.GetNombreIdioma());
+            string [] p = etiqueta.Split('/');
+            label1.Text = p[0].ToUpper();
+            label2.Text = p[1].ToUpper();
         }
 
         private int ContadorIngresado()
@@ -535,10 +539,11 @@ namespace SudokuParaTodos
                     Valor.SetValorEliminado(valorEliminado );
                     Valor.SetValorInicio(valorInicio);
                     Valor.SetValorSolucion(valorSolucion );
+                    Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
 
                     Formularios.AzulUno f = new Formularios.AzulUno();
                     f.Show();
-                   
+                    this.Hide();
                     break;
                 case (EngineData.BtnGuardarJuego):
                     if (Valor.GetPathArchivo() == string.Empty)
@@ -660,6 +665,8 @@ namespace SudokuParaTodos
             Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
+
+        //************************************************************************************
 
         private void txt00_Enter(object sender, EventArgs e)
         {

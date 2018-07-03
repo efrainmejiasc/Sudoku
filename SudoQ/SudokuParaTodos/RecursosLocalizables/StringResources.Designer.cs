@@ -160,7 +160,7 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Sudoku Para Todos - Numeros:.
+        ///   Busca una cadena traducida similar a Sudoku Para Todos :.
         /// </summary>
         internal static string FormularioAzulUno {
             get {

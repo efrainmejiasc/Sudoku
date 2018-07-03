@@ -2380,6 +2380,15 @@ namespace SudokuParaTodos
             }
             return cajaTexto;
         }
-      
+
+        // RETORNA NOMBRE DEL ARCHIVO 
+        public string NombreJuego(string pathArchivo)
+        {
+            string[] partes = pathArchivo.Split('\\');
+            string nombreArchivo = partes[partes.Length - 1];
+            string[] nombreJuego = nombreArchivo.Split('.');
+            return nombreJuego[0];
+        }
+
     }
 }

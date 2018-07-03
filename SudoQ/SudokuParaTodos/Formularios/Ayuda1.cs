@@ -83,7 +83,15 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno;
+            int n = 20;
+            if (Valor.GetNombreIdioma() == EngineData.LenguajeEspañol)
+                n = 20;
+            else if (Valor.GetNombreIdioma() == EngineData.LenguajeIngles)
+                n = 17;
+            else if (Valor.GetNombreIdioma() == EngineData.LenguajePortugues)
+                n = 20;
+
+            this.Text = Valor.TituloFormY1(Valor.GetNombreIdioma()).Insert(n, Valor.GetNombreJuego());
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
             mColores.Text = RecursosLocalizables.StringResources.mColores;
@@ -97,6 +105,11 @@ namespace SudokuParaTodos.Formularios
             configuracion.Text = RecursosLocalizables.StringResources.configuracion;
             activar.Text = RecursosLocalizables.StringResources.activar;
             desactivar.Text = RecursosLocalizables.StringResources.desactivar;
+            string etiqueta = Valor.EtiquetaAyuda1(Valor.GetNombreIdioma());
+            string[] p = etiqueta.Split('/');
+            label2.Text = p[0].ToUpper();
+            label3.Text = p[1].ToUpper();
+            label1.Text = p[2].ToUpper();
         }
 
         private void ComportamientoObjetoInicio()

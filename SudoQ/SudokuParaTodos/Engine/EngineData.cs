@@ -171,16 +171,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Sudoku Para Todos - Números:                                                                                                                                                                                              Números y Candidatos Excluidos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All - Numbers:                                                                                                                                                                                                 Numbers and Candidates Excluded";
+                    titulo = "Sudoku For All : ";
                     break;
                 case ("Portugues"):
-                    titulo = "Sudoku Para Todos - Números:                                                                                                                                                                                              Números e Candidatos Excluído";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 default:
-                    titulo = "Sudoku Para Todos - Números:                                                                                                                                                                                              Números y Candidatos Excluidos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
             }
             return titulo;
@@ -192,16 +192,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                           Candidatos Excluidos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All - Filtered Candidates:                                                                                                                                                                                                Candidates Excluded";
+                    titulo = "Sudoku For All : ";
                     break;
                 case ("Portugues"):
-                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                             Candidatos Excluído";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 default:
-                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                              Candidatos Excluidos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
             }
             return titulo;
@@ -213,16 +213,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Sudoku Para Todos - Candidatos Ordenados:                                                                                                                                                                                           Candidatos Excluidos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All - Candidates Ordered:                                                                                                                                                                                                Candidates Excluded";
+                    titulo = "Sudoku For All : ";
                     break;
                 case ("Portugues"):
-                    titulo = "Sudoku Para Todos - Candidatos Encomendados:                                                                                                                                                                                             Candidatos Excluído";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 default:
-                    titulo = "Sudoku Para Todos - Candidatos Ordenados:                                                                                                                                                                                              Candidatos Excluidos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
             }
             return titulo;
@@ -234,16 +234,226 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                           Candidatos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All - Filtered Candidates:                                                                                                                                                                                                Candidates";
+                    titulo = "Sudoku For All : ";
                     break;
                 case ("Portugues"):
-                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                             Candidatos";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 default:
-                    titulo = "Sudoku Para Todos - Candidatos Filtrados:                                                                                                                                                                                              Candidatos";
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloFormY1(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                case ("Ingles"):
+                    titulo = "Sudoku For All : ";
+                    break;
+                case ("Portugues"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                default:
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloFormY2(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                case ("Ingles"):
+                    titulo = "Sudoku For All : ";
+                    break;
+                case ("Portugues"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                default:
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EiquetaCrearJuego(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Numeros/Numeros y Candidatos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Numbers/Numbers and Candidates";
+                    break;
+                case ("Portugues"):
+                    titulo = "Números/Números e Candidatos";
+                    break;
+                default:
+                    titulo = "Numeros/Numeros y Candidatos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EiquetaAzulUno(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Numeros";
+                    break;
+                case ("Ingles"):
+                    titulo = "Numbers";
+                    break;
+                case ("Portugues"):
+                    titulo = "Números";
+                    break;
+                default:
+                    titulo = "Numeros";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaAzulDos(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Números/Números y Candidatos Excluidos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Numbers/Numbers and Candidates Excluded";
+                    break;
+                case ("Portugues"):
+                    titulo = "Números/Números e Candidatos Excluído";
+                    break;
+                default:
+                    titulo = "Números/Números y Candidatos Excluidos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaRojoUno(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Candidatos Filtrados/Candidatos Excluidos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Filtered Candidates/Candidates Excluded";
+                    break;
+                case ("Portugues"):
+                    titulo = "Candidatos Filtrados/Candidatos Excluído";
+                    break;
+                default:
+                    titulo = "Candidatos Filtrados/Candidatos Excluidos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaRojoDos(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Candidatos Ordenados/Candidatos Excluidos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Candidates Ordered/Candidates Excluded";
+                    break;
+                case ("Portugues"):
+                    titulo = "Candidatos Encomendados/Candidatos Excluído";
+                    break;
+                default:
+                    titulo = "Candidatos Ordenados/Candidatos Excluidos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaRojoTres(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Candidatos Filtrados/Candidatos";
+                    break;
+                case ("Ingles"):
+                    titulo = "Filtered Candidates/Candidates";
+                    break;
+                case ("Portugues"):
+                    titulo = "Candidatos Filtrados/Candidatos";
+                    break;
+                default:
+                    titulo = "Candidatos Filtrados/Candidatos";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaAyuda1(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Números/Celdas Vacias/AYUDA1";
+                    break;
+                case ("Ingles"):
+                    titulo = "Numbers/Empty Cells/HELP1";
+                    break;
+                case ("Portugues"):
+                    titulo = "Números/Células Vazias/AJUDA1";
+                    break;
+                default:
+                    titulo = "Números/Celdas Vacias/AYUDA1";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaAyuda2(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Solucion/Candidatos Excluidos/AYUDA2";
+                    break;
+                case ("Ingles"):
+                    titulo = "Solution/Candidates Excluded/HELP2";
+                    break;
+                case ("Portugues"):
+                    titulo = "Solução/Candidatos Excluído/AJUDA2";
+                    break;
+                default:
+                    titulo = "Solucion/Candidatos Excluidos/AYUDA2";
                     break;
             }
             return titulo;
@@ -406,6 +616,18 @@ namespace SudokuParaTodos
         public void SetPathArchivo(string pArchivo)
         {
             pathArchivo = pArchivo;
+        }
+
+        private string nombreJuego = string.Empty ;
+
+        public string GetNombreJuego()
+        {
+            return nombreJuego;
+        }
+
+        public void SetNombreJuego(string nArchivo)
+        {
+            nombreJuego= nArchivo;
         }
 
         private ArrayList arrText = new ArrayList();
