@@ -150,16 +150,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Sudoku Para Todos - Crear Juego                                                                                                                                                                                                 Numeros y Candidatos";
+                    titulo = "Sudoku Para Todos";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All - Create Game                                                                                                                                                                                                  Numbers and Candidates";
+                    titulo = "Sudoku For All";
                     break;
                 case ("Portugues"):
-                    titulo = "Sudoku Para Todos - Criar Jogo                                                                                                                                                                                                  Números e Candidatos";
+                    titulo = "Sudoku Para Todos";
                     break;
                 default:
-                    titulo = "Sudoku Para Todos - Crear Juego                                                                                                                                                                                                 Numeros y Candidatos";
+                    titulo = "Sudoku Para Todos";
                     break;
             }
             return titulo;
