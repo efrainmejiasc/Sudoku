@@ -112,6 +112,8 @@
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnSelectColor = new System.Windows.Forms.Button();
@@ -238,8 +240,6 @@
             this.t00 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -1824,6 +1824,24 @@
             this.panel10.Size = new System.Drawing.Size(1145, 165);
             this.panel10.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(735, 132);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(310, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 110;
+            this.label2.Text = "label2";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -2183,21 +2201,21 @@
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Portugues";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -3818,24 +3836,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(310, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 110;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(735, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "label3";
             // 
             // AzulDos
             // 

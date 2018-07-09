@@ -739,5 +739,6 @@ namespace SudokuParaTodos.Formularios
             f.Show();
             this.Hide();
         }
+
     }
 }

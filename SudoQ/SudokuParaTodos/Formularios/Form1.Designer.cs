@@ -260,7 +260,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1034, 182);
+            this.panel10.Size = new System.Drawing.Size(570, 182);
             this.panel10.TabIndex = 10;
             // 
             // label2
@@ -490,7 +490,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1034, 24);
+            this.panel11.Size = new System.Drawing.Size(570, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
@@ -3591,7 +3591,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1034, 641);
+            this.ClientSize = new System.Drawing.Size(570, 641);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);

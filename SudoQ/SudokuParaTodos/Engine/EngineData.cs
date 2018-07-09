@@ -856,5 +856,89 @@ namespace SudokuParaTodos
             return recuadro;
         }
 
+        public string  TituloEtiqueta1 (string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "INFORMACION DEL SISTEMA";
+                    break;
+                case ("Ingles"):
+                    titulo = "SYSTEM INFORMATION";
+                    break;
+                case ("Portugues"):
+                    titulo = "INFORMAÇÃO DO SISTEMA";
+                    break;
+                default:
+                    titulo = "INFORMACION DEL SISTEMA";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloEtiqueta2(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Desea Salir de la Aplicacion ?";
+                    break;
+                case ("Ingles"):
+                    titulo = "You want to exit the application ?";
+                    break;
+                case ("Portugues"):
+                    titulo = "Você quer sair do aplicativo ?";
+                    break;
+                default:
+                    titulo = "Desea Salir de la Aplicacion ?";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloButton1(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "SI";
+                    break;
+                case ("Ingles"):
+                    titulo = "OK";
+                    break;
+                case ("Portugues"):
+                    titulo = "SIM";
+                    break;
+                default:
+                    titulo = "SI";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloButton2(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "NO";
+                    break;
+                case ("Ingles"):
+                    titulo = "NO";
+                    break;
+                case ("Portugues"):
+                    titulo = "NÃO";
+                    break;
+                default:
+                    titulo = "NO";
+                    break;
+            }
+            return titulo;
+        }
+
     }
 }
