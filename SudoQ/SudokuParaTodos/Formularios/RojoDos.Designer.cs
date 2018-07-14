@@ -112,6 +112,8 @@
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnGrup2 = new System.Windows.Forms.Button();
@@ -281,9 +283,7 @@
             this.t85 = new System.Windows.Forms.TextBox();
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCelda = new System.Windows.Forms.Label();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1872,6 +1872,24 @@
             this.panel10.Size = new System.Drawing.Size(1204, 165);
             this.panel10.TabIndex = 3;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(826, 121);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 112;
+            this.label4.Text = "label4";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(342, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "label3";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -2000,21 +2018,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -4066,39 +4084,21 @@
             this.pnl2.Size = new System.Drawing.Size(555, 445);
             this.pnl2.TabIndex = 18;
             // 
-            // label1
+            // lblCelda
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(573, 171);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Celdas";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(342, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(826, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 112;
-            this.label4.Text = "label4";
+            this.lblCelda.AutoSize = true;
+            this.lblCelda.Location = new System.Drawing.Point(573, 171);
+            this.lblCelda.Name = "lblCelda";
+            this.lblCelda.Size = new System.Drawing.Size(39, 13);
+            this.lblCelda.TabIndex = 3;
+            this.lblCelda.Text = "Celdas";
             // 
             // RojoDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1204, 673);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCelda);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox12);
@@ -4386,7 +4386,7 @@
         private System.Windows.Forms.TextBox t85;
         private System.Windows.Forms.TextBox t88;
         private System.Windows.Forms.Panel pnl2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCelda;
         private System.Windows.Forms.Button btnGrup;
         private System.Windows.Forms.TextBox txtNota;
         private System.Windows.Forms.ToolStripMenuItem mFilas;

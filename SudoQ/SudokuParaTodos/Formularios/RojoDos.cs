@@ -124,6 +124,7 @@ namespace SudokuParaTodos.Formularios
             mFilas.Text = RecursosLocalizables.StringResources.mFilas;
             mColumnas.Text = RecursosLocalizables.StringResources.mColumnas;
             mRecuadros.Text = RecursosLocalizables.StringResources.mRecuadros;
+            lblCelda.Text = RecursosLocalizables.StringResources.lblCelda;
             string etiqueta = Valor.EtiquetaRojoDos(Valor.GetNombreIdioma());
             string[] p = etiqueta.Split('/');
             label3.Text = p[0].ToUpper();

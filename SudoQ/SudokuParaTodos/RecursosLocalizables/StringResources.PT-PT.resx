@@ -175,4 +175,7 @@
   <data name="mRecuadros" xml:space="preserve">
     <value>BOXES</value>
   </data>
+  <data name="lblCelda" xml:space="preserve">
+    <value>Células</value>
+  </data>
 </root>

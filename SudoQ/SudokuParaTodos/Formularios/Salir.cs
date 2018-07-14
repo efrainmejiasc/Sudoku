@@ -22,10 +22,11 @@ namespace SudokuParaTodos.Formularios
 
         private void Salir_Load(object sender, EventArgs e)
         {
-            label1.Text = Valor.TituloEtiqueta1(Valor.GetNombreIdioma());
+            label1.Text = string.Empty;
             label2.Text = Valor.TituloEtiqueta2(Valor.GetNombreIdioma());
             button1.Text = Valor.TituloButton1(Valor.GetNombreIdioma());
             button2.Text = Valor.TituloButton2(Valor.GetNombreIdioma());
+            this.Text = Valor.TituloEtiqueta1(Valor.GetNombreIdioma());
         }
 
         private void button1_Click(object sender, EventArgs e)

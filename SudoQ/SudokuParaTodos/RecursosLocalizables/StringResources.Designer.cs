@@ -187,6 +187,15 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Celdas.
+        /// </summary>
+        internal static string lblCelda {
+            get {
+                return ResourceManager.GetString("lblCelda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ARCHIVO.
         /// </summary>
         internal static string mArchivo {

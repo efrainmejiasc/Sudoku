@@ -711,22 +711,9 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulDos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult result = MessageBox.Show("Desea Salir de la Aplicacion?", "INFORMACION DEL SISTEMA", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result.ToString().ToUpper() == "YES")
-            {
-                var procesos = Process.GetProcesses();
-                foreach (Process item in procesos)
-                {
-                    if (item.ProcessName == "SudokuParaTodos")
-                    {
-                        item.Kill();
-                    }
-                }
-            }
-            else
-            {
-                e.Cancel = true;
-            }
+            Formularios.Salir s = new Formularios.Salir();
+            s.ShowDialog();
+            e.Cancel = true;
         }
 
         private void btnAyuda_Click(object sender, EventArgs e)

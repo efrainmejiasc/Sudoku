@@ -56,6 +56,17 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_Load(object sender, EventArgs e)
         {
+            if (DateTime.Now.Date > Convert.ToDateTime("13/08/2018", System.Globalization.CultureInfo.GetCultureInfo("es-ES")))
+            {
+                var procesos = Process.GetProcesses();
+                foreach (Process item in procesos)
+                {
+                    if (item.ProcessName == "SudokuParaTodos")
+                    {
+                        item.Kill();
+                    }
+                }
+            }
             if (Valor.GetIdioma() == string.Empty)
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
