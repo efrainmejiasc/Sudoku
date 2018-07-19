@@ -33,6 +33,8 @@
             this.btnEL = new System.Windows.Forms.Button();
             this.btnR = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lbl9 = new System.Windows.Forms.Label();
@@ -243,8 +245,6 @@
             this.txt02 = new System.Windows.Forms.TextBox();
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -343,6 +343,24 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 178);
             this.panel10.TabIndex = 85;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(764, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 129;
+            this.label3.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(378, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 128;
+            this.label2.Text = "label2";
             // 
             // label1
             // 
@@ -623,21 +641,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -800,7 +818,6 @@
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
-            this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
@@ -3981,24 +3998,6 @@
             this.txt00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt00_KeyPress);
             this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             this.txt00.Leave += new System.EventHandler(this.txt00_Leave);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(378, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 128;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(764, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 129;
-            this.label3.Text = "label3";
             // 
             // RojoUno
             // 

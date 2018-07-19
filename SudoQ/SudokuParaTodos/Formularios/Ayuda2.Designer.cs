@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda2));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
@@ -208,8 +210,6 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.pnl1.SuspendLayout();
             this.pnl2.SuspendLayout();
@@ -239,6 +239,24 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 178);
             this.panel10.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(764, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(246, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 110;
+            this.label2.Text = "label2";
             // 
             // label1
             // 
@@ -386,7 +404,6 @@
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
-            this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
@@ -3445,24 +3462,6 @@
             this.t00.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(246, 139);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 110;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(764, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "label3";
             // 
             // Ayuda2
             // 

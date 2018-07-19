@@ -631,7 +631,6 @@
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 51;
-            this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 

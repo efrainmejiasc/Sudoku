@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AzulUno));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnSelectColor = new System.Windows.Forms.Button();
@@ -157,7 +158,6 @@
             this.txt00 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -192,6 +192,15 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 156);
             this.panel10.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(529, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "label2";
             // 
             // label1
             // 
@@ -349,7 +358,6 @@
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
-            this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
@@ -596,13 +604,13 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(102, 22);
             this.toolStripMenuItem2.Text = "80%";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(102, 22);
             this.toolStripMenuItem3.Text = "100%";
             // 
             // mColores
@@ -617,7 +625,7 @@
             // configuracion
             // 
             this.configuracion.Name = "configuracion";
-            this.configuracion.Size = new System.Drawing.Size(152, 22);
+            this.configuracion.Size = new System.Drawing.Size(150, 22);
             this.configuracion.Text = "Configuracion";
             // 
             // mContadores
@@ -2124,15 +2132,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(529, 125);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "label2";
             // 
             // AzulUno
             // 

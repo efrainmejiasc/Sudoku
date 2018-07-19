@@ -387,7 +387,6 @@
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
-            this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             // 
             // textBox1
