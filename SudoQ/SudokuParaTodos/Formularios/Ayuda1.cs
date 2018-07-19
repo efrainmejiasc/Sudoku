@@ -108,7 +108,7 @@ namespace SudokuParaTodos.Formularios
             string etiqueta = Valor.EtiquetaAyuda1(Valor.GetNombreIdioma());
             string[] p = etiqueta.Split('/');
             label2.Text = p[0].ToUpper();
-            label3.Text = p[1].ToUpper();
+            label3.Text = string.Empty; //p[1].ToUpper();
             label1.Text = p[2].ToUpper();
         }
 
@@ -359,6 +359,10 @@ namespace SudokuParaTodos.Formularios
             tabla = Funcion.OrdernadorLetraNumerico(dt);
             dataGridView1.DataSource = tabla;
             dataGridView1 = Funcion.FormatoDataGridView1(dataGridView1);
+            foreach(DataGridViewColumn c in dataGridView1.Columns)
+            {
+                c.HeaderText = string.Empty;
+            }
         }
 
         private void AbrirJuego(string pathArchivo)
