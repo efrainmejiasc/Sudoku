@@ -142,7 +142,7 @@
     <value>DIRECTORIA</value>
   </data>
   <data name="Form1" xml:space="preserve">
-    <value>Sudoku Para Todos</value>
+    <value>Sudoku Para Todos :</value>
   </data>
   <data name="btnGuardar" xml:space="preserve">
     <value>Salvar Jogo</value>

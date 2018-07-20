@@ -154,7 +154,7 @@
     <value>Guardar Solucion</value>
   </data>
   <data name="Form1" xml:space="preserve">
-    <value>Sudoku Para Todos</value>
+    <value>Sudoku Para Todos :</value>
   </data>
   <data name="FormularioAzulUno" xml:space="preserve">
     <value>Sudoku Para Todos :</value>
@@ -197,5 +197,8 @@
   </data>
   <data name="lblCelda" xml:space="preserve">
     <value>Celdas</value>
+  </data>
+  <data name="nueva" xml:space="preserve">
+    <value>Guardar </value>
   </data>
 </root>

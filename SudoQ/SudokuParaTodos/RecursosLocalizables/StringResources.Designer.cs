@@ -151,7 +151,7 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Sudoku Para Todos.
+        ///   Busca una cadena traducida similar a Sudoku Para Todos :.
         /// </summary>
         internal static string Form1 {
             get {
@@ -291,6 +291,15 @@ namespace SudokuParaTodos.RecursosLocalizables {
         internal static string mTablero {
             get {
                 return ResourceManager.GetString("mTablero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar .
+        /// </summary>
+        internal static string nueva {
+            get {
+                return ResourceManager.GetString("nueva", resourceCulture);
             }
         }
         

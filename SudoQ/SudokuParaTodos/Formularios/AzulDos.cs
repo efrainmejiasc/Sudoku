@@ -299,13 +299,22 @@ namespace SudokuParaTodos.Formularios
             else
             {
                 btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+                btnBB.Visible = EngineData.Falso;
             }
         }
 
         private void SetLetrasJuegoFEG()
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
-            btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            //btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B == 0 && Funcion.Visibilidad70(LetrasJuegoFEG.F))
+            {
+                btnBB.Visible = EngineData.Verdadero;
+            }
+            else
+            {
+                btnBB.Visible = EngineData.Falso;
+            }
             btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             btnF.Text = LetrasJuegoFEG.F.ToString();
             btnE.Text = LetrasJuegoFEG.E.ToString();
@@ -336,15 +345,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            int n = 20;
-            if (Valor.GetNombreIdioma() == EngineData.LenguajeEspañol)
-                n = 20;
-            else if (Valor.GetNombreIdioma() == EngineData.LenguajeIngles)
-                n = 17;
-            else if (Valor.GetNombreIdioma() == EngineData.LenguajePortugues)
-                n = 20;
-
-            this.Text = Valor.TituloFormA2(Valor.GetNombreIdioma()).Insert(n,Valor.GetNombreJuego());
+            this.Text = Valor.TituloFormA2(Valor.GetNombreIdioma()) + Valor.GetNombreJuego();
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mArchivo.Text = RecursosLocalizables.StringResources.mArchivo;
             mColores.Text = RecursosLocalizables.StringResources.mColores;

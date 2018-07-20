@@ -81,15 +81,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            int n = 20;
-            if (Valor.GetNombreIdioma() == EngineData.LenguajeEspañol)
-                n = 20;
-            else if (Valor.GetNombreIdioma() == EngineData.LenguajeIngles)
-                n = 17;
-            else if (Valor.GetNombreIdioma() == EngineData.LenguajePortugues)
-                n = 20;
-
-            this.Text = Valor.TituloFormY2(Valor.GetNombreIdioma()).Insert(n, Valor.GetNombreJuego());
+            this.Text = Valor.TituloFormY2(Valor.GetNombreIdioma()) + Valor.GetNombreJuego();
             string etiqueta = Valor.EtiquetaAyuda2(Valor.GetNombreIdioma());
             string[] p = etiqueta.Split('/');
             label2.Text = p[0].ToUpper();

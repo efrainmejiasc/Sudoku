@@ -153,7 +153,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All";
+                    titulo = "Sudoku Para Todos";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos";
@@ -174,7 +174,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All : ";
+                    titulo = "Sudoku Para Todos: ";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos : ";
@@ -195,7 +195,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All : ";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos : ";
@@ -216,7 +216,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All : ";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos : ";
@@ -237,7 +237,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All : ";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos : ";
@@ -258,7 +258,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All : ";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos : ";
@@ -279,7 +279,7 @@ namespace SudokuParaTodos
                     titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Ingles"):
-                    titulo = "Sudoku For All : ";
+                    titulo = "Sudoku Para Todos : ";
                     break;
                 case ("Portugues"):
                     titulo = "Sudoku Para Todos : ";
@@ -297,7 +297,7 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Numeros/Numeros y Candidatos";
+                    titulo = "Números/Números y Candidatos";
                     break;
                 case ("Ingles"):
                     titulo = "Numbers/Numbers and Candidates";
@@ -306,7 +306,7 @@ namespace SudokuParaTodos
                     titulo = "Números/Números e Candidatos";
                     break;
                 default:
-                    titulo = "Numeros/Numeros y Candidatos";
+                    titulo = "Números/Números y Candidatos";
                     break;
             }
             return titulo;
@@ -318,7 +318,7 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Numeros";
+                    titulo = "Números";
                     break;
                 case ("Ingles"):
                     titulo = "Numbers";
@@ -327,7 +327,7 @@ namespace SudokuParaTodos
                     titulo = "Números";
                     break;
                 default:
-                    titulo = "Numeros";
+                    titulo = "Números";
                     break;
             }
             return titulo;
@@ -342,10 +342,10 @@ namespace SudokuParaTodos
                     titulo = "Números/Números y Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Numbers/Numbers and Candidates Excluded";
+                    titulo = "Numbers/Numbers and Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Números/Números e Candidatos Excluído";
+                    titulo = "Números/Números e Candidatos Excluídos";
                     break;
                 default:
                     titulo = "Números/Números y Candidatos Excluidos";
@@ -363,10 +363,10 @@ namespace SudokuParaTodos
                     titulo = "Candidatos Filtrados/Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Filtered Candidates/Candidates Excluded";
+                    titulo = "Filtered Candidates/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Filtrados/Candidatos Excluído";
+                    titulo = "Candidatos Filtrados/Candidatos Excluídos";
                     break;
                 default:
                     titulo = "Candidatos Filtrados/Candidatos Excluidos";
@@ -384,10 +384,10 @@ namespace SudokuParaTodos
                     titulo = "Candidatos Ordenados/Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Candidates Ordered/Candidates Excluded";
+                    titulo = "Candidates Ordered/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Encomendados/Candidatos Excluído";
+                    titulo = "Candidatos Encomendados/Candidatos Excluídos";
                     break;
                 default:
                     titulo = "Candidatos Ordenados/Candidatos Excluidos";
@@ -426,10 +426,10 @@ namespace SudokuParaTodos
                     titulo = "Números/Celdas Vacias/AYUDA1";
                     break;
                 case ("Ingles"):
-                    titulo = "Numbers/Empty Cells/HELP1";
+                    titulo = "Numbers/Empty Squares/HELP1";
                     break;
                 case ("Portugues"):
-                    titulo = "Números/Células Vazias/AJUDA1";
+                    titulo = "Números/Quadrados Vazias/AJUDA1";
                     break;
                 default:
                     titulo = "Números/Celdas Vacias/AYUDA1";
@@ -447,10 +447,10 @@ namespace SudokuParaTodos
                     titulo = "Solucion/Candidatos Excluidos/AYUDA2";
                     break;
                 case ("Ingles"):
-                    titulo = "Solution/Candidates Excluded/HELP2";
+                    titulo = "Solution/Excluded Candidates/HELP2";
                     break;
                 case ("Portugues"):
-                    titulo = "Solução/Candidatos Excluído/AJUDA2";
+                    titulo = "Solução/Candidatos Excluídos/AJUDA2";
                     break;
                 default:
                     titulo = "Solucion/Candidatos Excluidos/AYUDA2";

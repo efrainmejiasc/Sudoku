@@ -64,7 +64,26 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo(Valor.GetIdioma());
+                string getIdioma = Valor.GetIdioma();
+                if (getIdioma == "EN-US")
+                {
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaIngles);
+                    Valor.SetIdioma(EngineData.CulturaIngles);
+                    Valor.SetNombreIdioma(EngineData.LenguajeIngles);
+                }
+                else if (getIdioma == "PT-PT")
+                {
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaPortugues);
+                    Valor.SetIdioma(EngineData.CulturaPortugues);
+                    Valor.SetNombreIdioma(EngineData.LenguajePortugues);
+                }
+                else if (getIdioma == "ES-VE")
+                {
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(EngineData.CulturaEspañol);
+                    Valor.SetIdioma(EngineData.CulturaEspañol);
+                    Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
+                }
+
             }
 
             AplicarIdioma();
@@ -318,13 +337,22 @@ namespace SudokuParaTodos.Formularios
             else
             {
                 btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+                btnBB.Visible = EngineData.Falso;
             }
         }
 
         private void SetLetrasJuegoFEG()
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
-            btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            //btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B == 0 && !Funcion.Visibilidad70(LetrasJuegoFEG.F))
+            {
+                btnBB.Visible = EngineData.Verdadero;
+            }
+            else
+            {
+                btnBB.Visible = EngineData.Falso;
+            }
             btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             btnF.Text = LetrasJuegoFEG.F.ToString();
             btnE.Text = LetrasJuegoFEG.E.ToString();
