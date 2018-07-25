@@ -487,7 +487,7 @@ namespace SudokuParaTodos.Formularios
                     if (lado != EngineData.btnIzquierda) return;
                     string candidatoEliminar = txtSudoku[row,col].Text;
                     if (candidatoEliminar == string.Empty) return;
-                    if (valorEliminado[row, col] != null)
+                    if (valorEliminado[row, col] != null   && valorEliminado[row, col] != string.Empty)
                     {
                         if (valorEliminado[row, col].Contains(candidatoEliminar))
                         {
@@ -496,7 +496,12 @@ namespace SudokuParaTodos.Formularios
                             return;
                         }
                     }
-                    valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
+
+                    if (valorEliminado[row, col] != null && valorEliminado[row, col] != string.Empty)
+                    { valorEliminado[row, col] = valorEliminado[row, col].Trim() + " " + candidatoEliminar.Trim(); }
+                    else
+                    { valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar.Trim(); }
+
                     valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     txtSudoku[row, col].BackColor = Color.WhiteSmoke;
                     txtSudoku[row, col].Text  = string.Empty;
@@ -690,9 +695,9 @@ namespace SudokuParaTodos.Formularios
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
-            if (txt.Text == EngineData.Zero)
+            if (txt.Text == EngineData.Zero || txt.Text == string.Empty)
             {
-                txt.Text = string.Empty;
+                txt.Text = valorEliminado[row, col];
             }
             else
             {

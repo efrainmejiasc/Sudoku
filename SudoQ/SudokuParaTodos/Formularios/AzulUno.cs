@@ -345,7 +345,7 @@ namespace SudokuParaTodos.Formularios
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
             //btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
-            if (LetrasJuegoACB.A + LetrasJuegoACB.B == 0 && !Funcion.Visibilidad70(LetrasJuegoFEG.F))
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B == 0 && Funcion.Visibilidad70(LetrasJuegoFEG.F))
             {
                 btnBB.Visible = EngineData.Verdadero;
             }
@@ -380,6 +380,9 @@ namespace SudokuParaTodos.Formularios
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
             ContadorIngresado();
+            string nombrePlay = Funcion.NombreJuego(pathArchivo);
+            Valor.SetNombreJuego(nombrePlay);
+            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno + " " + Valor.GetNombreJuego();
         }
 
         private void SetearJuego()

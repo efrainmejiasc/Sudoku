@@ -390,6 +390,9 @@ namespace SudokuParaTodos.Formularios
             }
             ActivarDesactivarContadores(EngineData.Falso);
             ContadorIngresado();
+            string nombrePlay = Funcion.NombreJuego(pathArchivo);
+            Valor.SetNombreJuego(nombrePlay);
+            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno + " " + Valor.GetNombreJuego();
         }
 
         private void GuardarJuego(string pathArchivo)

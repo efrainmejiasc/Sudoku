@@ -384,10 +384,10 @@ namespace SudokuParaTodos
                     titulo = "Candidatos Ordenados/Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Candidates Ordered/Excluded Candidates";
+                    titulo = "Sorted Candidates/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Encomendados/Candidatos Excluídos";
+                    titulo = "Candidatos Ordenados/Candidatos Excluídos";
                     break;
                 default:
                     titulo = "Candidatos Ordenados/Candidatos Excluidos";
@@ -883,10 +883,10 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Desea Salir de la Aplicacion ?";
+                    titulo = "¿ Desea Salir de la Aplicacion ?";
                     break;
                 case ("Ingles"):
-                    titulo = "You want to exit the application ?";
+                    titulo = "Do you want to exit the application ?";
                     break;
                 case ("Portugues"):
                     titulo = "Você quer sair do aplicativo ?";
@@ -907,7 +907,7 @@ namespace SudokuParaTodos
                     titulo = "SI";
                     break;
                 case ("Ingles"):
-                    titulo = "OK";
+                    titulo = "YES";
                     break;
                 case ("Portugues"):
                     titulo = "SIM";

@@ -378,6 +378,10 @@ namespace SudokuParaTodos.Formularios
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
             }
             ContadorIngresado();
+            ProcesosContables();
+            string nombrePlay = Funcion.NombreJuego(pathArchivo);
+            Valor.SetNombreJuego(nombrePlay);
+            this.Text = RecursosLocalizables.StringResources.FormularioAzulUno + " " + Valor.GetNombreJuego();
         }
 
         private string GuardarComoSaveDialog()

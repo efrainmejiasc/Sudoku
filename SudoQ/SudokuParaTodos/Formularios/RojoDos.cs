@@ -1213,6 +1213,15 @@ namespace SudokuParaTodos.Formularios
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
+            if (txt.Text == EngineData.Zero || txt.Text == string.Empty)
+            {
+                txt.Text = valorEliminado[row, col];
+            }
+            else
+            {
+                if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
+            }
+
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {

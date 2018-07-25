@@ -551,6 +551,8 @@ namespace SudokuParaTodos
                     Valor.SetValorSolucion(valorSolucion );
                     Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
 
+                    //Valor.SetOpenFrom(EngineData.File);
+
                     Formularios.AzulUno f = new Formularios.AzulUno();
                     f.Show();
                     this.Hide();
@@ -846,6 +848,11 @@ namespace SudokuParaTodos
             {
                 e.Cancel = true;
             }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

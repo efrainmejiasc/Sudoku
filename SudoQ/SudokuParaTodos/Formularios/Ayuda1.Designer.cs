@@ -2251,7 +2251,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ayuda1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
