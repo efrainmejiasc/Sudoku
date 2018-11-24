@@ -362,7 +362,7 @@ namespace SudokuParaTodos
                         {
                             cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
                             cajaTexto[f, c].ForeColor = Color.Blue;
-                            cajaTexto[f, c].BackColor = Color.LightCyan;
+                            cajaTexto[f, c].BackColor = Color.WhiteSmoke;
                             cajaTexto[f, c].Text = n;
                             numFiltro[f, c] = n;
                         }
@@ -2388,6 +2388,22 @@ namespace SudokuParaTodos
             string nombreArchivo = partes[partes.Length - 1];
             string[] nombreJuego = nombreArchivo.Split('.');
             return nombreJuego[0];
+        }
+
+        public bool SolucionCompleta (string [,] solucion)
+        {
+            bool resultado = true;
+            for (int i = 0; i <= 8; i++)
+            {
+                for (int j = 0; j <= 8; j++)
+                {
+                  if (solucion [i,j] == string.Empty || solucion[i, j] == null)
+                  {
+                        return false;
+                  }
+                }
+            }
+            return resultado;
         }
 
     }

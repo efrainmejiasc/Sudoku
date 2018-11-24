@@ -31,7 +31,8 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorEliminado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
-        private string[,] valorSolucion = new string[9, 9];
+        //private string[,] valorSolucion = new string[9, 9];
+
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
 
@@ -498,9 +499,13 @@ namespace SudokuParaTodos.Formularios
                     }
 
                     if (valorEliminado[row, col] != null && valorEliminado[row, col] != string.Empty)
-                    { valorEliminado[row, col] = valorEliminado[row, col].Trim() + " " + candidatoEliminar.Trim(); }
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col].Trim() + " " + candidatoEliminar.Trim();
+                    }
                     else
-                    { valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar.Trim(); }
+                    {
+                        valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar.Trim();
+                    }
 
                     valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
                     txtSudoku[row, col].BackColor = Color.WhiteSmoke;
@@ -528,6 +533,8 @@ namespace SudokuParaTodos.Formularios
                     ActualizarContadoresCandidatos();
                     SetearJuego();
                     ActualizarCandidato(candidatoRestablecer);
+                    string[,] o = Valor.GetValorSolucion();
+                    int m = 0;
                     break;
             }
             ContadorIngresado();

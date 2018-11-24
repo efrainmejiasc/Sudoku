@@ -194,7 +194,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1145, 178);
+            this.panel10.Size = new System.Drawing.Size(947, 178);
             this.panel10.TabIndex = 13;
             // 
             // label3
@@ -484,7 +484,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1145, 24);
+            this.panel11.Size = new System.Drawing.Size(947, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
@@ -2247,12 +2247,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 641);
+            this.ClientSize = new System.Drawing.Size(947, 641);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(963, 680);
+            this.MinimumSize = new System.Drawing.Size(963, 680);
             this.Name = "Ayuda1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda1";

@@ -407,7 +407,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorEliminado(valorEliminado);
-            Valor.SetValorSolucion(valorEliminado);
+            Valor.SetValorSolucion(valorSolucion);
             RojoUno f = new RojoUno();
             f.Show();
             this.Hide();
@@ -634,5 +634,7 @@ namespace SudokuParaTodos.Formularios
             f.Show();
             this.Hide();
         }
+
+      
     }
 }

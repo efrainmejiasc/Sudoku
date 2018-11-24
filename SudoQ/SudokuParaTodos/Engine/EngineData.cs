@@ -444,16 +444,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Solucion/Candidatos Excluidos/AYUDA2";
+                    titulo = "Solucion/Candidatos Excluidos/AYUDA3";
                     break;
                 case ("Ingles"):
-                    titulo = "Solution/Excluded Candidates/HELP2";
+                    titulo = "Solution/Excluded Candidates/HELP3";
                     break;
                 case ("Portugues"):
-                    titulo = "Solução/Candidatos Excluídos/AJUDA2";
+                    titulo = "Solução/Candidatos Excluídos/AJUDA3";
                     break;
                 default:
-                    titulo = "Solucion/Candidatos Excluidos/AYUDA2";
+                    titulo = "Solucion/Candidatos Excluidos/AYUDA3";
                     break;
             }
             return titulo;

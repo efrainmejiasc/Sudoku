@@ -1,6 +1,6 @@
 ﻿namespace SudokuParaTodos.Formularios
 {
-    partial class Ayuda2
+    partial class Ayuda3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda3));
             this.panel10 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -266,7 +266,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 31);
             this.label1.TabIndex = 109;
-            this.label1.Text = "AYUDA2";
+            this.label1.Text = "AYUDA3";
             // 
             // btnSelectColor
             // 
@@ -3463,7 +3463,7 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
-            // Ayuda2
+            // Ayuda3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -3473,7 +3473,9 @@
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Ayuda2";
+            this.MaximumSize = new System.Drawing.Size(1161, 680);
+            this.MinimumSize = new System.Drawing.Size(1161, 680);
+            this.Name = "Ayuda3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ayuda2_FormClosing);

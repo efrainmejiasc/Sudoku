@@ -548,7 +548,7 @@ namespace SudokuParaTodos
                     Valor.SetValorIngresado(valorIngresado);
                     Valor.SetValorEliminado(valorEliminado );
                     Valor.SetValorInicio(valorInicio);
-                    Valor.SetValorSolucion(valorSolucion );
+                    Valor.SetValorSolucion(valorSolucion);
                     Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
 
                     //Valor.SetOpenFrom(EngineData.File);
@@ -584,7 +584,10 @@ namespace SudokuParaTodos
                         btnSolucion.Visible = EngineData.Falso;
                     }
                     btnGuardar.Visible = EngineData.Falso;
-                    if (vInit == EngineData.Falso) { vInit = EngineData.Verdadero; }
+                    if (vInit == EngineData.Falso)
+                    {
+                        vInit = EngineData.Verdadero;
+                    }
                     break;
                 case (EngineData.BtnOtroJuego):
                     pathArchivo = Valor.GetPathArchivo();
@@ -741,10 +744,15 @@ namespace SudokuParaTodos
                 else
                 {
                     valorSolucion[row, col] = txt.Text;
-                    if (vInit == EngineData.Falso) {valorInicio[row, col] = txt.Text; }
+                    if (vInit == EngineData.Falso)
+                    {
+                        valorInicio[row, col] = txt.Text;
+                    }
 
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
-                    { txt.Text = valorInicio[row, col]; }
+                    {
+                        txt.Text = valorInicio[row, col];
+                    }
                 }
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
                 txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2,valorSolucion,valorCandidato, valorInicio, Color.Green,Color.Blue);
@@ -848,11 +856,6 @@ namespace SudokuParaTodos
             {
                 e.Cancel = true;
             }
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }

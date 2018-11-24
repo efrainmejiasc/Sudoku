@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace SudokuParaTodos.Formularios
 {
-    public partial class Ayuda2 : Form
+    public partial class Ayuda3 : Form
     {
         [DllImport("user32.dll")]
         static extern bool HideCaret(IntPtr hWnd);
@@ -49,7 +49,7 @@ namespace SudokuParaTodos.Formularios
         private string idiomaNombre = string.Empty;
 
 
-        public Ayuda2()
+        public Ayuda3()
         {
             InitializeComponent();
         }
