@@ -314,7 +314,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Ayuda3 f = new Ayuda3();
+            Ayuda2 f = new Ayuda2();
             f.Show();
             this.Hide();
         }

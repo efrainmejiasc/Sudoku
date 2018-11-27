@@ -11,9 +11,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SudokuParaTodos.Formularios
+namespace SudokuParaTodos
 {
-    public partial class Ayuda3 : Form
+    public partial class Ayuda2 : Form
     {
         [DllImport("user32.dll")]
         static extern bool HideCaret(IntPtr hWnd);
@@ -48,13 +48,12 @@ namespace SudokuParaTodos.Formularios
         private string idiomaCultura = string.Empty;
         private string idiomaNombre = string.Empty;
 
-
-        public Ayuda3()
+        public Ayuda2()
         {
             InitializeComponent();
         }
 
-        private void Ayuda3_Load(object sender, EventArgs e)
+        private void Ayuda2_Load(object sender, EventArgs e)
         {
             idiomaCultura = Valor.GetIdioma();
             if (idiomaCultura == string.Empty)
@@ -81,8 +80,8 @@ namespace SudokuParaTodos.Formularios
 
         private void AplicarIdioma()
         {
-            this.Text = Valor.TituloFormY3(Valor.GetNombreIdioma()) + Valor.GetNombreJuego();
-            string etiqueta = Valor.EtiquetaAyuda3(Valor.GetNombreIdioma());
+            this.Text = Valor.TituloFormY2(Valor.GetNombreIdioma()) + Valor.GetNombreJuego();
+            string etiqueta = Valor.EtiquetaAyuda2(Valor.GetNombreIdioma());
             string[] p = etiqueta.Split('/');
             label2.Text = p[0].ToUpper();
             label3.Text = p[1].ToUpper();
@@ -102,6 +101,12 @@ namespace SudokuParaTodos.Formularios
             txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);
+        }
+
+        private void SetearJuego()
+        {
+            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            txtSudoku2 = Funcion.SetearTextBoxJuegoNumerosIngresados(txtSudoku2, valorIngresado,valorInicio);
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -210,13 +215,6 @@ namespace SudokuParaTodos.Formularios
             return btnPincel;
         }
 
-        private void SetearJuego()
-        {
-            valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-            valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-            txtSudoku = Funcion.SetearTextBoxJuegoInicio(txtSudoku, valorSolucion, valorInicio);
-            txtSudoku2 = Funcion.SetearTextBoxEliminados(txtSudoku2, valorEliminado);
-        }
 
         private void btnDerecha_Click(object sender, EventArgs e)
         {
@@ -224,7 +222,18 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Ayuda2 f = new Ayuda2();
+            Formularios.Ayuda1 f = new Formularios.Ayuda1();
+            f.Show();
+            this.Hide();
+        }
+
+        private void btnIzquierda_Click(object sender, EventArgs e)
+        {
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorEliminado(valorEliminado);
+            Valor.SetValorSolucion(valorSolucion);
+            Formularios.Ayuda3 f = new Formularios.Ayuda3();
             f.Show();
             this.Hide();
         }
@@ -256,11 +265,12 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            AzulDos F = new AzulDos();
+            Formularios.AzulDos F = new Formularios.AzulDos();
             F.Show();
             this.Hide();
         }
-        //****************************************************************************************
+
+        //***************************************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -323,7 +333,6 @@ namespace SudokuParaTodos.Formularios
 
         private void txt00_Leave(object sender, EventArgs e)
         {
-
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
@@ -332,8 +341,6 @@ namespace SudokuParaTodos.Formularios
                 txt.BackColor = colorCeldaAnt;
             }
         }
-
-        //****************************************************************************************
 
         private void t00_Enter(object sender, EventArgs e)
         {
@@ -407,12 +414,13 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
-
-        private void Ayuda3_FormClosing(object sender, FormClosingEventArgs e)
+        private void Ayuda2_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
         }
 
-        //***************************************************************************************
+        //*******************************************************************************************************************
+
+
     }
 }

@@ -291,6 +291,27 @@ namespace SudokuParaTodos
             return titulo;
         }
 
+        public string TituloFormY3(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                case ("Ingles"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                case ("Portugues"):
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+                default:
+                    titulo = "Sudoku Para Todos : ";
+                    break;
+            }
+            return titulo;
+        }
+
         public string EiquetaCrearJuego(string lenguaje)
         {
             string titulo = string.Empty;
@@ -439,6 +460,27 @@ namespace SudokuParaTodos
         }
 
         public string EtiquetaAyuda2(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Solucion/Numeros/AYUDA2";
+                    break;
+                case ("Ingles"):
+                    titulo = "Solution/Numbers/HELP2";
+                    break;
+                case ("Portugues"):
+                    titulo = "Solução/Números/AJUDA2";
+                    break;
+                default:
+                    titulo = "Solucion/Numeros/AYUDA2";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string EtiquetaAyuda3(string lenguaje)
         {
             string titulo = string.Empty;
             switch (lenguaje)

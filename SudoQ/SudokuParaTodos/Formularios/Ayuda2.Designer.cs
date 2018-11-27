@@ -1,6 +1,6 @@
-﻿namespace SudokuParaTodos.Formularios
+﻿namespace SudokuParaTodos
 {
-    partial class Ayuda3
+    partial class Ayuda2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda3));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnIzquierda = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -218,6 +218,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.btnIzquierda);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.label1);
@@ -238,7 +239,23 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 178);
-            this.panel10.TabIndex = 1;
+            this.panel10.TabIndex = 2;
+            // 
+            // btnIzquierda
+            // 
+            this.btnIzquierda.BackColor = System.Drawing.Color.Silver;
+            this.btnIzquierda.BackgroundImage = global::SudokuParaTodos.Properties.Resources.Der;
+            this.btnIzquierda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIzquierda.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnIzquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIzquierda.ForeColor = System.Drawing.Color.Silver;
+            this.btnIzquierda.Location = new System.Drawing.Point(409, 37);
+            this.btnIzquierda.Name = "btnIzquierda";
+            this.btnIzquierda.Size = new System.Drawing.Size(36, 24);
+            this.btnIzquierda.TabIndex = 112;
+            this.btnIzquierda.UseVisualStyleBackColor = false;
+            this.btnIzquierda.Click += new System.EventHandler(this.btnIzquierda_Click);
             // 
             // label3
             // 
@@ -266,7 +283,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 31);
             this.label1.TabIndex = 109;
-            this.label1.Text = "AYUDA3";
+            this.label1.Text = "AYUDA2";
             // 
             // btnSelectColor
             // 
@@ -416,7 +433,7 @@
             this.btnDerecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDerecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDerecha.ForeColor = System.Drawing.Color.Silver;
-            this.btnDerecha.Location = new System.Drawing.Point(382, 37);
+            this.btnDerecha.Location = new System.Drawing.Point(367, 37);
             this.btnDerecha.Name = "btnDerecha";
             this.btnDerecha.Size = new System.Drawing.Size(36, 24);
             this.btnDerecha.TabIndex = 95;
@@ -535,7 +552,7 @@
             this.pnl1.Location = new System.Drawing.Point(12, 184);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
-            this.pnl1.TabIndex = 71;
+            this.pnl1.TabIndex = 72;
             // 
             // txt88
             // 
@@ -2083,7 +2100,7 @@
             this.pnl2.Location = new System.Drawing.Point(578, 184);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(555, 445);
-            this.pnl2.TabIndex = 74;
+            this.pnl2.TabIndex = 75;
             // 
             // t88
             // 
@@ -2097,6 +2114,7 @@
             this.t88.Size = new System.Drawing.Size(59, 46);
             this.t88.TabIndex = 30;
             this.t88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t88.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t88.Enter += new System.EventHandler(this.t00_Enter);
             this.t88.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t88.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2114,6 +2132,7 @@
             this.t85.Size = new System.Drawing.Size(59, 46);
             this.t85.TabIndex = 92;
             this.t85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t85.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t85.Enter += new System.EventHandler(this.t00_Enter);
             this.t85.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t85.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2131,6 +2150,7 @@
             this.t87.Size = new System.Drawing.Size(59, 46);
             this.t87.TabIndex = 29;
             this.t87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t87.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t87.Enter += new System.EventHandler(this.t00_Enter);
             this.t87.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t87.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2148,6 +2168,7 @@
             this.t84.Size = new System.Drawing.Size(59, 46);
             this.t84.TabIndex = 91;
             this.t84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t84.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t84.Enter += new System.EventHandler(this.t00_Enter);
             this.t84.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t84.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2165,6 +2186,7 @@
             this.t86.Size = new System.Drawing.Size(59, 46);
             this.t86.TabIndex = 28;
             this.t86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t86.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t86.Enter += new System.EventHandler(this.t00_Enter);
             this.t86.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t86.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2182,6 +2204,7 @@
             this.t83.Size = new System.Drawing.Size(59, 46);
             this.t83.TabIndex = 90;
             this.t83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t83.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t83.Enter += new System.EventHandler(this.t00_Enter);
             this.t83.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t83.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2199,6 +2222,7 @@
             this.t78.Size = new System.Drawing.Size(59, 46);
             this.t78.TabIndex = 27;
             this.t78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t78.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t78.Enter += new System.EventHandler(this.t00_Enter);
             this.t78.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t78.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2216,6 +2240,7 @@
             this.t75.Size = new System.Drawing.Size(59, 46);
             this.t75.TabIndex = 89;
             this.t75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t75.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t75.Enter += new System.EventHandler(this.t00_Enter);
             this.t75.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t75.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2233,6 +2258,7 @@
             this.t77.Size = new System.Drawing.Size(59, 46);
             this.t77.TabIndex = 26;
             this.t77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t77.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t77.Enter += new System.EventHandler(this.t00_Enter);
             this.t77.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t77.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2250,6 +2276,7 @@
             this.t74.Size = new System.Drawing.Size(59, 46);
             this.t74.TabIndex = 88;
             this.t74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t74.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t74.Enter += new System.EventHandler(this.t00_Enter);
             this.t74.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t74.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2267,6 +2294,7 @@
             this.t76.Size = new System.Drawing.Size(59, 46);
             this.t76.TabIndex = 25;
             this.t76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t76.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t76.Enter += new System.EventHandler(this.t00_Enter);
             this.t76.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t76.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2284,6 +2312,7 @@
             this.t73.Size = new System.Drawing.Size(59, 46);
             this.t73.TabIndex = 87;
             this.t73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t73.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t73.Enter += new System.EventHandler(this.t00_Enter);
             this.t73.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t73.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2301,6 +2330,7 @@
             this.t68.Size = new System.Drawing.Size(59, 46);
             this.t68.TabIndex = 24;
             this.t68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t68.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t68.Enter += new System.EventHandler(this.t00_Enter);
             this.t68.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t68.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2318,6 +2348,7 @@
             this.t65.Size = new System.Drawing.Size(59, 46);
             this.t65.TabIndex = 86;
             this.t65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t65.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t65.Enter += new System.EventHandler(this.t00_Enter);
             this.t65.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t65.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2335,6 +2366,7 @@
             this.t67.Size = new System.Drawing.Size(59, 46);
             this.t67.TabIndex = 23;
             this.t67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t67.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t67.Enter += new System.EventHandler(this.t00_Enter);
             this.t67.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t67.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2352,6 +2384,7 @@
             this.t64.Size = new System.Drawing.Size(59, 46);
             this.t64.TabIndex = 85;
             this.t64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t64.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t64.Enter += new System.EventHandler(this.t00_Enter);
             this.t64.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t64.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2369,6 +2402,7 @@
             this.t66.Size = new System.Drawing.Size(59, 46);
             this.t66.TabIndex = 22;
             this.t66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t66.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t66.Enter += new System.EventHandler(this.t00_Enter);
             this.t66.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t66.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2386,6 +2420,7 @@
             this.t63.Size = new System.Drawing.Size(59, 46);
             this.t63.TabIndex = 84;
             this.t63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t63.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t63.Enter += new System.EventHandler(this.t00_Enter);
             this.t63.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t63.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2403,6 +2438,7 @@
             this.t82.Size = new System.Drawing.Size(59, 46);
             this.t82.TabIndex = 83;
             this.t82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t82.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t82.Enter += new System.EventHandler(this.t00_Enter);
             this.t82.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t82.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2420,6 +2456,7 @@
             this.t81.Size = new System.Drawing.Size(59, 46);
             this.t81.TabIndex = 82;
             this.t81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t81.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t81.Enter += new System.EventHandler(this.t00_Enter);
             this.t81.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t81.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2437,6 +2474,7 @@
             this.t80.Size = new System.Drawing.Size(59, 46);
             this.t80.TabIndex = 81;
             this.t80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t80.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t80.Enter += new System.EventHandler(this.t00_Enter);
             this.t80.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t80.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2454,6 +2492,7 @@
             this.t72.Size = new System.Drawing.Size(59, 46);
             this.t72.TabIndex = 80;
             this.t72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t72.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t72.Enter += new System.EventHandler(this.t00_Enter);
             this.t72.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t72.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2471,6 +2510,7 @@
             this.t71.Size = new System.Drawing.Size(59, 46);
             this.t71.TabIndex = 79;
             this.t71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t71.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t71.Enter += new System.EventHandler(this.t00_Enter);
             this.t71.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t71.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2488,6 +2528,7 @@
             this.t70.Size = new System.Drawing.Size(59, 46);
             this.t70.TabIndex = 78;
             this.t70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t70.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t70.Enter += new System.EventHandler(this.t00_Enter);
             this.t70.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t70.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2505,6 +2546,7 @@
             this.t62.Size = new System.Drawing.Size(59, 46);
             this.t62.TabIndex = 77;
             this.t62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t62.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t62.Enter += new System.EventHandler(this.t00_Enter);
             this.t62.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t62.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2522,6 +2564,7 @@
             this.t61.Size = new System.Drawing.Size(59, 46);
             this.t61.TabIndex = 76;
             this.t61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t61.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t61.Enter += new System.EventHandler(this.t00_Enter);
             this.t61.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t61.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2539,6 +2582,7 @@
             this.t60.Size = new System.Drawing.Size(59, 46);
             this.t60.TabIndex = 75;
             this.t60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t60.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t60.Enter += new System.EventHandler(this.t00_Enter);
             this.t60.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t60.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2556,6 +2600,7 @@
             this.t58.Size = new System.Drawing.Size(59, 46);
             this.t58.TabIndex = 74;
             this.t58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t58.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t58.Enter += new System.EventHandler(this.t00_Enter);
             this.t58.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t58.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2573,6 +2618,7 @@
             this.t57.Size = new System.Drawing.Size(59, 46);
             this.t57.TabIndex = 73;
             this.t57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t57.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t57.Enter += new System.EventHandler(this.t00_Enter);
             this.t57.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t57.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2590,6 +2636,7 @@
             this.t56.Size = new System.Drawing.Size(59, 46);
             this.t56.TabIndex = 72;
             this.t56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t56.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t56.Enter += new System.EventHandler(this.t00_Enter);
             this.t56.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t56.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2607,6 +2654,7 @@
             this.t48.Size = new System.Drawing.Size(59, 46);
             this.t48.TabIndex = 71;
             this.t48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t48.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t48.Enter += new System.EventHandler(this.t00_Enter);
             this.t48.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t48.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2624,6 +2672,7 @@
             this.t47.Size = new System.Drawing.Size(59, 46);
             this.t47.TabIndex = 70;
             this.t47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t47.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t47.Enter += new System.EventHandler(this.t00_Enter);
             this.t47.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t47.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2641,6 +2690,7 @@
             this.t46.Size = new System.Drawing.Size(59, 46);
             this.t46.TabIndex = 69;
             this.t46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t46.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t46.Enter += new System.EventHandler(this.t00_Enter);
             this.t46.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t46.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2658,6 +2708,7 @@
             this.t38.Size = new System.Drawing.Size(59, 46);
             this.t38.TabIndex = 68;
             this.t38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t38.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t38.Enter += new System.EventHandler(this.t00_Enter);
             this.t38.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t38.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2675,6 +2726,7 @@
             this.t37.Size = new System.Drawing.Size(59, 46);
             this.t37.TabIndex = 67;
             this.t37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t37.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t37.Enter += new System.EventHandler(this.t00_Enter);
             this.t37.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t37.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2692,6 +2744,7 @@
             this.t36.Size = new System.Drawing.Size(59, 46);
             this.t36.TabIndex = 66;
             this.t36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t36.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t36.Enter += new System.EventHandler(this.t00_Enter);
             this.t36.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t36.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2709,6 +2762,7 @@
             this.t55.Size = new System.Drawing.Size(59, 46);
             this.t55.TabIndex = 65;
             this.t55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t55.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t55.Enter += new System.EventHandler(this.t00_Enter);
             this.t55.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t55.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2726,6 +2780,7 @@
             this.t54.Size = new System.Drawing.Size(59, 46);
             this.t54.TabIndex = 64;
             this.t54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t54.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t54.Enter += new System.EventHandler(this.t00_Enter);
             this.t54.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t54.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2743,6 +2798,7 @@
             this.t53.Size = new System.Drawing.Size(59, 46);
             this.t53.TabIndex = 63;
             this.t53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t53.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t53.Enter += new System.EventHandler(this.t00_Enter);
             this.t53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t53.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2760,6 +2816,7 @@
             this.t45.Size = new System.Drawing.Size(59, 46);
             this.t45.TabIndex = 62;
             this.t45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t45.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t45.Enter += new System.EventHandler(this.t00_Enter);
             this.t45.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t45.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2777,6 +2834,7 @@
             this.t44.Size = new System.Drawing.Size(59, 46);
             this.t44.TabIndex = 61;
             this.t44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t44.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t44.Enter += new System.EventHandler(this.t00_Enter);
             this.t44.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t44.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2794,6 +2852,7 @@
             this.t43.Size = new System.Drawing.Size(59, 46);
             this.t43.TabIndex = 60;
             this.t43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t43.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t43.Enter += new System.EventHandler(this.t00_Enter);
             this.t43.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t43.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2811,6 +2870,7 @@
             this.t35.Size = new System.Drawing.Size(59, 46);
             this.t35.TabIndex = 59;
             this.t35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t35.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t35.Enter += new System.EventHandler(this.t00_Enter);
             this.t35.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t35.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2828,6 +2888,7 @@
             this.t34.Size = new System.Drawing.Size(59, 46);
             this.t34.TabIndex = 58;
             this.t34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t34.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t34.Enter += new System.EventHandler(this.t00_Enter);
             this.t34.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t34.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2845,6 +2906,7 @@
             this.t33.Size = new System.Drawing.Size(59, 46);
             this.t33.TabIndex = 57;
             this.t33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t33.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t33.Enter += new System.EventHandler(this.t00_Enter);
             this.t33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t33.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2862,6 +2924,7 @@
             this.t52.Size = new System.Drawing.Size(59, 46);
             this.t52.TabIndex = 56;
             this.t52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t52.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t52.Enter += new System.EventHandler(this.t00_Enter);
             this.t52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t52.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2879,6 +2942,7 @@
             this.t51.Size = new System.Drawing.Size(59, 46);
             this.t51.TabIndex = 55;
             this.t51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t51.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t51.Enter += new System.EventHandler(this.t00_Enter);
             this.t51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t51.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2896,6 +2960,7 @@
             this.t28.Size = new System.Drawing.Size(59, 46);
             this.t28.TabIndex = 47;
             this.t28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t28.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t28.Enter += new System.EventHandler(this.t00_Enter);
             this.t28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2913,6 +2978,7 @@
             this.t06.Size = new System.Drawing.Size(59, 46);
             this.t06.TabIndex = 39;
             this.t06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t06.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t06.Enter += new System.EventHandler(this.t00_Enter);
             this.t06.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t06.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2930,6 +2996,7 @@
             this.t50.Size = new System.Drawing.Size(59, 46);
             this.t50.TabIndex = 54;
             this.t50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t50.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t50.Enter += new System.EventHandler(this.t00_Enter);
             this.t50.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t50.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2947,6 +3014,7 @@
             this.t27.Size = new System.Drawing.Size(59, 46);
             this.t27.TabIndex = 46;
             this.t27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t27.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t27.Enter += new System.EventHandler(this.t00_Enter);
             this.t27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2964,6 +3032,7 @@
             this.t42.Size = new System.Drawing.Size(59, 46);
             this.t42.TabIndex = 53;
             this.t42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t42.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t42.Enter += new System.EventHandler(this.t00_Enter);
             this.t42.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t42.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2981,6 +3050,7 @@
             this.t18.Size = new System.Drawing.Size(59, 46);
             this.t18.TabIndex = 44;
             this.t18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t18.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t18.Enter += new System.EventHandler(this.t00_Enter);
             this.t18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -2998,6 +3068,7 @@
             this.t41.Size = new System.Drawing.Size(59, 46);
             this.t41.TabIndex = 52;
             this.t41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t41.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t41.Enter += new System.EventHandler(this.t00_Enter);
             this.t41.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t41.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3015,6 +3086,7 @@
             this.t07.Size = new System.Drawing.Size(59, 46);
             this.t07.TabIndex = 40;
             this.t07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t07.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t07.Enter += new System.EventHandler(this.t00_Enter);
             this.t07.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t07.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3032,6 +3104,7 @@
             this.t40.Size = new System.Drawing.Size(59, 46);
             this.t40.TabIndex = 51;
             this.t40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t40.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t40.Enter += new System.EventHandler(this.t00_Enter);
             this.t40.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t40.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3049,6 +3122,7 @@
             this.t17.Size = new System.Drawing.Size(59, 46);
             this.t17.TabIndex = 43;
             this.t17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t17.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t17.Enter += new System.EventHandler(this.t00_Enter);
             this.t17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3066,6 +3140,7 @@
             this.t32.Size = new System.Drawing.Size(59, 46);
             this.t32.TabIndex = 50;
             this.t32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t32.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t32.Enter += new System.EventHandler(this.t00_Enter);
             this.t32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t32.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3083,6 +3158,7 @@
             this.t16.Size = new System.Drawing.Size(59, 46);
             this.t16.TabIndex = 42;
             this.t16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t16.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t16.Enter += new System.EventHandler(this.t00_Enter);
             this.t16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3100,6 +3176,7 @@
             this.t31.Size = new System.Drawing.Size(59, 46);
             this.t31.TabIndex = 49;
             this.t31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t31.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t31.Enter += new System.EventHandler(this.t00_Enter);
             this.t31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t31.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3117,6 +3194,7 @@
             this.t08.Size = new System.Drawing.Size(59, 46);
             this.t08.TabIndex = 41;
             this.t08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t08.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t08.Enter += new System.EventHandler(this.t00_Enter);
             this.t08.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t08.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3134,6 +3212,7 @@
             this.t26.Size = new System.Drawing.Size(59, 46);
             this.t26.TabIndex = 45;
             this.t26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t26.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t26.Enter += new System.EventHandler(this.t00_Enter);
             this.t26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3151,6 +3230,7 @@
             this.t30.Size = new System.Drawing.Size(59, 46);
             this.t30.TabIndex = 48;
             this.t30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t30.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t30.Enter += new System.EventHandler(this.t00_Enter);
             this.t30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3168,6 +3248,7 @@
             this.t25.Size = new System.Drawing.Size(59, 46);
             this.t25.TabIndex = 38;
             this.t25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t25.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t25.Enter += new System.EventHandler(this.t00_Enter);
             this.t25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3185,6 +3266,7 @@
             this.t24.Size = new System.Drawing.Size(59, 46);
             this.t24.TabIndex = 37;
             this.t24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t24.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t24.Enter += new System.EventHandler(this.t00_Enter);
             this.t24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3202,6 +3284,7 @@
             this.t23.Size = new System.Drawing.Size(59, 46);
             this.t23.TabIndex = 36;
             this.t23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t23.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t23.Enter += new System.EventHandler(this.t00_Enter);
             this.t23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3219,6 +3302,7 @@
             this.t15.Size = new System.Drawing.Size(59, 46);
             this.t15.TabIndex = 35;
             this.t15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t15.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t15.Enter += new System.EventHandler(this.t00_Enter);
             this.t15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3236,6 +3320,7 @@
             this.t14.Size = new System.Drawing.Size(59, 46);
             this.t14.TabIndex = 34;
             this.t14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t14.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t14.Enter += new System.EventHandler(this.t00_Enter);
             this.t14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3253,6 +3338,7 @@
             this.t13.Size = new System.Drawing.Size(59, 46);
             this.t13.TabIndex = 33;
             this.t13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t13.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t13.Enter += new System.EventHandler(this.t00_Enter);
             this.t13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3270,6 +3356,7 @@
             this.t05.Size = new System.Drawing.Size(59, 46);
             this.t05.TabIndex = 32;
             this.t05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t05.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t05.Enter += new System.EventHandler(this.t00_Enter);
             this.t05.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t05.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3287,6 +3374,7 @@
             this.t04.Size = new System.Drawing.Size(59, 46);
             this.t04.TabIndex = 31;
             this.t04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t04.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t04.Enter += new System.EventHandler(this.t00_Enter);
             this.t04.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t04.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3304,6 +3392,7 @@
             this.t03.Size = new System.Drawing.Size(59, 46);
             this.t03.TabIndex = 30;
             this.t03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t03.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t03.Enter += new System.EventHandler(this.t00_Enter);
             this.t03.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t03.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3321,6 +3410,7 @@
             this.t22.Size = new System.Drawing.Size(59, 46);
             this.t22.TabIndex = 29;
             this.t22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t22.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t22.Enter += new System.EventHandler(this.t00_Enter);
             this.t22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3338,6 +3428,7 @@
             this.t21.Size = new System.Drawing.Size(59, 46);
             this.t21.TabIndex = 28;
             this.t21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t21.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t21.Enter += new System.EventHandler(this.t00_Enter);
             this.t21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3355,6 +3446,7 @@
             this.t20.Size = new System.Drawing.Size(59, 46);
             this.t20.TabIndex = 27;
             this.t20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t20.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t20.Enter += new System.EventHandler(this.t00_Enter);
             this.t20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3372,6 +3464,7 @@
             this.t12.Size = new System.Drawing.Size(59, 46);
             this.t12.TabIndex = 26;
             this.t12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t12.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t12.Enter += new System.EventHandler(this.t00_Enter);
             this.t12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3389,6 +3482,7 @@
             this.t11.Size = new System.Drawing.Size(59, 46);
             this.t11.TabIndex = 25;
             this.t11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t11.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t11.Enter += new System.EventHandler(this.t00_Enter);
             this.t11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3406,6 +3500,7 @@
             this.t10.Size = new System.Drawing.Size(59, 46);
             this.t10.TabIndex = 24;
             this.t10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t10.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t10.Enter += new System.EventHandler(this.t00_Enter);
             this.t10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3423,6 +3518,7 @@
             this.t02.Size = new System.Drawing.Size(59, 46);
             this.t02.TabIndex = 23;
             this.t02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t02.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t02.Enter += new System.EventHandler(this.t00_Enter);
             this.t02.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t02.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3440,6 +3536,7 @@
             this.t01.Size = new System.Drawing.Size(59, 46);
             this.t01.TabIndex = 22;
             this.t01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t01.DoubleClick += new System.EventHandler(this.t00_DoubleClick);
             this.t01.Enter += new System.EventHandler(this.t00_Enter);
             this.t01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.t00_KeyPress);
             this.t01.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
@@ -3463,7 +3560,7 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
-            // Ayuda3
+            // Ayuda2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -3471,15 +3568,13 @@
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1161, 680);
             this.MinimumSize = new System.Drawing.Size(1161, 680);
-            this.Name = "Ayuda3";
+            this.Name = "Ayuda2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda2";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ayuda3_FormClosing);
-            this.Load += new System.EventHandler(this.Ayuda3_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ayuda2_FormClosing);
+            this.Load += new System.EventHandler(this.Ayuda2_Load);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.pnl1.ResumeLayout(false);
@@ -3493,6 +3588,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSelectColor;
         private System.Windows.Forms.Button pincelJ;
@@ -3504,9 +3601,10 @@
         private System.Windows.Forms.Button pincelC;
         private System.Windows.Forms.Button pincelB;
         private System.Windows.Forms.Button pincelA;
+        private System.Windows.Forms.Button btnDerecha;
         private System.Windows.Forms.Button btnAA;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button btnDerecha;
+        private System.Windows.Forms.Button btnIzquierda;
         private System.Windows.Forms.Panel pnl1;
         private System.Windows.Forms.TextBox txt88;
         private System.Windows.Forms.TextBox txt85;
@@ -3671,7 +3769,5 @@
         private System.Windows.Forms.TextBox t02;
         private System.Windows.Forms.TextBox t01;
         private System.Windows.Forms.TextBox t00;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
     }
 }
