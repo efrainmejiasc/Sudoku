@@ -47,6 +47,9 @@ namespace SudokuParaTodos
 
         private string idiomaCultura = string.Empty;
         private string idiomaNombre = string.Empty;
+        private static Formularios.AzulDos F = new Formularios.AzulDos();
+        private static Formularios.Ayuda1 H = new Formularios.Ayuda1();
+        private static Formularios.Ayuda3 G = new Formularios.Ayuda3();
 
         public Ayuda2()
         {
@@ -105,7 +108,7 @@ namespace SudokuParaTodos
 
         private void SetearJuego()
         {
-            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+            txtSudoku = Funcion.SetearTextBoxJuegoInicio(txtSudoku, valorSolucion, valorInicio);
             txtSudoku2 = Funcion.SetearTextBoxJuegoNumerosIngresados(txtSudoku2, valorIngresado,valorInicio);
         }
 
@@ -222,8 +225,7 @@ namespace SudokuParaTodos
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Formularios.Ayuda1 f = new Formularios.Ayuda1();
-            f.Show();
+            H.Show();
             this.Hide();
         }
 
@@ -233,8 +235,7 @@ namespace SudokuParaTodos
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Formularios.Ayuda3 f = new Formularios.Ayuda3();
-            f.Show();
+            G.Show();
             this.Hide();
         }
 
@@ -265,7 +266,6 @@ namespace SudokuParaTodos
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            Formularios.AzulDos F = new Formularios.AzulDos();
             F.Show();
             this.Hide();
         }

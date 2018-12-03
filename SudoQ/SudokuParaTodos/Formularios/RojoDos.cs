@@ -51,6 +51,9 @@ namespace SudokuParaTodos.Formularios
         string lado = string.Empty;
 
         string circuito = string.Empty;
+        private static AzulDos F = new AzulDos();
+        private static RojoTres G = new RojoTres();
+        private static RojoUno H = new RojoUno();
 
 
         public RojoDos()
@@ -336,7 +339,6 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            AzulDos F = new AzulDos();
             F.Show();
             this.Hide();
         }
@@ -1069,8 +1071,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            RojoTres f = new RojoTres();
-            f.Show();
+            G.Show();
             this.Hide();
         }
 
@@ -1079,8 +1080,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            RojoUno f = new RojoUno();
-            f.Show();
+            H.Show();
             this.Hide();
         }
 

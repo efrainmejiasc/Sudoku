@@ -47,6 +47,8 @@ namespace SudokuParaTodos.Formularios
 
         private string idiomaCultura = string.Empty;
         private string idiomaNombre = string.Empty;
+        private static AzulDos F = new AzulDos();
+        private static Ayuda2 G = new Ayuda2();
 
 
         public Ayuda3()
@@ -224,8 +226,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Ayuda2 f = new Ayuda2();
-            f.Show();
+            G.Show();
             this.Hide();
         }
 
@@ -256,7 +257,6 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            AzulDos F = new AzulDos();
             F.Show();
             this.Hide();
         }

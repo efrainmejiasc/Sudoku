@@ -51,6 +51,8 @@ namespace SudokuParaTodos.Formularios
         string lado = string.Empty;
         int numeroFiltrado = 0;
         private string[,] valorFiltrado = new string[9, 9];
+        private static RojoDos F = new RojoDos();
+        private static AzulDos G = new AzulDos();
 
 
         public RojoTres()
@@ -376,8 +378,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            RojoDos f = new RojoDos();
-            f.Show();
+            F.Show();
             this.Hide();
         }
 
@@ -431,8 +432,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            AzulDos F = new AzulDos();
-            F.Show();
+            G.Show();
             this.Hide();
         }
 

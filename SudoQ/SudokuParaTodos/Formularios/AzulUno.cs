@@ -47,6 +47,9 @@ namespace SudokuParaTodos.Formularios
         private bool contadorActivado = EngineData.Falso;
         private string nombreJuego = string.Empty;
         private bool lenguajeSi = EngineData.Falso;
+        private static AzulDos F = new AzulDos();
+        private static RojoUno G = new RojoUno();
+        private static Ayuda1 H = new Ayuda1();
 
 
         public AzulUno()
@@ -258,8 +261,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            AzulDos f = new AzulDos();
-            f.Show();
+            F.Show();
             this.Hide();
         }
 
@@ -408,8 +410,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            RojoUno f = new RojoUno();
-            f.Show();
+            G.Show();
             this.Hide();
         }
 
@@ -630,11 +631,10 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Ayuda1 f = new Ayuda1();
-            f.Show();
+            H.Show();
             this.Hide();
         }
 
-      
+     
     }
 }

@@ -553,8 +553,8 @@ namespace SudokuParaTodos
 
                     //Valor.SetOpenFrom(EngineData.File);
 
-                    Formularios.AzulUno f = new Formularios.AzulUno();
-                    f.Show();
+                    Formularios.AzulUno F = new Formularios.AzulUno();
+                    F.Show();
                     this.Hide();
                     break;
                 case (EngineData.BtnGuardarJuego):
