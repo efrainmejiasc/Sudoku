@@ -509,7 +509,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(240, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(470, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -551,6 +551,7 @@
             this.guardarComo.Name = "guardarComo";
             this.guardarComo.Size = new System.Drawing.Size(152, 22);
             this.guardarComo.Text = "Guardar Como";
+            this.guardarComo.Visible = false;
             this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
             // reiniciar

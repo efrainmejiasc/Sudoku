@@ -499,7 +499,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(173, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(103, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -514,6 +514,7 @@
             this.mArchivo.Name = "mArchivo";
             this.mArchivo.Size = new System.Drawing.Size(70, 20);
             this.mArchivo.Text = "ARCHIVO";
+            this.mArchivo.Visible = false;
             // 
             // crearJuego
             // 

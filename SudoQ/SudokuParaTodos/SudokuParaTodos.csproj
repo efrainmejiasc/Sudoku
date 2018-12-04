@@ -114,6 +114,12 @@
     <Compile Include="Formularios\AzulDos.Designer.cs">
       <DependentUpon>AzulDos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\DialogSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DialogSave.Designer.cs">
+      <DependentUpon>DialogSave.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AzulUno.pt-PT.resx">
       <DependentUpon>AzulUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DialogSave.resx">
+      <DependentUpon>DialogSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form1.en-US.resx">
       <DependentUpon>Form1.cs</DependentUpon>

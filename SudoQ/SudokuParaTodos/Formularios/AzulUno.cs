@@ -50,6 +50,8 @@ namespace SudokuParaTodos.Formularios
         private static AzulDos F = new AzulDos();
         private static RojoUno G = new RojoUno();
         private static Ayuda1 H = new Ayuda1();
+        private static Formularios.Salir S = new Formularios.Salir();
+      
 
 
         public AzulUno()
@@ -533,15 +535,27 @@ namespace SudokuParaTodos.Formularios
         //*****************************************************************************************************************
         private void crearJuego_Click(object sender, EventArgs e)
         {
+            if (pathArchivo == string.Empty) return;
+            Formularios.DialogSave N = new Formularios.DialogSave(valorIngresado, valorEliminado,valorInicio, valorSolucion, pathArchivo);
+            N.ShowDialog();
+            bool continuar = Valor.GetContinuar();
+            if (!continuar) { pathArchivo = Valor.GetPathArchivo(); return; }
+
             Valor.SetPathArchivo(string.Empty);
             Valor.SetOpenFrom(EngineData.Exe);
-            Form1 f = new Form1(Valor.GetIdioma()) ;
-            f.Show();
+            Form1 X = new Form1(Valor.GetIdioma()) ;
+            X.Show();
             this.Hide();
         }
 
         private void abrirJuego_Click(object sender, EventArgs e)
         {
+            if (pathArchivo == string.Empty) return;
+            Formularios.DialogSave N = new Formularios.DialogSave(valorIngresado, valorEliminado, valorInicio, valorSolucion, pathArchivo);
+            N.ShowDialog();
+            bool continuar = Valor.GetContinuar();
+            if (!continuar) { pathArchivo = Valor.GetPathArchivo(); return; }
+
             string nombreIdioma = Valor.GetNombreIdioma();
             this.openFileDialog1.FileName = string.Empty;
             this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
@@ -620,8 +634,7 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Formularios.Salir s = new Formularios.Salir();
-            s.ShowDialog();
+            S.ShowDialog();
             e.Cancel = true;
         }
 

@@ -934,7 +934,28 @@ namespace SudokuParaTodos
                     titulo = "Você quer sair do aplicativo ?";
                     break;
                 default:
-                    titulo = "Desea Salir de la Aplicacion ?";
+                    titulo = "¿ Desea Salir de la Aplicacion ?";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string TituloEtiquetaSave(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "¿ Quieres guardar los cambios que has hecho a este juego ?";
+                    break;
+                case ("Ingles"):
+                    titulo = "Do you want to save the changes you made in this game ?";
+                    break;
+                case ("Portugues"):
+                    titulo = "Você quer salvar as alterações que você fez neste jogo?";
+                    break;
+                default:
+                    titulo = "¿ Quieres guardar los cambios que has hecho a este juego ?";
                     break;
             }
             return titulo;
@@ -981,6 +1002,33 @@ namespace SudokuParaTodos
             }
             return titulo;
         }
+
+        public string TituloButton3(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "CANCELAR";
+                    break;
+                case ("Ingles"):
+                    titulo = "CANCEL";
+                    break;
+                case ("Portugues"):
+                    titulo = "CANCELAR";
+                    break;
+                default:
+                    titulo = "CANCELAR";
+                    break;
+            }
+            return titulo;
+        }
+
+        private bool continuar = false;
+
+        public void SetContinuar (bool value) { continuar = value; }
+
+        public bool GetContinuar() { return continuar; }
 
     }
 }
