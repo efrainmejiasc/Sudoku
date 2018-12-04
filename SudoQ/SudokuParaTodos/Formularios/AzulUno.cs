@@ -50,7 +50,7 @@ namespace SudokuParaTodos.Formularios
         private static AzulDos F = new AzulDos();
         private static RojoUno G = new RojoUno();
         private static Ayuda1 H = new Ayuda1();
-        private static Formularios.Salir S = new Formularios.Salir();
+
       
 
 
@@ -634,6 +634,8 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulUno_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (pathArchivo == string.Empty) return;
+            Formularios.Salir S = new Formularios.Salir(valorIngresado, valorEliminado, valorInicio, valorSolucion,pathArchivo);
             S.ShowDialog();
             e.Cancel = true;
         }

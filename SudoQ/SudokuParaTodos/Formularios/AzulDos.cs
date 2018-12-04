@@ -716,8 +716,6 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulDos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Formularios.Salir s = new Formularios.Salir();
-            s.ShowDialog();
             e.Cancel = true;
         }
 

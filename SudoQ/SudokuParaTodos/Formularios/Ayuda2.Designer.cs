@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda2));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnIzquierda = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -3568,6 +3569,7 @@
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1161, 680);
             this.MinimumSize = new System.Drawing.Size(1161, 680);
             this.Name = "Ayuda2";
