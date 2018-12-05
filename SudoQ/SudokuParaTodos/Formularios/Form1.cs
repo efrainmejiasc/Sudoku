@@ -848,8 +848,8 @@ namespace SudokuParaTodos
         {
             if (lenguajeSi)
             {
-                Formularios.Salir s = new Formularios.Salir();
-                s.ShowDialog();
+                Formularios.SalirIni F = new Formularios.SalirIni();
+                F.ShowDialog();
                 e.Cancel = true;
             }
             else
