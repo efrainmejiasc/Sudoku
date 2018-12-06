@@ -62,6 +62,12 @@ namespace SudokuParaTodos
         public Form1(string idioma)
         {
             InitializeComponent();
+            valorIngresado = new string[9, 9];
+            valorEliminado = new string[9, 9];
+            valorInicio = new string[9, 9];
+            valorSolucion = new string[9, 9];
+            valorCandidatoSinEliminados = new string[9, 9];
+            valorCandidato = new string[9, 9];
             lblSudoku.Visible = EngineData.Falso;
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(idioma);
             Valor.SetIdioma(idioma);

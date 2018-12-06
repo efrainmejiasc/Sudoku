@@ -109,7 +109,7 @@ namespace SudokuParaTodos
         private void SetearJuego()
         {
             txtSudoku = Funcion.SetearTextBoxJuegoInicio(txtSudoku, valorSolucion, valorInicio);
-            txtSudoku2 = Funcion.SetearTextBoxJuegoNumerosIngresados(txtSudoku2, valorIngresado,valorInicio);
+            txtSudoku2 = Funcion.SetearTextBoxJuegoNumerosInicioMasIngresados(txtSudoku2, valorIngresado,valorInicio);
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)

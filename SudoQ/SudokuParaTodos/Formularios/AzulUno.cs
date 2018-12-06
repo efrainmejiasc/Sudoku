@@ -366,6 +366,12 @@ namespace SudokuParaTodos.Formularios
         private void AbrirJuego(string pathArchivo)
         {
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            valorIngresado = new string [9,9];
+            valorEliminado = new string[9, 9];
+            valorInicio = new string[9, 9];
+            valorSolucion = new string[9, 9];
+            valorCandidatoSinEliminados = new string[9, 9];
+            valorCandidato = new string[9, 9];
             ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
             valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
             valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
