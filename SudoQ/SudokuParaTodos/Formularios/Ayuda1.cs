@@ -56,6 +56,17 @@ namespace SudokuParaTodos.Formularios
             InitializeComponent();
         }
 
+        private void Ayuda1_Activated(object sender, EventArgs e)
+        {
+            valorInicio = Valor.GetValorInicio();
+            valorIngresado = Valor.GetValorIngresado();
+            valorEliminado = Valor.GetValorEliminado();
+            valorSolucion = Valor.GetValorSolucion();
+            SetearJuego();
+            ContadorIngresado();
+            ProcesosContables();
+        }
+
         private void Ayuda1_Load(object sender, EventArgs e)
         {
             idiomaCultura = Valor.GetIdioma();
@@ -74,13 +85,6 @@ namespace SudokuParaTodos.Formularios
             }
             AplicarIdioma();
             ComportamientoObjetoInicio();
-            valorInicio = Valor.GetValorInicio();
-            valorIngresado = Valor.GetValorIngresado();
-            valorEliminado = Valor.GetValorEliminado();
-            valorSolucion = Valor.GetValorSolucion();
-            SetearJuego();
-            ContadorIngresado();
-            ProcesosContables();
         }
 
         private void AplicarIdioma()
@@ -459,7 +463,7 @@ namespace SudokuParaTodos.Formularios
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
                     {
                         txt.Text = valorInicio[row, col];
-                        valorIngresado[row, col] = txt.Text;
+                        valorIngresado[row, col] = string.Empty;
                     }
                 }
                 else
@@ -605,6 +609,7 @@ namespace SudokuParaTodos.Formularios
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             AbrirJuego(pathArchivo);
         }
+
 
     }
 }

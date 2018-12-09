@@ -60,6 +60,16 @@ namespace SudokuParaTodos.Formularios
             InitializeComponent();
         }
 
+
+        private void RojoTres_Activated(object sender, EventArgs e)
+        {
+            valorInicio = Valor.GetValorInicio();
+            valorIngresado = Valor.GetValorIngresado();
+            valorEliminado = Valor.GetValorEliminado();
+            SetearJuego();
+            ContadorIngresado();
+        }
+
         private void RojoTres_Load(object sender, EventArgs e)
         {
             idiomaCultura = Valor.GetIdioma();
@@ -78,11 +88,6 @@ namespace SudokuParaTodos.Formularios
             }
             AplicarIdioma();
             ComportamientoObjetoInicio();
-            valorInicio = Valor.GetValorInicio();
-            valorIngresado = Valor.GetValorIngresado();
-            valorEliminado = Valor.GetValorEliminado();
-            SetearJuego();
-            ContadorIngresado();
         }
 
         private void AplicarIdioma()
@@ -657,6 +662,7 @@ namespace SudokuParaTodos.Formularios
         {
             e.Cancel = true;
         }
+
 
         //**************************************************************************************************
     }

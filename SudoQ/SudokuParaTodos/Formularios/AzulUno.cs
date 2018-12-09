@@ -59,6 +59,16 @@ namespace SudokuParaTodos.Formularios
             InitializeComponent();
         }
 
+        private void AzulUno_Activated(object sender, EventArgs e)
+        {
+            valorIngresado = Valor.GetValorIngresado();
+            valorEliminado = Valor.GetValorEliminado();
+            valorInicio = Valor.GetValorInicio();
+            valorSolucion = Valor.GetValorSolucion();
+            SetearJuego();
+            ContadorIngresado();
+        }
+
         private void AzulUno_Load(object sender, EventArgs e)
         {
             if (Valor.GetIdioma() == string.Empty)
@@ -101,15 +111,14 @@ namespace SudokuParaTodos.Formularios
             else
             {
                 Valor.SetObjFrom(EngineData.Falso);
-                valorIngresado = Valor.GetValorIngresado();
-                valorEliminado = Valor.GetValorEliminado();
-                valorInicio = Valor.GetValorInicio();
-                valorSolucion = Valor.GetValorSolucion();
                 ComportamientoObjetoInicio();
-                SetearJuego();
-                ContadorIngresado();
             }
-
+            valorIngresado = Valor.GetValorIngresado();
+            valorEliminado = Valor.GetValorEliminado();
+            valorInicio = Valor.GetValorInicio();
+            valorSolucion = Valor.GetValorSolucion();
+            SetearJuego();
+            ContadorIngresado();
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -259,6 +268,7 @@ namespace SudokuParaTodos.Formularios
 
         private void NavegacionVistas(object sender, EventArgs e)
         {
+            //valorIngresado = Funcion.ObtenerValorIngresado(txtSudoku ,valorInicio);
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
@@ -487,7 +497,6 @@ namespace SudokuParaTodos.Formularios
                     if (valorInicio[row, col] != null && valorInicio[row, col] != string.Empty)
                     {
                         txt.Text = valorInicio[row, col];
-                        valorIngresado[row, col] = txt.Text;
                     }
                 }
                 else
@@ -501,8 +510,8 @@ namespace SudokuParaTodos.Formularios
                         valorIngresado[row, col] = txt.Text;
                     }
                 }
-                valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
-                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+                Valor.SetValorIngresado(valorIngresado);
+                SetearJuego();
                 ContadorIngresado();
             }
             catch { }
@@ -656,6 +665,6 @@ namespace SudokuParaTodos.Formularios
             this.Hide();
         }
 
-     
+      
     }
 }

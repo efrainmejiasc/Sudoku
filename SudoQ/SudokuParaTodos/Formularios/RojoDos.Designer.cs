@@ -4446,6 +4446,7 @@
             this.Name = "RojoDos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoDos";
+            this.Activated += new System.EventHandler(this.RojoDos_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RojoDos_FormClosing);
             this.Load += new System.EventHandler(this.RojoDos_Load);
             this.pnl1.ResumeLayout(false);

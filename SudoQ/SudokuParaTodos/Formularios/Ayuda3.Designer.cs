@@ -3478,6 +3478,7 @@
             this.Name = "Ayuda3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda2";
+            this.Activated += new System.EventHandler(this.Ayuda3_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ayuda3_FormClosing);
             this.Load += new System.EventHandler(this.Ayuda3_Load);
             this.panel10.ResumeLayout(false);

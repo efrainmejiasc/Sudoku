@@ -2136,7 +2136,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(498, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(103, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2156,35 +2156,35 @@
             // crearJuego
             // 
             this.crearJuego.Name = "crearJuego";
-            this.crearJuego.Size = new System.Drawing.Size(180, 22);
+            this.crearJuego.Size = new System.Drawing.Size(152, 22);
             this.crearJuego.Text = "Crear Juego";
             this.crearJuego.Click += new System.EventHandler(this.crearJuego_Click);
             // 
             // abrirJuego
             // 
             this.abrirJuego.Name = "abrirJuego";
-            this.abrirJuego.Size = new System.Drawing.Size(180, 22);
+            this.abrirJuego.Size = new System.Drawing.Size(152, 22);
             this.abrirJuego.Text = "Abrir Juego";
             this.abrirJuego.Click += new System.EventHandler(this.abrirJuego_Click);
             // 
             // guardar
             // 
             this.guardar.Name = "guardar";
-            this.guardar.Size = new System.Drawing.Size(180, 22);
+            this.guardar.Size = new System.Drawing.Size(152, 22);
             this.guardar.Text = "Guardar";
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
             // guardarComo
             // 
             this.guardarComo.Name = "guardarComo";
-            this.guardarComo.Size = new System.Drawing.Size(180, 22);
+            this.guardarComo.Size = new System.Drawing.Size(152, 22);
             this.guardarComo.Text = "Guardar Como";
             this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
             // reiniciar
             // 
             this.reiniciar.Name = "reiniciar";
-            this.reiniciar.Size = new System.Drawing.Size(180, 22);
+            this.reiniciar.Size = new System.Drawing.Size(152, 22);
             this.reiniciar.Text = "Reiniciar";
             this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
             // 
@@ -2202,21 +2202,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(180, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(180, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(180, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Portugues";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -2269,14 +2269,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -3852,6 +3852,7 @@
             this.Name = "AzulDos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AzulDos";
+            this.Activated += new System.EventHandler(this.AzulDos_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AzulDos_FormClosing);
             this.Load += new System.EventHandler(this.AzulDos_Load);
             this.pnl1.ResumeLayout(false);

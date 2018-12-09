@@ -56,6 +56,16 @@ namespace SudokuParaTodos.Formularios
             InitializeComponent();
         }
 
+        private void Ayuda3_Activated(object sender, EventArgs e)
+        {
+            valorInicio = Valor.GetValorInicio();
+            valorIngresado = Valor.GetValorIngresado();
+            valorEliminado = Valor.GetValorEliminado();
+            valorSolucion = Valor.GetValorSolucion();
+            SetearJuego();
+        }
+
+
         private void Ayuda3_Load(object sender, EventArgs e)
         {
             idiomaCultura = Valor.GetIdioma();
@@ -74,11 +84,6 @@ namespace SudokuParaTodos.Formularios
             }
             AplicarIdioma();
             ComportamientoObjetoInicio();
-            valorInicio = Valor.GetValorInicio();
-            valorIngresado = Valor.GetValorIngresado();
-            valorEliminado = Valor.GetValorEliminado();
-            valorSolucion = Valor.GetValorSolucion();
-            SetearJuego();
         }
 
         private void AplicarIdioma()
@@ -412,6 +417,7 @@ namespace SudokuParaTodos.Formularios
         {
             e.Cancel = true;
         }
+
 
         //***************************************************************************************
     }

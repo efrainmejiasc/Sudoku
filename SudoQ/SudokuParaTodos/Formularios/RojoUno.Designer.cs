@@ -4014,6 +4014,7 @@
             this.Name = "RojoUno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoUno";
+            this.Activated += new System.EventHandler(this.RojoUno_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RojoUno_FormClosing);
             this.Load += new System.EventHandler(this.RojoUno_Load);
             this.panel10.ResumeLayout(false);
