@@ -73,6 +73,7 @@ namespace SudokuParaTodos
         public const string BtnRes23 = "btnRes23";
         public const string BtnDos = "btnDos";
         public const string BtnTres = "btnTres";
+        public const string BtnN = "btnN";
 
         public const string btnIzquierda = "btnIzquierda";
         public const string btnDerecha = "btnDerecha";

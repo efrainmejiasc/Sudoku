@@ -247,6 +247,7 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
+            this.btnN = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -258,6 +259,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.btnN);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.label1);
@@ -350,7 +352,7 @@
             // btnRes23
             // 
             this.btnRes23.BackColor = System.Drawing.Color.White;
-            this.btnRes23.Location = new System.Drawing.Point(1028, 147);
+            this.btnRes23.Location = new System.Drawing.Point(1007, 146);
             this.btnRes23.Name = "btnRes23";
             this.btnRes23.Size = new System.Drawing.Size(27, 28);
             this.btnRes23.TabIndex = 129;
@@ -366,7 +368,7 @@
             this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(1098, 147);
+            this.btnDos.Location = new System.Drawing.Point(1073, 147);
             this.btnDos.Name = "btnDos";
             this.btnDos.Size = new System.Drawing.Size(27, 28);
             this.btnDos.TabIndex = 128;
@@ -382,7 +384,7 @@
             this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(1063, 147);
+            this.btnTres.Location = new System.Drawing.Point(1040, 146);
             this.btnTres.Name = "btnTres";
             this.btnTres.Size = new System.Drawing.Size(27, 28);
             this.btnTres.TabIndex = 127;
@@ -672,14 +674,16 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
+            this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
+            this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
             // btnSelectColor
             // 
@@ -4028,6 +4032,17 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
+            // btnN
+            // 
+            this.btnN.BackColor = System.Drawing.Color.White;
+            this.btnN.Location = new System.Drawing.Point(1106, 146);
+            this.btnN.Name = "btnN";
+            this.btnN.Size = new System.Drawing.Size(27, 28);
+            this.btnN.TabIndex = 134;
+            this.btnN.Text = "N";
+            this.btnN.UseVisualStyleBackColor = false;
+            this.btnN.Click += new System.EventHandler(this.Filtro23Candidatos_Click);
+            // 
             // RojoTres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4281,5 +4296,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnN;
     }
 }

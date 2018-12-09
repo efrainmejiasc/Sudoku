@@ -29,6 +29,7 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorIngresado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES INGRESADOS 
         private string[,] valorCandidato = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES CANDIDATOS 
         private string[,] valorEliminado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
+        private string[,] valorSolucion = new string[9, 9];
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         //private string[,] valorSolucion = new string[9, 9];
@@ -66,6 +67,7 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
+            valorSolucion = Valor.GetValorSolucion();
             SetearJuego();
             ContadorIngresado();
         }
@@ -482,9 +484,29 @@ namespace SudokuParaTodos.Formularios
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                     txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange,Color.Chartreuse);
                     break;
+                case (EngineData.BtnN):
+                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
+                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
+                    valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
+                    txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
+                    break;
             }
         }
 
+        private void activar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Verdadero);
+            ContadorIngresado();
+        }
+
+        private void desactivar_Click(object sender, EventArgs e)
+        {
+            ActivarDesactivarContadores(EngineData.Falso);
+            ContadorIngresado();
+        }
+
+      
         //*************************************************************************************************
         private void txt00_Enter(object sender, EventArgs e)
         {

@@ -53,7 +53,6 @@ namespace SudokuParaTodos.Formularios
 
       
 
-
         public AzulUno()
         {
             InitializeComponent();
@@ -113,6 +112,7 @@ namespace SudokuParaTodos.Formularios
                 Valor.SetObjFrom(EngineData.Falso);
                 ComportamientoObjetoInicio();
             }
+
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorInicio = Valor.GetValorInicio();
@@ -398,6 +398,12 @@ namespace SudokuParaTodos.Formularios
                 valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorIngresado, valorCandidato, valorInicio, colorA: Color.Blue, colorB: Color.Blue, lado: EngineData.Left);
+
+                Valor.SetValorInicio(valorInicio);
+                Valor.SetValorIngresado(valorIngresado);
+                Valor.SetValorEliminado(valorEliminado);
+                Valor.SetValorSolucion(valorSolucion);
+
             }
             ContadorIngresado();
             string nombrePlay = Funcion.NombreJuego(pathArchivo);

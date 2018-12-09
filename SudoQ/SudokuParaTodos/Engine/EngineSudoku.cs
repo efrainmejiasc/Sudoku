@@ -190,22 +190,6 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
-        public string [,] ObtenerValorIngresado(TextBox[,] cajaTexto,string [,] vInicio)
-        {
-            string[,] vIngresado = new string[9, 9];
-            for (int f = 0; f <= 8; f++)
-            {
-                for (int c = 0; c <= 8; c++)
-                {
-                    if (cajaTexto[f, c].Text != null && cajaTexto[f, c].Text != string.Empty)
-                    {
-                        vIngresado[f, c] = cajaTexto[f, c].Text;
-                    }
-                }
-            }
-            return vIngresado;
-        }
-
         public TextBox[,] SetearTextBoxJuegoNumerosIngresados(TextBox[,] cajaTexto, string[,] vIngresado,string [,]vInicio)
         {
             for (int f = 0; f <= 8; f++)
