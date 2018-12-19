@@ -65,6 +65,8 @@ namespace SudokuParaTodos.Formularios
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             SetearJuego();
             ContadorIngresado();
         }
@@ -215,7 +217,6 @@ namespace SudokuParaTodos.Formularios
         private void NavegacionVistas(object sender, EventArgs e)
         {
             Valor.SetObjFrom(EngineData.Verdadero);
-            //valorIngresado = Funcion.ObtenerValorIngresado(txtSudoku, valorInicio);
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
@@ -404,6 +405,7 @@ namespace SudokuParaTodos.Formularios
 
         private void GuardarJuego(string pathArchivo)
         {
+            if (pathArchivo == string.Empty || pathArchivo == null) return;
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
             Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
             Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
@@ -529,6 +531,7 @@ namespace SudokuParaTodos.Formularios
                 Valor.SetValorIngresado(valorIngresado);
                 SetearJuego();
                 ContadorIngresado();
+                GuardarJuego(pathArchivo);
             }
             catch { }
 
@@ -722,7 +725,8 @@ namespace SudokuParaTodos.Formularios
 
         private void AzulDos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
+            Valor.SetSalirJuego(true);
+            Application.Exit();
         }
 
         private void btnAyuda_Click(object sender, EventArgs e)

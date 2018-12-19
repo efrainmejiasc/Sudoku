@@ -31,7 +31,7 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorEliminado = new string[9, 9];//ARRAY CONTENTIVO DE LOS VALORES ELIMINADOS
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
-        //private string[,] valorSolucion = new string[9, 9];
+        private string[,] valorSolucion = new string[9, 9];
 
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
@@ -68,6 +68,9 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
+            valorSolucion = Valor.GetValorSolucion();
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             SetearJuego();
             ContadorIngresado();
         }
@@ -545,6 +548,18 @@ namespace SudokuParaTodos.Formularios
                     break;
             }
             ContadorIngresado();
+            GuardarJuego(pathArchivo);
+        }
+
+        private void GuardarJuego(string pathArchivo)
+        {
+            if (pathArchivo == string.Empty || pathArchivo == null) return;
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -753,7 +768,8 @@ namespace SudokuParaTodos.Formularios
         //******************************************************************************     
         private void RojoUno_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
+            Valor.SetSalirJuego(true);
+            Application.Exit();
         }
     }
 }

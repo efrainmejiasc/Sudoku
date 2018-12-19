@@ -54,6 +54,7 @@ namespace SudokuParaTodos
         public Form1()
         {
             InitializeComponent();
+            LimpiarParaNuevoJuego();
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
             SetPantallaInicio();
@@ -62,12 +63,7 @@ namespace SudokuParaTodos
         public Form1(string idioma)
         {
             InitializeComponent();
-            valorIngresado = new string[9, 9];
-            valorEliminado = new string[9, 9];
-            valorInicio = new string[9, 9];
-            valorSolucion = new string[9, 9];
-            valorCandidatoSinEliminados = new string[9, 9];
-            valorCandidato = new string[9, 9];
+            LimpiarParaNuevoJuego();
             lblSudoku.Visible = EngineData.Falso;
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(idioma);
             Valor.SetIdioma(idioma);
@@ -90,6 +86,22 @@ namespace SudokuParaTodos
             btnPincel = AsociarBtnPincel(btnPincel);
             ComportamientoObjInicio();
             ComportamientoObjExpandido();
+        }
+
+        private void LimpiarParaNuevoJuego()
+        {
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+            valorIngresado = new string[9, 9];
+            valorEliminado = new string[9, 9];
+            valorInicio = new string[9, 9];
+            valorSolucion = new string[9, 9];
+            valorCandidatoSinEliminados = new string[9, 9];
+            valorCandidato = new string[9, 9];
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorEliminado(valorEliminado);
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorSolucion(valorSolucion);
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -498,8 +510,32 @@ namespace SudokuParaTodos
                     break;
             }
             AplicarIdioma();
-            ComportamientoObjExpandido();
-            lenguajeSi = EngineData.Verdadero;
+            if (Valor.GetPathArchivo () == string.Empty)
+            {
+                ComportamientoObjExpandido();
+                lenguajeSi = EngineData.Verdadero;
+            }
+            else
+            {
+                string pathArchivo = Valor.GetPathArchivo();
+                ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+                valorIngresado = Funcion.SetValorIngresado(arrText, valorIngresado);
+                valorEliminado = Funcion.SetValorEliminado(arrText, valorEliminado);
+                valorInicio = Funcion.SetValorInicio(arrText, valorInicio);
+                valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+                valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
+                valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
+
+                Valor.SetValorIngresado(valorIngresado);
+                Valor.SetValorEliminado(valorEliminado);
+                Valor.SetValorInicio(valorInicio);
+                Valor.SetValorSolucion(valorSolucion);
+                Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
+
+                Formularios.AzulUno F = new Formularios.AzulUno();
+                F.Show();
+                this.Hide();
+            }
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -854,9 +890,16 @@ namespace SudokuParaTodos
         {
             if (lenguajeSi)
             {
-                Formularios.SalirIni F = new Formularios.SalirIni();
-                F.ShowDialog();
-                e.Cancel = true;
+                if (Valor.GetSalirJuego() == false)
+                {
+                    Formularios.SalirIni F = new Formularios.SalirIni();
+                    F.ShowDialog();
+                    e.Cancel = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
             }
             else
             {

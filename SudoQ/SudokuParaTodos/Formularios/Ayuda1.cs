@@ -62,6 +62,7 @@ namespace SudokuParaTodos.Formularios
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             SetearJuego();
             ContadorIngresado();
             ProcesosContables();
@@ -401,6 +402,7 @@ namespace SudokuParaTodos.Formularios
 
         private void GuardarJuego(string pathArchivo)
         {
+            if (pathArchivo == string.Empty || pathArchivo == null) return; 
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
             Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
             Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
@@ -481,6 +483,7 @@ namespace SudokuParaTodos.Formularios
                 valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
                 ContadorIngresado();
                 ProcesosContables();
+                GuardarJuego(pathArchivo);
             }
             catch { }
 
@@ -518,7 +521,8 @@ namespace SudokuParaTodos.Formularios
 
         private void Ayuda1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
+            Valor.SetSalirJuego(true);
+            Application.Exit();
         }
 
         //**********************************************************************************

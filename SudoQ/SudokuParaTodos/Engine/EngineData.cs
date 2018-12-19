@@ -1031,5 +1031,11 @@ namespace SudokuParaTodos
 
         public bool GetContinuar() { return continuar; }
 
+        private bool salir = false;
+
+        public void SetSalirJuego(bool value) { salir = value; }
+
+        public bool GetSalirJuego () { return salir; }
+
     }
 }

@@ -68,6 +68,8 @@ namespace SudokuParaTodos.Formularios
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             SetearJuego();
             ContadorIngresado();
         }
@@ -432,6 +434,18 @@ namespace SudokuParaTodos.Formularios
             ActualizarContadoresCandidatos();
             SetearJuego();
             ContadorIngresado();
+            GuardarJuego(pathArchivo);
+        }
+
+        private void GuardarJuego(string pathArchivo)
+        {
+            if (pathArchivo == string.Empty || pathArchivo == null) return;
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
+            Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
+            Funcion.GuardarValoresEliminados(pathArchivo, valorEliminado);
+            Funcion.GuardarValoresInicio(pathArchivo, valorInicio);
+            Funcion.GuardarValoresSolucion(pathArchivo, valorSolucion);
+            if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
         private void btnAA_Click(object sender, EventArgs e)
@@ -474,7 +488,9 @@ namespace SudokuParaTodos.Formularios
             switch (btn.Name)
             {
                 case (EngineData.BtnRes23):
-                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    //txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    txtSudoku2 = Funcion.SetearTextParaNumerosN(txtSudoku2, valorIngresado);
+                    SetearJuego();
                     break;
                 case (EngineData.BtnDos):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
@@ -485,12 +501,11 @@ namespace SudokuParaTodos.Formularios
                     txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange,Color.Chartreuse);
                     break;
                 case (EngineData.BtnN):
-                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
-                    valorCandidato = Funcion.ElejiblesInstantaneos(valorSolucion, valorCandidato);
-                    txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
-                    valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorSolucion, valorCandidato, valorEliminado);
-                    txtSudoku2 = Funcion.SetearTextBoxJuegoSinEliminados(txtSudoku2, valorCandidatoSinEliminados);
-                    break;
+                    txtSudoku2 = Funcion.SetearTextParaNumerosN(txtSudoku2, valorIngresado);
+                    SetearJuego();
+                    txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.WhiteSmoke, Color.WhiteSmoke);
+                    txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
+                    break; 
             }
         }
 
@@ -682,7 +697,8 @@ namespace SudokuParaTodos.Formularios
 
         private void RojoTres_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
+            Valor.SetSalirJuego(true);
+            Application.Exit();
         }
 
 

@@ -2136,7 +2136,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(103, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(498, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2151,40 +2151,41 @@
             this.mArchivo.Name = "mArchivo";
             this.mArchivo.Size = new System.Drawing.Size(70, 20);
             this.mArchivo.Text = "ARCHIVO";
-            this.mArchivo.Visible = false;
             // 
             // crearJuego
             // 
             this.crearJuego.Name = "crearJuego";
-            this.crearJuego.Size = new System.Drawing.Size(152, 22);
+            this.crearJuego.Size = new System.Drawing.Size(180, 22);
             this.crearJuego.Text = "Crear Juego";
             this.crearJuego.Click += new System.EventHandler(this.crearJuego_Click);
             // 
             // abrirJuego
             // 
             this.abrirJuego.Name = "abrirJuego";
-            this.abrirJuego.Size = new System.Drawing.Size(152, 22);
+            this.abrirJuego.Size = new System.Drawing.Size(180, 22);
             this.abrirJuego.Text = "Abrir Juego";
             this.abrirJuego.Click += new System.EventHandler(this.abrirJuego_Click);
             // 
             // guardar
             // 
             this.guardar.Name = "guardar";
-            this.guardar.Size = new System.Drawing.Size(152, 22);
+            this.guardar.Size = new System.Drawing.Size(180, 22);
             this.guardar.Text = "Guardar";
+            this.guardar.Visible = false;
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
             // guardarComo
             // 
             this.guardarComo.Name = "guardarComo";
-            this.guardarComo.Size = new System.Drawing.Size(152, 22);
+            this.guardarComo.Size = new System.Drawing.Size(180, 22);
             this.guardarComo.Text = "Guardar Como";
+            this.guardarComo.Visible = false;
             this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
             // reiniciar
             // 
             this.reiniciar.Name = "reiniciar";
-            this.reiniciar.Size = new System.Drawing.Size(152, 22);
+            this.reiniciar.Size = new System.Drawing.Size(180, 22);
             this.reiniciar.Text = "Reiniciar";
             this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
             // 
@@ -2269,14 +2270,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 

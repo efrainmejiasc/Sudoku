@@ -210,6 +210,42 @@ namespace SudokuParaTodos
             }
             return cajaTexto;
         }
+      
+        public TextBox[,] SetearTextParaNumerosN(TextBox[,] cajaTexto, string[,] vIngresado)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                    if (vIngresado[f, c] != string.Empty || vIngresado[f, c] != null)
+                    {
+                        cajaTexto[f, c].Text = string.Empty;
+                    }
+                }
+            }
+            return cajaTexto;
+        }
+
+        public TextBox[,] SetearTextBoxNumerosN(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vInicio)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vInicio[f, c] == null || vInicio[f, c] == string.Empty)
+                    {
+                        if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                        {
+                            cajaTexto[f, c].Text = vIngresado[f, c];
+                            cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
+                        }
+                    }
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                }
+            }
+            return cajaTexto;
+        }
 
         public TextBox[,] SetearTextBoxJuegoNumerosInicioMasIngresados(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vInicio)
         {
@@ -269,6 +305,7 @@ namespace SudokuParaTodos
 
         public TextBox [,] SetearTextBoxLimpio(TextBox[,] cajaTexto)
         {
+            if (cajaTexto[0,0] == null) return cajaTexto;
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
@@ -324,7 +361,7 @@ namespace SudokuParaTodos
             return pos;
         }
 
-        public TextBox [,] SetearTextColorInicio(TextBox[,] cajaTexto)
+        public TextBox[,] SetearTextColorInicio(TextBox[,] cajaTexto)
         {
             for (int f = 0; f <= 8; f++)
             {
@@ -335,6 +372,7 @@ namespace SudokuParaTodos
             }
             return cajaTexto;
         }
+
 
         public TextBox [,] SetearTextBoxCandidatos (TextBox[,] cajaTexto,string [,]vIngresado, string [,] vCandidatosSinEliminados)
         {

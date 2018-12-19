@@ -62,6 +62,8 @@ namespace SudokuParaTodos
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             SetearJuego();
         }
 
@@ -420,7 +422,8 @@ namespace SudokuParaTodos
 
         private void Ayuda2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
+            Valor.SetSalirJuego(true);
+            Application.Exit();
         }
 
 
