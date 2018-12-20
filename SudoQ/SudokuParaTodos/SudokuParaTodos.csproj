@@ -138,6 +138,12 @@
     <Compile Include="Formularios\AzulUno.Designer.cs">
       <DependentUpon>AzulUno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Reiniciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reiniciar.Designer.cs">
+      <DependentUpon>Reiniciar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\RojoDos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AzulUno.resx">
       <DependentUpon>AzulUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reiniciar.resx">
+      <DependentUpon>Reiniciar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RojoDos.resx">
       <DependentUpon>RojoDos.cs</DependentUpon>

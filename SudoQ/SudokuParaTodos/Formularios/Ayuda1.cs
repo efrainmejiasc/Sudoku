@@ -48,7 +48,8 @@ namespace SudokuParaTodos.Formularios
         private string idiomaCultura = string.Empty;
         private string idiomaNombre = string.Empty;
         private static  AzulDos F = new AzulDos();
-        private static Ayuda2 f = new Ayuda2();
+        private static Ayuda2 K = new Ayuda2();
+        private static RojoUno G = new RojoUno();
 
 
         public Ayuda1()
@@ -175,29 +176,40 @@ namespace SudokuParaTodos.Formularios
             LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
             btnA.Text = LetrasJuegoACB.A.ToString();
             btnB.Text = LetrasJuegoACB.B.ToString();
-           /* if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B >= 0)
             {
-                btnBB.Visible = EngineData.Falso;
+                //btnBB.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
             }
             else
             {
                 btnBB.Visible = EngineData.Verdadero;
-            }*/
+            }
             if (!LetrasJuegoACB.C)
             {
                 btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Look));
-                //btnBB.Visible = EngineData.Verdadero;
+                btnBB.Visible = EngineData.Verdadero;
             }
             else
             {
                 btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
+                //btnBB.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
             }
         }
 
         private void SetLetrasJuegoFEG()
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
-            //btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B == 0 && Funcion.Visibilidad70(LetrasJuegoFEG.F))
+            {
+                btnBB.Visible = EngineData.Verdadero;
+            }
+            else
+            {
+                btnBB.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
+            }
             btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             btnF.Text = LetrasJuegoFEG.F.ToString();
             btnE.Text = LetrasJuegoFEG.E.ToString();
@@ -320,7 +332,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            f.Show();
+            K.Show();
             this.Hide();
         }
 
@@ -344,6 +356,8 @@ namespace SudokuParaTodos.Formularios
                 btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
             }
         }
+
+
 
         private void ProcesosContables()
         {
@@ -602,6 +616,11 @@ namespace SudokuParaTodos.Formularios
 
         private void reiniciar_Click(object sender, EventArgs e)
         {
+            Reiniciar R = new Reiniciar();
+            R.ShowDialog();
+            bool reiniciar = Valor.GetContinuar();
+            if (!reiniciar) return;
+            Valor.SetContinuar(false);
             pathArchivo = Valor.GetPathArchivo();
             if (pathArchivo == string.Empty)
             {
@@ -614,6 +633,14 @@ namespace SudokuParaTodos.Formularios
             AbrirJuego(pathArchivo);
         }
 
-
+        private void btnBB_Click(object sender, EventArgs e)
+        {
+            Valor.SetValorInicio(valorInicio);
+            Valor.SetValorIngresado(valorIngresado);
+            Valor.SetValorEliminado(valorEliminado);
+            Valor.SetValorSolucion(valorSolucion);
+            G.Show();
+            this.Hide();
+        }
     }
 }

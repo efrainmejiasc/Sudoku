@@ -262,7 +262,6 @@ namespace SudokuParaTodos.Formularios
 
         private void NavegacionVistas(object sender, EventArgs e)
         {
-            //valorIngresado = Funcion.ObtenerValorIngresado(txtSudoku ,valorInicio);
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
@@ -586,6 +585,11 @@ namespace SudokuParaTodos.Formularios
 
         private void reiniciar_Click(object sender, EventArgs e)
         {
+            Reiniciar R = new Reiniciar();
+            R.ShowDialog();
+            bool reiniciar = Valor.GetContinuar();
+            if (!reiniciar) return;
+            Valor.SetContinuar(false);
             pathArchivo = Valor.GetPathArchivo();
             if (pathArchivo == string.Empty)
             {

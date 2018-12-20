@@ -531,7 +531,7 @@ namespace SudokuParaTodos
                 Valor.SetValorInicio(valorInicio);
                 Valor.SetValorSolucion(valorSolucion);
                 Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
-
+                lenguajeSi = EngineData.Verdadero;
                 Formularios.AzulUno F = new Formularios.AzulUno();
                 F.Show();
                 this.Hide();

@@ -1025,6 +1025,27 @@ namespace SudokuParaTodos
             return titulo;
         }
 
+        public string TituloReiniciar(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Al reiniciar el juego se borrara todo lo jugado " + Environment.NewLine + "¿Es eso lo que desea?";
+                    break;
+                case ("Ingles"):
+                    titulo = "When you restart the game, everything played will be delete " + Environment.NewLine + "Is that what you want?";
+                    break;
+                case ("Portugues"):
+                    titulo = "Quando você reiniciar o jogo, tudo sera deletado " + Environment.NewLine + "É issoo que você quer?";
+                    break;
+                default:
+                    titulo = "Al reiniciar el juego se borrara todo lo jugado " + Environment.NewLine + "¿Es eso lo que desea?";
+                    break;
+            }
+            return titulo;
+        }
+
         private bool continuar = false;
 
         public void SetContinuar (bool value) { continuar = value; }

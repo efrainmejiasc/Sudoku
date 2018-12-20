@@ -291,9 +291,10 @@ namespace SudokuParaTodos.Formularios
             LetrasJuegoACB = Funcion.SetLetrasJuegoACB(solo, oculto);
             btnA.Text = LetrasJuegoACB.A.ToString();
             btnB.Text = LetrasJuegoACB.B.ToString();
-            if (LetrasJuegoACB.A + LetrasJuegoACB.B > 0)
+            if (LetrasJuegoACB.A + LetrasJuegoACB.B >= 0)
             {
-                btnBB.Visible = EngineData.Falso;
+                //btnBB.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
             }
             else
             {
@@ -307,14 +308,14 @@ namespace SudokuParaTodos.Formularios
             else
             {
                 btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
-                btnBB.Visible = EngineData.Falso;
+                //btnBB.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
             }
         }
 
         private void SetLetrasJuegoFEG()
         {
             LetrasJuegoFEG = Funcion.SetLetrasJuegoFEG(contadorIngresado, valorIngresado, valorCandidatoSinEliminados);
-            //btnBB.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             if (LetrasJuegoACB.A + LetrasJuegoACB.B == 0 && Funcion.Visibilidad70(LetrasJuegoFEG.F))
             {
                 btnBB.Visible = EngineData.Verdadero;
@@ -322,6 +323,7 @@ namespace SudokuParaTodos.Formularios
             else
             {
                 btnBB.Visible = EngineData.Falso;
+                btnBB.Visible = EngineData.Verdadero;
             }
             btnC.Visible = Funcion.Visibilidad70(LetrasJuegoFEG.F);
             btnF.Text = LetrasJuegoFEG.F.ToString();
@@ -699,6 +701,11 @@ namespace SudokuParaTodos.Formularios
 
         private void reiniciar_Click(object sender, EventArgs e)
         {
+            Reiniciar R = new Reiniciar();
+            R.ShowDialog();
+            bool reiniciar = Valor.GetContinuar();
+            if (!reiniciar) return;
+            Valor.SetContinuar(false);
             pathArchivo = Valor.GetPathArchivo();
             if (pathArchivo == string.Empty)
             {
@@ -708,6 +715,7 @@ namespace SudokuParaTodos.Formularios
             valorEliminado = new string[9, 9];
             GuardarJuego(pathArchivo);
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             AbrirJuego(pathArchivo);
         }
 
