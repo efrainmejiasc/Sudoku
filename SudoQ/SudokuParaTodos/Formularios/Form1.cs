@@ -903,7 +903,7 @@ namespace SudokuParaTodos
             }
             else
             {
-                e.Cancel = true;
+                Application.Exit();
             }
         }
     }

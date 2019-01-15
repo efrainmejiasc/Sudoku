@@ -284,6 +284,7 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.lblCelda = new System.Windows.Forms.Label();
+            this.txtNota2 = new System.Windows.Forms.TextBox();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1843,13 +1844,13 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.txtNota2);
             this.panel10.Controls.Add(this.label4);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.button2);
             this.panel10.Controls.Add(this.btnGrup2);
             this.panel10.Controls.Add(this.btnGrup);
-            this.panel10.Controls.Add(this.txtNota);
             this.panel10.Controls.Add(this.button1);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.btnSelectColor);
@@ -1866,6 +1867,7 @@
             this.panel10.Controls.Add(this.pincelB);
             this.panel10.Controls.Add(this.pincelA);
             this.panel10.Controls.Add(this.pnlLetra);
+            this.panel10.Controls.Add(this.txtNota);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
@@ -1960,6 +1962,7 @@
             this.txtNota.Size = new System.Drawing.Size(36, 24);
             this.txtNota.TabIndex = 61;
             this.txtNota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNota.Visible = false;
             // 
             // button1
             // 
@@ -4412,6 +4415,19 @@
             this.lblCelda.TabIndex = 3;
             this.lblCelda.Text = "Celdas";
             // 
+            // txtNota2
+            // 
+            this.txtNota2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNota2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNota2.Location = new System.Drawing.Point(230, 121);
+            this.txtNota2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNota2.MaxLength = 7;
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.ReadOnly = true;
+            this.txtNota2.Size = new System.Drawing.Size(36, 24);
+            this.txtNota2.TabIndex = 113;
+            this.txtNota2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // RojoDos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4721,5 +4737,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtNota2;
     }
 }

@@ -357,8 +357,6 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
-
-
         private void ProcesosContables()
         {
             dataGridView1.DataSource = null;
@@ -374,6 +372,8 @@ namespace SudokuParaTodos.Formularios
             {
                 c.HeaderText = string.Empty;
             }
+            dataGridView1
+                .Columns[1].Width = 100;
         }
 
         private void AbrirJuego(string pathArchivo)

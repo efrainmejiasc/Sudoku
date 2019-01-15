@@ -117,7 +117,10 @@ namespace SudokuParaTodos
 
         public void SetNombreIdioma(string v) { nombreIdioma = v; }
 
-        public string GetNombreIdioma() { return nombreIdioma; }
+        public string GetNombreIdioma()
+        {
+            return nombreIdioma;
+        }
 
         public string NombreIdiomaCultura(string vCultura)
         {
@@ -1057,6 +1060,69 @@ namespace SudokuParaTodos
         public void SetSalirJuego(bool value) { salir = value; }
 
         public bool GetSalirJuego () { return salir; }
+
+        public string Fila(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Fila";
+                    break;
+                case ("Ingles"):
+                    titulo = "Row";
+                    break;
+                case ("Portugues"):
+                    titulo = "Linha";
+                    break;
+                default:
+                    titulo = "Fila";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string Columna(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Columna";
+                    break;
+                case ("Ingles"):
+                    titulo = "Column";
+                    break;
+                case ("Portugues"):
+                    titulo = "Coluna";
+                    break;
+                default:
+                    titulo = "Columna";
+                    break;
+            }
+            return titulo;
+        }
+
+        public string Recuadro(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Recuadro";
+                    break;
+                case ("Ingles"):
+                    titulo = "Box";
+                    break;
+                case ("Portugues"):
+                    titulo = "Quadrante";
+                    break;
+                default:
+                    titulo = "Recuadro";
+                    break;
+            }
+            return titulo;
+        }
 
     }
 }
