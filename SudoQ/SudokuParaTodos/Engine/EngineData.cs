@@ -1165,11 +1165,6 @@ namespace SudokuParaTodos
             return titulo;
         }
 
-        private bool selectIdioma = false ;
-        
-        public  bool GetSelectIdioma() { return selectIdioma; }
-
-        public void  SetSelectIdioma (bool v) { selectIdioma = v; }
-
+       
     }
 }
