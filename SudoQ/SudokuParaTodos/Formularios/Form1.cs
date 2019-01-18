@@ -536,6 +536,7 @@ namespace SudokuParaTodos
                 F.Show();
                 this.Hide();
             }
+            mIdiomas.Visible = false;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)

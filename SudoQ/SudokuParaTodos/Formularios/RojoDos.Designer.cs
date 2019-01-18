@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RojoDos));
             this.pnl1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
@@ -112,13 +113,14 @@
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNota2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnGrup2 = new System.Windows.Forms.Button();
             this.btnGrup = new System.Windows.Forms.Button();
-            this.txtNota = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -129,6 +131,7 @@
             this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.activar = new System.Windows.Forms.ToolStripMenuItem();
             this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
+            this.mRecuadros = new System.Windows.Forms.ToolStripMenuItem();
             this.gRUPOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fila1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -162,7 +165,6 @@
             this.recuadro9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mFilas = new System.Windows.Forms.ToolStripMenuItem();
             this.mColumnas = new System.Windows.Forms.ToolStripMenuItem();
-            this.mRecuadros = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.btnAA = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
@@ -183,6 +185,7 @@
             this.btnB = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnA = new System.Windows.Forms.Button();
+            this.txtNota = new System.Windows.Forms.TextBox();
             this.tC1 = new System.Windows.Forms.TextBox();
             this.tC2 = new System.Windows.Forms.TextBox();
             this.tC3 = new System.Windows.Forms.TextBox();
@@ -284,7 +287,7 @@
             this.t88 = new System.Windows.Forms.TextBox();
             this.pnl2 = new System.Windows.Forms.Panel();
             this.lblCelda = new System.Windows.Forms.Label();
-            this.txtNota2 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1844,6 +1847,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.txtNota2);
             this.panel10.Controls.Add(this.label4);
             this.panel10.Controls.Add(this.label3);
@@ -1873,6 +1877,28 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1204, 165);
             this.panel10.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(231, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 114;
+            this.label1.Text = "TEXT";
+            // 
+            // txtNota2
+            // 
+            this.txtNota2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNota2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNota2.Location = new System.Drawing.Point(230, 138);
+            this.txtNota2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNota2.MaxLength = 7;
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.ReadOnly = true;
+            this.txtNota2.Size = new System.Drawing.Size(36, 24);
+            this.txtNota2.TabIndex = 113;
+            this.txtNota2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -1927,7 +1953,7 @@
             this.btnGrup2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrup2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrup2.ForeColor = System.Drawing.Color.Silver;
-            this.btnGrup2.Location = new System.Drawing.Point(194, 121);
+            this.btnGrup2.Location = new System.Drawing.Point(194, 138);
             this.btnGrup2.Name = "btnGrup2";
             this.btnGrup2.Size = new System.Drawing.Size(36, 24);
             this.btnGrup2.TabIndex = 95;
@@ -1943,26 +1969,12 @@
             this.btnGrup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrup.ForeColor = System.Drawing.Color.Silver;
-            this.btnGrup.Location = new System.Drawing.Point(266, 121);
+            this.btnGrup.Location = new System.Drawing.Point(266, 138);
             this.btnGrup.Name = "btnGrup";
             this.btnGrup.Size = new System.Drawing.Size(36, 24);
             this.btnGrup.TabIndex = 62;
             this.btnGrup.UseVisualStyleBackColor = false;
             this.btnGrup.Click += new System.EventHandler(this.btnGrup_Click);
-            // 
-            // txtNota
-            // 
-            this.txtNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNota.Location = new System.Drawing.Point(230, 121);
-            this.txtNota.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNota.MaxLength = 7;
-            this.txtNota.Name = "txtNota";
-            this.txtNota.ReadOnly = true;
-            this.txtNota.Size = new System.Drawing.Size(36, 24);
-            this.txtNota.TabIndex = 61;
-            this.txtNota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtNota.Visible = false;
             // 
             // button1
             // 
@@ -1997,10 +2009,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mIdiomas,
             this.mContadores,
+            this.mRecuadros,
             this.gRUPOSToolStripMenuItem,
             this.mFilas,
-            this.mColumnas,
-            this.mRecuadros});
+            this.mColumnas});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(315, 24);
@@ -2061,6 +2073,13 @@
             this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
+            // 
+            // mRecuadros
+            // 
+            this.mRecuadros.Name = "mRecuadros";
+            this.mRecuadros.Size = new System.Drawing.Size(80, 20);
+            this.mRecuadros.Text = "RECUADRO";
+            this.mRecuadros.Click += new System.EventHandler(this.rECUADROToolStripMenuItem_Click);
             // 
             // gRUPOSToolStripMenuItem
             // 
@@ -2323,13 +2342,6 @@
             this.mColumnas.Size = new System.Drawing.Size(84, 20);
             this.mColumnas.Text = "COLUMNAS";
             this.mColumnas.Click += new System.EventHandler(this.cOLUMNASToolStripMenuItem1_Click);
-            // 
-            // mRecuadros
-            // 
-            this.mRecuadros.Name = "mRecuadros";
-            this.mRecuadros.Size = new System.Drawing.Size(80, 20);
-            this.mRecuadros.Text = "RECUADRO";
-            this.mRecuadros.Click += new System.EventHandler(this.rECUADROToolStripMenuItem_Click);
             // 
             // btnSelectColor
             // 
@@ -2596,6 +2608,20 @@
             this.btnA.TabIndex = 1;
             this.btnA.Text = "a";
             this.btnA.UseVisualStyleBackColor = false;
+            // 
+            // txtNota
+            // 
+            this.txtNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNota.Location = new System.Drawing.Point(154, 138);
+            this.txtNota.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNota.MaxLength = 7;
+            this.txtNota.Name = "txtNota";
+            this.txtNota.ReadOnly = true;
+            this.txtNota.Size = new System.Drawing.Size(36, 24);
+            this.txtNota.TabIndex = 61;
+            this.txtNota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNota.Visible = false;
             // 
             // tC1
             // 
@@ -4415,18 +4441,9 @@
             this.lblCelda.TabIndex = 3;
             this.lblCelda.Text = "Celdas";
             // 
-            // txtNota2
+            // timer1
             // 
-            this.txtNota2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNota2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNota2.Location = new System.Drawing.Point(230, 121);
-            this.txtNota2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNota2.MaxLength = 7;
-            this.txtNota2.Name = "txtNota2";
-            this.txtNota2.ReadOnly = true;
-            this.txtNota2.Size = new System.Drawing.Size(36, 24);
-            this.txtNota2.TabIndex = 113;
-            this.txtNota2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // RojoDos
             // 
@@ -4738,5 +4755,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNota2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

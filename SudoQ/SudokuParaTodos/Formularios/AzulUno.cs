@@ -65,6 +65,7 @@ namespace SudokuParaTodos.Formularios
             valorInicio = Valor.GetValorInicio();
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            AplicarIdioma();
             SetearJuego();
             ContadorIngresado();
         }
@@ -91,7 +92,7 @@ namespace SudokuParaTodos.Formularios
                 Valor.SetNombreIdioma(EngineData.LenguajeEspañol);
             }
 
-            AplicarIdioma();
+            //AplicarIdioma();
             lenguajeSi = EngineData.Verdadero;
 
             if (!Valor.GetObjFrom())

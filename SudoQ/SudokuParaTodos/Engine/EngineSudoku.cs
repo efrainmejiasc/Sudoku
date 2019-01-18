@@ -2078,25 +2078,30 @@ namespace SudokuParaTodos
 
         private  DataTable AgregarFilas(DataTable dt, int nF , string tabla)
         {
+            string nombreIdioma = Valor.GetNombreIdioma();
+            string fila = Valor.Fila(nombreIdioma);
+            string columna = Valor.Columna(nombreIdioma);
+            string recuadro = Valor.Recuadro(nombreIdioma);
+
             for (int i = 1; i <= nF; i++)
             {
                 if (tabla == "TABLA2")
                 {
                     if (i >= 1 && i<= 9)
-                        dt.Rows.Add(i, Valor.Fila(Valor.GetNombreIdioma()), i , "");
+                        dt.Rows.Add(i,fila , i , "");
                     else if (i >= 10 && i <= 18)
-                        dt.Rows.Add(i, Valor.Columna(Valor.GetNombreIdioma()), i - 9, "");
+                        dt.Rows.Add(i, columna, i - 9, "");
                     else if (i >= 19 && i <= 27)
-                        dt.Rows.Add(i, Valor.Recuadro(Valor.GetNombreIdioma()), i - 18, "");
+                        dt.Rows.Add(i,recuadro, i - 18, "");
                 }
                 else
                 {
                     if (i >= 1 && i <= 9)
-                        dt.Rows.Add(i, Valor.Fila(Valor.GetNombreIdioma()), i,"","");
+                        dt.Rows.Add(i, fila, i,"","");
                     else if (i >= 10 && i <= 18)
-                        dt.Rows.Add(i, Valor.Columna(Valor.GetNombreIdioma()), i - 9,"","");
+                        dt.Rows.Add(i, columna, i - 9,"","");
                     else if (i >= 19 && i <= 27)
-                        dt.Rows.Add(i, Valor.Recuadro(Valor.GetNombreIdioma()), i - 18,"","");
+                        dt.Rows.Add(i, recuadro, i - 18,"","");
                 }
             }
             return dt;
@@ -2274,43 +2279,43 @@ namespace SudokuParaTodos
 
             foreach(DataRow r in dt.Rows)
             {
-                if (r[1].ToString().Substring(0,1) == "F" && r[3].ToString() == "0")
+                if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString()== "Row") && r[3].ToString() == "0")
                 {
                     cero.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "1")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "1")
                 {
                    uno.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "2")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "2")
                 {
                     dos.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "3")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "3")
                 {
                     tres.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "4")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "4")
                 {
                     cuatro.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "5")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "5")
                 {
                     cinco.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "6")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "6")
                 {
                     seis.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "7")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "7")
                 {
                     siete.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "8")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "8")
                 {
                     ocho.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "F" && r[3].ToString() == "9")
+                else if ((r[1].ToString() == "Fila" || r[1].ToString() == "Linha" || r[1].ToString() == "Row") && r[3].ToString() == "9")
                 {
                     nueve.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
@@ -2335,7 +2340,7 @@ namespace SudokuParaTodos
                 {
                     tres.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString() == "C" && r[3].ToString() == "4")
+                else if (r[1].ToString().Substring(0,1) == "C" && r[3].ToString() == "4")
                 {
                     cuatro.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
@@ -2364,43 +2369,43 @@ namespace SudokuParaTodos
 
             foreach (DataRow r in dt.Rows)
             {
-                if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "0")
+                if ((r[1].ToString() == "Quadrante" || r[1].ToString()== "Box" || r[1].ToString()== "Recuadro") && r[3].ToString() == "0")
                 {
                     cero.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "1")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "1")
                 {
                     uno.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString() == "R" && r[3].ToString() == "2")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "2")
                 {
                     dos.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1).Substring(0, 1) == "R" && r[3].ToString() == "3")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "3")
                 {
                     tres.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "4")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "4")
                 {
                     cuatro.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "5")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "5")
                 {
                     cinco.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "6")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "6")
                 {
                     seis.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "7")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "7")
                 {
                     siete.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "8")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "8")
                 {
                     ocho.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }
-                else if (r[1].ToString().Substring(0, 1) == "R" && r[3].ToString() == "9")
+                else if ((r[1].ToString() == "Quadrante" || r[1].ToString() == "Box" || r[1].ToString() == "Recuadro") && r[3].ToString() == "9")
                 {
                     nueve.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
                 }

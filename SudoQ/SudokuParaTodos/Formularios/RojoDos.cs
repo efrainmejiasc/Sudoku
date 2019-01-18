@@ -50,6 +50,7 @@ namespace SudokuParaTodos.Formularios
         string idiomaNombre = string.Empty;
         string lado = string.Empty;
 
+        string filaRecuadroColumna = string.Empty;
         string circuito = string.Empty;
         private static AzulDos F = new AzulDos();
         private static RojoTres G = new RojoTres();
@@ -63,14 +64,30 @@ namespace SudokuParaTodos.Formularios
 
         private void RojoDos_Activated(object sender, EventArgs e)
         {
+            pnl1.Visible = false;
+            pnl2.Visible = false;
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+            AplicarIdioma();
             SetearJuego();
             ContadorIngresado();
+            txtNota2.Text = string.Empty;
+            circuito = string.Empty;
+            filaRecuadroColumna = String.Empty;
+            label1.Text = filaRecuadroColumna;
+            timer1.Interval = 100;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            pnl1.Visible = true;
+            pnl2.Visible = true;
         }
 
         private void RojoDos_Load(object sender, EventArgs e)
@@ -89,7 +106,7 @@ namespace SudokuParaTodos.Formularios
                 idiomaNombre = Valor.NombreIdiomaCultura(idiomaCultura);
                 Valor.SetNombreIdioma(idiomaNombre);
             }
-            AplicarIdioma();
+           // AplicarIdioma();
             ComportamientoObjetoInicio();
             QuitarCosete();
         }
@@ -589,19 +606,19 @@ namespace SudokuParaTodos.Formularios
         private void fILASToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             circuito = "FILA";
-            //txtNota.Text = string.Empty;
+            filaRecuadroColumna = Valor.FilaColumnaRecuadro(Valor.GetNombreIdioma(), circuito);
         }
 
         private void cOLUMNASToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             circuito = "COLUMNA";
-            //txtNota.Text = string.Empty;
+            filaRecuadroColumna = Valor.FilaColumnaRecuadro(Valor.GetNombreIdioma(), circuito);
         }
 
         private void rECUADROToolStripMenuItem_Click(object sender, EventArgs e)
         {
             circuito = "RECUADRO";
-            //txtNota.Text = string.Empty;
+            filaRecuadroColumna = Valor.FilaColumnaRecuadro(Valor.GetNombreIdioma(), circuito);
         }
 
         private void btnGrup_Click(object sender, EventArgs e)
@@ -770,7 +787,7 @@ namespace SudokuParaTodos.Formularios
             {
                 MessageBox.Show("ELIJA FILA, COLUMNA O RECUADRO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-         
+            label1.Text = filaRecuadroColumna ;
         }
 
         private void btnGrup2_Click(object sender, EventArgs e)
@@ -939,7 +956,7 @@ namespace SudokuParaTodos.Formularios
             {
                 MessageBox.Show("ELIJA FILA, COLUMNA O RECUADRO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
+            label1.Text = filaRecuadroColumna;
         }
 
         private void GrupoActualizar()
@@ -1281,6 +1298,5 @@ namespace SudokuParaTodos.Formularios
         }
 
         //***********************************************************************************************
-
     }
 }

@@ -69,6 +69,7 @@ namespace SudokuParaTodos.Formularios
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             SetearJuego();
             ContadorIngresado();
+            AplicarIdioma();
         }
 
         private void AzulDos_Load(object sender, EventArgs e)
@@ -87,7 +88,7 @@ namespace SudokuParaTodos.Formularios
                 idiomaNombre = Valor.NombreIdiomaCultura(idiomaCultura);
                 Valor.SetNombreIdioma(idiomaNombre);
             }
-            AplicarIdioma();
+            //AplicarIdioma();
             ComportamientoObjetoInicio();
         }
 

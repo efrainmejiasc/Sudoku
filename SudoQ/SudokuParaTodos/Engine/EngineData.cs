@@ -412,7 +412,7 @@ namespace SudokuParaTodos
                     titulo = "Sorted Candidates/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Ordenados/Candidatos Excluídos";
+                    titulo = "Candidatos Encomendados/Candidatos Excluídos";
                     break;
                 default:
                     titulo = "Candidatos Ordenados/Candidatos Excluidos";
@@ -1123,6 +1123,53 @@ namespace SudokuParaTodos
             }
             return titulo;
         }
+
+        public string FilaColumnaRecuadro(string lenguaje,string tipo)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español" ):
+                    if (tipo == "FILA")
+                        titulo = "Fila";
+                    else if (tipo == "COLUMNA")
+                        titulo = "Columna";
+                    else if (tipo == "RECUADRO")
+                        titulo = "Recuadro";
+                        break;
+                case ("Ingles"):
+                    if (tipo == "FILA")
+                        titulo = "Row";
+                    else if (tipo == "COLUMNA")
+                        titulo = "Column";
+                    else if (tipo == "RECUADRO")
+                        titulo = "Box";
+                    break;
+                case ("Portugues"):
+                    if (tipo == "FILA")
+                        titulo = "Linha";
+                    else if (tipo == "COLUMNA")
+                        titulo = "Coluna";
+                    else if (tipo == "RECUADRO")
+                        titulo = "Quadrante";
+                    break;
+                default:
+                    if (tipo == "FILA")
+                        titulo = "Fila";
+                    else if (tipo == "COLUMNA")
+                        titulo = "Columna";
+                    else if (tipo == "RECUADRO")
+                        titulo = "Recuadro";
+                    break;
+            }
+            return titulo;
+        }
+
+        private bool selectIdioma = false ;
+        
+        public  bool GetSelectIdioma() { return selectIdioma; }
+
+        public void  SetSelectIdioma (bool v) { selectIdioma = v; }
 
     }
 }

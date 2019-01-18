@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RojoTres));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnN = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -247,7 +249,7 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
-            this.btnN = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -304,6 +306,17 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1145, 178);
             this.panel10.TabIndex = 86;
+            // 
+            // btnN
+            // 
+            this.btnN.BackColor = System.Drawing.Color.White;
+            this.btnN.Location = new System.Drawing.Point(1106, 146);
+            this.btnN.Name = "btnN";
+            this.btnN.Size = new System.Drawing.Size(27, 28);
+            this.btnN.TabIndex = 134;
+            this.btnN.Text = "N";
+            this.btnN.UseVisualStyleBackColor = false;
+            this.btnN.Click += new System.EventHandler(this.Filtro23Candidatos_Click);
             // 
             // label3
             // 
@@ -674,14 +687,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -4032,16 +4045,9 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
-            // btnN
+            // timer1
             // 
-            this.btnN.BackColor = System.Drawing.Color.White;
-            this.btnN.Location = new System.Drawing.Point(1106, 146);
-            this.btnN.Name = "btnN";
-            this.btnN.Size = new System.Drawing.Size(27, 28);
-            this.btnN.TabIndex = 134;
-            this.btnN.Text = "N";
-            this.btnN.UseVisualStyleBackColor = false;
-            this.btnN.Click += new System.EventHandler(this.Filtro23Candidatos_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // RojoTres
             // 
@@ -4297,5 +4303,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnN;
+        private System.Windows.Forms.Timer timer1;
     }
 }

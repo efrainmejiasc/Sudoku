@@ -44,7 +44,7 @@ namespace SudokuParaTodos.Formularios
         private string[] oculto = new string[27];
         private int contadorIngresado = 0;
         private bool contadorActivado = EngineData.Falso;
-
+       
         private string idiomaCultura = string.Empty;
         private string idiomaNombre = string.Empty;
         private static  AzulDos F = new AzulDos();
@@ -59,14 +59,29 @@ namespace SudokuParaTodos.Formularios
 
         private void Ayuda1_Activated(object sender, EventArgs e)
         {
+            pnl1.Visible = false;
+            dataGridView1.Visible = false;
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
+
+            ComportamientoObjetoInicio();
+
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            AplicarIdioma();
             SetearJuego();
             ContadorIngresado();
             ProcesosContables();
+            timer1.Interval = 300;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            pnl1.Visible = true;
+            dataGridView1.Visible = true;
         }
 
         private void Ayuda1_Load(object sender, EventArgs e)
@@ -85,8 +100,9 @@ namespace SudokuParaTodos.Formularios
                 idiomaNombre = Valor.NombreIdiomaCultura(idiomaCultura);
                 Valor.SetNombreIdioma(idiomaNombre);
             }
-            AplicarIdioma();
-            ComportamientoObjetoInicio();
+            //AplicarIdioma();
+            //ComportamientoObjetoInicio();
+            //ProcesosContables();
         }
 
         private void AplicarIdioma()
@@ -372,8 +388,7 @@ namespace SudokuParaTodos.Formularios
             {
                 c.HeaderText = string.Empty;
             }
-            dataGridView1
-                .Columns[1].Width = 100;
+            dataGridView1.Columns[1].Width = 100;
         }
 
         private void AbrirJuego(string pathArchivo)
@@ -642,5 +657,6 @@ namespace SudokuParaTodos.Formularios
             G.Show();
             this.Hide();
         }
+
     }
 }

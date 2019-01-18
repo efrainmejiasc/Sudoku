@@ -58,13 +58,25 @@ namespace SudokuParaTodos
 
         private void Ayuda2_Activated(object sender, EventArgs e)
         {
+            pnl1.Visible = false;
+            pnl2.Visible = false;
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+            AplicarIdioma();
             SetearJuego();
+            timer1.Interval = 100;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            pnl1.Visible = true;
+            pnl2.Visible = true;
         }
 
         private void Ayuda2_Load(object sender, EventArgs e)
@@ -83,7 +95,7 @@ namespace SudokuParaTodos
                 idiomaNombre = Valor.NombreIdiomaCultura(idiomaCultura);
                 Valor.SetNombreIdioma(idiomaNombre);
             }
-            AplicarIdioma();
+            //AplicarIdioma();
             ComportamientoObjetoInicio();
         }
 
@@ -426,9 +438,6 @@ namespace SudokuParaTodos
             Application.Exit();
         }
 
-
         //*******************************************************************************************************************
-
-
     }
 }
