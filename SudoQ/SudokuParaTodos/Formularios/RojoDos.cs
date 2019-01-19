@@ -1104,6 +1104,8 @@ namespace SudokuParaTodos.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
+            filaRecuadroColumna = string.Empty;
+            circuito = string.Empty;
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
@@ -1113,6 +1115,8 @@ namespace SudokuParaTodos.Formularios
 
         private void button2_Click(object sender, EventArgs e)
         {
+            filaRecuadroColumna = string.Empty;
+            circuito = string.Empty;
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);

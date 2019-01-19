@@ -63,6 +63,7 @@ namespace SudokuParaTodos
         public Form1(string idioma)
         {
             InitializeComponent();
+            mIdiomas.Visible = false;
             LimpiarParaNuevoJuego();
             lblSudoku.Visible = EngineData.Falso;
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(idioma);
@@ -514,6 +515,7 @@ namespace SudokuParaTodos
             {
                 ComportamientoObjExpandido();
                 lenguajeSi = EngineData.Verdadero;
+                mIdiomas.Visible = false;
             }
             else
             {
@@ -532,11 +534,11 @@ namespace SudokuParaTodos
                 Valor.SetValorSolucion(valorSolucion);
                 Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
                 lenguajeSi = EngineData.Verdadero;
+                mIdiomas.Visible = false;
                 Formularios.AzulUno F = new Formularios.AzulUno();
                 F.Show();
                 this.Hide();
             }
-            mIdiomas.Visible = false;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
