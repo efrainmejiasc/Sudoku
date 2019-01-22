@@ -497,15 +497,15 @@ namespace SudokuParaTodos
                 }
                 else if (i == 1 || i == 3 || i == 4 || i == 6 || i == 7)
                 {
-                    v = v + " " + a[i];
+                    v = v .Trim() + " " + a[i].Trim();
                 }
                 else if (i == 2 || i == 5 || i == 8 )
                 {
-                    v = v + " " + a[i] + Environment.NewLine ;
+                    v = v.Trim() + " " + a[i].Trim() + Environment.NewLine ;
                 }
             }
 
-            return v;
+            return v.Trim();
         }
 
         // METODOS NUMEROS + CANDIDATOS 
@@ -882,6 +882,42 @@ namespace SudokuParaTodos
                     {
                         for (int c = 0; c <= 8; c++)
                         {
+                            if (valorEliminado[f, c] != string.Empty && valorEliminado[f, c] != null)
+                            {
+                                vEliminado = valorEliminado[f, c].Trim();
+                                if (vEliminado == string.Empty) vEliminado = EngineData.Zero;
+                            }
+                            else
+                            {
+                                vEliminado = EngineData.Zero;
+                            }
+                            if (c == 0) vLinea = vEliminado + "-";
+                            else if (c > 0 && c < 8) vLinea = vLinea + vEliminado + "-";
+                            else if (c == 8) vLinea = vLinea + vEliminado;
+                        }
+                    
+                        file.WriteLine(vLinea);
+                        vLinea = string.Empty;
+                    }
+
+                }
+            }
+        }
+
+        public void GuardarValoresEliminados81(string pathArchivo, string[,] valorEliminado)
+        {
+            if (pathArchivo != null && pathArchivo != "")
+            {
+                string[] partes = pathArchivo.Split('\\');
+                string nombreArchivo = partes[partes.Length - 1];
+                string vLinea = string.Empty;
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(pathArchivo, true))
+                {
+                    string vEliminado = string.Empty;
+                    for (int f = 0; f <= 8; f++)
+                    {
+                        for (int c = 0; c <= 8; c++)
+                        {
                             if (valorEliminado[f, c] != null && valorEliminado[f, c] != string.Empty)
                             {
                                 vEliminado = valorEliminado[f, c].Trim();
@@ -900,7 +936,6 @@ namespace SudokuParaTodos
 
                 }
             }
-
         }
 
         public void GuardarValoresInicio(string pathArchivo, string[,] valorInicio)

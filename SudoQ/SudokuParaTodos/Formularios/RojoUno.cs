@@ -75,6 +75,10 @@ namespace SudokuParaTodos.Formularios
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             AplicarIdioma();
             SetearJuego();
+            if (numeroFiltrado >= 1)
+            {
+                txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(numeroFiltrado.ToString(), txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+            }
             ContadorIngresado();
             timer1.Interval = 100;
             timer1.Start();
