@@ -54,6 +54,8 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorFiltrado = new string[9, 9];
         private static RojoDos F = new RojoDos();
         private static AzulDos G = new AzulDos();
+        private string  procedimientoEjecutado = string.Empty;
+        private bool ejecutadoN = false;
 
 
         public RojoTres()
@@ -74,6 +76,11 @@ namespace SudokuParaTodos.Formularios
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             AplicarIdioma();
             SetearJuego();
+            if (numeroFiltrado >= 1)
+            {
+                txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(numeroFiltrado.ToString(), txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+            }
+            BotonesFiltros(procedimientoEjecutado, ejecutadoN);
             ContadorIngresado();
             timer1.Interval = 100;
             timer1.Start();
@@ -399,6 +406,9 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            numeroFiltrado = 0;
+            procedimientoEjecutado = string.Empty;
+            ejecutadoN = false;
             F.Show();
             this.Hide();
         }
@@ -503,22 +513,61 @@ namespace SudokuParaTodos.Formularios
                     //txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                     txtSudoku2 = Funcion.SetearTextParaNumerosN(txtSudoku2, valorIngresado);
                     SetearJuego();
+                    procedimientoEjecutado = string.Empty;
+                    ejecutadoN = false;
                     break;
                 case (EngineData.BtnDos):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                     txtSudoku2 = Funcion.CandidatosFinalistas2(txtSudoku2, Color.Chartreuse);
+                    procedimientoEjecutado = "DOS";
                     break;
                 case (EngineData.BtnTres):
                     txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                     txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange,Color.Chartreuse);
+                    procedimientoEjecutado = "TRES";
                     break;
                 case (EngineData.BtnN):
                     txtSudoku2 = Funcion.SetearTextParaNumerosN(txtSudoku2, valorIngresado);
                     SetearJuego();
                     txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.WhiteSmoke, Color.WhiteSmoke);
                     txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
+                    ejecutadoN = true;
                     break; 
             }
+        }
+        private void BotonesFiltros (string procedimiento,bool procedimientoN)
+        {
+            switch (procedimiento)
+            {
+                case ("DOS"):
+                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    txtSudoku2 = Funcion.CandidatosFinalistas2(txtSudoku2, Color.Chartreuse);
+                    break;
+
+                case ("TRES"):
+                    txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                    txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange, Color.Chartreuse);
+                    break;
+            }
+
+            if (procedimientoN)
+            {
+                txtSudoku2 = Funcion.SetearTextParaNumerosN(txtSudoku2, valorIngresado);
+                SetearJuego();
+                txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.WhiteSmoke, Color.WhiteSmoke);
+                txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
+                switch (procedimiento)
+                {
+                    case ("DOS"):
+                        txtSudoku2 = Funcion.CandidatosFinalistas2(txtSudoku2, Color.Chartreuse);
+                        break;
+
+                    case ("TRES"):
+                        txtSudoku2 = Funcion.CandidatosFinalistas3(txtSudoku2, Color.Orange, Color.Chartreuse);
+                        break;
+                }
+            }        
+
         }
 
         private void activar_Click(object sender, EventArgs e)

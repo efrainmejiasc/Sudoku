@@ -63,6 +63,7 @@ namespace SudokuParaTodos
         public Form1(string idioma)
         {
             InitializeComponent();
+            lblE.Text = "D";
             mIdiomas.Visible = false;
             LimpiarParaNuevoJuego();
             lblSudoku.Visible = EngineData.Falso;
@@ -222,6 +223,7 @@ namespace SudokuParaTodos
             mContadores.Visible = EngineData.Falso;
             foreach (Button btn in btnPincel) { btn.Visible = EngineData.Falso; }
             pnlJuego.Visible = EngineData.Falso;
+            pnlLetra.Visible = EngineData.Falso;
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
             mColores.Visible = EngineData.Falso;
@@ -229,7 +231,6 @@ namespace SudokuParaTodos
             btnA.Visible = EngineData.Falso;
             btnB.Visible = EngineData.Falso;
             btnC.Visible = EngineData.Falso;
-            pnlLetra.Visible = EngineData.Falso;
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
@@ -486,6 +487,8 @@ namespace SudokuParaTodos
         private void Lenguaje_Click(object sender, EventArgs e)
         {
             lblSudoku.Visible = EngineData.Falso;
+            mIdiomas.Visible = EngineData.Falso;
+            lblE.Text = "D";
             if (!lenguajeSi)
             {
                 Funcion.SetearTextBoxLimpio(txtSudoku);
@@ -534,7 +537,6 @@ namespace SudokuParaTodos
                 Valor.SetValorSolucion(valorSolucion);
                 Valor.SetNombreJuego(Funcion.NombreJuego(pathArchivo));
                 lenguajeSi = EngineData.Verdadero;
-                mIdiomas.Visible = false;
                 Formularios.AzulUno F = new Formularios.AzulUno();
                 F.Show();
                 this.Hide();

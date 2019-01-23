@@ -583,6 +583,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            numeroFiltrado = 0;
             G.Show();
             this.Hide();
         }

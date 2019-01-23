@@ -231,6 +231,7 @@
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.lblE = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.pnlJuego.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -242,6 +243,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.lblE);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.btnSelectColor);
@@ -260,7 +262,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(570, 182);
+            this.panel10.Size = new System.Drawing.Size(571, 182);
             this.panel10.TabIndex = 10;
             // 
             // label2
@@ -360,6 +362,7 @@
             this.pnlJuego.Name = "pnlJuego";
             this.pnlJuego.Size = new System.Drawing.Size(246, 63);
             this.pnlJuego.TabIndex = 59;
+            this.pnlJuego.Visible = false;
             // 
             // btnAbrir
             // 
@@ -411,10 +414,11 @@
             this.pnlLetra.Controls.Add(this.btnB);
             this.pnlLetra.Controls.Add(this.btnC);
             this.pnlLetra.Controls.Add(this.btnA);
-            this.pnlLetra.Location = new System.Drawing.Point(412, 27);
+            this.pnlLetra.Location = new System.Drawing.Point(410, 27);
             this.pnlLetra.Name = "pnlLetra";
             this.pnlLetra.Size = new System.Drawing.Size(152, 88);
             this.pnlLetra.TabIndex = 60;
+            this.pnlLetra.Visible = false;
             // 
             // btnE
             // 
@@ -490,7 +494,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(570, 24);
+            this.panel11.Size = new System.Drawing.Size(571, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
@@ -3585,12 +3589,22 @@
             this.t00.Enter += new System.EventHandler(this.t00_Enter);
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
+            // lblE
+            // 
+            this.lblE.AutoSize = true;
+            this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE.Location = new System.Drawing.Point(6, 27);
+            this.lblE.Name = "lblE";
+            this.lblE.Size = new System.Drawing.Size(32, 31);
+            this.lblE.TabIndex = 77;
+            this.lblE.Text = "E";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(570, 641);
+            this.ClientSize = new System.Drawing.Size(571, 641);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
@@ -3822,6 +3836,7 @@
         private System.Windows.Forms.ToolStripMenuItem mContadores;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblE;
     }
 }
 

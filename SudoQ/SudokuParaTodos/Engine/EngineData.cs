@@ -448,16 +448,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Números/Celdas Vacias/AYUDA1";
+                    titulo = "Números/Celdas Vacias/C1";
                     break;
                 case ("Ingles"):
-                    titulo = "Numbers/Empty Squares/HELP1";
+                    titulo = "Numbers/Empty Squares/C1";
                     break;
                 case ("Portugues"):
-                    titulo = "Números/Quadrados Vazias/AJUDA1";
+                    titulo = "Números/Quadrados Vazias/C1";
                     break;
                 default:
-                    titulo = "Números/Celdas Vacias/AYUDA1";
+                    titulo = "Números/Celdas Vacias/C1";
                     break;
             }
             return titulo;
@@ -469,16 +469,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Solucion/Numeros/AYUDA2";
+                    titulo = "Solucion/Numeros/C2";
                     break;
                 case ("Ingles"):
-                    titulo = "Solution/Numbers/HELP2";
+                    titulo = "Solution/Numbers/C2";
                     break;
                 case ("Portugues"):
-                    titulo = "Solução/Números/AJUDA2";
+                    titulo = "Solução/Números/C2";
                     break;
                 default:
-                    titulo = "Solucion/Numeros/AYUDA2";
+                    titulo = "Solucion/Numeros/C2";
                     break;
             }
             return titulo;
@@ -490,16 +490,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Solucion/Candidatos Excluidos/AYUDA3";
+                    titulo = "Solucion/Candidatos Excluidos/C3";
                     break;
                 case ("Ingles"):
-                    titulo = "Solution/Excluded Candidates/HELP3";
+                    titulo = "Solution/Excluded Candidates/C3";
                     break;
                 case ("Portugues"):
-                    titulo = "Solução/Candidatos Excluídos/AJUDA3";
+                    titulo = "Solução/Candidatos Excluídos/C3";
                     break;
                 default:
-                    titulo = "Solucion/Candidatos Excluidos/AYUDA3";
+                    titulo = "Solucion/Candidatos Excluidos/C3";
                     break;
             }
             return titulo;
