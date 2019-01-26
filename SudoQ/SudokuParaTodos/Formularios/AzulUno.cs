@@ -230,8 +230,8 @@ namespace SudokuParaTodos.Formularios
             }
             nombreJuego = Funcion.NombreJuego(pathArchivo);
             Valor.SetNombreJuego(nombreJuego);
-            this.MaximumSize = new Size(1161, 680);
-            this.Size = new Size(1161, 680);
+            this.MaximumSize = new Size(1220, 712);
+            this.Size = new Size(1220, 712);
             this.Text = EngineData.Titulo + ": " + nombreJuego;
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             btnPincel= AsociarBtnPincel(btnPincel);

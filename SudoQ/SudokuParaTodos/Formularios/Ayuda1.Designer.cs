@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda1));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnBB = new System.Windows.Forms.Button();
@@ -165,6 +165,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -198,7 +199,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1145, 178);
+            this.panel10.Size = new System.Drawing.Size(1204, 183);
             this.panel10.TabIndex = 13;
             // 
             // btnBB
@@ -208,7 +209,7 @@
             this.btnBB.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnBB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBB.ForeColor = System.Drawing.Color.Black;
-            this.btnBB.Location = new System.Drawing.Point(76, 90);
+            this.btnBB.Location = new System.Drawing.Point(79, 74);
             this.btnBB.Name = "btnBB";
             this.btnBB.Size = new System.Drawing.Size(25, 24);
             this.btnBB.TabIndex = 113;
@@ -219,7 +220,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(839, 32);
+            this.label3.Location = new System.Drawing.Point(1137, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 112;
@@ -228,21 +229,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(222, 142);
+            this.label2.Location = new System.Drawing.Point(316, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 111;
             this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 36);
+            this.label1.Location = new System.Drawing.Point(3, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 31);
+            this.label1.Size = new System.Drawing.Size(49, 31);
             this.label1.TabIndex = 110;
-            this.label1.Text = "AYUDA1 ";
+            this.label1.Text = "C1";
             // 
             // btnAA
             // 
@@ -251,7 +253,7 @@
             this.btnAA.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAA.ForeColor = System.Drawing.Color.Black;
-            this.btnAA.Location = new System.Drawing.Point(17, 90);
+            this.btnAA.Location = new System.Drawing.Point(48, 74);
             this.btnAA.Name = "btnAA";
             this.btnAA.Size = new System.Drawing.Size(25, 24);
             this.btnAA.TabIndex = 107;
@@ -266,7 +268,7 @@
             this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
-            this.btnSelectColor.Location = new System.Drawing.Point(758, 31);
+            this.btnSelectColor.Location = new System.Drawing.Point(1011, 35);
             this.btnSelectColor.Name = "btnSelectColor";
             this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
             this.btnSelectColor.TabIndex = 106;
@@ -279,7 +281,7 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(729, 31);
+            this.pincelJ.Location = new System.Drawing.Point(982, 35);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 105;
@@ -293,7 +295,7 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(700, 31);
+            this.pincelI.Location = new System.Drawing.Point(953, 35);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 104;
@@ -307,7 +309,7 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(671, 31);
+            this.pincelH.Location = new System.Drawing.Point(924, 35);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 103;
@@ -321,7 +323,7 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(642, 31);
+            this.pincelG.Location = new System.Drawing.Point(895, 35);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 102;
@@ -335,7 +337,7 @@
             this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(613, 31);
+            this.pincelE.Location = new System.Drawing.Point(866, 35);
             this.pincelE.Name = "pincelE";
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 101;
@@ -349,7 +351,7 @@
             this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(584, 31);
+            this.pincelD.Location = new System.Drawing.Point(837, 35);
             this.pincelD.Name = "pincelD";
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 100;
@@ -363,7 +365,7 @@
             this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(555, 31);
+            this.pincelC.Location = new System.Drawing.Point(808, 35);
             this.pincelC.Name = "pincelC";
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 99;
@@ -377,7 +379,7 @@
             this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(526, 31);
+            this.pincelB.Location = new System.Drawing.Point(779, 35);
             this.pincelB.Name = "pincelB";
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 98;
@@ -391,7 +393,7 @@
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelA.ForeColor = System.Drawing.Color.Black;
-            this.pincelA.Location = new System.Drawing.Point(497, 31);
+            this.pincelA.Location = new System.Drawing.Point(750, 35);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
@@ -407,7 +409,7 @@
             this.btnDerecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDerecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDerecha.ForeColor = System.Drawing.Color.Silver;
-            this.btnDerecha.Location = new System.Drawing.Point(438, 31);
+            this.btnDerecha.Location = new System.Drawing.Point(654, 35);
             this.btnDerecha.Name = "btnDerecha";
             this.btnDerecha.Size = new System.Drawing.Size(36, 24);
             this.btnDerecha.TabIndex = 95;
@@ -424,7 +426,7 @@
             this.pnlLetra.Controls.Add(this.btnB);
             this.pnlLetra.Controls.Add(this.btnC);
             this.pnlLetra.Controls.Add(this.btnA);
-            this.pnlLetra.Location = new System.Drawing.Point(147, 30);
+            this.pnlLetra.Location = new System.Drawing.Point(301, 27);
             this.pnlLetra.Name = "pnlLetra";
             this.pnlLetra.Size = new System.Drawing.Size(152, 88);
             this.pnlLetra.TabIndex = 60;
@@ -503,7 +505,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1145, 24);
+            this.panel11.Size = new System.Drawing.Size(1204, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
@@ -512,13 +514,14 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mArchivo,
+            this.toolStripMenuItem1,
             this.mIdiomas,
             this.mTablero,
             this.mColores,
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(173, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(422, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -652,14 +655,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -759,7 +762,7 @@
             this.pnl1.Controls.Add(this.txt02);
             this.pnl1.Controls.Add(this.txt01);
             this.pnl1.Controls.Add(this.txt00);
-            this.pnl1.Location = new System.Drawing.Point(9, 184);
+            this.pnl1.Location = new System.Drawing.Point(12, 206);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
             this.pnl1.TabIndex = 87;
@@ -2231,34 +2234,34 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Location = new System.Drawing.Point(700, 65);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(725, 87);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 20;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.dataGridView1.RowTemplate.Height = 20;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2270,18 +2273,24 @@
             this.timer1.Interval = 300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(249, 20);
+            this.toolStripMenuItem1.Text = "----------------------------------------------";
+            // 
             // Ayuda1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 641);
+            this.ClientSize = new System.Drawing.Size(1204, 673);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1161, 680);
-            this.MinimumSize = new System.Drawing.Size(1161, 680);
+            this.MaximumSize = new System.Drawing.Size(1220, 712);
+            this.MinimumSize = new System.Drawing.Size(1220, 712);
             this.Name = "Ayuda1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayuda1";
@@ -2435,5 +2444,6 @@
         private System.Windows.Forms.Button btnBB;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

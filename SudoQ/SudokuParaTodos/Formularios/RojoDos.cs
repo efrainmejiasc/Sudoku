@@ -804,7 +804,8 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-                MessageBox.Show("ELIJA FILA, COLUMNA O RECUADRO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(Valor.Mensaje22(Valor.GetNombreIdioma()), Valor.TituloMensaje(Valor.GetNombreIdioma()), MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
             }
             obj2 = obj;
             label1.Text = filaRecuadroColumna ;
@@ -974,7 +975,7 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-                MessageBox.Show("ELIJA FILA, COLUMNA O RECUADRO", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(Valor.Mensaje22(Valor.GetNombreIdioma()), Valor.TituloMensaje(Valor.GetNombreIdioma()), MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             obj2 = obj;
             label1.Text = filaRecuadroColumna;

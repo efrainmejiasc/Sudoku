@@ -214,8 +214,8 @@ namespace SudokuParaTodos
 
         private void ComportamientoObjInicio()
         {
-            this.Size = new Size(586 , 680);
-            this.MaximumSize = new Size(586, 680);
+            this.Size = new Size(595 , 712);
+            this.MaximumSize = new Size(595, 712);
             btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
@@ -246,45 +246,39 @@ namespace SudokuParaTodos
         {
             string[,] pantallaIni = new string[9, 9];
             pantallaIni[0, 0] = "7";
-            txtSudoku[0, 0].ForeColor = Color.Green;
-            pantallaIni[0, 7] = "8";
-            txtSudoku[0, 7].ForeColor = Color.Blue;
-            pantallaIni[0, 8] = "1";
-            txtSudoku[0, 8].ForeColor = Color.Orange;
-            pantallaIni[1, 7] = "5";
-            txtSudoku[1, 7].ForeColor = Color.Crimson;
-            pantallaIni[2, 1] = "2";
-            txtSudoku[2, 1].ForeColor = Color.Red;
-            pantallaIni[2, 3] = "5";
-            txtSudoku[2, 3].ForeColor = Color.YellowGreen;
-            pantallaIni[2, 4] = "9";
-            txtSudoku[2, 4].ForeColor = Color.Violet;
-            pantallaIni[3, 0] = "4";
-            txtSudoku[3, 0].ForeColor = Color.Black;
-            pantallaIni[4, 2] = "6";
-            txtSudoku[4, 2].ForeColor = Color.Cyan;
-            pantallaIni[4, 4] = "3";
-            txtSudoku[4, 4].ForeColor = Color.Cyan;
-            pantallaIni[5, 4] = "4";
-            txtSudoku[5, 4].ForeColor = Color.Green;
-            pantallaIni[3, 6] = "8";
-            txtSudoku[3, 6].ForeColor = Color.Orange;
-            pantallaIni[6, 1] = "1";
-            txtSudoku[6, 1].ForeColor = Color.Blue;
-            pantallaIni[6, 3] = "9";
-            txtSudoku[6, 3].ForeColor = Color.Black;
-            pantallaIni[6, 5] = "6";
-            txtSudoku[6, 5].ForeColor = Color.Violet;
-            pantallaIni[5, 8] = "2";
-            txtSudoku[5, 8].ForeColor = Color.Crimson;
-            pantallaIni[7, 6] = "7";
-            txtSudoku[7, 6].ForeColor = Color.YellowGreen;
-            pantallaIni[8, 6] = "5";
-            txtSudoku[8, 6].ForeColor = Color.Cyan;
-            pantallaIni[8, 0] = "3";
-            txtSudoku[8, 0].ForeColor = Color.Orange;
-            pantallaIni[8, 8] = "9";
-            txtSudoku[8, 8].ForeColor = Color.Red;
+            txtSudoku[0, 0].ForeColor = Color.Black;
+            pantallaIni[1, 3] = "6";
+            txtSudoku[0, 3].ForeColor = Color.Black;
+            pantallaIni[1, 6] = "2";
+            txtSudoku[1, 6].ForeColor = Color.Black;
+            pantallaIni[2, 2] = "4";
+            txtSudoku[2, 2].ForeColor = Color.Black;
+            pantallaIni[2, 3] = "1";
+            txtSudoku[2, 3].ForeColor = Color.Black;
+            pantallaIni[3, 2] = "3";
+            txtSudoku[3, 2].ForeColor = Color.Black;
+            pantallaIni[3, 8] = "4";
+            txtSudoku[3, 8].ForeColor = Color.Black;
+            pantallaIni[4, 8] = "1";
+            txtSudoku[4, 8].ForeColor = Color.Black;
+            pantallaIni[5, 0] = "8";
+            txtSudoku[5, 0].ForeColor = Color.Black;
+            pantallaIni[5, 5] = "2";
+            txtSudoku[5, 5].ForeColor = Color.Black;
+            pantallaIni[6, 1] = "3";
+            txtSudoku[6, 1].ForeColor = Color.Black;
+            pantallaIni[6, 4] = "1";
+            txtSudoku[6, 4].ForeColor = Color.Black;
+            pantallaIni[6, 5] = "4";
+            txtSudoku[6, 5].ForeColor = Color.Black;
+            pantallaIni[7, 5] = "7";
+            txtSudoku[7, 5].ForeColor = Color.Black;
+            pantallaIni[8, 1] = "5";
+            txtSudoku[8, 1].ForeColor = Color.Black;
+            pantallaIni[8, 6] = "6";
+            txtSudoku[8, 6].ForeColor = Color.Black;
+            pantallaIni[8, 7] = "9";
+            txtSudoku[8, 7].ForeColor = Color.Black;
             for (int f = 0; f <= 8; f++)
             {
                 for (int c = 0; c <= 8; c++)
@@ -297,8 +291,8 @@ namespace SudokuParaTodos
 
         private void ComportamientoObjInicio2()
         {
-            this.Size = new Size(586, 680);
-            this.MaximumSize = new Size(586, 680);
+            this.Size = new Size(595, 712);
+            this.MaximumSize = new Size(595, 712);
             btnC.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.UnLook));
             mArchivo.Visible = EngineData.Falso;
             mTablero.Visible = EngineData.Falso;
@@ -324,8 +318,8 @@ namespace SudokuParaTodos
         {
             if (Valor.GetIdioma() != string.Empty)
             {
-                this.MaximumSize = new Size(1161, 680);
-                this.Size = new Size(1161 , 680);
+                this.MaximumSize = new Size(1220,712);
+                this.Size = new Size(1220,712);
                 this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
                 foreach (Button btn in btnPincel) { btn.Visible = EngineData.Verdadero; }
                 btnPincel = Funcion.ColoresPincel(btnPincel);
@@ -488,6 +482,7 @@ namespace SudokuParaTodos
         {
             lblSudoku.Visible = EngineData.Falso;
             mIdiomas.Visible = EngineData.Falso;
+            label1.Visible = EngineData.Verdadero;
             lblE.Text = "D";
             if (!lenguajeSi)
             {

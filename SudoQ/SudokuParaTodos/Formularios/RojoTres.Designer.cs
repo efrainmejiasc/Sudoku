@@ -250,6 +250,7 @@
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -304,13 +305,13 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1145, 178);
+            this.panel10.Size = new System.Drawing.Size(1204, 183);
             this.panel10.TabIndex = 86;
             // 
             // btnN
             // 
             this.btnN.BackColor = System.Drawing.Color.White;
-            this.btnN.Location = new System.Drawing.Point(1106, 146);
+            this.btnN.Location = new System.Drawing.Point(1157, 140);
             this.btnN.Name = "btnN";
             this.btnN.Size = new System.Drawing.Size(27, 28);
             this.btnN.TabIndex = 134;
@@ -321,7 +322,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(772, 130);
+            this.label3.Location = new System.Drawing.Point(850, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 133;
@@ -330,17 +331,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(343, 130);
+            this.label2.Location = new System.Drawing.Point(316, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 132;
             this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 29);
+            this.label1.Location = new System.Drawing.Point(3, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 31);
             this.label1.TabIndex = 131;
@@ -355,7 +357,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Location = new System.Drawing.Point(486, 37);
+            this.button1.Location = new System.Drawing.Point(654, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 24);
             this.button1.TabIndex = 130;
@@ -365,7 +367,7 @@
             // btnRes23
             // 
             this.btnRes23.BackColor = System.Drawing.Color.White;
-            this.btnRes23.Location = new System.Drawing.Point(1007, 146);
+            this.btnRes23.Location = new System.Drawing.Point(1058, 140);
             this.btnRes23.Name = "btnRes23";
             this.btnRes23.Size = new System.Drawing.Size(27, 28);
             this.btnRes23.TabIndex = 129;
@@ -381,7 +383,7 @@
             this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(1073, 147);
+            this.btnDos.Location = new System.Drawing.Point(1124, 141);
             this.btnDos.Name = "btnDos";
             this.btnDos.Size = new System.Drawing.Size(27, 28);
             this.btnDos.TabIndex = 128;
@@ -397,7 +399,7 @@
             this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(1040, 146);
+            this.btnTres.Location = new System.Drawing.Point(1091, 140);
             this.btnTres.Name = "btnTres";
             this.btnTres.Size = new System.Drawing.Size(27, 28);
             this.btnTres.TabIndex = 127;
@@ -408,7 +410,7 @@
             // 
             this.lbl9.AutoSize = true;
             this.lbl9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl9.Location = new System.Drawing.Point(281, 130);
+            this.lbl9.Location = new System.Drawing.Point(281, 134);
             this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(13, 13);
@@ -419,7 +421,7 @@
             // 
             this.lbl8.AutoSize = true;
             this.lbl8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl8.Location = new System.Drawing.Point(249, 130);
+            this.lbl8.Location = new System.Drawing.Point(249, 134);
             this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(13, 13);
@@ -430,7 +432,7 @@
             // 
             this.lbl7.AutoSize = true;
             this.lbl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl7.Location = new System.Drawing.Point(215, 130);
+            this.lbl7.Location = new System.Drawing.Point(215, 134);
             this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(13, 13);
@@ -441,7 +443,7 @@
             // 
             this.lbl6.AutoSize = true;
             this.lbl6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl6.Location = new System.Drawing.Point(183, 130);
+            this.lbl6.Location = new System.Drawing.Point(183, 134);
             this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(13, 13);
@@ -452,7 +454,7 @@
             // 
             this.lbl5.AutoSize = true;
             this.lbl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl5.Location = new System.Drawing.Point(149, 130);
+            this.lbl5.Location = new System.Drawing.Point(149, 134);
             this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(13, 13);
@@ -463,7 +465,7 @@
             // 
             this.lbl4.AutoSize = true;
             this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl4.Location = new System.Drawing.Point(117, 130);
+            this.lbl4.Location = new System.Drawing.Point(117, 134);
             this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(13, 13);
@@ -474,7 +476,7 @@
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl3.Location = new System.Drawing.Point(83, 130);
+            this.lbl3.Location = new System.Drawing.Point(83, 134);
             this.lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(13, 13);
@@ -485,7 +487,7 @@
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl2.Location = new System.Drawing.Point(51, 130);
+            this.lbl2.Location = new System.Drawing.Point(51, 134);
             this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(13, 13);
@@ -496,7 +498,7 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl1.Location = new System.Drawing.Point(17, 130);
+            this.lbl1.Location = new System.Drawing.Point(17, 134);
             this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(13, 13);
@@ -508,7 +510,7 @@
             this.btn9.BackColor = System.Drawing.Color.Silver;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.Blue;
-            this.btn9.Location = new System.Drawing.Point(276, 147);
+            this.btn9.Location = new System.Drawing.Point(276, 151);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(28, 27);
             this.btn9.TabIndex = 115;
@@ -521,7 +523,7 @@
             this.btn8.BackColor = System.Drawing.Color.Silver;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.Blue;
-            this.btn8.Location = new System.Drawing.Point(243, 147);
+            this.btn8.Location = new System.Drawing.Point(243, 151);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(28, 27);
             this.btn8.TabIndex = 114;
@@ -534,7 +536,7 @@
             this.btn7.BackColor = System.Drawing.Color.Silver;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.Blue;
-            this.btn7.Location = new System.Drawing.Point(210, 147);
+            this.btn7.Location = new System.Drawing.Point(210, 151);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(28, 27);
             this.btn7.TabIndex = 113;
@@ -547,7 +549,7 @@
             this.btn6.BackColor = System.Drawing.Color.Silver;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.Blue;
-            this.btn6.Location = new System.Drawing.Point(177, 147);
+            this.btn6.Location = new System.Drawing.Point(177, 151);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(28, 27);
             this.btn6.TabIndex = 112;
@@ -560,7 +562,7 @@
             this.btn5.BackColor = System.Drawing.Color.Silver;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.Blue;
-            this.btn5.Location = new System.Drawing.Point(144, 147);
+            this.btn5.Location = new System.Drawing.Point(144, 151);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(28, 27);
             this.btn5.TabIndex = 111;
@@ -573,7 +575,7 @@
             this.btn4.BackColor = System.Drawing.Color.Silver;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.Blue;
-            this.btn4.Location = new System.Drawing.Point(111, 147);
+            this.btn4.Location = new System.Drawing.Point(111, 151);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(28, 27);
             this.btn4.TabIndex = 110;
@@ -586,7 +588,7 @@
             this.btn3.BackColor = System.Drawing.Color.Silver;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.Blue;
-            this.btn3.Location = new System.Drawing.Point(78, 147);
+            this.btn3.Location = new System.Drawing.Point(78, 151);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(28, 27);
             this.btn3.TabIndex = 109;
@@ -599,7 +601,7 @@
             this.btn2.BackColor = System.Drawing.Color.Silver;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.Blue;
-            this.btn2.Location = new System.Drawing.Point(45, 147);
+            this.btn2.Location = new System.Drawing.Point(45, 151);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(28, 27);
             this.btn2.TabIndex = 108;
@@ -612,7 +614,7 @@
             this.btn1.BackColor = System.Drawing.Color.Silver;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.Blue;
-            this.btn1.Location = new System.Drawing.Point(12, 147);
+            this.btn1.Location = new System.Drawing.Point(12, 151);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(28, 27);
             this.btn1.TabIndex = 116;
@@ -627,7 +629,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1145, 24);
+            this.panel11.Size = new System.Drawing.Size(1204, 24);
             this.panel11.TabIndex = 107;
             // 
             // menuStrip1
@@ -635,11 +637,12 @@
             this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
             this.mIdiomas,
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(103, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(232, 24);
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -687,14 +690,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -705,7 +708,7 @@
             this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
-            this.btnSelectColor.Location = new System.Drawing.Point(830, 37);
+            this.btnSelectColor.Location = new System.Drawing.Point(1011, 35);
             this.btnSelectColor.Name = "btnSelectColor";
             this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
             this.btnSelectColor.TabIndex = 106;
@@ -718,7 +721,7 @@
             this.btnAA.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAA.ForeColor = System.Drawing.Color.Black;
-            this.btnAA.Location = new System.Drawing.Point(23, 75);
+            this.btnAA.Location = new System.Drawing.Point(48, 74);
             this.btnAA.Name = "btnAA";
             this.btnAA.Size = new System.Drawing.Size(25, 24);
             this.btnAA.TabIndex = 84;
@@ -733,7 +736,7 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(801, 37);
+            this.pincelJ.Location = new System.Drawing.Point(982, 35);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 105;
@@ -747,7 +750,7 @@
             this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(114, 89);
+            this.btnEL.Location = new System.Drawing.Point(79, 74);
             this.btnEL.Name = "btnEL";
             this.btnEL.Size = new System.Drawing.Size(25, 24);
             this.btnEL.TabIndex = 83;
@@ -762,7 +765,7 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(772, 37);
+            this.pincelI.Location = new System.Drawing.Point(953, 35);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 104;
@@ -776,7 +779,7 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(743, 37);
+            this.pincelH.Location = new System.Drawing.Point(924, 35);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 103;
@@ -790,7 +793,7 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(714, 37);
+            this.pincelG.Location = new System.Drawing.Point(895, 35);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 102;
@@ -804,7 +807,7 @@
             this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(685, 37);
+            this.pincelE.Location = new System.Drawing.Point(866, 35);
             this.pincelE.Name = "pincelE";
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 101;
@@ -818,7 +821,7 @@
             this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(656, 37);
+            this.pincelD.Location = new System.Drawing.Point(837, 35);
             this.pincelD.Name = "pincelD";
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 100;
@@ -832,7 +835,7 @@
             this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(627, 37);
+            this.pincelC.Location = new System.Drawing.Point(808, 35);
             this.pincelC.Name = "pincelC";
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 99;
@@ -846,7 +849,7 @@
             this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(598, 37);
+            this.pincelB.Location = new System.Drawing.Point(779, 35);
             this.pincelB.Name = "pincelB";
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 98;
@@ -860,7 +863,7 @@
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelA.ForeColor = System.Drawing.Color.Black;
-            this.pincelA.Location = new System.Drawing.Point(569, 37);
+            this.pincelA.Location = new System.Drawing.Point(750, 35);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 97;
@@ -877,7 +880,7 @@
             this.pnlLetra.Controls.Add(this.btnB);
             this.pnlLetra.Controls.Add(this.btnC);
             this.pnlLetra.Controls.Add(this.btnA);
-            this.pnlLetra.Location = new System.Drawing.Point(152, 29);
+            this.pnlLetra.Location = new System.Drawing.Point(301, 27);
             this.pnlLetra.Name = "pnlLetra";
             this.pnlLetra.Size = new System.Drawing.Size(152, 88);
             this.pnlLetra.TabIndex = 60;
@@ -1034,7 +1037,7 @@
             this.pnl1.Controls.Add(this.txt02);
             this.pnl1.Controls.Add(this.txt01);
             this.pnl1.Controls.Add(this.txt00);
-            this.pnl1.Location = new System.Drawing.Point(12, 184);
+            this.pnl1.Location = new System.Drawing.Point(12, 206);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
             this.pnl1.TabIndex = 87;
@@ -2582,7 +2585,7 @@
             this.pnl2.Controls.Add(this.t02);
             this.pnl2.Controls.Add(this.t01);
             this.pnl2.Controls.Add(this.t00);
-            this.pnl2.Location = new System.Drawing.Point(578, 184);
+            this.pnl2.Location = new System.Drawing.Point(637, 206);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(555, 445);
             this.pnl2.TabIndex = 88;
@@ -4049,18 +4052,24 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
+            this.toolStripMenuItem1.Text = "----------------------";
+            // 
             // RojoTres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 641);
+            this.ClientSize = new System.Drawing.Size(1204, 673);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1161, 680);
-            this.MinimumSize = new System.Drawing.Size(1161, 680);
+            this.MaximumSize = new System.Drawing.Size(1220, 712);
+            this.MinimumSize = new System.Drawing.Size(1220, 712);
             this.Name = "RojoTres";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RojoTres";
@@ -4304,5 +4313,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnN;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

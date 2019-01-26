@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.lblSudoku = new System.Windows.Forms.Label();
+            this.lblE = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSelectColor = new System.Windows.Forms.Button();
@@ -66,7 +68,6 @@
             this.pincelA = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnl1 = new System.Windows.Forms.Panel();
-            this.lblSudoku = new System.Windows.Forms.Label();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
             this.txt87 = new System.Windows.Forms.TextBox();
@@ -231,7 +232,6 @@
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.lblE = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.pnlJuego.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -243,6 +243,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.lblSudoku);
             this.panel10.Controls.Add(this.lblE);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.label1);
@@ -262,26 +263,52 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(571, 182);
+            this.panel10.Size = new System.Drawing.Size(1076, 183);
             this.panel10.TabIndex = 10;
+            // 
+            // lblSudoku
+            // 
+            this.lblSudoku.AutoSize = true;
+            this.lblSudoku.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblSudoku.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSudoku.ForeColor = System.Drawing.Color.Black;
+            this.lblSudoku.Location = new System.Drawing.Point(200, 85);
+            this.lblSudoku.Name = "lblSudoku";
+            this.lblSudoku.Size = new System.Drawing.Size(178, 42);
+            this.lblSudoku.TabIndex = 93;
+            this.lblSudoku.Text = "SUDOKU";
+            // 
+            // lblE
+            // 
+            this.lblE.AutoSize = true;
+            this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE.Location = new System.Drawing.Point(3, 27);
+            this.lblE.Name = "lblE";
+            this.lblE.Size = new System.Drawing.Size(32, 31);
+            this.lblE.TabIndex = 77;
+            this.lblE.Text = "E";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(778, 149);
+            this.label2.Location = new System.Drawing.Point(850, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 76;
             this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(287, 149);
+            this.label1.Location = new System.Drawing.Point(316, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 75;
             this.label1.Tag = "";
+            this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Visible = false;
             // 
             // btnSelectColor
             // 
@@ -290,7 +317,7 @@
             this.btnSelectColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectColor.ForeColor = System.Drawing.Color.Silver;
-            this.btnSelectColor.Location = new System.Drawing.Point(974, 35);
+            this.btnSelectColor.Location = new System.Drawing.Point(1011, 35);
             this.btnSelectColor.Name = "btnSelectColor";
             this.btnSelectColor.Size = new System.Drawing.Size(55, 24);
             this.btnSelectColor.TabIndex = 74;
@@ -303,7 +330,7 @@
             this.pincelJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelJ.ForeColor = System.Drawing.Color.Silver;
-            this.pincelJ.Location = new System.Drawing.Point(945, 35);
+            this.pincelJ.Location = new System.Drawing.Point(982, 35);
             this.pincelJ.Name = "pincelJ";
             this.pincelJ.Size = new System.Drawing.Size(25, 24);
             this.pincelJ.TabIndex = 73;
@@ -317,7 +344,7 @@
             this.pincelI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelI.ForeColor = System.Drawing.Color.Silver;
-            this.pincelI.Location = new System.Drawing.Point(916, 35);
+            this.pincelI.Location = new System.Drawing.Point(953, 35);
             this.pincelI.Name = "pincelI";
             this.pincelI.Size = new System.Drawing.Size(25, 24);
             this.pincelI.TabIndex = 72;
@@ -331,7 +358,7 @@
             this.pincelH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelH.ForeColor = System.Drawing.Color.Silver;
-            this.pincelH.Location = new System.Drawing.Point(887, 35);
+            this.pincelH.Location = new System.Drawing.Point(924, 35);
             this.pincelH.Name = "pincelH";
             this.pincelH.Size = new System.Drawing.Size(25, 24);
             this.pincelH.TabIndex = 71;
@@ -345,7 +372,7 @@
             this.pincelG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelG.ForeColor = System.Drawing.Color.Silver;
-            this.pincelG.Location = new System.Drawing.Point(858, 35);
+            this.pincelG.Location = new System.Drawing.Point(895, 35);
             this.pincelG.Name = "pincelG";
             this.pincelG.Size = new System.Drawing.Size(25, 24);
             this.pincelG.TabIndex = 70;
@@ -358,7 +385,7 @@
             this.pnlJuego.Controls.Add(this.btnOtro);
             this.pnlJuego.Controls.Add(this.btnSolucion);
             this.pnlJuego.Controls.Add(this.btnGuardar);
-            this.pnlJuego.Location = new System.Drawing.Point(7, 108);
+            this.pnlJuego.Location = new System.Drawing.Point(12, 115);
             this.pnlJuego.Name = "pnlJuego";
             this.pnlJuego.Size = new System.Drawing.Size(246, 63);
             this.pnlJuego.TabIndex = 59;
@@ -414,7 +441,7 @@
             this.pnlLetra.Controls.Add(this.btnB);
             this.pnlLetra.Controls.Add(this.btnC);
             this.pnlLetra.Controls.Add(this.btnA);
-            this.pnlLetra.Location = new System.Drawing.Point(410, 27);
+            this.pnlLetra.Location = new System.Drawing.Point(290, 39);
             this.pnlLetra.Name = "pnlLetra";
             this.pnlLetra.Size = new System.Drawing.Size(152, 88);
             this.pnlLetra.TabIndex = 60;
@@ -494,7 +521,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(571, 24);
+            this.panel11.Size = new System.Drawing.Size(1076, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
@@ -575,7 +602,7 @@
             this.pincelE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelE.ForeColor = System.Drawing.Color.Silver;
-            this.pincelE.Location = new System.Drawing.Point(829, 35);
+            this.pincelE.Location = new System.Drawing.Point(866, 35);
             this.pincelE.Name = "pincelE";
             this.pincelE.Size = new System.Drawing.Size(25, 24);
             this.pincelE.TabIndex = 55;
@@ -589,7 +616,7 @@
             this.pincelD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelD.ForeColor = System.Drawing.Color.Silver;
-            this.pincelD.Location = new System.Drawing.Point(800, 35);
+            this.pincelD.Location = new System.Drawing.Point(837, 35);
             this.pincelD.Name = "pincelD";
             this.pincelD.Size = new System.Drawing.Size(25, 24);
             this.pincelD.TabIndex = 54;
@@ -603,7 +630,7 @@
             this.pincelC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelC.ForeColor = System.Drawing.Color.Silver;
-            this.pincelC.Location = new System.Drawing.Point(771, 35);
+            this.pincelC.Location = new System.Drawing.Point(808, 35);
             this.pincelC.Name = "pincelC";
             this.pincelC.Size = new System.Drawing.Size(25, 24);
             this.pincelC.TabIndex = 53;
@@ -617,7 +644,7 @@
             this.pincelB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelB.ForeColor = System.Drawing.Color.Silver;
-            this.pincelB.Location = new System.Drawing.Point(742, 35);
+            this.pincelB.Location = new System.Drawing.Point(779, 35);
             this.pincelB.Name = "pincelB";
             this.pincelB.Size = new System.Drawing.Size(25, 24);
             this.pincelB.TabIndex = 52;
@@ -631,7 +658,7 @@
             this.pincelA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pincelA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pincelA.ForeColor = System.Drawing.Color.Black;
-            this.pincelA.Location = new System.Drawing.Point(713, 35);
+            this.pincelA.Location = new System.Drawing.Point(750, 35);
             this.pincelA.Name = "pincelA";
             this.pincelA.Size = new System.Drawing.Size(25, 24);
             this.pincelA.TabIndex = 51;
@@ -646,7 +673,6 @@
             // 
             this.pnl1.BackColor = System.Drawing.Color.Silver;
             this.pnl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl1.Controls.Add(this.lblSudoku);
             this.pnl1.Controls.Add(this.txt88);
             this.pnl1.Controls.Add(this.txt85);
             this.pnl1.Controls.Add(this.txt87);
@@ -728,22 +754,10 @@
             this.pnl1.Controls.Add(this.txt02);
             this.pnl1.Controls.Add(this.txt01);
             this.pnl1.Controls.Add(this.txt00);
-            this.pnl1.Location = new System.Drawing.Point(7, 188);
+            this.pnl1.Location = new System.Drawing.Point(12, 206);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
             this.pnl1.TabIndex = 69;
-            // 
-            // lblSudoku
-            // 
-            this.lblSudoku.AutoSize = true;
-            this.lblSudoku.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSudoku.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSudoku.ForeColor = System.Drawing.Color.Silver;
-            this.lblSudoku.Location = new System.Drawing.Point(187, 29);
-            this.lblSudoku.Name = "lblSudoku";
-            this.lblSudoku.Size = new System.Drawing.Size(178, 42);
-            this.lblSudoku.TabIndex = 93;
-            this.lblSudoku.Text = "SUDOKU";
             // 
             // txt88
             // 
@@ -2288,7 +2302,7 @@
             this.pnl2.Controls.Add(this.t02);
             this.pnl2.Controls.Add(this.t01);
             this.pnl2.Controls.Add(this.t00);
-            this.pnl2.Location = new System.Drawing.Point(583, 188);
+            this.pnl2.Location = new System.Drawing.Point(637, 206);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(555, 445);
             this.pnl2.TabIndex = 70;
@@ -3589,29 +3603,19 @@
             this.t00.Enter += new System.EventHandler(this.t00_Enter);
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             // 
-            // lblE
-            // 
-            this.lblE.AutoSize = true;
-            this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblE.Location = new System.Drawing.Point(6, 27);
-            this.lblE.Name = "lblE";
-            this.lblE.Size = new System.Drawing.Size(32, 31);
-            this.lblE.TabIndex = 77;
-            this.lblE.Text = "E";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(571, 641);
+            this.ClientSize = new System.Drawing.Size(579, 673);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1161, 680);
-            this.MinimumSize = new System.Drawing.Size(586, 680);
+            this.MaximumSize = new System.Drawing.Size(1220, 712);
+            this.MinimumSize = new System.Drawing.Size(595, 712);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

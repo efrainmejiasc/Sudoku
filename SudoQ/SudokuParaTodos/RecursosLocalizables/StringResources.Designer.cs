@@ -88,7 +88,7 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a AYUDA.
+        ///   Busca una cadena traducida similar a C.
         /// </summary>
         internal static string btnAyuda {
             get {

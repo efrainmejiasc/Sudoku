@@ -116,8 +116,8 @@ namespace SudokuParaTodos
             {
                 return;
             }
-            this.MaximumSize = new Size(1161, 680);
-            this.Size = new Size(1161, 680);
+            this.MaximumSize = new Size(1220,712);
+            this.Size = new Size(1220, 712);
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             txtSudoku2 = AsociarTxtMatriz2(txtSudoku2);
             btnPincel = AsociarBtnPincel(btnPincel);

@@ -135,8 +135,8 @@ namespace SudokuParaTodos.Formularios
             {
                 return;
             }
-            this.MaximumSize = new Size(1161, 680);
-            this.Size = new Size(1161, 680);
+            this.MaximumSize = new Size(1220,712);
+            this.Size = new Size(1220,712);
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);

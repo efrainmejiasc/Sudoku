@@ -1165,6 +1165,28 @@ namespace SudokuParaTodos
             return titulo;
         }
 
-       
+    
+        public string Mensaje22(string lenguaje)
+        {
+            string titulo = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    titulo = "Elija fila, columna o recuadro";
+                    break;
+                case ("Ingles"):
+                    titulo = "Choose row, column or box";
+                    break;
+                case ("Portugues"):
+                    titulo = "Escolher linha, coluna ou quadrante";
+                    break;
+                default:
+                    titulo = "Elija fila, recuadro o columna";
+                    break;
+            }
+            return titulo;
+        }
+
+
     }
 }
