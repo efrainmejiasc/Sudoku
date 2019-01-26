@@ -143,6 +143,7 @@
             this.guardar = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
             this.reiniciar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
@@ -240,7 +241,6 @@
             this.t00 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
@@ -1862,7 +1862,7 @@
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(25, 24);
             this.btnAyuda.TabIndex = 107;
-            this.btnAyuda.Text = "AYUDA";
+            this.btnAyuda.Text = "C";
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
@@ -2194,6 +2194,12 @@
             this.reiniciar.Text = "Reiniciar";
             this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(244, 20);
+            this.toolStripMenuItem1.Text = "---------------------------------------------";
+            // 
             // mIdiomas
             // 
             this.mIdiomas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2275,14 +2281,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -3843,12 +3849,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(244, 20);
-            this.toolStripMenuItem1.Text = "---------------------------------------------";
             // 
             // AzulDos
             // 

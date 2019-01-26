@@ -77,6 +77,7 @@ namespace SudokuParaTodos
             timer1.Stop();
             pnl1.Visible = true;
             pnl2.Visible = true;
+            btnAA.Focus();
         }
 
         private void Ayuda2_Load(object sender, EventArgs e)

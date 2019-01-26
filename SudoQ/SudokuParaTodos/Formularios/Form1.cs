@@ -234,12 +234,14 @@ namespace SudokuParaTodos
             valorCandidato = Funcion.CandidatosJuego(valorSolucion, valorCandidato);
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio,Color.Green, Color.Blue);
-     
 
             string idioma = CultureInfo.InstalledUICulture.NativeName;
             if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else if (idioma.Contains(EngineData.english)) mIdiomas.Text = EngineData.LANGUAGES;
             else mIdiomas.Text = EngineData.IDIOMAS;
+
+            pnlJuego.Focus();
+            btnAbrir.Focus();
         }
 
         private void SetPantallaInicio()
@@ -312,7 +314,9 @@ namespace SudokuParaTodos
             valorCandidatoSinEliminados = valorCandidato;
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorSolucion, valorCandidato, valorInicio, Color.Green, Color.Blue);
             lenguajeSi = EngineData.Verdadero;
-    }
+            pnlJuego.Focus();
+            btnAbrir.Focus();
+        }
 
         private void ComportamientoObjExpandido()
         {

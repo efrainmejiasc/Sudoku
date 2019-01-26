@@ -89,6 +89,7 @@ namespace SudokuParaTodos.Formularios
             timer1.Stop();
             pnl1.Visible = true;
             pnl2.Visible = true;
+            btnAA.Focus();
         }
 
         private void RojoUno_Load(object sender, EventArgs e)

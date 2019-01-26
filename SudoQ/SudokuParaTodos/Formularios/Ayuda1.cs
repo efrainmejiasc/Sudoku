@@ -82,6 +82,7 @@ namespace SudokuParaTodos.Formularios
             timer1.Stop();
             pnl1.Visible = true;
             dataGridView1.Visible = true;
+            btnAA.Focus();
         }
 
         private void Ayuda1_Load(object sender, EventArgs e)

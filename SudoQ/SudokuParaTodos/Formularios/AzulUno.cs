@@ -68,6 +68,7 @@ namespace SudokuParaTodos.Formularios
             AplicarIdioma();
             SetearJuego();
             ContadorIngresado();
+            btnBB.Focus();
         }
 
         private void AzulUno_Load(object sender, EventArgs e)

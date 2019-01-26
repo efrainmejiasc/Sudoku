@@ -70,6 +70,7 @@ namespace SudokuParaTodos.Formularios
             SetearJuego();
             ContadorIngresado();
             AplicarIdioma();
+            btnBB.Focus();
         }
 
         private void AzulDos_Load(object sender, EventArgs e)
