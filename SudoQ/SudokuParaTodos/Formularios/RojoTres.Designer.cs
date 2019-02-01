@@ -59,6 +59,7 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
@@ -250,7 +251,6 @@
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -646,6 +646,12 @@
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
+            this.toolStripMenuItem1.Text = "----------------------";
+            // 
             // mIdiomas
             // 
             this.mIdiomas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -690,14 +696,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -938,7 +944,6 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 38);
             this.btnC.TabIndex = 1;
-            this.btnC.Text = "c";
             this.btnC.UseVisualStyleBackColor = false;
             // 
             // btnA
@@ -4051,12 +4056,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
-            this.toolStripMenuItem1.Text = "----------------------";
             // 
             // RojoTres
             // 

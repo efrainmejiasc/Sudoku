@@ -385,16 +385,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Candidatos Filtrados/Candidatos Excluidos";
+                    titulo = "Candidatos Individuales/Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Filtered Candidates/Excluded Candidates";
+                    titulo = "Individual Candidates/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Filtrados/Candidatos Excluídos";
+                    titulo = "Candidatos Individuais/Candidatos Excluídos";
                     break;
                 default:
-                    titulo = "Candidatos Filtrados/Candidatos Excluidos";
+                    titulo = "Candidatos Individuales/Candidatos Excluidos";
                     break;
             }
             return titulo;
@@ -406,16 +406,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Candidatos Ordenados/Candidatos Excluidos";
+                    titulo = "Candidatos Organizados/Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Sorted Candidates/Excluded Candidates";
+                    titulo = "Organized Candidates/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Encomendados/Candidatos Excluídos";
+                    titulo = "Candidatos Organizados/Candidatos Excluídos";
                     break;
                 default:
-                    titulo = "Candidatos Ordenados/Candidatos Excluidos";
+                    titulo = "Candidatos Organizados/Candidatos Excluidos";
                     break;
             }
             return titulo;
@@ -427,16 +427,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Candidatos Filtrados/Candidatos";
+                    titulo = "Candidatos Individuales/Candidatos";
                     break;
                 case ("Ingles"):
-                    titulo = "Filtered Candidates/Candidates";
+                    titulo = "Individual Candidates/Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Filtrados/Candidatos";
+                    titulo = "Candidatos Individuais/Candidatos";
                     break;
                 default:
-                    titulo = "Candidatos Filtrados/Candidatos";
+                    titulo = "Candidatos Individuales/Candidatos";
                     break;
             }
             return titulo;

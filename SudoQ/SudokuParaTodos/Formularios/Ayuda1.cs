@@ -314,6 +314,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            textBox1.Text = string.Empty;
             F.Show();
             this.Hide();
         }
@@ -349,6 +350,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            textBox1.Text = string.Empty;
             K.Show();
             this.Hide();
         }
@@ -655,6 +657,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            textBox1.Text = string.Empty;
             G.Show();
             this.Hide();
         }

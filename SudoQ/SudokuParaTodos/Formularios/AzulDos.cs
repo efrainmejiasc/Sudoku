@@ -70,7 +70,7 @@ namespace SudokuParaTodos.Formularios
             SetearJuego();
             ContadorIngresado();
             AplicarIdioma();
-            btnBB.Focus();
+            btnAyuda.Focus();
         }
 
         private void AzulDos_Load(object sender, EventArgs e)
@@ -223,6 +223,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            txtNota.Text = string.Empty;
             F.Show();
             this.Hide();
         }
@@ -449,6 +450,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            txtNota.Text = string.Empty;
             G.Show();
             this.Hide();
         }
@@ -745,6 +747,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            txtNota.Text = string.Empty;
             H.Show();
             this.Hide();
         }

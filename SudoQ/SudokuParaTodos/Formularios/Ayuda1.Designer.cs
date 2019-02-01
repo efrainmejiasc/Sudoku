@@ -66,6 +66,7 @@
             this.guardar = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
             this.reiniciar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
@@ -165,7 +166,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel10.SuspendLayout();
             this.pnlLetra.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -177,6 +178,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.textBox1);
             this.panel10.Controls.Add(this.btnBB);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.label2);
@@ -484,7 +486,6 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 38);
             this.btnC.TabIndex = 1;
-            this.btnC.Text = "c";
             this.btnC.UseVisualStyleBackColor = false;
             // 
             // btnA
@@ -574,6 +575,12 @@
             this.reiniciar.Text = "Reiniciar";
             this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(249, 20);
+            this.toolStripMenuItem1.Text = "----------------------------------------------";
+            // 
             // mIdiomas
             // 
             this.mIdiomas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -655,14 +662,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -2273,11 +2280,16 @@
             this.timer1.Interval = 300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // toolStripMenuItem1
+            // textBox1
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(249, 20);
-            this.toolStripMenuItem1.Text = "----------------------------------------------";
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.Location = new System.Drawing.Point(466, 91);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.MaxLength = 7;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(93, 24);
+            this.textBox1.TabIndex = 114;
             // 
             // Ayuda1
             // 
@@ -2445,5 +2457,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

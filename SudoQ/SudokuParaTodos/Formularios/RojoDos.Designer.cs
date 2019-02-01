@@ -124,6 +124,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
@@ -131,6 +132,7 @@
             this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
             this.activar = new System.Windows.Forms.ToolStripMenuItem();
             this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.gRUPOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fila1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -288,8 +290,6 @@
             this.pnl2 = new System.Windows.Forms.Panel();
             this.lblCelda = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -2026,6 +2026,12 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(314, 20);
+            this.toolStripMenuItem1.Text = "-----------------------------------------------------------";
+            // 
             // mIdiomas
             // 
             this.mIdiomas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2040,21 +2046,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(180, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(180, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(180, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -2080,6 +2086,12 @@
             this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(29, 20);
+            this.toolStripMenuItem2.Text = "--";
             // 
             // gRUPOSToolStripMenuItem
             // 
@@ -2602,7 +2614,6 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 38);
             this.btnC.TabIndex = 2;
-            this.btnC.Text = "c";
             this.btnC.UseVisualStyleBackColor = false;
             // 
             // btnA
@@ -4451,18 +4462,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(314, 20);
-            this.toolStripMenuItem1.Text = "-----------------------------------------------------------";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(29, 20);
-            this.toolStripMenuItem2.Text = "--";
             // 
             // RojoDos
             // 

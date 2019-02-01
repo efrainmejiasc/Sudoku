@@ -58,13 +58,14 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
+            this.activar = new System.Windows.Forms.ToolStripMenuItem();
+            this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
-            this.mContadores = new System.Windows.Forms.ToolStripMenuItem();
-            this.activar = new System.Windows.Forms.ToolStripMenuItem();
-            this.desactivar = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
@@ -247,7 +248,6 @@
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -633,6 +633,35 @@
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
+            this.toolStripMenuItem1.Text = "----------------------";
+            // 
+            // mContadores
+            // 
+            this.mContadores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.activar,
+            this.desactivar});
+            this.mContadores.Name = "mContadores";
+            this.mContadores.Size = new System.Drawing.Size(95, 20);
+            this.mContadores.Text = "CONTADORES";
+            // 
+            // activar
+            // 
+            this.activar.Name = "activar";
+            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Text = "Activar";
+            this.activar.Click += new System.EventHandler(this.activar_Click);
+            // 
+            // desactivar
+            // 
+            this.desactivar.Name = "desactivar";
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Text = "Desactivar";
+            this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
+            // 
             // mIdiomas
             // 
             this.mIdiomas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -664,29 +693,6 @@
             this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
-            // 
-            // mContadores
-            // 
-            this.mContadores.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.activar,
-            this.desactivar});
-            this.mContadores.Name = "mContadores";
-            this.mContadores.Size = new System.Drawing.Size(95, 20);
-            this.mContadores.Text = "CONTADORES";
-            // 
-            // activar
-            // 
-            this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
-            this.activar.Text = "Activar";
-            this.activar.Click += new System.EventHandler(this.activar_Click);
-            // 
-            // desactivar
-            // 
-            this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
-            this.desactivar.Text = "Desactivar";
-            this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
             // btnSelectColor
             // 
@@ -895,7 +901,6 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 38);
             this.btnC.TabIndex = 1;
-            this.btnC.Text = "c";
             this.btnC.UseVisualStyleBackColor = false;
             // 
             // btnA
@@ -4008,12 +4013,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
-            this.toolStripMenuItem1.Text = "----------------------";
             // 
             // RojoUno
             // 

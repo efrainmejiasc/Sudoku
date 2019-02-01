@@ -263,7 +263,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1076, 183);
+            this.panel10.Size = new System.Drawing.Size(579, 183);
             this.panel10.TabIndex = 10;
             // 
             // lblSudoku
@@ -500,7 +500,6 @@
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(44, 38);
             this.btnC.TabIndex = 1;
-            this.btnC.Text = "c";
             this.btnC.UseVisualStyleBackColor = false;
             // 
             // btnA
@@ -521,7 +520,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1076, 24);
+            this.panel11.Size = new System.Drawing.Size(579, 24);
             this.panel11.TabIndex = 59;
             // 
             // menuStrip1
