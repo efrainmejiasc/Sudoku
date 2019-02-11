@@ -247,39 +247,39 @@ namespace SudokuParaTodos
         private void SetPantallaInicio()
         {
             string[,] pantallaIni = new string[9, 9];
-            pantallaIni[0, 0] = "7";
+            pantallaIni[0, 0] = "2";
             txtSudoku[0, 0].ForeColor = Color.Black;
-            pantallaIni[1, 3] = "6";
+            pantallaIni[1, 3] = "1";
             txtSudoku[0, 3].ForeColor = Color.Black;
-            pantallaIni[1, 6] = "2";
+            pantallaIni[1, 6] = "9";
             txtSudoku[1, 6].ForeColor = Color.Black;
-            pantallaIni[2, 2] = "4";
+            pantallaIni[2, 2] = "7";
             txtSudoku[2, 2].ForeColor = Color.Black;
-            pantallaIni[2, 3] = "1";
+            pantallaIni[2, 3] = "5";
             txtSudoku[2, 3].ForeColor = Color.Black;
-            pantallaIni[3, 2] = "3";
+            pantallaIni[3, 2] = "6";
             txtSudoku[3, 2].ForeColor = Color.Black;
-            pantallaIni[3, 8] = "4";
+            pantallaIni[3, 8] = "7";
             txtSudoku[3, 8].ForeColor = Color.Black;
-            pantallaIni[4, 8] = "1";
+            pantallaIni[4, 8] = "5";
             txtSudoku[4, 8].ForeColor = Color.Black;
-            pantallaIni[5, 0] = "8";
+            pantallaIni[5, 0] = "3";
             txtSudoku[5, 0].ForeColor = Color.Black;
-            pantallaIni[5, 5] = "2";
+            pantallaIni[5, 5] = "9";
             txtSudoku[5, 5].ForeColor = Color.Black;
-            pantallaIni[6, 1] = "3";
+            pantallaIni[6, 1] = "6";
             txtSudoku[6, 1].ForeColor = Color.Black;
-            pantallaIni[6, 4] = "1";
+            pantallaIni[6, 4] = "5";
             txtSudoku[6, 4].ForeColor = Color.Black;
-            pantallaIni[6, 5] = "4";
+            pantallaIni[6, 5] = "7";
             txtSudoku[6, 5].ForeColor = Color.Black;
-            pantallaIni[7, 5] = "7";
+            pantallaIni[7, 5] = "2";
             txtSudoku[7, 5].ForeColor = Color.Black;
-            pantallaIni[8, 1] = "5";
+            pantallaIni[8, 1] = "8";
             txtSudoku[8, 1].ForeColor = Color.Black;
-            pantallaIni[8, 6] = "6";
+            pantallaIni[8, 6] = "1";
             txtSudoku[8, 6].ForeColor = Color.Black;
-            pantallaIni[8, 7] = "9";
+            pantallaIni[8, 7] = "4";
             txtSudoku[8, 7].ForeColor = Color.Black;
             for (int f = 0; f <= 8; f++)
             {

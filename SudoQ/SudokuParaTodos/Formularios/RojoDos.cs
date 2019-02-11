@@ -380,6 +380,9 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            txtNota2.Text = string.Empty;
+            circuito = string.Empty;
+            filaRecuadroColumna = string.Empty;
             F.Show();
             this.Hide();
         }
