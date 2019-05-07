@@ -278,7 +278,7 @@
             this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(79, 74);
+            this.btnEL.Location = new System.Drawing.Point(469, 87);
             this.btnEL.Name = "btnEL";
             this.btnEL.Size = new System.Drawing.Size(25, 24);
             this.btnEL.TabIndex = 83;
@@ -293,7 +293,7 @@
             this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnR.ForeColor = System.Drawing.Color.Black;
-            this.btnR.Location = new System.Drawing.Point(110, 74);
+            this.btnR.Location = new System.Drawing.Point(500, 87);
             this.btnR.Name = "btnR";
             this.btnR.Size = new System.Drawing.Size(25, 24);
             this.btnR.TabIndex = 82;

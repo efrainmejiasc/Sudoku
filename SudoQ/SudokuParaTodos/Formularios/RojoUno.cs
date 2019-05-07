@@ -67,12 +67,14 @@ namespace SudokuParaTodos.Formularios
         {
             pnl1.Visible = false;
             pnl2.Visible = false;
+
             valorInicio = Valor.GetValorInicio();
             valorIngresado = Valor.GetValorIngresado();
             valorEliminado = Valor.GetValorEliminado();
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+
             AplicarIdioma();
             SetearJuego();
             if (numeroFiltrado >= 1)
@@ -546,6 +548,7 @@ namespace SudokuParaTodos.Formularios
                     if (candidatoRestablecer == string.Empty) return;
                     if (candidatoRestablecer.Length == 1)
                     {
+                        if(valorEliminado[row,col]!= null)
                         valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
                     }
                     else if (candidatoRestablecer.Length > 1)
@@ -747,7 +750,11 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-               if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
+              if (valorEliminado[row, col] != null)
+                if (!valorEliminado[row, col].Contains(txt.Text))
+                {
+                   txt.Text = valorEliminado[row, col];
+                }
             }
 
             string sentido = e.KeyCode.ToString();

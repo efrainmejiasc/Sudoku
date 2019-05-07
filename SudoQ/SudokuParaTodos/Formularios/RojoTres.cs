@@ -634,10 +634,11 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-                if (txt.Text != valorFiltrado[row, col])
-                {
-                    txt.Text = valorFiltrado[row, col];
-                }
+                if (valorEliminado[row, col] != null)
+                    if (!valorEliminado[row, col].Contains(txt.Text))
+                    {
+                        txt.Text = valorEliminado[row, col];
+                    }
             }
 
 

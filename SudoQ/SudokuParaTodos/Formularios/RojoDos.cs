@@ -557,7 +557,8 @@ namespace SudokuParaTodos.Formularios
                     if (candidatoRestablecer == string.Empty) return;
                     if (candidatoRestablecer.Length == 1)
                     {
-                        valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                        if (valorEliminado[row, col] != null)
+                            valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
                     }
                     else if (candidatoRestablecer.Length > 1)
                     {
@@ -1287,7 +1288,11 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-               if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
+              if (valorEliminado[row, col] != null)
+                if (!valorEliminado[row, col].Contains(txt.Text))
+                {
+                  txt.Text = valorEliminado[row, col];
+                }
             }
 
             string sentido = e.KeyCode.ToString();

@@ -383,7 +383,7 @@
             this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(1124, 141);
+            this.btnDos.Location = new System.Drawing.Point(1091, 140);
             this.btnDos.Name = "btnDos";
             this.btnDos.Size = new System.Drawing.Size(27, 28);
             this.btnDos.TabIndex = 128;
@@ -399,7 +399,7 @@
             this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(1091, 140);
+            this.btnTres.Location = new System.Drawing.Point(1124, 140);
             this.btnTres.Name = "btnTres";
             this.btnTres.Size = new System.Drawing.Size(27, 28);
             this.btnTres.TabIndex = 127;
@@ -756,7 +756,7 @@
             this.btnEL.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEL.ForeColor = System.Drawing.Color.Black;
-            this.btnEL.Location = new System.Drawing.Point(79, 74);
+            this.btnEL.Location = new System.Drawing.Point(475, 87);
             this.btnEL.Name = "btnEL";
             this.btnEL.Size = new System.Drawing.Size(25, 24);
             this.btnEL.TabIndex = 83;
