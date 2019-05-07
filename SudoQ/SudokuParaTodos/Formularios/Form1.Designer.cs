@@ -3613,6 +3613,7 @@
             this.Controls.Add(this.panel10);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1220, 712);
             this.MinimumSize = new System.Drawing.Size(595, 712);
             this.Name = "Form1";

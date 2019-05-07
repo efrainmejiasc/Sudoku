@@ -3858,6 +3858,7 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.pnl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1220, 712);
             this.MinimumSize = new System.Drawing.Size(1220, 712);
             this.Name = "AzulDos";
