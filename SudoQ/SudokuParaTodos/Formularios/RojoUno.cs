@@ -747,7 +747,7 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-                if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
+               if (!valorEliminado[row, col].Contains(txt.Text)) { txt.Text = valorEliminado[row, col]; }
             }
 
             string sentido = e.KeyCode.ToString();

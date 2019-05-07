@@ -316,6 +316,19 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public TextBox[,] SetearTextBoxSoloLectura(TextBox[,] cajaTexto)
+        {
+            if (cajaTexto[0, 0] == null) return cajaTexto;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].ReadOnly = true;
+                }
+            }
+            return cajaTexto;
+        }
+
         public string [,] LimpiarArreglo(string[,] arreglo)
         {
             for (int f = 0; f <= 8; f++)

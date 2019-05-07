@@ -74,6 +74,7 @@ namespace SudokuParaTodos.Formularios
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+            txtSudoku2 = Funcion.SetearTextBoxSoloLectura(txtSudoku2);
             AplicarIdioma();
             SetearJuego();
             if (numeroFiltrado >= 1)
