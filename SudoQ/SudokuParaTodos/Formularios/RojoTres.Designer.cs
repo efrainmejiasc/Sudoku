@@ -648,6 +648,8 @@
             // 
             // toolStripMenuItem1
             // 
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.toolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
             this.toolStripMenuItem1.Text = "----------------------";
@@ -696,14 +698,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 

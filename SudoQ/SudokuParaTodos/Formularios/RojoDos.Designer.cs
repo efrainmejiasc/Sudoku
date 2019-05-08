@@ -2022,7 +2022,7 @@
             this.mRecuadros});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(658, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(249, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2031,6 +2031,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(314, 20);
             this.toolStripMenuItem1.Text = "-----------------------------------------------------------";
+            this.toolStripMenuItem1.Visible = false;
             // 
             // mIdiomas
             // 
@@ -2072,18 +2073,19 @@
             this.mContadores.Name = "mContadores";
             this.mContadores.Size = new System.Drawing.Size(95, 20);
             this.mContadores.Text = "CONTADORES";
+            this.mContadores.Visible = false;
             // 
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 

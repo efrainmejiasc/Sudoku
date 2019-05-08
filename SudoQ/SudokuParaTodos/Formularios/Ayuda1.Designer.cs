@@ -552,7 +552,7 @@
             // crearJuego
             // 
             this.crearJuego.Name = "crearJuego";
-            this.crearJuego.Size = new System.Drawing.Size(180, 22);
+            this.crearJuego.Size = new System.Drawing.Size(152, 22);
             this.crearJuego.Text = "Crear Juego";
             this.crearJuego.Visible = false;
             this.crearJuego.Click += new System.EventHandler(this.crearJuego_Click);
@@ -560,7 +560,7 @@
             // abrirJuego
             // 
             this.abrirJuego.Name = "abrirJuego";
-            this.abrirJuego.Size = new System.Drawing.Size(180, 22);
+            this.abrirJuego.Size = new System.Drawing.Size(152, 22);
             this.abrirJuego.Text = "Abrir Juego";
             this.abrirJuego.Visible = false;
             this.abrirJuego.Click += new System.EventHandler(this.abrirJuego_Click);
@@ -568,7 +568,7 @@
             // guardar
             // 
             this.guardar.Name = "guardar";
-            this.guardar.Size = new System.Drawing.Size(180, 22);
+            this.guardar.Size = new System.Drawing.Size(152, 22);
             this.guardar.Text = "Guardar";
             this.guardar.Visible = false;
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
@@ -576,7 +576,7 @@
             // guardarComo
             // 
             this.guardarComo.Name = "guardarComo";
-            this.guardarComo.Size = new System.Drawing.Size(180, 22);
+            this.guardarComo.Size = new System.Drawing.Size(152, 22);
             this.guardarComo.Text = "Guardar Como";
             this.guardarComo.Visible = false;
             this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
@@ -584,7 +584,7 @@
             // reiniciar
             // 
             this.reiniciar.Name = "reiniciar";
-            this.reiniciar.Size = new System.Drawing.Size(180, 22);
+            this.reiniciar.Size = new System.Drawing.Size(152, 22);
             this.reiniciar.Text = "Reiniciar";
             this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
             // 
@@ -593,6 +593,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(249, 20);
             this.toolStripMenuItem1.Text = "----------------------------------------------";
+            this.toolStripMenuItem1.Visible = false;
             // 
             // mIdiomas
             // 
@@ -671,18 +672,19 @@
             this.mContadores.Name = "mContadores";
             this.mContadores.Size = new System.Drawing.Size(95, 20);
             this.mContadores.Text = "CONTADORES";
+            this.mContadores.Visible = false;
             // 
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(128, 22);
+            this.activar.Size = new System.Drawing.Size(180, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(128, 22);
+            this.desactivar.Size = new System.Drawing.Size(180, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
