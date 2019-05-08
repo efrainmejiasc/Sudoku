@@ -75,6 +75,7 @@ namespace SudokuParaTodos.Formularios
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+          
             AplicarIdioma();
 
             SetearJuego();
@@ -126,6 +127,7 @@ namespace SudokuParaTodos.Formularios
            // AplicarIdioma();
             ComportamientoObjetoInicio();
             QuitarCosete();
+
         }
 
         private void QuitarCosete()
@@ -1137,6 +1139,8 @@ namespace SudokuParaTodos.Formularios
             txtNota2.Text = string.Empty;
             circuito = string.Empty;
             filaRecuadroColumna = string.Empty;
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             G.Show();
             this.Hide();
         }
@@ -1149,6 +1153,8 @@ namespace SudokuParaTodos.Formularios
             txtNota2.Text = string.Empty;
             circuito = string.Empty;
             filaRecuadroColumna = string.Empty;
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             H.Show();
             this.Hide();
         }

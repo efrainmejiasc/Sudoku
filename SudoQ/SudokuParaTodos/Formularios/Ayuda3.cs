@@ -245,6 +245,8 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             G.Show();
             this.Hide();
         }

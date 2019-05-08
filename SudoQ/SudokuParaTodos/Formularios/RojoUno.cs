@@ -74,7 +74,7 @@ namespace SudokuParaTodos.Formularios
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
-
+           
             AplicarIdioma();
             SetearJuego();
             if (numeroFiltrado >= 1)
@@ -305,7 +305,8 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-         
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             F.Show();
             this.Hide();
         }
@@ -587,6 +588,8 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             numeroFiltrado = 0;
             G.Show();
             this.Hide();

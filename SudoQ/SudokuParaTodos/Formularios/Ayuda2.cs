@@ -244,6 +244,8 @@ namespace SudokuParaTodos
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             H.Show();
             this.Hide();
         }
@@ -254,6 +256,8 @@ namespace SudokuParaTodos
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             G.Show();
             this.Hide();
         }
@@ -285,6 +289,8 @@ namespace SudokuParaTodos
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             F.Show();
             this.Hide();
         }

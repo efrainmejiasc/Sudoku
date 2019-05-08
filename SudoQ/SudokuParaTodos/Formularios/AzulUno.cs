@@ -269,6 +269,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
             txtNota.Text = string.Empty;
+            Funcion.SetearTextColorInicio(txtSudoku);
             F.Show();
             this.Hide();
         }
@@ -439,6 +440,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
             txtNota.Text = string.Empty;
+            Funcion.SetearTextColorInicio(txtSudoku);
             G.Show();
             this.Hide();
         }
@@ -665,6 +667,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
             txtNota.Text = string.Empty;
+            Funcion.SetearTextColorInicio(txtSudoku);
             H.Show();
             this.Hide();
         }

@@ -411,6 +411,8 @@ namespace SudokuParaTodos.Formularios
             numeroFiltrado = 0;
             procedimientoEjecutado = string.Empty;
             ejecutadoN = false;
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             F.Show();
             this.Hide();
         }
@@ -477,6 +479,8 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
+            Funcion.SetearTextColorInicio(txtSudoku);
+            Funcion.SetearTextColorInicio(txtSudoku2);
             G.Show();
             this.Hide();
         }
