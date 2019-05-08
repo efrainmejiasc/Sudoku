@@ -2022,7 +2022,7 @@
             this.mRecuadros});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(249, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(220, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2094,6 +2094,7 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(29, 20);
             this.toolStripMenuItem2.Text = "--";
+            this.toolStripMenuItem2.Visible = false;
             // 
             // gRUPOSToolStripMenuItem
             // 
