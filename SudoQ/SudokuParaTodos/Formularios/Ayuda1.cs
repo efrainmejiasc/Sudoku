@@ -110,7 +110,7 @@ namespace SudokuParaTodos.Formularios
         {
             this.Text = Valor.TituloFormY1(Valor.GetNombreIdioma()) + Valor.GetNombreJuego();
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
-            mArchivo2.Text = RecursosLocalizables.StringResources.mArchivo;
+            mArchivo2.Text = RecursosLocalizables.StringResources.mArchivo2;
             mColores.Text = RecursosLocalizables.StringResources.mColores;
             mTablero.Text = RecursosLocalizables.StringResources.mTablero;
             mContadores.Text = RecursosLocalizables.StringResources.mContadores;
@@ -118,7 +118,7 @@ namespace SudokuParaTodos.Formularios
             abrirJuego.Text = RecursosLocalizables.StringResources.abrirJuego;
             guardar.Text = RecursosLocalizables.StringResources.guardar;
             guardarComo.Text = RecursosLocalizables.StringResources.guardarComo;
-            reiniciar2.Text = RecursosLocalizables.StringResources.reiniciar;
+            reiniciar2.Text = RecursosLocalizables.StringResources.reiniciar2;
             configuracion.Text = RecursosLocalizables.StringResources.configuracion;
             activar.Text = RecursosLocalizables.StringResources.activar;
             desactivar.Text = RecursosLocalizables.StringResources.desactivar;
