@@ -205,6 +205,15 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Reiniciar.
+        /// </summary>
+        internal static string mArchivo2 {
+            get {
+                return ResourceManager.GetString("mArchivo2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a COLORES.
         /// </summary>
         internal static string mColores {
@@ -295,20 +304,20 @@ namespace SudokuParaTodos.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Guardar .
-        /// </summary>
-        internal static string nueva {
-            get {
-                return ResourceManager.GetString("nueva", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Reiniciar.
         /// </summary>
         internal static string reiniciar {
             get {
                 return ResourceManager.GetString("reiniciar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Si.
+        /// </summary>
+        internal static string reiniciar2 {
+            get {
+                return ResourceManager.GetString("reiniciar2", resourceCulture);
             }
         }
     }

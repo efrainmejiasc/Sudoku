@@ -178,4 +178,10 @@
   <data name="lblCelda" xml:space="preserve">
     <value>Squares</value>
   </data>
+  <data name="mArchivo2" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="reiniciar2" xml:space="preserve">
+    <value>Yes</value>
+  </data>
 </root>

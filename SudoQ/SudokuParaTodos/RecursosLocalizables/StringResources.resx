@@ -198,7 +198,10 @@
   <data name="lblCelda" xml:space="preserve">
     <value>Celdas</value>
   </data>
-  <data name="nueva" xml:space="preserve">
-    <value>Guardar </value>
+  <data name="mArchivo2" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="reiniciar2" xml:space="preserve">
+    <value>Si</value>
   </data>
 </root>
