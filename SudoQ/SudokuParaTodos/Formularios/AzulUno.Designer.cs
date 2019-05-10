@@ -55,12 +55,12 @@
             this.btnA = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mArchivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mArchivo2 = new System.Windows.Forms.ToolStripMenuItem();
             this.crearJuego = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirJuego = new System.Windows.Forms.ToolStripMenuItem();
             this.guardar = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComo = new System.Windows.Forms.ToolStripMenuItem();
-            this.reiniciar = new System.Windows.Forms.ToolStripMenuItem();
+            this.reiniciar2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mIdiomas = new System.Windows.Forms.ToolStripMenuItem();
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
@@ -504,7 +504,7 @@
             this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mArchivo,
+            this.mArchivo2,
             this.toolStripMenuItem1,
             this.mIdiomas,
             this.mTablero,
@@ -516,22 +516,22 @@
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // mArchivo
+            // mArchivo2
             // 
-            this.mArchivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mArchivo2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearJuego,
             this.abrirJuego,
             this.guardar,
             this.guardarComo,
-            this.reiniciar});
-            this.mArchivo.Name = "mArchivo";
-            this.mArchivo.Size = new System.Drawing.Size(60, 20);
-            this.mArchivo.Text = "Archivo";
+            this.reiniciar2});
+            this.mArchivo2.Name = "mArchivo2";
+            this.mArchivo2.Size = new System.Drawing.Size(60, 20);
+            this.mArchivo2.Text = "Archivo";
             // 
             // crearJuego
             // 
             this.crearJuego.Name = "crearJuego";
-            this.crearJuego.Size = new System.Drawing.Size(152, 22);
+            this.crearJuego.Size = new System.Drawing.Size(180, 22);
             this.crearJuego.Text = "Crear Juego";
             this.crearJuego.Visible = false;
             this.crearJuego.Click += new System.EventHandler(this.crearJuego_Click);
@@ -539,7 +539,7 @@
             // abrirJuego
             // 
             this.abrirJuego.Name = "abrirJuego";
-            this.abrirJuego.Size = new System.Drawing.Size(152, 22);
+            this.abrirJuego.Size = new System.Drawing.Size(180, 22);
             this.abrirJuego.Text = "Abrir Juego";
             this.abrirJuego.Visible = false;
             this.abrirJuego.Click += new System.EventHandler(this.abrirJuego_Click);
@@ -547,7 +547,7 @@
             // guardar
             // 
             this.guardar.Name = "guardar";
-            this.guardar.Size = new System.Drawing.Size(152, 22);
+            this.guardar.Size = new System.Drawing.Size(180, 22);
             this.guardar.Text = "Guardar";
             this.guardar.Visible = false;
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
@@ -555,17 +555,17 @@
             // guardarComo
             // 
             this.guardarComo.Name = "guardarComo";
-            this.guardarComo.Size = new System.Drawing.Size(152, 22);
+            this.guardarComo.Size = new System.Drawing.Size(180, 22);
             this.guardarComo.Text = "Guardar Como";
             this.guardarComo.Visible = false;
             this.guardarComo.Click += new System.EventHandler(this.guardarComo_Click);
             // 
-            // reiniciar
+            // reiniciar2
             // 
-            this.reiniciar.Name = "reiniciar";
-            this.reiniciar.Size = new System.Drawing.Size(152, 22);
-            this.reiniciar.Text = "Reiniciar";
-            this.reiniciar.Click += new System.EventHandler(this.reiniciar_Click);
+            this.reiniciar2.Name = "reiniciar2";
+            this.reiniciar2.Size = new System.Drawing.Size(180, 22);
+            this.reiniciar2.Text = "Reiniciar";
+            this.reiniciar2.Click += new System.EventHandler(this.reiniciar_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -656,14 +656,14 @@
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -2193,7 +2193,7 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mArchivo;
+        private System.Windows.Forms.ToolStripMenuItem mArchivo2;
         private System.Windows.Forms.ToolStripMenuItem mTablero;
         private System.Windows.Forms.ToolStripMenuItem mColores;
         private System.Windows.Forms.ToolStripMenuItem mContadores;
@@ -2300,7 +2300,7 @@
         private System.Windows.Forms.ToolStripMenuItem abrirJuego;
         private System.Windows.Forms.ToolStripMenuItem guardar;
         private System.Windows.Forms.ToolStripMenuItem guardarComo;
-        private System.Windows.Forms.ToolStripMenuItem reiniciar;
+        private System.Windows.Forms.ToolStripMenuItem reiniciar2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem configuracion;
