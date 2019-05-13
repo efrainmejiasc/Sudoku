@@ -224,8 +224,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
             txtNota.Text = string.Empty;
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             F.Show();
             this.Hide();
         }
@@ -358,6 +357,16 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
+        private void ResetFlagMarcador()
+        {
+            pincelMarcador = EngineData.Falso;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+        }
+
         private void AplicarIdioma()
         {
             this.Text = Valor.TituloFormA2(Valor.GetNombreIdioma()) + Valor.GetNombreJuego();
@@ -453,8 +462,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
             txtNota.Text = string.Empty;
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             G.Show();
             this.Hide();
         }
@@ -752,8 +760,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
             txtNota.Text = string.Empty;
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador(); 
             H.Show();
             this.Hide();
         }

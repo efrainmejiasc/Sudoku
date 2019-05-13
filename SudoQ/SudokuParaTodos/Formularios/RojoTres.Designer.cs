@@ -642,7 +642,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(232, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(497, 24);
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -653,6 +653,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 20);
             this.toolStripMenuItem1.Text = "----------------------";
+            this.toolStripMenuItem1.Visible = false;
             // 
             // mIdiomas
             // 
@@ -694,6 +695,7 @@
             this.mContadores.Name = "mContadores";
             this.mContadores.Size = new System.Drawing.Size(95, 20);
             this.mContadores.Text = "CONTADORES";
+            this.mContadores.Visible = false;
             // 
             // activar
             // 

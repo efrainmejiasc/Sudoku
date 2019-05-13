@@ -305,8 +305,8 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
+            numeroFiltrado = 0;
             F.Show();
             this.Hide();
         }
@@ -509,6 +509,16 @@ namespace SudokuParaTodos.Formularios
             }
         }
 
+        private void ResetFlagMarcador()
+        {
+            pincelMarcador = EngineData.Falso;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+        }
+
         private void EliminarRestablecerCandidato_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -588,8 +598,7 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             numeroFiltrado = 0;
             G.Show();
             this.Hide();

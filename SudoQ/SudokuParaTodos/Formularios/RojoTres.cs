@@ -408,11 +408,10 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            numeroFiltrado = 0;
             procedimientoEjecutado = string.Empty;
             ejecutadoN = false;
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
+            numeroFiltrado = 0;
             F.Show();
             this.Hide();
         }
@@ -438,6 +437,17 @@ namespace SudokuParaTodos.Formularios
                 btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
             }
         }
+
+        private void ResetFlagMarcador()
+        {
+            pincelMarcador = EngineData.Falso;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+        }
+
 
         private void EliminarRestablecerCandidato_Click(object sender, EventArgs e)
         {
@@ -479,8 +489,8 @@ namespace SudokuParaTodos.Formularios
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
+            numeroFiltrado = 0;
             G.Show();
             this.Hide();
         }
@@ -729,6 +739,12 @@ namespace SudokuParaTodos.Formularios
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
             SetearJuego();
+            if (ejecutadoN)
+            {
+                txtSudoku2 = Funcion.SetearTextParaNumerosNConColorFiltro(txtSudoku2, valorIngresado);
+                SetearJuego();
+                txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
+            }
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
@@ -761,6 +777,7 @@ namespace SudokuParaTodos.Formularios
             {
                 txt.BackColor = colorCeldaAnt;
             }
+
         }
 
         private void RojoTres_FormClosing(object sender, FormClosingEventArgs e)

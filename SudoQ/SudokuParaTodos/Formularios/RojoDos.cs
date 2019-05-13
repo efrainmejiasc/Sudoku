@@ -385,6 +385,7 @@ namespace SudokuParaTodos.Formularios
             txtNota2.Text = string.Empty;
             circuito = string.Empty;
             filaRecuadroColumna = string.Empty;
+            ResetFlagMarcador();
             F.Show();
             this.Hide();
         }
@@ -625,6 +626,17 @@ namespace SudokuParaTodos.Formularios
                 btnSelectColor.FlatAppearance.BorderSize = EngineData.two;
             }
         }
+
+        private void ResetFlagMarcador()
+        {
+            pincelMarcador = EngineData.Falso;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+        }
+
 
         private void fILASToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -1139,8 +1151,7 @@ namespace SudokuParaTodos.Formularios
             txtNota2.Text = string.Empty;
             circuito = string.Empty;
             filaRecuadroColumna = string.Empty;
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             G.Show();
             this.Hide();
         }
@@ -1153,8 +1164,7 @@ namespace SudokuParaTodos.Formularios
             txtNota2.Text = string.Empty;
             circuito = string.Empty;
             filaRecuadroColumna = string.Empty;
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             H.Show();
             this.Hide();
         }

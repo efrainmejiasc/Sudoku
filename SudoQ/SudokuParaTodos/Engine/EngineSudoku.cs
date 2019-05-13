@@ -227,6 +227,21 @@ namespace SudokuParaTodos
             return cajaTexto;
         }
 
+        public TextBox[,] SetearTextParaNumerosNConColorFiltro(TextBox[,] cajaTexto, string[,] vIngresado)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] != string.Empty || vIngresado[f, c] != null)
+                    {
+                        cajaTexto[f, c].Text = string.Empty;
+                    }
+                }
+            }
+            return cajaTexto;
+        }
+
         public TextBox[,] SetearTextBoxNumerosN(TextBox[,] cajaTexto, string[,] vIngresado, string[,] vInicio)
         {
             for (int f = 0; f <= 8; f++)

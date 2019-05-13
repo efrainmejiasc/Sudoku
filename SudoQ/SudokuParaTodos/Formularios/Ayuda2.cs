@@ -244,8 +244,7 @@ namespace SudokuParaTodos
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             H.Show();
             this.Hide();
         }
@@ -256,8 +255,7 @@ namespace SudokuParaTodos
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
             Valor.SetValorSolucion(valorSolucion);
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             G.Show();
             this.Hide();
         }
@@ -284,13 +282,21 @@ namespace SudokuParaTodos
             }
         }
 
+        private void ResetFlagMarcador()
+        {
+            pincelMarcador = EngineData.Falso;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+        }
         private void btnAA_Click(object sender, EventArgs e)
         {
             Valor.SetValorIngresado(valorIngresado);
             Valor.SetValorInicio(valorInicio);
             Valor.SetValorEliminado(valorEliminado);
-            Funcion.SetearTextColorInicio(txtSudoku);
-            Funcion.SetearTextColorInicio(txtSudoku2);
+            ResetFlagMarcador();
             F.Show();
             this.Hide();
         }
