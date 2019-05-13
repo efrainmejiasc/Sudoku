@@ -1196,6 +1196,22 @@ namespace SudokuParaTodos
             return vIngresado;
         }
 
+        public string [,] SetearValorTxtSudoku(TextBox [,] value)
+        {
+            string[,] valor = new string[9, 9];
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (value[f, c].Text != null && value[f, c].Text != string.Empty)
+                    {
+                        valor[f, c] = value[f, c].Text;
+                    }
+                }
+            }
+            return valor;
+        }
+
         //FILAS COLUMNAS RECUADROS
         public string[,] ObtenerSetearValoresFila(string[,] valorIngresado, string [,] valorCandidato, string [,] valorEliminado, int fila)//MANEJA PLANTILLA FILAS
         {

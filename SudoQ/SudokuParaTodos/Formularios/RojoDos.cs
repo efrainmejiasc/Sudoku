@@ -32,6 +32,8 @@ namespace SudokuParaTodos.Formularios
         private string[,] valorCandidatoSinEliminados = new string[9, 9];
         private string[,] valorInicio = new string[9, 9];
         private string[,] valorSolucion = new string[9, 9];
+        private string[,] valorTxtSudoku = new string[9, 9];
+
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
         private string pathArchivo = string.Empty;
 
@@ -828,6 +830,7 @@ namespace SudokuParaTodos.Formularios
             }
             obj2 = obj;
             label1.Text = filaRecuadroColumna ;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
         }
 
         private void btnGrup2_Click(object sender, EventArgs e)
@@ -998,6 +1001,7 @@ namespace SudokuParaTodos.Formularios
             }
             obj2 = obj;
             label1.Text = filaRecuadroColumna;
+            txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
         }
 
         private void GrupoActualizar()
@@ -1304,10 +1308,16 @@ namespace SudokuParaTodos.Formularios
             }
             else
             {
-              if (valorEliminado[row, col] != null)
-                if (!valorEliminado[row, col].Contains(txt.Text))
+                if (valorEliminado[row, col] != null && valorEliminado[row, col] != string.Empty)
                 {
-                  txt.Text = valorEliminado[row, col];
+                    if (!valorEliminado[row, col].Contains(txt.Text))
+                    {
+                        txt.Text = valorEliminado[row, col];
+                    }
+                }
+                else
+                {
+                    txt.Text = string.Empty;
                 }
             }
 
