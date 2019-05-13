@@ -60,7 +60,7 @@ namespace SudokuParaTodos.Formularios
 
         private object obj2 = null;
         private EventArgs eve2 = null;
-
+        private string valAnt = string.Empty;
 
         public RojoDos()
         {
@@ -129,7 +129,6 @@ namespace SudokuParaTodos.Formularios
            // AplicarIdioma();
             ComportamientoObjetoInicio();
             QuitarCosete();
-
         }
 
         private void QuitarCosete()
@@ -1191,6 +1190,7 @@ namespace SudokuParaTodos.Formularios
                 colorCeldaAnt = txt.BackColor;
                 txt.BackColor = Valor.GetColorCeldaAct();
             }
+            valAnt = txt.Text;
 
             lado = EngineData.btnIzquierda;
         }
@@ -1230,6 +1230,7 @@ namespace SudokuParaTodos.Formularios
                 catch { txtSudoku[row, col].Focus(); }
                 return;
             }
+            txt.Text = valAnt;
         }
 
         private void txt00_DoubleClick(object sender, EventArgs e)
