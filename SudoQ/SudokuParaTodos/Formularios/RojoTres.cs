@@ -446,6 +446,11 @@ namespace SudokuParaTodos.Formularios
             btnSelectColor.BackColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = EngineData.one;
+
+            txtSudoku2 = Funcion.SetearTextParaNumerosN(txtSudoku2, valorIngresado);
+            SetearJuego();
+            procedimientoEjecutado = string.Empty;
+            ejecutadoN = false;
         }
 
 
