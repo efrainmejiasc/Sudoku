@@ -690,8 +690,8 @@ namespace SudokuParaTodos.Formularios
         {
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
-            row = Int32.Parse(txt.Name.Substring(3, 1));
-            col = Int32.Parse(txt.Name.Substring(4, 1));
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(1, 1));
 
             if (txt.Text == string.Empty)
                 txt.BackColor = Color.WhiteSmoke;
