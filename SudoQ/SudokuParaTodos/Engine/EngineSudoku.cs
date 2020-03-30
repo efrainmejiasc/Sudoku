@@ -2575,7 +2575,7 @@ namespace SudokuParaTodos
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        public string GetValueIngresadoNoInicio(int f, int c , string[,] vIngresado, string[,] vInicio,string [,] vCandidatosSinEliminados)
+        public string GetValueIngresadoNoInicio(int f, int c , string[,] vIngresado, string[,] vInicio)
         {
             string resultado = string.Empty;
             if (vInicio[f, c] == null || vInicio[f, c] == string.Empty)
@@ -2585,11 +2585,17 @@ namespace SudokuParaTodos
                     resultado = vIngresado[f, c]; 
                 }
             }
+             return resultado; 
+        }
 
-            //cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
-        
-           
-            return resultado; 
+        public string GetValueCandidatosSinEliminados(int f, int c, string[,] vCandidatosSinEliminados)
+        {
+            string resultado = string.Empty;
+            if (vCandidatosSinEliminados [f, c] != null && vCandidatosSinEliminados[f, c] != string.Empty)
+            {
+                resultado = vCandidatosSinEliminados[f, c];
+            }
+            return resultado;
         }
     }
 }

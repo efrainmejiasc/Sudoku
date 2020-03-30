@@ -715,6 +715,8 @@ namespace SudokuParaTodos.Formularios
                 txt.BackColor = Valor.GetColorCeldaAct();
             }
             lado = EngineData.btnDerecha;
+
+           var t = txt.Text;
         }
 
         private void t00_KeyPress(object sender, KeyPressEventArgs e)
@@ -746,15 +748,22 @@ namespace SudokuParaTodos.Formularios
              //SetearJuego();
              valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
              valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
-            if (ejecutadoN)
+             if (ejecutadoN)
              {
                // txtSudoku2 = Funcion.SetearTextParaNumerosNConColorFiltro(txtSudoku2, valorIngresado);
                // SetearJuego();
                 //txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
           
-                string valor = Funcion.GetValueIngresadoNoInicio(row, col, valorIngresado, valorInicio, valorCandidatoSinEliminados);
+                string valor = Funcion.GetValueIngresadoNoInicio(row, col, valorIngresado,valorInicio);
                 if (!string.IsNullOrEmpty(valor))
                       txt.Text = valor;
+            }
+             else
+             {
+                string valor = Funcion.GetValueCandidatosSinEliminados(row, col, valorCandidatoSinEliminados);
+                if (string.IsNullOrEmpty(valor))
+                    txt.Text = valor;
+
             }
 
                
