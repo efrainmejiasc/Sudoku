@@ -427,16 +427,16 @@ namespace SudokuParaTodos
             switch (lenguaje)
             {
                 case ("Español"):
-                    titulo = "Candidatos Individuales/Candidatos";
+                    titulo = "Candidatos/Candidatos Excluidos";
                     break;
                 case ("Ingles"):
-                    titulo = "Individual Candidates/Candidates";
+                    titulo = "Candidates/Excluded Candidates";
                     break;
                 case ("Portugues"):
-                    titulo = "Candidatos Individuais/Candidatos";
+                    titulo = "Candidatos/Candidatos Excluídos";
                     break;
                 default:
-                    titulo = "Candidatos Individuales/Candidatos";
+                    titulo = "Candidatos/Candidatos Excluidos";
                     break;
             }
             return titulo;

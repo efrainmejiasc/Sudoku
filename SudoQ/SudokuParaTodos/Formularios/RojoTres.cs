@@ -74,7 +74,7 @@ namespace SudokuParaTodos.Formularios
             valorSolucion = Valor.GetValorSolucion();
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
-            txtSudoku2 = Funcion.SetearTextBoxSoloLectura(txtSudoku2);
+            //txtSudoku2 = Funcion.SetearTextBoxSoloLectura(txtSudoku2);
             AplicarIdioma();
             SetearJuego();
             if (numeroFiltrado >= 1)
@@ -148,6 +148,7 @@ namespace SudokuParaTodos.Formularios
         {
             valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
+            txtSudoku = Funcion.SetearTextBoxEliminados(txtSudoku, valorEliminado);
             txtSudoku2 = Funcion.SetearTextBoxCandidatos(txtSudoku2, valorIngresado , valorCandidatoSinEliminados);
             ActualizarContadoresCandidatos();
         }
@@ -742,13 +743,21 @@ namespace SudokuParaTodos.Formularios
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
-            SetearJuego();
+             //SetearJuego();
+             valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
+             valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
             if (ejecutadoN)
-            {
-                txtSudoku2 = Funcion.SetearTextParaNumerosNConColorFiltro(txtSudoku2, valorIngresado);
-                SetearJuego();
-                txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
+             {
+               // txtSudoku2 = Funcion.SetearTextParaNumerosNConColorFiltro(txtSudoku2, valorIngresado);
+               // SetearJuego();
+                //txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
+          
+                string valor = Funcion.GetValueIngresadoNoInicio(row, col, valorIngresado, valorInicio, valorCandidatoSinEliminados);
+                if (!string.IsNullOrEmpty(valor))
+                      txt.Text = valor;
             }
+
+               
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)

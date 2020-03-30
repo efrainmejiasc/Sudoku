@@ -311,7 +311,7 @@
             // btnN
             // 
             this.btnN.BackColor = System.Drawing.Color.White;
-            this.btnN.Location = new System.Drawing.Point(1157, 140);
+            this.btnN.Location = new System.Drawing.Point(542, 147);
             this.btnN.Name = "btnN";
             this.btnN.Size = new System.Drawing.Size(27, 28);
             this.btnN.TabIndex = 134;
@@ -322,7 +322,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(850, 151);
+            this.label3.Location = new System.Drawing.Point(842, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 133;
@@ -331,7 +331,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 151);
+            this.label2.Location = new System.Drawing.Point(233, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 132;
@@ -367,7 +367,7 @@
             // btnRes23
             // 
             this.btnRes23.BackColor = System.Drawing.Color.White;
-            this.btnRes23.Location = new System.Drawing.Point(1058, 140);
+            this.btnRes23.Location = new System.Drawing.Point(443, 147);
             this.btnRes23.Name = "btnRes23";
             this.btnRes23.Size = new System.Drawing.Size(27, 28);
             this.btnRes23.TabIndex = 129;
@@ -383,7 +383,7 @@
             this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDos.ForeColor = System.Drawing.Color.Silver;
-            this.btnDos.Location = new System.Drawing.Point(1091, 140);
+            this.btnDos.Location = new System.Drawing.Point(476, 147);
             this.btnDos.Name = "btnDos";
             this.btnDos.Size = new System.Drawing.Size(27, 28);
             this.btnDos.TabIndex = 128;
@@ -399,7 +399,7 @@
             this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTres.ForeColor = System.Drawing.Color.Silver;
-            this.btnTres.Location = new System.Drawing.Point(1124, 140);
+            this.btnTres.Location = new System.Drawing.Point(509, 147);
             this.btnTres.Name = "btnTres";
             this.btnTres.Size = new System.Drawing.Size(27, 28);
             this.btnTres.TabIndex = 127;
@@ -410,112 +410,122 @@
             // 
             this.lbl9.AutoSize = true;
             this.lbl9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl9.Location = new System.Drawing.Point(281, 134);
+            this.lbl9.Location = new System.Drawing.Point(810, 83);
             this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(13, 13);
             this.lbl9.TabIndex = 125;
             this.lbl9.Text = "0";
+            this.lbl9.Visible = false;
             // 
             // lbl8
             // 
             this.lbl8.AutoSize = true;
             this.lbl8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl8.Location = new System.Drawing.Point(249, 134);
+            this.lbl8.Location = new System.Drawing.Point(778, 83);
             this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(13, 13);
             this.lbl8.TabIndex = 124;
             this.lbl8.Text = "0";
+            this.lbl8.Visible = false;
             // 
             // lbl7
             // 
             this.lbl7.AutoSize = true;
             this.lbl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl7.Location = new System.Drawing.Point(215, 134);
+            this.lbl7.Location = new System.Drawing.Point(744, 83);
             this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(13, 13);
             this.lbl7.TabIndex = 123;
             this.lbl7.Text = "0";
+            this.lbl7.Visible = false;
             // 
             // lbl6
             // 
             this.lbl6.AutoSize = true;
             this.lbl6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl6.Location = new System.Drawing.Point(183, 134);
+            this.lbl6.Location = new System.Drawing.Point(712, 83);
             this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(13, 13);
             this.lbl6.TabIndex = 122;
             this.lbl6.Text = "0";
+            this.lbl6.Visible = false;
             // 
             // lbl5
             // 
             this.lbl5.AutoSize = true;
             this.lbl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl5.Location = new System.Drawing.Point(149, 134);
+            this.lbl5.Location = new System.Drawing.Point(678, 83);
             this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(13, 13);
             this.lbl5.TabIndex = 121;
             this.lbl5.Text = "0";
+            this.lbl5.Visible = false;
             // 
             // lbl4
             // 
             this.lbl4.AutoSize = true;
             this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl4.Location = new System.Drawing.Point(117, 134);
+            this.lbl4.Location = new System.Drawing.Point(646, 83);
             this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(13, 13);
             this.lbl4.TabIndex = 120;
             this.lbl4.Text = "0";
+            this.lbl4.Visible = false;
             // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl3.Location = new System.Drawing.Point(83, 134);
+            this.lbl3.Location = new System.Drawing.Point(612, 83);
             this.lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(13, 13);
             this.lbl3.TabIndex = 119;
             this.lbl3.Text = "0";
+            this.lbl3.Visible = false;
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl2.Location = new System.Drawing.Point(51, 134);
+            this.lbl2.Location = new System.Drawing.Point(580, 83);
             this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(13, 13);
             this.lbl2.TabIndex = 118;
             this.lbl2.Text = "0";
+            this.lbl2.Visible = false;
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl1.Location = new System.Drawing.Point(17, 134);
+            this.lbl1.Location = new System.Drawing.Point(546, 83);
             this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(13, 13);
             this.lbl1.TabIndex = 117;
             this.lbl1.Text = "0";
+            this.lbl1.Visible = false;
             // 
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.Silver;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.Blue;
-            this.btn9.Location = new System.Drawing.Point(276, 151);
+            this.btn9.Location = new System.Drawing.Point(805, 100);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(28, 27);
             this.btn9.TabIndex = 115;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Visible = false;
             this.btn9.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn8
@@ -523,12 +533,13 @@
             this.btn8.BackColor = System.Drawing.Color.Silver;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.Blue;
-            this.btn8.Location = new System.Drawing.Point(243, 151);
+            this.btn8.Location = new System.Drawing.Point(772, 100);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(28, 27);
             this.btn8.TabIndex = 114;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Visible = false;
             this.btn8.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn7
@@ -536,12 +547,13 @@
             this.btn7.BackColor = System.Drawing.Color.Silver;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.Blue;
-            this.btn7.Location = new System.Drawing.Point(210, 151);
+            this.btn7.Location = new System.Drawing.Point(739, 100);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(28, 27);
             this.btn7.TabIndex = 113;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Visible = false;
             this.btn7.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn6
@@ -549,12 +561,13 @@
             this.btn6.BackColor = System.Drawing.Color.Silver;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.Blue;
-            this.btn6.Location = new System.Drawing.Point(177, 151);
+            this.btn6.Location = new System.Drawing.Point(706, 100);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(28, 27);
             this.btn6.TabIndex = 112;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Visible = false;
             this.btn6.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn5
@@ -562,12 +575,13 @@
             this.btn5.BackColor = System.Drawing.Color.Silver;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.Blue;
-            this.btn5.Location = new System.Drawing.Point(144, 151);
+            this.btn5.Location = new System.Drawing.Point(673, 100);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(28, 27);
             this.btn5.TabIndex = 111;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Visible = false;
             this.btn5.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn4
@@ -575,12 +589,13 @@
             this.btn4.BackColor = System.Drawing.Color.Silver;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.Blue;
-            this.btn4.Location = new System.Drawing.Point(111, 151);
+            this.btn4.Location = new System.Drawing.Point(640, 100);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(28, 27);
             this.btn4.TabIndex = 110;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Visible = false;
             this.btn4.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn3
@@ -588,12 +603,13 @@
             this.btn3.BackColor = System.Drawing.Color.Silver;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.Blue;
-            this.btn3.Location = new System.Drawing.Point(78, 151);
+            this.btn3.Location = new System.Drawing.Point(607, 100);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(28, 27);
             this.btn3.TabIndex = 109;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Visible = false;
             this.btn3.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn2
@@ -601,12 +617,13 @@
             this.btn2.BackColor = System.Drawing.Color.Silver;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.Blue;
-            this.btn2.Location = new System.Drawing.Point(45, 151);
+            this.btn2.Location = new System.Drawing.Point(574, 100);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(28, 27);
             this.btn2.TabIndex = 108;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Visible = false;
             this.btn2.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // btn1
@@ -614,12 +631,13 @@
             this.btn1.BackColor = System.Drawing.Color.Silver;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.Blue;
-            this.btn1.Location = new System.Drawing.Point(12, 151);
+            this.btn1.Location = new System.Drawing.Point(541, 100);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(28, 27);
             this.btn1.TabIndex = 116;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Visible = false;
             this.btn1.Click += new System.EventHandler(this.ContadoresCandidatos_Click);
             // 
             // panel11
@@ -642,7 +660,7 @@
             this.mContadores});
             this.menuStrip1.Location = new System.Drawing.Point(186, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(497, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
             this.menuStrip1.TabIndex = 108;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -693,21 +711,21 @@
             this.activar,
             this.desactivar});
             this.mContadores.Name = "mContadores";
-            this.mContadores.Size = new System.Drawing.Size(95, 20);
+            this.mContadores.Size = new System.Drawing.Size(94, 20);
             this.mContadores.Text = "CONTADORES";
             this.mContadores.Visible = false;
             // 
             // activar
             // 
             this.activar.Name = "activar";
-            this.activar.Size = new System.Drawing.Size(180, 22);
+            this.activar.Size = new System.Drawing.Size(128, 22);
             this.activar.Text = "Activar";
             this.activar.Click += new System.EventHandler(this.activar_Click);
             // 
             // desactivar
             // 
             this.desactivar.Name = "desactivar";
-            this.desactivar.Size = new System.Drawing.Size(180, 22);
+            this.desactivar.Size = new System.Drawing.Size(128, 22);
             this.desactivar.Text = "Desactivar";
             this.desactivar.Click += new System.EventHandler(this.desactivar_Click);
             // 
@@ -1046,7 +1064,7 @@
             this.pnl1.Controls.Add(this.txt02);
             this.pnl1.Controls.Add(this.txt01);
             this.pnl1.Controls.Add(this.txt00);
-            this.pnl1.Location = new System.Drawing.Point(12, 206);
+            this.pnl1.Location = new System.Drawing.Point(629, 202);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(555, 445);
             this.pnl1.TabIndex = 87;
@@ -2594,7 +2612,7 @@
             this.pnl2.Controls.Add(this.t02);
             this.pnl2.Controls.Add(this.t01);
             this.pnl2.Controls.Add(this.t00);
-            this.pnl2.Location = new System.Drawing.Point(637, 206);
+            this.pnl2.Location = new System.Drawing.Point(20, 202);
             this.pnl2.Name = "pnl2";
             this.pnl2.Size = new System.Drawing.Size(555, 445);
             this.pnl2.TabIndex = 88;

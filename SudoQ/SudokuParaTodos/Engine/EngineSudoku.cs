@@ -2572,5 +2572,24 @@ namespace SudokuParaTodos
             return resultado;
         }
 
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public string GetValueIngresadoNoInicio(int f, int c , string[,] vIngresado, string[,] vInicio,string [,] vCandidatosSinEliminados)
+        {
+            string resultado = string.Empty;
+            if (vInicio[f, c] == null || vInicio[f, c] == string.Empty)
+            {
+                if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                {
+                    resultado = vIngresado[f, c]; 
+                }
+            }
+
+            //cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+        
+           
+            return resultado; 
+        }
     }
 }
