@@ -505,14 +505,19 @@ namespace SudokuParaTodos
             {
                 for (int j = 0; j <= a.Length - 1; j++)
                 {
-                    if (Convert.ToInt32(a[i]) <= Convert.ToInt32(a[j]))
+                    try 
                     {
-                        aux1 = Convert.ToInt32(a[j]);
-                        aux2 = Convert.ToInt32(a[i]);
-                        a[i] = aux1.ToString();
-                        a[j] = aux2.ToString();
-                     }
+                        if (Convert.ToInt32(a[i]) <= Convert.ToInt32(a[j]))
+                        {
+                            aux1 = Convert.ToInt32(a[j]);
+                            aux2 = Convert.ToInt32(a[i]);
+                            a[i] = aux1.ToString();
+                            a[j] = aux2.ToString();
+                        }
+                    }
+                    catch { }
                 }
+                    
             }
 
             v = string.Empty;

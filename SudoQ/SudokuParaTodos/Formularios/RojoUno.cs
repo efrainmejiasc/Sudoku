@@ -553,7 +553,7 @@ namespace SudokuParaTodos.Formularios
                     ActualizarContadoresCandidatos();
                     SetearJuego();
                     break;
-                case (EngineData .restablecer):
+                case (EngineData.restablecer):
                     if (lado != EngineData.btnDerecha) return;
                     string candidatoRestablecer = txtSudoku2[row, col].Text.Trim();
                     if (candidatoRestablecer == string.Empty) return;

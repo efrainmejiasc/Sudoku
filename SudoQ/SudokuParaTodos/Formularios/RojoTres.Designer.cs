@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RojoTres));
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnR = new System.Windows.Forms.Button();
             this.btnN = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -262,6 +263,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.btnR);
             this.panel10.Controls.Add(this.btnN);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.label2);
@@ -307,6 +309,21 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1204, 183);
             this.panel10.TabIndex = 86;
+            // 
+            // btnR
+            // 
+            this.btnR.BackColor = System.Drawing.Color.Silver;
+            this.btnR.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnR.ForeColor = System.Drawing.Color.Black;
+            this.btnR.Location = new System.Drawing.Point(506, 87);
+            this.btnR.Name = "btnR";
+            this.btnR.Size = new System.Drawing.Size(25, 24);
+            this.btnR.TabIndex = 135;
+            this.btnR.Text = "R";
+            this.btnR.UseVisualStyleBackColor = false;
+            this.btnR.Click += new System.EventHandler(this.EliminarRestablecerCandidato_Click);
             // 
             // btnN
             // 
@@ -410,7 +427,7 @@
             // 
             this.lbl9.AutoSize = true;
             this.lbl9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl9.Location = new System.Drawing.Point(810, 83);
+            this.lbl9.Location = new System.Drawing.Point(1043, 86);
             this.lbl9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(13, 13);
@@ -422,7 +439,7 @@
             // 
             this.lbl8.AutoSize = true;
             this.lbl8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl8.Location = new System.Drawing.Point(778, 83);
+            this.lbl8.Location = new System.Drawing.Point(1011, 86);
             this.lbl8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(13, 13);
@@ -434,7 +451,7 @@
             // 
             this.lbl7.AutoSize = true;
             this.lbl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl7.Location = new System.Drawing.Point(744, 83);
+            this.lbl7.Location = new System.Drawing.Point(977, 86);
             this.lbl7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(13, 13);
@@ -446,7 +463,7 @@
             // 
             this.lbl6.AutoSize = true;
             this.lbl6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl6.Location = new System.Drawing.Point(712, 83);
+            this.lbl6.Location = new System.Drawing.Point(945, 86);
             this.lbl6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(13, 13);
@@ -458,7 +475,7 @@
             // 
             this.lbl5.AutoSize = true;
             this.lbl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl5.Location = new System.Drawing.Point(678, 83);
+            this.lbl5.Location = new System.Drawing.Point(911, 86);
             this.lbl5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(13, 13);
@@ -470,7 +487,7 @@
             // 
             this.lbl4.AutoSize = true;
             this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl4.Location = new System.Drawing.Point(646, 83);
+            this.lbl4.Location = new System.Drawing.Point(879, 86);
             this.lbl4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(13, 13);
@@ -482,7 +499,7 @@
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl3.Location = new System.Drawing.Point(612, 83);
+            this.lbl3.Location = new System.Drawing.Point(845, 86);
             this.lbl3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(13, 13);
@@ -494,7 +511,7 @@
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl2.Location = new System.Drawing.Point(580, 83);
+            this.lbl2.Location = new System.Drawing.Point(813, 86);
             this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(13, 13);
@@ -506,7 +523,7 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl1.Location = new System.Drawing.Point(546, 83);
+            this.lbl1.Location = new System.Drawing.Point(779, 86);
             this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(13, 13);
@@ -519,7 +536,7 @@
             this.btn9.BackColor = System.Drawing.Color.Silver;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.Blue;
-            this.btn9.Location = new System.Drawing.Point(805, 100);
+            this.btn9.Location = new System.Drawing.Point(1038, 103);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(28, 27);
             this.btn9.TabIndex = 115;
@@ -533,7 +550,7 @@
             this.btn8.BackColor = System.Drawing.Color.Silver;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.Blue;
-            this.btn8.Location = new System.Drawing.Point(772, 100);
+            this.btn8.Location = new System.Drawing.Point(1005, 103);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(28, 27);
             this.btn8.TabIndex = 114;
@@ -547,7 +564,7 @@
             this.btn7.BackColor = System.Drawing.Color.Silver;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.Blue;
-            this.btn7.Location = new System.Drawing.Point(739, 100);
+            this.btn7.Location = new System.Drawing.Point(972, 103);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(28, 27);
             this.btn7.TabIndex = 113;
@@ -561,7 +578,7 @@
             this.btn6.BackColor = System.Drawing.Color.Silver;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.Blue;
-            this.btn6.Location = new System.Drawing.Point(706, 100);
+            this.btn6.Location = new System.Drawing.Point(939, 103);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(28, 27);
             this.btn6.TabIndex = 112;
@@ -575,7 +592,7 @@
             this.btn5.BackColor = System.Drawing.Color.Silver;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.Blue;
-            this.btn5.Location = new System.Drawing.Point(673, 100);
+            this.btn5.Location = new System.Drawing.Point(906, 103);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(28, 27);
             this.btn5.TabIndex = 111;
@@ -589,7 +606,7 @@
             this.btn4.BackColor = System.Drawing.Color.Silver;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.Blue;
-            this.btn4.Location = new System.Drawing.Point(640, 100);
+            this.btn4.Location = new System.Drawing.Point(873, 103);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(28, 27);
             this.btn4.TabIndex = 110;
@@ -603,7 +620,7 @@
             this.btn3.BackColor = System.Drawing.Color.Silver;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.Blue;
-            this.btn3.Location = new System.Drawing.Point(607, 100);
+            this.btn3.Location = new System.Drawing.Point(840, 103);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(28, 27);
             this.btn3.TabIndex = 109;
@@ -617,7 +634,7 @@
             this.btn2.BackColor = System.Drawing.Color.Silver;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.Blue;
-            this.btn2.Location = new System.Drawing.Point(574, 100);
+            this.btn2.Location = new System.Drawing.Point(807, 103);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(28, 27);
             this.btn2.TabIndex = 108;
@@ -631,7 +648,7 @@
             this.btn1.BackColor = System.Drawing.Color.Silver;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.Blue;
-            this.btn1.Location = new System.Drawing.Point(541, 100);
+            this.btn1.Location = new System.Drawing.Point(774, 103);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(28, 27);
             this.btn1.TabIndex = 116;
@@ -4336,5 +4353,6 @@
         private System.Windows.Forms.Button btnN;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Button btnR;
     }
 }

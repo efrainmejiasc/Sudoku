@@ -56,6 +56,7 @@ namespace SudokuParaTodos.Formularios
         private static AzulDos G = new AzulDos();
         private string  procedimientoEjecutado = string.Empty;
         private bool ejecutadoN = false;
+        private string  strAnterior = string.Empty;
 
 
         public RojoTres()
@@ -457,27 +458,112 @@ namespace SudokuParaTodos.Formularios
 
         private void EliminarRestablecerCandidato_Click(object sender, EventArgs e)
         {
-            if (lado != EngineData.btnIzquierda) return;
-            string candidatoEliminar = txtSudoku[row, col].Text;
-            if (candidatoEliminar == string.Empty) return;
-            if (valorEliminado[row, col] != null)
+            Button btn = (Button)sender;
+            switch (btn.Name)
             {
-                if (valorEliminado[row, col].Contains(candidatoEliminar))
-                {
+                case (EngineData.eliminar):
+                    if (lado != EngineData.btnDerecha) return;
+                    string candidatoEliminar = txtSudoku2[row, col].Text.Trim();
+                    if (candidatoEliminar == string.Empty) return;
+                    if (candidatoEliminar.Length > 1) return;
+                    if (valorEliminado[row, col] != null)
+                    {
+                        if (valorEliminado[row, col].Contains(candidatoEliminar))
+                        {
+                            ActualizarContadoresCandidatos();
+                            SetearJuego();
+                            return;
+                        }
+                    }
+                    if (!valorCandidatoSinEliminados[row, col].Contains(candidatoEliminar))
+                    {
+                        ActualizarContadoresCandidatos();
+                        SetearJuego();
+                        return;
+                    }
+                    valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
+                    valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                    txtSudoku2[row, col].BackColor = Color.WhiteSmoke;
+                    txtSudoku2[row, col].Text = string.Empty;
                     ActualizarContadoresCandidatos();
                     SetearJuego();
-                    return;
-                }
+                    break;
+                case (EngineData.restablecer):
+                    if (lado != EngineData.btnIzquierda) return;
+                    string candidatoRestablecer = txtSudoku[row, col].Text.Trim();
+                    if (candidatoRestablecer == string.Empty) return;
+                    if (candidatoRestablecer.Length == 1)
+                    {
+                        if (valorEliminado[row, col] != null)
+                            valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                    }
+                    else if (candidatoRestablecer.Length > 1)
+                    {
+                        // valorEliminado[row, col] = valorEliminado[row, col].Replace(candidatoRestablecer, "");
+                        // valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
+                        //txtSudoku2[row, col].Text = valorEliminado[row, col];
+                        return;
+                    }
+
+                    txtSudoku[row, col].Text = valorEliminado[row, col];
+                    ActualizarContadoresCandidatos();
+                    SetearJuego();
+                    //ActualizarCandidato(candidatoRestablecer);
+                    string[,] o = Valor.GetValorSolucion();
+                    int m = 0;
+                    break;
             }
-            valorEliminado[row, col] = valorEliminado[row, col] + " " + candidatoEliminar;
-            valorEliminado[row, col] = Funcion.OrdenarCadena(valorEliminado[row, col]);
-            txtSudoku[row, col].BackColor = Color.WhiteSmoke;
-            txtSudoku[row, col].Text = string.Empty;
-            ActualizarContadoresCandidatos();
-            SetearJuego();
             ContadorIngresado();
             GuardarJuego(pathArchivo);
+
         }
+
+
+        private void ActualizarCandidato(string v)
+        {
+            switch (v)
+            {
+                case (EngineData.uno):
+                    lbl1.Text = Funcion.ContadorCandidatoEspecifico(EngineData.uno, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.uno, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.dos):
+                    lbl2.Text = Funcion.ContadorCandidatoEspecifico(EngineData.dos, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.dos, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.tres):
+                    lbl3.Text = Funcion.ContadorCandidatoEspecifico(EngineData.tres, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.tres, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.cuatro):
+                    lbl4.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cuatro, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cuatro, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.cinco):
+                    lbl5.Text = Funcion.ContadorCandidatoEspecifico(EngineData.cinco, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.cinco, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.seis):
+                    lbl6.Text = Funcion.ContadorCandidatoEspecifico(EngineData.seis, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.seis, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.siete):
+                    lbl7.Text = Funcion.ContadorCandidatoEspecifico(EngineData.siete, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.siete, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.ocho):
+                    lbl8.Text = Funcion.ContadorCandidatoEspecifico(EngineData.ocho, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.ocho, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+                case (EngineData.nueve):
+                    lbl9.Text = Funcion.ContadorCandidatoEspecifico(EngineData.nueve, valorIngresado, valorCandidatoSinEliminados);
+                    txtSudoku = Funcion.SetearTextBoxCandidatoEspecifico(EngineData.nueve, txtSudoku, valorIngresado, valorCandidatoSinEliminados);
+                    break;
+            }
+        }
+
+
+
 
         private void GuardarJuego(string pathArchivo)
         {
@@ -624,6 +710,7 @@ namespace SudokuParaTodos.Formularios
             }
 
             lado = EngineData.btnIzquierda;
+            strAnterior = txt.Text;
         }
 
         private void txt00_KeyPress(object sender, KeyPressEventArgs e)
@@ -648,18 +735,27 @@ namespace SudokuParaTodos.Formularios
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
 
-            if (txt.Text == EngineData.Zero)
+            if (txt.Text == EngineData.Zero || txt.Text == string.Empty)
             {
-                txt.Text = valorFiltrado[row, col];
+                txt.Text = valorEliminado[row, col];
             }
             else
             {
-                if (txt.Text != valorFiltrado[row, col])
+                if (valorEliminado[row, col] != null && valorEliminado[row, col] != string.Empty)
                 {
-                    txt.Text = valorFiltrado[row, col];
+                    if (!valorEliminado[row, col].Contains(txt.Text))
+                    {
+                        txt.Text = valorEliminado[row, col];
+                    }
+                }
+                else
+                {
+                    txt.Text = string.Empty;
                 }
             }
 
+            if (string.IsNullOrEmpty(strAnterior))
+                txt.Text = strAnterior;
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
@@ -716,7 +812,7 @@ namespace SudokuParaTodos.Formularios
             }
             lado = EngineData.btnDerecha;
 
-           var t = txt.Text;
+           strAnterior = txt.Text;
         }
 
         private void t00_KeyPress(object sender, KeyPressEventArgs e)
@@ -745,28 +841,24 @@ namespace SudokuParaTodos.Formularios
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
-             //SetearJuego();
              valorCandidato = Funcion.ElejiblesInstantaneos(valorIngresado, valorCandidato);
              valorCandidatoSinEliminados = Funcion.CandidatosSinEliminados(valorIngresado, valorCandidato, valorEliminado);
              if (ejecutadoN)
              {
-               // txtSudoku2 = Funcion.SetearTextParaNumerosNConColorFiltro(txtSudoku2, valorIngresado);
-               // SetearJuego();
-                //txtSudoku2 = Funcion.SetearTextBoxNumerosN(txtSudoku2, valorIngresado, valorInicio);
-          
                 string valor = Funcion.GetValueIngresadoNoInicio(row, col, valorIngresado,valorInicio);
                 if (!string.IsNullOrEmpty(valor))
                       txt.Text = valor;
-            }
+             }
              else
              {
                 string valor = Funcion.GetValueCandidatosSinEliminados(row, col, valorCandidatoSinEliminados);
                 if (string.IsNullOrEmpty(valor))
                     txt.Text = valor;
 
-            }
+             }
 
-               
+            if (string.IsNullOrEmpty(strAnterior))
+                txt.Text = strAnterior;
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
